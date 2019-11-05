@@ -37,7 +37,16 @@ git clone https://github.com/llllllllr/breastfeed.git
 ### 前后端通用资料：
 
 - [vue.js官网]( https://cn.vuejs.org/ )
+
 - [vue环境搭建可以参考视频第二节]( https://www.bilibili.com/video/av61406142?from=search&seid=18091142834129939388 )
+
+- [vue前后端传值工具 qs]( https://www.npmjs.com/package/qs )
+
+- [vue前后端传值工具 axios官方文档]( http://axios-js.com/zh-cn/docs/ )
+
+- [axios简书]( https://www.jianshu.com/p/7a9fbcbb1114 )
+
+  
 
 
 

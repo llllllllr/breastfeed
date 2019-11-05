@@ -3,6 +3,8 @@ import Router from 'vue-router'
 import HelloWorld from '@/components/HelloWorld'
 import Index  from '@/components/Index'
 import user from '@/page/user'
+import ArticleList from  '@/components/ArticleList'
+import AddArticle from '@/components/AddArticle'
 Vue.use(Router)
 
 export default new Router({
@@ -17,10 +19,16 @@ export default new Router({
       name: 'Index',
       component: Index,
       children:[{
-        path: '/user',
-        name: 'user',
-        component: user,
-      }]
+        path: '/articlelist',
+        name: 'articlelist',
+        component: ArticleList,
+      },
+      {
+        path: '/addarticle',
+        name: 'addarticle',
+        component: AddArticle,
+      }
+    ]
     }
    
   ]

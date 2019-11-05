@@ -32,10 +32,10 @@
                                 <el-submenu index="1">
                                     <template slot="title">
                                     <i class="el-icon-tickets"></i>
-                                    <span>文章管理</span>
+                                     <span>文章管理</span>
                                     </template>
                                     <el-menu-item-group>
-                                    <el-menu-item index="1-1"><i class="el-icon-reading"></i>文章列表</el-menu-item>
+                                    <el-menu-item index="1-1"><i class="el-icon-reading"></i><router-link to="/articlelist" tag="span" exact>文章列表</router-link></el-menu-item>
                                     </el-menu-item-group>
                                 </el-submenu>
                     </el-menu>
@@ -125,7 +125,10 @@
   .el-container:nth-child(6) .el-aside {
     line-height: 260px;
   }
-  
+  .router-link-active {
+    text-decoration: none;
+}
+
   .el-container:nth-child(7) .el-aside {
     line-height: 320px;
   }
