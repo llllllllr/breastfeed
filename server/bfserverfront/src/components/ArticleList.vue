@@ -1,4 +1,7 @@
 <template>
+<div>
+    <el-button v-on:click="toAddpage" class="add"  type="primary" icon="el-icon-circle-plus">添加文章</el-button>
+
   <el-table
   :header-row-style="{position:absolute,height:'100px',color:'black'}"
     class="tab"
@@ -35,6 +38,7 @@
       </template>
     </el-table-column>
   </el-table>
+  </div>
 </template>
 <script>
   export default {
@@ -58,6 +62,13 @@
           address: '上海市普陀区金沙江路 1516 弄'
         }]
       }
+    },
+    methods:{
+      toAddpage:function(){
+          this.$router.push({
+          path: '/addarticle',
+        })
+      }
     }
   }
 </script>
@@ -65,13 +76,21 @@
 <style scoped>
 .tab{
     position: absolute;
-    top:120px;
+    top:150px;
     left: 300px;
+    line-height: 12px
 }
 
 .el-table th{
         background:black !important;
         font-size: large;
         height: 100px;
+    }
+
+    .add{
+       position: absolute;
+      left:1000px;
+      top: 100px;
+
     }
 </style>
