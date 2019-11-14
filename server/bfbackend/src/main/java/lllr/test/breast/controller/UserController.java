@@ -6,6 +6,7 @@ import lllr.test.breast.service.UserService;
 import lllr.test.breast.util.DataValidateUtil;
 import lllr.test.breast.util.exception.StringException;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -22,6 +23,8 @@ public class UserController {
     @Autowired
     private UserService userService;
 
+    @Value("${user.password.length=8}")
+    private int USER_PASSWORD_LENGTH;
     /*
   注册
   1. 接收
@@ -53,7 +56,7 @@ public class UserController {
                  ->失败  ->   设置错误信息 保存表单数据 返回注册页面
      */
     @PostMapping("/register")
-    public ServerResponse<User> register(@RequestParam(value="age",required = false)Integer age,
+    public ServerResponse<User> UserRegister(@RequestParam(value="age",required = false)Integer age,
                                          @RequestParam(value="creditId",required = true)String creditId,
                                          @RequestParam(value="pregnantType",required = true)Integer pregnantType,
                                          @RequestParam(value="pregnantWeek",required = true)String pregnantWeek,
@@ -80,9 +83,43 @@ public class UserController {
 
         user.setPregnantType(pregnantType);
 
+        if (!DataValidateUtil.isBlank(pregnantWeek)) {
+            user.setPregnantWeek(pregnantWeek);
+        } else {
+            errorList.add("孕周不能为空！");
+            user.setPregnantWeek(null);
+        }
 
+        user.setJob(job);
 
-        return null;
+        if (!DataValidateUtil.isNull(confinementDate)) {
+            user.setConfinementDate(confinementDate);
+        } else {
+            errorList.add("产期不能为空！");
+            user.setConfinementDate(null);
+        }
+
+        user.setPregnantType(confinementWeek);
+        user.setPregnantType(confinementType);
+
+        if (!DataValidateUtil.isBlank(userName)) {
+            user.setUserName(userName);
+        } else {
+            errorList.add("用户名不能为空！");
+            user.setUserName(userName);
+        }
+
+        if (!DataValidateUtil.length(userPassword,USER_PASSWORD_LENGTH)) {
+            user.setUserPassword(userPassword);
+        } else {
+            errorList.add("密码长度不能小于" + USER_PASSWORD_LENGTH);
+            user.setUserPassword(userPassword);
+        }
+
+        if(errorList.size() > 0)
+            return new ServerResponse<User>(0,errorList.toString(),user);
+
+        return userService.UserRegister(user);
     }
 
 

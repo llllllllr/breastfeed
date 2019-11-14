@@ -5,7 +5,7 @@ import lllr.test.breast.util.exception.StringException;
 //string工具类
 public class DataValidateUtil {
     //判断字符串是否为null
-    public static boolean isNull(String str){
+    public static boolean isNull(Object str){
         return str==null;
     }
 
