@@ -1,7 +1,7 @@
 package lllr.test.breast.service.Impl;
 
 import lllr.test.breast.common.ServerResponse;
-import lllr.test.breast.dao.ArticleMapper;
+import lllr.test.breast.dao.mapper.ArticleMapper;
 import lllr.test.breast.dataObject.Article;
 import lllr.test.breast.service.ArticleService;
 import org.springframework.beans.factory.annotation.Autowired;

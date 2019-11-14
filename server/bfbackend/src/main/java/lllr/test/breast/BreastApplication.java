@@ -7,7 +7,7 @@ import  org.mybatis.spring.annotation.MapperScan;
 
 @SpringBootApplication(scanBasePackages = {"lllr.test.breast"})
 @RestController
-@MapperScan("lllr.test.breast.dao")
+@MapperScan("lllr.test.breast.dao.mapper")
 public class BreastApplication {
 
     public static void main(String[] args) {

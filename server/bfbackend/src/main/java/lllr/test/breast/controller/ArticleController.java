@@ -1,13 +1,11 @@
 package lllr.test.breast.controller;
 
-import com.mysql.fabric.Server;
 import lllr.test.breast.common.ServerResponse;
 import lllr.test.breast.dataObject.Article;
 import lllr.test.breast.service.ArticleService;
 import lllr.test.breast.util.QiniuRes;
 import lllr.test.breast.util.QiniuResultUtil;
 import lllr.test.breast.util.QiniuUtil;
-import org.apache.coyote.Response;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
@@ -35,7 +33,7 @@ public class ArticleController {
         article.setContent(content);
         article.setCategory("category");
         article.setDescription(subtitle);
-        article.setImgUrl("imgurl");
+        article.setImgurl("imgurl");
         System.out.println(title);
         return articleService.addArticle(article);
     }
