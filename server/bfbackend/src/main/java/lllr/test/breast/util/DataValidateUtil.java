@@ -34,7 +34,7 @@ public class DataValidateUtil {
     }
 
     public static boolean ageValidate(Integer age){
-        if(age < 0 || age > 100)
+        if(age == null || age < 0 || age > 100)
             return false;
         return true;
     }

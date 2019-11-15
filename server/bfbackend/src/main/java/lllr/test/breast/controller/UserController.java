@@ -8,6 +8,7 @@ import lllr.test.breast.util.exception.StringException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -53,7 +54,7 @@ public class UserController {
     3.插入用户信息 ->成功  ->  保存用户相关信息与session，返回注册成功信息 ，转发到首页
                  ->失败  ->   设置错误信息 保存表单数据 返回注册页面
      */
-    @PostMapping("/register")
+    @GetMapping("/register")
     public ServerResponse<User> UserRegister(@RequestParam(value="age",required = false)Integer age,
                                          @RequestParam(value="creditId",required = true)String creditId,
                                          @RequestParam(value="pregnantType",required = true)Integer pregnantType,
@@ -97,8 +98,8 @@ public class UserController {
             user.setConfinementDate(null);
         }
 
-        user.setPregnantType(confinementWeek);
-        user.setPregnantType(confinementType);
+        user.setConfinementWeek(confinementWeek);
+        user.setConfinementType(confinementType);
 
         if (!DataValidateUtil.isBlank(userName)) {
             user.setUserName(userName);
