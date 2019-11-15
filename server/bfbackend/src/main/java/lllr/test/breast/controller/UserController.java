@@ -21,7 +21,7 @@ public class UserController {
     @Autowired
     private UserService userService;
 
-    @Value("${user.password.length=8}")
+    @Value("${user.password.length}")
     private int USER_PASSWORD_LENGTH;
     /*
   注册

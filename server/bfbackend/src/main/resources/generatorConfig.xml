@@ -27,7 +27,7 @@
         </javaTypeResolver>
 
         <!--dataobject-->
-        <javaModelGenerator targetPackage="lllr.test.breast.dataObject" targetProject="src/main/java">
+        <javaModelGenerator targetPackage="lllr.test.breast.dataObject.user" targetProject="src/main/java">
             <property name="enableSubPackages" value="true" />
             <property name="trimStrings" value="true" />
         </javaModelGenerator>
@@ -41,9 +41,9 @@
             <property name="enableSubPackages" value="true" />
         </javaClientGenerator>
 
-        <table tableName="article" domainObjectName="Article"
-               enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false"
-               enableSelectByExample="false" selectByExampleQueryId="false"/>
+        <table tableName="user" domainObjectName="User"
+               enableCountByExample="true" enableUpdateByExample="true" enableDeleteByExample="true"
+               enableSelectByExample="true" selectByExampleQueryId="true"/>
 
     </context>
 

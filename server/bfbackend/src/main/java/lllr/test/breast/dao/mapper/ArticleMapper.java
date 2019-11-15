@@ -1,7 +1,9 @@
 package lllr.test.breast.dao.mapper;
 
 import lllr.test.breast.dataObject.Article;
+import org.apache.ibatis.annotations.Mapper;
 
+@Mapper
 public interface ArticleMapper {
     int deleteByPrimaryKey(Integer id);
 
