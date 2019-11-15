@@ -12,9 +12,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
+import java.util.*;
 
 
 @RequestMapping("/user")
@@ -67,7 +65,7 @@ public class UserController {
                                          @RequestParam(value="userName",required = true) String userName,
                                          @RequestParam(value="userPassword",required = true)String userPassword) throws StringException {
 
-        List<String> errorList = new ArrayList<>();
+        Map<String,String> errorMap = new HashMap<>();
         User user = new User();
         if (DataValidateUtil.ageValidate(age)) {
             user.setAge(age);
@@ -77,7 +75,7 @@ public class UserController {
         if (DataValidateUtil.length(creditId,25)) {
             user.setCreditId(creditId);
         } else {
-            errorList.add("身份证号码错误!");
+            errorMap.put("creditId","身份证号码错误!");
             user.setCreditId(creditId);
         }
 
@@ -86,7 +84,7 @@ public class UserController {
         if (!DataValidateUtil.isBlank(pregnantWeek)) {
             user.setPregnantWeek(pregnantWeek);
         } else {
-            errorList.add("孕周不能为空！");
+            errorMap.put("pregnantWeek","孕周不能为空！");
             user.setPregnantWeek(null);
         }
 
@@ -95,7 +93,7 @@ public class UserController {
         if (!DataValidateUtil.isNull(confinementDate)) {
             user.setConfinementDate(confinementDate);
         } else {
-            errorList.add("产期不能为空！");
+            errorMap.put("confinementDate","产期不能为空！");
             user.setConfinementDate(null);
         }
 
@@ -105,20 +103,21 @@ public class UserController {
         if (!DataValidateUtil.isBlank(userName)) {
             user.setUserName(userName);
         } else {
-            errorList.add("用户名不能为空！");
+            errorMap.put("userName","用户名不能为空！");
             user.setUserName(userName);
         }
 
         if (!DataValidateUtil.length(userPassword,USER_PASSWORD_LENGTH)) {
             user.setUserPassword(userPassword);
         } else {
-            errorList.add("密码长度不能小于" + USER_PASSWORD_LENGTH);
+            errorMap.put("userPassword","密码长度不能小于" + USER_PASSWORD_LENGTH);
             user.setUserPassword(userPassword);
         }
 
-        if(errorList.size() > 0)
-            return new ServerResponse<User>(0,errorList.toString(),user);
+        if(errorMap.size() > 0)
+            return new ServerResponse<User>(0,errorMap.toString(),user);
 
+        user.setUserToken(UUID.randomUUID().toString() + UUID.randomUUID().toString());
         return userService.UserRegister(user);
     }
 
