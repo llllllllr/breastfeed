@@ -194,7 +194,7 @@ public class UserController {
                                 HttpServletResponse response){
         //判断用户是否登录
         String userName = (String) request.getSession().getAttribute("userName");
-        if(userName == null)
+        if(userName == null && DataValidateUtil.isBlank(user_token))
         {
             User user = userService.UserTokenSign(user_token);
             AfterSign(request,response,user);
@@ -202,6 +202,16 @@ public class UserController {
         return "token_sign_success";
     }
 
+    //用户退出
+    @GetMapping("/user/exit")
+    public ServerResponse<Object> exit(HttpServletRequest request,HttpServletResponse response){
+        request.getSession().removeAttribute("userName");
+        //将浏览器的user_token 置空
+        Cookie cookie = new Cookie("user_token",null);
+        cookie.setPath("/");
+        response.addCookie(cookie);
 
+        return new ServerResponse<>(1,"退出登录成功!");
+    }
 
 }
