@@ -15,6 +15,7 @@ public class UserServiceImpl implements UserService {
     @Autowired
     private UserMapper userMapper;
 
+
     @Override
     public ServerResponse<User> UserRegister(User user) {
         StringBuilder errorMessage = new StringBuilder();
@@ -49,4 +50,30 @@ public class UserServiceImpl implements UserService {
             return new ServerResponse<>(1,"注册成功!",user);
         return new ServerResponse<User>(0,"注册失败!",user);
     }
+
+    @Override
+    public User UserSign(String userName, String userPassword) {
+        UserExample userExample = new UserExample();
+        userExample.or().andUserNameEqualTo(userName);
+        List<User> list = userMapper.selectByExample(userExample);
+
+        if(list != null && list.size() == 1)
+            return list.get(0);
+
+        return null;
+    }
+
+    @Override
+    public User UserTokenSign(String user_token) {
+        UserExample userExample = new UserExample();
+        userExample.or().andUserTokenEqualTo(user_token);
+        List<User> list = userMapper.selectByExample(userExample);
+
+        if(list != null && list.size() == 1)
+            return list.get(0);
+
+        return null;
+    }
+
+
 }
