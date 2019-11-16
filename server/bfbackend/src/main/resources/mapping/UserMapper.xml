@@ -77,7 +77,7 @@
     user_id, age, credit_id, pregnant_type, pregnant_week, job, confinement_date, confinement_week, 
     confinement_type, user_name, user_password, user_token
   </sql>
-  <select id="selectByExample" parameterType="lllr.test.breast.dataObject.user.UserExample" resultMap="BaseResultMap">
+  <select id="selectByExample" parameterType="lllr.test.breast.dao.mapperUtil.UserExample" resultMap="BaseResultMap">
     select
     <if test="distinct">
       distinct
@@ -102,7 +102,7 @@
     delete from user
     where user_id = #{userId,jdbcType=INTEGER}
   </delete>
-  <delete id="deleteByExample" parameterType="lllr.test.breast.dataObject.user.UserExample">
+  <delete id="deleteByExample" parameterType="lllr.test.breast.dao.mapperUtil.UserExample">
     delete from user
     <if test="_parameter != null">
       <include refid="Example_Where_Clause" />
@@ -199,7 +199,7 @@
       </if>
     </trim>
   </insert>
-  <select id="countByExample" parameterType="lllr.test.breast.dataObject.user.UserExample" resultType="java.lang.Long">
+  <select id="countByExample" parameterType="lllr.test.breast.dao.mapperUtil.UserExample" resultType="java.lang.Long">
     select count(*) from user
     <if test="_parameter != null">
       <include refid="Example_Where_Clause" />

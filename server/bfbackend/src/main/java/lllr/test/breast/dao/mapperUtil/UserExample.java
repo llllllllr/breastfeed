@@ -1,4 +1,4 @@
-package lllr.test.breast.dataObject.user;
+package lllr.test.breast.dao.mapperUtil;
 
 import lllr.test.breast.dao.mapperUtil.UserGeneratedCriteria;
 

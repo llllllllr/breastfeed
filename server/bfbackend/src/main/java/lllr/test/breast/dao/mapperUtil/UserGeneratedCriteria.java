@@ -1,7 +1,5 @@
 package lllr.test.breast.dao.mapperUtil;
 
-import lllr.test.breast.dataObject.user.UserExample;
-
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.Iterator;

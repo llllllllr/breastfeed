@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import javax.servlet.http.HttpServletRequest;
 import java.util.*;
 
 
@@ -64,7 +65,8 @@ public class UserController {
                                          @RequestParam(value="confinementWeek",required = true)Integer confinementWeek,
                                          @RequestParam(value="confinementType",required = true)Integer confinementType,
                                          @RequestParam(value="userName",required = true) String userName,
-                                         @RequestParam(value="userPassword",required = true)String userPassword) throws StringException {
+                                         @RequestParam(value="userPassword",required = true)String userPassword,
+                                             HttpServletRequest requests) throws StringException {
 
         Map<String,String> errorMap = new HashMap<>();
         User user = new User();
@@ -118,8 +120,9 @@ public class UserController {
         if(errorMap.size() > 0)
             return new ServerResponse<User>(0,errorMap.toString(),user);
 
-        user.setUserToken(UUID.randomUUID().toString() + UUID.randomUUID().toString());
-        return userService.UserRegister(user);
+        user.setUserToken(UUID.randomUUID().toString().replace("-",""));
+        ServerResponse<User> userResponse = userService.UserRegister(user);
+        return userResponse;
     }
 
 
