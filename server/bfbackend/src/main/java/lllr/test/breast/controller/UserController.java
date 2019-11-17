@@ -82,7 +82,13 @@ public class UserController {
             user.setCreditId(null);
         }
 
-        user.setPregnantType(pregnantType);
+        if(!DataValidateUtil.isNull(pregnantType))
+            user.setPregnantType(pregnantType);
+        else
+        {
+            errorMap.put("pregnantType","怀孕类型不能为空！");
+            user.setCreditId(null);
+        }
 
         if (!DataValidateUtil.isBlank(pregnantWeek)) {
             user.setPregnantWeek(pregnantWeek);
@@ -100,8 +106,21 @@ public class UserController {
             user.setConfinementDate(null);
         }
 
-        user.setConfinementWeek(confinementWeek);
-        user.setConfinementType(confinementType);
+        if(!DataValidateUtil.isNull(confinementWeek))
+            user.setConfinementWeek(confinementWeek);
+        else
+        {
+            errorMap.put("confinementWeek","产周类型不能为空！");
+            user.setConfinementWeek(null);
+        }
+
+        if(!DataValidateUtil.isNull(confinementType))
+            user.setConfinementType(confinementType);
+        else
+        {
+            errorMap.put("confinementType","产期类型不能为空！");
+            user.setConfinementType(null);
+        }
 
         if (!DataValidateUtil.isBlank(userName)) {
             user.setUserName(userName);
@@ -121,7 +140,7 @@ public class UserController {
             return new ServerResponse<User>(0,errorMap.toString(),user);
 
         user.setUserToken(UUID.randomUUID().toString().replace("-",""));
-        ServerResponse<User> userResponse = userService.UserRegister(user);
+        ServerResponse<User> userResponse = userService.userRegister(user);
 
         //注册成功
 
@@ -175,7 +194,7 @@ public class UserController {
             return new ServerResponse<>(0,"用户名和密码不能为空");
 
         //根据用户名查询用户信息并返回
-        User user = userService.UserSign(userName,userPassword);
+        User user = userService.userSign(userName,userPassword);
         //不为空说明表单数据正确
         if(user != null) {
             AfterSign(request, response, user);
@@ -196,7 +215,7 @@ public class UserController {
         String userName = (String) request.getSession().getAttribute("userName");
         if(userName == null && DataValidateUtil.isBlank(user_token))
         {
-            User user = userService.UserTokenSign(user_token);
+            User user = userService.userTokenSign(user_token);
             AfterSign(request,response,user);
         }
         return "token_sign_success";

@@ -17,7 +17,7 @@ public class UserServiceImpl implements UserService {
 
 
     @Override
-    public ServerResponse<User> UserRegister(User user) {
+    public ServerResponse<User> userRegister(User user) {
         StringBuilder errorMessage = new StringBuilder();
         //根据用户名查询数据库,根据返回结果判断是否用户名被注册
         UserExample userExample = new UserExample();
@@ -52,25 +52,26 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public User UserSign(String userName, String userPassword) {
+    public User userSign(String userName, String userPassword) {
         UserExample userExample = new UserExample();
         userExample.or().andUserNameEqualTo(userName);
         List<User> list = userMapper.selectByExample(userExample);
 
         if(list != null && list.size() == 1)
-            return list.get(0);
-
+            if (list.get(0).getUserPassword().equals(userPassword))
+                return list.get(0);
         return null;
     }
 
     @Override
-    public User UserTokenSign(String user_token) {
+    public User userTokenSign(String user_token) {
         UserExample userExample = new UserExample();
         userExample.or().andUserTokenEqualTo(user_token);
         List<User> list = userMapper.selectByExample(userExample);
 
         if(list != null && list.size() == 1)
-            return list.get(0);
+            if(list.get(0).getUserToken().equals(user_token))
+                return list.get(0);
 
         return null;
     }
