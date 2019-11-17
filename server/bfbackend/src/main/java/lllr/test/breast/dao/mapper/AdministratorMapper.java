@@ -20,4 +20,5 @@ public interface AdministratorMapper {
     List<Administrator> selectByAdministratorName(String administratorName);
 
     List<Administrator> selectByAdministratorToken(String administratorToken);
+
 }

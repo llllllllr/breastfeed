@@ -7,9 +7,7 @@ import lllr.test.breast.service.AdministratorService;
 import lllr.test.breast.util.DataValidateUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
@@ -21,6 +19,7 @@ public class AdministratorController {
     @Autowired
     private AdministratorService administratorService;
 
+    //管理员登录
     @GetMapping("/administrator/sign")
     public ServerResponse<Object> administratorSign(@RequestParam(value="administratorName",required = true) String administratorName,
                                  @RequestParam(value="administratorPassword",required = true) String administratorPassword,
@@ -52,5 +51,22 @@ public class AdministratorController {
         administrator_token_cookie.setPath("/administrator");
         response.addCookie(administrator_token_cookie);
     }
+
+    //管理员token 免密码登录
+    @RequestMapping("/administrator")
+    public String administratorTokenSign(@CookieValue(name="administrator_token",required =true)String administrator_token,
+                                HttpServletRequest request,
+                                HttpServletResponse response){
+        //判断用户是否登录
+        String administratorName = (String) request.getSession().getAttribute("administratorName");
+        if(administratorName == null && DataValidateUtil.isBlank(administrator_token))
+        {
+            Administrator administrator = administratorService.administratorTokenSign(administrator_token);
+            AfterSign(request,response,administrator);
+        }
+        return "administrator_token_sign_success";
+    }
+
+
 
 }

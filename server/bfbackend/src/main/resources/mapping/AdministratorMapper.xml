@@ -5,11 +5,12 @@
     <id column="administrator_id" jdbcType="INTEGER" property="administratorId" />
     <result column="administrator_name" jdbcType="VARCHAR" property="administratorName" />
     <result column="administrator_password" jdbcType="VARCHAR" property="administratorPassword" />
-    <result column="right" jdbcType="INTEGER" property="right" />
+    <result column="administrator_right" jdbcType="INTEGER" property="administratorRight" />
     <result column="administrator_token" jdbcType="CHAR" property="administratorToken" />
   </resultMap>
   <sql id="Base_Column_List">
-    administrator_id, administrator_name, administrator_password, right, administrator_token
+    administrator_id, administrator_name, administrator_password, administrator_right, 
+    administrator_token
   </sql>
   <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
     select 
@@ -23,11 +24,11 @@
   </delete>
   <insert id="insert" parameterType="lllr.test.breast.dataObject.user.Administrator">
     insert into administrator (administrator_id, administrator_name, 
-      administrator_password, right, administrator_token
-      )
+      administrator_password, administrator_right, 
+      administrator_token)
     values (#{administratorId,jdbcType=INTEGER}, #{administratorName,jdbcType=VARCHAR}, 
-      #{administratorPassword,jdbcType=VARCHAR}, #{right,jdbcType=INTEGER}, #{administratorToken,jdbcType=CHAR}
-      )
+      #{administratorPassword,jdbcType=VARCHAR}, #{administratorRight,jdbcType=INTEGER}, 
+      #{administratorToken,jdbcType=CHAR})
   </insert>
   <insert id="insertSelective" parameterType="lllr.test.breast.dataObject.user.Administrator">
     insert into administrator
@@ -41,8 +42,8 @@
       <if test="administratorPassword != null">
         administrator_password,
       </if>
-      <if test="right != null">
-        right,
+      <if test="administratorRight != null">
+        administrator_right,
       </if>
       <if test="administratorToken != null">
         administrator_token,
@@ -58,8 +59,8 @@
       <if test="administratorPassword != null">
         #{administratorPassword,jdbcType=VARCHAR},
       </if>
-      <if test="right != null">
-        #{right,jdbcType=INTEGER},
+      <if test="administratorRight != null">
+        #{administratorRight,jdbcType=INTEGER},
       </if>
       <if test="administratorToken != null">
         #{administratorToken,jdbcType=CHAR},
@@ -75,8 +76,8 @@
       <if test="administratorPassword != null">
         administrator_password = #{administratorPassword,jdbcType=VARCHAR},
       </if>
-      <if test="right != null">
-        right = #{right,jdbcType=INTEGER},
+      <if test="administratorRight != null">
+        administrator_right = #{administratorRight,jdbcType=INTEGER},
       </if>
       <if test="administratorToken != null">
         administrator_token = #{administratorToken,jdbcType=CHAR},
@@ -88,8 +89,22 @@
     update administrator
     set administrator_name = #{administratorName,jdbcType=VARCHAR},
       administrator_password = #{administratorPassword,jdbcType=VARCHAR},
-      right = #{right,jdbcType=INTEGER},
+      administrator_right = #{administratorRight,jdbcType=INTEGER},
       administrator_token = #{administratorToken,jdbcType=CHAR}
     where administrator_id = #{administratorId,jdbcType=INTEGER}
   </update>
+
+  <select id="selectByAdministratorToken" parameterType="java.lang.String" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from administrator
+    where administrator_token = #{administratorToken,jdbcType=CHAR}
+  </select>
+  <select id="selectByAdministratorName" parameterType="java.lang.String" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from administrator
+    where administrator_name = #{administratorName,jdbcType=VARCHAR}
+  </select>
+
 </mapper>

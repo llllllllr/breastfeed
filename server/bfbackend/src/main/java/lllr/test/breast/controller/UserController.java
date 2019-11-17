@@ -218,7 +218,7 @@ public class UserController {
             User user = userService.userTokenSign(user_token);
             AfterSign(request,response,user);
         }
-        return "token_sign_success";
+        return "user_token_sign_success";
     }
 
     //用户退出

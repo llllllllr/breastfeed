@@ -7,7 +7,7 @@ public class Administrator {
 
     private String administratorPassword;
 
-    private Integer right;
+    private Integer administratorRight;
 
     private String administratorToken;
 
@@ -35,12 +35,12 @@ public class Administrator {
         this.administratorPassword = administratorPassword == null ? null : administratorPassword.trim();
     }
 
-    public Integer getRight() {
-        return right;
+    public Integer getAdministratorRight() {
+        return administratorRight;
     }
 
-    public void setRight(Integer right) {
-        this.right = right;
+    public void setAdministratorRight(Integer administratorRight) {
+        this.administratorRight = administratorRight;
     }
 
     public String getAdministratorToken() {
