@@ -1,7 +1,6 @@
-package lllr.test.breast.service;
+package lllr.test.breast.service.Inte;
 
 import lllr.test.breast.dataObject.user.Administrator;
-import lllr.test.breast.dataObject.user.User;
 
 public interface AdministratorService {
     Administrator administratorSign(String administratorName, String administratorPassword);    //登录

@@ -2,10 +2,10 @@ package lllr.test.breast.controller;
 
 import lllr.test.breast.common.ServerResponse;
 import lllr.test.breast.dataObject.Article;
-import lllr.test.breast.service.ArticleService;
-import lllr.test.breast.util.QiniuRes;
-import lllr.test.breast.util.QiniuResultUtil;
-import lllr.test.breast.util.QiniuUtil;
+import lllr.test.breast.service.Inte.ArticleService;
+import lllr.test.breast.util.qiniu.QiniuRes;
+import lllr.test.breast.util.qiniu.QiniuResultUtil;
+import lllr.test.breast.util.qiniu.QiniuUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;

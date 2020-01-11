@@ -2,7 +2,7 @@ package lllr.test.breast.controller;
 
 import lllr.test.breast.common.ServerResponse;
 import lllr.test.breast.dataObject.user.User;
-import lllr.test.breast.service.UserService;
+import lllr.test.breast.service.Inte.UserService;
 import lllr.test.breast.util.DataValidateUtil;
 import lllr.test.breast.util.exception.StringException;
 import org.springframework.beans.factory.annotation.Autowired;

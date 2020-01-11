@@ -4,7 +4,7 @@ import lllr.test.breast.common.ServerResponse;
 import lllr.test.breast.dao.mapper.UserMapper;
 import lllr.test.breast.dataObject.user.User;
 import lllr.test.breast.dao.mapperUtil.UserExample;
-import lllr.test.breast.service.UserService;
+import lllr.test.breast.service.Inte.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

@@ -2,7 +2,7 @@ package lllr.test.breast.service.Impl;
 
 import lllr.test.breast.dao.mapper.AdministratorMapper;
 import lllr.test.breast.dataObject.user.Administrator;
-import lllr.test.breast.service.AdministratorService;
+import lllr.test.breast.service.Inte.AdministratorService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

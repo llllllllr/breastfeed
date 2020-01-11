@@ -2,8 +2,7 @@ package lllr.test.breast.controller;
 
 import lllr.test.breast.common.ServerResponse;
 import lllr.test.breast.dataObject.user.Administrator;
-import lllr.test.breast.dataObject.user.User;
-import lllr.test.breast.service.AdministratorService;
+import lllr.test.breast.service.Inte.AdministratorService;
 import lllr.test.breast.util.DataValidateUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
