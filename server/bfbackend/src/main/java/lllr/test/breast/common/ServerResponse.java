@@ -60,32 +60,32 @@ public class ServerResponse<T> implements Serializable {
     }
 
     //返回成功的值
-    public static <T> ServerResponse<T> createBysuccess(){
+    public static <T> ServerResponse<T> createBysuccess() {
         return new ServerResponse<T>(ResponseCode.SUCCESS.getCode());
     }
 
-    public static <T> ServerResponse<T> createBysuccessMsg(String msg){
-        return new ServerResponse<T>(ResponseCode.SUCCESS.getCode(),msg);
+    public static <T> ServerResponse<T> createBysuccessMsg(String msg) {
+        return new ServerResponse<T>(ResponseCode.SUCCESS.getCode(), msg);
     }
 
-    public static <T> ServerResponse<T> createBysuccessData(T data){
-        return new ServerResponse<T>(ResponseCode.SUCCESS.getCode(),data);
+    public static <T> ServerResponse<T> createBysuccessData(T data) {
+        return new ServerResponse<T>(ResponseCode.SUCCESS.getCode(), data);
     }
 
-    public static <T> ServerResponse<T> createBysuccessMsgAndData(String msg,T data){
-        return new ServerResponse<T>(ResponseCode.SUCCESS.getCode(),msg,data);
+    public static <T> ServerResponse<T> createBysuccessMsgAndData(String msg, T data) {
+        return new ServerResponse<T>(ResponseCode.SUCCESS.getCode(), msg, data);
     }
 
     //失败的返回值
-    public static <T> ServerResponse<T> createByError(){
-        return new ServerResponse<T>(ResponseCode.ERROR.getCode(),ResponseCode.ERROR.getDesc());
+    public static <T> ServerResponse<T> createByError() {
+        return new ServerResponse<T>(ResponseCode.ERROR.getCode(), ResponseCode.ERROR.getDesc());
     }
 
-    public static <T> ServerResponse<T> createByErrorMsg(String msg){
-        return new ServerResponse<T>(ResponseCode.ERROR.getCode(),msg);
+    public static <T> ServerResponse<T> createByErrorMsg(String msg) {
+        return new ServerResponse<T>(ResponseCode.ERROR.getCode(), msg);
     }
 
-    public static <T> ServerResponse<T> createByError(int errorCode,String msg){
-        return new ServerResponse<T>(errorCode,msg);
+    public static <T> ServerResponse<T> createByError(int errorCode, String msg) {
+        return new ServerResponse<T>(errorCode, msg);
     }
 }

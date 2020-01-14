@@ -1,4 +1,4 @@
-package lllr.test.breast.service.Inte;
+package lllr.test.breast.service.inter;
 
 import lllr.test.breast.common.ServerResponse;
 import lllr.test.breast.dataObject.Article;

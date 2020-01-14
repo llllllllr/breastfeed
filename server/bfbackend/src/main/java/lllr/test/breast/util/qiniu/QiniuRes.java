@@ -1,4 +1,5 @@
 package lllr.test.breast.util.qiniu;
+
 import java.io.Serializable;
 
 public class QiniuRes implements Serializable {

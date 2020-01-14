@@ -1,8 +1,8 @@
-package lllr.test.breast.service.Impl;
+package lllr.test.breast.service.impl;
 
 import lllr.test.breast.dao.mapper.AdministratorMapper;
 import lllr.test.breast.dataObject.user.Administrator;
-import lllr.test.breast.service.Inte.AdministratorService;
+import lllr.test.breast.service.inter.AdministratorService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -18,8 +18,8 @@ public class AdministratorServiceImpl implements AdministratorService {
         List<Administrator> list = administratorMapper.selectByAdministratorName(administratorName);
 
         //判断密码是否正确
-        if(list != null && list.size() == 1)
-            if(list.get(0).getAdministratorPassword().equals(administratorPassword))
+        if (list != null && list.size() == 1)
+            if (list.get(0).getAdministratorPassword().equals(administratorPassword))
                 return list.get(0);
 
         return null;
@@ -29,8 +29,8 @@ public class AdministratorServiceImpl implements AdministratorService {
     public Administrator administratorTokenSign(String administrator_token) {
         List<Administrator> list = administratorMapper.selectByAdministratorToken(administrator_token);
 
-        if(list != null && list.size() == 1)
-            if(list.get(0).getAdministratorToken().equals(administrator_token))
+        if (list != null && list.size() == 1)
+            if (list.get(0).getAdministratorToken().equals(administrator_token))
                 return list.get(0);
 
         return null;

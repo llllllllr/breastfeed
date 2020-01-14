@@ -1,6 +1,8 @@
 package lllr.test.breast.controller;
 
-import lllr.test.breast.service.Inte.FaceService;
+import lllr.test.breast.service.inter.FaceService;
+import lllr.test.breast.util.exception.ImageException;
+import lllr.test.breast.util.face.FaceUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
@@ -11,6 +13,7 @@ import org.springframework.web.multipart.MultipartFile;
 
 import javax.servlet.http.HttpServletRequest;
 import java.io.*;
+import java.util.Map;
 import java.util.UUID;
 
 @Controller
@@ -23,12 +26,15 @@ public class UserFaceController {
     @Autowired
     private FaceService faceService;
 
+    @Autowired
+    private FaceUtil faceUtil;
+
     //人脸注册
     @ResponseBody
     @RequestMapping("/face")
-    public String faceRegister(HttpServletRequest request, @RequestParam("file") MultipartFile file){
+    public String faceRegister(HttpServletRequest request, @RequestParam("file") MultipartFile file) {
 
-        if(file != null) {
+        if (file != null) {
 
             System.out.println(file.getOriginalFilename() + file.getSize());
 
@@ -38,6 +44,13 @@ public class UserFaceController {
             File outFile = new File(imageTempLocation + UUID.randomUUID().toString() + fileName);
             try {
                 file.transferTo(outFile);
+
+                try {
+                    Map<String,Object> dataMap = faceUtil.DetectFace(outFile);
+                    System.out.println(dataMap);
+                } catch (ImageException e) {
+                    e.printStackTrace();
+                }
 
                 //调用 事务层 方法
                 faceService.FaceRegister(outFile);

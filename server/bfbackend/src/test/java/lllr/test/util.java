@@ -8,7 +8,7 @@ import javax.xml.crypto.Data;
 
 public class util {
     @Test
-    public void fun(){
+    public void fun() {
         Object object = null;
         Object object1 = new Object();
         String string = "";
@@ -26,7 +26,7 @@ public class util {
     }
 
     @Test
-    public void fun1(){
+    public void fun1() {
         try {
             System.out.println(DataValidateUtil.length("object", 6, 0));
             System.out.println(DataValidateUtil.length("object", 6, 1));
@@ -36,15 +36,14 @@ public class util {
             //System.out.println(DataValidateUtil.length("sdf", Integer.MAX_VALUE + 1, 0));
             System.out.println(DataValidateUtil.length("sdf", -1, 0));
 
-        }catch (Exception e)
-        {
+        } catch (Exception e) {
             System.out.println(e.getMessage());
         }
 
     }
 
     @Test
-    public void fun2(){
+    public void fun2() {
         System.out.println(DataValidateUtil.ageValidate(-1));
         System.out.println(DataValidateUtil.ageValidate(111));
         System.out.println(DataValidateUtil.ageValidate(50));

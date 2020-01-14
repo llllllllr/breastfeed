@@ -1,106 +1,106 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="lllr.test.breast.dao.mapper.ArticleMapper">
-  <resultMap id="BaseResultMap" type="lllr.test.breast.dataObject.Article">
-    <id column="id" jdbcType="INTEGER" property="id" />
-    <result column="title" jdbcType="VARCHAR" property="title" />
-    <result column="description" jdbcType="VARCHAR" property="description" />
-    <result column="imgUrl" jdbcType="VARCHAR" property="imgurl" />
-    <result column="content" jdbcType="VARCHAR" property="content" />
-    <result column="category" jdbcType="VARCHAR" property="category" />
-  </resultMap>
-  <sql id="Base_Column_List">
-    id, title, description, imgUrl, content, category
-  </sql>
-  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
-    select 
-    <include refid="Base_Column_List" />
-    from article
-    where id = #{id,jdbcType=INTEGER}
-  </select>
-  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
-    delete from article
-    where id = #{id,jdbcType=INTEGER}
-  </delete>
-  <insert id="insert" parameterType="lllr.test.breast.dataObject.Article">
-    insert into article (id, title, description, 
-      imgUrl, content, category
-      )
-    values (#{id,jdbcType=INTEGER}, #{title,jdbcType=VARCHAR}, #{description,jdbcType=VARCHAR}, 
-      #{imgurl,jdbcType=VARCHAR}, #{content,jdbcType=VARCHAR}, #{category,jdbcType=VARCHAR}
-      )
-  </insert>
-  <insert id="insertSelective" parameterType="lllr.test.breast.dataObject.Article">
-    insert into article
-    <trim prefix="(" suffix=")" suffixOverrides=",">
-      <if test="id != null">
-        id,
-      </if>
-      <if test="title != null">
-        title,
-      </if>
-      <if test="description != null">
-        description,
-      </if>
-      <if test="imgurl != null">
-        imgUrl,
-      </if>
-      <if test="content != null">
-        content,
-      </if>
-      <if test="category != null">
-        category,
-      </if>
-    </trim>
-    <trim prefix="values (" suffix=")" suffixOverrides=",">
-      <if test="id != null">
-        #{id,jdbcType=INTEGER},
-      </if>
-      <if test="title != null">
-        #{title,jdbcType=VARCHAR},
-      </if>
-      <if test="description != null">
-        #{description,jdbcType=VARCHAR},
-      </if>
-      <if test="imgurl != null">
-        #{imgurl,jdbcType=VARCHAR},
-      </if>
-      <if test="content != null">
-        #{content,jdbcType=VARCHAR},
-      </if>
-      <if test="category != null">
-        #{category,jdbcType=VARCHAR},
-      </if>
-    </trim>
-  </insert>
-  <update id="updateByPrimaryKeySelective" parameterType="lllr.test.breast.dataObject.Article">
-    update article
-    <set>
-      <if test="title != null">
-        title = #{title,jdbcType=VARCHAR},
-      </if>
-      <if test="description != null">
+    <resultMap id="BaseResultMap" type="lllr.test.breast.dataObject.Article">
+        <id column="id" jdbcType="INTEGER" property="id"/>
+        <result column="title" jdbcType="VARCHAR" property="title"/>
+        <result column="description" jdbcType="VARCHAR" property="description"/>
+        <result column="imgUrl" jdbcType="VARCHAR" property="imgurl"/>
+        <result column="content" jdbcType="VARCHAR" property="content"/>
+        <result column="category" jdbcType="VARCHAR" property="category"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+        id, title, description, imgUrl, content, category
+    </sql>
+    <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from article
+        where id = #{id,jdbcType=INTEGER}
+    </select>
+    <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+        delete from article
+        where id = #{id,jdbcType=INTEGER}
+    </delete>
+    <insert id="insert" parameterType="lllr.test.breast.dataObject.Article">
+        insert into article (id, title, description,
+        imgUrl, content, category
+        )
+        values (#{id,jdbcType=INTEGER}, #{title,jdbcType=VARCHAR}, #{description,jdbcType=VARCHAR},
+        #{imgurl,jdbcType=VARCHAR}, #{content,jdbcType=VARCHAR}, #{category,jdbcType=VARCHAR}
+        )
+    </insert>
+    <insert id="insertSelective" parameterType="lllr.test.breast.dataObject.Article">
+        insert into article
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="id != null">
+                id,
+            </if>
+            <if test="title != null">
+                title,
+            </if>
+            <if test="description != null">
+                description,
+            </if>
+            <if test="imgurl != null">
+                imgUrl,
+            </if>
+            <if test="content != null">
+                content,
+            </if>
+            <if test="category != null">
+                category,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="id != null">
+                #{id,jdbcType=INTEGER},
+            </if>
+            <if test="title != null">
+                #{title,jdbcType=VARCHAR},
+            </if>
+            <if test="description != null">
+                #{description,jdbcType=VARCHAR},
+            </if>
+            <if test="imgurl != null">
+                #{imgurl,jdbcType=VARCHAR},
+            </if>
+            <if test="content != null">
+                #{content,jdbcType=VARCHAR},
+            </if>
+            <if test="category != null">
+                #{category,jdbcType=VARCHAR},
+            </if>
+        </trim>
+    </insert>
+    <update id="updateByPrimaryKeySelective" parameterType="lllr.test.breast.dataObject.Article">
+        update article
+        <set>
+            <if test="title != null">
+                title = #{title,jdbcType=VARCHAR},
+            </if>
+            <if test="description != null">
+                description = #{description,jdbcType=VARCHAR},
+            </if>
+            <if test="imgurl != null">
+                imgUrl = #{imgurl,jdbcType=VARCHAR},
+            </if>
+            <if test="content != null">
+                content = #{content,jdbcType=VARCHAR},
+            </if>
+            <if test="category != null">
+                category = #{category,jdbcType=VARCHAR},
+            </if>
+        </set>
+        where id = #{id,jdbcType=INTEGER}
+    </update>
+    <update id="updateByPrimaryKey" parameterType="lllr.test.breast.dataObject.Article">
+        update article
+        set title = #{title,jdbcType=VARCHAR},
         description = #{description,jdbcType=VARCHAR},
-      </if>
-      <if test="imgurl != null">
         imgUrl = #{imgurl,jdbcType=VARCHAR},
-      </if>
-      <if test="content != null">
         content = #{content,jdbcType=VARCHAR},
-      </if>
-      <if test="category != null">
-        category = #{category,jdbcType=VARCHAR},
-      </if>
-    </set>
-    where id = #{id,jdbcType=INTEGER}
-  </update>
-  <update id="updateByPrimaryKey" parameterType="lllr.test.breast.dataObject.Article">
-    update article
-    set title = #{title,jdbcType=VARCHAR},
-      description = #{description,jdbcType=VARCHAR},
-      imgUrl = #{imgurl,jdbcType=VARCHAR},
-      content = #{content,jdbcType=VARCHAR},
-      category = #{category,jdbcType=VARCHAR}
-    where id = #{id,jdbcType=INTEGER}
-  </update>
+        category = #{category,jdbcType=VARCHAR}
+        where id = #{id,jdbcType=INTEGER}
+    </update>
 </mapper>

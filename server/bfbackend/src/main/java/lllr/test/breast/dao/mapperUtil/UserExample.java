@@ -49,6 +49,7 @@ public class UserExample {
         oredCriteria.add(criteria);
         return criteria;
     }
+
     //创建空条件
     public Criteria createCriteria() {
         Criteria criteria = createCriteriaInternal();
@@ -57,6 +58,7 @@ public class UserExample {
         }
         return criteria;
     }
+
     //创建空条件
     protected Criteria createCriteriaInternal() {
         Criteria criteria = new Criteria();

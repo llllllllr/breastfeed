@@ -1,9 +1,9 @@
-package lllr.test.breast.service.Impl;
+package lllr.test.breast.service.impl;
 
 import lllr.test.breast.common.ServerResponse;
 import lllr.test.breast.dao.mapper.ArticleMapper;
 import lllr.test.breast.dataObject.Article;
-import lllr.test.breast.service.Inte.ArticleService;
+import lllr.test.breast.service.inter.ArticleService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -17,12 +17,12 @@ public class ArticleServiceImpl implements ArticleService {
     @Override
     public ServerResponse<String> addArticle(Article article) {
 
-        if(article == null)
+        if (article == null)
             return ServerResponse.createByErrorMsg("article 参数错误");
         int insertCount = articleMapper.insert(article);
-        if(insertCount > 0){
+        if (insertCount > 0) {
             return ServerResponse.createBysuccessMsg("插入文章成功");
-        }else{
+        } else {
             return ServerResponse.createByErrorMsg("插入文章失败");
         }
     }

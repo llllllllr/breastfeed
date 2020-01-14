@@ -1,9 +1,11 @@
 package lllr.test.breast.dao.mapper;
 
 import java.util.List;
+
 import lllr.test.breast.dataObject.user.User;
 import lllr.test.breast.dao.mapperUtil.UserExample;
 import org.apache.ibatis.annotations.Param;
+
 public interface UserMapper {
     long countByExample(UserExample example);
 

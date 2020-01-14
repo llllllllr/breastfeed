@@ -855,6 +855,7 @@ public abstract class UserGeneratedCriteria {
         addCriterion("user_token not between", value1, value2, "userToken");
         return (UserExample.Criteria) this;
     }
+
     public class Criterion {
         private String condition;
 
