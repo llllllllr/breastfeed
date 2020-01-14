@@ -13,7 +13,6 @@ import org.springframework.web.multipart.MultipartFile;
 
 import javax.servlet.http.HttpServletRequest;
 import java.io.*;
-import java.util.Map;
 import java.util.UUID;
 
 @Controller
@@ -25,9 +24,6 @@ public class UserFaceController {
 
     @Autowired
     private FaceService faceService;
-
-    @Autowired
-    private FaceUtil faceUtil;
 
     //人脸注册
     @ResponseBody
@@ -45,16 +41,9 @@ public class UserFaceController {
             try {
                 file.transferTo(outFile);
 
-                try {
-                    Map<String,Object> dataMap = faceUtil.DetectFace(outFile);
-                    System.out.println(dataMap);
-                } catch (ImageException e) {
-                    e.printStackTrace();
-                }
-
                 //调用 事务层 方法
                 faceService.FaceRegister(outFile);
-            } catch (IOException e) {
+            } catch (Exception e) {
                 e.printStackTrace();
             }
 
