@@ -9,12 +9,14 @@ import lllr.test.breast.util.face.FaceUtil;
 import net.minidev.json.JSONUtil;
 import okhttp3.*;
 import org.junit.Test;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.io.File;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.logging.Logger;
 
 public class FaceTest {
     private OkHttpClient client = new OkHttpClient();
@@ -22,7 +24,8 @@ public class FaceTest {
     private final String FACE_API_SECRET = "jj_UFc-svreUylZ0A3v3TDmUGlguMEti";
     private final String OUTER_ID = "123456";
     private final String DISPLAY_NAME = "breast_test";
-
+    private final String pangzi = "dd0c567313b8f706aeab27ae2b648502";
+    private  final String wo = "e6c60682ed30f04e8b546035c6002f20";
 
     @Test
     public void test() throws IOException {
@@ -68,7 +71,7 @@ public class FaceTest {
     //detect
     @Test
     public void test2() throws IOException {
-        File file = new File("D:\\软件应用\\java IDE\\IntelliJ IDEA 2019.1\\项目\\breastfeed\\breastfeed\\server\\bfbackend\\src\\main\\resources\\UserFaceImage\\ddd.jpg");
+        File file = new File("D:\\软件应用\\java IDE\\IntelliJ IDEA 2019.1\\项目\\breastfeed\\breastfeed\\server\\bfbackend\\src\\main\\resources\\UserFaceImage\\bbb.jpg");
 
         //1.创建对应的MediaType
         final MediaType MEDIA_TYPE_JPG = MediaType.parse("image/jpg");
@@ -110,13 +113,14 @@ public class FaceTest {
         System.out.println(dataContent.toJSONString());
     }
 
+    //add
     @Test
     public void test5(){
         RequestBody requestBody = new FormBody.Builder()
                 .add("api_key",FACE_API_KEY)
                 .add("api_secret",FACE_API_SECRET)
                 .add("outer_id","123456")
-                .add("face_tokens","a0fca38278961d3fb4a7f33b9626633f")
+                .add("face_tokens",wo)
                 .build();
 
         Request request = new Request.Builder()
@@ -171,33 +175,69 @@ public class FaceTest {
 
     @Test
     public void test7(){
-        String a = "{\"time_used\": 136, \"faces\": [{\"face_rectangle\": {\"width\": 81, \"top\": 195, \"left\": 187, \"height\": 81}, \"face_token\": \"994fb01c8dcd4af36fc148ba1ef34788\"}], \"image_id\": \"QpdwCbFHZ+qMB9Iezn/QbQ==\", \"request_id\": \"1579007350,feb5b876-5d91-42b7-a2b3-6d668ac05850\", \"face_num\": 1}";
-        Map<String,Object> b = JSON.parseObject(a,Map.class);
-        JSONArray d = (JSONArray) b.get("faces");
-        System.out.println(d.getJSONObject(0).get("face_token"));
-        System.out.println(d);
+        int a = Integer.parseInt("1");
+        System.out.println(a);
     }
 
     //search
     /*
     {"thresholds":{"1e-5":73.975,"1e-4":69.101,"1e-3":62.327},"request_id":"1579011789,d4e601dd-31d8-47b0-be4f-6c0a9fda995b","results":[{"user_id":"","confidence":97.005,"face_token":"a0fca38278961d3fb4a7f33b9626633f"}],"time_used":341}
+    {"thresholds":{"1e-5":73.975,"1e-4":69.101,"1e-3":62.327},"request_id":"1579052398,b9fa3f4b-c06e-4759-b466-f0cd93dfa39c","results":[{"user_id":"","confidence":97.389,"face_token":"a0fca38278961d3fb4a7f33b9626633f"}],"time_used":426}
+    {"thresholds":{"1e-5":73.975,"1e-4":69.101,"1e-3":62.327},"request_id":"1579052424,cdb720bc-2c33-44d1-b0ba-3f37f1155bae","results":[{"user_id":"","confidence":97.389,"face_token":"a0fca38278961d3fb4a7f33b9626633f"},{"user_id":"","confidence":97.389,"face_token":"66092695c5a239e075997ad3f1ab8fef"}],"time_used":310}
+    {"thresholds":{"1e-5":73.975,"1e-4":69.101,"1e-3":62.327},"request_id":"1579052496,1028d356-e0f9-4794-bd64-f41198a2b2aa","results":[{"user_id":"","confidence":97.389,"face_token":"a0fca38278961d3fb4a7f33b9626633f"},{"user_id":"","confidence":97.389,"face_token":"66092695c5a239e075997ad3f1ab8fef"}],"time_used":284}
 
 
      */
     @Test
     public void test8(){
-        String face_token = "4ab0e9c7ab820cf571888e0a67b949d2";
         //设置请求参数   表单格式
         RequestBody requestBody = new FormBody.Builder()
                 .add("api_key",FACE_API_KEY)
                 .add("api_secret",FACE_API_SECRET)
                 .add("outer_id",OUTER_ID)
-                .add("face_token",face_token)
-                .add("return_result_count","1")
+                .add("face_token",wo)
+                .add("return_result_count","3")
                 .build();
 
         Request request = new Request.Builder()
                 .url("https://api-cn.faceplusplus.com/facepp/v3/search")
+                .post(requestBody)
+                .build();
+
+        Map<String,Object> dataMap = null;
+        OkHttpClient client = new OkHttpClient();
+
+        try (Response response = client.newCall(request).execute()) {
+
+            //将请求得到的 参数字符串 放入 Map中
+            dataMap = JSON.parseObject(response.body().string());
+            JSONObject thresholds = (JSONObject) dataMap.get("thresholds");
+            float similar_score = thresholds.getFloat("1e-5");
+            System.out.println(similar_score);
+
+        }catch (IOException e){
+            e.printStackTrace();
+        }
+
+        //返回 请求 得到的 参数
+        System.out.println(dataMap);
+
+    }
+
+    //delete
+
+    @Test
+    public void test9(){
+        //设置请求参数   表单格式
+        RequestBody requestBody = new FormBody.Builder()
+                .add("api_key",FACE_API_KEY)
+                .add("api_secret",FACE_API_SECRET)
+                .add("outer_id",OUTER_ID)
+                .add("check_empty","0")
+                .build();
+
+        Request request = new Request.Builder()
+                .url("https://api-cn.faceplusplus.com/facepp/v3/faceset/delete")
                 .post(requestBody)
                 .build();
 
@@ -215,6 +255,7 @@ public class FaceTest {
 
         //返回 请求 得到的 参数
         System.out.println(dataMap);
-
     }
+
+
 }

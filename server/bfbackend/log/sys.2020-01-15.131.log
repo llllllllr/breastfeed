@@ -1,0 +1,6 @@
+2020-01-15 21:28:47,742 [INFO] (StartupInfoLogger.java:59)- Started BreastApplication in 3.226 seconds (JVM running for 4.759)
+2020-01-15 21:29:08,128 [INFO] (UserFaceController.java:36)- ===人脸注册图片名称：wx8b444a502cdbf1e5.o6zAJs2XJzZYspbUKdArzZWY7KD8.YacKEfWNbHyS36c2af441fb41df209fd791846e798dd.jpg  大小：71426=== 
+2020-01-15 21:29:09,767 [INFO] (UserFaceController.java:36)- ===人脸注册图片名称：wx8b444a502cdbf1e5.o6zAJs2XJzZYspbUKdArzZWY7KD8.O2Nmz32SBOSG6cda8dc9005df738097a87e09176d5aa.jpg  大小：71598=== 
+2020-01-15 21:29:11,709 [DEBUG] (FaceServiceImpl.java:75)- === DetectFace： {face_num=0, faces=[], image_id=SYDlpFCGQX8K/2vCFaUHQA==, request_id=1579094951,59080736-88c9-42f0-a743-c1593611e915, time_used=134}===
+2020-01-15 21:29:11,709 [DEBUG] (FaceServiceImpl.java:75)- === DetectFace： {face_num=0, faces=[], image_id=RxctKsASnWD7YOoDW3OmBQ==, request_id=1579094951,86ac307b-f74d-43cb-915f-05b08ff2cf56, time_used=66}===
+2020-01-15 21:29:11,946 [INFO] (UserFaceController.java:36)- ===人脸注册图片名称：wx8b444a502cdbf1e5.o6zAJs2XJzZYspbUKdArzZWY7KD8.H6nPPmexORF1bbedda6f28adafd3b9499dba1d2d6d53.jpg  大小：72074=== 

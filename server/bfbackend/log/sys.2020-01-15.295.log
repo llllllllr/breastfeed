@@ -1,0 +1,5 @@
+2020-01-15 21:42:23,841 [DEBUG] (FaceServiceImpl.java:131)- === AddFace： {failure_detail=[], face_count=196, face_added=1, faceset_token=cb8ccd2910ff977638bdc457e070fe63, request_id=1579095742,f18e254b-c75d-46f4-a0e5-adcc672e0c60, outer_id=123456, time_used=437}===
+2020-01-15 21:42:23,845 [DEBUG] (FaceServiceImpl.java:141)- === 人脸识别注册成功！ face_token： 70292309694a068b7da465aeecd17679===
+2020-01-15 21:42:23,844 [DEBUG] (FaceServiceImpl.java:101)- === SearchFace： {thresholds={"1e-5":73.975,"1e-4":69.101,"1e-3":62.327}, request_id=1579095742,9803e144-e576-4984-b055-1843256864e1, results=[{"user_id":"","confidence":95.045,"face_token":"18bebc92685c6f92751d3d645f52b14a"}], time_used=296}===
+2020-01-15 21:42:23,846 [DEBUG] (FaceServiceImpl.java:123)- === 已注册过，无效注册！===
+2020-01-15 21:42:52,058 [INFO] (UserFaceController.java:36)- ===人脸注册图片名称：wx8b444a502cdbf1e5.o6zAJs2XJzZYspbUKdArzZWY7KD8.G4zi1m2nCqArc09049d8206787a68eb7ea74ee94a409.jpg  大小：85407=== 
