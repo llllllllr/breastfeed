@@ -43,7 +43,7 @@ public final class FaceUtil {
     url -> 要访问的外部api
     formData - > 表单数据
     */
-    private Map<String,Object> FormPostHttp(@NotNull String url,Map<String,String> formData){
+    private Map<String,Object> FormPostHttp(@NotNull String url,Map<String,String> formData) throws IOException {
         //创建表单体内容
         ////设置请求参数   表单格式
         FormBody.Builder formBodyBuilder = new FormBody.Builder();
@@ -84,7 +84,8 @@ public final class FaceUtil {
             if(bodyContent != null)
                 dataMap = JSON.parseObject(bodyContent,Map.class);
         } catch (IOException e) {
-            e.printStackTrace();
+            LOGGER.error("=== FormPostHttp: " + e.getMessage() + "===");
+            throw new IOException("网络连接错误!");
         }
 
         //返回 请求 得到的 参数
@@ -128,7 +129,7 @@ public final class FaceUtil {
      url -> 要访问的外部api
      requestData - > 表单数据
      */
-    private Map<String,Object> FilePostHtpp(@NotNull File imageFile,@NotNull String url,Map<String,String> requestData) throws ImageException {
+    private Map<String,Object> FilePostHtpp(@NotNull File imageFile,@NotNull String url,Map<String,String> requestData) throws ImageException, IOException {
         //检查图片的类型
         isCorrectImage(imageFile);
 
@@ -171,6 +172,7 @@ public final class FaceUtil {
             dataMap = JSON.parseObject(response.body().string(),Map.class);
         } catch (IOException e) {
             LOGGER.error("=== FilePostHttp: " + e.getMessage() + "===");
+            throw new IOException("网络连接错误!");
         }
 
         return dataMap;
@@ -186,7 +188,7 @@ public final class FaceUtil {
 
     imageFile -> 人脸识别上传的图片
      */
-    public Map<String,Object> DetectFace(@NotNull File imageFile) throws ImageException {
+    public Map<String,Object> DetectFace(@NotNull File imageFile) throws ImageException, IOException {
 
         return FilePostHtpp(imageFile,"https://api-cn.faceplusplus.com/facepp/v3/detect",null);
 
@@ -238,7 +240,7 @@ public final class FaceUtil {
     为一个已经创建的 FaceSet 添加人脸标识 face_token
      */
 
-    public Map<String,Object> AddFace(@NotNull String face_token) {
+    public Map<String,Object> AddFace(@NotNull String face_token) throws IOException {
 
 
         Map<String,String> dataForm = new HashMap<>();
@@ -283,7 +285,7 @@ public final class FaceUtil {
     创建脸集
     创建一个人脸的集合 FaceSet，用于存储人脸标识 face_token。一个 FaceSet 能够存储10000个 face_token。
      */
-    private Map<String,Object> CreateFaceSet(){
+    private Map<String,Object> CreateFaceSet() throws IOException {
         Map<String,String> dataForm = new HashMap<>();
         dataForm.put("outer_id",OUTER_ID);
         dataForm.put("display_name",DISPLAY_NAME);
@@ -324,7 +326,7 @@ public final class FaceUtil {
     /*
     删除一个脸集
      */
-    private Map<String,Object> DeleteFaceSet(){
+    private Map<String,Object> DeleteFaceSet() throws IOException {
         Map<String,String> dataForm = new HashMap<>();
         dataForm.put("outer_id",OUTER_ID);
 
@@ -367,7 +369,7 @@ public final class FaceUtil {
     参数为 face_token
     在一个已有的 FaceSet 中找出与目标人脸最相似的一张或多张人脸，返回置信度和不同误识率下的阈值。
      */
-    public Map<String,Object> SearchFace(@NotNull String face_token) {
+    public Map<String,Object> SearchFace(@NotNull String face_token) throws IOException {
 
         Map<String,String> dataForm = new HashMap<>();
         dataForm.put("outer_id",OUTER_ID);
@@ -409,7 +411,7 @@ public final class FaceUtil {
     查询 脸集 中是否有该人脸
     参数为 File(上传的图片)
      */
-    public Map<String,Object> SearchFace(@NotNull File imageFile) throws ImageException {
+    public Map<String,Object> SearchFace(@NotNull File imageFile) throws ImageException, IOException {
         Map<String,String> requestData = new HashMap<>();
         requestData.put("outer_id",OUTER_ID);
 

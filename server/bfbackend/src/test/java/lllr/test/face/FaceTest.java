@@ -42,6 +42,7 @@ public class FaceTest {
         }
     }
 
+
     @Test
     public void test1() throws IOException {
         final MediaType JSON
@@ -82,7 +83,7 @@ public class FaceTest {
         //3.构建MultipartBody
         RequestBody requestBody = new MultipartBody.Builder()
                 .setType(MultipartBody.FORM)
-                .addFormDataPart("image_file", "testImage.png", fileBody)
+                .addFormDataPart("image_file", "testImage.jpg", fileBody)
                 .addFormDataPart("api_key","y9FpstX_g8NM6Q0DnDfwm9Z3YaU-Jqes")
                 .addFormDataPart("api_secret","jj_UFc-svreUylZ0A3v3TDmUGlguMEti")
                 .build();
@@ -120,7 +121,7 @@ public class FaceTest {
                 .add("api_key",FACE_API_KEY)
                 .add("api_secret",FACE_API_SECRET)
                 .add("outer_id","123456")
-                .add("face_tokens",wo)
+                .add("face_tokens",pangzi)
                 .build();
 
         Request request = new Request.Builder()

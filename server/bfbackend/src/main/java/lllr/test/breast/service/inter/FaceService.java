@@ -1,12 +1,14 @@
 package lllr.test.breast.service.inter;
 
 import lllr.test.breast.util.exception.FaceException;
+import lllr.test.breast.util.face.UserFaceRes;
 
 import java.io.File;
+import java.io.IOException;
 
 public interface FaceService {
-    void FaceSign(File image) throws FaceException;        //人脸登录
+    Object FaceSign(File image) throws FaceException;        //人脸登录
 
-    void FaceRegister(File image) throws FaceException;       //人脸注册
+    Object FaceRegister(File image) throws FaceException, IOException;       //人脸注册
 
 }

@@ -6,6 +6,8 @@ import lllr.test.breast.service.inter.FaceService;
 import lllr.test.breast.util.exception.FaceException;
 import lllr.test.breast.util.exception.ImageException;
 import lllr.test.breast.util.face.FaceUtil;
+import lllr.test.breast.util.face.UserFaceRes;
+import lllr.test.breast.util.face.UserFaceResUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,6 +15,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
 import java.io.File;
+import java.io.IOException;
 import java.util.Map;
 
 @Service
@@ -82,14 +85,15 @@ public class FaceServiceImpl implements FaceService {
     1.用 Search 方法 查询 脸集中是否有这个 人
     2.验证成功 进入主页面
     3.验证失败，重新登录
+    返回值 表示 查询的状态 1.登录成功 2. 用户还未登录
      */
     @Override
-    public void FaceSign(File image) throws FaceException {
+    public UserFaceRes FaceSign(File image) throws FaceException {
         Map<String,Object> searchResponseData = null;
 
         try {
             searchResponseData = faceUtil.SearchFace(image);
-        } catch (ImageException e) {
+        } catch (ImageException | IOException e) {
             LOGGER.error("=== FaceSign: " + e.getMessage() + "===");
             throw  new FaceException(e.getMessage());
         }
@@ -97,11 +101,11 @@ public class FaceServiceImpl implements FaceService {
         if(isReadyRegister(searchResponseData))
         {
             LOGGER.debug("=== FaceSign: 人脸验证成功！");
-            return;
+            return UserFaceResUtil.error("人脸验证成功！");
         }
         else{
             LOGGER.debug("=== FaceSign: 人脸验证失败：该用户未注册！");
-            return;
+            return UserFaceResUtil.error("人脸验证失败");
         }
 
 
@@ -115,14 +119,13 @@ public class FaceServiceImpl implements FaceService {
     4.返回成功消息
    */
     @Override
-    public void FaceRegister(File image) throws FaceException {
+    public UserFaceRes FaceRegister(File image) throws FaceException{
         //上传图片返回 人物的 face_token
         Map<String,Object> detectResponseData = null;
         try {
             detectResponseData = faceUtil.DetectFace(image);
             LOGGER.debug("=== DetectFace： " + detectResponseData.toString() + "===");
-        } catch (ImageException e) {
-            e.printStackTrace();
+        } catch (ImageException | IOException e) {
             LOGGER.debug("=== DetectFace: " + e.getMessage() + "===");
             throw new FaceException(e.getMessage());
         }
@@ -137,46 +140,55 @@ public class FaceServiceImpl implements FaceService {
         默认 faces 数组 取 第一个进行处理
         如果 检测不到人或者有多个人则不做处理 ，直接返回
          */
-        if(faces == null || faces.size() == 0 ||faces.size() > 1)
-            return;
+        if(faces != null && faces.size() ==1) {
 
-        JSONObject face = ((JSONArray)detectResponseData.get("faces")).getJSONObject(0);
-        String face_token = (String) face.get("face_token");
+            JSONObject face = ((JSONArray) detectResponseData.get("faces")).getJSONObject(0);
+            String face_token = (String) face.get("face_token");
 
-        //查询 该人是否已经注册过
-        Map<String,Object> searchResponseData = faceUtil.SearchFace(face_token);
+            //查询 该人是否已经注册过
+            Map<String, Object> searchResponseData = null;
+            try {
+                searchResponseData = faceUtil.SearchFace(face_token);
+            } catch (IOException e) {
+                LOGGER.debug("=== DetectFace: " + e.getMessage() + "===");
+                throw new FaceException(e.getMessage());
+            }
 
-        LOGGER.debug("=== SearchFace： " + searchResponseData.toString() + "===");
+            LOGGER.debug("=== SearchFace： " + searchResponseData.toString() + "===");
 
-        //成功添加的人脸集合
-        int face_added = 0;
-        //脸集中已经有该人的数据  说明已经注册过
-        if(isReadyRegister(searchResponseData)){
-            LOGGER.debug("=== 已注册过，无效注册！" + "===");
-            return;
+            //成功添加的人脸集合
+            int face_added = 0;
+            //脸集中已经有该人的数据  说明已经注册过
+            if (isReadyRegister(searchResponseData)) {
+                LOGGER.debug("=== 已注册过，无效注册！" + "===");
+                return UserFaceResUtil.error("已注册过，无效注册！");
+            } else {
+                //该人没有注册过账号，将人脸的数据放入脸集
+                Map<String, Object> addFaceResponseData = null;
+                try {
+                    addFaceResponseData = faceUtil.AddFace(face_token);
+                } catch (IOException e) {
+                    LOGGER.debug("=== DetectFace: " + e.getMessage() + "===");
+                    throw new FaceException(e.getMessage());
+                }
+
+                LOGGER.debug("=== AddFace： " + addFaceResponseData.toString() + "===");
+
+                //检查数据
+                IsErrorMessage(addFaceResponseData);
+                //获取成功添加的人脸个数
+                face_added = (int) addFaceResponseData.get("face_added");
+
+            }
+            //添加成功
+            if (face_added > 0) {
+                LOGGER.debug("=== 人脸识别注册成功！ face_token： " + face_token + "===");
+                return UserFaceResUtil.error("人脸识别注册成功！");
+            }
+
+            LOGGER.debug("=== 人脸识别注册失败！ face_token： " + face_token + "===");
         }
-        else
-        {
-            //该人没有注册过账号，将人脸的数据放入脸集
-            Map<String,Object> addFaceResponseData =  faceUtil.AddFace(face_token);
-
-            LOGGER.debug("=== AddFace： " + addFaceResponseData.toString() + "===");
-
-            //检查数据
-            IsErrorMessage(addFaceResponseData);
-            //获取成功添加的人脸个数
-            face_added = (int) addFaceResponseData.get("face_added");
-
-        }
-        //添加成功
-        if(face_added > 0) {
-            LOGGER.debug("=== 人脸识别注册成功！ face_token： " + face_token + "===");
-            return;
-        }
-
-        LOGGER.debug("=== 人脸识别注册失败！ face_token： " + face_token + "===");
-
         //添加失败
-        return ;
+        return UserFaceResUtil.error("人脸识别注册失败！");
     }
 }
