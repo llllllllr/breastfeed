@@ -1,0 +1,4 @@
+2020-01-21 21:22:48,278 [INFO] (StartupInfoLogger.java:59)- Started BreastApplication in 3.316 seconds (JVM running for 4.853)
+2020-01-21 21:22:51,131 [DEBUG] (UserConsultController.java:47)- ===[111111, 123456, 1579607930205]===
+2020-01-21 21:22:51,132 [DEBUG] (UserConsultController.java:53)- ===1111111234561579607930205===
+2020-01-21 21:22:51,134 [DEBUG] (UserConsultController.java:58)- ===cf2badb63c10674659c05c15437287a3615af214===

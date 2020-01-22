@@ -1,5 +1,8 @@
-2020-01-17 11:46:13,628 [INFO] (StartupInfoLogger.java:59)- Started BreastApplication in 4.471 seconds (JVM running for 6.518)
-2020-01-17 11:46:45,988 [INFO] (UserFaceController.java:66)- ===人脸注册图片名称：wx8b444a502cdbf1e5.o6zAJs2XJzZYspbUKdArzZWY7KD8.RL3pVKbIAHs2b9c791d10ab07d8ca9708ec8a376c1e3.jpg  大小：82648=== 
-2020-01-17 11:46:49,442 [DEBUG] (FaceServiceImpl.java:53)- === SearchFace： {thresholds={"1e-5":73.975,"1e-4":69.101,"1e-3":62.327}, image_id=qlQnvEkuecfRF0488QS7wg==, faces=[{"face_rectangle":{"top":164,"left":211,"width":94,"height":94},"face_token":"b372c6f8a0d34fbad15af458c3f79059"}], request_id=1579232806,78045bab-b342-4ebd-bd8e-37ad882d9246, results=[{"user_id":"","confidence":94.749,"face_token":"9e0e119f6bf302ae6cf8c5935632fd55"}], time_used=387}===
-2020-01-17 11:46:49,443 [DEBUG] (FaceServiceImpl.java:74)- === 该用户在系统注册过===
-2020-01-17 11:46:49,443 [DEBUG] (FaceServiceImpl.java:103)- === FaceSign: 人脸验证成功！
+2020-01-22 22:49:44,565 [INFO] (StartupInfoLogger.java:59)- Started BreastApplication in 3.138 seconds (JVM running for 4.848)
+2020-01-22 22:49:48,770 [DEBUG] (UserConsultImpl.java:102)- === 微信access_token: null===
+2020-01-22 22:51:01,992 [DEBUG] (UserConsultImpl.java:102)- === 微信access_token: null===
+2020-01-22 22:51:08,920 [INFO] (StartupInfoLogger.java:50)- Starting BreastApplication on LAPTOP-562395R3 with PID 6056 (started by 爱哭的周小姐 in D:\软件应用\java IDE\IntelliJ IDEA 2019.1\项目\breastfeed\breastfeed\server\bfbackend)
+2020-01-22 22:51:08,925 [DEBUG] (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2020-01-22 22:51:08,926 [INFO] (SpringApplication.java:648)- No active profile set, falling back to default profiles: default
+2020-01-22 22:51:11,212 [INFO] (StartupInfoLogger.java:59)- Started BreastApplication in 3.944 seconds (JVM running for 5.606)
+2020-01-22 22:51:51,264 [DEBUG] (UserConsultImpl.java:102)- === 微信access_token: 29_VxEiI58CTsIzdPQF3TicvUCv0aaqHR8AwkRQ1KUMzYpI6koJzOk7L-QQCoZg1oGvQlmD1vWDY46joSfkiravxtX0W6rtTr2JHAv9S8HFVLAw4VFPN97aUd30OfUK9njeWUQj2gkBVTE_BsTISPQdAHAIFG===

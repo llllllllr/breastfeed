@@ -15,7 +15,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.util.*;
 
-@ResponseBody
 @Controller
 public class UserController {
     @Autowired
@@ -205,7 +204,7 @@ public class UserController {
 
     //持续化user_token免登录
     @RequestMapping("/")
-    public String userTokenSign(@CookieValue(name = "user_token", required = true) String user_token,
+    public String userTokenSign(@CookieValue(name = "user_token", required = false) String user_token,
                                 HttpServletRequest request,
                                 HttpServletResponse response) {
         //判断用户是否登录
