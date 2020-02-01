@@ -1,22 +1,17 @@
 package lllr.test.breast.controller;
 
 import lllr.test.breast.service.inter.UserConsult;
-import lllr.test.breast.util.DataValidateUtil;
+import lllr.test.breast.util.wx.WXUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-import java.util.HashMap;
 import java.util.Map;
 
 
-@RequestMapping("/consult")
+@RequestMapping("/user/consult")
 @Controller
 public class UserConsultController {
 
@@ -24,6 +19,10 @@ public class UserConsultController {
 
     @Autowired
     private UserConsult userConsult;
+
+    //和微信官方交互
+    @Autowired
+    private WXUtil wxUtil;
 
 
     /*
@@ -36,38 +35,26 @@ public class UserConsultController {
     @ResponseBody
     @GetMapping("")
     public String WXValidate(@RequestParam(value="signature") String signature, @RequestParam(value="timestamp")String timestamp,
-                           @RequestParam(value="nonce") String nonce, @RequestParam(value="echostr")String echostr){
+                           @RequestParam(value="nonce") String nonce, @RequestParam(value="echostr")String echostr) {
 
-        if(userConsult.WXValidate(signature,timestamp,nonce))
+        if (wxUtil.WXValidate(signature, timestamp, nonce))
             return echostr;
 
         return "";
     }
-
 
     /*
     接收用户发送给客服的内容，并根据关键词回复
      */
     @ResponseBody
     @PostMapping("/auto")
-    public String WXAutoReply(@RequestParam(value="FromUserName") String FromUserName, @RequestParam(value="MsgType") String MsgType,
-                              HttpServletRequest request){
-        //将请求参数放入map中
-        Map<String,String> requestData = new HashMap<>();
-        requestData.put("touser",FromUserName);
-        requestData.put("MsgType",MsgType);
+    public String WXAutoReply(@RequestBody Map<String,String> requestData){
+        LOGGER.debug("=== " + requestData.toString() + "===");
 
-        //判断用户的消息类型获取对应的参数
-        /*消息类型和对应的必需参数
-        text-> Content 	文本消息内容
-        image-> PicUrl 	图片链接（由系统生成） MediaId 	图片消息媒体id，可以调用[获取临时素材]((getTempMedia)接口拉取数据。
-        miniprogrampage-> Title 	标题  AppId 	小程序appid  PagePath 	小程序页面路径
-                        ->  ThumbUrl 	封面图片的临时cdn链接   ThumbMediaId 	封面图片的临时素材id
-         */
-
-
-        String access_token = (String) userConsult.WXAutoReply();
-        return access_token;
+        String reply = (String) userConsult.WXAutoReply(requestData);
+        return reply;
     }
+
+
 
 }

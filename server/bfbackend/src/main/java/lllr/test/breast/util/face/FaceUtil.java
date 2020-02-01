@@ -1,6 +1,7 @@
 package lllr.test.breast.util.face;
 
 import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.JSONObject;
 import lllr.test.breast.util.exception.ImageException;
 import okhttp3.*;
 import org.slf4j.Logger;
@@ -98,13 +99,13 @@ public final class FaceUtil {
     face++ 要求上传的图片为  jpg（jpeg），png
     判别图片的类型是否为 jpg（jpeg），png，不是抛出异常
      */
-    private void isCorrectType(@NotNull File imageFile) throws ImageException {
+    private String isCorrectType(@NotNull File imageFile) throws ImageException {
         String fileName = imageFile.getName();    //文件的名字
         int index = fileName.lastIndexOf(".");   //计算从后面开始 . 的位置
         String fileType = fileName.substring(index + 1);  //截取图片的类型
 
         if(fileType.equalsIgnoreCase(IMAGE_TYPE[0])||fileType.equalsIgnoreCase(IMAGE_TYPE[1])||fileType.equalsIgnoreCase(IMAGE_TYPE[2]))
-            return ;
+            return fileType.toLowerCase();
         throw new ImageException("图片的格式不正确！");
 
     }
@@ -120,24 +121,24 @@ public final class FaceUtil {
     }
 
     //检查图片的 类型 和 大小 是否合适
-    private void isCorrectImage(@NotNull File imageFile) throws ImageException {
+    private String isCorrectImage(@NotNull File imageFile) throws ImageException {
         isBeyondMaxSize(imageFile);
-        isCorrectType(imageFile);
+        return isCorrectType(imageFile);
     }
     /*
      上传File POST 访问 外部api
      url -> 要访问的外部api
      requestData - > 表单数据
      */
-    private Map<String,Object> FilePostHtpp(@NotNull File imageFile,@NotNull String url,Map<String,String> requestData) throws ImageException, IOException {
+    private Map<String,Object> FilePostHttp(@NotNull File imageFile,@NotNull String url,Map<String,String> requestData) throws ImageException, IOException {
         //检查图片的类型
-        isCorrectImage(imageFile);
+        String fileType = isCorrectImage(imageFile);
 
         //1.创建对应的MediaType
-        final MediaType MEDIA_TYPE_JPG = MediaType.parse("image/jpg");
+        final MediaType MEDIA_TYPE = MediaType.parse("image/" + fileType);
 
         //2.创建RequestBody
-        RequestBody fileBody = RequestBody.create(MEDIA_TYPE_JPG, imageFile);
+        RequestBody fileBody = RequestBody.create(MEDIA_TYPE, imageFile);
 
         //3.构建MultipartBody
         MultipartBody.Builder multipartBodyBuilder = new MultipartBody.Builder()
@@ -190,7 +191,7 @@ public final class FaceUtil {
      */
     public Map<String,Object> DetectFace(@NotNull File imageFile) throws ImageException, IOException {
 
-        return FilePostHtpp(imageFile,"https://api-cn.faceplusplus.com/facepp/v3/detect",null);
+        return FilePostHttp(imageFile,"https://api-cn.faceplusplus.com/facepp/v3/detect",null);
 
 //
 //        //检查图片的类型
@@ -415,7 +416,7 @@ public final class FaceUtil {
         Map<String,String> requestData = new HashMap<>();
         requestData.put("outer_id",OUTER_ID);
 
-        return FilePostHtpp(imageFile,"https://api-cn.faceplusplus.com/facepp/v3/search",requestData);
+        return FilePostHttp(imageFile,"https://api-cn.faceplusplus.com/facepp/v3/search",requestData);
 
     }
 }

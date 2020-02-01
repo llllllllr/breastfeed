@@ -1,10 +1,7 @@
 package lllr.test.breast.dao.mapperUtil;
 
-import lllr.test.breast.dao.mapperUtil.UserGeneratedCriteria;
 
 import java.util.ArrayList;
-import java.util.Date;
-import java.util.Iterator;
 import java.util.List;
 
 public class UserExample {

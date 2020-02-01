@@ -15,10 +15,10 @@
         </commentGenerator>
 
         <jdbcConnection driverClass="com.mysql.cj.jdbc.Driver"
-                        connectionURL="jdbc:mysql://localhost:3306/breastfeed
+                        connectionURL="jdbc:mysql://47.101.204.119:3306/breastfeed
                     ?characterEncoding=utf8&amp;useSSL=false&amp;serverTimezone=UTC"
                         userId="root"
-                        password="123456">
+                        password="Tanglaoshi123()">
             <property name="nullCatalogMeansCurrent" value="true"/>
         </jdbcConnection>
 
@@ -27,7 +27,7 @@
         </javaTypeResolver>
 
         <!--dataobject-->
-        <javaModelGenerator targetPackage="lllr.test.breast.dataObject.user" targetProject="src/main/java">
+        <javaModelGenerator targetPackage="lllr.test.breast.dataObject.consult" targetProject="src/main/java">
             <property name="enableSubPackages" value="true"/>
             <property name="trimStrings" value="true"/>
         </javaModelGenerator>
@@ -41,9 +41,9 @@
             <property name="enableSubPackages" value="true"/>
         </javaClientGenerator>
         <!---->
-        <table tableName="administrator" domainObjectName="Administrator"
-               enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false"
-               enableSelectByExample="false" selectByExampleQueryId="false"/>
+        <table tableName="auto_answer_template" domainObjectName="AutoAnswerTemplate"
+               enableCountByExample="true" enableUpdateByExample="true" enableDeleteByExample="true"
+               enableSelectByExample="true" selectByExampleQueryId="true"/>
     </context>
 
 </generatorConfiguration>
