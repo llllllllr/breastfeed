@@ -1,0 +1,409 @@
+/**index.wxss**/
+
+page {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: white;
+  color: #525252;
+}
+
+.block {
+  height: 8rpx;
+}
+
+.tab {
+  display: flex;
+}
+
+.active {
+  border-bottom: 6rpx solid white;
+  color: #525252;
+  height: 60rpx;
+}
+
+.tab-item {
+  flex: 1;
+  font-size: 10pt;
+  text-align: center;
+  height: 60rpx;
+}
+
+/* 图文界面imageText.WXML */
+
+.content {
+  flex: 1;
+}
+
+.content>swiper {
+  height: 100%;
+}
+
+.itSwiperImage image {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.line {
+  width: 91%;
+  height: 1rpx;
+  border-top: solid 1px #ccccca;
+  text-align: center;
+  margin: auto;
+  padding-bottom: 10rpx;
+}
+
+.article {
+  width: 100%;
+  height: auto;
+  float: left;
+  padding-top: 10px;
+  margin: 15px 0;
+  color: grey;
+}
+
+.article-title {
+  display: block;
+  padding: 3px;
+  font-size: 16px;
+  margin: auto;
+  text-align: center;
+  color:black;
+}
+
+.article image {
+  width: 575rpx;
+  height: 401rpx;
+  text-align: center;
+  margin: 43rpx 92rpx;
+  box-shadow: 2px 3px 8px grey;
+}
+
+.article-content {
+  display: block;
+  float: right;
+  width: 100%;
+  height: 100%;
+  font-size: 12px;
+  overflow: hidden;
+  text-align: center;
+  margin: 4px auto;
+}
+
+/* info音乐页面 */
+
+.father-functionButton {
+  display: flex;
+  height: 150rpx;
+  margin-bottom: 20rpx;
+}
+
+.functionButton {
+  flex: 1;
+}
+
+.functionButton>image {
+  width: 120rpx;
+  height: 120rpx;
+  display: block;
+  margin: 20rpx auto;
+}
+
+.functionButton>view {
+  font-size: 11pt;
+  text-align: center;
+}
+
+.info-list {
+  margin-bottom: 115rpx;
+}
+
+.info-title {
+  margin-top: 83rpx;
+  margin-bottom: 20rpx;
+  margin-left: 35rpx;
+}
+
+.info-inner {
+
+  flex-wrap: wrap;
+}
+
+.list-item {
+ flex: 1;
+margin-bottom: 42rpx;
+border-bottom: solid 0.5rpx lightgrey;
+padding-bottom: 23rpx;
+
+}
+
+.list-item>view {
+text-align: center;
+font-size: 10pt;
+margin: 10rpx auto;
+width: 500rpx;
+display: inline-block;
+
+}
+
+.list-item>image {
+display: inline-block;
+width: 200rpx;
+height: 200rpx;
+border-radius: 10rpx;
+border: 1rpx solid #555;
+margin-left: 12px;
+vertical-align: middle;
+
+
+}
+
+/* 音乐info.wxml底部的播放条 */
+
+.player {
+  display: flex;
+  align-items: center;
+  background: white;
+  border-top: 1px solid lightgrey;
+  height: 112rpx;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.player-music-image {
+  width: 80rpx;
+  height: 80rpx;
+  margin-left: 15rpx;
+  border-radius: 8rpx;
+  border: 1px solid lightgrey;
+}
+
+.player-music-information {
+  flex: 1;
+  font-size: 10pt;
+  line-height: 38rpx;
+  margin-left: 20rpx;
+  padding-bottom: 8rpx;
+}
+
+.player-music-information-singer {
+  color: #888;
+}
+
+.player-controls image {
+  width: 80rpx;
+  height: 80rpx;
+  margin-left: 15rpx;
+}
+.content-info {
+  height: 100%;
+}
+
+/* play.wxml */
+.f-information {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  height: 100%;
+  text-align: center;
+}
+
+.information view {
+  font-size: 11pt;
+  color: #888;
+}
+
+/* /* play.wxml显示专辑页面样式 */
+/* 播放器 */
+
+.content-play {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  height: 100%;
+  text-align: center;
+
+}
+
+.content-play-info > view {
+  color: #888;
+  font-size: 11pt;
+}
+
+.content-play-cover image {
+  animation: rotateImage 10s linear infinite;
+  width: 400rpx;
+  height: 400rpx;
+  border-radius: 50%;
+  border: 1px solid #333;
+}
+
+@keyframes rotateImage {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* /* play.wxml播放进度和时间 */
+
+.content-play-progress {
+  display: flex;
+  align-items: center;
+  margin: 0 35rpx;
+  font-size: 9pt;
+  text-align: center;
+}
+
+.content-play-progress > view {
+  flex: 1;
+}
+
+
+/* 播放列表playList */
+
+.playlist-item {
+  display: flex;
+  align-items: center;
+  border-bottom: 1rpx solid #333;
+  height: 112rpx;
+}
+
+.playlist-cover {
+  width: 80rpx;
+  height: 80rpx;
+  margin-left: 15rpx;
+  border-radius: 8rpx;
+  border: 1px solid #333;
+}
+
+.playlist-info {
+  flex: 1;
+  font-size: 10pt;
+  line-height: 38rpx;
+  margin-left: 20rpx;
+  padding-bottom: 8rpx;
+}
+
+.playlist-info-singer {
+  color: #888;
+}
+
+.playlist-controls {
+  font-size: 10pt;
+  margin-right: 20rpx;
+  color: #c25b5b;
+}
+
+/*---video.wxml--*/
+
+.video-background {
+  background-size: 100%;
+}
+
+.video-item {
+  height: 408rpx;
+  width: 543rpx;
+  border-radius: 8%;
+  margin-left: 14%;
+  position: absolute;
+  left: 0;
+  top: 190rpx;
+}
+
+.video-title {
+  display: block;
+  text-align: center;
+}
+
+.televisionBackground {
+  height: 750rpx;
+  width: 736rpx;
+  z-index: -999;
+  float: left;
+  position: relative;
+  margin-left: 10rpx;
+}
+
+.test {
+  width: 100%;
+  height: 450px;
+  border: 1px solid red;
+  padding: 30px;
+}
+
+.active {
+  color: pink;
+}
+
+.video-content {
+  display: block;
+  padding-bottom: 25rpx;
+  text-align: center;
+}
+
+/* 微课miniclass页面 */
+
+.today_class {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.miniclass-outer-box {
+  display: block;
+  position: relative;
+  width: 321rpx;
+  height: 335rpx;
+  margin: 3%;
+  background: #f2f2f296;
+  border-radius: 5%;
+  margin-left: 4%;
+}
+
+.navigator-hover {
+  background-color: rgba(0, 0, 0, 0);
+  opacity: 0.7;
+}
+
+.miniclass-wrap-box {
+  padding: 1px 1px 0;
+  width: 100%;
+}
+
+.miniclass-inner-box-image {
+  position: relative;
+  overflow: hidden;
+  height: 203rpx;
+  width: 100%;
+  border-radius: 3px 3px 0 0;
+}
+
+.miniclass-image {
+  width: 100%;
+  height: 100%;
+}
+
+.miniclass-inner-box-tit {
+  color: #333;
+  padding: 0 10px;
+  margin-top: 8px;
+  margin-bottom: 4px;
+  min-height: 20px;
+  max-height: 40px;
+  overflow: hidden;
+}
+
+.miniclass-inner-box-tit_name {
+  line-height: 20px;
+  font-size: 14px;
+}
+
+

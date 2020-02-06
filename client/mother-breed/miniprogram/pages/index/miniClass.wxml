@@ -1,0 +1,71 @@
+<scroll-view class="content-info" scroll-y>
+  <view>
+    <!-- 轮播图 -->
+    <!-- 图片绑定函数，点击进入详细图文页 -->
+    <swiper indicator-dots autoplay loop class="itSwiperImage">
+      <swiper-item>
+        <image data-item='0' bindtap="play_class" src="../../images/DB40734F5A3FA90D909EBE80053C16CF.jpg" ></image>
+      </swiper-item>
+      <swiper-item>
+        <image data-item='1' bindtap="play_class"   src="../../images/B0CAC2270A450DDB01D293D15197684E.png" ></image>
+      </swiper-item>
+      <swiper-item>
+        <image  data-item='2' bindtap="play_class"  src="../../images/DB40734F5A3FA90D909EBE80053C16CF.jpg" ></image>
+      </swiper-item>
+    </swiper>
+  </view>
+  <view class="block"></view>
+  <view class="today_class">
+    <view class="block"></view>
+    
+    <block wx:for="{{videoList}}" wx:for-item="item">
+    <view class="miniclass-outer-box" data-item="{{item.id}}" bindtap="play_class">
+      <view class="miniclass-wrap-box">
+        <view class="miniclass-inner-box-image">
+          <image class="miniclass-image" id="#" src="{{item.coverUrl}}" alt="课程图片" />
+        </view>
+        <view class="miniclass-inner-box-tit">
+          <span class="miniclass-inner-box-tit_name">{{item.title}}</span>
+        </view>
+      </view>
+    </view>
+    </block>
+
+  <!--  <view class="miniclass-outer-box" data-item='1' bindtap="play_class">
+ 
+      <view class="miniclass-wrap-box">
+        <view class="miniclass-inner-box-image">
+          <image class="miniclass-image" id="#" src="../../images/B0CAC2270A450DDB01D293D15197684E.png" alt="课程图片" />
+        </view>
+        <view class="miniclass-inner-box-tit">
+          <span class="miniclass-inner-box-tit_name">7个顺产技巧，一胎二胎都能用</span>
+        </view>
+      </view>
+    </view>
+
+    <view class="miniclass-outer-box" data-item='2' bindtap="play_class">
+
+      <view class="miniclass-wrap-box">
+        <view class="miniclass-inner-box-image">
+          <image class="miniclass-image" id="#" src="../../images/DB40734F5A3FA90D909EBE80053C16CF.jpg" alt="课程图片" />
+        </view>
+        <view class="miniclass-inner-box-tit">
+          <span class="miniclass-inner-box-tit_name">8个发育关键点，养出漂亮宝宝</span>
+        </view>
+      </view>
+    </view>
+
+    <view class="miniclass-outer-box" data-item='3' bindtap="play_class">
+
+      <view class="miniclass-wrap-box">
+        <view class="miniclass-inner-box-image">
+          <image class="miniclass-image" id="#" src="../../images/DB40734F5A3FA90D909EBE80053C16CF.jpg" alt="课程图片" />
+        </view>
+        <view class="miniclass-inner-box-tit">
+          <span class="miniclass-inner-box-tit_name">8个发育关键点，养出漂亮宝宝</span>
+        </view>
+      </view>
+    </view> -->
+
+  </view>
+</scroll-view>
