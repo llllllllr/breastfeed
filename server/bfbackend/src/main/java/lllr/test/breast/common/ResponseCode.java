@@ -1,12 +1,12 @@
 package lllr.test.breast.common;
 
-public enum ResponseCode  {
+public enum ResponseCode {
 
-    SUCCESS(1,"成功"),
-    ERROR(0,"失败");
+    SUCCESS(1, "成功"),
+    ERROR(0, "失败");
 
-    private   int code;
-    private  String desc;
+    private int code;
+    private String desc;
 
 
     ResponseCode(int code, String desc) {

@@ -1,0 +1,6 @@
+2020-01-15 23:40:26,721 [INFO] (StartupInfoLogger.java:59)- Started BreastApplication in 3.091 seconds (JVM running for 4.892)
+2020-01-15 23:40:43,470 [INFO] (UserFaceController.java:66)- ===人脸注册图片名称：wx8b444a502cdbf1e5.o6zAJs2XJzZYspbUKdArzZWY7KD8.JZ8GHSaWJTQe36a4ac9289a953fdc1607c39102ba551.jpg  大小：79810=== 
+2020-01-15 23:41:45,683 [DEBUG] (FaceServiceImpl.java:50)- === SearchFace： {thresholds={"1e-5":73.975,"1e-4":69.101,"1e-3":62.327}, image_id=TT3/wIXtx+q7x/z53U8G/A==, faces=[{"face_rectangle":{"top":197,"left":157,"width":65,"height":65},"face_token":"c49895def8c26ae7dd346cdd446b1512"}], request_id=1579102876,0e0c423f-6423-478b-9d98-88d79b8c5528, results=[{"user_id":"","confidence":90.989,"face_token":"e6c60682ed30f04e8b546035c6002f20"}], time_used=406}===
+2020-01-15 23:42:04,756 [DEBUG] (FaceServiceImpl.java:71)- === 已注册过，无效注册！===
+2020-01-15 23:42:35,420 [DEBUG] (FaceServiceImpl.java:99)- === FaceSign: 人脸验证成功！
+2020-01-15 23:43:04,255 [INFO] (UserFaceController.java:66)- ===人脸注册图片名称：wx8b444a502cdbf1e5.o6zAJs2XJzZYspbUKdArzZWY7KD8.Bek7VIoIClYt1e4ffabaf97929f7400b9f6f3e5a01d7.jpg  大小：80214=== 

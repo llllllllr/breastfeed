@@ -1,0 +1,8 @@
+2020-01-15 21:43:28,684 [DEBUG] (FaceServiceImpl.java:101)- === SearchFace： {thresholds={"1e-5":73.975,"1e-4":69.101,"1e-3":62.327}, request_id=1579095808,e4ae55c6-8e1a-433f-ae95-9b3fec3ee6ce, results=[{"user_id":"","confidence":93.912,"face_token":"19ed4ffde009dacc1a48c1735732b352"}], time_used=295}===
+2020-01-15 21:43:28,686 [DEBUG] (FaceServiceImpl.java:101)- === SearchFace： {error_message=CONCURRENCY_LIMIT_EXCEEDED}===
+2020-01-15 21:43:28,695 [DEBUG] (FaceServiceImpl.java:45)- === IsErrorMessage: 返回数据为空 或者 error_messageCONCURRENCY_LIMIT_EXCEEDED===
+2020-01-15 21:43:28,934 [DEBUG] (FaceServiceImpl.java:101)- === SearchFace： {thresholds={"1e-5":73.975,"1e-4":69.101,"1e-3":62.327}, request_id=1579095808,46f9ac3c-059a-475d-86fe-11f4f4129061, results=[{"user_id":"","confidence":92.653,"face_token":"7832f49484ecf73a72826ad5d1be89ff"}], time_used=314}===
+2020-01-15 21:43:29,018 [DEBUG] (FaceServiceImpl.java:101)- === SearchFace： {error_message=CONCURRENCY_LIMIT_EXCEEDED}===
+2020-01-15 21:43:29,019 [DEBUG] (FaceServiceImpl.java:45)- === IsErrorMessage: 返回数据为空 或者 error_messageCONCURRENCY_LIMIT_EXCEEDED===
+2020-01-15 21:43:29,671 [DEBUG] (FaceServiceImpl.java:131)- === AddFace： {error_message=CONCURRENCY_LIMIT_EXCEEDED}===
+2020-01-15 21:43:29,672 [DEBUG] (FaceServiceImpl.java:45)- === IsErrorMessage: 返回数据为空 或者 error_messageCONCURRENCY_LIMIT_EXCEEDED===

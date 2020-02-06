@@ -1,0 +1,6 @@
+2020-01-15 21:28:28,335 [DEBUG] (FaceServiceImpl.java:101)- === SearchFace： {thresholds={"1e-5":73.975,"1e-4":69.101,"1e-3":62.327}, request_id=1579094907,6b29883a-7fb6-4f72-9675-f47c2392c1f8, results=[{"user_id":"","confidence":93.968,"face_token":"c2165571a45c38e4e1ac7517a012e704"}], time_used=301}===
+2020-01-15 21:28:30,070 [DEBUG] (FaceServiceImpl.java:131)- === AddFace： {failure_detail=[], face_count=81, face_added=1, faceset_token=cb8ccd2910ff977638bdc457e070fe63, request_id=1579094908,8fdd300b-ec4c-4a6a-88f2-15bb87c5b3cd, outer_id=123456, time_used=454}===
+2020-01-15 21:28:30,070 [DEBUG] (FaceServiceImpl.java:141)- === 人脸识别注册成功！ face_token： c2ecc0369e66c5e6c88067cb95d01d5d===
+2020-01-15 21:28:45,109 [INFO] (StartupInfoLogger.java:50)- Starting BreastApplication on LAPTOP-562395R3 with PID 10084 (started by 爱哭的周小姐 in D:\软件应用\java IDE\IntelliJ IDEA 2019.1\项目\breastfeed\breastfeed\server\bfbackend)
+2020-01-15 21:28:45,131 [DEBUG] (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2020-01-15 21:28:45,131 [INFO] (SpringApplication.java:648)- No active profile set, falling back to default profiles: default

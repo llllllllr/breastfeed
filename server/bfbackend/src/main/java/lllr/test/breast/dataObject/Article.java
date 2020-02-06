@@ -1,21 +1,17 @@
 package lllr.test.breast.dataObject;
 
-
-import javax.validation.constraints.NotEmpty;
-
 public class Article {
     private Integer id;
 
-    @NotEmpty(message = "标题不能为空")
     private String title;
-    @NotEmpty(message = "简述不能为空")
+
     private String description;
 
-    private String imgUrl;
+    private String imgurl;
+
+    private String content;
 
     private String category;
-    @NotEmpty(message = "文章不能为空")
-    private String content;
 
     public Integer getId() {
         return id;
@@ -41,20 +37,12 @@ public class Article {
         this.description = description == null ? null : description.trim();
     }
 
-    public String getImgUrl() {
-        return imgUrl;
+    public String getImgurl() {
+        return imgurl;
     }
 
-    public void setImgUrl(String imgUrl) {
-        this.imgUrl = imgUrl == null ? null : imgUrl.trim();
-    }
-
-    public String getCategory() {
-        return category;
-    }
-
-    public void setCategory(String category) {
-        this.category = category == null ? null : category.trim();
+    public void setImgurl(String imgurl) {
+        this.imgurl = imgurl == null ? null : imgurl.trim();
     }
 
     public String getContent() {
@@ -63,5 +51,13 @@ public class Article {
 
     public void setContent(String content) {
         this.content = content == null ? null : content.trim();
+    }
+
+    public String getCategory() {
+        return category;
+    }
+
+    public void setCategory(String category) {
+        this.category = category == null ? null : category.trim();
     }
 }

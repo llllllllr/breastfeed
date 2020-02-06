@@ -1,0 +1,7 @@
+2020-01-17 11:35:32,354 [ERROR] (UserFaceController.java:42)- === faceRegisterController:face++ error_message:EMPTY_FACESET===
+2020-01-17 11:39:21,757 [INFO] (StartupInfoLogger.java:50)- Starting BreastApplication on LAPTOP-562395R3 with PID 9424 (started by 爱哭的周小姐 in D:\软件应用\java IDE\IntelliJ IDEA 2019.1\项目\breastfeed\breastfeed\server\bfbackend)
+2020-01-17 11:39:21,811 [DEBUG] (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2020-01-17 11:39:21,813 [INFO] (SpringApplication.java:648)- No active profile set, falling back to default profiles: default
+2020-01-17 11:39:24,834 [INFO] (StartupInfoLogger.java:59)- Started BreastApplication in 5.484 seconds (JVM running for 7.478)
+2020-01-17 11:39:35,894 [INFO] (UserFaceController.java:66)- ===人脸注册图片名称：wx8b444a502cdbf1e5.o6zAJs2XJzZYspbUKdArzZWY7KD8.7YIJAS3njnpC278daa18d2e105491e90091865f60e7b.jpg  大小：82384=== 
+2020-01-17 11:39:38,613 [DEBUG] (FaceServiceImpl.java:127)- === DetectFace： {face_num=1, faces=[{"face_token":"9e0e119f6bf302ae6cf8c5935632fd55","face_rectangle":{"top":165,"left":199,"width":92,"height":92}}], image_id=0JYTHCzonV34TGV5DrOlwA==, request_id=1579232376,32b95d05-53c4-4efd-add7-119df8461a34, time_used=83}===

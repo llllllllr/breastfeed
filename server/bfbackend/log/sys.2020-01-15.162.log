@@ -1,0 +1,6 @@
+2020-01-15 21:30:56,093 [DEBUG] (FaceServiceImpl.java:101)- === SearchFace： {error_message=CONCURRENCY_LIMIT_EXCEEDED}===
+2020-01-15 21:30:56,095 [DEBUG] (FaceServiceImpl.java:45)- === IsErrorMessage: 返回数据为空 或者 error_messageCONCURRENCY_LIMIT_EXCEEDED===
+2020-01-15 21:30:56,169 [DEBUG] (FaceServiceImpl.java:131)- === AddFace： {failure_detail=[], face_count=107, face_added=1, faceset_token=cb8ccd2910ff977638bdc457e070fe63, request_id=1579095055,da4aa0cb-1e4e-47f8-85df-29f16a9b1f5f, outer_id=123456, time_used=457}===
+2020-01-15 21:30:56,170 [DEBUG] (FaceServiceImpl.java:141)- === 人脸识别注册成功！ face_token： 1d2f6efcea9465b22725e40db48c4647===
+2020-01-15 21:30:56,461 [DEBUG] (FaceServiceImpl.java:131)- === AddFace： {failure_detail=[], face_count=108, face_added=1, faceset_token=cb8ccd2910ff977638bdc457e070fe63, request_id=1579095055,e4483acc-8560-4200-8b67-4bed98634206, outer_id=123456, time_used=498}===
+2020-01-15 21:30:56,462 [DEBUG] (FaceServiceImpl.java:141)- === 人脸识别注册成功！ face_token： 0e17e44aaa35a380cd23c81c5eb5f71c===

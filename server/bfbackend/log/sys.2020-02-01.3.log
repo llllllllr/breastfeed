@@ -1,0 +1,8 @@
+2020-02-01 14:20:08,037 [DEBUG] (WXUtil.java:209)- === 微信access_token: null===
+2020-02-01 14:22:49,139 [DEBUG] (WXUtil.java:96)- === WXUploadTempMedia: responseBody:{"errcode":40001,"errmsg":"invalid credential, access_token is invalid or not latest hints: [KGaAkLHLRa-_mU3aA!]"} ===
+2020-02-01 14:22:49,139 [DEBUG] (WXUtil.java:98)- === WXUploadTempMedia: media_id:null ===
+2020-02-01 14:22:55,896 [INFO] (StartupInfoLogger.java:50)- Starting BreastApplication on LAPTOP-562395R3 with PID 15892 (started by 爱哭的周小姐 in D:\软件应用\java IDE\IntelliJ IDEA 2019.1\项目\breastfeed\breastfeed\server\bfbackend)
+2020-02-01 14:22:55,967 [DEBUG] (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2020-02-01 14:22:55,968 [INFO] (SpringApplication.java:648)- No active profile set, falling back to default profiles: default
+2020-02-01 14:22:58,396 [INFO] (StartupInfoLogger.java:59)- Started BreastApplication in 3.262 seconds (JVM running for 4.835)
+2020-02-01 14:23:08,448 [DEBUG] (WXUtil.java:61)- === WXUploadTempMedia:D:\\软件应用\\java IDE\\IntelliJ IDEA 2019.1\\项目\\breastfeed\\breastfeed\\server\\bfbackend\\src\\main\\resources\\UserFaceImage\\0.jpeg ===

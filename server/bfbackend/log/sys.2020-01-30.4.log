@@ -1,0 +1,8 @@
+2020-01-30 20:13:32,469 [INFO] (StartupInfoLogger.java:59)- Started BreastApplication in 3.593 seconds (JVM running for 5.212)
+2020-01-30 20:13:39,905 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: update auto_answer_template SET question_key = ?, answer_template = ? where consult_id = ? 
+2020-01-30 20:13:39,936 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: hgfdyt(String), 12465(String), 1(Integer)
+2020-01-30 20:13:40,124 [DEBUG] (BaseJdbcLogger.java:143)- <==    Updates: 1
+2020-01-30 20:13:40,124 [DEBUG] (AdministratorConsultController.java:68)- === administrator update:lllr.test.breast.dataObject.consult.AutoAnswerTemplate@6dfc9ecf 失败 ===
+2020-01-30 20:18:48,971 [INFO] (StartupInfoLogger.java:50)- Starting BreastApplication on LAPTOP-562395R3 with PID 9692 (started by 爱哭的周小姐 in D:\软件应用\java IDE\IntelliJ IDEA 2019.1\项目\breastfeed\breastfeed\server\bfbackend)
+2020-01-30 20:18:48,986 [DEBUG] (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2020-01-30 20:18:48,986 [INFO] (SpringApplication.java:648)- No active profile set, falling back to default profiles: default
