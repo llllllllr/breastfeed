@@ -1,10 +1,12 @@
 package lllr.test.breast.dao.mapper;
 
-import lllr.test.breast.dataObject.Article;
-import org.apache.ibatis.annotations.Mapper;
+import lllr.test.breast.dataObject.popularization.Article;
 
-@Mapper
+import java.util.List;
+
 public interface ArticleMapper {
+
+
     int deleteByPrimaryKey(Integer id);
 
     int insert(Article record);
@@ -15,5 +17,9 @@ public interface ArticleMapper {
 
     int updateByPrimaryKeySelective(Article record);
 
+    int updateByPrimaryKeyWithBLOBs(Article record);
+
     int updateByPrimaryKey(Article record);
+
+    List<Article> selectArticleList();
 }

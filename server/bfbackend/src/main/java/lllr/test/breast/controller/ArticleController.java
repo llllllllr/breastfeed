@@ -1,11 +1,13 @@
 package lllr.test.breast.controller;
 
 import lllr.test.breast.common.ServerResponse;
-import lllr.test.breast.dataObject.Article;
+import lllr.test.breast.dataObject.popularization.Article;
 import lllr.test.breast.service.inter.ArticleService;
 import lllr.test.breast.util.qiniu.QiniuRes;
 import lllr.test.breast.util.qiniu.QiniuResultUtil;
 import lllr.test.breast.util.qiniu.QiniuUtil;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
@@ -13,48 +15,89 @@ import org.springframework.web.multipart.MultipartFile;
 
 import javax.annotation.Resource;
 import java.io.FileInputStream;
+import java.util.List;
 
 
-@Controller
+@RestController
 public class ArticleController {
+
 
     @Autowired
     ArticleService articleService;
     @Resource
     QiniuUtil qiniu;
 
-    @GetMapping("/article/add")
-    @ResponseBody
-    public ServerResponse<String> addArticle(@RequestParam("title") String title,
-                                             @RequestParam("subtitle") String subtitle,
-                                             @RequestParam("content") String content) {
-        Article article = new Article();
-        article.setTitle(title);
-        article.setContent(content);
-        article.setCategory("category");
-        article.setDescription(subtitle);
-        article.setImgurl("imgurl");
-        System.out.println(title);
-        return articleService.addArticle(article);
+
+    //获取七牛云上传凭证
+    @RequestMapping(value="/article/getToken",method=RequestMethod.POST)
+    @CrossOrigin
+    public String returnToken(){
+
+        qiniu.getToken();
+        String token = qiniu.getToken();
+        return  token;
     }
 
-    @RequestMapping(value = "/article/upload", method = RequestMethod.POST)
-    @ResponseBody
-    @CrossOrigin
-    public QiniuRes uploadImg(MultipartFile multiple) {
 
-        System.out.println("heheheheheheh");
-        if (multiple != null) {
-            try {
-                FileInputStream inputStream = (FileInputStream) multiple.getInputStream();
+    @GetMapping("/article/getlist")
+    @CrossOrigin
+    public ServerResponse<List<Article>> queryArticleList(){
+        return articleService.getArticleList();
+    }
+
+
+    //获取一篇文章
+    @GetMapping("/article/getone")
+    @CrossOrigin
+    public ServerResponse<Article> queryArticle(@RequestParam("id")  Integer id){
+        //logger.info("id= {} ",id);
+        return articleService.queryById(id);
+    }
+
+    //删除一篇文章
+    @GetMapping("/article/del")
+    @CrossOrigin
+    public ServerResponse<String> delArticle(@RequestParam("id") Integer id){
+        return articleService.delArticle(id);
+    }
+    //新增或修改文章 GetMapping不支持@RequestBody
+    @GetMapping("/article/addedit")
+    @CrossOrigin
+    public ServerResponse<String> addArticle(@RequestParam("id")Integer id,
+                                             @RequestParam("title")String title,
+                                             @RequestParam("subtitle")String subtitle,
+                                             @RequestParam("imgurl") String imgurl,
+                                             @RequestParam("content")String content,
+                                             @RequestParam("category")String category) {
+
+        Article article = new Article();
+        if(id!=-1)
+            article.setId(id);
+        article.setTitle(title);
+        article.setContent(content);
+        article.setCategory(category);
+        article.setDescription(subtitle);
+        article.setImgUrl(imgurl);
+        return articleService.addeditArticle(article);
+
+    }
+
+    //上传图片
+    @RequestMapping(value = "/article/upload",method = RequestMethod.POST)
+    @CrossOrigin
+    public QiniuRes uploadImg(MultipartFile multiple){
+
+        if(multiple != null) {
+            try{
+                FileInputStream inputStream =(FileInputStream)multiple.getInputStream();
                 String fileName = multiple.getOriginalFilename();
-                String path = qiniu.upLoeadToken(inputStream, fileName);
+                String path = qiniu.upLoeadToken(inputStream,fileName);
                 System.out.println(path);
-                String[] data = {path};
+                String[] data ={path};
                 QiniuResultUtil qiniuResultUtil = new QiniuResultUtil();
                 return qiniuResultUtil.success(data);
 
-            } catch (Exception e) {
+            }catch (Exception e){
                 System.out.println(e.toString());
             }
         }

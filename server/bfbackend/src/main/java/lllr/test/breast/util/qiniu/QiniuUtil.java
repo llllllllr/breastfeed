@@ -48,4 +48,22 @@ public class QiniuUtil {
         }
         return null;
     }
+
+
+    public String getToken(){
+        //上传地域配置
+        Configuration cfg = new Configuration(Zone.zone2());
+        UploadManager uploadManager = new UploadManager(cfg);
+        //上传凭证
+        Auth auth = Auth.create(accessKey, secretKey);
+        String upToken = auth.uploadToken(bucket);
+        //有时候会产生不明原因的无法获取token的现象，重复获取
+        System.out.println(upToken + "-->" + upToken.length());
+        while (upToken.length()<3){
+            upToken = auth.uploadToken(bucket);
+        }
+
+        return upToken;
+
+    }
 }

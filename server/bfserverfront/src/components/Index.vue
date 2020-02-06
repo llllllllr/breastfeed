@@ -32,10 +32,12 @@
                                 <el-submenu index="1">
                                     <template slot="title">
                                     <i class="el-icon-tickets"></i>
-                                     <span>文章管理</span>
+                                     <span>图文管理</span>
                                     </template>
                                     <el-menu-item-group>
-                                    <el-menu-item index="1-1"><i class="el-icon-reading"></i><router-link to="/articlelist" tag="span" exact>文章列表</router-link></el-menu-item>
+                                    <el-menu-item index="1-1"><i class="el-icon-reading"></i><router-link to="/articlelist" tag="span" exact>文章管理</router-link></el-menu-item>
+                                    <el-menu-item index="1-1"><i class="el-icon-reading"></i><router-link to="/audiolist" tag="span" exact>音频管理</router-link></el-menu-item>
+                                    <el-menu-item index="1-1"><i class="el-icon-reading"></i><router-link to="/vediolist" tag="span" exact>视频管理</router-link></el-menu-item>
                                     </el-menu-item-group>
                                 </el-submenu>
                     </el-menu>
@@ -93,6 +95,7 @@
     color: #333;
     /* text-align: center; */
     /* line-height: 60px; */
+    height: 125%;
   }
   
   .el-aside {
@@ -100,6 +103,7 @@
     color: #333;
     text-align: center;
     line-height: 200px;
+    height: 125%;
   }
   .el-header .fr{
   float: right;
@@ -115,7 +119,7 @@
     color: #333;
     /* //text-align: center; */
     line-height: 160px;
-    height: 100%;
+    height: auto;
     
   }
   
@@ -155,9 +159,11 @@
 }
 .el-aside, .el-main{
   padding-top: 60px;
+  height: 125%;
 }
 .el-aside{
   background: #545c64;
+  height: 125%;
 }
 .el-aside .el-menu{
   border-right: none;

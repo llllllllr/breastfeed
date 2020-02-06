@@ -1,3 +1,1 @@
-2020-02-01 14:25:24,689 [DEBUG] (WXUtil.java:209)- === 微信access_token: 29_fzLruDKwWHVlL9axMlDZ8Hy1ImcVAzcKWkZQ0nYXIVMLT8LbUoMUo2eRVj57rBSTfv4S_CFEHivA3Fd9-hNe9t6ljCyP5Qr0TUko0T9kolEBrX9K5ie_DM-R7N8WZKbV0jp-jGZl5YdTq-e5XZXcADAEGE===
-2020-02-01 14:25:56,127 [DEBUG] (WXUtil.java:96)- === WXUploadTempMedia: responseBody:{"type":"image","media_id":"l79tHIH3Ce0Y8AUdQ12lyG50tGNC3paabqYRVYbHI4XrLcVw4liNTy3ef40Jt5kd","created_at":1580538348,"item":[]} ===
-2020-02-01 14:25:57,793 [DEBUG] (WXUtil.java:98)- === WXUploadTempMedia: media_id:l79tHIH3Ce0Y8AUdQ12lyG50tGNC3paabqYRVYbHI4XrLcVw4liNTy3ef40Jt5kd ===
+2020-02-06 16:12:40,142 [INFO] (StartupInfoLogger.java:59)- Started BreastApplication in 2.962 seconds (JVM running for 4.627)
