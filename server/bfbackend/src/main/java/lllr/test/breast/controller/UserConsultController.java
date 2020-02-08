@@ -8,6 +8,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
+import javax.servlet.Servlet;
+import javax.servlet.ServletContext;
 import java.util.Map;
 
 
@@ -33,7 +35,7 @@ public class UserConsultController {
 
      */
     @ResponseBody
-    @GetMapping("")
+    @GetMapping("/validate")
     public String WXValidate(@RequestParam(value="signature") String signature, @RequestParam(value="timestamp")String timestamp,
                            @RequestParam(value="nonce") String nonce, @RequestParam(value="echostr")String echostr) {
 
@@ -47,12 +49,12 @@ public class UserConsultController {
     接收用户发送给客服的内容，并根据关键词回复
      */
     @ResponseBody
-    @PostMapping("/auto")
-    public String WXAutoReply(@RequestBody Map<String,String> requestData){
-        LOGGER.debug("=== " + requestData.toString() + "===");
+    @RequestMapping("/auto")
+    public String WXAutoReply(@RequestParam(value = "data",required = false)String data){
+        LOGGER.debug("=== " + (data == null ? "消息为空!" : data.toString()) + "===");
 
-        String reply = (String) userConsult.WXAutoReply(requestData);
-        return reply;
+        //String reply = (String) userConsult.WXAutoReply(requestData);
+        return "success";
     }
 
 
