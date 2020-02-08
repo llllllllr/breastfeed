@@ -1,6 +1,0 @@
-2020-01-23 15:17:07,278 [INFO] (StartupInfoLogger.java:59)- Started BreastApplication in 3.75 seconds (JVM running for 5.538)
-2020-01-23 15:18:52,400 [DEBUG] (UserConsultImpl.java:111)- === 微信access_token: 29_FvCeWqqb0-q9VOKw_vs3wEBBiYHKNKIYEESfB-j5M7WZrAQva4j0VZcJsvuZ_g_v8qIk1gVL4h7bqViavWUVNli7f5ryeOTl5Ym3JT8RQREHPVGVxRTumW0ARUA2BSe7WqMna5BwHg2K4as_EBPiAIAVSG===
-2020-01-23 15:18:52,401 [DEBUG] (UserConsultImpl.java:83)-  ===WXAutoReplyService 用户提问内容:{touser=fromUser, Content=null, MsgType=text}===
-2020-01-23 15:21:01,818 [INFO] (StartupInfoLogger.java:50)- Starting BreastApplication on LAPTOP-562395R3 with PID 17404 (started by 爱哭的周小姐 in D:\软件应用\java IDE\IntelliJ IDEA 2019.1\项目\breastfeed\breastfeed\server\bfbackend)
-2020-01-23 15:21:01,858 [DEBUG] (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
-2020-01-23 15:21:01,858 [INFO] (SpringApplication.java:648)- No active profile set, falling back to default profiles: default

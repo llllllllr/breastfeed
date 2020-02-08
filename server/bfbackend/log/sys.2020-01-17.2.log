@@ -1,7 +1,0 @@
-2020-01-17 11:35:23,908 [DEBUG] (FaceServiceImpl.java:157)- === SearchFace： {error_message=EMPTY_FACESET, request_id=1579232121,6ceee8d6-03b9-4847-ac8b-9d46b1b47342, time_used=70}===
-2020-01-17 11:35:23,922 [DEBUG] (FaceServiceImpl.java:53)- === SearchFace： {error_message=EMPTY_FACESET, request_id=1579232121,6ceee8d6-03b9-4847-ac8b-9d46b1b47342, time_used=70}===
-2020-01-17 11:35:23,923 [DEBUG] (FaceServiceImpl.java:42)- === IsErrorMessage: 返回数据为空 或者 error_messageEMPTY_FACESET===
-2020-01-17 11:35:23,924 [ERROR] (UserFaceController.java:42)- === faceRegisterController:face++ error_message:EMPTY_FACESET===
-2020-01-17 11:35:24,216 [INFO] (UserFaceController.java:66)- ===人脸注册图片名称：wx8b444a502cdbf1e5.o6zAJs2XJzZYspbUKdArzZWY7KD8.fS5dHAoKFtDd69bb0356b4f8dc316f736460c9f6d2af.jpg  大小：80858=== 
-2020-01-17 11:35:24,431 [DEBUG] (FaceServiceImpl.java:157)- === SearchFace： {error_message=EMPTY_FACESET, request_id=1579232122,31f1d118-b1e7-43ba-beb7-c6b952e323cb, time_used=49}===
-2020-01-17 11:35:24,431 [DEBUG] (FaceServiceImpl.java:53)- === SearchFace： {error_message=EMPTY_FACESET, request_id=1579232122,31f1d118-b1e7-43ba-beb7-c6b952e323cb, time_used=49}===

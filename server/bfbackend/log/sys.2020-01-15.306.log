@@ -1,5 +1,0 @@
-2020-01-15 22:14:25,292 [DEBUG] (FaceServiceImpl.java:120)- === 已注册过，无效注册！===
-2020-01-15 22:14:26,116 [DEBUG] (FaceServiceImpl.java:71)- === DetectFace： {face_num=1, faces=[{"face_rectangle":{"top":196,"left":181,"width":86,"height":86},"face_token":"b414ef9f2618e2236614e59cd80e2bf6"}], image_id=iOdzikAiAqa6C86mbnbp9A==, request_id=1579097665,4b5ac567-3d11-4e3a-a260-a3e41bf8ef0d, time_used=118}===
-2020-01-15 22:14:26,779 [INFO] (UserFaceController.java:36)- ===人脸注册图片名称：wx8b444a502cdbf1e5.o6zAJs2XJzZYspbUKdArzZWY7KD8.rhj9bLGHngPAb2fb5a792cc0ad90b742818c9b50155d.jpg  大小：80167=== 
-2020-01-15 22:14:27,236 [DEBUG] (FaceServiceImpl.java:97)- === SearchFace： {thresholds={"1e-5":73.975,"1e-4":69.101,"1e-3":62.327}, request_id=1579097666,00fd192f-0776-42d2-9f20-1adc295d4af7, results=[{"user_id":"","confidence":94.366,"face_token":"dd22a302ccd1cf8cbb795f4866b73a80"}], time_used=264}===
-2020-01-15 22:14:27,239 [DEBUG] (FaceServiceImpl.java:120)- === 已注册过，无效注册！===

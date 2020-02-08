@@ -1,6 +1,0 @@
-2020-01-15 22:14:38,795 [DEBUG] (FaceServiceImpl.java:97)- === SearchFace： {thresholds={"1e-5":73.975,"1e-4":69.101,"1e-3":62.327}, request_id=1579097678,7b3bbb9f-804b-433e-993a-d08bcac2ef1a, results=[{"user_id":"","confidence":95.23,"face_token":"dd22a302ccd1cf8cbb795f4866b73a80"}], time_used=293}===
-2020-01-15 22:14:38,798 [DEBUG] (FaceServiceImpl.java:120)- === 已注册过，无效注册！===
-2020-01-15 22:14:40,297 [DEBUG] (FaceServiceImpl.java:71)- === DetectFace： {face_num=1, faces=[{"face_token":"6198219f94b3106ef0d5d2f924628827","face_rectangle":{"top":195,"left":180,"width":88,"height":88}}], image_id=Gt0jyixvI4W46df4EKKI2Q==, request_id=1579097679,f4115b24-eb3c-4492-95f3-8f17175f86a1, time_used=36}===
-2020-01-15 22:14:40,702 [INFO] (UserFaceController.java:36)- ===人脸注册图片名称：wx8b444a502cdbf1e5.o6zAJs2XJzZYspbUKdArzZWY7KD8.r7c9rW3FZ1KP296e4e44fb20b8c7d1dd3a1418cba0b1.jpg  大小：79497=== 
-2020-01-15 22:14:41,177 [DEBUG] (FaceServiceImpl.java:97)- === SearchFace： {thresholds={"1e-5":73.975,"1e-4":69.101,"1e-3":62.327}, request_id=1579097680,247a3788-554f-449a-ae85-dfe3db1c3a76, results=[{"user_id":"","confidence":94.787,"face_token":"dd22a302ccd1cf8cbb795f4866b73a80"}], time_used=303}===
-2020-01-15 22:14:41,178 [DEBUG] (FaceServiceImpl.java:120)- === 已注册过，无效注册！===

@@ -1,9 +1,0 @@
-2020-01-15 22:14:53,395 [DEBUG] (FaceServiceImpl.java:97)- === SearchFace： {thresholds={"1e-5":73.975,"1e-4":69.101,"1e-3":62.327}, request_id=1579097692,0711d60c-3482-4a7e-a829-204c2838a14b, results=[{"user_id":"","confidence":92.812,"face_token":"7163f8333f58b1fe762ee26adefc320d"}], time_used=269}===
-2020-01-15 22:14:53,398 [DEBUG] (FaceServiceImpl.java:120)- === 已注册过，无效注册！===
-2020-01-15 23:35:59,686 [INFO] (StartupInfoLogger.java:50)- Starting BreastApplication on LAPTOP-562395R3 with PID 18812 (started by 爱哭的周小姐 in D:\软件应用\java IDE\IntelliJ IDEA 2019.1\项目\breastfeed\breastfeed\server\bfbackend)
-2020-01-15 23:35:59,689 [DEBUG] (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
-2020-01-15 23:35:59,690 [INFO] (SpringApplication.java:648)- No active profile set, falling back to default profiles: default
-2020-01-15 23:36:02,055 [INFO] (StartupInfoLogger.java:59)- Started BreastApplication in 2.78 seconds (JVM running for 4.305)
-2020-01-15 23:36:20,092 [INFO] (StartupInfoLogger.java:50)- Starting BreastApplication on LAPTOP-562395R3 with PID 17692 (started by 爱哭的周小姐 in D:\软件应用\java IDE\IntelliJ IDEA 2019.1\项目\breastfeed\breastfeed\server\bfbackend)
-2020-01-15 23:36:20,101 [DEBUG] (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
-2020-01-15 23:36:20,102 [INFO] (SpringApplication.java:648)- No active profile set, falling back to default profiles: default
