@@ -13,26 +13,21 @@
       <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/breast.iml" beforeDir="false" afterPath="$PROJECT_DIR$/breast.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log/sys.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/sys.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lllr/test/breast/controller/UserConsultController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lllr/test/breast/controller/UserConsultController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lllr/test/breast/dao/mapper/WeChatMessageItemMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lllr/test/breast/dao/mapper/WeChatMessageItemMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lllr/test/breast/dataObject/consult/WeChatMessageItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lllr/test/breast/dataObject/consult/WeChatMessageItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lllr/test/breast/service/impl/UserConsultImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lllr/test/breast/service/impl/UserConsultAutoReplyImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lllr/test/breast/service/inter/UserConsult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lllr/test/breast/service/inter/UserConsultAutoReply.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lllr/test/breast/util/websocket/WebSocket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lllr/test/breast/controller/websocket/WebSocketController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lllr/test/breast/util/websocket/WebSocketConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lllr/test/breast/controller/websocket/WebSocketConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapping/WeChatMessageItemMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapping/WeChatMessageItemMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lllr/test/breast/controller/websocket/WebSocketController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lllr/test/breast/controller/websocket/WebSocketController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lllr/test/breast/dao/mapper/WeChatMessageItemMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lllr/test/breast/dataObject/consult/WeChatMessageItem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lllr/test/breast/service/impl/UserConsultAutoReplyImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lllr/test/breast/service/impl/UserConsultAutoReplyImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lllr/test/breast/service/inter/UserConsultAutoReply.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lllr/test/breast/service/inter/UserConsultAutoReply.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapping/WeChatMessageItemMapper.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/lllr/test/consult/ConsultTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/lllr/test/consult/ConsultTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/generatorConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/generatorConfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/controller/UserConsultController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/controller/UserConsultController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/service/impl/UserConsultImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/service/inter/UserConsult.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/util/websocket/WebSocket.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/util/websocket/WebSocketConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ikanalyer/stopword.dic" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ikanalyer/stopword.dic" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/controller/websocket/WebSocketController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/controller/websocket/WebSocketController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/dataObject/consult/WeChatMessageItem.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/dataObject/consult/WeChatMessageItem.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/service/impl/UserConsultAutoReplyImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/service/impl/UserConsultAutoReplyImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/service/inter/UserConsultAutoReply.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/service/inter/UserConsultAutoReply.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/util/ikanalyzer/IKAnalyzerUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/util/ikanalyzer/IKAnalyzerUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapping/WeChatMessageItemMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapping/WeChatMessageItemMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/lllr/test/consult/ConsultTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/lllr/test/consult/ConsultTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -125,9 +120,26 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ConsultTest.test4">
+  <component name="RunManager" selected="Spring Boot.BreastApplication">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ConsultTest.test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="breast" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lllr.test.consult.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="lllr.test.consult" />
+      <option name="MAIN_CLASS_NAME" value="lllr.test.consult.ConsultTest" />
+      <option name="METHOD_NAME" value="test3" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -219,9 +231,11 @@
       <item itemvalue="JUnit.ConsultTest.test4" />
       <item itemvalue="Maven.mybatis-generator" />
       <item itemvalue="Spring Boot.BreastApplication" />
+      <item itemvalue="JUnit.ConsultTest.test3" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ConsultTest.test3" />
         <item itemvalue="JUnit.ConsultTest.test4" />
         <item itemvalue="JUnit.ConsultTest.test5" />
       </list>
@@ -245,7 +259,7 @@
       <workItem from="1581336558070" duration="6874000" />
       <workItem from="1581395869014" duration="3069000" />
       <workItem from="1581402996614" duration="6076000" />
-      <workItem from="1581422983712" duration="4397000" />
+      <workItem from="1581422983712" duration="7621000" />
     </task>
     <servers />
   </component>
@@ -273,46 +287,46 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="378" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824@0.0.1536.824" timestamp="1581317975243" />
-    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1581159408366">
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1581434759199">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1581159408366" />
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1581434759199" />
     <state width="468" height="466" key="DebuggerActiveHint" timestamp="1581313705706">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="468" height="466" key="DebuggerActiveHint/0.0.1536.824@0.0.1536.824" timestamp="1581313705706" />
-    <state width="1493" height="362" key="GridCell.Tab.0.bottom" timestamp="1581413245909">
+    <state width="1493" height="322" key="GridCell.Tab.0.bottom" timestamp="1581436204066">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="362" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1581413245909" />
-    <state width="1493" height="362" key="GridCell.Tab.0.center" timestamp="1581413245909">
+    <state width="1493" height="322" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1581436204066" />
+    <state width="1493" height="322" key="GridCell.Tab.0.center" timestamp="1581436204066">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="362" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1581413245909" />
-    <state width="1493" height="362" key="GridCell.Tab.0.left" timestamp="1581413245909">
+    <state width="1493" height="322" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1581436204066" />
+    <state width="1493" height="322" key="GridCell.Tab.0.left" timestamp="1581436204066">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="362" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1581413245909" />
-    <state width="1493" height="362" key="GridCell.Tab.0.right" timestamp="1581413245909">
+    <state width="1493" height="322" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1581436204066" />
+    <state width="1493" height="322" key="GridCell.Tab.0.right" timestamp="1581436204066">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="362" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1581413245909" />
-    <state width="1493" height="110" key="GridCell.Tab.1.bottom" timestamp="1581413245909">
+    <state width="1493" height="322" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1581436204066" />
+    <state width="1493" height="322" key="GridCell.Tab.1.bottom" timestamp="1581436203817">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="110" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1581413245909" />
-    <state width="1493" height="110" key="GridCell.Tab.1.center" timestamp="1581413245909">
+    <state width="1493" height="322" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1581436203817" />
+    <state width="1493" height="322" key="GridCell.Tab.1.center" timestamp="1581436203817">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="110" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1581413245909" />
-    <state width="1493" height="110" key="GridCell.Tab.1.left" timestamp="1581413245909">
+    <state width="1493" height="322" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1581436203817" />
+    <state width="1493" height="322" key="GridCell.Tab.1.left" timestamp="1581436203817">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="110" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1581413245909" />
-    <state width="1493" height="110" key="GridCell.Tab.1.right" timestamp="1581413245909">
+    <state width="1493" height="322" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1581436203817" />
+    <state width="1493" height="322" key="GridCell.Tab.1.right" timestamp="1581436203817">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="110" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1581413245909" />
+    <state width="1493" height="322" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1581436203817" />
     <state width="1493" height="100" key="GridCell.Tab.2.bottom" timestamp="1581317232619">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -341,10 +355,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="449" y="237" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1581423100985" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1581405201277">
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1581435884777">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1581405201277" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1581435884777" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/breast$ConsultTest_test4.ic" NAME="ConsultTest.test4 Coverage Results" MODIFIED="1581404318232" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

@@ -1,6 +1,5 @@
 package lllr.test.breast.controller.websocket;
 
-import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 import lllr.test.breast.common.ServerResponse;
 import lllr.test.breast.dataObject.consult.AutoAnswerTemplate;
@@ -11,10 +10,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.socket.server.standard.SpringConfigurator;
 
 import javax.websocket.OnClose;
 import javax.websocket.OnMessage;
@@ -64,7 +60,7 @@ public class WebSocketController {
     private Session session;
 
     @Value("${system.service.id}")
-    private String SYSYTEM_SERVICE_ID;
+    private Integer SYSYTEM_SERVICE_ID;
 
     /**
      * 标识当前连接客户端的用户名
@@ -140,8 +136,8 @@ public class WebSocketController {
         //将 消息转化为 消息条目
         WeChatMessageItem weChatMessageItem = JSONObject.parseObject(message,WeChatMessageItem.class);
 
-        String toUserId = weChatMessageItem.getToUserId();
-        String fromUserId = weChatMessageItem.getFromUserId();
+        String toUserId = weChatMessageItem.getToUserId().toString();
+        String fromUserId = weChatMessageItem.getFromUserId().toString();
         //数据有误
         if(weChatMessageItem.getFromUserId() == null || weChatMessageItem.getMessageType() == null || weChatMessageItem.getMessageContent() == null || toUserId == null){
             if(fromUserId != null) {
@@ -156,7 +152,7 @@ public class WebSocketController {
         if(toUserId.equals(SYSYTEM_SERVICE_ID)) {
             //系统根据关键词自动回复
             List<AutoAnswerTemplate> templates = userConsultAutoReply.AutoReply(weChatMessageItem.getMessageContent());
-            WeChatMessageItem autoReply = new WeChatMessageItem(SYSYTEM_SERVICE_ID,fromUserId,3,JSONObject.toJSONString(templates),new Date(System.currentTimeMillis()));
+            WeChatMessageItem autoReply = new WeChatMessageItem(Integer.valueOf(SYSYTEM_SERVICE_ID),Integer.valueOf(fromUserId),3,JSONObject.toJSONString(templates),new Date(System.currentTimeMillis()));
             AppointSending(fromUserId,JSONObject.toJSONString(autoReply));              //发送消息给指定的用户
             //将聊天记录 存入 数据库
             weChatService.insertWeChatMsg(autoReply);

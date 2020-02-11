@@ -1,8 +1,6 @@
 package lllr.test.breast.dao.mapper;
 
 import lllr.test.breast.dataObject.consult.WeChatMessageItem;
-import org.apache.ibatis.annotations.Mapper;
-import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 

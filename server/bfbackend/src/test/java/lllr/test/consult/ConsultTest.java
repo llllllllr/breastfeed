@@ -3,10 +3,7 @@ package lllr.test.consult;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
-import lllr.test.breast.common.ServerResponse;
-import lllr.test.breast.controller.websocket.WebSocketController;
 import lllr.test.breast.dataObject.consult.WeChatMessageItem;
-import lllr.test.breast.util.DataValidateUtil;
 import lllr.test.breast.util.ikanalyzer.IKAnalyzerUtil;
 import okhttp3.*;
 import org.junit.Test;
@@ -17,7 +14,6 @@ import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.*;
-import java.util.concurrent.ConcurrentHashMap;
 
 public class ConsultTest {
 
@@ -102,9 +98,11 @@ public class ConsultTest {
 
     @Test
     public  void test3(){
-        Map<String,Object> map = new HashMap<>();
-
-        System.out.println(map.get("dsfvf"));
+        Map<Integer,String> map = new HashMap<>();
+        map.put(1,"1");
+        map.put(1,"1");
+        map.put(2,"1");
+        System.out.println(map);
     }
 
     @Test
@@ -126,10 +124,10 @@ public class ConsultTest {
         String str = sdf.format(d);
         System.out.println(str);
         List<WeChatMessageItem> list = new ArrayList<>();
-        WeChatMessageItem weChatMessageItem = new WeChatMessageItem("111","222",0,"222 你好",d);
-        WeChatMessageItem weChatMessageItem1 = new WeChatMessageItem("222","111",0,"111 你好",d);
-        list.add(weChatMessageItem);
-        list.add(weChatMessageItem1);
+//        WeChatMessageItem weChatMessageItem = new WeChatMessageItem("111","222",0,"222 你好",d);
+//        WeChatMessageItem weChatMessageItem1 = new WeChatMessageItem("222","111",0,"111 你好",d);
+//        list.add(weChatMessageItem);
+//        list.add(weChatMessageItem1);
 
         System.out.println(JSONArray.toJSONString(list));
 

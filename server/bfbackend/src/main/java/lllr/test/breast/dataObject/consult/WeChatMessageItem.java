@@ -5,9 +5,9 @@ import java.util.Date;
 public class WeChatMessageItem {
     private Integer id;
 
-    private String fromUserId;
+    private Integer fromUserId;
 
-    private String toUserId;
+    private Integer toUserId;
 
     private Integer messageType;
 
@@ -17,12 +17,13 @@ public class WeChatMessageItem {
 
     public WeChatMessageItem(){}
 
-    public WeChatMessageItem(String fromUserId, String toUserId, Integer messageType, String messageContent,Date time) {
+    public WeChatMessageItem(Integer fromUserId, Integer toUserId, int messageType, String messageContent, Date time) {
         this.time = time;
-        this.fromUserId = fromUserId;
+        this.fromUserId =fromUserId;
         this.toUserId = toUserId;
-        this.messageType = messageType;
         this.messageContent = messageContent;
+        this.messageType = messageType;
+
     }
 
     public Integer getId() {
@@ -33,20 +34,20 @@ public class WeChatMessageItem {
         this.id = id;
     }
 
-    public String getFromUserId() {
+    public Integer getFromUserId() {
         return fromUserId;
     }
 
-    public void setFromUserId(String fromUserId) {
-        this.fromUserId = fromUserId == null ? null : fromUserId.trim();
+    public void setFromUserId(Integer fromUserId) {
+        this.fromUserId = fromUserId;
     }
 
-    public String getToUserId() {
+    public Integer getToUserId() {
         return toUserId;
     }
 
-    public void setToUserId(String toUserId) {
-        this.toUserId = toUserId == null ? null : toUserId.trim();
+    public void setToUserId(Integer toUserId) {
+        this.toUserId = toUserId;
     }
 
     public Integer getMessageType() {
@@ -71,17 +72,5 @@ public class WeChatMessageItem {
 
     public void setTime(Date time) {
         this.time = time;
-    }
-
-    @Override
-    public String toString() {
-        return "WeChatMessageItem{" +
-                "id=" + id +
-                ", fromUserId='" + fromUserId + '\'' +
-                ", toUserId='" + toUserId + '\'' +
-                ", messageType=" + messageType +
-                ", messageContent='" + messageContent + '\'' +
-                ", time=" + time +
-                '}';
     }
 }

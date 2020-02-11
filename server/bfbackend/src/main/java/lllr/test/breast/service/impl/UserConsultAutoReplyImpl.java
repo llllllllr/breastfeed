@@ -3,7 +3,6 @@ package lllr.test.breast.service.impl;
 import lllr.test.breast.dao.mapper.AutoAnswerTemplateMapper;
 import lllr.test.breast.dao.mapperUtil.AutoAnswerTemplateExample;
 import lllr.test.breast.dataObject.consult.AutoAnswerTemplate;
-import lllr.test.breast.dataObject.consult.WeChatMessageItem;
 import lllr.test.breast.service.inter.UserConsultAutoReply;
 import lllr.test.breast.util.ikanalyzer.IKAnalyzerUtil;
 import lllr.test.breast.util.wx.WXUtil;
@@ -12,9 +11,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
 
 @Service
 
