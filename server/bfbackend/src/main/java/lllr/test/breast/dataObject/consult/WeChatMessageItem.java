@@ -17,12 +17,12 @@ public class WeChatMessageItem {
 
     public WeChatMessageItem(){}
 
-    public WeChatMessageItem(String fromUserId, String toUserId, Integer messageType, String messageContent, Date time) {
+    public WeChatMessageItem(String fromUserId, String toUserId, Integer messageType, String messageContent,Date time) {
+        this.time = time;
         this.fromUserId = fromUserId;
         this.toUserId = toUserId;
         this.messageType = messageType;
         this.messageContent = messageContent;
-        this.time = time;
     }
 
     public Integer getId() {
@@ -71,5 +71,17 @@ public class WeChatMessageItem {
 
     public void setTime(Date time) {
         this.time = time;
+    }
+
+    @Override
+    public String toString() {
+        return "WeChatMessageItem{" +
+                "id=" + id +
+                ", fromUserId='" + fromUserId + '\'' +
+                ", toUserId='" + toUserId + '\'' +
+                ", messageType=" + messageType +
+                ", messageContent='" + messageContent + '\'' +
+                ", time=" + time +
+                '}';
     }
 }

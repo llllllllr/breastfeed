@@ -1,8 +1,13 @@
 package lllr.test.consult;
 
 import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
+import lllr.test.breast.common.ServerResponse;
+import lllr.test.breast.controller.websocket.WebSocketController;
+import lllr.test.breast.dataObject.consult.WeChatMessageItem;
 import lllr.test.breast.util.DataValidateUtil;
+import lllr.test.breast.util.ikanalyzer.IKAnalyzerUtil;
 import okhttp3.*;
 import org.junit.Test;
 import org.slf4j.Logger;
@@ -10,7 +15,9 @@ import org.slf4j.LoggerFactory;
 
 import java.io.File;
 import java.io.IOException;
+import java.text.SimpleDateFormat;
 import java.util.*;
+import java.util.concurrent.ConcurrentHashMap;
 
 public class ConsultTest {
 
@@ -101,14 +108,33 @@ public class ConsultTest {
     }
 
     @Test
-    public void test4() throws InterruptedException {
-        long t = System.currentTimeMillis();
-        System.out.println(t);
-        Thread.sleep(1000);
-        long t1 = System.currentTimeMillis();
-        System.out.println(t1);
-        System.out.println(t1 - t);
+    public void test4() throws Exception {
+       String question = "在早上喂养婴儿的时候发现乳头很痛，有肿胀的现象";
+       String str = "中国";
+       List<String> list = IKAnalyzerUtil.iKSegmenterToList(question);
+       System.out.println(list);
+    }
 
+    /*
+    {"fromUserId":"111","messageContent":"222 你好","messageType":0,"time":1581261288704,"toUserId":"222"}
+    {"fromUserId":"222","messageContent":"111 你好","messageType":0,"time":1581261288704,"toUserId":"111"}
+     */
+    @Test
+    public void test5(){
+        SimpleDateFormat sdf =new SimpleDateFormat("yyyy-MM-dd HH:mm:ss" );
+        Date d= new Date(System.currentTimeMillis());
+        String str = sdf.format(d);
+        System.out.println(str);
+        List<WeChatMessageItem> list = new ArrayList<>();
+        WeChatMessageItem weChatMessageItem = new WeChatMessageItem("111","222",0,"222 你好",d);
+        WeChatMessageItem weChatMessageItem1 = new WeChatMessageItem("222","111",0,"111 你好",d);
+        list.add(weChatMessageItem);
+        list.add(weChatMessageItem1);
+
+        System.out.println(JSONArray.toJSONString(list));
+
+//        System.out.println(JSONObject.toJSONString(weChatMessageItem));
+//        System.out.println(JSONObject.toJSONString(weChatMessageItem1));
     }
 
 }

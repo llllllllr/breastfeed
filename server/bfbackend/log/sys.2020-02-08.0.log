@@ -1,0 +1,34 @@
+2020-02-08 16:23:11,011 [INFO] (StartupInfoLogger.java:50)- Starting BreastApplication on LAPTOP-562395R3 with PID 16848 (started by 爱哭的周小姐 in D:\软件应用\java IDE\IntelliJ IDEA 2019.1\项目\breastfeed\新建文件夹\server\bfbackend)
+2020-02-08 16:23:11,014 [DEBUG] (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2020-02-08 16:23:11,014 [INFO] (SpringApplication.java:648)- No active profile set, falling back to default profiles: default
+2020-02-08 16:23:13,943 [INFO] (StartupInfoLogger.java:59)- Started BreastApplication in 3.579 seconds (JVM running for 6.525)
+2020-02-08 16:27:02,372 [INFO] (StartupInfoLogger.java:50)- Starting BreastApplication on LAPTOP-562395R3 with PID 19080 (started by 爱哭的周小姐 in D:\软件应用\java IDE\IntelliJ IDEA 2019.1\项目\breastfeed\新建文件夹\server\bfbackend)
+2020-02-08 16:27:02,376 [DEBUG] (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2020-02-08 16:27:02,376 [INFO] (SpringApplication.java:648)- No active profile set, falling back to default profiles: default
+2020-02-08 16:27:05,573 [INFO] (StartupInfoLogger.java:59)- Started BreastApplication in 3.681 seconds (JVM running for 5.518)
+2020-02-08 16:29:05,538 [INFO] (StartupInfoLogger.java:50)- Starting BreastApplication on LAPTOP-562395R3 with PID 19288 (started by 爱哭的周小姐 in D:\软件应用\java IDE\IntelliJ IDEA 2019.1\项目\breastfeed\新建文件夹\server\bfbackend)
+2020-02-08 16:29:05,549 [DEBUG] (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2020-02-08 16:29:05,550 [INFO] (SpringApplication.java:648)- No active profile set, falling back to default profiles: default
+2020-02-08 16:29:08,974 [INFO] (StartupInfoLogger.java:59)- Started BreastApplication in 4.902 seconds (JVM running for 6.927)
+2020-02-08 16:29:09,180 [INFO] (WebSocket.java:51)- [WebSocket] 连接成功，当前连接人数为：=1
+2020-02-08 16:29:34,186 [INFO] (WebSocket.java:58)- [WebSocket] 退出成功，当前连接人数为：=0
+2020-02-08 16:29:57,297 [INFO] (WebSocket.java:51)- [WebSocket] 连接成功，当前连接人数为：=1
+2020-02-08 16:30:32,768 [INFO] (WebSocket.java:58)- [WebSocket] 退出成功，当前连接人数为：=0
+2020-02-08 16:30:33,814 [INFO] (WebSocket.java:51)- [WebSocket] 连接成功，当前连接人数为：=1
+2020-02-08 16:31:58,118 [INFO] (WebSocket.java:58)- [WebSocket] 退出成功，当前连接人数为：=0
+2020-02-08 16:32:04,540 [INFO] (StartupInfoLogger.java:50)- Starting BreastApplication on LAPTOP-562395R3 with PID 124 (started by 爱哭的周小姐 in D:\软件应用\java IDE\IntelliJ IDEA 2019.1\项目\breastfeed\新建文件夹\server\bfbackend)
+2020-02-08 16:32:04,547 [DEBUG] (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2020-02-08 16:32:04,547 [INFO] (SpringApplication.java:648)- No active profile set, falling back to default profiles: default
+2020-02-08 16:32:06,810 [INFO] (StartupInfoLogger.java:59)- Started BreastApplication in 3.64 seconds (JVM running for 5.738)
+2020-02-08 16:47:31,319 [INFO] (WebSocket.java:52)- [WebSocket] 连接成功，当前连接人：={name_id=111=lllr.test.breast.util.websocket.WebSocket@5e74abd9}
+2020-02-08 16:47:51,667 [INFO] (WebSocket.java:52)- [WebSocket] 连接成功，当前连接人：={name_id=222=lllr.test.breast.util.websocket.WebSocket@1ced905f, name_id=111=lllr.test.breast.util.websocket.WebSocket@5e74abd9}
+2020-02-08 16:48:24,554 [INFO] (WebSocket.java:64)- [WebSocket] 收到消息：1
+2020-02-08 16:48:57,240 [INFO] (WebSocket.java:64)- [WebSocket] 收到消息：2
+2020-02-08 16:55:40,360 [INFO] (WebSocket.java:59)- [WebSocket] 退出成功，当前连接人数为：=1
+2020-02-08 16:55:42,948 [INFO] (WebSocket.java:52)- [WebSocket] 连接成功，当前连接人：={name_id=222=lllr.test.breast.util.websocket.WebSocket@1bf0e8fe, name_id=111=lllr.test.breast.util.websocket.WebSocket@5e74abd9}
+2020-02-08 16:56:24,202 [INFO] (WebSocket.java:59)- [WebSocket] 退出成功，当前连接人数为：=1
+2020-02-08 16:56:24,203 [INFO] (WebSocket.java:59)- [WebSocket] 退出成功，当前连接人数为：=0
+2020-02-08 16:56:30,639 [INFO] (StartupInfoLogger.java:50)- Starting BreastApplication on LAPTOP-562395R3 with PID 11444 (started by 爱哭的周小姐 in D:\软件应用\java IDE\IntelliJ IDEA 2019.1\项目\breastfeed\新建文件夹\server\bfbackend)
+2020-02-08 16:56:30,654 [DEBUG] (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2020-02-08 16:56:30,655 [INFO] (SpringApplication.java:648)- No active profile set, falling back to default profiles: default
+2020-02-08 16:56:33,258 [INFO] (StartupInfoLogger.java:59)- Started BreastApplication in 3.756 seconds (JVM running for 5.861)

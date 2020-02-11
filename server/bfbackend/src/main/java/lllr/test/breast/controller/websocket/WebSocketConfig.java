@@ -1,4 +1,4 @@
-package lllr.test.breast.util.websocket;
+package lllr.test.breast.controller.websocket;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Component;

@@ -1,9 +1,12 @@
 package lllr.test.breast.dao.mapper;
 
 import lllr.test.breast.dataObject.consult.WeChatMessageItem;
+import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Param;
+
+import java.util.List;
 
 public interface WeChatMessageItemMapper {
-    int deleteByExample(WeChatMessageItemExample example);
 
     int deleteByPrimaryKey(Integer id);
 
@@ -13,7 +16,13 @@ public interface WeChatMessageItemMapper {
 
     WeChatMessageItem selectByPrimaryKey(Integer id);
 
+    List<WeChatMessageItem> selectByFromUserId(String fromUserId);
+
     int updateByPrimaryKeySelective(WeChatMessageItem record);
 
     int updateByPrimaryKey(WeChatMessageItem record);
+
+//    List<WeChatMessageItem> selectByFromUserIdAndToUserId(@Param("from") String fromUserId, @Param("to") String toUserId);
+
+    List<WeChatMessageItem> selectByFromUserIdAndToUserId(String fromUserId, String toUserId);
 }
