@@ -1,0 +1,10 @@
+2020-02-07 14:00:47,345 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, description, img_url, category , content from article where id = ? 
+2020-02-07 14:00:47,349 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 109(Integer)
+2020-02-07 14:00:47,387 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-02-07 14:00:51,486 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, description, img_url, category , content from article where id = ? 
+2020-02-07 14:00:51,487 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 110(Integer)
+2020-02-07 14:00:51,526 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-02-07 14:00:56,846 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, description, img_url, category , content from article where id = ? 
+2020-02-07 14:00:56,847 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 111(Integer)
+2020-02-07 14:00:56,885 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-02-07 14:01:02,461 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, description, img_url, category , content from article where id = ? 

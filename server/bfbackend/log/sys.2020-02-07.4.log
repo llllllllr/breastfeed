@@ -1,0 +1,10 @@
+2020-02-07 13:40:48,149 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 6
+2020-02-07 13:42:04,119 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, description, img_url, category from article 
+2020-02-07 13:42:04,121 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-02-07 13:42:04,165 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 5
+2020-02-07 13:42:24,179 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, description, img_url, category from article 
+2020-02-07 13:42:24,181 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-02-07 13:42:24,228 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 5
+2020-02-07 13:47:28,753 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: insert into article (id, title, description, img_url, category, content ) values (?, ?, ?, ?, ?, ? ) 
+2020-02-07 13:47:28,759 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: null, 你知道吗？胎宝宝也会发脾气(String), 与我们平常认为的不一样，胎儿是有思维的(String), (String), 母乳喂养资料(String), <p>&nbsp; 有科学家在研究大脑与荷尔蒙等化学物质时得出结论：在母亲与胎儿之间传递着一种与电信号完全不同的另一种信号，例如，母亲一紧张，其内分泌就发生变化，通过脐带进入胎儿体内的激素浓度也就变化，直接对胎儿的状况产生影响。　　黄山市黄山区人民医院药剂科主管药师汪安稳解释道，说起胎儿会发脾气，肯定让很多人觉得匪夷所思，但事实上确实如此。研究发现，胎儿在妈妈子宫里时，就能对母亲十分细微的情绪变化或不同情绪作出反应。妈妈的不良情绪，对胎儿的情绪影响是最大的。　　</p><p><img src="http://llllllllr.top/20087257413880_2.jpg" style="max-width:30%;"><br></p><p>大量研究表明，胎儿在孕育过程中，他们的性格及气质就已经开始萌芽，包括爱、恨、忧、喜等情感。虽然性格在一定程度上受到遗传因素的影响，但并非完全取决于遗传因素，也不完全是后天形成的。一般来讲，胎儿在第1个月时就会对周围的刺激有反应，在第2个月时受到刺激时会通过蹬腿、摇头等动作，来表达自己是喜欢还是讨厌，到了第6个月时会因妈妈不高兴、与别人争执、哭泣等而不满，会发脾气。　　那么胎儿为什么发脾气呢？汪安稳说，孕妇发怒时体内分泌大量去甲肾上腺素，导致胎儿缺氧。这时，胎儿会因惊恐或不安而发很大的脾气，如在子宫里的不规则活动增多，以示自己的愤怒。由此看来，母亲在孕期保持良好情绪非常重要。　　</p><p><img src="http://llllllllr.top/a.jpg" style="max-width:30%;">　　<br></p><p><br></p>(String)
+2020-02-07 13:47:28,848 [DEBUG] (BaseJdbcLogger.java:143)- <==    Updates: 1

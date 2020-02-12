@@ -43,11 +43,15 @@ public class UserServiceImpl implements UserService {
             return new ServerResponse<User>(0, errorMessage.toString(), user);
         }
 
+
         //插入用户注册信息
         int num = userMapper.insert(user);
         if (num > 0)
             return new ServerResponse<>(1, "注册成功!", user);
         return new ServerResponse<User>(0, "注册失败!", user);
+
+
+
     }
 
     @Override

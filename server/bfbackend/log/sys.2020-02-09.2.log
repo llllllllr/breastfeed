@@ -1,0 +1,10 @@
+2020-02-09 12:01:38,660 [INFO] (StartupInfoLogger.java:59)- Started BreastApplication in 5.817 seconds (JVM running for 8.671)
+2020-02-09 12:01:50,028 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: insert into search_content (id, content) values (?, ?) 
+2020-02-09 12:01:50,088 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: null, null
+2020-02-09 12:01:50,184 [DEBUG] (BaseJdbcLogger.java:143)- <==    Updates: 1
+2020-02-09 12:01:50,230 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, description, img_url, category from article where title like '%咳嗽%' 
+2020-02-09 12:01:50,231 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-02-09 12:01:50,334 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-02-09 12:26:31,586 [INFO] (StartupInfoLogger.java:50)- Starting BreastApplication on LAPTOP-SKN1FD88 with PID 13804 (started by 12284 in F:\Ajava\A母乳喂养项目\breastfeed\server\bfbackend)
+2020-02-09 12:26:31,590 [DEBUG] (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2020-02-09 12:26:31,590 [INFO] (SpringApplication.java:648)- No active profile set, falling back to default profiles: default

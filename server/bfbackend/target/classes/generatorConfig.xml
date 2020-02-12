@@ -51,15 +51,19 @@
                <!--enableSelectByExample="false" selectByExampleQueryId="false"/>-->
 
 
-        <table tableName="article" domainObjectName="Article"
-        enableCountByExample="false" enableUpdateByExample="false"
-        enableSelectByExample="false" selectByExampleQueryId="false"  >
-        </table>
+        <!--<table tableName="article" domainObjectName="Article"-->
+        <!--enableCountByExample="false" enableUpdateByExample="false"-->
+        <!--enableSelectByExample="false" selectByExampleQueryId="false"  >-->
+        <!--</table>-->
 
-        <table tableName="audio" domainObjectName="Audio"
+        <!--<table tableName="audio" domainObjectName="Audio"-->
+        <!--enableCountByExample="false" enableUpdateByExample="false"-->
+        <!--enableSelectByExample="false" selectByExampleQueryId="false"/>-->
+
+        <table tableName="search_content" domainObjectName="Search"
         enableCountByExample="false" enableUpdateByExample="false"
         enableSelectByExample="false" selectByExampleQueryId="false"/>
-    </context>
+</context>
 
 </generatorConfiguration>
 

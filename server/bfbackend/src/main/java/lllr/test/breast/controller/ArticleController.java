@@ -1,11 +1,15 @@
 package lllr.test.breast.controller;
 
+import edu.princeton.cs.algs4.In;
+import lllr.test.breast.common.Const;
 import lllr.test.breast.common.ServerResponse;
 import lllr.test.breast.dataObject.popularization.Article;
+import lllr.test.breast.dataObject.popularization.PagedResult;
 import lllr.test.breast.service.inter.ArticleService;
 import lllr.test.breast.util.qiniu.QiniuRes;
 import lllr.test.breast.util.qiniu.QiniuResultUtil;
 import lllr.test.breast.util.qiniu.QiniuUtil;
+import org.apache.catalina.Server;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,6 +29,8 @@ public class ArticleController {
     @Autowired
     ArticleService articleService;
     @Resource
+    Const constNum;
+    @Resource
     QiniuUtil qiniu;
 
 
@@ -39,12 +45,42 @@ public class ArticleController {
     }
 
 
+    //分页查询文章
     @GetMapping("/article/getlist")
     @CrossOrigin
     public ServerResponse<List<Article>> queryArticleList(){
         return articleService.getArticleList();
     }
 
+
+    //根据关键词搜索文章
+    @GetMapping("article/search")
+    @CrossOrigin
+    public ServerResponse<List<Article>> searchArticles(@RequestParam("content") String content)
+    {
+
+        return articleService.getArticlesBy(content);
+    }
+
+
+    //获取文章热搜词
+    @GetMapping("/article/getHotWords")
+    @CrossOrigin
+    public ServerResponse<List<String>> getHotWords()
+    {
+        return articleService.getHotWords();
+    }
+    //物理分页查询列表
+    @GetMapping("/article/getlist_page")
+    @CrossOrigin
+    public ServerResponse<PagedResult> queryArticleList_page(@RequestParam("page") Integer page){
+
+        //可能传过来的页数是空
+        if(page == null)
+            page = 1;
+        //常熟
+        return articleService.getAllArticles(page,constNum.PAGE_SIZE);
+    }
 
     //获取一篇文章
     @GetMapping("/article/getone")

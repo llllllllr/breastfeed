@@ -73,6 +73,14 @@ export default {
     };
   },
   mounted() {
+    this.$axios({
+        method: "post",
+        url: "http://localhost:8887/article/getToken",
+        xhrFields: { withCredentials: true }
+      }).then(res => {
+        //alert(res.data)
+        this.form.token = res.data;
+      });  
     //初始化富文本编辑器
     this.editor = new Editor("#editor");
     this.editor.customConfig.uploadImgShowBase64 = true;
@@ -156,14 +164,7 @@ export default {
         this.$message.error("上传头像图片大小不能超过 2MB!");
       }
 
-      this.$axios({
-        method: "post",
-        url: "http://localhost:8887/article/getToken",
-        xhrFields: { withCredentials: true }
-      }).then(res => {
-        alert(res.data)
-        this.form.token = res.data;
-      });
+      
 
       var myDate = new Date();
       var year = myDate.getFullYear();

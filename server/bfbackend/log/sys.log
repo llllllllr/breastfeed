@@ -1,1 +1,6 @@
-2020-02-06 16:12:40,142 [INFO] (StartupInfoLogger.java:59)- Started BreastApplication in 2.962 seconds (JVM running for 4.627)
+2020-02-10 13:22:44,796 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, description, img_url, category , content from article where id = ? 
+2020-02-10 13:22:44,825 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 1(Integer)
+2020-02-10 13:22:44,898 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-02-10 13:22:51,778 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, description, img_url, category , content from article where id = ? 
+2020-02-10 13:22:51,779 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 2(Integer)
+2020-02-10 13:22:51,850 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 1

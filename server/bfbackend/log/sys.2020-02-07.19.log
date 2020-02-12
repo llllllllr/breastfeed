@@ -1,0 +1,12 @@
+2020-02-07 17:19:58,798 [INFO] (StartupInfoLogger.java:59)- Started BreastApplication in 6.318 seconds (JVM running for 10.048)
+2020-02-07 17:20:14,190 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT count(0) FROM article 
+2020-02-07 17:20:14,290 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-02-07 17:20:14,566 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-02-07 17:20:14,573 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, description, img_url, category from article LIMIT ?, ? 
+2020-02-07 17:20:14,574 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 10(Integer), 5(Integer)
+2020-02-07 17:20:14,624 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 5
+2020-02-07 17:25:34,644 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, vedioURL, cover_url, category from vedio 
+2020-02-07 17:25:34,649 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-02-07 17:25:34,706 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 9
+2020-02-07 17:25:34,708 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, audioURL, category, cover_url from audio where id = ? 
+2020-02-07 17:25:34,711 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 0(Integer)
