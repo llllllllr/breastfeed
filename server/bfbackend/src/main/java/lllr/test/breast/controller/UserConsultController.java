@@ -1,6 +1,6 @@
 package lllr.test.breast.controller;
 
-import lllr.test.breast.service.inter.UserConsult;
+import lllr.test.breast.service.inter.UserConsultAutoReply;
 import lllr.test.breast.util.wx.WXUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -20,12 +20,11 @@ public class UserConsultController {
     private static final Logger LOGGER = LoggerFactory.getLogger(UserConsultController.class);
 
     @Autowired
-    private UserConsult userConsult;
+    private UserConsultAutoReply userConsultAutoReply;
 
     //和微信官方交互
     @Autowired
     private WXUtil wxUtil;
-
 
     /*
     在微信公众号小程序平台  填写消息服务器地址后（http：//localhost：8080/consult），
@@ -45,6 +44,7 @@ public class UserConsultController {
         return "";
     }
 
+<<<<<<< HEAD
     /*
     接收用户发送给客服的内容，并根据关键词回复
      */
@@ -57,6 +57,20 @@ public class UserConsultController {
         return "success";
     }
 
+=======
+//    /*
+//    接收用户发送给客服的内容，并根据关键词回复
+//     */
+//    @ResponseBody
+//    @PostMapping("/auto")
+//    public String WXAutoReply(@RequestBody Map<String,String> requestData){
+//        LOGGER.debug("=== " + requestData.toString() + "===");
+//
+//        String reply = (String) userConsultAutoReply.WXAutoReply(requestData);
+//        return reply;
+//    }
+//
+>>>>>>> test
 
 
 }

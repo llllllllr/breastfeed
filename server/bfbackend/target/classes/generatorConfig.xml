@@ -27,7 +27,7 @@
         </javaTypeResolver>
 
         <!--dataobject-->
-        <javaModelGenerator targetPackage="lllr.test.breast.dataObject.popularization" targetProject="src/main/java">
+        <javaModelGenerator targetPackage="lllr.test.breast.dataObject.consult" targetProject="src/main/java">
             <property name="enableSubPackages" value="true"/>
             <property name="trimStrings" value="true"/>
         </javaModelGenerator>
@@ -41,7 +41,6 @@
             <property name="enableSubPackages" value="true"/>
         </javaClientGenerator>
 
-        <!---->
         <!--<table tableName="auto_answer_template" domainObjectName="AutoAnswerTemplate"-->
                <!--enableCountByExample="true" enableUpdateByExample="true" enableDeleteByExample="true"-->
                <!--enableSelectByExample="true" selectByExampleQueryId="true"/>-->
@@ -51,14 +50,20 @@
                <!--enableSelectByExample="false" selectByExampleQueryId="false"/>-->
 
 
-        <table tableName="article" domainObjectName="Article"
-        enableCountByExample="false" enableUpdateByExample="false"
-        enableSelectByExample="false" selectByExampleQueryId="false"  >
+<!--        <table tableName="article" domainObjectName="Article"-->
+<!--        enableCountByExample="false" enableUpdateByExample="false"-->
+<!--        enableSelectByExample="false" selectByExampleQueryId="false"  >-->
+<!--        </table>-->
+
+<!--        <table tableName="audio" domainObjectName="Audio"-->
+<!--        enableCountByExample="false" enableUpdateByExample="false"-->
+<!--        enableSelectByExample="false" selectByExampleQueryId="false"/>-->
+
+        <table tableName="wechat_message_item" domainObjectName="WeChatMessageItem"
+               enableCountByExample="false" enableUpdateByExample="false"
+               enableSelectByExample="false" selectByExampleQueryId="false"  >
         </table>
 
-        <table tableName="audio" domainObjectName="Audio"
-        enableCountByExample="false" enableUpdateByExample="false"
-        enableSelectByExample="false" selectByExampleQueryId="false"/>
     </context>
 
 </generatorConfiguration>

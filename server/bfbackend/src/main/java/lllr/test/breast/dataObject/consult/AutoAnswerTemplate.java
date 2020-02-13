@@ -7,6 +7,17 @@ public class AutoAnswerTemplate {
 
     private String answerTemplate;
 
+    public AutoAnswerTemplate(){}
+
+    @Override
+    public String toString() {
+        return "AutoAnswerTemplate{" +
+                "consultId=" + consultId +
+                ", questionKey='" + questionKey + '\'' +
+                ", answerTemplate='" + answerTemplate + '\'' +
+                '}';
+    }
+
     public AutoAnswerTemplate(String questionKey, String answerTemplate) {
         this.questionKey = questionKey;
         this.answerTemplate = answerTemplate;

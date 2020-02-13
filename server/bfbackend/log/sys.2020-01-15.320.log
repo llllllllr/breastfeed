@@ -1,6 +1,0 @@
-2020-01-15 23:43:07,701 [DEBUG] (FaceServiceImpl.java:71)- === 已注册过，无效注册！===
-2020-01-15 23:43:07,706 [DEBUG] (FaceServiceImpl.java:99)- === FaceSign: 人脸验证成功！
-2020-01-15 23:43:08,232 [INFO] (UserFaceController.java:66)- ===人脸注册图片名称：wx8b444a502cdbf1e5.o6zAJs2XJzZYspbUKdArzZWY7KD8.rca3nVjxDgwq0eb59c3cd251d5b78b8182b4121f73e7.jpg  大小：80753=== 
-2020-01-15 23:43:09,628 [DEBUG] (FaceServiceImpl.java:50)- === SearchFace： {thresholds={"1e-5":73.975,"1e-4":69.101,"1e-3":62.327}, image_id=wMLLZjhBtaKrB7I8EPt7tQ==, faces=[{"face_rectangle":{"top":188,"left":174,"width":66,"height":66},"face_token":"e64e69ab784a5bbaf4ca3ff9ede013fd"}], request_id=1579102988,f0a0730f-e220-4c07-b457-23e7d267af91, results=[{"user_id":"","confidence":85.864,"face_token":"e6c60682ed30f04e8b546035c6002f20"}], time_used=366}===
-2020-01-15 23:43:11,037 [DEBUG] (FaceServiceImpl.java:71)- === 已注册过，无效注册！===
-2020-01-15 23:43:11,038 [DEBUG] (FaceServiceImpl.java:99)- === FaceSign: 人脸验证成功！

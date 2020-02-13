@@ -1,7 +1,0 @@
-2020-01-15 21:38:37,129 [DEBUG] (FaceServiceImpl.java:141)- === 人脸识别注册成功！ face_token： d55aed325841f4f1989021545f81acbe===
-2020-01-15 21:38:38,089 [DEBUG] (FaceServiceImpl.java:75)- === DetectFace： {face_num=0, faces=[], image_id=vLdCFaLHw8Wx7Z67XvB9ew==, request_id=1579095517,f55524a6-a6bf-46ab-9d98-dd8ba2b4a065, time_used=70}===
-2020-01-15 21:38:38,922 [INFO] (UserFaceController.java:36)- ===人脸注册图片名称：wx8b444a502cdbf1e5.o6zAJs2XJzZYspbUKdArzZWY7KD8.OYcJVtsUf0iB49280151d94e856bb2474819f2255bd4.jpg  大小：75570=== 
-2020-01-15 21:38:41,200 [DEBUG] (FaceServiceImpl.java:75)- === DetectFace： {face_num=0, faces=[], image_id=G2kTLxhOAjoGDsBa0myX2A==, request_id=1579095520,72547415-806b-43fb-88a5-c9db45d7b2c0, time_used=125}===
-2020-01-15 21:39:14,236 [INFO] (StartupInfoLogger.java:50)- Starting BreastApplication on LAPTOP-562395R3 with PID 5036 (started by 爱哭的周小姐 in D:\软件应用\java IDE\IntelliJ IDEA 2019.1\项目\breastfeed\breastfeed\server\bfbackend)
-2020-01-15 21:39:14,241 [DEBUG] (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
-2020-01-15 21:39:14,241 [INFO] (SpringApplication.java:648)- No active profile set, falling back to default profiles: default

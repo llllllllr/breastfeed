@@ -1,0 +1,90 @@
+2020-02-09 14:19:06,364 [INFO] (StartupInfoLogger.java:50)- Starting BreastApplication on LAPTOP-562395R3 with PID 7340 (started by 爱哭的周小姐 in D:\软件应用\java IDE\IntelliJ IDEA 2019.1\项目\breastfeed\新建文件夹\server\bfbackend)
+2020-02-09 14:19:06,416 [DEBUG] (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2020-02-09 14:19:06,417 [INFO] (SpringApplication.java:648)- No active profile set, falling back to default profiles: default
+2020-02-09 14:22:53,102 [INFO] (StartupInfoLogger.java:50)- Starting BreastApplication on LAPTOP-562395R3 with PID 868 (started by 爱哭的周小姐 in D:\软件应用\java IDE\IntelliJ IDEA 2019.1\项目\breastfeed\新建文件夹\server\bfbackend)
+2020-02-09 14:22:53,109 [DEBUG] (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2020-02-09 14:22:53,110 [INFO] (SpringApplication.java:648)- No active profile set, falling back to default profiles: default
+2020-02-09 14:23:51,502 [INFO] (StartupInfoLogger.java:50)- Starting BreastApplication on LAPTOP-562395R3 with PID 3768 (started by 爱哭的周小姐 in D:\软件应用\java IDE\IntelliJ IDEA 2019.1\项目\breastfeed\新建文件夹\server\bfbackend)
+2020-02-09 14:23:51,515 [DEBUG] (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2020-02-09 14:23:51,516 [INFO] (SpringApplication.java:648)- No active profile set, falling back to default profiles: default
+2020-02-09 14:23:54,465 [INFO] (StartupInfoLogger.java:59)- Started BreastApplication in 5.086 seconds (JVM running for 7.007)
+2020-02-09 14:24:29,311 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, from_user_id, to_user_id, message_type, message_content, time from wechat_message_item where from_user_id = ? 
+2020-02-09 14:24:29,346 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 111(String)
+2020-02-09 14:24:29,465 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-02-09 14:24:29,468 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, from_user_id, to_user_id, message_type, message_content, time from wechat_message_item where from_user_id = ? 
+2020-02-09 14:24:29,468 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 222(String)
+2020-02-09 14:24:29,555 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 4
+2020-02-09 14:25:05,945 [INFO] (StartupInfoLogger.java:50)- Starting BreastApplication on LAPTOP-562395R3 with PID 17000 (started by 爱哭的周小姐 in D:\软件应用\java IDE\IntelliJ IDEA 2019.1\项目\breastfeed\新建文件夹\server\bfbackend)
+2020-02-09 14:25:05,953 [DEBUG] (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2020-02-09 14:25:05,954 [INFO] (SpringApplication.java:648)- No active profile set, falling back to default profiles: default
+2020-02-09 14:25:08,359 [INFO] (StartupInfoLogger.java:59)- Started BreastApplication in 3.637 seconds (JVM running for 5.441)
+2020-02-09 14:25:14,166 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, from_user_id, to_user_id, message_type, message_content, time from wechat_message_item where from_user_id = ? 
+2020-02-09 14:25:14,190 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 111(String)
+2020-02-09 14:25:14,288 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-02-09 14:25:14,291 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, from_user_id, to_user_id, message_type, message_content, time from wechat_message_item where from_user_id = ? 
+2020-02-09 14:25:14,292 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 222(String)
+2020-02-09 14:25:14,374 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 4
+2020-02-09 14:26:19,558 [INFO] (StartupInfoLogger.java:50)- Starting BreastApplication on LAPTOP-562395R3 with PID 8492 (started by 爱哭的周小姐 in D:\软件应用\java IDE\IntelliJ IDEA 2019.1\项目\breastfeed\新建文件夹\server\bfbackend)
+2020-02-09 14:26:19,561 [DEBUG] (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2020-02-09 14:26:19,562 [INFO] (SpringApplication.java:648)- No active profile set, falling back to default profiles: default
+2020-02-09 14:26:22,080 [INFO] (StartupInfoLogger.java:59)- Started BreastApplication in 3.198 seconds (JVM running for 4.892)
+2020-02-09 14:27:04,374 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, from_user_id, to_user_id, message_type, message_content, time from wechat_message_item where from_user_id = ? 
+2020-02-09 14:27:04,399 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 111(String)
+2020-02-09 14:27:04,502 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-02-09 14:27:04,505 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, from_user_id, to_user_id, message_type, message_content, time from wechat_message_item where from_user_id = ? 
+2020-02-09 14:27:04,505 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 222(String)
+2020-02-09 14:27:04,585 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 4
+2020-02-09 14:29:56,340 [INFO] (StartupInfoLogger.java:50)- Starting BreastApplication on LAPTOP-562395R3 with PID 4380 (started by 爱哭的周小姐 in D:\软件应用\java IDE\IntelliJ IDEA 2019.1\项目\breastfeed\新建文件夹\server\bfbackend)
+2020-02-09 14:29:56,350 [DEBUG] (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2020-02-09 14:29:56,350 [INFO] (SpringApplication.java:648)- No active profile set, falling back to default profiles: default
+2020-02-09 14:29:58,984 [INFO] (StartupInfoLogger.java:59)- Started BreastApplication in 4.603 seconds (JVM running for 6.456)
+2020-02-09 14:30:09,082 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: insert into wechat_message_item (id, from_user_id, to_user_id, message_type, message_content, time ) values (?, ?, ?, ?, ?, ? ) 
+2020-02-09 14:30:09,108 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: null, 111(String), 222(String), 0(Integer), sfds(String), null
+2020-02-09 14:30:09,263 [DEBUG] (BaseJdbcLogger.java:143)- <==    Updates: 1
+2020-02-09 23:34:06,845 [INFO] (StartupInfoLogger.java:50)- Starting BreastApplication on LAPTOP-562395R3 with PID 3768 (started by 爱哭的周小姐 in D:\软件应用\java IDE\IntelliJ IDEA 2019.1\项目\breastfeed\新建文件夹\server\bfbackend)
+2020-02-09 23:34:06,868 [DEBUG] (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2020-02-09 23:34:06,869 [INFO] (SpringApplication.java:648)- No active profile set, falling back to default profiles: default
+2020-02-09 23:34:10,681 [INFO] (StartupInfoLogger.java:59)- Started BreastApplication in 4.968 seconds (JVM running for 7.09)
+2020-02-09 23:34:24,989 [INFO] (WebSocketController.java:61)- [WebSocket] 连接成功，当前连接人：={}
+2020-02-09 23:35:29,752 [INFO] (WebSocketController.java:61)- [WebSocket] 连接成功，当前连接人：={}
+2020-02-09 23:35:39,937 [INFO] (WebSocketController.java:94)- [WebSocket] 收到消息：{ "fromUserId": "111", "messageContent":"222 你好", "messageType": 0, "time": 1581261288704, "toUserId": "222" }
+2020-02-09 23:42:07,108 [INFO] (WebSocketController.java:68)- [WebSocket] 退出成功，当前连接人数为：=1
+2020-02-09 23:42:28,364 [INFO] (WebSocketController.java:68)- [WebSocket] 退出成功，当前连接人数为：=1
+2020-02-09 23:42:34,690 [INFO] (StartupInfoLogger.java:50)- Starting BreastApplication on LAPTOP-562395R3 with PID 5988 (started by 爱哭的周小姐 in D:\软件应用\java IDE\IntelliJ IDEA 2019.1\项目\breastfeed\新建文件夹\server\bfbackend)
+2020-02-09 23:42:34,699 [DEBUG] (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2020-02-09 23:42:34,700 [INFO] (SpringApplication.java:648)- No active profile set, falling back to default profiles: default
+2020-02-09 23:42:37,444 [INFO] (StartupInfoLogger.java:59)- Started BreastApplication in 4.018 seconds (JVM running for 5.698)
+2020-02-09 23:42:52,435 [INFO] (WebSocketController.java:61)- [WebSocket] 连接成功，当前连接人数:
+2020-02-09 23:43:01,212 [INFO] (WebSocketController.java:61)- [WebSocket] 连接成功，当前连接人数:
+2020-02-09 23:43:52,145 [INFO] (WebSocketController.java:68)- [WebSocket] 退出成功，当前连接人数为：=0
+2020-02-09 23:43:52,146 [INFO] (WebSocketController.java:68)- [WebSocket] 退出成功，当前连接人数为：=0
+2020-02-09 23:43:59,031 [INFO] (StartupInfoLogger.java:50)- Starting BreastApplication on LAPTOP-562395R3 with PID 19332 (started by 爱哭的周小姐 in D:\软件应用\java IDE\IntelliJ IDEA 2019.1\项目\breastfeed\新建文件夹\server\bfbackend)
+2020-02-09 23:43:59,036 [DEBUG] (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2020-02-09 23:43:59,038 [INFO] (SpringApplication.java:648)- No active profile set, falling back to default profiles: default
+2020-02-09 23:44:02,147 [INFO] (StartupInfoLogger.java:59)- Started BreastApplication in 4.766 seconds (JVM running for 6.442)
+2020-02-09 23:44:20,294 [INFO] (WebSocketController.java:64)- [WebSocket] 连接成功，当前连接人:
+2020-02-09 23:44:21,737 [INFO] (WebSocketController.java:64)- [WebSocket] 连接成功，当前连接人:
+2020-02-09 23:45:15,121 [INFO] (WebSocketController.java:71)- [WebSocket] 退出成功，当前连接人数为：=1
+2020-02-09 23:45:15,122 [INFO] (WebSocketController.java:71)- [WebSocket] 退出成功，当前连接人数为：=0
+2020-02-09 23:45:21,993 [INFO] (StartupInfoLogger.java:50)- Starting BreastApplication on LAPTOP-562395R3 with PID 18404 (started by 爱哭的周小姐 in D:\软件应用\java IDE\IntelliJ IDEA 2019.1\项目\breastfeed\新建文件夹\server\bfbackend)
+2020-02-09 23:45:21,999 [DEBUG] (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2020-02-09 23:45:22,000 [INFO] (SpringApplication.java:648)- No active profile set, falling back to default profiles: default
+2020-02-09 23:45:24,383 [INFO] (StartupInfoLogger.java:59)- Started BreastApplication in 3.97 seconds (JVM running for 5.643)
+2020-02-09 23:45:33,386 [INFO] (WebSocketController.java:64)- [WebSocket] 连接成功，当前连接人:
+2020-02-09 23:45:35,257 [INFO] (WebSocketController.java:64)- [WebSocket] 连接成功，当前连接人:
+2020-02-09 23:46:03,058 [INFO] (WebSocketController.java:71)- [WebSocket] 退出成功，当前连接人数为：=1
+2020-02-09 23:46:04,088 [INFO] (WebSocketController.java:64)- [WebSocket] 连接成功，当前连接人:
+2020-02-09 23:47:17,813 [INFO] (WebSocketController.java:71)- [WebSocket] 退出成功，当前连接人数为：=1
+2020-02-09 23:47:17,814 [INFO] (WebSocketController.java:71)- [WebSocket] 退出成功，当前连接人数为：=0
+2020-02-09 23:49:53,755 [INFO] (StartupInfoLogger.java:50)- Starting BreastApplication on LAPTOP-562395R3 with PID 13396 (started by 爱哭的周小姐 in D:\软件应用\java IDE\IntelliJ IDEA 2019.1\项目\breastfeed\新建文件夹\server\bfbackend)
+2020-02-09 23:49:53,763 [DEBUG] (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2020-02-09 23:49:53,763 [INFO] (SpringApplication.java:648)- No active profile set, falling back to default profiles: default
+2020-02-09 23:49:56,093 [INFO] (StartupInfoLogger.java:59)- Started BreastApplication in 3.741 seconds (JVM running for 5.597)
+2020-02-09 23:50:03,037 [INFO] (WebSocketController.java:64)- [WebSocket] 连接成功，当前连接人数:
+2020-02-09 23:50:07,927 [INFO] (WebSocketController.java:64)- [WebSocket] 连接成功，当前连接人数:
+2020-02-09 23:50:22,205 [INFO] (WebSocketController.java:97)- [WebSocket] 收到消息：{ "fromUserId": "111", "messageContent":"222 你好", "messageType": 0, "time": 1581261288704, "toUserId": "222" }
+2020-02-09 23:50:22,304 [INFO] (WebSocketController.java:71)- [WebSocket] 退出成功，当前连接人数为：=1
+2020-02-09 23:53:20,942 [INFO] (WebSocketController.java:64)- [WebSocket] 连接成功，当前连接人数:
+2020-02-09 23:53:23,092 [INFO] (WebSocketController.java:97)- [WebSocket] 收到消息：{ "fromUserId": "111", "messageContent":"222 你好", "messageType": 0, "time": 1581261288704, "toUserId": "222" }
+2020-02-09 23:54:29,873 [INFO] (WebSocketController.java:71)- [WebSocket] 退出成功，当前连接人数为：=1
+2020-02-09 23:54:30,606 [INFO] (WebSocketController.java:71)- [WebSocket] 退出成功，当前连接人数为：=0

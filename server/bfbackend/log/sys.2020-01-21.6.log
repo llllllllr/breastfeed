@@ -1,8 +1,0 @@
-2020-01-21 21:12:52,029 [DEBUG] (UserConsultController.java:43)- ===[111111, 123456, 1579607930205]===
-2020-01-21 21:12:52,032 [DEBUG] (UserConsultController.java:49)- ===1111111234561579607930205===
-2020-01-21 21:12:52,035 [DEBUG] (UserConsultController.java:54)- ===cf2badb63c10674659c05c15437287a3615af214===
-2020-01-21 21:13:12,868 [INFO] (StartupInfoLogger.java:50)- Starting BreastApplication on LAPTOP-562395R3 with PID 1032 (started by 爱哭的周小姐 in D:\软件应用\java IDE\IntelliJ IDEA 2019.1\项目\breastfeed\breastfeed\server\bfbackend)
-2020-01-21 21:13:12,871 [DEBUG] (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
-2020-01-21 21:13:12,872 [INFO] (SpringApplication.java:648)- No active profile set, falling back to default profiles: default
-2020-01-21 21:13:15,165 [INFO] (StartupInfoLogger.java:59)- Started BreastApplication in 2.87 seconds (JVM running for 4.412)
-2020-01-21 21:13:27,855 [DEBUG] (UserConsultController.java:43)- ===[111111, 123456, 1579607930205]===
