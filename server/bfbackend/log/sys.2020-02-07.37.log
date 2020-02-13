@@ -1,0 +1,12 @@
+2020-02-07 18:34:18,641 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 0(Integer)
+2020-02-07 18:34:18,688 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 0
+2020-02-07 19:00:43,420 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, description, img_url, category , content from article where id = ? 
+2020-02-07 19:00:46,088 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 110(Integer)
+2020-02-07 19:00:46,307 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-02-07 19:01:55,099 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT count(0) FROM article 
+2020-02-07 19:01:54,984 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, audioURL, category, cover_url from audio 
+2020-02-07 19:01:55,130 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-02-07 19:01:55,130 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-02-07 19:01:55,156 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, vedioURL, cover_url, category from vedio 
+2020-02-07 19:01:55,160 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-02-07 19:01:55,189 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 6

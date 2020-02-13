@@ -31,7 +31,7 @@
   :data="form"
   :show-file-list="false">
   <el-button size="small" type="primary">上传视频</el-button>
-  <div slot="tip" class="el-upload__tip">只能上传MP4文件，且不超过200M</div>
+  <!-- <div slot="tip" class="el-upload__tip">只能上传MP4文件，且不超过200M</div> -->
 </el-upload>
     <div class="category">
       <template>
@@ -68,13 +68,14 @@ export default {
     };
   },
   mounted() {
-    // this.$axios({
-    //   method: "post",
-    //   url: "http://localhost:8887/article/getToken",
-    //   xhrFields: { withCredentials: true }
-    // }).then(res => {
-    //   this.form.token = res.data;
-    // });
+    //获取token
+      this.$axios({
+        method: "post",
+        url: "http://localhost:8887/article/getToken",
+        xhrFields: { withCredentials: true }
+      }).then(res => {
+        this.form.token = res.data;
+      });
   },
   methods: {
 
@@ -84,7 +85,7 @@ export default {
       this.imageUrl = URL.createObjectURL(file.raw);
       //this.audioUrl = this.audioUrl + res.key;
       this.returnImgUrl="http://llllllllr.top/"+res.key;
-      alert(res.key);
+      //alert(res.key);
     },
     mp3_handleAvatarSuccess(res, file){
           this.audioUrl = this.audioUrl + res.key;
@@ -107,7 +108,7 @@ export default {
       }
       this.readyForUpload();
       this.form.key = file.name+this.keysuffix
-      alert(this.form.key)
+      //alert(this.form.key)
       return isJPG && isLt2M;
     },
     mp3_beforeAvatarUpload(file) {
@@ -139,14 +140,7 @@ export default {
       var ms = myDate.getMilliseconds();
       this.keysuffix =  year + month + day + hour + ms;
       alert(this.keysuffix)
-      //获取token
-      this.$axios({
-        method: "post",
-        url: "http://localhost:8887/article/getToken",
-        xhrFields: { withCredentials: true }
-      }).then(res => {
-        this.form.token = res.data;
-      });
+      
  
     },
     //添加音频
@@ -169,7 +163,7 @@ export default {
         var resData = res.data;
         if (resData.status == 1) {
            this.$message.success(resData.msg);
-           this.$router.push({ path: "/audiolist" });
+           this.$router.push({ path: "/vediolist" });
          // alert("成功");
         } else this.$message.error(resData.msg);
       });
@@ -187,7 +181,10 @@ export default {
 
 .category {
   margin-left: 100px;
-  margin-top: -120px;
+  margin-top: 20px;
+  position: absolute;
+  height: 30px;
+  top: 380px;
 }
 .container {
   margin-top: 60px;

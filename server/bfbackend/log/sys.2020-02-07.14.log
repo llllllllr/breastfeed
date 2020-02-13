@@ -1,0 +1,12 @@
+2020-02-07 14:06:46,660 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, description, img_url, category , content from article where id = ? 
+2020-02-07 14:06:46,664 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 2(Integer)
+2020-02-07 14:06:46,701 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-02-07 14:06:54,071 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, description, img_url, category , content from article where id = ? 
+2020-02-07 14:06:54,072 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 125(Integer)
+2020-02-07 14:06:54,110 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-02-07 14:06:57,597 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, description, img_url, category , content from article where id = ? 
+2020-02-07 14:06:57,599 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 128(Integer)
+2020-02-07 14:06:57,637 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-02-07 15:40:42,541 [INFO] (StartupInfoLogger.java:50)- Starting BreastApplication on LAPTOP-SKN1FD88 with PID 12980 (started by 12284 in F:\Ajava\A母乳喂养项目\breastfeed\server\bfbackend)
+2020-02-07 15:40:42,545 [DEBUG] (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2020-02-07 15:40:42,546 [INFO] (SpringApplication.java:648)- No active profile set, falling back to default profiles: default

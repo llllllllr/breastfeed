@@ -155,4 +155,11 @@
     <include refid="Base_Column_List" />
     from article
   </select>
+
+  <select id="selectByContent" resultMap="BaseResultMap" parameterType="string">
+    select
+    <include refid="Base_Column_List" />
+    from article
+    where title like '%${content}%'
+  </select>
 </mapper>

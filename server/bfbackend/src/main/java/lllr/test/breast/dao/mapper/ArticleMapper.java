@@ -1,6 +1,7 @@
 package lllr.test.breast.dao.mapper;
 
 import lllr.test.breast.dataObject.popularization.Article;
+import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
@@ -22,4 +23,6 @@ public interface ArticleMapper {
     int updateByPrimaryKey(Article record);
 
     List<Article> selectArticleList();
+
+    List<Article> selectByContent(String content);
 }

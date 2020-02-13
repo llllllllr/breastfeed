@@ -1,8 +1,14 @@
 package lllr.test.breast.service.impl;
 
+import com.github.pagehelper.Page;
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
 import lllr.test.breast.common.ServerResponse;
 import lllr.test.breast.dao.mapper.ArticleMapper;
+import lllr.test.breast.dao.mapper.SearchMapper;
 import lllr.test.breast.dataObject.popularization.Article;
+import lllr.test.breast.dataObject.popularization.PagedResult;
+import lllr.test.breast.dataObject.popularization.Search;
 import lllr.test.breast.service.inter.ArticleService;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,7 +23,8 @@ public class ArticleServiceImpl implements ArticleService {
 
     @Autowired
     ArticleMapper articleMapper;
-
+    @Autowired
+    SearchMapper searchMapper;
 
     @Override
     public ServerResponse<String>  delArticle(Integer id) {
@@ -39,6 +46,10 @@ public class ArticleServiceImpl implements ArticleService {
         // logger.info("return article = {}",res.getTitle());
         return ServerResponse.createBysuccessData(res);
     }
+
+
+
+
     @Override
     public ServerResponse<String> addeditArticle(Article article) {
 
@@ -71,6 +82,7 @@ public class ArticleServiceImpl implements ArticleService {
     }
     @Override
     public ServerResponse<List<Article>> getArticleList() {
+
         List<Article> articleList = articleMapper.selectArticleList();
         for(int i=0;i<articleList.size();i++)
             if(articleList.get(i).getTitle().length()==0){
@@ -78,4 +90,41 @@ public class ArticleServiceImpl implements ArticleService {
             }
         return ServerResponse.createBysuccessData(articleList);
     }
+
+    //获取热搜词
+    @Override
+    public ServerResponse<List<String>> getHotWords() {
+
+        List<String> hotWords = searchMapper.getHotWords();
+        return ServerResponse.createBysuccessData(hotWords);
+    }
+
+    //分页查询文章列表
+    @Override
+    public ServerResponse<PagedResult> getAllArticles(Integer page, Integer pageSize) {
+        PageHelper.startPage(page,5);
+        List<Article> articles = articleMapper.selectArticleList();
+        PageInfo<Article> pageList = new PageInfo<>(articles);
+        PagedResult pagedResult = new PagedResult();
+        pagedResult.setPage(page);
+        pagedResult.setTotalPage(pageList.getPages());
+        pagedResult.setRows(articles);
+        pagedResult.setRecords(pageList.getTotal());
+        return  ServerResponse.createBysuccessData(pagedResult);
+
+    }
+
+    //根据关键词查询文章
+    @Override
+    public ServerResponse<List<Article>> getArticlesBy(String content) {
+        if(content == null)
+            return ServerResponse.createBysuccessMsg("查询词不可为空");
+        Search search = new Search();
+        search.setContent(content);
+        searchMapper.insert(search);
+        List<Article> articles = articleMapper.selectByContent(content);
+        return ServerResponse.createBysuccessData(articles);
+    }
+
+
 }
