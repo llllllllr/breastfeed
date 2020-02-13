@@ -34,9 +34,10 @@ public class UserConsultAutoReplyImpl implements UserConsultAutoReply {
 
         AutoAnswerTemplateExample autoAnswerTemplateExample = new AutoAnswerTemplateExample();
         //构造 模糊查询 条件
-        for(String temp:key_words)
-            autoAnswerTemplateExample.createCriteria().andQuestionKeyLike("%" + temp + "%");
-
+        for(String temp:key_words) {
+            AutoAnswerTemplateExample.Criteria criteria = autoAnswerTemplateExample.createCriteria().andQuestionKeyLike("%" + temp + "%");
+            autoAnswerTemplateExample.or(criteria);
+        }
         List<AutoAnswerTemplate> templates =  autoAnswerTemplateMapper.selectByExample(autoAnswerTemplateExample);
 
         LOGGER.info("=== " + message + "  查询得到系统自动回复 :" + templates.toString() + " ===");

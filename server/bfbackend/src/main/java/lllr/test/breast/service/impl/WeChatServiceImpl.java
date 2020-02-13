@@ -20,15 +20,15 @@ public class WeChatServiceImpl implements WeChatService {
         return successInsNum > 0;
     }
 
-    @Override
-    public List<WeChatMessageItem> selectWeChatMsgByUserId(String userId) {
-        List<WeChatMessageItem> records = new ArrayList<>();
-        records = weChatMessageItemMapper.selectByFromUserId(userId);
-        return records;
-    }
+//    @Override
+//    public List<WeChatMessageItem> selectWeChatMsgByUserId(String userId) {
+//        List<WeChatMessageItem> records = new ArrayList<>();
+//        records = weChatMessageItemMapper.selectByFromUserId(userId);
+//        return records;
+//    }
 
     @Override
-    public List<WeChatMessageItem> selectWeChatMsgByFromUserIdAndToUserId(String fromUserId, String toUserId) {
+    public List<WeChatMessageItem> selectWeChatMsgByFromUserIdAndToUserId(Integer fromUserId, Integer toUserId) {
         List<WeChatMessageItem> records = new ArrayList<>();
         records = weChatMessageItemMapper.selectByFromUserIdAndToUserId(fromUserId,toUserId);
         return records;

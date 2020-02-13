@@ -14,7 +14,7 @@ public interface WeChatMessageItemMapper {
 
     WeChatMessageItem selectByPrimaryKey(Integer id);
 
-    List<WeChatMessageItem> selectByFromUserId(String fromUserId);
+    List<WeChatMessageItem> selectByFromUserId(Integer fromUserId);
 
     int updateByPrimaryKeySelective(WeChatMessageItem record);
 
@@ -22,5 +22,5 @@ public interface WeChatMessageItemMapper {
 
 //    List<WeChatMessageItem> selectByFromUserIdAndToUserId(@Param("from") String fromUserId, @Param("to") String toUserId);
 
-    List<WeChatMessageItem> selectByFromUserIdAndToUserId(String fromUserId, String toUserId);
+    List<WeChatMessageItem> selectByFromUserIdAndToUserId(Integer fromUserId, Integer toUserId);
 }

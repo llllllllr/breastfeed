@@ -17,6 +17,18 @@ public class WeChatMessageItem {
 
     public WeChatMessageItem(){}
 
+    @Override
+    public String toString() {
+        return "WeChatMessageItem{" +
+                "id=" + id +
+                ", fromUserId=" + fromUserId +
+                ", toUserId=" + toUserId +
+                ", messageType=" + messageType +
+                ", messageContent='" + messageContent + '\'' +
+                ", time=" + time +
+                '}';
+    }
+
     public WeChatMessageItem(Integer fromUserId, Integer toUserId, int messageType, String messageContent, Date time) {
         this.time = time;
         this.fromUserId =fromUserId;

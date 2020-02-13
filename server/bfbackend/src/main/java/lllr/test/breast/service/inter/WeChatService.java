@@ -12,9 +12,9 @@ public interface WeChatService {
     //增
     boolean insertWeChatMsg(WeChatMessageItem record);
 
-    //根据用户标识查询相关聊天记录
-    List<WeChatMessageItem> selectWeChatMsgByUserId(String userId);
+//    //根据用户标识查询相关聊天记录
+//    List<WeChatMessageItem> selectWeChatMsgByUserId(String userId);
 
     //查询与特定用户的聊天记录
-    List<WeChatMessageItem> selectWeChatMsgByFromUserIdAndToUserId(String fromUserId,String toUserId);
+    List<WeChatMessageItem> selectWeChatMsgByFromUserIdAndToUserId(Integer fromUserId,Integer toUserId);
 }

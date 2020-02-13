@@ -18,12 +18,12 @@
     from wechat_message_item
     where id = #{id,jdbcType=INTEGER}
   </select>
-  <select id="selectByFromUserId" parameterType="java.lang.Integer" resultMap="BaseResultMap">
-    select
-    <include refid="Base_Column_List" />
-    from wechat_message_item
-    where from_user_id = #{fromUserId,jdbcType=INTEGER}
-  </select>
+<!--  <select id="selectByFromUserId" parameterType="java.lang.Integer" resultMap="BaseResultMap">-->
+<!--    select-->
+<!--    <include refid="Base_Column_List" />-->
+<!--    from wechat_message_item-->
+<!--    where from_user_id = #{fromUserId,jdbcType=INTEGER}-->
+<!--  </select>-->
   <select id="selectByFromUserIdAndToUserId" parameterType="java.lang.Integer" resultMap="BaseResultMap">
     select
     <include refid="Base_Column_List" />
@@ -33,12 +33,6 @@
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
     delete from wechat_message_item
     where id = #{id,jdbcType=INTEGER}
-  </delete>
-  <delete id="deleteByExample" parameterType="lllr.test.breast.dataObject.consult.WeChatMessageItemExample">
-    delete from wechat_message_item
-    <if test="_parameter != null">
-      <include refid="Example_Where_Clause" />
-    </if>
   </delete>
   <insert id="insert" parameterType="lllr.test.breast.dataObject.consult.WeChatMessageItem">
     insert into wechat_message_item (id, from_user_id, to_user_id, 
