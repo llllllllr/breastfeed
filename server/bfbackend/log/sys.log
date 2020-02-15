@@ -1,6 +1,4 @@
-2020-02-10 13:22:44,796 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, description, img_url, category , content from article where id = ? 
-2020-02-10 13:22:44,825 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 1(Integer)
-2020-02-10 13:22:44,898 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 1
-2020-02-10 13:22:51,778 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, description, img_url, category , content from article where id = ? 
-2020-02-10 13:22:51,779 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 2(Integer)
-2020-02-10 13:22:51,850 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-02-12 11:05:19,548 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 3
+2020-02-12 11:05:42,837 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select content from search_content group by content order by count(content) desc 
+2020-02-12 11:05:42,838 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-02-12 11:05:42,880 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 3

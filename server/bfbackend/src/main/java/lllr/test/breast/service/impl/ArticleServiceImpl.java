@@ -1,6 +1,5 @@
 package lllr.test.breast.service.impl;
 
-import com.github.pagehelper.Page;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import lllr.test.breast.common.ServerResponse;
@@ -10,7 +9,6 @@ import lllr.test.breast.dataObject.popularization.Article;
 import lllr.test.breast.dataObject.popularization.PagedResult;
 import lllr.test.breast.dataObject.popularization.Search;
 import lllr.test.breast.service.inter.ArticleService;
-import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

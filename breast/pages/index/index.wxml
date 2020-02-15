@@ -1,0 +1,20 @@
+<view class="tab">
+    <view class="tab-item {{tab==0?'active':''}}" bindtap="changeItem" data-item="0">图文</view>
+    <view class="tab-item {{tab==1?'active':''}}" bindtap="changeItem" data-item="1">音乐</view>
+    <view class="tab-item {{tab==2?'active':''}}" bindtap="changeItem" data-item="2">微课</view>
+</view>
+
+
+<view class="content">
+    <swiper current="{{item}}" bindchange="changeTab">
+        <swiper-item >
+            <include src="article.wxml"></include>
+        </swiper-item>
+        <swiper-item >
+            <include src="audio.wxml"></include>
+        </swiper-item>
+        <swiper-item >
+            <include src="video.wxml"></include>
+        </swiper-item>
+    </swiper>
+</view>

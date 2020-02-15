@@ -86,6 +86,7 @@
     where id = #{id,jdbcType=INTEGER}
   </update>
 
+
   <select id="getHotWords" resultType="string">
     select content from search_content
     group by content

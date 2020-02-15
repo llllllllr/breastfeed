@@ -1,0 +1,18 @@
+ <scroll-view class="content-info" scroll-y>
+ <view class='box'>
+        <view class='video' >
+            <block wx:for="{{videoList}}">
+                <view class='video-item'>
+					<view class='wrapper'>
+						<video class='video-video' wx:if='{{index==videoIndex}}' id='video{{index}}' autoplay='{{true}}' show-center-play-btn="{{false}}" src='{{item.vediourl}}'></video>
+						<image class='video-video2' wx:if='{{index!=videoIndex}}' mode='aspectFill' src='{{item.coverUrl}}'></image>
+						<image class='videoPlay' wx:if='{{index!=videoIndex}}' data-index='{{index}}' bindtap='videoPlay' src='/images/icon/videoPlay.png'></image>
+					</view>
+                    <view class='video-name'>{{item.title}}</view>
+                    <view class='video-bottom'>              
+                    </view>
+                </view>
+            </block>
+        </view>
+				</view>
+			</scroll-view>

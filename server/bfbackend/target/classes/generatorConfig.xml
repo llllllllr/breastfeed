@@ -63,6 +63,11 @@
         <table tableName="search_content" domainObjectName="Search"
         enableCountByExample="false" enableUpdateByExample="false"
         enableSelectByExample="false" selectByExampleQueryId="false"/>
+
+        <table tableName="collection" domainObjectName="Collection"
+        enableCountByExample="false" enableUpdateByExample="false"
+        enableSelectByExample="false" selectByExampleQueryId="false"/>
+
 </context>
 
 </generatorConfiguration>
