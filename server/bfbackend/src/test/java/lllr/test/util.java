@@ -4,8 +4,6 @@ import lllr.test.breast.dataObject.user.User;
 import lllr.test.breast.util.DataValidateUtil;
 import org.junit.Test;
 
-import javax.xml.crypto.Data;
-
 public class util {
     @Test
     public void fun() {

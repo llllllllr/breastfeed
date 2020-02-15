@@ -1,7 +1,0 @@
-2020-01-15 21:19:13,551 [DEBUG] (FaceServiceImpl.java:123)- === 已注册过，无效注册！===
-2020-01-15 21:19:13,551 [DEBUG] (FaceServiceImpl.java:141)- === 人脸识别注册成功！ face_token： b858d491873fdca8b634b09846cda1af===
-2020-01-15 21:19:24,584 [INFO] (StartupInfoLogger.java:50)- Starting BreastApplication on LAPTOP-562395R3 with PID 6756 (started by 爱哭的周小姐 in D:\软件应用\java IDE\IntelliJ IDEA 2019.1\项目\breastfeed\breastfeed\server\bfbackend)
-2020-01-15 21:19:24,598 [DEBUG] (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
-2020-01-15 21:19:24,598 [INFO] (SpringApplication.java:648)- No active profile set, falling back to default profiles: default
-2020-01-15 21:19:28,186 [INFO] (StartupInfoLogger.java:59)- Started BreastApplication in 5.44 seconds (JVM running for 8.05)
-2020-01-15 21:19:37,327 [INFO] (UserFaceController.java:36)- ===人脸注册图片名称：wx8b444a502cdbf1e5.o6zAJs2XJzZYspbUKdArzZWY7KD8.DZIhBmOaqlFl323a5b78fc1a360107d81402c374c9dc.jpg  大小：72811=== 

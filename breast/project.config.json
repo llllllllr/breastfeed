@@ -24,9 +24,18 @@
 		}
 	},
 	"compileType": "miniprogram",
+<<<<<<< HEAD:breast/project.config.json
 	"libVersion": "2.10.1",
 	"appid": "wxcb08e1f414685d6c",
 	"projectname": "%E5%A6%88%E5%92%AA%E5%AE%9D%E8%B4%9D",
+=======
+	"libVersion": "2.8.1",
+	"appid": "wx3d0c29a20a305f28",
+	"projectname": "%E6%AF%8D%E4%B9%B3%E5%96%82%E5%85%BB-%E7%A7%91%E5%AD%A6%E9%A2%91%E9%81%93",
+	"miniprogramRoot": "miniprogram/",
+	"cloudfunctionRoot": "cloudfunctions/",
+	"cloudfunctionTemplateRoot": "",
+>>>>>>> 50f84a1ddb995dbda8b9592e6834bb1d3face80f:mother-breed/project.config.json
 	"debugOptions": {
 		"hidedInDevtools": []
 	},

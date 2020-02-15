@@ -1,5 +1,0 @@
-2020-01-15 20:28:11,393 [INFO] (StartupInfoLogger.java:59)- Started BreastApplication in 5.844 seconds (JVM running for 8.261)
-2020-01-15 20:28:18,555 [INFO] (UserFaceController.java:36)- ===人脸注册图片名称：wx8b444a502cdbf1e5.o6zAJs2XJzZYspbUKdArzZWY7KD8.F3kByB1FNx9fbc436366cdec810d8077bc5cd32fa011.jpg  大小：80027=== 
-2020-01-15 20:28:20,345 [INFO] (UserFaceController.java:36)- ===人脸注册图片名称：wx8b444a502cdbf1e5.o6zAJs2XJzZYspbUKdArzZWY7KD8.xKdHFfvR3buY8a6ea58d7c410c12351e9490bd8a40cb.jpg  大小：80104=== 
-2020-01-15 20:28:21,508 [DEBUG] (FaceServiceImpl.java:75)- === DetectFace： {face_num=1, faces=[{"face_token":"62fa3770fe07da18ce73d166040113fa","face_rectangle":{"top":188,"left":167,"width":72,"height":72}}], image_id=DuydMMWnT7Dr+USbEommyQ==, request_id=1579091300,bd971088-2948-460c-b630-737696643d10, time_used=87}===
-2020-01-15 20:28:21,546 [DEBUG] (FaceServiceImpl.java:75)- === DetectFace： {face_num=1, faces=[{"face_token":"10a5be637d4b3817b960d460c6e5978d","face_rectangle":{"top":187,"left":170,"width":69,"height":69}}], image_id=ryU0YscmmfKA8jx1wZSBqw==, request_id=1579091301,8d5122a0-529b-4cfe-928b-8184d451bf88, time_used=39}===

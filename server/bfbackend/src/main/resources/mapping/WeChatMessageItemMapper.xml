@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="lllr.test.breast.dao.mapper.WeChatMessageItemMapper">
+  <resultMap id="BaseResultMap" type="lllr.test.breast.dataObject.consult.WeChatMessageItem">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="from_user_id" jdbcType="INTEGER" property="fromUserId" />
+    <result column="to_user_id" jdbcType="INTEGER" property="toUserId" />
+    <result column="message_type" jdbcType="INTEGER" property="messageType" />
+    <result column="message_content" jdbcType="VARCHAR" property="messageContent" />
+    <result column="time" jdbcType="TIMESTAMP" property="time" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, from_user_id, to_user_id, message_type, message_content, time
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from wechat_message_item
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+<!--  <select id="selectByFromUserId" parameterType="java.lang.Integer" resultMap="BaseResultMap">-->
+<!--    select-->
+<!--    <include refid="Base_Column_List" />-->
+<!--    from wechat_message_item-->
+<!--    where from_user_id = #{fromUserId,jdbcType=INTEGER}-->
+<!--  </select>-->
+  <select id="selectByFromUserIdAndToUserId" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from wechat_message_item
+    where from_user_id = #{fromUserId,jdbcType=INTEGER} and to_user_id = #{toUserId,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from wechat_message_item
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="lllr.test.breast.dataObject.consult.WeChatMessageItem">
+    insert into wechat_message_item (id, from_user_id, to_user_id, 
+      message_type, message_content, time
+      )
+    values (#{id,jdbcType=INTEGER}, #{fromUserId,jdbcType=INTEGER}, #{toUserId,jdbcType=INTEGER}, 
+      #{messageType,jdbcType=INTEGER}, #{messageContent,jdbcType=VARCHAR}, #{time,jdbcType=TIMESTAMP}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="lllr.test.breast.dataObject.consult.WeChatMessageItem">
+    insert into wechat_message_item
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="fromUserId != null">
+        from_user_id,
+      </if>
+      <if test="toUserId != null">
+        to_user_id,
+      </if>
+      <if test="messageType != null">
+        message_type,
+      </if>
+      <if test="messageContent != null">
+        message_content,
+      </if>
+      <if test="time != null">
+        time,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="fromUserId != null">
+        #{fromUserId,jdbcType=INTEGER},
+      </if>
+      <if test="toUserId != null">
+        #{toUserId,jdbcType=INTEGER},
+      </if>
+      <if test="messageType != null">
+        #{messageType,jdbcType=INTEGER},
+      </if>
+      <if test="messageContent != null">
+        #{messageContent,jdbcType=VARCHAR},
+      </if>
+      <if test="time != null">
+        #{time,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="lllr.test.breast.dataObject.consult.WeChatMessageItem">
+    update wechat_message_item
+    <set>
+      <if test="fromUserId != null">
+        from_user_id = #{fromUserId,jdbcType=INTEGER},
+      </if>
+      <if test="toUserId != null">
+        to_user_id = #{toUserId,jdbcType=INTEGER},
+      </if>
+      <if test="messageType != null">
+        message_type = #{messageType,jdbcType=INTEGER},
+      </if>
+      <if test="messageContent != null">
+        message_content = #{messageContent,jdbcType=VARCHAR},
+      </if>
+      <if test="time != null">
+        time = #{time,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="lllr.test.breast.dataObject.consult.WeChatMessageItem">
+    update wechat_message_item
+    set from_user_id = #{fromUserId,jdbcType=INTEGER},
+      to_user_id = #{toUserId,jdbcType=INTEGER},
+      message_type = #{messageType,jdbcType=INTEGER},
+      message_content = #{messageContent,jdbcType=VARCHAR},
+      time = #{time,jdbcType=TIMESTAMP}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+
+</mapper>

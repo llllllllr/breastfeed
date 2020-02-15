@@ -1,6 +1,7 @@
 package lllr.test.breast.controller;
 
 import lllr.test.breast.common.ServerResponse;
+import lllr.test.breast.dataObject.user.Doctor;
 import lllr.test.breast.dataObject.user.User;
 import lllr.test.breast.service.inter.UserService;
 import lllr.test.breast.util.DataValidateUtil;
@@ -15,6 +16,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.util.*;
 
+@ResponseBody
+@RequestMapping("/user")
 @Controller
 public class UserController {
     @Autowired
@@ -53,87 +56,80 @@ public class UserController {
                  ->失败  ->   设置错误信息 保存表单数据 返回注册页面
      */
 
-    @GetMapping("/user/register")
+    @GetMapping("/register")
     public ServerResponse<User> UserRegister(@RequestParam(value = "age", required = false) Integer age,
-                                             @RequestParam(value = "creditId", required = true) String creditId,
-                                             @RequestParam(value = "pregnantType", required = true) Integer pregnantType,
-                                             @RequestParam(value = "pregnantWeek", required = true) String pregnantWeek,
+                                             @RequestParam(value = "creditId") String creditId,
+                                             @RequestParam(value = "pregnantType") Integer pregnantType,
+                                             @RequestParam(value = "pregnantWeek") String pregnantWeek,
                                              @RequestParam(value = "job", required = false) String job,
-                                             @RequestParam(value = "confinementDate", required = true) Date confinementDate,
-                                             @RequestParam(value = "confinementWeek", required = true) Integer confinementWeek,
-                                             @RequestParam(value = "confinementType", required = true) Integer confinementType,
-                                             @RequestParam(value = "userName", required = true) String userName,
-                                             @RequestParam(value = "userPassword", required = true) String userPassword,
+                                             @RequestParam(value = "confinementDate") String confinementDate,
+                                             @RequestParam(value = "confinementWeek") Integer confinementWeek,
+                                             @RequestParam(value = "confinementType") Integer confinementType,
+                                             @RequestParam(value = "userName") String userName,
+                                             @RequestParam(value = "userPassword") String userPassword,
                                              HttpServletRequest request,
                                              HttpServletResponse response) throws StringException {
 
-        Map<String, String> errorMap = new HashMap<>();
+        List<String> errorList = new ArrayList<>();
         User user = new User();
         if (DataValidateUtil.ageValidate(age)) {
             user.setAge(age);
         } else {
             user.setAge(null);
         }
-        if (DataValidateUtil.length(creditId, 25, 0)) {
+
+        if (DataValidateUtil.length(creditId, 5, 0)) {
             user.setCreditId(creditId);
         } else {
-            errorMap.put("creditId", "身份证号码错误!");
-            user.setCreditId(null);
+            errorList.add("身份证号码错误!");
         }
 
         if (!DataValidateUtil.isNull(pregnantType))
             user.setPregnantType(pregnantType);
         else {
-            errorMap.put("pregnantType", "怀孕类型不能为空！");
-            user.setCreditId(null);
+            errorList.add("怀孕类型不能为空！");
         }
 
         if (!DataValidateUtil.isBlank(pregnantWeek)) {
             user.setPregnantWeek(pregnantWeek);
         } else {
-            errorMap.put("pregnantWeek", "孕周不能为空！");
-            user.setPregnantWeek(null);
+            errorList.add( "孕周不能为空！");
         }
 
         user.setJob(job);
 
         if (!DataValidateUtil.isNull(confinementDate)) {
-            user.setConfinementDate(confinementDate);
+            user.setConfinementDate(new Date(Long.parseLong(confinementDate)));
         } else {
-            errorMap.put("confinementDate", "产期不能为空！");
-            user.setConfinementDate(null);
+            errorList.add("产期不能为空！");
         }
 
         if (!DataValidateUtil.isNull(confinementWeek))
             user.setConfinementWeek(confinementWeek);
         else {
-            errorMap.put("confinementWeek", "产周类型不能为空！");
-            user.setConfinementWeek(null);
+            errorList.add("产周类型不能为空！");
         }
 
         if (!DataValidateUtil.isNull(confinementType))
             user.setConfinementType(confinementType);
         else {
-            errorMap.put("confinementType", "产期类型不能为空！");
-            user.setConfinementType(null);
+            errorList.add("产期类型不能为空！");
         }
 
         if (!DataValidateUtil.isBlank(userName)) {
             user.setUserName(userName);
         } else {
-            errorMap.put("userName", "用户名不能为空！");
-            user.setUserName(userName);
+            errorList.add("用户名不能为空！");
         }
 
         if (DataValidateUtil.length(userPassword, USER_PASSWORD_LENGTH, 1)) {
             user.setUserPassword(userPassword);
         } else {
-            errorMap.put("userPassword", "密码长度不能小于" + USER_PASSWORD_LENGTH);
-            user.setUserPassword(userPassword);
+            errorList.add( "密码长度不能小于" + USER_PASSWORD_LENGTH);
         }
 
-        if (errorMap.size() > 0)
-            return new ServerResponse<User>(0, errorMap.toString(), user);
+        if (errorList.size() > 0)
+            return ServerResponse.createByErrorMsgAndData(errorList.toString(), user);
 
         user.setUserToken(UUID.randomUUID().toString().replace("-", ""));
         ServerResponse<User> userResponse = userService.userRegister(user);
@@ -153,7 +149,7 @@ public class UserController {
         request.getSession().setAttribute("userName", user.getUserName());
         Cookie user_token_cookie = new Cookie("user_token", user.getUserToken());
         user_token_cookie.setMaxAge(10 * 60);
-        user_token_cookie.setPath("/");
+        user_token_cookie.setPath("/user/tokenSign");
         response.addCookie(user_token_cookie);
     }
 
@@ -181,51 +177,51 @@ public class UserController {
 
      */
 
-    @GetMapping("/user/sign")
-    public ServerResponse<User> sign(@RequestParam(value = "userName", required = true) String userName,
+    @GetMapping("/sign")
+    public ServerResponse<User> UserSign(@RequestParam(value = "userName", required = true) String userName,
                                      @RequestParam(value = "userPassword", required = true) String userPassword,
                                      HttpServletResponse response,
                                      HttpServletRequest request) {
         if (DataValidateUtil.isBlank(userName) || DataValidateUtil.isBlank(userPassword))
-            return new ServerResponse<>(0, "用户名和密码不能为空");
+            return ServerResponse.createBysuccessMsg("用户名和密码不能为空");
 
         //根据用户名查询用户信息并返回
-        User user = userService.userSign(userName, userPassword);
+        ServerResponse<User> reData = userService.userSign(userName, userPassword);
         //不为空说明表单数据正确
-        if (user != null) {
-            AfterSign(request, response, user);
-            return new ServerResponse<>(1, "登录成功!");
-        }
+        if (reData.getData() != null)
+            AfterSign(request, response, reData.getData());
 
-        //为空说明用户名或者密码错误
-        return new ServerResponse<>(0, "用户名或密码错误!");
-
+        return reData;
     }
 
     //持续化user_token免登录
-    @RequestMapping("/")
-    public String userTokenSign(@CookieValue(name = "user_token", required = false) String user_token,
+    @RequestMapping("/tokenSign")
+    public ServerResponse<User> UserTokenSign(@CookieValue(name = "user_token") String user_token,
                                 HttpServletRequest request,
                                 HttpServletResponse response) {
         //判断用户是否登录
         String userName = (String) request.getSession().getAttribute("userName");
-        if (userName == null && DataValidateUtil.isBlank(user_token)) {
-            User user = userService.userTokenSign(user_token);
-            AfterSign(request, response, user);
+
+        if(userName != null)
+            return ServerResponse.createBysuccess();
+        if (!DataValidateUtil.isBlank(user_token)) {
+            ServerResponse<User> reData = userService.userTokenSign(user_token);
+            AfterSign(request, response, reData.getData());
+            return reData;
         }
-        return "user_token_sign_success";
+        return ServerResponse.createByError();
     }
 
     //用户退出
-    @GetMapping("/user/exit")
-    public ServerResponse<Object> exit(HttpServletRequest request, HttpServletResponse response) {
+    @GetMapping("/exit")
+    public ServerResponse exit(HttpServletRequest request, HttpServletResponse response) {
         request.getSession().removeAttribute("userName");
         //将浏览器的user_token 置空
         Cookie cookie = new Cookie("user_token", null);
-        cookie.setPath("/");
+        cookie.setPath("/user/tokenSign");
         response.addCookie(cookie);
 
-        return new ServerResponse<>(1, "退出登录成功!");
+        return ServerResponse.createBysuccess();
     }
 
 }

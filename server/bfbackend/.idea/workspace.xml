@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c0d8a958-c9e9-4753-8056-5c3006198d9b" name="Default" comment="">
+<<<<<<< HEAD
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_jsqlparser_jsqlparser_1_0.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_pagehelper_pagehelper_5_1_2.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_pagehelper_pagehelper_spring_boot_autoconfigure_1_2_3.xml" afterDir="false" />
@@ -4340,40 +4341,65 @@
       <change beforePath="$PROJECT_DIR$/../../mother-breed/package-lock.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../mother-breed/package.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../mother-breed/project.config.json" beforeDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_jsqlparser_jsqlparser_1_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_jsqlparser_jsqlparser_1_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_pagehelper_pagehelper_5_1_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_pagehelper_pagehelper_5_1_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_pagehelper_pagehelper_spring_boot_autoconfigure_1_2_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_pagehelper_pagehelper_spring_boot_autoconfigure_1_2_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_pagehelper_pagehelper_spring_boot_starter_1_2_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_pagehelper_pagehelper_spring_boot_starter_1_2_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_16_10.xml" beforeDir="false" />
+>>>>>>> 50f84a1ddb995dbda8b9592e6834bb1d3face80f
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/breast.iml" beforeDir="false" afterPath="$PROJECT_DIR$/breast.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log/sys.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/sys.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lllr/test/breast/common/ServerResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lllr/test/breast/common/ServerResponse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/lllr/test/breast/controller/ArticleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lllr/test/breast/controller/ArticleController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lllr/test/breast/dao/mapper/ArticleMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lllr/test/breast/dao/mapper/ArticleMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lllr/test/breast/service/impl/ArticleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lllr/test/breast/service/impl/ArticleServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lllr/test/breast/controller/UserConsultController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lllr/test/breast/controller/UserConsultController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lllr/test/breast/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lllr/test/breast/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lllr/test/breast/dao/mapper/UserMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lllr/test/breast/dao/mapperUtil/UserExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lllr/test/breast/dao/mapperUtil/UserGeneratedCriteria.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lllr/test/breast/dataObject/user/User.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/lllr/test/breast/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lllr/test/breast/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lllr/test/breast/service/inter/ArticleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lllr/test/breast/service/inter/ArticleService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lllr/test/breast/util/qiniu/QiniuUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lllr/test/breast/util/qiniu/QiniuUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lllr/test/breast/service/inter/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lllr/test/breast/service/inter/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/generatorConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/generatorConfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapping/ArticleMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapping/ArticleMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/logback-boot.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/logback-boot.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapping/UserMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/lllr/test/consult/ConsultTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/lllr/test/consult/ConsultTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/lllr/test/util.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/lllr/test/util.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/generatorConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/generatorConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/common/ServerResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/common/ServerResponse.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/controller/ArticleController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/controller/ArticleController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/controller/UserConsultController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/controller/UserConsultController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/controller/UserController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/dao/mapper/ArticleMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/dao/mapper/ArticleMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/dao/mapper/SearchMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/dao/mapper/SearchMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/dao/mapper/UserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/dao/mapper/UserMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/dao/mapperUtil/UserExample$Criteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/dao/mapperUtil/UserExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/dao/mapperUtil/UserGeneratedCriteria$Criterion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/dao/mapperUtil/UserGeneratedCriteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/dataObject/consult/AutoAnswerTemplate.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/dataObject/consult/AutoAnswerTemplate.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/dataObject/popularization/PagedResult.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/dataObject/popularization/PagedResult.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/dataObject/popularization/Search.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/dataObject/popularization/Search.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/service/impl/ArticleServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/service/impl/ArticleServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/service/impl/UserServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/service/inter/ArticleService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/service/inter/ArticleService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/service/inter/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/service/inter/UserService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/util/qiniu/QiniuUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/util/qiniu/QiniuUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapping/ArticleMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapping/ArticleMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bfserverfront/src/components/AddArticle.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../bfserverfront/src/components/AddArticle.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bfserverfront/src/components/AddAudio.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../bfserverfront/src/components/AddAudio.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bfserverfront/src/components/AddVedio.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../bfserverfront/src/components/AddVedio.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/logback-boot.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/logback-boot.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapping/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapping/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/lllr/test/consult/ConsultTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/lllr/test/consult/ConsultTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/lllr/test/util.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/lllr/test/util.class" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/target/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+<<<<<<< HEAD
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="VedioMapper.java" pinned="false" current-in-tab="false">
@@ -4441,6 +4467,8 @@
       </file>
     </leaf>
   </component>
+=======
+>>>>>>> 50f84a1ddb995dbda8b9592e6834bb1d3face80f
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -4452,6 +4480,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
+<<<<<<< HEAD
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -4655,8 +4684,25 @@
       </pane>
       <pane id="AndroidView" />
     </panes>
+=======
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1Xk6jT5NPejM6Uve89OLS7EzX9G" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+>>>>>>> 50f84a1ddb995dbda8b9592e6834bb1d3face80f
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
@@ -4664,44 +4710,50 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+    <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager" selected="Spring Boot.BreastApplication">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ConsultTest.test6" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="breast" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lllr.test.consult.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="lllr.test.consult" />
+      <option name="MAIN_CLASS_NAME" value="lllr.test.consult.ConsultTest" />
+      <option name="METHOD_NAME" value="test6" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="mybatis-generator" type="MavenRunConfiguration" factoryName="Maven">
       <MavenSettings>
@@ -4726,37 +4778,34 @@
           </MavenRunnerParameters>
         </option>
       </MavenSettings>
+      <method v="2" />
     </configuration>
     <configuration name="BreastApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="breast" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="lllr.test.breast.BreastApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration default="true" type="TestNG" factoryName="TestNG">
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
+    <configuration default="true" type="TestNG">
       <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
       <properties />
       <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <list>
+      <item itemvalue="JUnit.ConsultTest.test6" />
       <item itemvalue="Maven.mybatis-generator" />
       <item itemvalue="Spring Boot.BreastApplication" />
     </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.ConsultTest.test6" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -4774,6 +4823,7 @@
       <workItem from="1581131005953" duration="5206000" />
       <workItem from="1581217254794" duration="6139000" />
       <workItem from="1581305097105" duration="3843000" />
+<<<<<<< HEAD
       <workItem from="1581313779111" duration="7127000" />
       <workItem from="1581330993098" duration="239000" />
       <workItem from="1581331273202" duration="1946000" />
@@ -5185,6 +5235,100 @@
         </state>
       </provider>
     </entry>
+=======
+      <workItem from="1581577881643" duration="1065000" />
+      <workItem from="1581578976752" duration="10860000" />
+      <workItem from="1581655880220" duration="3206000" />
+      <workItem from="1581680081751" duration="2801000" />
+      <workItem from="1581768513440" duration="2722000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="574" y="122" key="#com.intellij.ide.util.MemberChooser" timestamp="1581609550046">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="574" y="122" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1581609550046" />
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1581610290586">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1581610290586" />
+    <state width="432" height="466" key="DebuggerActiveHint" timestamp="1581768669520">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="432" height="466" key="DebuggerActiveHint/0.0.1536.824@0.0.1536.824" timestamp="1581768669520" />
+    <state width="1493" height="231" key="GridCell.Tab.0.bottom" timestamp="1581771144005">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="231" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1581771144005" />
+    <state width="1493" height="231" key="GridCell.Tab.0.center" timestamp="1581771144005">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="231" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1581771144005" />
+    <state width="1493" height="231" key="GridCell.Tab.0.left" timestamp="1581771144005">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="231" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1581771144005" />
+    <state width="1493" height="231" key="GridCell.Tab.0.right" timestamp="1581771144005">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="231" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1581771144005" />
+    <state width="1493" height="148" key="GridCell.Tab.1.bottom" timestamp="1581771022794">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="148" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1581771022794" />
+    <state width="1493" height="148" key="GridCell.Tab.1.center" timestamp="1581771022794">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="148" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1581771022794" />
+    <state width="1493" height="148" key="GridCell.Tab.1.left" timestamp="1581771022794">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="148" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1581771022794" />
+    <state width="1493" height="148" key="GridCell.Tab.1.right" timestamp="1581771022794">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="148" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1581771022794" />
+    <state width="1493" height="148" key="GridCell.Tab.2.bottom" timestamp="1581771013599">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="148" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1581771013599" />
+    <state width="1493" height="148" key="GridCell.Tab.2.center" timestamp="1581771013599">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="148" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1581771013599" />
+    <state width="1493" height="148" key="GridCell.Tab.2.left" timestamp="1581771013599">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="148" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1581771013599" />
+    <state width="1493" height="148" key="GridCell.Tab.2.right" timestamp="1581771013599">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="148" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1581771013599" />
+    <state x="299" y="68" key="Maven.ArtifactSearchDialog" timestamp="1581658534305">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="299" y="68" key="Maven.ArtifactSearchDialog/0.0.1536.824@0.0.1536.824" timestamp="1581658534305" />
+    <state x="361" y="146" key="Vcs.Push.Dialog.v2" timestamp="1581579588295">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1581579588295" />
+    <state x="449" y="237" key="com.intellij.ide.util.TipDialog" timestamp="1581768512444">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="449" y="237" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1581768512444" />
+    <state x="425" y="187" key="run.anything.popup" timestamp="1581580989438">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1581580989438" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1581771278125">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1581771278125" />
+>>>>>>> 50f84a1ddb995dbda8b9592e6834bb1d3face80f
   </component>
   <component name="masterDetails">
     <states>

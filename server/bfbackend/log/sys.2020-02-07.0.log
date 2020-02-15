@@ -1,8 +1,0 @@
-2020-02-07 13:10:49,965 [INFO] (StartupInfoLogger.java:50)- Starting BreastApplication on LAPTOP-SKN1FD88 with PID 10980 (started by 12284 in F:\Ajava\A母乳喂养项目\breastfeed\server\bfbackend)
-2020-02-07 13:10:49,972 [DEBUG] (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
-2020-02-07 13:10:49,973 [INFO] (SpringApplication.java:648)- No active profile set, falling back to default profiles: default
-2020-02-07 13:10:53,317 [INFO] (StartupInfoLogger.java:59)- Started BreastApplication in 4.052 seconds (JVM running for 8.496)
-2020-02-07 13:11:07,504 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, description, img_url, category from article 
-2020-02-07 13:11:07,527 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
-2020-02-07 13:11:07,585 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 4
-2020-02-07 13:23:17,342 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: insert into article (id, title, description, img_url, category, content ) values (?, ?, ?, ?, ?, ? ) 

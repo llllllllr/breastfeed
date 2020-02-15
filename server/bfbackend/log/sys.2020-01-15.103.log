@@ -1,6 +1,0 @@
-2020-01-15 21:25:25,514 [DEBUG] (FaceServiceImpl.java:75)- === DetectFace： {face_num=1, faces=[{"face_rectangle":{"top":228,"left":154,"width":126,"height":126},"face_token":"816c84a155faaf62488ac30860ad5189"}], image_id=H/0qyuLIhdS6lok6JMuphQ==, request_id=1579094725,0f16509f-0840-4bbf-a2af-f71a5612e976, time_used=136}===
-2020-01-15 21:25:25,615 [DEBUG] (FaceServiceImpl.java:101)- === SearchFace： {thresholds={"1e-5":73.975,"1e-4":69.101,"1e-3":62.327}, request_id=1579094725,e2eb8a4f-7503-4421-9b6d-88c8e6a2534f, results=[{"user_id":"","confidence":94.871,"face_token":"3ce5217dac5bd98f33f96dd07847dfcc"}], time_used=240}===
-2020-01-15 21:25:25,884 [DEBUG] (FaceServiceImpl.java:75)- === DetectFace： {error_message=CONCURRENCY_LIMIT_EXCEEDED}===
-2020-01-15 21:25:25,887 [DEBUG] (FaceServiceImpl.java:45)- === IsErrorMessage: 返回数据为空 或者 error_messageCONCURRENCY_LIMIT_EXCEEDED===
-2020-01-15 21:25:25,895 [DEBUG] (FaceServiceImpl.java:131)- === AddFace： {failure_detail=[], face_count=61, face_added=1, faceset_token=cb8ccd2910ff977638bdc457e070fe63, request_id=1579094725,d026b72c-51a9-4200-b4c4-b5d7037bbf63, outer_id=123456, time_used=431}===
-2020-01-15 21:25:25,896 [DEBUG] (FaceServiceImpl.java:141)- === 人脸识别注册成功！ face_token： 7a190af6f20f96e8da84bc7a3dae0f34===

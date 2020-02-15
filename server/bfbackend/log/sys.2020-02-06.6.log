@@ -1,4 +1,0 @@
-2020-02-06 22:44:31,060 [DEBUG] (BaseJdbcLogger.java:143)- <==    Updates: 1
-2020-02-06 22:44:31,239 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, description, img_url, category from article 
-2020-02-06 22:44:31,241 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
-2020-02-06 22:44:31,292 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 4
