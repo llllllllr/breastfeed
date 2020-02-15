@@ -1,6 +1,5 @@
 package lllr.test.breast.controller;
 
-import edu.princeton.cs.algs4.In;
 import lllr.test.breast.common.Const;
 import lllr.test.breast.common.ServerResponse;
 import lllr.test.breast.dataObject.popularization.Article;
@@ -9,11 +8,7 @@ import lllr.test.breast.service.inter.ArticleService;
 import lllr.test.breast.util.qiniu.QiniuRes;
 import lllr.test.breast.util.qiniu.QiniuResultUtil;
 import lllr.test.breast.util.qiniu.QiniuUtil;
-import org.apache.catalina.Server;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 

@@ -135,4 +135,9 @@ public class ConsultTest {
 //        System.out.println(JSONObject.toJSONString(weChatMessageItem1));
     }
 
+    @Test
+    public void test6(){
+        System.out.println(System.currentTimeMillis());
+    }
+
 }

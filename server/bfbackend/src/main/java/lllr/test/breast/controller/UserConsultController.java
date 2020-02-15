@@ -44,7 +44,7 @@ public class UserConsultController {
         return "";
     }
 
-<<<<<<< HEAD
+
     /*
     接收用户发送给客服的内容，并根据关键词回复
      */
@@ -57,7 +57,7 @@ public class UserConsultController {
         return "success";
     }
 
-=======
+
 //    /*
 //    接收用户发送给客服的内容，并根据关键词回复
 //     */
@@ -70,7 +70,7 @@ public class UserConsultController {
 //        return reply;
 //    }
 //
->>>>>>> test
+
 
 
 }
