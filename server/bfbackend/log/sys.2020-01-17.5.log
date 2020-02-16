@@ -1,0 +1,6 @@
+2020-01-17 11:35:28,146 [ERROR] (UserFaceController.java:42)- === faceRegisterController:face++ error_message:EMPTY_FACESET===
+2020-01-17 11:35:28,199 [INFO] (UserFaceController.java:66)- ===人脸注册图片名称：wx8b444a502cdbf1e5.o6zAJs2XJzZYspbUKdArzZWY7KD8.UoROT836cav6337f74fcf2b984a28591e5d68aaf6a53.jpg  大小：80869=== 
+2020-01-17 11:35:29,497 [DEBUG] (FaceServiceImpl.java:127)- === DetectFace： {face_num=1, faces=[{"face_rectangle":{"top":173,"left":216,"width":100,"height":100},"face_token":"93e2970ebb27676e9ad95295da0e450c"}], image_id=BDtBCWUDM3xr4ChNG7BFXw==, request_id=1579232127,212e4f92-bf3b-4213-b201-8efe558439b2, time_used=237}===
+2020-01-17 11:35:30,139 [DEBUG] (FaceServiceImpl.java:157)- === SearchFace： {error_message=EMPTY_FACESET, request_id=1579232128,4ba275d4-be36-47f6-9827-cb3653a965ba, time_used=45}===
+2020-01-17 11:35:30,173 [INFO] (UserFaceController.java:66)- ===人脸注册图片名称：wx8b444a502cdbf1e5.o6zAJs2XJzZYspbUKdArzZWY7KD8.rs4InE3ELrlbad4b849b513305297fb63123e3390f15.jpg  大小：81220=== 
+2020-01-17 11:35:30,208 [DEBUG] (FaceServiceImpl.java:53)- === SearchFace： {error_message=EMPTY_FACESET, request_id=1579232128,4ba275d4-be36-47f6-9827-cb3653a965ba, time_used=45}===

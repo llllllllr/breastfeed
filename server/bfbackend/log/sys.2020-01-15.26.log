@@ -1,0 +1,5 @@
+2020-01-15 21:10:41,565 [DEBUG] (FaceServiceImpl.java:141)- === 人脸识别注册成功！ face_token： 1c85212ff1962b3b141a6a0af443f7ec===
+2020-01-15 21:10:41,620 [DEBUG] (FaceServiceImpl.java:131)- === AddFace： {failure_detail=[], face_count=13, face_added=1, faceset_token=cb8ccd2910ff977638bdc457e070fe63, request_id=1579093840,a5fdd17d-a2bd-452f-91f6-ca31c22ce2d8, outer_id=123456, time_used=440}===
+2020-01-15 21:10:41,624 [DEBUG] (FaceServiceImpl.java:141)- === 人脸识别注册成功！ face_token： 19ed4ffde009dacc1a48c1735732b352===
+2020-01-15 21:10:48,212 [DEBUG] (FaceServiceImpl.java:75)- === DetectFace： {face_num=1, faces=[{"face_rectangle":{"top":197,"left":222,"width":77,"height":77},"face_token":"a2d464d29b3c9a67cc4ce39fa3e5882c"}], image_id=JM4jSMHJtNtJe1szfRAMyg==, request_id=1579093847,88861f0a-edad-4d7b-b0de-4949280e05da, time_used=145}===
+2020-01-15 21:10:51,488 [DEBUG] (FaceServiceImpl.java:131)- === AddFace： {failure_detail=[], face_count=14, face_added=1, faceset_token=cb8ccd2910ff977638bdc457e070fe63, request_id=1579093850,666a9fe2-27f0-46bb-a46d-e8bda3aacd74, outer_id=123456, time_used=436}===

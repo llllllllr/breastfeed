@@ -1,0 +1,7 @@
+2020-01-15 17:59:54,953 [INFO] (StartupInfoLogger.java:59)- Started BreastApplication in 3.747 seconds (JVM running for 5.311)
+2020-01-15 18:00:03,887 [INFO] (UserFaceController.java:36)- ===人脸注册图片名称：wx8b444a502cdbf1e5.o6zAJs2XJzZYspbUKdArzZWY7KD8.iAPCmB4mz0XB6fc9e46e1c3af2d08ec92aca73fb6929.jpg  大小：80749=== 
+2020-01-15 18:01:06,231 [INFO] (UserFaceController.java:36)- ===人脸注册图片名称：wx8b444a502cdbf1e5.o6zAJs2XJzZYspbUKdArzZWY7KD8.V4hqHqrglfwke49ef5d4e295a9a55321d7063771ddc0.jpg  大小：80531=== 
+2020-01-15 18:01:06,238 [INFO] (UserFaceController.java:36)- ===人脸注册图片名称：wx8b444a502cdbf1e5.o6zAJs2XJzZYspbUKdArzZWY7KD8.GgTPTYeMnSj4dd524d2a0e8013133e489e692868e43f.jpg  大小：80950=== 
+2020-01-15 18:04:44,572 [INFO] (StartupInfoLogger.java:50)- Starting BreastApplication on LAPTOP-562395R3 with PID 12240 (started by 爱哭的周小姐 in D:\软件应用\java IDE\IntelliJ IDEA 2019.1\项目\breastfeed\breastfeed\server\bfbackend)
+2020-01-15 18:04:44,575 [DEBUG] (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2020-01-15 18:04:44,575 [INFO] (SpringApplication.java:648)- No active profile set, falling back to default profiles: default

@@ -1,0 +1,8 @@
+2020-02-08 11:05:49,667 [INFO] (StartupInfoLogger.java:50)- Starting BreastApplication on LAPTOP-SKN1FD88 with PID 14788 (started by 12284 in F:\Ajava\A母乳喂养项目\breastfeed\server\bfbackend)
+2020-02-08 11:05:49,687 [DEBUG] (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2020-02-08 11:05:49,688 [INFO] (SpringApplication.java:648)- No active profile set, falling back to default profiles: default
+2020-02-08 11:05:58,351 [INFO] (StartupInfoLogger.java:59)- Started BreastApplication in 9.847 seconds (JVM running for 17.664)
+2020-02-08 11:06:19,631 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, audioURL, category, cover_url from audio where id = ? 
+2020-02-08 11:06:19,694 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 0(Integer)
+2020-02-08 11:06:19,754 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 0
+2020-02-08 11:06:19,757 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, audioURL, category, cover_url from audio 

@@ -1,0 +1,21 @@
+
+<scroll-view class="video-background">
+<swiper catchtouchmove="true" style="height:819rpx">
+<swiper-item wx:for="{{ videos }}" wx:for-index="idx" wx:for-item="videoItem">
+<view style="margin-top:99rpx">
+<image  class="televisionBackground"src="../../images/television_113.82153846154px_1215122_easyicon.net.png"></image>
+  <video 
+  autoplay="true"
+  id="{{videoItem.video_id}}" 
+  data-index="{{idx}}" 
+  preload 
+  src="{{videoItem.coverUrl}}" 
+  class='video-item' 
+  muted 
+  controls> 
+  </video>
+  <span class="video-content">内容</span>
+  </view> 
+</swiper-item>
+</swiper>
+</scroll-view>

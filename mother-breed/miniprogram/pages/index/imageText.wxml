@@ -1,0 +1,46 @@
+<!--pages/serach/search.wxml-->
+ 
+<!-- 搜索框view -->
+<wux-search-bar/>
+<view style="height:8rpx"></view>
+<scroll-view class="content-info" scroll-y>
+     <view>
+    <!--轮播图-->
+    <!--图片绑定函数，点击进入详细图文页-->
+    <swiper indicator-dots autoplay loop class="itSwiperImage">
+        <swiper-item>
+            <image src="../../images/图文1.jpg" bindtap="imageText1"></image>
+        </swiper-item>
+        <swiper-item>
+            <image src="../../images/图文1.jpg" bindtap="imageText2"></image>
+        </swiper-item>
+        <swiper-item>
+            <image src="../../images/图文1.jpg" bindtap="imageText3"></image>
+        </swiper-item>
+    </swiper>
+</view>
+
+<!--文章部分-->
+<!-- 点击事件，绑定detailArticle方法，传参数 item.id 记得用双花括号括起来 -->
+<block wx:for="{{articleList}}" wx:for-item="item"> 
+
+<view class="article" catch:tap="detailArticle" data-articleId="{{item.id}}">
+   <view class="line"></view>
+    <image src="{{item.imgUrl}}"></image>
+  <text class="article-title">{{item.title}}</text>  
+  <text class="article-content">{{item.description}}</text>
+</view>
+</block>
+
+
+<!-- <block wx:for="{{vedioList}}" wx:for-item="item"> 
+<view class="article" catch:tap="detailArticle" data-articleId="{{item.id}}">
+   <view class="line"></view>
+    <image src="{{item.coverUrl}}"></image>
+  <text class="article-title">{{item.title}}</text>  
+ 
+</view> -->
+<!-- </block> -->
+
+
+</scroll-view>

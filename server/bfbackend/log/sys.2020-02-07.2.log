@@ -1,0 +1,10 @@
+2020-02-07 13:23:17,604 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, description, img_url, category from article 
+2020-02-07 13:23:17,630 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-02-07 13:23:17,671 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 5
+2020-02-07 13:25:33,039 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, audioURL, category, cover_url from audio 
+2020-02-07 13:25:33,042 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-02-07 13:25:33,085 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 5
+2020-02-07 13:35:10,991 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: insert into audio (id, title, audioURL, category, cover_url) values (?, ?, ?, ?, ?) 
+2020-02-07 13:35:10,995 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: null, 当“丁克”反悔，“白丁”兴起(String), http://llllllllr.top/张碧晨&杨宗纬+-+凉凉.mp32548(String), 母乳喂养资料(String), http://llllllllr.top/zfx.jpg2162(String)
+2020-02-07 13:35:11,077 [DEBUG] (BaseJdbcLogger.java:143)- <==    Updates: 1
+2020-02-07 13:35:11,204 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, audioURL, category, cover_url from audio 

@@ -1,0 +1,17 @@
+{
+  "usingComponents": {
+    "wux-icon": "../../miniprogram_npm/wux-weapp/icon/index",
+    "wux-grids": "../../miniprogram_npm/wux-weapp/grids/index",
+    "wux-grid": "../../miniprogram_npm/wux-weapp/grid/index",
+    "wux-radio-group": "../../miniprogram_npm/wux-weapp/radio-group/index",
+    "wux-radio": "../../miniprogram_npm/wux-weapp/radio/index",
+    "wux-cell-group": "../../miniprogram_npm/wux-weapp/cell-group/index",
+    "wux-cell": "../../miniprogram_npm/wux-weapp/cell/index",
+    "wux-input": "../../miniprogram_npm/wux-weapp/input/index",
+    "wux-textarea": "../../miniprogram_npm/wux-weapp/textarea/index",
+    "wux-button": "../../miniprogram_npm/wux-weapp/button/index",
+    "wux-card": "../../miniprogram_npm/wux-weapp/card/index",
+    "wux-white-space": "../../miniprogram_npm/wux-weapp/white-space/index"
+   
+  }
+}

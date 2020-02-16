@@ -3,81 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="c0d8a958-c9e9-4753-8056-5c3006198d9b" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lllr/test/breast/controller/websocket/WebSocketConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lllr/test/breast/controller/websocket/WebSocketConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/generatorConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/generatorConfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/generatorConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/generatorConfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/BreastApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/common/Const.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/common/ResponseCode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/common/ServerResponse.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/controller/AdministratorConsultController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/controller/AdministratorController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/controller/ArticleController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/controller/AudioController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/controller/CollectionController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/controller/UserConsultController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/controller/UserController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/controller/UserFaceController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/controller/VedioController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/dao/mapper/AdministratorMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/dao/mapper/ArticleMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/dao/mapper/AudioMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/dao/mapper/AutoAnswerTemplateMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/dao/mapper/CollectionMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/dao/mapper/SearchMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/dao/mapper/UserMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/dao/mapper/VedioMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/dao/mapperUtil/AutoAnswerTemplateExample$Criteria.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/dao/mapperUtil/AutoAnswerTemplateExample$Criterion.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/dao/mapperUtil/AutoAnswerTemplateExample$GeneratedCriteria.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/dao/mapperUtil/AutoAnswerTemplateExample.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/dataObject/consult/AutoAnswerTemplate.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/dataObject/popularization/Article.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/dataObject/popularization/Audio.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/dataObject/popularization/Collection.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/dataObject/popularization/CollectionExample$Criteria.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/dataObject/popularization/CollectionExample$Criterion.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/dataObject/popularization/CollectionExample$GeneratedCriteria.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/dataObject/popularization/CollectionExample.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/dataObject/popularization/PagedResult.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/dataObject/popularization/Search.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/dataObject/popularization/SearchExample$Criteria.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/dataObject/popularization/SearchExample$Criterion.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/dataObject/popularization/SearchExample$GeneratedCriteria.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/dataObject/popularization/SearchExample.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/dataObject/popularization/Vedio.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/dataObject/user/Administrator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/dataObject/user/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/service/impl/AdministratorConsultServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/service/impl/AdministratorServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/service/impl/ArticleServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/service/impl/AudioServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/service/impl/CollServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/service/impl/FaceServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/service/impl/UserConsultImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/service/impl/UserServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/service/impl/VedioServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/service/inter/AdministratorConsult.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/service/inter/AdministratorService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/service/inter/ArticleService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/service/inter/AudioService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/service/inter/CollService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/service/inter/FaceService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/service/inter/UserConsult.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/service/inter/UserService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/service/inter/VedioService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/util/DataValidateUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/util/exception/FaceException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/util/exception/ImageException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/util/exception/StringException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/util/face/FaceUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/util/face/UserFaceRes.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/util/face/UserFaceResUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/util/qiniu/QiniuRes.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/util/qiniu/QiniuResultUtil$UserFaceRes.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/util/qiniu/QiniuResultUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/util/qiniu/QiniuUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/util/wx/WXUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/sys.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lllr/test/breast/controller/QuestionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lllr/test/breast/controller/QuestionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lllr/test/breast/service/impl/QuestionImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lllr/test/breast/service/impl/QuestionImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lllr/test/breast/service/inter/QuestionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lllr/test/breast/service/inter/QuestionService.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -91,83 +20,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ArticleMapper.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/mapping/ArticleMapper.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="164" column="9" selection-start-line="164" selection-start-column="9" selection-end-line="164" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ArticleServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/service/impl/ArticleServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-176">
-              <caret line="96" column="60" selection-start-line="96" selection-start-column="60" selection-end-line="96" selection-end-column="60" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AudioController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/controller/AudioController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="219">
-              <caret line="54" column="33" selection-start-line="54" selection-start-column="33" selection-end-line="54" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="generatorConfig.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/generatorConfig.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
+            <state relative-caret-position="298">
               <caret line="87" selection-start-line="87" selection-end-line="87" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+      <file leaf-file-name="QuestionMapper.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/mapping/QuestionMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="244">
-              <caret line="54" column="28" lean-forward="true" selection-start-line="54" selection-start-column="28" selection-end-line="54" selection-end-column="28" />
+            <state relative-caret-position="413">
+              <caret line="130" column="9" selection-start-line="130" selection-start-column="9" selection-end-line="130" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestMapper.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/mapping/TestMapper.xml">
+      <file leaf-file-name="QuestionMapper.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/dao/mapper/QuestionMapper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="298">
-              <caret line="113" column="2" selection-start-line="113" selection-start-column="2" selection-end-line="113" selection-end-column="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TestMapper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/dao/mapper/TestMapper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="6" selection-start-line="6" selection-end-line="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="workspace.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="5367" column="14" selection-start-line="5367" selection-start-column="14" selection-end-line="5367" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WebSocketConfig.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/controller/websocket/WebSocketConfig.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="16" selection-start-line="16" selection-end-line="16" />
+            <state relative-caret-position="140">
+              <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -175,14 +50,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="IKAnalyzerUtil.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/util/ikanalyzer/IKAnalyzerUtil.java">
+      <file leaf-file-name="QuestionController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/controller/QuestionController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-160">
-              <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="238">
+              <caret line="22" column="26" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Question.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/dataObject/question/Question.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="220">
+              <caret line="11" column="29" selection-start-line="3" selection-start-column="4" selection-end-line="11" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -233,6 +114,7 @@
         <option value="$PROJECT_DIR$/src/main/java/lllr/test/breast/dao/mapper/CollectionMapper.java" />
         <option value="$PROJECT_DIR$/src/main/resources/mapping/SearchMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/lllr/test/breast/controller/websocket/WebSocketConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lllr/test/breast/controller/QuestionController.java" />
       </list>
     </option>
   </component>
@@ -248,12 +130,17 @@
     <option name="width" value="815" />
     <option name="height" value="595" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -264,11 +151,6 @@
             <path>
               <item name="breast" type="b2602c69:ProjectViewProjectNode" />
               <item name="bfbackend" type="462c0819:PsiDirectoryNode" />
-              <item name=".idea" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="breast" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bfbackend" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -300,54 +182,6 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="breast" type="462c0819:PsiDirectoryNode" />
               <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="breast" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bfbackend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="breast" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-              <item name="websocket" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="breast" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bfbackend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="breast" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="breast" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bfbackend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="breast" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-              <item name="mapper" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="breast" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bfbackend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="breast" type="462c0819:PsiDirectoryNode" />
-              <item name="dataObject" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="breast" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bfbackend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="breast" type="462c0819:PsiDirectoryNode" />
-              <item name="dataObject" type="462c0819:PsiDirectoryNode" />
-              <item name="question" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="breast" type="b2602c69:ProjectViewProjectNode" />
@@ -372,34 +206,19 @@
               <item name="bfbackend" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="breast" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
-              <item name="qiniu" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="breast" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bfbackend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="breast" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bfbackend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="mapping" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
     </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -514,14 +333,14 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3335000" />
+    <option name="totallyTimeSpent" value="3595000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5052083" side_tool="true" visible="true" weight="0.30206898" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50716144" side_tool="true" visible="true" weight="0.30206898" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info id="Capture Tool" order="2" />
@@ -532,46 +351,58 @@
       <window_info id="UI Designer" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="7" sideWeight="0.49479166" visible="true" weight="0.30206898" />
+      <window_info active="true" anchor="bottom" id="Messages" order="7" sideWeight="0.49283853" visible="true" weight="0.30206898" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="bottom" id="Java Enterprise" order="7" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.6536458" weight="0.69793105" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.6516927" weight="0.6551724" />
       <window_info anchor="bottom" id="Spring" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24609375" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24609375" />
       <window_info anchor="right" id="Bean Validation" order="3" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.6536458" weight="0.69793105" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5052083" side_tool="true" visible="true" weight="0.30206898" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24609375" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Java Enterprise" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="3" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info anchor="right" id="Maven Projects" order="3" />
+      <window_info id="Web" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Spring" order="7" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info anchor="right" id="Bean Validation" order="3" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info id="UI Designer" order="2" />
       <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Messages" order="7" sideWeight="0.49479166" visible="true" weight="0.30206898" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info id="Designer" order="2" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/dataObject/user/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="520">
-          <caret line="26" selection-start-line="26" selection-end-line="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-457">
-          <caret line="76" column="55" selection-start-line="76" selection-start-column="55" selection-end-line="76" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/controller/UserFaceController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
@@ -855,18 +686,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/generatorConfig.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
+        <state relative-caret-position="298">
           <caret line="87" selection-start-line="87" selection-end-line="87" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/dataObject/question/TestExample.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/dataObject/question/TestExample.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/dao/mapper/TestMapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -912,6 +737,23 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="244">
           <caret line="54" column="28" lean-forward="true" selection-start-line="54" selection-start-column="28" selection-end-line="54" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/dao/mapper/QuestionMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/controller/QuestionController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="22" column="26" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
         </state>
       </provider>
     </entry>

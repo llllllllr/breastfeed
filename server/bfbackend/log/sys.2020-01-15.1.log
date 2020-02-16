@@ -1,0 +1,8 @@
+2020-01-15 16:15:37,640 INFO (StartupInfoLogger.java:59)- Started BreastApplication in 3.829 seconds (JVM running for 5.504)
+2020-01-15 16:17:25,451 [INFO] (StartupInfoLogger.java:50)- Starting BreastApplication on LAPTOP-562395R3 with PID 10092 (started by 爱哭的周小姐 in D:\软件应用\java IDE\IntelliJ IDEA 2019.1\项目\breastfeed\breastfeed\server\bfbackend)
+2020-01-15 16:17:25,462 [DEBUG] (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2020-01-15 16:17:25,462 [INFO] (SpringApplication.java:648)- No active profile set, falling back to default profiles: default
+2020-01-15 16:17:27,889 [INFO] (StartupInfoLogger.java:59)- Started BreastApplication in 4.135 seconds (JVM running for 5.768)
+2020-01-15 16:28:04,774 [INFO] (StartupInfoLogger.java:50)- Starting BreastApplication on LAPTOP-562395R3 with PID 9972 (started by 爱哭的周小姐 in D:\软件应用\java IDE\IntelliJ IDEA 2019.1\项目\breastfeed\breastfeed\server\bfbackend)
+2020-01-15 16:28:04,778 [DEBUG] (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2020-01-15 16:28:04,778 [INFO] (SpringApplication.java:648)- No active profile set, falling back to default profiles: default
