@@ -1,0 +1,45 @@
+<!-- 搜索框view -->
+<view class="main">
+	<!-- <view >
+<image class="searchIcon" src="../../images/search.png" bind:tap="toSearch" />
+</view> -->
+
+
+<scroll-view class="content-info" scroll-y>
+
+	<view class="img">
+	 
+		<!--轮播图-->
+		<!--图片绑定函数，点击进入详细图文页-->
+		<swiper indicator-dots autoplay loop class="itSwiperImage">
+			<swiper-item>
+				<image src="http://llllllllr.top/20087257413880_2.jpg" bindtap="imageText1" mode="widthFix"></image>
+			</swiper-item>
+			<swiper-item>
+				<image src="http://llllllllr.top/bbbjpg.jpg" bindtap="imageText2" mode="widthFix"></image>
+			</swiper-item>
+			<swiper-item>
+				<image src="http://llllllllr.top/bbbjpg.jpg" bindtap="imageText3" mode="widthFix"></image>
+			</swiper-item>
+		</swiper>
+
+    	<view> 
+		   <image class= "article-search" bindtap="changeToSearch" src="http://llllllllr.top/search.jpg"> </image>
+		</view>
+	
+		<!--文章部分-->
+		<!-- 点击事件，绑定detailArticle方法，传参数 item.id 记得用双花括号括起来 -->
+		<block wx:for="{{articleList}}" wx:for-item="item">
+
+			<view class="article" catch:tap="detailArticle" data-articleId="{{item.id}}">
+				<view class="line"></view>
+				<image src="{{item.imgUrl}}"></image>
+				<text class="article-title">{{item.title}}</text>
+				<text class="article-content">{{item.description}}</text>
+			</view>
+		</block>
+		<!-- </scroll-view> -->
+	<!-- </view> -->
+</view>
+</scroll-view>
+</view>

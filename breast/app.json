@@ -1,0 +1,39 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/article_detail/article_detail",
+    "pages/search/search"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "妈咪宝贝",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "科普频道",
+        "iconPath": "/images/icon/kppd1.png",
+        "selectedIconPath": "/images/icon/kppd2.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "咨询",
+        "iconPath": "/images/icon/zx1.png",
+        "selectedIconPath": "/images/icon/zx2.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "我的",
+        "iconPath": "/images/icon/wd1.png",
+        "selectedIconPath": "/images/icon/wd2.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

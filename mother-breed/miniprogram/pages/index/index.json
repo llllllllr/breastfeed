@@ -1,7 +1,0 @@
-{
-  "usingComponents": {
-    "wux-button": "../../miniprogram_npm/wux-weapp/button/index",
-    "wux-search-bar":"../../miniprogram_npm/wux-weapp/search-bar/index"
-  
-  }
-}

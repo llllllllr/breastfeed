@@ -1,0 +1,10 @@
+2020-02-07 13:35:11,205 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-02-07 13:35:11,246 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 6
+2020-02-07 13:36:25,201 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, vedioURL, cover_url, category from vedio 
+2020-02-07 13:36:25,203 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-02-07 13:36:25,243 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 8
+2020-02-07 13:40:47,808 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: insert into vedio (id, title, vedioURL, cover_url, category) values (?, ?, ?, ?, ?) 
+2020-02-07 13:40:47,810 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: null, 受过胎教的宝宝会更聪明(String), http://llllllllr.top/母乳喂养的好处.mp42350(String), http://llllllllr.top/2330420_130904015_2 (1).jpg2085(String), 母乳喂养资料(String)
+2020-02-07 13:40:47,893 [DEBUG] (BaseJdbcLogger.java:143)- <==    Updates: 1
+2020-02-07 13:40:48,107 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, audioURL, category, cover_url from audio 
+2020-02-07 13:40:48,108 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 

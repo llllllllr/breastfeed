@@ -1,0 +1,9 @@
+2020-02-09 12:26:35,943 [INFO] (StartupInfoLogger.java:59)- Started BreastApplication in 5.188 seconds (JVM running for 7.715)
+2020-02-09 12:33:12,015 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select content from search_content group by content order by count(content) desc 
+2020-02-09 12:33:12,097 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-02-09 12:33:12,241 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 3
+2020-02-09 12:43:33,367 [INFO] (StartupInfoLogger.java:50)- Starting BreastApplication on LAPTOP-SKN1FD88 with PID 21388 (started by 12284 in F:\Ajava\A母乳喂养项目\breastfeed\server\bfbackend)
+2020-02-09 12:43:33,370 [DEBUG] (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2020-02-09 12:43:33,371 [INFO] (SpringApplication.java:648)- No active profile set, falling back to default profiles: default
+2020-02-09 12:43:36,596 [INFO] (StartupInfoLogger.java:59)- Started BreastApplication in 4.196 seconds (JVM running for 6.852)
+2020-02-09 12:45:22,695 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, vedioURL, cover_url, category from vedio 

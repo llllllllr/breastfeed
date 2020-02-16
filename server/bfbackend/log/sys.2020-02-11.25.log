@@ -1,0 +1,12 @@
+2020-02-11 15:34:22,023 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 10(Integer), 5(Integer)
+2020-02-11 15:34:22,162 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 5
+2020-02-11 15:34:22,586 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT count(0) FROM article 
+2020-02-11 15:34:22,588 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-02-11 15:34:22,878 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-02-11 15:34:22,882 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, description, img_url, category from article LIMIT ?, ? 
+2020-02-11 15:34:22,884 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 15(Integer), 5(Integer)
+2020-02-11 15:34:22,980 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 5
+2020-02-11 15:39:37,359 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, description, img_url, category from article 
+2020-02-11 15:39:37,361 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-02-11 15:39:37,459 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 20
+2020-02-11 15:39:37,459 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, audioURL, category, cover_url from audio 

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 2020-02-15 22:18:36,721 [INFO] (StartupInfoLogger.java:50)- Starting BreastApplication on LAPTOP-562395R3 with PID 4248 (started by 爱哭的周小姐 in D:\软件应用\java IDE\IntelliJ IDEA 2019.1\项目\breastfeed\新建文件夹\server\bfbackend)
 2020-02-15 22:18:36,721 [DEBUG] (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
 2020-02-15 22:18:36,721 [INFO] (SpringApplication.java:648)- No active profile set, falling back to default profiles: default
@@ -9,3 +10,13 @@
 2020-02-15 22:21:02,344 [DEBUG] (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
 2020-02-15 22:21:02,344 [INFO] (SpringApplication.java:648)- No active profile set, falling back to default profiles: default
 2020-02-15 22:21:04,925 [INFO] (StartupInfoLogger.java:59)- Started BreastApplication in 3.231 seconds (JVM running for 4.819)
+=======
+2020-02-12 11:05:19,548 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 3
+2020-02-12 11:05:42,837 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select content from search_content group by content order by count(content) desc 
+2020-02-12 11:05:42,838 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-02-12 11:05:42,880 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 3
+2020-02-15 22:45:53,995 [INFO] (StartupInfoLogger.java:50)- Starting BreastApplication on LAPTOP-SKN1FD88 with PID 18676 (started by 12284 in F:\Ajava\A母乳喂养项目\breastfeed\server\bfbackend)
+2020-02-15 22:45:54,002 [DEBUG] (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2020-02-15 22:45:54,003 [INFO] (SpringApplication.java:648)- No active profile set, falling back to default profiles: default
+2020-02-15 22:45:57,791 [INFO] (StartupInfoLogger.java:59)- Started BreastApplication in 4.563 seconds (JVM running for 6.938)
+>>>>>>> e5328aa72cc5c5c5eb3868d4628722d5f646ecf3

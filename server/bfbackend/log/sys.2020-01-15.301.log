@@ -1,0 +1,6 @@
+2020-01-15 21:43:30,128 [DEBUG] (FaceServiceImpl.java:131)- === AddFace： {error_message=CONCURRENCY_LIMIT_EXCEEDED}===
+2020-01-15 21:43:30,137 [DEBUG] (FaceServiceImpl.java:45)- === IsErrorMessage: 返回数据为空 或者 error_messageCONCURRENCY_LIMIT_EXCEEDED===
+2020-01-15 21:43:30,568 [DEBUG] (FaceServiceImpl.java:75)- === DetectFace： {face_num=1, faces=[{"face_token":"430fb11ce13589278581f520ecd750b8","face_rectangle":{"top":147,"left":188,"width":101,"height":101}}], image_id=E4ojA/s8BAv1Wz3OMPDfVg==, request_id=1579095810,e3d095be-7a4c-407c-9e38-c9a2dd210c56, time_used=39}===
+2020-01-15 21:43:32,339 [DEBUG] (FaceServiceImpl.java:101)- === SearchFace： {thresholds={"1e-5":73.975,"1e-4":69.101,"1e-3":62.327}, request_id=1579095810,2fd3da0f-0494-48ba-bf39-67454e18e344, results=[{"user_id":"","confidence":96.118,"face_token":"d69603a4c301d3575dcdcf3d2cdf4294"}], time_used=307}===
+2020-01-15 21:43:32,343 [DEBUG] (FaceServiceImpl.java:123)- === 已注册过，无效注册！===
+2020-01-15 21:43:32,350 [DEBUG] (FaceServiceImpl.java:75)- === DetectFace： {face_num=1, faces=[{"face_token":"ab5649c9752258ddc76205e1230be3f9","face_rectangle":{"top":146,"left":189,"width":99,"height":99}}], image_id=6AxYPeEUP93eDvJRpq9D6g==, request_id=1579095810,78c0f835-65b3-4e16-bc37-865daac9f982, time_used=46}===

@@ -1,0 +1,6 @@
+2020-01-15 21:43:38,244 [DEBUG] (FaceServiceImpl.java:101)- === SearchFace： {thresholds={"1e-5":73.975,"1e-4":69.101,"1e-3":62.327}, request_id=1579095812,f43f2bbf-9ab8-44c5-bc8d-5865ad052d99, results=[{"user_id":"","confidence":94.646,"face_token":"d69603a4c301d3575dcdcf3d2cdf4294"}], time_used=305}===
+2020-01-15 21:43:46,296 [DEBUG] (FaceServiceImpl.java:101)- === SearchFace： {thresholds={"1e-5":73.975,"1e-4":69.101,"1e-3":62.327}, request_id=1579095825,813e8132-3900-43ee-b1ce-ed537854c1b0, results=[{"user_id":"","confidence":96.56,"face_token":"d69603a4c301d3575dcdcf3d2cdf4294"}], time_used=312}===
+2020-01-15 21:43:46,297 [DEBUG] (FaceServiceImpl.java:123)- === 已注册过，无效注册！===
+2020-01-15 21:43:46,627 [DEBUG] (FaceServiceImpl.java:101)- === SearchFace： {thresholds={"1e-5":73.975,"1e-4":69.101,"1e-3":62.327}, request_id=1579095825,d6b74f77-a442-4774-975b-11a57cd350e9, results=[{"user_id":"","confidence":95.004,"face_token":"d69603a4c301d3575dcdcf3d2cdf4294"}], time_used=360}===
+2020-01-15 21:43:46,630 [DEBUG] (FaceServiceImpl.java:123)- === 已注册过，无效注册！===
+2020-01-15 21:43:46,789 [DEBUG] (FaceServiceImpl.java:131)- === AddFace： {failure_detail=[], face_count=198, face_added=1, faceset_token=cb8ccd2910ff977638bdc457e070fe63, request_id=1579095826,a495a87f-b6bd-41a0-be9d-5864dbff3da5, outer_id=123456, time_used=502}===

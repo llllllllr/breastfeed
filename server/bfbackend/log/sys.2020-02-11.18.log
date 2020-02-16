@@ -1,0 +1,14 @@
+2020-02-11 14:57:20,453 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 20
+2020-02-11 14:58:23,811 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, audioURL, category, cover_url from audio 
+2020-02-11 14:58:23,815 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-02-11 14:58:23,872 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 6
+2020-02-11 14:59:42,067 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, description, img_url, category from article 
+2020-02-11 14:59:42,067 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-02-11 14:59:42,265 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 20
+2020-02-11 14:59:42,265 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, audioURL, category, cover_url from audio 
+2020-02-11 14:59:42,265 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-02-11 14:59:42,477 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 6
+2020-02-11 15:00:31,577 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, audioURL, category, cover_url from audio 
+2020-02-11 15:00:31,605 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-02-11 15:00:31,577 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, description, img_url, category from article 
+2020-02-11 15:00:31,605 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 

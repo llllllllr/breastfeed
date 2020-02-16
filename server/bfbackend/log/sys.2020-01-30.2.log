@@ -1,0 +1,10 @@
+2020-01-30 17:00:36,404 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: insert into auto_answer_template ( question_key, answer_template ) values ( ?, ? ) 
+2020-01-30 17:00:36,408 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 4556(String), 4534654(String)
+2020-01-30 17:00:36,708 [DEBUG] (BaseJdbcLogger.java:143)- <==    Updates: 1
+2020-01-30 20:01:38,351 [INFO] (StartupInfoLogger.java:50)- Starting BreastApplication on LAPTOP-562395R3 with PID 13176 (started by 爱哭的周小姐 in D:\软件应用\java IDE\IntelliJ IDEA 2019.1\项目\breastfeed\breastfeed\server\bfbackend)
+2020-01-30 20:01:38,366 [DEBUG] (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2020-01-30 20:01:38,366 [INFO] (SpringApplication.java:648)- No active profile set, falling back to default profiles: default
+2020-01-30 20:01:41,006 [INFO] (StartupInfoLogger.java:59)- Started BreastApplication in 3.202 seconds (JVM running for 4.828)
+2020-01-30 20:04:40,102 [INFO] (StartupInfoLogger.java:50)- Starting BreastApplication on LAPTOP-562395R3 with PID 5020 (started by 爱哭的周小姐 in D:\软件应用\java IDE\IntelliJ IDEA 2019.1\项目\breastfeed\breastfeed\server\bfbackend)
+2020-01-30 20:04:40,134 [DEBUG] (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2020-01-30 20:04:40,134 [INFO] (SpringApplication.java:648)- No active profile set, falling back to default profiles: default

@@ -1,0 +1,5 @@
+2020-02-07 19:06:26,295 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 0(Integer)
+2020-02-07 19:06:26,404 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 0
+2020-02-07 19:07:03,517 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, description, img_url, category , content from article where id = ? 
+2020-02-07 19:07:03,571 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 110(Integer)
+2020-02-07 19:07:03,753 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 1
