@@ -17,3 +17,44 @@
 2020-02-16 14:06:38,643 [DEBUG] (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
 2020-02-16 14:06:38,645 [INFO] (SpringApplication.java:648)- No active profile set, falling back to default profiles: default
 2020-02-16 14:06:41,039 [INFO] (StartupInfoLogger.java:59)- Started BreastApplication in 3.036 seconds (JVM running for 5.152)
+2020-02-16 15:21:43,398 [INFO] (StartupInfoLogger.java:50)- Starting BreastApplication on LAPTOP-562395R3 with PID 5928 (started by 爱哭的周小姐 in D:\软件应用\java IDE\IntelliJ IDEA 2019.1\项目\breastfeed\新建文件夹\server\bfbackend)
+2020-02-16 15:21:43,398 [DEBUG] (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2020-02-16 15:21:43,398 [INFO] (SpringApplication.java:648)- No active profile set, falling back to default profiles: default
+2020-02-16 15:22:35,828 [INFO] (StartupInfoLogger.java:50)- Starting BreastApplication on LAPTOP-562395R3 with PID 11500 (started by 爱哭的周小姐 in D:\软件应用\java IDE\IntelliJ IDEA 2019.1\项目\breastfeed\新建文件夹\server\bfbackend)
+2020-02-16 15:22:35,838 [DEBUG] (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2020-02-16 15:22:35,838 [INFO] (SpringApplication.java:648)- No active profile set, falling back to default profiles: default
+2020-02-16 15:22:38,367 [INFO] (StartupInfoLogger.java:59)- Started BreastApplication in 3.395 seconds (JVM running for 5.382)
+2020-02-16 15:22:54,279 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT consult_order.* ,user.UserName FROM consult_order inner join user on user.id = consult_order.user_id and consult_order.user_id = ?; 
+2020-02-16 15:22:54,298 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 111(Integer)
+2020-02-16 15:24:19,070 [INFO] (StartupInfoLogger.java:50)- Starting BreastApplication on LAPTOP-562395R3 with PID 7364 (started by 爱哭的周小姐 in D:\软件应用\java IDE\IntelliJ IDEA 2019.1\项目\breastfeed\新建文件夹\server\bfbackend)
+2020-02-16 15:24:19,072 [DEBUG] (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2020-02-16 15:24:19,075 [INFO] (SpringApplication.java:648)- No active profile set, falling back to default profiles: default
+2020-02-16 15:24:21,769 [INFO] (StartupInfoLogger.java:59)- Started BreastApplication in 3.306 seconds (JVM running for 5.022)
+2020-02-16 15:24:34,898 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT consult_order.* ,user.userName FROM consult_order inner join user on user.id = consult_order.user_id and consult_order.user_id = ?; 
+2020-02-16 15:24:34,918 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 111(Integer)
+2020-02-16 15:25:23,768 [INFO] (StartupInfoLogger.java:50)- Starting BreastApplication on LAPTOP-562395R3 with PID 6476 (started by 爱哭的周小姐 in D:\软件应用\java IDE\IntelliJ IDEA 2019.1\项目\breastfeed\新建文件夹\server\bfbackend)
+2020-02-16 15:25:23,778 [DEBUG] (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2020-02-16 15:25:23,778 [INFO] (SpringApplication.java:648)- No active profile set, falling back to default profiles: default
+2020-02-16 15:25:26,517 [INFO] (StartupInfoLogger.java:59)- Started BreastApplication in 3.308 seconds (JVM running for 5.115)
+2020-02-16 15:25:31,818 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT consult_order.* ,user.user_name FROM consult_order inner join user on user.id = consult_order.user_id and consult_order.user_id = ?; 
+2020-02-16 15:25:31,847 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 111(Integer)
+2020-02-16 15:27:16,958 [INFO] (StartupInfoLogger.java:50)- Starting BreastApplication on LAPTOP-562395R3 with PID 17036 (started by 爱哭的周小姐 in D:\软件应用\java IDE\IntelliJ IDEA 2019.1\项目\breastfeed\新建文件夹\server\bfbackend)
+2020-02-16 15:27:16,958 [DEBUG] (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2020-02-16 15:27:16,958 [INFO] (SpringApplication.java:648)- No active profile set, falling back to default profiles: default
+2020-02-16 15:27:19,497 [INFO] (StartupInfoLogger.java:59)- Started BreastApplication in 3.908 seconds (JVM running for 5.715)
+2020-02-16 15:27:25,628 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT consult_order.* ,user.user_name FROM consult_order inner join user on user.user_id = consult_order.user_id and consult_order.user_id = ?; 
+2020-02-16 15:27:25,661 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 111(Integer)
+2020-02-16 15:27:25,778 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 2
+2020-02-16 15:35:54,329 [INFO] (StartupInfoLogger.java:50)- Starting BreastApplication on LAPTOP-562395R3 with PID 13112 (started by 爱哭的周小姐 in D:\软件应用\java IDE\IntelliJ IDEA 2019.1\项目\breastfeed\新建文件夹\server\bfbackend)
+2020-02-16 15:35:54,329 [DEBUG] (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2020-02-16 15:35:54,329 [INFO] (SpringApplication.java:648)- No active profile set, falling back to default profiles: default
+2020-02-16 15:35:57,178 [INFO] (StartupInfoLogger.java:59)- Started BreastApplication in 3.53 seconds (JVM running for 5.295)
+2020-02-16 15:36:30,207 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT consult_order.* ,doctor.name, doctor.license_number, doctor.consult_cost FROM consult_order inner join doctor on doctor.id = consult_order.doctor_id and consult_order.doctor_id = ?; 
+2020-02-16 15:36:30,230 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 111(Integer)
+2020-02-16 15:36:30,348 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 0
+2020-02-16 15:36:34,612 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT consult_order.* ,doctor.name, doctor.license_number, doctor.consult_cost FROM consult_order inner join doctor on doctor.id = consult_order.doctor_id and consult_order.doctor_id = ?; 
+2020-02-16 15:36:34,612 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 1(Integer)
+2020-02-16 15:36:34,758 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 2
+2020-02-16 15:37:06,966 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT consult_order.* ,doctor.name, doctor.license_number, doctor.consult_cost FROM consult_order inner join doctor on doctor.id = consult_order.doctor_id and consult_order.doctor_id = ?; 
+2020-02-16 15:37:06,967 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 2(Integer)
+2020-02-16 15:37:07,152 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 1

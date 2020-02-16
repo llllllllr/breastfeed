@@ -17,7 +17,9 @@ public interface ConsultOrderMapper {
 
     int updateByPrimaryKey(ConsultOrder record);
 
+    //普通用户查询订单（订单包括医生基本信息）
     List<ConsultOrder> selectConsultOrderAndUserByUserId(Integer userId);
 
+    //医生查询订单（订单包括用户基本信息）
     List<ConsultOrder> selectConsultOrderAndDoctorByDoctorId(Integer userId);
 }

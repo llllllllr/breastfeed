@@ -8,7 +8,7 @@ import java.util.List;
 public interface ConsultOrderService {
     ServerResponse<ConsultOrder> AddConsultOrder(ConsultOrder consultOrder);
 
-    ServerResponse<List<ConsultOrder>> selectConsultOrderAndUserByUserId(Integer userId);
+    ServerResponse<List<ConsultOrder>> selectConsultOrderByUserId(Integer userId);
 
-    ServerResponse<List<ConsultOrder>> selectConsultOrderAndDoctorByDoctorId(Integer doctorId);
+    ServerResponse<List<ConsultOrder>> selectConsultOrderByDoctorId(Integer doctorId);
 }

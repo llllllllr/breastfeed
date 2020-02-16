@@ -26,6 +26,13 @@ public class ConsultOrderController {
     @Autowired
     private ConsultOrderService consultOrderService;
 
+    @GetMapping("/selectConsultOrderByDoctorId")
+    public ServerResponse<List<ConsultOrder>> selectConsultOrderByDoctorId(@RequestParam(value="doctorId")Integer doctorId){
+        if(DataValidateUtil.isNull(doctorId))
+            return ServerResponse.createByErrorMsg("数据格式错误！");
+        return consultOrderService.selectConsultOrderByDoctorId(doctorId);
+    }
+
     @GetMapping("/selectConsultOrderByUserId")
     public ServerResponse<List<ConsultOrder>> selectConsultOrderByUserId(@RequestParam(value="userId")Integer userId){
         if(DataValidateUtil.isNull(userId))
