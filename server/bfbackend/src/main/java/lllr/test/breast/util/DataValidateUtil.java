@@ -3,9 +3,23 @@ package lllr.test.breast.util;
 import lllr.test.breast.util.exception.StringException;
 
 import java.security.MessageDigest;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 //string工具类
 public class DataValidateUtil {
+
+    //将 一定格式的 日期字符串 转化为 Date 类型
+    public static Date StringToSimpleDate(String str) throws ParseException {
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+        return sdf.parse(str);
+    }
+
+    public static Date StringToDetailedDate(String str) throws ParseException {
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        return sdf.parse(str);
+    }
 
     // SHA1 加密
     public static String SHA1(String str){
@@ -42,9 +56,7 @@ public class DataValidateUtil {
     public static boolean isBlank(String str) {
         if (isNull(str))
             return false;
-        else if (str.trim().equals(""))
-            return true;
-        return false;
+        else return str.length() == 0 || str.trim().equals("");
     }
 
     //判断字符的长度

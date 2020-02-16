@@ -11,98 +11,111 @@
     <result column="contact_phone" jdbcType="VARCHAR" property="contactPhone" />
     <result column="symptom_description" jdbcType="VARCHAR" property="symptomDescription" />
   </resultMap>
-  <sql id="Example_Where_Clause">
-    <where>
-      <foreach collection="oredCriteria" item="criteria" separator="or">
-        <if test="criteria.valid">
-          <trim prefix="(" prefixOverrides="and" suffix=")">
-            <foreach collection="criteria.criteria" item="criterion">
-              <choose>
-                <when test="criterion.noValue">
-                  and ${criterion.condition}
-                </when>
-                <when test="criterion.singleValue">
-                  and ${criterion.condition} #{criterion.value}
-                </when>
-                <when test="criterion.betweenValue">
-                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
-                </when>
-                <when test="criterion.listValue">
-                  and ${criterion.condition}
-                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
-                    #{listItem}
-                  </foreach>
-                </when>
-              </choose>
-            </foreach>
-          </trim>
-        </if>
-      </foreach>
-    </where>
-  </sql>
-  <sql id="Update_By_Example_Where_Clause">
-    <where>
-      <foreach collection="example.oredCriteria" item="criteria" separator="or">
-        <if test="criteria.valid">
-          <trim prefix="(" prefixOverrides="and" suffix=")">
-            <foreach collection="criteria.criteria" item="criterion">
-              <choose>
-                <when test="criterion.noValue">
-                  and ${criterion.condition}
-                </when>
-                <when test="criterion.singleValue">
-                  and ${criterion.condition} #{criterion.value}
-                </when>
-                <when test="criterion.betweenValue">
-                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
-                </when>
-                <when test="criterion.listValue">
-                  and ${criterion.condition}
-                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
-                    #{listItem}
-                  </foreach>
-                </when>
-              </choose>
-            </foreach>
-          </trim>
-        </if>
-      </foreach>
-    </where>
-  </sql>
+
+  <resultMap type="lllr.test.breast.dataObject.consult.ConsultOrder" id="ConsultOrdersDoctorResultMap">
+
+    <!--  id:唯一标识
+             column：订单信息的唯 一标识 列
+             property：订单信息的唯 一标识 列所映射到Orders中哪个属性
+          result:普通标识   -->
+
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="doctor_id" jdbcType="INTEGER" property="doctorId" />
+    <result column="user_id" jdbcType="INTEGER" property="userId" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="lasting_time" jdbcType="INTEGER" property="lastingTime" />
+    <result column="contact" jdbcType="VARCHAR" property="contact" />
+    <result column="contact_phone" jdbcType="VARCHAR" property="contactPhone" />
+    <result column="symptom_description" jdbcType="VARCHAR" property="symptomDescription" />
+
+    <!-- (2)配置关联用户信息 -->
+    <!--   数据库表user对应 pojo中的User.java -->
+    <!-- association：用于映射关联查询单个对象的信息
+                property：要将关联查询的用户信息映射到Orders中哪个属性
+                javaType：映射到user的哪个属性-->
+
+    <association property="doctor"  javaType="lllr.test.breast.dataObject.user.Doctor">
+      <!-- id：关联查询用户的唯 一标识
+             column：指定唯 一标识用户信息的列
+           result:普通标识
+       -->
+      <id column="id" jdbcType="INTEGER" property="id" />
+      <result column="name" jdbcType="VARCHAR" property="name" />
+      <result column="consult_cost" jdbcType="INTEGER" property="consultCost" />
+      <result column="license_number" jdbcType="VARCHAR" property="licenseNumber" />
+
+    </association>
+  </resultMap>
+
+  <resultMap type="lllr.test.breast.dataObject.consult.ConsultOrder" id="ConsultOrdersUserResultMap">
+
+    <!--  id:唯一标识
+             column：订单信息的唯 一标识 列
+             property：订单信息的唯 一标识 列所映射到Orders中哪个属性
+          result:普通标识   -->
+
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="doctor_id" jdbcType="INTEGER" property="doctorId" />
+    <result column="user_id" jdbcType="INTEGER" property="userId" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="lasting_time" jdbcType="INTEGER" property="lastingTime" />
+    <result column="contact" jdbcType="VARCHAR" property="contact" />
+    <result column="contact_phone" jdbcType="VARCHAR" property="contactPhone" />
+    <result column="symptom_description" jdbcType="VARCHAR" property="symptomDescription" />
+
+    <!-- (2)配置关联用户信息 -->
+    <!--   数据库表user对应 pojo中的User.java -->
+    <!-- association：用于映射关联查询单个对象的信息
+                property：要将关联查询的用户信息映射到Orders中哪个属性
+                javaType：映射到user的哪个属性-->
+
+    <association property="user"  javaType="lllr.test.breast.dataObject.user.User">
+      <!-- id：关联查询用户的唯 一标识
+             column：指定唯 一标识用户信息的列
+           result:普通标识
+       -->
+    <id column="user_id" jdbcType="INTEGER" property="userId" />
+    <result column="pregnant_type" jdbcType="INTEGER" property="pregnantType" />
+    <result column="pregnant_week" jdbcType="VARCHAR" property="pregnantWeek" />
+    <result column="confinement_date" jdbcType="DATE" property="confinementDate" />
+    <result column="confinement_week" jdbcType="INTEGER" property="confinementWeek" />
+    <result column="confinement_type" jdbcType="INTEGER" property="confinementType" />
+    <result column="user_name" jdbcType="VARCHAR" property="userName" />
+
+    </association>
+  </resultMap>
+
   <sql id="Base_Column_List">
     id, doctor_id, user_id, create_time, lasting_time, contact, contact_phone, symptom_description
   </sql>
-  <select id="selectByExample" parameterType="lllr.test.breast.dao.mapperUtil.ConsultOrderExample" resultMap="BaseResultMap">
-    select
-    <if test="distinct">
-      distinct
-    </if>
-    'false' as QUERYID,
-    <include refid="Base_Column_List" />
-    from consult_order
-    <if test="_parameter != null">
-      <include refid="Example_Where_Clause" />
-    </if>
-    <if test="orderByClause != null">
-      order by ${orderByClause}
-    </if>
+  <select id="selectConsultOrderAndDoctorByDoctorId" parameterType="java.lang.Integer" resultMap="ConsultOrdersDoctorResultMap">
+    SELECT consult_order.* ,doctor.name, doctor.license_number, doctor.consult_cost
+    FROM consult_order inner join
+    doctor on doctor.id = consult_order.doctor_id and
+    consult_order.doctor_id = #{doctorId,jdbcType=INTEGER};
+  </select>
+  <select id="selectConsultOrderAndUserByUserId" parameterType="java.lang.Integer" resultMap="ConsultOrdersUserResultMap">
+    SELECT consult_order.* ,user.user_name
+    FROM consult_order inner join
+    user on user.user_id = consult_order.user_id and
+    consult_order.user_id = #{userId,jdbcType=INTEGER};
   </select>
   <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
-    select 
+    select
     <include refid="Base_Column_List" />
     from consult_order
-    where id = #{id,jdbcType=INTEGER}
+    where user_id = #{userId,jdbcType=INTEGER}
   </select>
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
     delete from consult_order
     where id = #{id,jdbcType=INTEGER}
   </delete>
   <insert id="insert" parameterType="lllr.test.breast.dataObject.consult.ConsultOrder">
-    insert into consult_order (id, doctor_id, user_id, 
-      create_time, lasting_time, contact, 
+    insert into consult_order (id, doctor_id, user_id,
+      create_time, lasting_time, contact,
       contact_phone, symptom_description)
-    values (#{id,jdbcType=INTEGER}, #{doctorId,jdbcType=INTEGER}, #{userId,jdbcType=INTEGER}, 
-      #{createTime,jdbcType=TIMESTAMP}, #{lastingTime,jdbcType=INTEGER}, #{contact,jdbcType=VARCHAR}, 
+    values (#{id,jdbcType=INTEGER}, #{doctorId,jdbcType=INTEGER}, #{userId,jdbcType=INTEGER},
+      #{createTime,jdbcType=TIMESTAMP}, #{lastingTime,jdbcType=INTEGER}, #{contact,jdbcType=VARCHAR},
       #{contactPhone,jdbcType=VARCHAR}, #{symptomDescription,jdbcType=VARCHAR})
   </insert>
   <insert id="insertSelective" parameterType="lllr.test.breast.dataObject.consult.ConsultOrder">
@@ -160,52 +173,6 @@
       </if>
     </trim>
   </insert>
-  <update id="updateByExampleSelective" parameterType="map">
-    update consult_order
-    <set>
-      <if test="record.id != null">
-        id = #{record.id,jdbcType=INTEGER},
-      </if>
-      <if test="record.doctorId != null">
-        doctor_id = #{record.doctorId,jdbcType=INTEGER},
-      </if>
-      <if test="record.userId != null">
-        user_id = #{record.userId,jdbcType=INTEGER},
-      </if>
-      <if test="record.createTime != null">
-        create_time = #{record.createTime,jdbcType=TIMESTAMP},
-      </if>
-      <if test="record.lastingTime != null">
-        lasting_time = #{record.lastingTime,jdbcType=INTEGER},
-      </if>
-      <if test="record.contact != null">
-        contact = #{record.contact,jdbcType=VARCHAR},
-      </if>
-      <if test="record.contactPhone != null">
-        contact_phone = #{record.contactPhone,jdbcType=VARCHAR},
-      </if>
-      <if test="record.symptomDescription != null">
-        symptom_description = #{record.symptomDescription,jdbcType=VARCHAR},
-      </if>
-    </set>
-    <if test="_parameter != null">
-      <include refid="Update_By_Example_Where_Clause" />
-    </if>
-  </update>
-  <update id="updateByExample" parameterType="map">
-    update consult_order
-    set id = #{record.id,jdbcType=INTEGER},
-      doctor_id = #{record.doctorId,jdbcType=INTEGER},
-      user_id = #{record.userId,jdbcType=INTEGER},
-      create_time = #{record.createTime,jdbcType=TIMESTAMP},
-      lasting_time = #{record.lastingTime,jdbcType=INTEGER},
-      contact = #{record.contact,jdbcType=VARCHAR},
-      contact_phone = #{record.contactPhone,jdbcType=VARCHAR},
-      symptom_description = #{record.symptomDescription,jdbcType=VARCHAR}
-    <if test="_parameter != null">
-      <include refid="Update_By_Example_Where_Clause" />
-    </if>
-  </update>
   <update id="updateByPrimaryKeySelective" parameterType="lllr.test.breast.dataObject.consult.ConsultOrder">
     update consult_order
     <set>

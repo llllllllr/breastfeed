@@ -1,5 +1,9 @@
 package lllr.test.breast.dataObject.consult;
 
+import lllr.test.breast.dataObject.user.Doctor;
+import lllr.test.breast.dataObject.user.User;
+
+import javax.print.Doc;
 import java.util.Date;
 
 public class ConsultOrder {
@@ -18,6 +22,54 @@ public class ConsultOrder {
     private String contactPhone;
 
     private String symptomDescription;
+
+    private User user;
+
+    private Doctor doctor;
+
+    @Override
+    public String toString() {
+        return "ConsultOrder{" +
+                "id=" + id +
+                ", doctorId=" + doctorId +
+                ", userId=" + userId +
+                ", createTime=" + createTime +
+                ", lastingTime=" + lastingTime +
+                ", contact='" + contact + '\'' +
+                ", contactPhone='" + contactPhone + '\'' +
+                ", symptomDescription='" + symptomDescription + '\'' +
+                ", user=" + user +
+                ", doctor=" + doctor +
+                '}';
+    }
+
+    public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
+    }
+
+    public Doctor getDoctor() {
+        return doctor;
+    }
+
+    public void setDoctor(Doctor doctor) {
+        this.doctor = doctor;
+    }
+
+    public ConsultOrder(){}
+
+    public ConsultOrder(Integer doctorId, Integer userId, Date createTime, Integer lastingTime, String contact, String contactPhone, String symptomDescription) {
+        this.doctorId = doctorId;
+        this.userId = userId;
+        this.createTime = createTime;
+        this.lastingTime = lastingTime;
+        this.contact = contact;
+        this.contactPhone = contactPhone;
+        this.symptomDescription = symptomDescription;
+    }
 
     public Integer getId() {
         return id;
