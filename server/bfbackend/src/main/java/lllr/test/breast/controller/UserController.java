@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.*;
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.text.ParseException;
 import java.util.*;
 
 @ResponseBody
@@ -98,6 +99,13 @@ public class UserController {
 
         user.setJob(job);
 
+        Date confinement_date = null;
+        try {
+            confinement_date = DataValidateUtil.StringToSimpleDate(confinementDate);
+            user.setConfinementDate(confinement_date);
+        } catch (ParseException e) {
+            errorList.add("孕期格式错误1");
+        }
         if (!DataValidateUtil.isNull(confinementDate)) {
             user.setConfinementDate(new Date(Long.parseLong(confinementDate)));
         } else {

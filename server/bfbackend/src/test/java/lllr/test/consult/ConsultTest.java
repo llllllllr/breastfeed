@@ -12,6 +12,7 @@ import org.slf4j.LoggerFactory;
 
 import java.io.File;
 import java.io.IOException;
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.*;
 
@@ -136,8 +137,11 @@ public class ConsultTest {
     }
 
     @Test
-    public void test6(){
-        System.out.println(System.currentTimeMillis());
+     public void test6() throws ParseException {
+        String string = "2016-10-24 21:59:06";
+        String string1 = "2016-10-24";
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        System.out.println(sdf.parse(string1));
     }
 
 }

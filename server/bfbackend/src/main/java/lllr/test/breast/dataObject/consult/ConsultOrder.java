@@ -19,6 +19,32 @@ public class ConsultOrder {
 
     private String symptomDescription;
 
+    public ConsultOrder(){}
+
+    public ConsultOrder(Integer doctorId, Integer userId, Date createTime, Integer lastingTime, String contact, String contactPhone, String symptomDescription) {
+        this.doctorId = doctorId;
+        this.userId = userId;
+        this.createTime = createTime;
+        this.lastingTime = lastingTime;
+        this.contact = contact;
+        this.contactPhone = contactPhone;
+        this.symptomDescription = symptomDescription;
+    }
+
+    @Override
+    public String toString() {
+        return "ConsultOrder{" +
+                "id=" + id +
+                ", doctorId=" + doctorId +
+                ", userId=" + userId +
+                ", createTime=" + createTime +
+                ", lastingTime=" + lastingTime +
+                ", contact='" + contact + '\'' +
+                ", contactPhone='" + contactPhone + '\'' +
+                ", symptomDescription='" + symptomDescription + '\'' +
+                '}';
+    }
+
     public Integer getId() {
         return id;
     }
