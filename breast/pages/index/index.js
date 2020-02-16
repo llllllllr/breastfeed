@@ -30,14 +30,14 @@ Page({
 
   onLoad: function () {
 
-    wx.showLoading({
-      title: '加载中....',
-    })
-    this.getArticleList();
+    // wx.showLoading({
+    //   title: '加载中....',
+    // })
+    // this.getArticleList();
 
-    this.getAudioList();
+    // this.getAudioList();
      
-      this.getVedioList();
+    //   this.getVedioList();
   },
 
 

@@ -1,0 +1,45 @@
+.img {
+  height: 50rpx;
+  width: 50rpx;
+  top: 6px;
+  right: 10rpx;
+
+}
+
+.ava{
+  /* top: -150px;
+  left: 120px; */
+  /* justify-content: center; */
+  text-align: center;
+}
+.topview{
+   display: flex;
+   flex-direction: column;
+}
+
+.imgt{
+  width: 100%;
+  display: inline;
+}
+.nickname{
+  top: 200px;
+left: 100px;
+
+}
+
+.UCenter-bg {
+  background-image: url(http://llllllllr.top/20200216134141.png);
+  background-size: cover;
+  height: 550rpx;
+  display: flex;
+  justify-content: center;
+  padding-top: 40rpx;
+  overflow: hidden;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  font-weight: 300;
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}

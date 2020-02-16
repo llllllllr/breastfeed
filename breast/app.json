@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/testIndex/testIndex",
     "pages/index/index",
     "pages/article_detail/article_detail",
     "pages/search/search"
@@ -11,7 +12,7 @@
     "navigationBarTextStyle": "black"
   },
   "tabBar": {
-    
+    "selectedColor":"#d4237a",
     "borderStyle": "white",
     "list": [
       {
@@ -19,6 +20,12 @@
         "text": "科普频道",
         "iconPath": "/images/icon/kppd1.png",
         "selectedIconPath": "/images/icon/kppd2.png"
+      },
+      {
+        "pagePath": "pages/testIndex/testIndex",
+        "text": "测试",
+        "iconPath": "/images/icon/wj1.png",
+        "selectedIconPath": "/images/icon/wj2.png"
       },
       {
         "pagePath": "pages/index/index",

@@ -100,3 +100,10 @@
 2020-02-16 13:23:01,390 [DEBUG] (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
 2020-02-16 13:23:01,392 [INFO] (SpringApplication.java:648)- No active profile set, falling back to default profiles: default
 2020-02-16 13:23:05,931 [INFO] (StartupInfoLogger.java:59)- Started BreastApplication in 5.591 seconds (JVM running for 8.718)
+2020-02-16 13:44:50,968 [INFO] (StartupInfoLogger.java:50)- Starting BreastApplication on LAPTOP-SKN1FD88 with PID 24100 (started by 12284 in F:\Ajava\A母乳喂养项目\breastfeed\server\bfbackend)
+2020-02-16 13:44:51,066 [DEBUG] (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2020-02-16 13:44:51,066 [INFO] (SpringApplication.java:648)- No active profile set, falling back to default profiles: default
+2020-02-16 13:44:58,229 [INFO] (StartupInfoLogger.java:59)- Started BreastApplication in 8.758 seconds (JVM running for 13.236)
+2020-02-16 13:45:14,428 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select q_id, t_id, q_type, q_content, q_opstions from question q,test t where q.t_id = t.id 
+2020-02-16 13:45:14,460 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-02-16 13:45:14,528 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 2
