@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/question/question",
     "pages/testIndex/testIndex",
     "pages/index/index",
     "pages/article_detail/article_detail",

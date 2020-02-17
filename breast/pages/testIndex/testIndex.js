@@ -11,18 +11,24 @@ Page({
   },
 
   onLoad: function (options) {
-    var serverUrl =app.globalData.serverUrl;
-    wx.request({
+
+
+    // var serverUrl =app.globalData.serverUrl;
+    // wx.request({
       
-      url: serverUrl + '/question/getQustions',
-      method:'GET',
-      data:{
-        tid:1
-      },
-      success:function(res){
-        console.log(res)
-      }
-    })
+    //   url: serverUrl + '/question/getQustions',
+    //   method:'GET',
+    //   data:{
+    //     tid:1
+    //   },
+    //   success:function(res){
+    //     console.log(res)
+    //   }
+    // })
   },
+
+  getTests:function(){
+    
+  }
 
 })
