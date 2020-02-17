@@ -1,6 +1,0 @@
-2020-01-17 11:35:24,431 [DEBUG] (FaceServiceImpl.java:42)- === IsErrorMessage: 返回数据为空 或者 error_messageEMPTY_FACESET===
-2020-01-17 11:35:24,437 [ERROR] (UserFaceController.java:42)- === faceRegisterController:face++ error_message:EMPTY_FACESET===
-2020-01-17 11:35:25,356 [DEBUG] (FaceServiceImpl.java:127)- === DetectFace： {face_num=1, faces=[{"face_token":"f79fbdb8cab1b2c84ddbc6871591a5c0","face_rectangle":{"top":171,"left":219,"width":100,"height":100}}], image_id=TYor6ttzmfEr+vAzcsi45w==, request_id=1579232123,c15ef24f-7e91-4689-ba4e-e110d24b8ef9, time_used=37}===
-2020-01-17 11:35:25,998 [DEBUG] (FaceServiceImpl.java:157)- === SearchFace： {error_message=EMPTY_FACESET, request_id=1579232123,87add244-28e1-4169-9dd3-0646d721a25b, time_used=50}===
-2020-01-17 11:35:26,000 [DEBUG] (FaceServiceImpl.java:53)- === SearchFace： {error_message=EMPTY_FACESET, request_id=1579232123,87add244-28e1-4169-9dd3-0646d721a25b, time_used=50}===
-2020-01-17 11:35:26,000 [DEBUG] (FaceServiceImpl.java:42)- === IsErrorMessage: 返回数据为空 或者 error_messageEMPTY_FACESET===

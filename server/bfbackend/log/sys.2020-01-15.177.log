@@ -1,5 +1,0 @@
-2020-01-15 21:33:56,854 [DEBUG] (FaceServiceImpl.java:141)- === 人脸识别注册成功！ face_token： 21e85db5714447cb024689fd98b99511===
-2020-01-15 21:33:57,277 [DEBUG] (FaceServiceImpl.java:101)- === SearchFace： {thresholds={"1e-5":73.975,"1e-4":69.101,"1e-3":62.327}, request_id=1579095236,df68fc5f-670b-4e3d-8387-66576ae3a4c9, results=[{"user_id":"","confidence":95.403,"face_token":"21e85db5714447cb024689fd98b99511"}], time_used=305}===
-2020-01-15 21:33:57,278 [DEBUG] (FaceServiceImpl.java:123)- === 已注册过，无效注册！===
-2020-01-15 21:33:57,401 [INFO] (UserFaceController.java:36)- ===人脸注册图片名称：wx8b444a502cdbf1e5.o6zAJs2XJzZYspbUKdArzZWY7KD8.sGePHTMBMCF8fb6e77cd89e05c59ab7c169376708edd.jpg  大小：78718=== 
-2020-01-15 21:33:58,530 [DEBUG] (FaceServiceImpl.java:75)- === DetectFace： {face_num=1, faces=[{"face_token":"fc56063cb40be626322ae43412539ac5","face_rectangle":{"top":193,"left":148,"width":68,"height":68}}], image_id=BhYAyDpL/tvLzFEwmWRrcw==, request_id=1579095238,105cfeac-faec-4f51-96bc-2e4dd833b173, time_used=40}===

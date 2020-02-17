@@ -1,15 +1,355 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c0d8a958-c9e9-4753-8056-5c3006198d9b" name="Default" comment="">
+    <list default="true" id="4be82cec-dda4-48c6-bb2f-4c997c26fcd8" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/log/sys.2020-02-16.0.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/project.config.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../breast/project.config.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.0.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.1.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.10.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.100.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.101.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.102.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.103.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.104.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.105.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.106.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.107.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.108.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.109.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.11.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.110.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.111.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.112.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.113.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.114.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.115.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.116.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.117.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.118.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.119.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.12.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.120.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.121.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.122.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.123.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.124.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.125.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.126.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.127.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.128.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.129.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.13.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.130.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.131.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.132.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.133.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.134.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.135.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.136.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.137.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.138.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.139.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.14.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.140.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.141.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.142.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.143.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.144.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.145.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.146.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.147.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.148.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.149.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.15.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.150.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.151.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.152.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.153.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.154.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.155.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.156.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.157.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.158.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.159.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.16.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.160.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.161.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.162.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.163.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.164.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.165.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.166.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.167.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.168.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.169.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.17.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.170.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.171.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.172.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.173.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.174.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.175.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.176.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.177.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.178.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.179.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.18.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.180.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.181.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.182.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.183.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.184.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.185.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.186.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.187.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.188.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.189.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.19.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.190.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.191.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.192.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.193.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.194.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.195.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.196.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.197.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.198.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.199.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.2.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.20.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.200.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.201.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.202.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.203.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.204.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.205.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.206.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.207.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.208.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.209.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.21.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.210.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.211.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.212.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.213.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.214.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.215.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.216.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.217.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.218.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.219.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.22.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.220.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.221.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.222.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.223.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.224.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.225.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.226.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.227.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.228.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.229.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.23.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.230.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.231.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.232.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.233.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.234.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.235.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.236.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.237.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.238.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.239.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.24.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.240.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.241.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.242.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.243.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.244.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.245.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.246.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.247.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.248.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.249.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.25.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.250.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.251.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.252.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.253.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.254.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.255.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.256.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.257.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.258.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.259.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.26.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.260.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.261.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.262.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.263.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.264.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.265.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.266.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.267.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.268.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.269.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.27.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.270.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.271.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.272.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.273.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.274.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.275.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.276.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.277.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.278.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.279.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.28.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.280.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.281.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.282.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.283.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.284.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.285.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.286.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.287.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.288.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.289.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.29.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.290.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.291.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.292.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.293.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.294.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.295.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.296.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.297.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.298.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.299.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.3.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.30.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.300.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.301.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.302.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.303.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.304.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.305.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.306.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.307.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.308.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.309.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.31.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.310.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.311.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.312.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.313.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.314.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.315.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.316.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.317.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.318.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.319.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.32.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.320.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.33.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.34.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.35.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.36.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.37.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.38.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.39.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.4.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.40.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.41.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.42.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.43.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.44.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.45.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.46.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.47.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.48.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.49.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.5.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.50.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.51.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.52.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.53.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.54.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.55.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.56.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.57.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.58.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.59.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.6.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.60.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.61.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.62.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.63.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.64.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.65.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.66.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.67.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.68.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.69.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.7.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.70.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.71.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.72.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.73.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.74.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.75.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.76.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.77.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.78.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.79.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.8.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.80.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.81.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.82.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.83.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.84.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.85.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.86.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.87.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.88.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.89.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.9.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.90.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.91.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.92.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.93.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.94.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.95.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.96.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.97.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.98.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-15.99.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-17.0.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-17.1.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-17.10.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-17.11.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-17.12.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-17.13.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-17.2.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-17.3.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-17.4.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-17.5.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-17.6.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-17.7.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-17.8.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-17.9.log" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/log/sys.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/sys.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lllr/test/breast/controller/QuestionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lllr/test/breast/controller/QuestionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lllr/test/breast/service/impl/QuestionImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lllr/test/breast/service/impl/QuestionImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lllr/test/breast/service/inter/QuestionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lllr/test/breast/service/inter/QuestionService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/controller/ConsultOrderController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/controller/ConsultOrderController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/controller/DoctorController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/controller/DoctorController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/dao/mapper/ConsultOrderMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/dao/mapper/ConsultOrderMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/dataObject/consult/ConsultOrder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/dataObject/consult/ConsultOrder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/service/impl/ConsultOrderServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/service/impl/ConsultOrderServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/service/inter/ConsultOrderService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/service/inter/ConsultOrderService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/util/DataValidateUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/util/DataValidateUtil.class" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/target/" />
-    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,58 +357,6 @@
   </component>
   <component name="CodeInsightWorkspaceSettings">
     <option name="optimizeImportsOnTheFly" value="true" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="generatorConfig.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/generatorConfig.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="298">
-              <caret line="87" selection-start-line="87" selection-end-line="87" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="QuestionMapper.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/mapping/QuestionMapper.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="413">
-              <caret line="130" column="9" selection-start-line="130" selection-start-column="9" selection-end-line="130" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="QuestionMapper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/dao/mapper/QuestionMapper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="QuestionController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/controller/QuestionController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="22" column="26" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Question.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/dataObject/question/Question.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="11" column="29" selection-start-line="3" selection-start-column="4" selection-end-line="11" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -81,176 +369,42 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/src/main/java/lllr/test/breast/dao/mapper/VedioMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/mapping/VedioMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/lllr/test/breast/controller/VedioController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/lllr/test/breast/service/impl/VedioServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/lllr/test/breast/service/inter/VedioService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/lllr/test/breast/dao/mapper/AudioMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/mapping/AudioMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/lllr/test/breast/service/impl/AudioServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/lllr/test/breast/service/inter/AudioService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/lllr/test/breast/controller/AudioController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/lllr/test/breast/service/impl/UserServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/lllr/test/breast/util/qiniu/QiniuUtil.java" />
-        <option value="$PROJECT_DIR$/src/main/java/lllr/test/breast/dataObject/popularization/PagedResult.java" />
-        <option value="$PROJECT_DIR$/src/main/java/lllr/test/breast/common/Const.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/lllr/test/breast/dao/mapper/ArticleMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/mapping/ArticleMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/lllr/test/breast/service/inter/ArticleService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/lllr/test/breast/controller/ArticleController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/generatorConfig.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/lllr/test/breast/dao/mapper/SearchMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/lllr/test/breast/service/impl/ArticleServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/lllr/test/breast/controller/CollectionController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/lllr/test/breast/service/inter/CollService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/lllr/test/breast/service/impl/CollServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/mapping/CollectionMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/lllr/test/breast/dao/mapper/CollectionMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/mapping/SearchMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/lllr/test/breast/controller/websocket/WebSocketConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/java/lllr/test/breast/controller/QuestionController.java" />
-      </list>
-    </option>
-  </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsGulpfileManager">
-    <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
-  </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="560" />
-    <option name="y" value="125" />
-    <option name="width" value="815" />
-    <option name="height" value="595" />
-  </component>
+  <component name="ProjectId" id="1XtAd6xbBiEfXSrJZUewSPifTSQ" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="AndroidView" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="breast" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bfbackend" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="breast" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bfbackend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="breast" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bfbackend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="breast" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bfbackend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="breast" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bfbackend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="breast" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="breast" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bfbackend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="breast" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="breast" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bfbackend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="breast" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="breast" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bfbackend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="breast" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="breast" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bfbackend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
+  <component name="ProjectViewState">
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
   <component name="RunManager" selected="Spring Boot.BreastApplication">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="mybatis-generator" type="MavenRunConfiguration" factoryName="Maven">
       <MavenSettings>
@@ -275,32 +429,23 @@
           </MavenRunnerParameters>
         </option>
       </MavenSettings>
+      <method v="2" />
     </configuration>
     <configuration name="BreastApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="breast" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="lllr.test.breast.BreastApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration default="true" type="TestNG" factoryName="TestNG">
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
+    <configuration default="true" type="TestNG">
       <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
       <properties />
       <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <list>
       <item itemvalue="Maven.mybatis-generator" />
@@ -312,7 +457,6 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="c0d8a958-c9e9-4753-8056-5c3006198d9b" name="Default" comment="" />
       <created>1580974287532</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -329,433 +473,74 @@
       <workItem from="1581391471465" duration="2862000" />
       <workItem from="1581470560331" duration="1827000" />
       <workItem from="1581773296890" duration="4074000" />
+      <workItem from="1581855140756" duration="1314000" />
+      <workItem from="1581923193027" duration="2371000" />
     </task>
     <servers />
   </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3595000" />
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
   </component>
-  <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
-    <layout>
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50716144" side_tool="true" visible="true" weight="0.30206898" />
-      <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info id="Capture Tool" order="2" />
-      <window_info id="Designer" order="2" />
-      <window_info anchor="right" id="Database" order="3" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info id="UI Designer" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info active="true" anchor="bottom" id="Messages" order="7" sideWeight="0.49283853" visible="true" weight="0.30206898" />
-      <window_info anchor="right" id="Palette&#9;" order="3" />
-      <window_info id="Image Layers" order="2" />
-      <window_info anchor="bottom" id="Java Enterprise" order="7" />
-      <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.6516927" weight="0.6551724" />
-      <window_info anchor="bottom" id="Spring" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24609375" />
-      <window_info anchor="right" id="Bean Validation" order="3" />
-      <window_info id="Web" order="2" side_tool="true" />
-      <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.6536458" weight="0.69793105" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5052083" side_tool="true" visible="true" weight="0.30206898" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24609375" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Java Enterprise" order="7" />
-      <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Palette&#9;" order="3" />
-      <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info id="Web" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Spring" order="7" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info id="Image Layers" order="2" />
-      <window_info anchor="right" id="Bean Validation" order="3" />
-      <window_info anchor="right" id="Database" order="3" />
-      <window_info id="Capture Tool" order="2" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info id="UI Designer" order="2" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Messages" order="7" sideWeight="0.49479166" visible="true" weight="0.30206898" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info id="Designer" order="2" />
-    </layout>
-  </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/controller/UserFaceController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/controller/AdministratorController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="47" column="70" selection-start-line="47" selection-start-column="70" selection-end-line="47" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/dataObject/popularization/Article.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/dataObject/popularization/Vedio.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/service/inter/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/controller/VedioController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/service/impl/VedioServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/service/inter/VedioService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="355">
-          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/service/impl/AudioServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/service/inter/AudioService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/service/impl/AdministratorServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/common/ServerResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1200">
-          <caret line="76" column="5" selection-start-line="76" selection-start-column="5" selection-end-line="76" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/util/qiniu/QiniuUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="800">
-          <caret line="52" lean-forward="true" selection-start-line="52" selection-end-line="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/service/impl/UserServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1140">
-          <caret line="65" column="20" selection-start-line="65" selection-start-column="20" selection-end-line="65" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/common/ResponseCode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="12" column="32" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/common/Const.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/dataObject/popularization/PagedResult.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="11" column="32" lean-forward="true" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/dataObject/popularization/SearchExample.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/service/inter/ArticleService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="15" column="47" selection-start-line="15" selection-start-column="47" selection-end-line="15" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/dataObject/popularization/Collection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="520">
-          <caret line="42" column="1" selection-start-line="42" selection-start-column="1" selection-end-line="42" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/controller/ArticleController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1460">
-          <caret line="99" column="3" selection-start-line="99" selection-start-column="3" selection-end-line="100" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/service/inter/CollService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/controller/CollectionController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="13" column="10" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/service/impl/CollServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-243">
-          <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/controller/AdministratorConsultController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/dao/mapper/AdministratorMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/dao/mapper/ArticleMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/dao/mapper/AudioMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/dao/mapper/AutoAnswerTemplateMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-45">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/dao/mapper/CollectionMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="409">
-          <caret line="26" column="1" lean-forward="true" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/dao/mapper/SearchMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/dao/mapper/UserMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/dao/mapper/VedioMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapping/AudioMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2540">
-          <caret line="127" column="11" selection-start-line="127" selection-start-column="11" selection-end-line="127" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapping/CollectionMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="10" column="11" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapping/SearchMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1880">
-          <caret line="94" column="4" selection-start-line="94" selection-start-column="4" selection-end-line="94" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapping/VedioMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2440">
-          <caret line="122" selection-start-line="122" selection-end-line="122" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/controller/AudioController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="54" column="33" selection-start-line="54" selection-start-column="33" selection-end-line="54" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapping/ArticleMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="164" column="9" selection-start-line="164" selection-start-column="9" selection-end-line="164" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/service/impl/ArticleServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-176">
-          <caret line="96" column="60" selection-start-line="96" selection-start-column="60" selection-end-line="96" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/generatorConfig.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="87" selection-start-line="87" selection-end-line="87" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/dataObject/question/TestExample.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/dao/mapper/TestMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapping/TestMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="113" column="2" selection-start-line="113" selection-start-column="2" selection-end-line="113" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="5367" column="14" selection-start-line="5367" selection-start-column="14" selection-end-line="5367" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/controller/websocket/WebSocketConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/util/ikanalyzer/IKAnalyzerUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-160">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="54" column="28" lean-forward="true" selection-start-line="54" selection-start-column="28" selection-end-line="54" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/dao/mapper/QuestionMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/controller/QuestionController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="22" column="26" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
+  <component name="WindowStateProjectService">
+    <state width="1493" height="374" key="GridCell.Tab.0.bottom" timestamp="1581925918258">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="374" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1581925918258" />
+    <state width="1493" height="374" key="GridCell.Tab.0.center" timestamp="1581925918257">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="374" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1581925918257" />
+    <state width="1493" height="374" key="GridCell.Tab.0.left" timestamp="1581925918257">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="374" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1581925918257" />
+    <state width="1493" height="374" key="GridCell.Tab.0.right" timestamp="1581925918257">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="374" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1581925918257" />
+    <state width="1493" height="374" key="GridCell.Tab.1.bottom" timestamp="1581925918258">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="374" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1581925918258" />
+    <state width="1493" height="374" key="GridCell.Tab.1.center" timestamp="1581925918258">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="374" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1581925918258" />
+    <state width="1493" height="374" key="GridCell.Tab.1.left" timestamp="1581925918258">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="374" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1581925918258" />
+    <state width="1493" height="374" key="GridCell.Tab.1.right" timestamp="1581925918258">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="374" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1581925918258" />
+    <state width="1493" height="374" key="GridCell.Tab.2.bottom" timestamp="1581925918258">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="374" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1581925918258" />
+    <state width="1493" height="374" key="GridCell.Tab.2.center" timestamp="1581925918258">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="374" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1581925918258" />
+    <state width="1493" height="374" key="GridCell.Tab.2.left" timestamp="1581925918258">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="374" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1581925918258" />
+    <state width="1493" height="374" key="GridCell.Tab.2.right" timestamp="1581925918258">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="374" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1581925918258" />
+    <state x="361" y="146" key="Vcs.Push.Dialog.v2" timestamp="1581840966220">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1581840966220" />
+    <state x="449" y="237" key="com.intellij.ide.util.TipDialog" timestamp="1581923197979">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="449" y="237" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1581923197979" />
+    <state x="548" y="330" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1581925978005">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="548" y="330" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1581925978005" />
   </component>
 </project>

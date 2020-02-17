@@ -1,5 +1,0 @@
-2020-01-15 21:09:57,643 [INFO] (UserFaceController.java:36)- ===人脸注册图片名称：wx8b444a502cdbf1e5.o6zAJs2XJzZYspbUKdArzZWY7KD8.GDjZGR9ukojj15f4609884e7c6fde4857a77e9f3b3cd.jpg  大小：79490=== 
-2020-01-15 21:09:59,429 [INFO] (UserFaceController.java:36)- ===人脸注册图片名称：wx8b444a502cdbf1e5.o6zAJs2XJzZYspbUKdArzZWY7KD8.FIsa2TaE7qYGbc88b4e2bafb75d9d44e2fae8db1dff5.jpg  大小：79815=== 
-2020-01-15 21:10:01,466 [INFO] (UserFaceController.java:36)- ===人脸注册图片名称：wx8b444a502cdbf1e5.o6zAJs2XJzZYspbUKdArzZWY7KD8.A3dL7MejrgoGa077c16b724adcd1cf29f5b571447c4d.jpg  大小：79001=== 
-2020-01-15 21:10:03,459 [INFO] (UserFaceController.java:36)- ===人脸注册图片名称：wx8b444a502cdbf1e5.o6zAJs2XJzZYspbUKdArzZWY7KD8.UgRWuRnnxb2D4f32b039f1da2295c130fdad3edfa619.jpg  大小：78875=== 
-2020-01-15 21:10:05,472 [DEBUG] (FaceServiceImpl.java:75)- === DetectFace： {face_num=1, faces=[{"face_token":"1c85212ff1962b3b141a6a0af443f7ec","face_rectangle":{"top":205,"left":223,"width":79,"height":79}}], image_id=JGtkpXedHk8nxi3NGWZHIg==, request_id=1579093804,890a854e-0a72-4c9b-a2cf-18a34b44b308, time_used=87}===

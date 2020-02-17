@@ -1,7 +1,0 @@
-2020-01-17 11:39:42,420 [DEBUG] (FaceServiceImpl.java:163)- === 已注册过，无效注册！===
-2020-01-17 11:43:24,963 [INFO] (StartupInfoLogger.java:50)- Starting BreastApplication on LAPTOP-562395R3 with PID 10728 (started by 爱哭的周小姐 in D:\软件应用\java IDE\IntelliJ IDEA 2019.1\项目\breastfeed\breastfeed\server\bfbackend)
-2020-01-17 11:43:24,969 [DEBUG] (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
-2020-01-17 11:43:24,969 [INFO] (SpringApplication.java:648)- No active profile set, falling back to default profiles: default
-2020-01-17 11:43:27,414 [INFO] (StartupInfoLogger.java:59)- Started BreastApplication in 4.968 seconds (JVM running for 7.323)
-2020-01-17 11:43:53,020 [INFO] (UserFaceController.java:66)- ===人脸注册图片名称：wx8b444a502cdbf1e5.o6zAJs2XJzZYspbUKdArzZWY7KD8.qQK7TIhbVCMG73f2b263280421d07f5b2138dc9b7979.jpg  大小：80293=== 
-2020-01-17 11:43:56,016 [DEBUG] (FaceServiceImpl.java:127)- === DetectFace： {face_num=1, faces=[{"face_token":"6686b643aa8fbf9551d3384626b90e56","face_rectangle":{"top":167,"left":176,"width":84,"height":84}}], image_id=tEoZWATjIkKBAiLkNwMAMQ==, request_id=1579232633,483824ff-fe0b-423e-8c49-d43ff751bde1, time_used=163}===
