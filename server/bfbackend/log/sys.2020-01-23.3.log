@@ -1,9 +1,0 @@
-2020-01-23 12:07:37,101 [INFO] (StartupInfoLogger.java:59)- Started BreastApplication in 3.068 seconds (JVM running for 4.734)
-2020-01-23 12:08:58,025 [ERROR] (UserConsultImpl.java:115)- === WXGetAccessToken：api.weixin.qq.com===
-2020-01-23 13:00:07,901 [INFO] (StartupInfoLogger.java:50)- Starting BreastApplication on LAPTOP-562395R3 with PID 9680 (started by 爱哭的周小姐 in D:\软件应用\java IDE\IntelliJ IDEA 2019.1\项目\breastfeed\breastfeed\server\bfbackend)
-2020-01-23 13:00:07,904 [DEBUG] (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
-2020-01-23 13:00:07,905 [INFO] (SpringApplication.java:648)- No active profile set, falling back to default profiles: default
-2020-01-23 13:00:10,429 [INFO] (StartupInfoLogger.java:59)- Started BreastApplication in 3.068 seconds (JVM running for 4.574)
-2020-01-23 15:07:40,820 [INFO] (StartupInfoLogger.java:50)- Starting BreastApplication on LAPTOP-562395R3 with PID 17952 (started by 爱哭的周小姐 in D:\软件应用\java IDE\IntelliJ IDEA 2019.1\项目\breastfeed\breastfeed\server\bfbackend)
-2020-01-23 15:07:40,825 [DEBUG] (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
-2020-01-23 15:07:40,825 [INFO] (SpringApplication.java:648)- No active profile set, falling back to default profiles: default

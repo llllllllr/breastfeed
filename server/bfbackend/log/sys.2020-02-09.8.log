@@ -1,3 +1,0 @@
-2020-02-09 12:48:12,185 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select content from search_content group by content order by count(content) desc 
-2020-02-09 12:48:12,189 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
-2020-02-09 12:48:12,227 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 3
