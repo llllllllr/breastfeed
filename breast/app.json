@@ -1,10 +1,11 @@
 {
   "pages": [
+    "pages/index/index",
     "pages/question/question",
     "pages/testIndex/testIndex",
-    "pages/index/index",
     "pages/article_detail/article_detail",
-    "pages/search/search"
+    "pages/search/search",
+    "pages/searchResult/searchResult"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -13,7 +14,7 @@
     "navigationBarTextStyle": "black"
   },
   "tabBar": {
-    "selectedColor":"#d4237a",
+    "selectedColor": "#d4237a",
     "borderStyle": "white",
     "list": [
       {

@@ -2,7 +2,6 @@ package lllr.test.breast.service.inter;
 
 import lllr.test.breast.common.ServerResponse;
 import lllr.test.breast.dataObject.popularization.Audio;
-import lllr.test.breast.dataObject.popularization.Vedio;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

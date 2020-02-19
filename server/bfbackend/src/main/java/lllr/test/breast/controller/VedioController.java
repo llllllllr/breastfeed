@@ -28,6 +28,7 @@ public class VedioController {
                                                @RequestParam("title")String title,
                                                @RequestParam("vdourl")String vdourl,
                                                @RequestParam("imgurl")String imgurl,
+                                               @RequestParam("description")String description,
                                                @RequestParam("category")String category)
     {
         Vedio vedio = new Vedio();
@@ -37,6 +38,7 @@ public class VedioController {
         vedio.setCoverUrl(imgurl);
         vedio.setTitle(title);
         vedio.setVediourl(vdourl);
+        vedio.setDescription(description);
         return vedioService.addeditVedio(vedio);
     }
     @GetMapping("/vedio/getlist")

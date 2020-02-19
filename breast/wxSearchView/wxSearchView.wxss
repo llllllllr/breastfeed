@@ -52,7 +52,7 @@
   padding: 4px 5px 4px 5px;
   border-radius: 0px;
   background-color: rgba(200, 200, 200, 0.1);
-  border-radius: 5px;
+  border-radius: 15px;
 }
 
 /** 搜索记录标题栏 */

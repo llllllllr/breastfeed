@@ -5,8 +5,6 @@ import lllr.test.breast.dataObject.popularization.Vedio;
 import java.util.List;
 
 public interface VedioMapper {
-
-
     int deleteByPrimaryKey(Integer id);
 
     int insert(Vedio record);

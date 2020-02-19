@@ -51,3 +51,10 @@
   font-weight: lighter;
   margin-left: 20rpx;
 }
+
+swiper
+{
+  display: block;
+  height: 900rpx;
+  
+}

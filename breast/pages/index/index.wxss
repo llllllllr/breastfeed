@@ -23,6 +23,8 @@ page {
 
 .tab {
   display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 .active {
@@ -361,8 +363,8 @@ vertical-align: middle;
 
 .active {
   /* color: pink; */
-  /* color: #d4237a; */
-  border-bottom: solid 3px #d4237a;
+  color: #d4237a;
+  /* border-bottom: solid 3px #d4237a; */
 }
 
 
@@ -482,11 +484,22 @@ z-index: 100;
 
 .video-name {
   margin-top: 10rpx;
-  font-size: 19px;
-  color: black;
+  font-family: PingFangSC-Medium;
+  font-size: 34rpx;
+  color: #333;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 1;
+  overflow: hidden;
+}
+.video-desc {
+  font-family: PingFangSC-Regular;
+  font-size: 26rpx;
+  color: #666;
+  margin-top: 10rpx;
+  /* display: -webkit-box; */
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
   overflow: hidden;
 }
 .video-title{
@@ -498,4 +511,26 @@ z-index: 100;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 1;
   overflow: hidden;
+}
+.video-btn {
+  margin-top: 20rpx;
+  width: 103rpx;
+  height: 39rpx;
+  border: solid 1px #d2d2d2;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-left: 560rpx;
+
+}
+.video-btn image {
+  width: 19rpx;
+  height: 12rpx;
+  margin-right: 10rpx;
+}
+.video-btn text {
+  font-family: PingFangSC-Regular;
+  font-size: 22rpx;
+  color: #999;
 }

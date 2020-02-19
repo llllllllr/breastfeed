@@ -1,5 +1,0 @@
-2020-01-15 20:28:22,369 [INFO] (UserFaceController.java:36)- ===人脸注册图片名称：wx8b444a502cdbf1e5.o6zAJs2XJzZYspbUKdArzZWY7KD8.Q8PHZksVnrHcd1f2c62b33e7c1da707a9d17cf426fa7.jpg  大小：79965=== 
-2020-01-15 20:28:22,587 [DEBUG] (FaceServiceImpl.java:101)- === SearchFace： {thresholds={"1e-5":73.975,"1e-4":69.101,"1e-3":62.327}, request_id=1579091301,b46a8e3d-8c5e-4bc7-b5ae-13fab664d105, results=[{"user_id":"","confidence":92.628,"face_token":"76d4747257d51644c11c9a5a7b188c53"}], time_used=298}===
-2020-01-15 20:28:22,715 [DEBUG] (FaceServiceImpl.java:101)- === SearchFace： {thresholds={"1e-5":73.975,"1e-4":69.101,"1e-3":62.327}, request_id=1579091302,cad6646a-583e-4c69-9dd4-ae7eddc89572, results=[{"user_id":"","confidence":93.279,"face_token":"76d4747257d51644c11c9a5a7b188c53"}], time_used=305}===
-2020-01-15 20:28:23,317 [DEBUG] (FaceServiceImpl.java:131)- === AddFace： {error_message=CONCURRENCY_LIMIT_EXCEEDED}===
-2020-01-15 20:28:23,317 [DEBUG] (FaceServiceImpl.java:45)- === IsErrorMessage: 返回数据为空 或者 error_messageCONCURRENCY_LIMIT_EXCEEDED===

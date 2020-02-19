@@ -1,7 +1,0 @@
-2020-01-15 20:22:24,071 [INFO] (UserFaceController.java:36)- ===人脸注册图片名称：wx8b444a502cdbf1e5.o6zAJs2XJzZYspbUKdArzZWY7KD8.4iNzeHFPkWI9999cdb896ead0ecbdaa5365ae39187fe.jpg  大小：78488=== 
-2020-01-15 20:22:26,850 [DEBUG] (FaceServiceImpl.java:75)- === DetectFace： {face_num=1, faces=[{"face_rectangle":{"top":191,"left":154,"width":66,"height":66},"face_token":"76d4747257d51644c11c9a5a7b188c53"}], image_id=ppDPxgKslT6C162h7i0DUw==, request_id=1579090946,84d9a903-2f43-412a-8077-9305fe273ceb, time_used=137}===
-2020-01-15 20:22:27,997 [DEBUG] (FaceServiceImpl.java:101)- === SearchFace： {thresholds={"1e-5":73.975,"1e-4":69.101,"1e-3":62.327}, request_id=1579090947,f34c77ea-bc4b-4520-ab2c-e035aab2fa0b, results=[{"user_id":"","confidence":94.101,"face_token":"dd22a302ccd1cf8cbb795f4866b73a80"}], time_used=336}===
-2020-01-15 20:22:55,768 [DEBUG] (FaceServiceImpl.java:131)- === AddFace： {failure_detail=[], face_count=8, face_added=1, faceset_token=cb8ccd2910ff977638bdc457e070fe63, request_id=1579090966,20063e1e-65a0-44cb-9ce8-aeb63606ad73, outer_id=123456, time_used=403}===
-2020-01-15 20:26:25,596 [INFO] (StartupInfoLogger.java:50)- Starting BreastApplication on LAPTOP-562395R3 with PID 17572 (started by 爱哭的周小姐 in D:\软件应用\java IDE\IntelliJ IDEA 2019.1\项目\breastfeed\breastfeed\server\bfbackend)
-2020-01-15 20:26:25,606 [DEBUG] (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
-2020-01-15 20:26:25,607 [INFO] (SpringApplication.java:648)- No active profile set, falling back to default profiles: default

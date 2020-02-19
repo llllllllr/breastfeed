@@ -40,11 +40,9 @@ Page({
   
     // 4 搜索回调函数  
     mySearchFunction: function(value) {
-      // do your job here
-      // 示例：跳转
       console.log(value)
       wx.redirectTo({
-        url: '../me/me'
+        url: '../searchResult/searchResult?word='+value
       })
     },
   

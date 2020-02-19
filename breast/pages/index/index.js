@@ -24,20 +24,22 @@ Page({
     articleList: [],
    
     //视频
+    videoRes:[],
     videoIndex: null,
     videoList: [],
+
   },
 
   onLoad: function () {
 
-    // wx.showLoading({
-    //   title: '加载中....',
-    // })
-    // this.getArticleList();
+    wx.showLoading({
+      title: '加载中....',
+    })
+    this.getArticleList();
 
-    // this.getAudioList();
+    this.getAudioList();
      
-    //   this.getVedioList();
+      this.getVedioList();
   },
 
 
@@ -204,14 +206,40 @@ Page({
       url: serverurl + '/vedio/getlist',
       method: 'GET',
       success: function (res) {
-        console.log(res.data.data)
+        var videos =res.data.data;
         that.setData({
-          videoList: res.data.data,
+          videoList: videos,
+          videoRes:videos
         })
+        //截取字符串，以便中展开
+        for(var i=0;i<videos.length;i++)
+        {
+          var descrip = videos[i].description;
+          if(descrip.length>50)
+          {
+            var des = "videoList["+i+"].slice_description";
+            var item = descrip.slice(0,50)+'...';
+            console.log(item)
+            that.setData({
+              [des]:item
+            })
+          }
+          
+          
+        }
       }
     })
   },
-
+	//展开
+	//原本没有upStatus这个字段，所以默认值为false
+	upDown(event) {
+    console.log(this.data.videoRes)
+		var index = event.currentTarget.dataset['index'];
+		this.data.videoList[index].upStatus = !this.data.videoList[index].upStatus;
+		this.setData({
+			videoList: this.data.videoRes
+		})
+	},
   	//播放视频
 	videoPlay(event) {
 		var length = this.data.videoList.length;
