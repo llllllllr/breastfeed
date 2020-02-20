@@ -1,11 +1,19 @@
 {
   "pages": [
+
+    
     "pages/index/index",
     "pages/question/question",
     "pages/testIndex/testIndex",
     "pages/article_detail/article_detail",
     "pages/search/search",
-    "pages/searchResult/searchResult"
+    "pages/searchResult/searchResult",
+    "pages/signUp/index",
+    "pages/signIn/signIn",
+    "pages/signIndex/signIndex",
+    "pages/doctorRegister/doctorRegister",
+    "pages/signUp/signUp"
+
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -36,7 +44,7 @@
         "selectedIconPath": "/images/icon/zx2.png"
       },
       {
-        "pagePath": "pages/index/index",
+        "pagePath": "pages/signIndex/signIndex",
         "text": "我的",
         "iconPath": "/images/icon/wd1.png",
         "selectedIconPath": "/images/icon/wd2.png"

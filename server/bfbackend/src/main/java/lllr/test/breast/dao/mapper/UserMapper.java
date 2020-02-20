@@ -1,6 +1,5 @@
 package lllr.test.breast.dao.mapper;
 
-import lllr.test.breast.dataObject.user.Doctor;
 import lllr.test.breast.dataObject.user.User;
 
 public interface UserMapper {

@@ -1,0 +1,26 @@
+page{
+  background-color:  #FAFFF0;
+}
+
+.cu-btn{
+  box-shadow: 10rpx  10rpx 10rpx rgb(209, 204, 204)
+}
+
+.btn{
+  display: flex;
+  margin: 30rpx;
+}
+
+
+.cu-form-group
+{
+  background-color: var(--white);
+padding: 1rpx 30rpx;
+display: flex;
+align-items: center;
+min-height: 120rpx;
+justify-content: space-between;
+border-radius: 50rpx;
+margin: 40rpx;
+
+}

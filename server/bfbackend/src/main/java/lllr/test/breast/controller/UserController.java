@@ -1,7 +1,6 @@
 package lllr.test.breast.controller;
 
 import lllr.test.breast.common.ServerResponse;
-import lllr.test.breast.dataObject.user.Doctor;
 import lllr.test.breast.dataObject.user.User;
 import lllr.test.breast.service.inter.UserService;
 import lllr.test.breast.util.DataValidateUtil;
@@ -15,7 +14,10 @@ import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.text.ParseException;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+import java.util.UUID;
 
 @ResponseBody
 @RequestMapping("/user")
@@ -24,7 +26,7 @@ public class UserController {
     @Autowired
     private UserService userService;
 
-    @Value("${user.password.length}")
+    @Value("5")
     private int USER_PASSWORD_LENGTH;
     /*
   注册
@@ -79,7 +81,7 @@ public class UserController {
             user.setAge(null);
         }
 
-        if (DataValidateUtil.length(creditId, 5, 0)) {
+        if (DataValidateUtil.length(creditId, 18, 0)) {
             user.setCreditId(creditId);
         } else {
             errorList.add("身份证号码错误!");
@@ -107,7 +109,7 @@ public class UserController {
             errorList.add("孕期格式错误1");
         }
         if (!DataValidateUtil.isNull(confinementDate)) {
-            user.setConfinementDate(new Date(Long.parseLong(confinementDate)));
+//            user.setConfinementDate(new Date(Long.parseLong(confinementDate)));
         } else {
             errorList.add("产期不能为空！");
         }
