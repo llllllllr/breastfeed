@@ -203,4 +203,16 @@ public class DoctorController {
         return ServerResponse.createBysuccess();
     }
 
+    //医生修改自己的咨询费用
+    @GetMapping("/updateConsultCost")
+    public ServerResponse updateConsultCost(@RequestParam(value = "doctorId") Integer doctorId,
+                                            @RequestParam(value="consultCost") Integer consultCost){
+        if(DataValidateUtil.isNull(doctorId) || DataValidateUtil.isNull(consultCost))
+            return ServerResponse.createByError();
+
+        return doctorService.updateConsultCost(doctorId,consultCost);
+
+
+    }
+
 }

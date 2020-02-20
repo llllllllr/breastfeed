@@ -1,0 +1,138 @@
+2020-02-19 10:49:58,102 [INFO] (StartupInfoLogger.java:50)- Starting BreastApplication on LAPTOP-562395R3 with PID 6020 (started by 爱哭的周小姐 in D:\软件应用\java IDE\IntelliJ IDEA 2019.1\项目\breastfeed\新建文件夹\server\bfbackend)
+2020-02-19 10:49:58,171 [DEBUG] (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2020-02-19 10:49:58,171 [INFO] (SpringApplication.java:648)- No active profile set, falling back to default profiles: default
+2020-02-19 10:50:04,200 [INFO] (StartupInfoLogger.java:59)- Started BreastApplication in 6.992 seconds (JVM running for 11.405)
+2020-02-19 13:05:52,475 [INFO] (StartupInfoLogger.java:50)- Starting BreastApplication on LAPTOP-562395R3 with PID 14604 (started by 爱哭的周小姐 in D:\软件应用\java IDE\IntelliJ IDEA 2019.1\项目\breastfeed\新建文件夹\server\bfbackend)
+2020-02-19 13:05:52,485 [DEBUG] (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2020-02-19 13:05:52,485 [INFO] (SpringApplication.java:648)- No active profile set, falling back to default profiles: default
+2020-02-19 13:05:55,415 [INFO] (StartupInfoLogger.java:59)- Started BreastApplication in 3.758 seconds (JVM running for 6.188)
+2020-02-19 13:17:25,797 [INFO] (StartupInfoLogger.java:50)- Starting BreastApplication on LAPTOP-562395R3 with PID 4692 (started by 爱哭的周小姐 in D:\软件应用\java IDE\IntelliJ IDEA 2019.1\项目\breastfeed\新建文件夹\server\bfbackend)
+2020-02-19 13:17:25,809 [DEBUG] (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2020-02-19 13:17:25,809 [INFO] (SpringApplication.java:648)- No active profile set, falling back to default profiles: default
+2020-02-19 13:17:28,624 [INFO] (StartupInfoLogger.java:59)- Started BreastApplication in 3.474 seconds (JVM running for 5.222)
+2020-02-19 13:23:52,013 [INFO] (StartupInfoLogger.java:50)- Starting BreastApplication on LAPTOP-562395R3 with PID 6824 (started by 爱哭的周小姐 in D:\软件应用\java IDE\IntelliJ IDEA 2019.1\项目\breastfeed\新建文件夹\server\bfbackend)
+2020-02-19 13:23:52,016 [DEBUG] (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2020-02-19 13:23:52,016 [INFO] (SpringApplication.java:648)- No active profile set, falling back to default profiles: default
+2020-02-19 13:23:54,848 [INFO] (StartupInfoLogger.java:59)- Started BreastApplication in 3.527 seconds (JVM running for 5.221)
+2020-02-19 13:25:00,425 [INFO] (StartupInfoLogger.java:50)- Starting BreastApplication on LAPTOP-562395R3 with PID 9376 (started by 爱哭的周小姐 in D:\软件应用\java IDE\IntelliJ IDEA 2019.1\项目\breastfeed\新建文件夹\server\bfbackend)
+2020-02-19 13:25:00,429 [DEBUG] (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2020-02-19 13:25:00,429 [INFO] (SpringApplication.java:648)- No active profile set, falling back to default profiles: default
+2020-02-19 13:25:03,248 [INFO] (StartupInfoLogger.java:59)- Started BreastApplication in 3.415 seconds (JVM running for 5.273)
+2020-02-19 13:27:54,948 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select user_id, age, credit_id, pregnant_type, pregnant_week, job, confinement_date, confinement_week, confinement_type, user_name, user_password, user_token from user where user_name = ? 
+2020-02-19 13:27:55,194 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 1(String)
+2020-02-19 13:27:55,555 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 0
+2020-02-19 13:27:55,562 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: insert into user (user_id, age, credit_id, pregnant_type, pregnant_week, job, confinement_date, confinement_week, confinement_type, user_name, user_password, user_token ) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+2020-02-19 13:27:55,579 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: null, 11(Integer), 440506199903124578(String), 1(Integer), 11(String), 1(String), 2020-10-14(Date), 1(Integer), 1(Integer), 1(String), 111111111(String), 553aa7896bc4452da7f3ff54b35d1e1f(String)
+2020-02-19 13:27:55,984 [DEBUG] (BaseJdbcLogger.java:143)- <==    Updates: 1
+2020-02-19 13:29:53,950 [INFO] (UserFaceController.java:66)- ===人脸注册图片名称：wx3d0c29a20a305f28.o6zAJs2XJzZYspbUKdArzZWY7KD8.VJolkb4yMbFp4017f9a8b4529a7c5a4dd469743d8827.jpg  大小：79635=== 
+2020-02-19 13:29:55,394 [DEBUG] (FaceServiceImpl.java:127)- === DetectFace： {face_num=1, faces=[{"face_token":"a75c31ea756725042e89c41958851b6f","face_rectangle":{"top":155,"left":199,"width":72,"height":72}}], image_id=uT81I9LT9uf0+143PzV1Ug==, request_id=1582090194,c3a5da47-c020-4047-8778-3a9da244fd6e, time_used=84}===
+2020-02-19 13:29:56,147 [DEBUG] (FaceServiceImpl.java:157)- === SearchFace： {error_message=INVALID_OUTER_ID, request_id=1582090195,b5acf677-5a52-4060-86fe-8d911965e59e, time_used=47}===
+2020-02-19 13:29:56,148 [DEBUG] (FaceServiceImpl.java:53)- === SearchFace： {error_message=INVALID_OUTER_ID, request_id=1582090195,b5acf677-5a52-4060-86fe-8d911965e59e, time_used=47}===
+2020-02-19 13:29:56,148 [DEBUG] (FaceServiceImpl.java:42)- === IsErrorMessage: 返回数据为空 或者 error_messageINVALID_OUTER_ID===
+2020-02-19 13:29:56,148 [ERROR] (UserFaceController.java:42)- === faceRegisterController:face++ error_message:INVALID_OUTER_ID===
+2020-02-19 13:29:58,792 [INFO] (UserFaceController.java:66)- ===人脸注册图片名称：wx3d0c29a20a305f28.o6zAJs2XJzZYspbUKdArzZWY7KD8.LOVZoCuy9VXn38686f46fccdc51f95ce3544260d35f0.jpg  大小：81034=== 
+2020-02-19 13:29:59,866 [DEBUG] (FaceServiceImpl.java:127)- === DetectFace： {face_num=1, faces=[{"face_token":"1adcb424a0ccf4030e484118904cc4f3","face_rectangle":{"top":156,"left":197,"width":83,"height":83}}], image_id=a33hx0GrHAJq/knpX5naEw==, request_id=1582090199,b457480e-7580-475c-b883-025091471ecf, time_used=44}===
+2020-02-19 13:30:00,446 [DEBUG] (FaceServiceImpl.java:157)- === SearchFace： {error_message=INVALID_OUTER_ID, request_id=1582090200,1146a9e7-e29f-4844-957d-f5744995a996, time_used=28}===
+2020-02-19 13:30:00,447 [DEBUG] (FaceServiceImpl.java:53)- === SearchFace： {error_message=INVALID_OUTER_ID, request_id=1582090200,1146a9e7-e29f-4844-957d-f5744995a996, time_used=28}===
+2020-02-19 13:30:00,447 [DEBUG] (FaceServiceImpl.java:42)- === IsErrorMessage: 返回数据为空 或者 error_messageINVALID_OUTER_ID===
+2020-02-19 13:30:00,447 [ERROR] (UserFaceController.java:42)- === faceRegisterController:face++ error_message:INVALID_OUTER_ID===
+2020-02-19 13:30:03,753 [INFO] (UserFaceController.java:66)- ===人脸注册图片名称：wx3d0c29a20a305f28.o6zAJs2XJzZYspbUKdArzZWY7KD8.Rmj8gOCDH8cK39287ad8c207adc52622f2cbabc748be.jpg  大小：80939=== 
+2020-02-19 13:30:04,997 [DEBUG] (FaceServiceImpl.java:127)- === DetectFace： {face_num=1, faces=[{"face_rectangle":{"top":156,"left":196,"width":81,"height":81},"face_token":"f604b8726f7080eaf081c8f2a09fec04"}], image_id=iDXtZ/ICUjK0bPRdgmxE0w==, request_id=1582090204,ac86d6da-458e-4723-b44f-a5f4ea5e7b0e, time_used=136}===
+2020-02-19 13:30:05,661 [DEBUG] (FaceServiceImpl.java:157)- === SearchFace： {error_message=INVALID_OUTER_ID, request_id=1582090205,86243a75-7c12-4c50-9a59-a5acc9e24cb6, time_used=36}===
+2020-02-19 13:30:05,661 [DEBUG] (FaceServiceImpl.java:53)- === SearchFace： {error_message=INVALID_OUTER_ID, request_id=1582090205,86243a75-7c12-4c50-9a59-a5acc9e24cb6, time_used=36}===
+2020-02-19 13:30:05,661 [DEBUG] (FaceServiceImpl.java:42)- === IsErrorMessage: 返回数据为空 或者 error_messageINVALID_OUTER_ID===
+2020-02-19 13:30:05,661 [ERROR] (UserFaceController.java:42)- === faceRegisterController:face++ error_message:INVALID_OUTER_ID===
+2020-02-19 13:39:23,687 [INFO] (StartupInfoLogger.java:50)- Starting BreastApplication on LAPTOP-562395R3 with PID 11776 (started by 爱哭的周小姐 in D:\软件应用\java IDE\IntelliJ IDEA 2019.1\项目\breastfeed\新建文件夹\server\bfbackend)
+2020-02-19 13:39:23,693 [DEBUG] (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2020-02-19 13:39:23,694 [INFO] (SpringApplication.java:648)- No active profile set, falling back to default profiles: default
+2020-02-19 13:39:26,161 [INFO] (StartupInfoLogger.java:59)- Started BreastApplication in 3.856 seconds (JVM running for 5.613)
+2020-02-19 13:39:56,809 [INFO] (UserFaceController.java:65)- ===人脸注册图片名称：wx3d0c29a20a305f28.o6zAJs2XJzZYspbUKdArzZWY7KD8.XdAsdABA8tFv6ba4feef27d49082b4f9d96e4d743ad0.jpg  大小：82691=== 
+2020-02-19 13:41:46,164 [DEBUG] (FaceServiceImpl.java:126)- === DetectFace： {face_num=1, faces=[{"face_token":"e5d4e59b1596d77ee6f3472d79e335fb","face_rectangle":{"top":154,"left":202,"width":90,"height":90}}], image_id=39X7TVrg81xxQaBa/ujKhQ==, request_id=1582090850,1d7b0787-c3d9-40cf-be0e-fa8b71a70b4c, time_used=84}===
+2020-02-19 13:43:07,772 [DEBUG] (FaceServiceImpl.java:156)- === SearchFace： {error_message=INVALID_OUTER_ID, request_id=1582090962,a6929dcb-0e09-43e3-bb45-a86759003913, time_used=48}===
+2020-02-19 13:43:15,041 [DEBUG] (FaceServiceImpl.java:52)- === SearchFace： {error_message=INVALID_OUTER_ID, request_id=1582090962,a6929dcb-0e09-43e3-bb45-a86759003913, time_used=48}===
+2020-02-19 13:43:15,042 [DEBUG] (FaceServiceImpl.java:41)- === IsErrorMessage: 返回数据为空 或者 error_messageINVALID_OUTER_ID===
+2020-02-19 13:43:17,484 [ERROR] (UserFaceController.java:41)- === faceRegisterController:face++ error_message:INVALID_OUTER_ID===
+2020-02-19 13:51:47,450 [INFO] (StartupInfoLogger.java:50)- Starting BreastApplication on LAPTOP-562395R3 with PID 7596 (started by 爱哭的周小姐 in D:\软件应用\java IDE\IntelliJ IDEA 2019.1\项目\breastfeed\新建文件夹\server\bfbackend)
+2020-02-19 13:51:47,456 [DEBUG] (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2020-02-19 13:51:47,456 [INFO] (SpringApplication.java:648)- No active profile set, falling back to default profiles: default
+2020-02-19 13:51:49,957 [INFO] (StartupInfoLogger.java:59)- Started BreastApplication in 4.017 seconds (JVM running for 5.74)
+2020-02-19 13:53:32,006 [INFO] (UserFaceController.java:65)- ===人脸注册图片名称：wx3d0c29a20a305f28.o6zAJs2XJzZYspbUKdArzZWY7KD8.50ThKgIf1E7Ab61923b483b417e26a9d47b0e4fdb4af.jpg  大小：85969=== 
+2020-02-19 13:53:56,145 [DEBUG] (FaceServiceImpl.java:126)- === DetectFace： {face_num=1, faces=[{"face_rectangle":{"top":136,"left":190,"width":74,"height":74},"face_token":"76e5e51ead1070e8a36382fbb4f4d5d2"}], image_id=MWS/w9w5rMXX9lPyqJwACw==, request_id=1582091626,0185bb19-7552-4e47-8409-29e298a42c84, time_used=165}===
+2020-02-19 13:54:27,781 [DEBUG] (FaceServiceImpl.java:156)- === SearchFace： {error_message=EMPTY_FACESET, request_id=1582091651,084be88e-12b2-4ee4-ab49-a307c85f6bf8, time_used=73}===
+2020-02-19 13:54:34,773 [DEBUG] (FaceServiceImpl.java:52)- === SearchFace： {error_message=EMPTY_FACESET, request_id=1582091651,084be88e-12b2-4ee4-ab49-a307c85f6bf8, time_used=73}===
+2020-02-19 13:54:35,546 [DEBUG] (FaceServiceImpl.java:41)- === IsErrorMessage: 返回数据为空 或者 error_messageEMPTY_FACESET===
+2020-02-19 13:55:21,709 [ERROR] (UserFaceController.java:41)- === faceRegisterController:face++ error_message:EMPTY_FACESET===
+2020-02-19 14:06:48,824 [INFO] (StartupInfoLogger.java:50)- Starting BreastApplication on LAPTOP-562395R3 with PID 17360 (started by 爱哭的周小姐 in D:\软件应用\java IDE\IntelliJ IDEA 2019.1\项目\breastfeed\新建文件夹\server\bfbackend)
+2020-02-19 14:06:48,842 [DEBUG] (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2020-02-19 14:06:48,842 [INFO] (SpringApplication.java:648)- No active profile set, falling back to default profiles: default
+2020-02-19 14:06:51,269 [INFO] (StartupInfoLogger.java:59)- Started BreastApplication in 3.672 seconds (JVM running for 5.551)
+2020-02-19 14:07:05,016 [INFO] (UserFaceController.java:65)- ===人脸注册图片名称：wx3d0c29a20a305f28.o6zAJs2XJzZYspbUKdArzZWY7KD8.PzwlJU3VOiES5a683fe5880668fda9c92f27bec8156e.jpg  大小：84932=== 
+2020-02-19 14:07:05,019 [ERROR] (UserFaceController.java:75)- === faceSignController:java.io.FileNotFoundException: D:\ï¿½ï¿½ï¿½Ó¦ï¿½ï¿½\java IDE\IntelliJ IDEA 2019.1\ï¿½ï¿½Ä¿breastfeed\ï¿½Â½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½\server\bfbackend\src\main\resources\UserFaceImage48b04550-042e-440e-8c06-38333a030c97wx3d0c29a20a305f28.o6zAJs2XJzZYspbUKdArzZWY7KD8.PzwlJU3VOiES5a683fe5880668fda9c92f27bec8156e.jpg (系统找不到指定的路径。)===
+2020-02-19 14:10:11,578 [DEBUG] (FaceServiceImpl.java:128)- === DetectFace: 图片大小超出2097152===
+2020-02-19 14:10:11,578 [ERROR] (UserFaceController.java:41)- === faceRegisterController:图片大小超出2097152===
+2020-02-19 14:10:17,062 [INFO] (StartupInfoLogger.java:50)- Starting BreastApplication on LAPTOP-562395R3 with PID 4800 (started by 爱哭的周小姐 in D:\软件应用\java IDE\IntelliJ IDEA 2019.1\项目\breastfeed\新建文件夹\server\bfbackend)
+2020-02-19 14:10:17,069 [DEBUG] (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2020-02-19 14:10:17,070 [INFO] (SpringApplication.java:648)- No active profile set, falling back to default profiles: default
+2020-02-19 14:10:19,574 [INFO] (StartupInfoLogger.java:59)- Started BreastApplication in 3.673 seconds (JVM running for 5.404)
+2020-02-19 14:10:54,154 [INFO] (UserFaceController.java:65)- ===人脸注册图片名称：wx3d0c29a20a305f28.o6zAJs2XJzZYspbUKdArzZWY7KD8.5DxDgmdyMPexda33b2b164cd0b7bea17ff1724c35cf3.jpg  大小：85632=== 
+2020-02-19 14:10:54,156 [ERROR] (UserFaceController.java:75)- === faceSignController:java.io.FileNotFoundException: D:\ï¿½ï¿½ï¿½Ó¦ï¿½ï¿½\java IDE\IntelliJ IDEA 2019.1\ï¿½ï¿½Ä¿\breastfeed\ï¿½Â½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½\server\bfbackend\src\main\resources\UserFaceImaged62945e5-d4e2-40de-9925-135e9be09869wx3d0c29a20a305f28.o6zAJs2XJzZYspbUKdArzZWY7KD8.5DxDgmdyMPexda33b2b164cd0b7bea17ff1724c35cf3.jpg (系统找不到指定的路径。)===
+2020-02-19 14:12:30,934 [DEBUG] (FaceServiceImpl.java:128)- === DetectFace: 图片大小超出2097152===
+2020-02-19 14:12:30,935 [ERROR] (UserFaceController.java:41)- === faceRegisterController:图片大小超出2097152===
+2020-02-19 14:14:58,524 [INFO] (StartupInfoLogger.java:50)- Starting BreastApplication on LAPTOP-562395R3 with PID 3860 (started by 爱哭的周小姐 in D:\软件应用\java IDE\IntelliJ IDEA 2019.1\项目\breastfeed\新建文件夹\server\bfbackend)
+2020-02-19 14:14:58,530 [DEBUG] (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2020-02-19 14:14:58,531 [INFO] (SpringApplication.java:648)- No active profile set, falling back to default profiles: default
+2020-02-19 14:15:01,392 [INFO] (StartupInfoLogger.java:59)- Started BreastApplication in 4.457 seconds (JVM running for 6.298)
+2020-02-19 14:15:15,984 [INFO] (UserFaceController.java:65)- ===人脸注册图片名称：wx3d0c29a20a305f28.o6zAJs2XJzZYspbUKdArzZWY7KD8.EA3bZjNqgPtx720170c4072db8b0b03a9557c2b5faaf.jpg  大小：87107=== 
+2020-02-19 14:15:28,084 [DEBUG] (FaceServiceImpl.java:126)- === DetectFace： {face_num=1, faces=[{"face_token":"bef76645aa66291cd73a6caf342a93b6","face_rectangle":{"top":144,"left":204,"width":88,"height":88}}], image_id=VLF/HgcmLcvVmAfPQnI8sw==, request_id=1582092925,f0d4529b-4417-49d2-80b0-451d1ccd8a28, time_used=76}===
+2020-02-19 14:15:46,288 [DEBUG] (FaceServiceImpl.java:156)- === SearchFace： {thresholds={"1e-5":73.975,"1e-4":69.101,"1e-3":62.327}, request_id=1582092940,09ab268a-c7ad-4187-be95-65ad61671b30, results=[{"user_id":"","confidence":87.639,"face_token":"d79204cf1c3bf65e74ab567311fba9b0"}], time_used=316}===
+2020-02-19 14:15:50,500 [DEBUG] (FaceServiceImpl.java:52)- === SearchFace： {thresholds={"1e-5":73.975,"1e-4":69.101,"1e-3":62.327}, request_id=1582092940,09ab268a-c7ad-4187-be95-65ad61671b30, results=[{"user_id":"","confidence":87.639,"face_token":"d79204cf1c3bf65e74ab567311fba9b0"}], time_used=316}===
+2020-02-19 14:15:50,501 [DEBUG] (FaceServiceImpl.java:73)- === 该用户在系统注册过===
+2020-02-19 14:15:52,644 [DEBUG] (FaceServiceImpl.java:162)- === 已注册过，无效注册！===
+2020-02-19 14:16:18,065 [INFO] (UserFaceController.java:65)- ===人脸注册图片名称：wx3d0c29a20a305f28.o6zAJs2XJzZYspbUKdArzZWY7KD8.TNLJK1uOnxPU2a7c700b8709a450ea93b214278a8e8c.jpg  大小：86293=== 
+2020-02-19 14:16:19,541 [DEBUG] (FaceServiceImpl.java:126)- === DetectFace： {face_num=1, faces=[{"face_rectangle":{"top":158,"left":202,"width":89,"height":89},"face_token":"68783855bcfc907ba66504bd83aff522"}], image_id=K/jeeyYwSNstxhGxUzc1iA==, request_id=1582092978,05d0fdd2-437b-46c9-8920-699eee5be138, time_used=161}===
+2020-02-19 14:16:20,501 [DEBUG] (FaceServiceImpl.java:156)- === SearchFace： {thresholds={"1e-5":73.975,"1e-4":69.101,"1e-3":62.327}, request_id=1582092979,db85bff9-a3ad-4526-accd-921007398f06, results=[{"user_id":"","confidence":88.091,"face_token":"d79204cf1c3bf65e74ab567311fba9b0"}], time_used=267}===
+2020-02-19 14:16:20,502 [DEBUG] (FaceServiceImpl.java:52)- === SearchFace： {thresholds={"1e-5":73.975,"1e-4":69.101,"1e-3":62.327}, request_id=1582092979,db85bff9-a3ad-4526-accd-921007398f06, results=[{"user_id":"","confidence":88.091,"face_token":"d79204cf1c3bf65e74ab567311fba9b0"}], time_used=267}===
+2020-02-19 14:16:20,502 [DEBUG] (FaceServiceImpl.java:73)- === 该用户在系统注册过===
+2020-02-19 14:16:20,503 [DEBUG] (FaceServiceImpl.java:162)- === 已注册过，无效注册！===
+2020-02-19 14:16:23,035 [INFO] (UserFaceController.java:65)- ===人脸注册图片名称：wx3d0c29a20a305f28.o6zAJs2XJzZYspbUKdArzZWY7KD8.Qlk7j5PWptdFa01f443b1807e83c45b77bf8b9963981.jpg  大小：86419=== 
+2020-02-19 14:16:24,303 [DEBUG] (FaceServiceImpl.java:126)- === DetectFace： {face_num=1, faces=[{"face_rectangle":{"top":159,"left":206,"width":90,"height":90},"face_token":"d86b16cff1dab4b029bb297f6e016a18"}], image_id=OGHAJPvMl8MIhZyFsmew3w==, request_id=1582092983,eeb0f05e-cf35-4d98-92ce-36a2a5a6eec3, time_used=135}===
+2020-02-19 14:16:25,301 [DEBUG] (FaceServiceImpl.java:156)- === SearchFace： {thresholds={"1e-5":73.975,"1e-4":69.101,"1e-3":62.327}, request_id=1582092984,9ba03770-69f3-4fb9-b36f-d33905724e5c, results=[{"user_id":"","confidence":87.761,"face_token":"d79204cf1c3bf65e74ab567311fba9b0"}], time_used=307}===
+2020-02-19 14:16:25,302 [DEBUG] (FaceServiceImpl.java:52)- === SearchFace： {thresholds={"1e-5":73.975,"1e-4":69.101,"1e-3":62.327}, request_id=1582092984,9ba03770-69f3-4fb9-b36f-d33905724e5c, results=[{"user_id":"","confidence":87.761,"face_token":"d79204cf1c3bf65e74ab567311fba9b0"}], time_used=307}===
+2020-02-19 14:16:25,302 [DEBUG] (FaceServiceImpl.java:73)- === 该用户在系统注册过===
+2020-02-19 14:16:25,302 [DEBUG] (FaceServiceImpl.java:162)- === 已注册过，无效注册！===
+2020-02-19 14:16:28,035 [INFO] (UserFaceController.java:65)- ===人脸注册图片名称：wx3d0c29a20a305f28.o6zAJs2XJzZYspbUKdArzZWY7KD8.kXmjHYjDdvPlcfa936142a729840fe4bfa9c593e012c.jpg  大小：86380=== 
+2020-02-19 14:16:29,095 [DEBUG] (FaceServiceImpl.java:126)- === DetectFace： {face_num=1, faces=[{"face_token":"d95f75f6cff64ca11ac37d035a8f673b","face_rectangle":{"top":160,"left":206,"width":90,"height":90}}], image_id=Xg8KgOTV/I+ZGcADapGoPw==, request_id=1582092988,297df33e-0dec-4540-98a3-610a91d5c44a, time_used=63}===
+2020-02-19 14:16:30,101 [DEBUG] (FaceServiceImpl.java:156)- === SearchFace： {thresholds={"1e-5":73.975,"1e-4":69.101,"1e-3":62.327}, request_id=1582092989,e64acd68-c4da-4610-b67e-c82d5628d129, results=[{"user_id":"","confidence":82.657,"face_token":"d79204cf1c3bf65e74ab567311fba9b0"}], time_used=276}===
+2020-02-19 14:16:30,102 [DEBUG] (FaceServiceImpl.java:52)- === SearchFace： {thresholds={"1e-5":73.975,"1e-4":69.101,"1e-3":62.327}, request_id=1582092989,e64acd68-c4da-4610-b67e-c82d5628d129, results=[{"user_id":"","confidence":82.657,"face_token":"d79204cf1c3bf65e74ab567311fba9b0"}], time_used=276}===
+2020-02-19 14:16:30,102 [DEBUG] (FaceServiceImpl.java:73)- === 该用户在系统注册过===
+2020-02-19 14:16:30,102 [DEBUG] (FaceServiceImpl.java:162)- === 已注册过，无效注册！===
+2020-02-19 14:16:33,025 [INFO] (UserFaceController.java:65)- ===人脸注册图片名称：wx3d0c29a20a305f28.o6zAJs2XJzZYspbUKdArzZWY7KD8.4X7F1J6mFfv9bb14f4fc07d2dcc4b11325dee7d8831d.jpg  大小：86452=== 
+2020-02-19 14:16:34,103 [DEBUG] (FaceServiceImpl.java:126)- === DetectFace： {face_num=1, faces=[{"face_token":"c6d0933fbbdfbc0855043457da2f4690","face_rectangle":{"top":160,"left":207,"width":92,"height":92}}], image_id=CA/CVMPrWv1CMmU/Gs+QzQ==, request_id=1582092993,41e96882-0ec0-4329-a71b-6962e79639cd, time_used=37}===
+2020-02-19 14:16:35,221 [DEBUG] (FaceServiceImpl.java:156)- === SearchFace： {thresholds={"1e-5":73.975,"1e-4":69.101,"1e-3":62.327}, request_id=1582092994,c61ac95d-ba9d-4779-87e5-648ec814f037, results=[{"user_id":"","confidence":89.066,"face_token":"d79204cf1c3bf65e74ab567311fba9b0"}], time_used=275}===
+2020-02-19 14:16:35,222 [DEBUG] (FaceServiceImpl.java:52)- === SearchFace： {thresholds={"1e-5":73.975,"1e-4":69.101,"1e-3":62.327}, request_id=1582092994,c61ac95d-ba9d-4779-87e5-648ec814f037, results=[{"user_id":"","confidence":89.066,"face_token":"d79204cf1c3bf65e74ab567311fba9b0"}], time_used=275}===
+2020-02-19 14:16:35,222 [DEBUG] (FaceServiceImpl.java:73)- === 该用户在系统注册过===
+2020-02-19 14:16:35,223 [DEBUG] (FaceServiceImpl.java:162)- === 已注册过，无效注册！===
+2020-02-19 14:16:38,031 [INFO] (UserFaceController.java:65)- ===人脸注册图片名称：wx3d0c29a20a305f28.o6zAJs2XJzZYspbUKdArzZWY7KD8.390dpGOrhBjnf16f572c6e922d8b3b87e534c666bb72.jpg  大小：86283=== 
+2020-02-19 14:16:39,364 [DEBUG] (FaceServiceImpl.java:126)- === DetectFace： {face_num=1, faces=[{"face_rectangle":{"top":162,"left":205,"width":91,"height":91},"face_token":"df5438c75e8cf19f551a3b409d1a80dc"}], image_id=yDQ3tsdEYv2HgIM/mU7mCQ==, request_id=1582092998,dc974255-39d3-4799-928a-54ff12445e79, time_used=239}===
+2020-02-19 14:16:40,304 [DEBUG] (FaceServiceImpl.java:156)- === SearchFace： {thresholds={"1e-5":73.975,"1e-4":69.101,"1e-3":62.327}, request_id=1582092999,9633592d-dd1d-4090-9e8c-d0e0f17b0fd6, results=[{"user_id":"","confidence":89.477,"face_token":"d79204cf1c3bf65e74ab567311fba9b0"}], time_used=327}===
+2020-02-19 14:16:40,305 [DEBUG] (FaceServiceImpl.java:52)- === SearchFace： {thresholds={"1e-5":73.975,"1e-4":69.101,"1e-3":62.327}, request_id=1582092999,9633592d-dd1d-4090-9e8c-d0e0f17b0fd6, results=[{"user_id":"","confidence":89.477,"face_token":"d79204cf1c3bf65e74ab567311fba9b0"}], time_used=327}===
+2020-02-19 14:16:40,305 [DEBUG] (FaceServiceImpl.java:73)- === 该用户在系统注册过===
+2020-02-19 14:16:40,305 [DEBUG] (FaceServiceImpl.java:162)- === 已注册过，无效注册！===
+2020-02-19 14:17:01,750 [INFO] (UserFaceController.java:65)- ===人脸注册图片名称：wx3d0c29a20a305f28.o6zAJs2XJzZYspbUKdArzZWY7KD8.iFdvxIC7LB3pe61de1c44f6562bce3d5a7de17018679.jpg  大小：85846=== 
+2020-02-19 14:17:02,855 [DEBUG] (FaceServiceImpl.java:126)- === DetectFace： {face_num=1, faces=[{"face_token":"1f30ce94b14ba98226f63e6e78be38c4","face_rectangle":{"top":160,"left":203,"width":90,"height":90}}], image_id=9NWuae8c+YKBBtAtmKmJQQ==, request_id=1582093022,6a2248b9-4581-428b-8cc0-9f2fdf754799, time_used=45}===
+2020-02-19 14:17:04,022 [DEBUG] (FaceServiceImpl.java:156)- === SearchFace： {thresholds={"1e-5":73.975,"1e-4":69.101,"1e-3":62.327}, request_id=1582093023,84b77465-cdda-42f1-a16d-7a50e767fbe1, results=[{"user_id":"","confidence":85.789,"face_token":"d79204cf1c3bf65e74ab567311fba9b0"}], time_used=464}===
+2020-02-19 14:17:04,023 [DEBUG] (FaceServiceImpl.java:52)- === SearchFace： {thresholds={"1e-5":73.975,"1e-4":69.101,"1e-3":62.327}, request_id=1582093023,84b77465-cdda-42f1-a16d-7a50e767fbe1, results=[{"user_id":"","confidence":85.789,"face_token":"d79204cf1c3bf65e74ab567311fba9b0"}], time_used=464}===
+2020-02-19 14:17:04,023 [DEBUG] (FaceServiceImpl.java:73)- === 该用户在系统注册过===
+2020-02-19 14:17:04,023 [DEBUG] (FaceServiceImpl.java:162)- === 已注册过，无效注册！===
+2020-02-19 14:17:06,722 [INFO] (UserFaceController.java:65)- ===人脸注册图片名称：wx3d0c29a20a305f28.o6zAJs2XJzZYspbUKdArzZWY7KD8.2BPN3WiAt1pQa59449a9d9070ac8bed27a64829ca68a.jpg  大小：85992=== 
+2020-02-19 14:17:08,506 [DEBUG] (FaceServiceImpl.java:126)- === DetectFace： {face_num=1, faces=[{"face_rectangle":{"top":161,"left":207,"width":89,"height":89},"face_token":"22e881643b2761882693b92ef60f3aec"}], image_id=wCihR18wSnoDjQCEU4xoNg==, request_id=1582093027,9d60a6e7-dcd0-405d-94b8-286f5503ae98, time_used=286}===
+2020-02-19 14:17:09,781 [DEBUG] (FaceServiceImpl.java:156)- === SearchFace： {thresholds={"1e-5":73.975,"1e-4":69.101,"1e-3":62.327}, request_id=1582093028,2fea3143-de6c-4f96-85ac-73b8d6b551d7, results=[{"user_id":"","confidence":89.163,"face_token":"d79204cf1c3bf65e74ab567311fba9b0"}], time_used=346}===
+2020-02-19 14:17:09,782 [DEBUG] (FaceServiceImpl.java:52)- === SearchFace： {thresholds={"1e-5":73.975,"1e-4":69.101,"1e-3":62.327}, request_id=1582093028,2fea3143-de6c-4f96-85ac-73b8d6b551d7, results=[{"user_id":"","confidence":89.163,"face_token":"d79204cf1c3bf65e74ab567311fba9b0"}], time_used=346}===
+2020-02-19 14:17:09,782 [DEBUG] (FaceServiceImpl.java:73)- === 该用户在系统注册过===
+2020-02-19 14:17:09,782 [DEBUG] (FaceServiceImpl.java:162)- === 已注册过，无效注册！===
+2020-02-19 14:17:11,718 [INFO] (UserFaceController.java:65)- ===人脸注册图片名称：wx3d0c29a20a305f28.o6zAJs2XJzZYspbUKdArzZWY7KD8.ZDlS9jCnQd2b57961406ab358e3cb6e004dd582cdddd.jpg  大小：86305=== 
+2020-02-19 14:17:13,136 [DEBUG] (FaceServiceImpl.java:126)- === DetectFace： {face_num=1, faces=[{"face_token":"c3993e627302341cc86a585ea0bedde4","face_rectangle":{"top":157,"left":206,"width":90,"height":90}}], image_id=LHdUPVBZcoIrR9R/cNJwsg==, request_id=1582093032,56cdcf40-bd3f-43dd-beed-b23b8dbf0c1f, time_used=51}===
+2020-02-19 14:17:14,268 [DEBUG] (FaceServiceImpl.java:156)- === SearchFace： {thresholds={"1e-5":73.975,"1e-4":69.101,"1e-3":62.327}, request_id=1582093033,d32287a6-46c1-4444-b9c5-9e07e236b7fa, results=[{"user_id":"","confidence":87.79,"face_token":"d79204cf1c3bf65e74ab567311fba9b0"}], time_used=260}===
+2020-02-19 14:17:14,269 [DEBUG] (FaceServiceImpl.java:52)- === SearchFace： {thresholds={"1e-5":73.975,"1e-4":69.101,"1e-3":62.327}, request_id=1582093033,d32287a6-46c1-4444-b9c5-9e07e236b7fa, results=[{"user_id":"","confidence":87.79,"face_token":"d79204cf1c3bf65e74ab567311fba9b0"}], time_used=260}===
+2020-02-19 14:17:14,269 [DEBUG] (FaceServiceImpl.java:73)- === 该用户在系统注册过===
+2020-02-19 14:17:14,269 [DEBUG] (FaceServiceImpl.java:162)- === 已注册过，无效注册！===

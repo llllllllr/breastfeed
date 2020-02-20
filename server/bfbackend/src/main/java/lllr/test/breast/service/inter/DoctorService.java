@@ -11,4 +11,5 @@ public interface DoctorService {
 
     ServerResponse<Doctor> doctorSign(String userName, String userPassword);
 
+    ServerResponse updateConsultCost(Integer doctorId, Integer consultCost);
 }

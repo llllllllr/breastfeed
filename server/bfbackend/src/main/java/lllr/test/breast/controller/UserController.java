@@ -79,7 +79,7 @@ public class UserController {
             user.setAge(null);
         }
 
-        if (DataValidateUtil.length(creditId, 5, 0)) {
+        if (DataValidateUtil.length(creditId, 18, 0)) {
             user.setCreditId(creditId);
         } else {
             errorList.add("身份证号码错误!");
@@ -106,11 +106,15 @@ public class UserController {
         } catch (ParseException e) {
             errorList.add("孕期格式错误1");
         }
-        if (!DataValidateUtil.isNull(confinementDate)) {
-            user.setConfinementDate(new Date(Long.parseLong(confinementDate)));
-        } else {
+
+        if(!DataValidateUtil.isNull(confinementDate))
+            try {
+                user.setConfinementDate(DataValidateUtil.StringToSimpleDate(confinementDate));
+            } catch (ParseException e) {
+                errorList.add("产期格式错误！");
+            }
+        else
             errorList.add("产期不能为空！");
-        }
 
         if (!DataValidateUtil.isNull(confinementWeek))
             user.setConfinementWeek(confinementWeek);

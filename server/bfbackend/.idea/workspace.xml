@@ -1,342 +1,244 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4be82cec-dda4-48c6-bb2f-4c997c26fcd8" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-21.0.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-21.1.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-21.10.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-21.11.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-21.2.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-21.3.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-21.4.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-21.5.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-21.6.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-21.7.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-21.8.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-21.9.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-22.0.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-22.1.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-22.2.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-23.0.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-23.1.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-23.2.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-23.3.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-23.4.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-23.5.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-23.6.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-23.7.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-23.8.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-23.9.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-30.0.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-30.1.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-30.2.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-30.3.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-30.4.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-30.5.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-01.0.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-01.1.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-01.2.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-01.3.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-01.4.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-06.0.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-06.1.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-06.2.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-06.3.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-06.4.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-06.5.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-06.6.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-07.0.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-07.1.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-07.10.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-07.11.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-07.12.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-07.13.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-07.14.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-07.15.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-07.16.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-07.17.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-07.18.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-07.19.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-07.2.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-07.20.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-07.21.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-07.22.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-07.23.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-07.24.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-07.25.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-07.26.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-07.27.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-07.28.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-07.29.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-07.3.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-07.30.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-07.31.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-07.32.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-07.33.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-07.34.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-07.35.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-07.36.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-07.37.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-07.38.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-07.39.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-07.4.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-07.40.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-07.41.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-07.5.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-07.6.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-07.7.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-07.8.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-07.9.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.0.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.1.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.10.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.100.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.101.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.102.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.103.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.104.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.105.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.106.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.107.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.108.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.109.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.11.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.110.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.111.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.112.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.113.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.114.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.115.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.116.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.117.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.118.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.119.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.12.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.120.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.121.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.122.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.123.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.124.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.125.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.126.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.13.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.14.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.15.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.16.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.17.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.18.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.19.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.2.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.20.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.21.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.22.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.23.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.24.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.25.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.26.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.27.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.28.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.29.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.3.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.30.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.31.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.32.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.33.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.34.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.35.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.36.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.37.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.38.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.39.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.4.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.40.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.41.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.42.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.43.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.44.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.45.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.46.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.47.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.48.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.49.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.5.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.50.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.51.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.52.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.53.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.54.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.55.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.56.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.57.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.58.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.59.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.6.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.60.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.61.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.62.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.63.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.64.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.65.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.66.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.67.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.68.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.69.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.7.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.70.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.71.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.72.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.73.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.74.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.75.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.76.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.77.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.78.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.79.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.8.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.80.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.81.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.82.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.83.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.84.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.85.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.86.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.87.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.88.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.89.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.9.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.90.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.91.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.92.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.93.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.94.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.95.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.96.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.97.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.98.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.99.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-09.0.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-09.1.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-09.2.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-09.3.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-09.4.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-09.5.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-09.6.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-09.7.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-09.8.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-10.0.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-10.1.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-10.10.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-10.11.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-10.12.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-10.13.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-10.14.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-10.15.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-10.16.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-10.17.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-10.18.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-10.19.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-10.2.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-10.3.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-10.4.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-10.5.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-10.6.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-10.7.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-10.8.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-10.9.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-11.0.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-11.1.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-11.10.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-11.11.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-11.12.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-11.13.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-11.14.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-11.15.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-11.16.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-11.17.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-11.18.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-11.19.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-11.2.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-11.20.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-11.21.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-11.22.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-11.23.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-11.24.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-11.25.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-11.26.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-11.27.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-11.28.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-11.29.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-11.3.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-11.30.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-11.31.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-11.32.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-11.33.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-11.34.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-11.35.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-11.36.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-11.37.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-11.38.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-11.39.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-11.4.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-11.40.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-11.41.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-11.42.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-11.43.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-11.44.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-11.45.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-11.46.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-11.5.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-11.6.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-11.7.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-11.8.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-11.9.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-12.0.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-12.1.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-12.10.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-12.11.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-12.12.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-12.13.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-12.2.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-12.3.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-12.4.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-12.5.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-12.6.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-12.7.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-12.8.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-12.9.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-15.0.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-16.0.log" beforeDir="false" />
+    <list default="true" id="4be82cec-dda4-48c6-bb2f-4c997c26fcd8" name="Default" comment="Merge branch 'master' of https://github.com/llllllllr/breastfeed&#10;&#10;# Conflicts:&#10;#&#9;server/bfbackend/.idea/workspace.xml&#10;#&#9;server/bfbackend/log/sys.log">
+      <change beforePath="$PROJECT_DIR$/../../breast/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/app.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/app.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/app.wxss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/images/icon/kppd1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/images/icon/kppd2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/images/icon/next.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/images/icon/pause.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/images/icon/play.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/images/icon/sc..png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/images/icon/sc2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/images/icon/vedioPlay.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/images/icon/videoPlay.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/images/icon/wd1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/images/icon/wd2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/images/icon/zx1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/images/icon/zx2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/pages/article_detail/article_detail.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/pages/article_detail/article_detail.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/pages/article_detail/article_detail.wxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/pages/article_detail/article_detail.wxss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/pages/index/article.wxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/pages/index/audio.wxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/pages/index/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/pages/index/index.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/pages/index/index.wxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/pages/index/index.wxss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/pages/index/musicIndex.wxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/pages/index/play.wxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/pages/index/video.wxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/pages/search/search.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/pages/search/search.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/pages/search/search.wxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/pages/search/search.wxss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/project.config.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/sitemap.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/utils/util.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/wxParse/emojis/00.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/wxParse/emojis/01.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/wxParse/emojis/02.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/wxParse/emojis/03.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/wxParse/emojis/04.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/wxParse/emojis/05.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/wxParse/emojis/06.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/wxParse/emojis/07.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/wxParse/emojis/08.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/wxParse/emojis/09.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/wxParse/emojis/10.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/wxParse/emojis/100.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/wxParse/emojis/101.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/wxParse/emojis/102.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/wxParse/emojis/103.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/wxParse/emojis/104.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/wxParse/emojis/105.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/wxParse/emojis/106.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/wxParse/emojis/107.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/wxParse/emojis/108.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/wxParse/emojis/109.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/wxParse/emojis/11.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/wxParse/emojis/110.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/wxParse/emojis/111.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/wxParse/emojis/112.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/wxParse/emojis/113.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/wxParse/emojis/114.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/wxParse/emojis/115.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/wxParse/emojis/116.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/wxParse/emojis/117.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/wxParse/emojis/118.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/wxParse/emojis/119.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/wxParse/emojis/12.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/wxParse/emojis/120.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/wxParse/emojis/121.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/wxParse/emojis/122.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/wxParse/emojis/123.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/wxParse/emojis/124.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/wxParse/emojis/125.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/wxParse/emojis/126.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/wxParse/emojis/127.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/wxParse/emojis/128.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/wxParse/emojis/129.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/wxParse/emojis/13.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/wxParse/emojis/130.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/wxParse/emojis/131.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/wxParse/emojis/132.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/wxParse/emojis/133.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/wxParse/emojis/134.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/wxParse/emojis/14.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/wxParse/emojis/15.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/wxParse/emojis/16.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/wxParse/emojis/17.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/wxParse/emojis/18.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/wxParse/emojis/19.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/wxParse/emojis/20.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/wxParse/emojis/21.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/wxParse/emojis/22.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/wxParse/emojis/23.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/wxParse/emojis/24.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/wxParse/emojis/25.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/wxParse/emojis/26.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/wxParse/emojis/27.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/wxParse/emojis/28.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/wxParse/emojis/29.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/wxParse/emojis/30.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/wxParse/emojis/31.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/wxParse/emojis/32.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/wxParse/emojis/33.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/wxParse/emojis/34.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/wxParse/emojis/35.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/wxParse/emojis/36.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/wxParse/emojis/37.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/wxParse/emojis/38.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/wxParse/emojis/39.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/wxParse/emojis/40.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/wxParse/emojis/41.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/wxParse/emojis/42.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/wxParse/emojis/43.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/wxParse/emojis/44.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/wxParse/emojis/45.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/wxParse/emojis/46.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/wxParse/emojis/47.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/wxParse/emojis/48.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/wxParse/emojis/49.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/wxParse/emojis/50.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/wxParse/emojis/51.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/wxParse/emojis/52.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/wxParse/emojis/53.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/wxParse/emojis/54.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/wxParse/emojis/55.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/wxParse/emojis/56.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/wxParse/emojis/57.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/wxParse/emojis/58.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/wxParse/emojis/59.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/wxParse/emojis/60.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/wxParse/emojis/61.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/wxParse/emojis/62.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/wxParse/emojis/63.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/wxParse/emojis/64.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/wxParse/emojis/65.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/wxParse/emojis/66.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/wxParse/emojis/67.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/wxParse/emojis/68.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/wxParse/emojis/69.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/wxParse/emojis/70.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/wxParse/emojis/71.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/wxParse/emojis/72.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/wxParse/emojis/73.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/wxParse/emojis/74.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/wxParse/emojis/75.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/wxParse/emojis/76.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/wxParse/emojis/77.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/wxParse/emojis/78.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/wxParse/emojis/79.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/wxParse/emojis/80.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/wxParse/emojis/81.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/wxParse/emojis/82.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/wxParse/emojis/83.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/wxParse/emojis/84.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/wxParse/emojis/85.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/wxParse/emojis/86.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/wxParse/emojis/87.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/wxParse/emojis/88.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/wxParse/emojis/89.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/wxParse/emojis/90.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/wxParse/emojis/91.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/wxParse/emojis/92.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/wxParse/emojis/93.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/wxParse/emojis/94.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/wxParse/emojis/95.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/wxParse/emojis/96.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/wxParse/emojis/97.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/wxParse/emojis/98.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/wxParse/emojis/99.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/wxParse/html2json.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/wxParse/htmlparser.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/wxParse/showdown.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/wxParse/wxDiscode.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/wxParse/wxParse.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/wxParse/wxParse.wxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/wxParse/wxParse.wxss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/wxSearchView/wxSearchView.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/wxSearchView/wxSearchView.wxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/wxSearchView/wxSearchView.wxss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log/sys.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/sys.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lllr/test/breast/controller/ConsultOrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lllr/test/breast/controller/ConsultOrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lllr/test/breast/controller/DoctorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lllr/test/breast/controller/DoctorController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lllr/test/breast/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lllr/test/breast/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lllr/test/breast/controller/UserFaceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lllr/test/breast/controller/UserFaceController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lllr/test/breast/dao/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lllr/test/breast/dao/mapper/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lllr/test/breast/dataObject/consult/ConsultOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lllr/test/breast/dataObject/consult/ConsultOrder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lllr/test/breast/service/impl/DoctorServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lllr/test/breast/service/impl/DoctorServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lllr/test/breast/service/impl/FaceServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lllr/test/breast/service/impl/FaceServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lllr/test/breast/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lllr/test/breast/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lllr/test/breast/service/inter/DoctorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lllr/test/breast/service/inter/DoctorService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lllr/test/breast/service/inter/FaceService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lllr/test/breast/service/inter/FaceService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lllr/test/breast/util/face/UserFaceRes.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lllr/test/breast/util/face/UserFaceResUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/UserFaceImage/0.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapping/ConsultOrderMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapping/ConsultOrderMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapping/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapping/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapping/doctorMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapping/DoctorMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/lllr/test/face/FaceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/lllr/test/face/FaceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/UserFaceImage/0.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/controller/ConsultOrderController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/controller/ConsultOrderController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/controller/DoctorController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/controller/DoctorController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/controller/UserFaceController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/controller/UserFaceController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/dataObject/consult/ConsultOrder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/dataObject/consult/ConsultOrder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/service/impl/DoctorServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/service/impl/DoctorServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/service/impl/FaceServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/service/impl/FaceServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/service/impl/UserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/service/inter/DoctorService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/service/inter/DoctorService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/service/inter/FaceService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/service/inter/FaceService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/util/face/UserFaceRes.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/util/face/UserFaceResUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapping/ConsultOrderMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapping/ConsultOrderMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapping/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapping/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapping/doctorMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapping/doctorMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/lllr/test/face/FaceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/lllr/test/face/FaceTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="CodeInsightWorkspaceSettings">
-    <option name="optimizeImportsOnTheFly" value="true" />
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Interface" />
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
-  <component name="ProjectId" id="1XtAd6xbBiEfXSrJZUewSPifTSQ" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
+  <component name="ProjectId" id="1Xy2RKfYchGy2uaNXquIdaqOyo8" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
@@ -344,15 +246,74 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="restartRequiresConfirmation" value="false" />
   </component>
   <component name="RunManager" selected="Spring Boot.BreastApplication">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FaceTest.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="breast" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lllr.test.face.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="lllr.test.face" />
+      <option name="MAIN_CLASS_NAME" value="lllr.test.face.FaceTest" />
+      <option name="METHOD_NAME" value="test2" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FaceTest.test5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="breast" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lllr.test.face.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="lllr.test.face" />
+      <option name="MAIN_CLASS_NAME" value="lllr.test.face.FaceTest" />
+      <option name="METHOD_NAME" value="test5" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FaceTest.test6" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="breast" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lllr.test.face.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="lllr.test.face" />
+      <option name="MAIN_CLASS_NAME" value="lllr.test.face.FaceTest" />
+      <option name="METHOD_NAME" value="test6" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -364,33 +325,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="mybatis-generator" type="MavenRunConfiguration" factoryName="Maven">
-      <MavenSettings>
-        <option name="myGeneralSettings" />
-        <option name="myRunnerSettings" />
-        <option name="myRunnerParameters">
-          <MavenRunnerParameters>
-            <option name="profiles">
-              <set />
-            </option>
-            <option name="goals">
-              <list>
-                <option value="mybatis-generator:generate" />
-              </list>
-            </option>
-            <option name="pomFileName" />
-            <option name="profilesMap">
-              <map />
-            </option>
-            <option name="resolveToWorkspace" value="false" />
-            <option name="workingDirPath" value="$PROJECT_DIR$" />
-          </MavenRunnerParameters>
-        </option>
-      </MavenSettings>
-      <method v="2" />
-    </configuration>
-    <configuration name="BreastApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+    <configuration name="BreastApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="breast" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lllr.test.breast.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="lllr.test.breast.BreastApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -405,34 +347,35 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <list>
-      <item itemvalue="Maven.mybatis-generator" />
-      <item itemvalue="Spring Boot.BreastApplication" />
-    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.BreastApplication" />
+        <item itemvalue="JUnit.FaceTest.test5" />
+        <item itemvalue="JUnit.FaceTest.test2" />
+        <item itemvalue="JUnit.FaceTest.test6" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <created>1580974287532</created>
+      <changelist id="4be82cec-dda4-48c6-bb2f-4c997c26fcd8" name="Default" comment="" />
+      <created>1580972583027</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1580974287532</updated>
-      <workItem from="1580974289098" duration="2396000" />
-      <workItem from="1580979018257" duration="2883000" />
-      <workItem from="1581045676117" duration="11427000" />
-      <workItem from="1581131005953" duration="5206000" />
-      <workItem from="1581217254794" duration="6139000" />
-      <workItem from="1581305097105" duration="3843000" />
-      <workItem from="1581313779111" duration="7127000" />
-      <workItem from="1581330993098" duration="239000" />
-      <workItem from="1581331273202" duration="1946000" />
-      <workItem from="1581391471465" duration="2862000" />
-      <workItem from="1581470560331" duration="1827000" />
-      <workItem from="1581773296890" duration="4074000" />
-      <workItem from="1581855140756" duration="1314000" />
-      <workItem from="1581923193027" duration="2526000" />
+      <updated>1580972583027</updated>
+      <workItem from="1580972584388" duration="505000" />
+      <workItem from="1580973230870" duration="789000" />
+      <workItem from="1582004041388" duration="1882000" />
+      <workItem from="1582029221247" duration="725000" />
+      <workItem from="1582035358515" duration="1590000" />
+      <workItem from="1582076897596" duration="9381000" />
+      <workItem from="1582115876353" duration="687000" />
+      <workItem from="1582119072761" duration="2551000" />
+      <workItem from="1582190310071" duration="537000" />
+      <workItem from="1582202072491" duration="949000" />
     </task>
     <servers />
   </component>
@@ -440,65 +383,130 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1493" height="374" key="GridCell.Tab.0.bottom" timestamp="1581926141674">
+    <state x="574" y="122" key="#com.intellij.ide.util.MemberChooser" timestamp="1581932834526">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="374" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1581926141674" />
-    <state width="1493" height="374" key="GridCell.Tab.0.center" timestamp="1581926141674">
+    <state x="574" y="122" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1581932834526" />
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1582090452474">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="374" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1581926141674" />
-    <state width="1493" height="374" key="GridCell.Tab.0.left" timestamp="1581926141674">
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1582090452474" />
+    <state x="257" y="0" key="CommitChangelistDialog2" timestamp="1582093762622">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="374" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1581926141674" />
-    <state width="1493" height="374" key="GridCell.Tab.0.right" timestamp="1581926141674">
+    <state x="257" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1582093762622" />
+    <state width="504" height="444" key="DebuggerActiveHint" timestamp="1582091664413">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="374" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1581926141674" />
-    <state width="1493" height="374" key="GridCell.Tab.1.bottom" timestamp="1581926141675">
+    <state width="504" height="444" key="DebuggerActiveHint/0.0.1536.824@0.0.1536.824" timestamp="1582091664413" />
+    <state x="549" y="111" key="FileChooserDialogImpl" timestamp="1582190495878">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="374" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1581926141675" />
-    <state width="1493" height="374" key="GridCell.Tab.1.center" timestamp="1581926141675">
+    <state x="549" y="111" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1582190495878" />
+    <state width="1493" height="271" key="GridCell.Tab.0.bottom" timestamp="1582203007259">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="374" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1581926141675" />
-    <state width="1493" height="374" key="GridCell.Tab.1.left" timestamp="1581926141675">
+    <state width="1493" height="271" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1582203007259" />
+    <state width="1493" height="271" key="GridCell.Tab.0.center" timestamp="1582203007259">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="374" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1581926141675" />
-    <state width="1493" height="374" key="GridCell.Tab.1.right" timestamp="1581926141675">
+    <state width="1493" height="271" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1582203007259" />
+    <state width="1493" height="271" key="GridCell.Tab.0.left" timestamp="1582203007259">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="374" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1581926141675" />
-    <state width="1493" height="374" key="GridCell.Tab.2.bottom" timestamp="1581926141675">
+    <state width="1493" height="271" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1582203007259" />
+    <state width="1493" height="271" key="GridCell.Tab.0.right" timestamp="1582203007259">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="374" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1581926141675" />
-    <state width="1493" height="374" key="GridCell.Tab.2.center" timestamp="1581926141675">
+    <state width="1493" height="271" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1582203007259" />
+    <state width="1493" height="269" key="GridCell.Tab.1.bottom" timestamp="1582202985006">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="374" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1581926141675" />
-    <state width="1493" height="374" key="GridCell.Tab.2.left" timestamp="1581926141675">
+    <state width="1493" height="269" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1582202985006" />
+    <state width="1493" height="269" key="GridCell.Tab.1.center" timestamp="1582202985006">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="374" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1581926141675" />
-    <state width="1493" height="374" key="GridCell.Tab.2.right" timestamp="1581926141675">
+    <state width="1493" height="269" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1582202985006" />
+    <state width="1493" height="269" key="GridCell.Tab.1.left" timestamp="1582202985006">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="374" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1581926141675" />
-    <state x="361" y="146" key="Vcs.Push.Dialog.v2" timestamp="1581840966220">
+    <state width="1493" height="269" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1582202985006" />
+    <state width="1493" height="269" key="GridCell.Tab.1.right" timestamp="1582202985006">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1581840966220" />
-    <state x="449" y="237" key="com.intellij.ide.util.TipDialog" timestamp="1581923197979">
+    <state width="1493" height="269" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1582202985006" />
+    <state width="1493" height="269" key="GridCell.Tab.2.bottom" timestamp="1582202798995">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="449" y="237" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1581923197979" />
-    <state x="548" y="330" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1581925978005">
+    <state width="1493" height="269" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1582202798995" />
+    <state width="1493" height="269" key="GridCell.Tab.2.center" timestamp="1582202798995">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="548" y="330" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1581925978005" />
+    <state width="1493" height="269" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1582202798995" />
+    <state width="1493" height="269" key="GridCell.Tab.2.left" timestamp="1582202798995">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="269" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1582202798995" />
+    <state width="1493" height="269" key="GridCell.Tab.2.right" timestamp="1582202798995">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="269" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1582202798995" />
+    <state x="449" y="237" key="com.intellij.ide.util.TipDialog" timestamp="1582190396775">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="449" y="237" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1582190396775" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1582091851613">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1582091851613" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/lllr/test/breast/service/impl/UserServiceImpl.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>

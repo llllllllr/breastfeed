@@ -19,4 +19,6 @@ public interface UserMapper {
     User selectByUserName(String userName);
 
     User selectByToken(String user_token);
+
+    User selectByCreditId(String creditId);
 }
