@@ -1,0 +1,35 @@
+<!-- <wux-search-bar bindtap="changeToSearch">search-bar</wux-search-bar>
+<view style="height:8rpx"></view> -->
+<scroll-view class="content-info" scroll-y>
+
+	<!-- 音乐列表 -->
+	<block>
+		<include src="musicIndex.wxml"></include>
+	</block>
+	<!-- 播放器 -->
+	<!-- <block >
+<include src="play.wxml"></include>
+    </block>
+</scroll-view> -->
+
+	<!--footer player-->
+	<!--播放条-->
+	<view class="player">
+		<!-- 点击图片进入play.wxml/音乐播放界面 -->
+		<image class="player-music-image" src="{{play.coverUrl}}" bindtap="changeToPlay"></image>
+		<!--音乐信息-->
+		<view class="player-music-information">
+			<view class="player-music-information-title">{{play.title}}</view>
+			<view class="player-music-information-singer">{{play.singer}}</view>
+		</view>
+		<!--底部播放栏-->
+		<view class="player-controls">
+			<!--点击播放/暂停按钮，播放/暂停-->
+			<image wx:if="{{state=='paused'}}" src="/images/icon/pause.png" bindtap="play"></image>
+			<image wx:else src="/images/icon/play.png" bindtap="pause"></image>
+			<!--下一首-->
+			<image src="/images/icon/next.png" bindtap="next"></image>
+		</view>
+	</view>
+</scroll-view>
+<!-- </view> -->

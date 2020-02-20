@@ -1,0 +1,54 @@
+
+page{
+  background-color: white;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  padding:0 0
+}
+
+.head-img {
+  height: 460rpx;
+  width: 750rpx;
+}
+.content{
+  top: 400rpx;
+  margin: 30px 20px;
+}
+
+.title {
+  margin-left: 40rpx;
+  font-size: 36rpx;
+  font-weight: 700;
+  margin-top: 30rpx;
+  letter-spacing: 2px;
+  color: #4b556c;
+}
+
+.share-coll {
+  float: right;
+  margin-right: 40rpx;
+  margin-top: 20rpx;
+}
+
+.share-coll image {
+  height: 90rpx;
+  width: 90rpx;
+}
+
+.coll-img {
+  margin-left: 20rpx;
+}
+
+.horizon {
+  width: 660rpx;
+  height: 1px;
+  background-color: #e5e5e5;
+  vertical-align: middle;
+  position: relative;
+  top: 66rpx;
+  margin: 0 auto;
+  z-index: -99;
+}

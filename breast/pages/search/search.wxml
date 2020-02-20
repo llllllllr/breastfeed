@@ -1,0 +1,30 @@
+<include src="../../wxSearchView/wxSearchView.wxml" />
+ 
+<!-- 搜索框view
+<view class="search_con">
+ 
+<!-- 表单 -->
+  <!-- <form bindsubmit="formSubmit">
+  记得设置name值，这样JS才能接收name=keyword的值
+    <input type="text" name="keyword" class="search_input" placeholder='你要找什么呢？'/>
+    <button formType="submit" class="search_btn">搜索</button>    
+  </form>
+</view> -->
+
+<!-- 历史记录 -->
+ <!-- <view class="container log-list">
+
+  <block wx:for="{{logs}}" wx:for-item="log" wx:if="{{index<6}}">
+    <text class="log-item">{{index + 1}}. {{log}}</text>
+  </block>
+</view>
+
+搜索结果展示
+<view wx:for="{{re}}" wx:key="re" class="search_result">
+当提交空白表单的时候
+  <view class="empty">{{item.empty}}</view>
+  当有搜索结果的时候
+  <view class="resname">{{item.resname}}</view>
+  当查询不到结果的时候
+  <view class="noresult">{{item.noresult}}</view>
+</view> -->
