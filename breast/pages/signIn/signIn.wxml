@@ -1,0 +1,32 @@
+<form class="padding mar" bindsubmit="formSubmit">
+ 			<view class="cu-form-group">
+ 				<view class="title">昵称</view>
+ 				<input name="nickName" placeholder="请输入昵称"></input>
+ 				<text class="cuIcon-profile lg text-gray"></text>
+ 			</view>
+ 			<view class="cu-form-group">
+ 				<view class="title">密码</view>
+ 				<input name="password" placeholder="请输入密码"></input>
+                        <text  class="cuIcon-lock lg text-gray"></text>
+ 			</view>
+			 <view class="btn">
+  	<button formType="submit" class="cu-btn round bg-white shd" style="height:100rpx" 
+   >登录</button>
+    </view>
+       </form>
+   
+
+
+ <view class="cu-modal {{modalName=='Modal'?'show':''}}">
+  <view class="cu-dialog">
+    <view class="cu-bar bg-white justify-end">
+      <view class="content">提示</view>
+      <view class="action" bindtap="hideModal">
+        <text class="cuIcon-close text-red"></text>
+      </view>
+    </view>
+    <view class="padding-xl">
+      {{modalContent}}
+    </view>
+  </view>
+</view>

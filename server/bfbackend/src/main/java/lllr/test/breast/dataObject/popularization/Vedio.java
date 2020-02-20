@@ -11,6 +11,8 @@ public class Vedio {
 
     private String category;
 
+    private String description;
+
     public Integer getId() {
         return id;
     }
@@ -49,5 +51,13 @@ public class Vedio {
 
     public void setCategory(String category) {
         this.category = category == null ? null : category.trim();
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description == null ? null : description.trim();
     }
 }

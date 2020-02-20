@@ -1,0 +1,60 @@
+.bor {
+  height: 830rpx;
+  width: 650rpx;
+  border-radius: 30rpx;
+  box-shadow: 0 0 30rpx rgba(0, 0, 0, 0.538);
+  color: black;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  margin-top: 40rpx;
+  margin-bottom: 30rpx;
+}
+
+.btn {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+ justify-content: center;
+}
+
+.shd
+{
+  box-shadow: 0 0 20rpx rgba(0, 0, 0, 0.538);
+}
+
+.content
+{
+  font-size: 35rpx;
+  font-weight: bolder;
+  padding: 30rpx;
+}
+.perOp
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin: 40rpx;
+}
+.dgicon
+{
+  width: 45rpx;
+  height: 45rpx;
+  
+}
+
+.option
+{
+  font-size: 30rpx;
+  font-weight: lighter;
+  margin-left: 20rpx;
+}
+
+swiper
+{
+  display: block;
+  height: 900rpx;
+  
+}

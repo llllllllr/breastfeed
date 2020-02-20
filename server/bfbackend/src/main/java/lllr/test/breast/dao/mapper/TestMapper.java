@@ -2,6 +2,8 @@ package lllr.test.breast.dao.mapper;
 
 import lllr.test.breast.dataObject.question.Test;
 
+import java.util.List;
+
 public interface TestMapper {
 
 
@@ -16,4 +18,6 @@ public interface TestMapper {
     int updateByPrimaryKeySelective(Test record);
 
     int updateByPrimaryKey(Test record);
+
+    List<Test> getTestList();
 }

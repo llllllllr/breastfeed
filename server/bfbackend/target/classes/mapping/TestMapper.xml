@@ -110,6 +110,10 @@
     where id = #{id,jdbcType=INTEGER}
   </update>
 
-
+ <select id="getTestList" resultMap="BaseResultMap">
+   select
+   <include refid="Base_Column_List"></include>
+   from test
+ </select>
   
 </mapper>

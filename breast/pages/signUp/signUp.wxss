@@ -1,0 +1,98 @@
+page{
+   /* background: #F0F0F0 ; */
+   background-color:  #FAFFF0;
+}
+.row{
+position: relative;
+height: 109rpx;
+width: 95%;
+border-radius: 10rpx;
+background: #fff;
+padding-left: 20rpx;
+box-sizing: border-box;
+margin-left: 20rpx;
+top: 41rpx;
+margin-bottom: 29rpx;
+
+}
+.info-input{
+  height: 100rpx;
+  margin-left: 50rpx;
+  color: #777;
+    float: left;
+}
+.info-input1{
+  height: 100rpx;
+  margin-left: 50rpx;
+  color: #777;
+    float: left;
+    width: 420rpx;
+}
+.button{
+  width: 200rpx;
+  height: 70rpx;
+  line-height: 70rpx;
+  font-size: 28rpx;
+  background: #33FF99;
+  float: left;
+  margin-left: 10rpx;
+  margin-top: 15rpx;
+  color: #FFFFFF;
+}
+.submit{
+width: 40%;
+  height: 100rpx;
+  background: #fff;
+  color: #000;
+  border-radius: 50rpx;
+  position: absolute;
+  bottom: 6%;
+  left: 50%;
+  margin-left: -20%;
+  line-height: 100rpx;
+}
+.success{
+  background: #ffffff;
+ 
+}
+.cheer{
+  text-align: center;
+  line-height: 400rpx;
+  font-size: 60rpx;
+  position: relative;
+}
+.return{
+  margin: 20rpx;
+ 
+}
+
+.mar{
+  margin:30rpx;
+  box-shadow: black;
+  
+}
+form{
+  border-radius: 10rpx;
+}
+.cu-form-group{
+  background-color: var(--white);
+  color: #000;
+padding: 10rpx 30rpx;
+display: flex;
+align-items: center;
+min-height: 100rpx;
+justify-content: space-between;
+margin: 0 20rpx;
+margin-left: 20rpx;
+/* box-shadow: 5rpx 20rpx 5rpx rgb(219, 214, 214); */
+
+}
+
+.btn1{
+  margin-top: 30rpx;
+  display: flex;
+}
+
+.cu-btn{
+  box-shadow: 10rpx  10rpx 10rpx rgb(209, 204, 204)
+}

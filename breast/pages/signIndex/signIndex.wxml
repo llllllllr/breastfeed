@@ -1,0 +1,14 @@
+
+
+<view class="btn1">
+  	<button class="cu-btn round bg-white shd" style="height:100rpx" 
+    bindtap="UP" >{{up}}</button>
+  </view>
+
+  <view class="btn2">
+  	<button class="cu-btn round bg-white shd" style="height:100rpx" 
+    bindtap="DOWN">{{down}}</button>
+  </view>
+
+
+

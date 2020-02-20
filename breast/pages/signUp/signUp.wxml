@@ -1,0 +1,178 @@
+ <view wx:if="{{!success}}">
+ 	<!-- 
+ <view class='row'>
+        <view class='info'>
+               <input  class= 'info-input' bindinput="handleUserName" placeholder="请输入昵称" />
+         </view>
+ </view>
+
+  <view class='row'>
+        <view class='info'>
+               <input type='password' class= 'info-input' bindinput="handleUserPassword" placeholder="请输入你的密码" />
+         </view>
+ 
+ </view>
+  <view class='row'>
+        <view class='info'>
+               <input  type='password' class= 'info-input' bindinput="handlePasswordAgain" placeholder="请重新输入你的密码" />
+         </view>
+ 
+ </view>
+
+
+
+ <view class='row'>
+        <view class='info'>
+               <input  class= 'info-input' bindinput="handleCreditId" placeholder="请输入身份证号" />
+         </view>
+ 
+ </view>
+
+  <view class='row'>
+        <view class='info'>
+               <input  class= 'info-input' bindinput="handleAge" placeholder="请输入年龄" />
+         </view>
+ 
+ </view>
+
+  <view class='row'>
+        <view class='info'>
+               <input  class= 'info-input' bindinput="handleJob" placeholder="请输入职业" />
+         </view>
+ 
+ </view>
+
+  <view class='row'>
+        <view class='info'>
+               <input  class= 'info-input' bindinput="handlePregnantType" placeholder="请输入怀孕类型" />
+         </view>
+ 
+ </view>
+
+  <view class='row'>
+        <view class='info'>
+               <input  class= 'info-input' bindinput="handlePregnantWeek" placeholder="请输入孕周" />
+         </view>
+ </view>
+
+  <view class='row'>
+        <view class='info'>
+               <input  class= 'info-input' bindinput="handleConfinementDate" placeholder="请输入产期" />
+         </view>
+ </view>
+
+  <view class='row'>
+        <view class='info'>
+               <input  class= 'info-input' bindinput="handleConfinementWeek" placeholder="请输入产周" />
+         </view>
+ </view>
+
+  <view class='row'>
+        <view class='info'>
+               <input  class= 'info-input' bindinput="handleConfinementType" placeholder="请输入生产类型" />
+         </view>
+ </view>
+
+   <view class='row'>
+        <view class='info'>
+              <button class='submit' bindtap='submit'>提交</button>
+         </view>
+ </view> 
+ </view>-->
+
+ 	<scroll-view scroll-y>
+
+ 		<form class="padding mar" bindsubmit="formSubmit">
+ 			<view class="cu-form-group">
+ 				<view class="title">昵称</view>
+ 				<input name="nickName" placeholder="请输入昵称"></input>
+ 				<text class="cuIcon-profile lg text-gray"></text>
+ 			</view>
+ 			<view class="cu-form-group">
+ 				<view class="title">密码</view>
+ 				<input name="password" placeholder="请输入密码"></input>
+                        <text  class="cuIcon-lock lg text-gray"></text>
+ 			</view>
+ 			<view class="cu-form-group">
+ 				<view class="title">确认密码</view>
+ 				<input name="checkpassword" placeholder="请再次输入密码"></input>
+ 				<text  class="cuIcon-lock lg text-gray"></text>
+ 			</view>
+ 			<view class="cu-form-group">
+ 				<view class="title">身份证</view>
+ 				<input name="idNumber" placeholder="请输入身份证号"></input>
+ 				<text class="cuIcon-vipcard lg text-gray"></text>
+ 			</view>
+ 			<view class="cu-form-group">
+ 				<view class="title">年龄</view>
+ 				<input name="age"  placeholder="请输入年龄"></input>
+ 			</view>
+ 			<view class="cu-form-group">
+ 				<view class="title">职业</view>
+ 				<input name="job" placeholder="请输入职业"></input>
+ 			</view>
+ 			<view class="cu-form-group ">
+ 				<view class="title">孕/产期</view>
+ 				<picker bindchange="PickerChange" value="{{index}}" range="{{picker}}">
+ 					<view class="picker">
+ 						{{index?picker[index]:'请选择孕/产期'}}
+ 					</view>
+ 				</picker>
+ 			</view>
+ 			<view wx:if="{{index==0}}">
+ 				<view class="cu-form-group">
+ 					<view class="title">孕周</view>
+ 					<input name="pregnantWeek" placeholder="请输入孕周"></input>
+ 				</view>
+                         <view class="btn1">
+ 						<button formType="submit" class="cu-btn round bg-white shd margin-top" style="height:100rpx;" >提交</button>
+ 					</view>
+ 			</view>
+ 			<view wx:if="{{index==1}}">
+ 				<view class="cu-form-group">
+ 					<view class="title">分娩日期</view>
+ 					<picker mode="date" value="{{date}}" start="2015-09-01" end="2020-09-01" bindchange="DateChange">
+ 						<view class="picker">
+ 							{{date}}
+ 						</view>
+ 					</picker>
+ 				</view>
+ 				<view class="cu-form-group">
+ 					<view class="title">分娩孕周</view>
+ 					<input placeholder="请输入分娩孕周"></input>
+ 				</view>
+ 				<view class="cu-form-group margin-top">
+ 					<view class="title">分娩方式</view>
+ 					<picker bindchange="PickerChanget" value="{{indext}}" range="{{pickert}}">
+ 						<view class="picker">
+ 							{{indext?pickert[indext]:'请选择分娩方式'}}
+ 						</view>
+ 					</picker>
+ 				</view>
+                         <view class="btn1">
+ 						<button class="cu-btn round bg-white shd margin-top" style="height:100rpx;" >提交</button>
+ 					</view>
+ 			</view>
+
+ 		</form>
+ 	</scroll-view>
+ </view>
+
+ <view class="cu-modal {{modalName=='Modal'?'show':''}}">
+  <view class="cu-dialog">
+    <view class="cu-bar bg-white justify-end">
+      <view class="content">提示</view>
+      <view class="action" bindtap="hideModal">
+        <text class="cuIcon-close text-red"></text>
+      </view>
+    </view>
+    <view class="padding-xl">
+      {{modalContent}}
+    </view>
+  </view>
+</view>
+ <view class='success' wx:if="{{success}}">
+ 	<view class='cheer'>
+ 		<icon type="success" size="24" /> 恭喜您注册成功!</view>
+ 	<button type="default" class='return' bindtap='return_home'>返回首页</button>
+ </view>

@@ -39,7 +39,7 @@
 
 <!--        <javaModelGenerator targetPackage="lllr.test.breast.dataObject.consult.ConsultOrder" targetProject="src/main/java">-->
 
-        <javaModelGenerator targetPackage="lllr.test.breast.dataObject.question" targetProject="src/main/java">
+        <javaModelGenerator targetPackage="lllr.test.breast.dataObject.popularization" targetProject="src/main/java">
 
             <property name="enableSubPackages" value="true"/>
             <property name="trimStrings" value="true"/>
@@ -91,15 +91,25 @@
         <!--enableSelectByExample="false" selectByExampleQueryId="false"-->
         <!--enableDeleteByExample="false" />-->
 
-        <table tableName="test" domainObjectName="Test"
+        <!--<table tableName="test" domainObjectName="Test"-->
+               <!--enableCountByExample="false" enableUpdateByExample="false"-->
+               <!--enableSelectByExample="false" selectByExampleQueryId="false"/>-->
+
+
+        <!--<table tableName="consult_order" domainObjectName="ConsultOrder"-->
+                <!--enableCountByExample="false" enableUpdateByExample="false"-->
+                <!--enableSelectByExample="false" selectByExampleQueryId="false"-->
+             <!--enableDeleteByExample="false" />-->
+
+        <!--<table tableName="uanswer" domainObjectName="Answer"-->
+               <!--enableCountByExample="false" enableUpdateByExample="false"-->
+               <!--enableSelectByExample="false" selectByExampleQueryId="false"-->
+               <!--enableDeleteByExample="false" />-->
+
+        <table tableName="vedio" domainObjectName="Vedio"
                enableCountByExample="false" enableUpdateByExample="false"
-               enableSelectByExample="false" selectByExampleQueryId="false"/>
-
-
-        <table tableName="consult_order" domainObjectName="ConsultOrder"
-                enableCountByExample="false" enableUpdateByExample="false"
-                enableSelectByExample="false" selectByExampleQueryId="false"
-             enableDeleteByExample="false" />
+               enableSelectByExample="false" selectByExampleQueryId="false"
+               enableDeleteByExample="false" />
         </context>
 
         </generatorConfiguration>

@@ -1,0 +1,19 @@
+  <view class="cu-bar bg-white solid-bottom ">
+  	<view class='action'>
+  		<text class='cuIcon-titles text-pink '></text>{{type==1?'单选题':'多选题'}}
+  	</view>
+  </view>
+
+  <scroll-view scroll-y class="bor margin-top">
+  	<view class="content" style="display:fixed">{{title}}</view>
+  	<block wx:for="{{options}}" wx:for-index="idx">
+  		<view class="perOp" bindtap="selectOp" data-index="{{idx}}">
+  			<image class="dgicon" src="{{item.selected==-1?'/images/icon/dg.png':'/images/icon/dg2.png'}}"></image>
+  			<text class="option">{{item.option}}</text>
+  		</view>
+  	</block>
+  </scroll-view>
+  <view class="btn">
+  	<button class="cu-btn round bg-white shd" style="height:100rpx" 
+    bindtap="nextOp" data-index="{{idx}}">下一题</button>
+  </view>

@@ -7,38 +7,10 @@
     <result column="vedioURL" jdbcType="VARCHAR" property="vediourl" />
     <result column="cover_url" jdbcType="VARCHAR" property="coverUrl" />
     <result column="category" jdbcType="VARCHAR" property="category" />
+    <result column="description" jdbcType="VARCHAR" property="description" />
   </resultMap>
-  <sql id="Example_Where_Clause">
-    <where>
-      <foreach collection="oredCriteria" item="criteria" separator="or">
-        <if test="criteria.valid">
-          <trim prefix="(" prefixOverrides="and" suffix=")">
-            <foreach collection="criteria.criteria" item="criterion">
-              <choose>
-                <when test="criterion.noValue">
-                  and ${criterion.condition}
-                </when>
-                <when test="criterion.singleValue">
-                  and ${criterion.condition} #{criterion.value}
-                </when>
-                <when test="criterion.betweenValue">
-                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
-                </when>
-                <when test="criterion.listValue">
-                  and ${criterion.condition}
-                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
-                    #{listItem}
-                  </foreach>
-                </when>
-              </choose>
-            </foreach>
-          </trim>
-        </if>
-      </foreach>
-    </where>
-  </sql>
   <sql id="Base_Column_List">
-    id, title, vedioURL, cover_url, category
+    id, title, vedioURL, cover_url, category, description
   </sql>
   <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
     select 
@@ -50,12 +22,13 @@
     delete from vedio
     where id = #{id,jdbcType=INTEGER}
   </delete>
-
   <insert id="insert" parameterType="lllr.test.breast.dataObject.popularization.Vedio">
     insert into vedio (id, title, vedioURL, 
-      cover_url, category)
+      cover_url, category, description
+      )
     values (#{id,jdbcType=INTEGER}, #{title,jdbcType=VARCHAR}, #{vediourl,jdbcType=VARCHAR}, 
-      #{coverUrl,jdbcType=VARCHAR}, #{category,jdbcType=VARCHAR})
+      #{coverUrl,jdbcType=VARCHAR}, #{category,jdbcType=VARCHAR}, #{description,jdbcType=VARCHAR}
+      )
   </insert>
   <insert id="insertSelective" parameterType="lllr.test.breast.dataObject.popularization.Vedio">
     insert into vedio
@@ -75,6 +48,9 @@
       <if test="category != null">
         category,
       </if>
+      <if test="description != null">
+        description,
+      </if>
     </trim>
     <trim prefix="values (" suffix=")" suffixOverrides=",">
       <if test="id != null">
@@ -91,6 +67,9 @@
       </if>
       <if test="category != null">
         #{category,jdbcType=VARCHAR},
+      </if>
+      <if test="description != null">
+        #{description,jdbcType=VARCHAR},
       </if>
     </trim>
   </insert>
@@ -109,6 +88,9 @@
       <if test="category != null">
         category = #{category,jdbcType=VARCHAR},
       </if>
+      <if test="description != null">
+        description = #{description,jdbcType=VARCHAR},
+      </if>
     </set>
     where id = #{id,jdbcType=INTEGER}
   </update>
@@ -117,7 +99,8 @@
     set title = #{title,jdbcType=VARCHAR},
       vedioURL = #{vediourl,jdbcType=VARCHAR},
       cover_url = #{coverUrl,jdbcType=VARCHAR},
-      category = #{category,jdbcType=VARCHAR}
+      category = #{category,jdbcType=VARCHAR},
+      description = #{description,jdbcType=VARCHAR}
     where id = #{id,jdbcType=INTEGER}
   </update>
 

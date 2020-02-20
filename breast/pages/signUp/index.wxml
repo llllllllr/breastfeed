@@ -1,0 +1,20 @@
+<!--index.wxml-->
+<!-- <view wx:if="{{isTakePhoto}}" class="container">
+<camera frame-size="large" flash="off" device-position="front" binderror="error" style="width: 100%; height: 300px;"></camera>
+</view>
+<view>
+<button bindtap="setTakePhoto">刷脸登录</button>
+<button bindtap="stopTakePhoto" >根据用户名密码登录</button>
+<image mode="widthFix" src="{{src}}"></image>
+<view>{{takeInterval}}</view>
+</view> -->
+
+<view class="btn1">
+  	<button class="cu-btn round bg-white shd" style="height:100rpx" 
+    bindtap="setTakePhoto">刷脸登录</button>
+  </view>
+
+  <view class="btn2">
+  	<button class="cu-btn round bg-white shd" style="height:100rpx" 
+    bindtap="stopTakePhoto">根据用户名密码登录</button>
+  </view>
