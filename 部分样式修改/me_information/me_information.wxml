@@ -1,0 +1,44 @@
+<view class="container">
+  <view class="first">
+    <text space='nbsp'>  头像</text> 
+   <view class="touxiang" style="margin-left:58%"> <open-data type="userAvatarUrl" ></open-data>  </view>
+    <!-- //获取用户头像直接显示在小程序中 -->" 
+  </view>
+
+  <view class="second" bindtap="name_tap">
+    <text space='nbsp' style="margin-right:61%">昵称</text> 
+    
+    <view class='content_2'><open-data type="userNickName" ></open-data></view>
+  </view>
+
+  <view class="third" bindtap="job_tap">
+    <text space='nbsp' class="content_1">  职业</text> 
+    <picker bindchange="bindPickerChange_job" class='content_2' range="{{job}}" value="{{index_j}}">  
+    
+    <view >{{job[index_j]}}</view>
+    
+  </picker>
+  <view class='content_3'>></view>
+  </view>
+
+<view class="fourth">
+    <text space='nbsp' class="content_1">  孕周</text> 
+    <picker bindchange="bindPickerChange_week" class='content_2' range="{{yunzhou}}" value="{{index_w}}">  
+    <view >{{yunzhou[index_w]}}</view>
+    
+  </picker>
+  <view class='content_3'>></view>
+   </view>
+
+  <view class="fifth">
+    <text space='nbsp' >  地区</text> 
+    <picker bindchange="bindPickerChange_area" style="margin-left:29%" mode="region">
+   
+    <view >{{region[0]}},{{region[1]}},{{region[2]}}</view>
+     
+    </picker>
+    <view class='content_3' >></view>
+  </view>
+
+
+</view>

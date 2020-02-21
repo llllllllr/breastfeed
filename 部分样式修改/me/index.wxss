@@ -1,0 +1,96 @@
+.container{         
+  height: 1350rpx;
+  width: 100%;
+  color: black;
+  font-size: 28rpx;
+  background-color: white;
+}
+.first{
+  height: 13%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+}
+.touxiang{
+  height: 90%;
+  width: 20%;
+}
+.tx{
+  height: 80%;
+  width:80%;
+  margin-top: 20rpx;
+  margin-left: 20rpx;
+  border-radius: 50% 50%;
+}
+.jiantou{
+  color:#D3D3D3;
+  margin-left:60%
+}
+.mingzi{
+  width: 80%;
+  height: 100%;
+  background-color: white;
+}
+.mz{
+  height: 50%;
+  width: 100%;
+  box-sizing: border-box;
+}
+.second,.third,.fifth,.sixth{
+  width: 100%;
+  height: 8%;
+  background-color: white;
+  box-sizing: border-box;
+  border-top: 1px solid #EDEDED;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.sixth{
+  border-bottom: 1px solid #EDEDED;
+}
+.fourth{
+  width:100%;
+  height: 20%;
+  background-color: white;
+  box-sizing: border-box;
+  border-top: 1px solid #EDEDED;
+  display: flex;
+  flex-direction: column;
+}
+.fourth_1{
+  width: 100%;
+  height: 40%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+}
+.fourth_2{
+  width: 100%;
+  height: 70%;
+  display: flex;
+  flex-direction: row;
+}
+.right,.left{
+  width: 50%;
+  height: 100%;
+  text-align: center;
+  margin-top: 28rpx;
+}
+
+
+.wenzhang{
+  height: 55%;
+  width: 80%;
+  border: 2rpx solid black;
+  border-radius: 18px;
+  margin-top: 30rpx;
+  float: left;
+}
+.tubiao{
+  height: 44rpx;
+  width: 44rpx;
+  margin-left:20rpx;
+}
