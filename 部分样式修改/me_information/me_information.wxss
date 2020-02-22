@@ -1,0 +1,38 @@
+.container{
+  width: 100%;
+  height: 1250rpx;
+  background-color: #EDEDED;
+  font-size: 28rpx;
+  color: black;
+}
+.first{
+  width: 100%;
+  height: 10%;
+  box-sizing: border-box;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  justify-content: space-around;
+}
+.touxiang{
+  width:100rpx;
+  height:100rpx;
+}
+.second,.third,.fourth,.fifth{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width:100%;
+  height:7%;
+  background-color: white;
+  box-sizing: border-box;
+  border-top: 1px solid #EDEDED;
+  justify-content: space-around;
+}
+.content_1{
+  margin-right:60%;
+}
+
+

@@ -1,0 +1,79 @@
+<view class="container">   
+
+  <view class="first">  
+    <view class="touxiang">
+    <view class="tx"> <open-data type="userAvatarUrl" ></open-data>  </view>
+    </view>
+    
+    <view class="mingzi">
+      <view class="mz" style="margin-top:40rpx;margin-left:10rpx;font-size:36rpx">
+      <open-data type="userNickName" lang="zh_CN"></open-data>    
+
+      </view>
+      <view class="mz">
+          <view style="float:left;font-size:28rpx;margin-left:6rpx">ID:{{user_id}}</view>
+      </view>
+    </view>
+  </view>
+
+  <view class="second" bindtap="tap_xinxi">
+    <image src="../../images/信息.png"  class="tubiao"></image>
+    <text space='nbsp'> 我的基本信息</text> 
+    <view class="jiantou">></view>
+  </view>
+
+  <view class="third" bindtap="tap_zixun">
+    <image src="../../images/咨询icon.png" class="tubiao"></image>
+    <text space='nbsp'> 我的咨询</text> 
+    <view style="color:#D3D3D3;margin-left:67%">></view>
+  </view>
+
+  <view class="fourth">
+    <view class="fourth_1" bindtap="tap_jieguo">
+      <image src="../../images/问卷.png" style="height:38rpx;width: 38rpx;margin-left:25rpx"></image>
+      <text space='nbsp'> 我的问卷结果</text> 
+      <view class="jiantou">></view>
+    </view> 
+
+    <view class="fourth_2">
+      <view class="left" bindtap="question" data-id="1">
+        <view>
+          <view style="margin-bottom:10rpx;font-size:26rpx">{{question1}}</view>
+        </view>
+        <view>
+          <view style="font-size:24rpx;margin-bottom:10rpx;font-weight:bold">19分</view>
+        </view>
+        <view>
+          <view style="font-size:26rpx">较上次---</view>
+        </view>
+      </view>
+
+      <view class="right" bindtap="question" data-id="2">
+        <view>
+          <view style="margin-bottom:10rpx;font-size:26rpx">{{quesiton2}}</view> 
+        </view>
+        <view>
+          <view style="font-size:24rpx;margin-bottom:10rpx;font-weight:bold">轻度焦虑抑郁</view>  
+        </view>
+        <view>
+          <view style="font-size:26rpx">较上次----</view> 
+        </view>
+      </view>
+    </view>
+
+  </view>
+
+  <view class="fifth" bindtap="tap_shoucang">
+    <image src="../../images/收藏.png" class="tubiao"></image>
+     <text space='nbsp'> 我的收藏</text> 
+    <view style="color:#D3D3D3;margin-left:67%">></view> 
+  </view>
+
+  <view class="sixth" bindtap="tap_quxian">
+    <image src="../../images/生长.png" class="tubiao"></image>
+    <text space='nbsp'> 宝宝生长曲线</text> 
+    <view class="jiantou">></view>
+  </view>
+
+
+</view>

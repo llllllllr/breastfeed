@@ -1,0 +1,77 @@
+.container{                    
+  width: 100%;
+  height: 100%;
+  background-color: #f5f5f5;
+  color: black;
+  font-size: 26rpx;
+  padding-right: 10rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.type{
+  width: 96%;
+  height: 200rpx;
+  margin-top:15rpx;
+  background-color:white;
+  color: 	rgb(144, 182, 252);
+  border-radius: 16rpx;
+  box-sizing: border-box;
+}
+.video{
+  width: 45%;
+  height: 160rpx;
+  margin-top: 30rpx;
+  margin-left:4%; 
+}
+.tuwen,.wenzhang{
+  width:96%;
+  height:180rpx;
+  margin-top:16rpx;
+  background-color: white;
+  border-radius: 16rpx;
+}
+.shipin{
+   width:96%;
+  height:240rpx;
+  margin-top:12rpx;
+  background-color: white;
+  border-radius: 16rpx;
+}
+.yinpin{
+   width:96%;
+  height:240rpx;
+  margin-top:12rpx;
+  background-color: white;
+  border-radius: 16rpx;
+}
+.audio{
+  margin-top: 31rpx;
+  display: flex;
+  flex-direction: column;
+}
+.time{
+  width: 20%;
+  height: 20rpx;
+  font-size:20rpx;
+  margin-left:30rpx;
+  margin-top:12rpx;
+}
+.word{
+  height: 80%;
+  width:70%;
+  float: right;
+  margin-right: 50rpx;
+  margin-top:40rpx;
+}
+.tw{
+  width:90%;
+  height: 55%;
+  margin-left:4%;
+  margin-top:30rpx;
+}
+.wz{
+  width:90%;
+  height: 55%;
+  margin-left: 4%;
+}
