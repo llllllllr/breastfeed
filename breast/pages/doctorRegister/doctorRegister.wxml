@@ -6,7 +6,7 @@
  			</view>
  			<view class="cu-form-group">
  				<view class="title">执业证号</view>
- 				<input name="licenseName" bindinput="LicenseNumberChange" placeholder="请输入执业证号"></input>
+ 				<input name="licenseNumber" bindinput="LicenseNumberChange" placeholder="请输入执业证号"></input>
                         <text  class="cuIcon-card lg text-gray"></text>
  			</view>
        	<view class="cu-form-group">
@@ -16,7 +16,7 @@
  			</view>
        	<view class="cu-form-group">
  				<view class="title">密码</view>
- 				<input name="userPassword" bindinput="UserPasswordChange" placeholder="请输入密码"></input>
+ 				<input name="userPassword" type="password" bindinput="UserPasswordChange" placeholder="请输入密码"></input>
                         <text  class="cuIcon-lock lg text-gray"></text>
  			</view>
 			 <view class="btn">

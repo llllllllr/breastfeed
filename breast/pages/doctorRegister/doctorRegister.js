@@ -42,60 +42,57 @@ Page({
       userName: e.detail.value
     })
   },
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-     
+  //显示模态框，errmsg-表单错误信息
+  showModal(errmsg) {
+    this.setData({
+      modalContent: errmsg,
+      modalName: "Modal"
+    })
   },
 
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
 
+  //隐藏模态框
+  hideModal(e) {
+    this.setData({
+      modalName: null
+    })
   },
 
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
+  formSubmit: function (e) {
+    var dataList = e.detail.value;
+    var name = dataList.name;
+    var licenseNumber = dataList.licenseNumber;
+    var userName = dataList.userName;
+    var userPassword = dataList.userPassword;
 
-  },
+    //密码校验
+    if (userPassword == undefined || userPassword.length < 6 ) {
+      this.showModal("请检查密码输入是否大于6位");
+      return;
+    }
+    console.log('表单数据：' , dataList);
 
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
+    wx.request({
+      url: getApp().globalData.serverUrl + '/doctor/register',
+      method:'GET',
+      data:{
+        name:name,
+        userName:userName,
+        userPassword:userPassword,
+        licenseNumber: licenseNumber
+      },
+      success:function(res){
+        console.log('请求成功:',res)
+      },
 
-  },
+      fail:function(res){
+        console.log('请求失败:', res)
+      }
 
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
+    })
 
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
 
   }
+
 })
 
