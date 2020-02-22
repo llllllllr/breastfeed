@@ -2,7 +2,6 @@ package lllr.test.user;
 
 import org.junit.Test;
 
-import java.lang.reflect.Array;
 import java.util.*;
 
 public class UserTest{
@@ -18,10 +17,8 @@ public class UserTest{
 
     @Test
     public void test1(){
-        B b = new B();
-        b.aa(new HashMap());
-        C c = new C();
-        c.aa(new ArrayList());
+       Date date = new Date();
+       System.out.println(date);
     }
 
     @Test

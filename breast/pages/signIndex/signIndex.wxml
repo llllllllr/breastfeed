@@ -10,5 +10,10 @@
     bindtap="DOWN">{{down}}</button>
   </view>
 
+ <view class="btn2" >
+  	<button wx:if="{{isVisible}}" class="cu-btn round bg-white shd" style="height:100rpx" 
+    bindtap="BACK">返回</button>
+  </view>
+  
 
 

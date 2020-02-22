@@ -6,7 +6,7 @@
  			</view>
  			<view class="cu-form-group">
  				<view class="title">密码</view>
- 				<input name="password" placeholder="请输入密码"></input>
+ 				<input type="password" name="password" placeholder="请输入密码"></input>
                         <text  class="cuIcon-lock lg text-gray"></text>
  			</view>
 			 <view class="btn">
@@ -14,7 +14,7 @@
    >登录</button>
     </view>
        </form>
-   
+  
 
 
  <view class="cu-modal {{modalName=='Modal'?'show':''}}">

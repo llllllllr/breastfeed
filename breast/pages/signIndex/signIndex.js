@@ -6,6 +6,7 @@ Page({
     up:"我是医生",
     down:"我是用户",
     position:0,//1-用户 2-医生
+    isVisible:false,
   },
 
   
@@ -29,10 +30,19 @@ Page({
 
   showLogin:function(){
     this.setData({
+      isVisible:true,
       up:"登录",
       down:"注册"
    })
   },
+  BACK:function(){
+      this.setData({
+        up:"我是医生",
+        down:"我是用户",
+        isVisible:false
+      })
+  },
+
   UP:function(){
     if(this.data.up == "我是医生")
     {
@@ -50,14 +60,14 @@ Page({
         if(this.data.position == 1)
         {
           wx.navigateTo({
-            url: '../signIn/signIn',
+            url: '../signIn/signIn?object=/user',
           })
         }
         else 
         {
           //跳转到医生登录界面
           wx.navigateTo({
-            url: '../signIn/signIn',
+            url: '../signIn/signIn?object=/doctor',
           })
         }
       }

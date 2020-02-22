@@ -1,11 +1,12 @@
 package lllr.test.breast.controller;
 
 import lllr.test.breast.common.ServerResponse;
-import lllr.test.breast.dataObject.user.Doctor;
 import lllr.test.breast.dataObject.user.User;
 import lllr.test.breast.service.inter.UserService;
 import lllr.test.breast.util.DataValidateUtil;
 import lllr.test.breast.util.exception.StringException;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
@@ -15,12 +16,17 @@ import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.text.ParseException;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+import java.util.UUID;
 
 @ResponseBody
 @RequestMapping("/user")
 @Controller
 public class UserController {
+    private static final Logger LOGGER = LoggerFactory.getLogger(UserController.class);
+
     @Autowired
     private UserService userService;
 
@@ -60,12 +66,12 @@ public class UserController {
     @GetMapping("/register")
     public ServerResponse<User> UserRegister(@RequestParam(value = "age", required = false) Integer age,
                                              @RequestParam(value = "creditId") String creditId,
-                                             @RequestParam(value = "pregnantType") Integer pregnantType,
-                                             @RequestParam(value = "pregnantWeek") String pregnantWeek,
+                                             @RequestParam(value = "pregnantType",required = false) Integer pregnantType,
+                                             @RequestParam(value = "pregnantWeek",required = false) String pregnantWeek,
                                              @RequestParam(value = "job", required = false) String job,
-                                             @RequestParam(value = "confinementDate") String confinementDate,
-                                             @RequestParam(value = "confinementWeek") Integer confinementWeek,
-                                             @RequestParam(value = "confinementType") Integer confinementType,
+                                             @RequestParam(value = "confinementDate",required = false) String confinementDate,
+                                             @RequestParam(value = "confinementWeek",required = false) Integer confinementWeek,
+                                             @RequestParam(value = "confinementType",required = false) Integer confinementType,
                                              @RequestParam(value = "userName") String userName,
                                              @RequestParam(value = "userPassword") String userPassword,
                                              HttpServletRequest request,
@@ -85,48 +91,47 @@ public class UserController {
             errorList.add("身份证号码错误!");
         }
 
-        if (!DataValidateUtil.isNull(pregnantType))
-            user.setPregnantType(pregnantType);
-        else {
-            errorList.add("怀孕类型不能为空！");
-        }
+        user.setPregnantType(pregnantType);
+        user.setPregnantWeek(pregnantWeek);
 
-        if (!DataValidateUtil.isBlank(pregnantWeek)) {
-            user.setPregnantWeek(pregnantWeek);
-        } else {
-            errorList.add( "孕周不能为空！");
-        }
+//        if (!DataValidateUtil.isNull(pregnantType))
+//            user.setPregnantType(pregnantType);
+//        else {
+//            errorList.add("怀孕类型不能为空！");
+//        }
+//
+//        if (!DataValidateUtil.isBlank(pregnantWeek)) {
+//            user.setPregnantWeek(pregnantWeek);
+//        } else {
+//            errorList.add( "孕周不能为空！");
+//        }
 
         user.setJob(job);
 
         Date confinement_date = null;
         try {
-            confinement_date = DataValidateUtil.StringToSimpleDate(confinementDate);
-            user.setConfinementDate(confinement_date);
+            if(!DataValidateUtil.isNull(confinementDate))
+                confinement_date = DataValidateUtil.StringToSimpleDate(confinementDate);
+
         } catch (ParseException e) {
-            errorList.add("孕期格式错误1");
+            LOGGER.error("=== " + confinementDate + " 格式错误");
+            //errorList.add("孕期格式错误1");
         }
+        user.setConfinementDate(confinement_date);
 
-        if(!DataValidateUtil.isNull(confinementDate))
-            try {
-                user.setConfinementDate(DataValidateUtil.StringToSimpleDate(confinementDate));
-            } catch (ParseException e) {
-                errorList.add("产期格式错误！");
-            }
-        else
-            errorList.add("产期不能为空！");
+//        if (!DataValidateUtil.isNull(confinementWeek))
+//            user.setConfinementWeek(confinementWeek);
+//        else {
+//            errorList.add("产周类型不能为空！");
+//        }
+        user.setConfinementWeek(confinementWeek);
 
-        if (!DataValidateUtil.isNull(confinementWeek))
-            user.setConfinementWeek(confinementWeek);
-        else {
-            errorList.add("产周类型不能为空！");
-        }
-
-        if (!DataValidateUtil.isNull(confinementType))
-            user.setConfinementType(confinementType);
-        else {
-            errorList.add("产期类型不能为空！");
-        }
+//        if (!DataValidateUtil.isNull(confinementType))
+//            user.setConfinementType(confinementType);
+//        else {
+//            errorList.add("产期类型不能为空！");
+//        }
+        user.setConfinementType(confinementType);
 
         if (!DataValidateUtil.isBlank(userName)) {
             user.setUserName(userName);
@@ -147,9 +152,9 @@ public class UserController {
         ServerResponse<User> userResponse = userService.userRegister(user);
 
         //注册成功
-
-        if (userResponse.getStatus() == 1)
-            AfterSign(request, response, user);
+//
+//        if (userResponse.getStatus() == 1)
+//            AfterSign(request, response, user);
 
         return userResponse;
     }
@@ -159,10 +164,12 @@ public class UserController {
     //在session中加入用户信息
     private void AfterSign(HttpServletRequest request, HttpServletResponse response, User user) {
         request.getSession().setAttribute("userName", user.getUserName());
-        Cookie user_token_cookie = new Cookie("user_token", user.getUserToken());
-        user_token_cookie.setMaxAge(10 * 60);
-        user_token_cookie.setPath("/user/tokenSign");
-        response.addCookie(user_token_cookie);
+        response.setHeader("user_token",user.getUserToken());
+        response.setHeader("user_token_date", String.valueOf(System.currentTimeMillis() + 60 * 60 * 24 * 1000));           //设置token 过期时间
+//        Cookie user_token_cookie = new Cookie("user_token", user.getUserToken());
+//        user_token_cookie.setMaxAge(10 * 60);
+//        user_token_cookie.setPath("/user/tokenSign");
+//        response.addCookie(user_token_cookie);
     }
 
     /*+
@@ -208,7 +215,7 @@ public class UserController {
 
     //持续化user_token免登录
     @RequestMapping("/tokenSign")
-    public ServerResponse<User> UserTokenSign(@CookieValue(name = "user_token") String user_token,
+    public ServerResponse<User> UserTokenSign(@RequestParam(value = "user_token") String user_token,
                                 HttpServletRequest request,
                                 HttpServletResponse response) {
         //判断用户是否登录

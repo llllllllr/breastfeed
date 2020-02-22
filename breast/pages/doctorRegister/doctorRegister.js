@@ -5,14 +5,48 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    userName:'',
+    userPassword:'',
+    name:'',
+    licenseNumber:'',
+    object:''
+  },
+//职业证号改变
+  LicenseNumberChange(e) {
+    console.log(e);
+    this.setData({
+      licenseNumber: e.detail.value
+    })
   },
 
+//真实姓名改变
+  NameChange(e) {
+    console.log(e);
+    this.setData({
+      name: e.detail.value
+    })
+  },
+
+  //密码值变化
+  UserPasswordChange(e) {
+    console.log(e);
+    this.setData({
+      userPassword: e.detail.value
+    })
+  },
+
+//用户名改变
+  UserNameChange(e) {
+    console.log(e);
+    this.setData({
+      userName: e.detail.value
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+     
   },
 
   /**
@@ -64,3 +98,4 @@ Page({
 
   }
 })
+
