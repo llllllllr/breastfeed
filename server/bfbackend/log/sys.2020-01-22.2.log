@@ -1,8 +1,0 @@
-2020-01-22 22:49:44,565 [INFO] (StartupInfoLogger.java:59)- Started BreastApplication in 3.138 seconds (JVM running for 4.848)
-2020-01-22 22:49:48,770 [DEBUG] (UserConsultImpl.java:102)- === 微信access_token: null===
-2020-01-22 22:51:01,992 [DEBUG] (UserConsultImpl.java:102)- === 微信access_token: null===
-2020-01-22 22:51:08,920 [INFO] (StartupInfoLogger.java:50)- Starting BreastApplication on LAPTOP-562395R3 with PID 6056 (started by 爱哭的周小姐 in D:\软件应用\java IDE\IntelliJ IDEA 2019.1\项目\breastfeed\breastfeed\server\bfbackend)
-2020-01-22 22:51:08,925 [DEBUG] (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
-2020-01-22 22:51:08,926 [INFO] (SpringApplication.java:648)- No active profile set, falling back to default profiles: default
-2020-01-22 22:51:11,212 [INFO] (StartupInfoLogger.java:59)- Started BreastApplication in 3.944 seconds (JVM running for 5.606)
-2020-01-22 22:51:51,264 [DEBUG] (UserConsultImpl.java:102)- === 微信access_token: 29_VxEiI58CTsIzdPQF3TicvUCv0aaqHR8AwkRQ1KUMzYpI6koJzOk7L-QQCoZg1oGvQlmD1vWDY46joSfkiravxtX0W6rtTr2JHAv9S8HFVLAw4VFPN97aUd30OfUK9njeWUQj2gkBVTE_BsTISPQdAHAIFG===
