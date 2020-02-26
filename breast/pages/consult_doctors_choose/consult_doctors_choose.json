@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "医生列表",
+  "usingComponents": {
+          "wux-cell-group": "../../miniprogram_npm/wux-weapp/cell-group/index",
+          "wux-cell": "../../miniprogram_npm/wux-weapp/cell/index",
+           "wux-filterbar": "../../miniprogram_npm/wux-weapp/filterbar/index"
+  }
+}
+

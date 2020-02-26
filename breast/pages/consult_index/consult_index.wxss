@@ -1,0 +1,10 @@
+/* pages/service/index.wxss */
+.page-title {
+    margin-top: 50rpx;
+    display: flex;
+    width: 80%;
+    height: 50rpx;
+    margin-bottom: 50rpx; 
+    font-size: 32rpx;
+    margin-left: 37rpx;
+}

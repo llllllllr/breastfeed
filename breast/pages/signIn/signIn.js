@@ -46,16 +46,22 @@ hideModal(e) {
   },
   checkLogin:function(username,password){
     var that = this;
-    console.log(app.globalData.serverUrl + this.data.object + '/sign'),
+    console.log(app.globalData.serverUrl + '/' + this.data.object + '/sign'),
     wx.request({
-      url: app.globalData.serverUrl + this.data.object + '/sign',
+      url: app.globalData.serverUrl + '/' + this.data.object + '/sign',
       method:"GET",
       data:{
         userName:username,
         userPassword:password
       },
       success:function(res){
+        var responseData = res.data.data;
         console.log(res);
+        //将 用户 或者 医生 的信息保存 再 app.js 的 globalData 中
+        app.globalData.object = that.data.object;
+        app.globalData.userInfor = responseData;
+         console.log('用户登录成功，检查信息是否放入 app.js',app.globalData.userInfor)
+
         //保存 Cookie
         if (res && res.header && res.header['doctor_token'] && res.header['doctor_token_date']) {
           wx.setStorageSync('doctorToken', res.header['doctor_token']);   //保存Cookie到Storage

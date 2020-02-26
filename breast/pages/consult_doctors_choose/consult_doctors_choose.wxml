@@ -1,0 +1,37 @@
+<view class="container">
+
+	<scroll-view class="container-body" scroll-y="true" scroll-top="{{scrolltop}}" bindscroll="scrollHandle" lower-threshold="50" bindscrolltolower="scrollLoading">
+		<view class="service-list">
+			<navigator class="service-item" wx:for="{{doctorList}}" wx:key="{{item.id}}" url="../doctors_choosedetail/doctors_choosedetail?id={{item.id}}">
+				<view class="service-img">
+					<image src="{{item.imgurl}}" mode="aspectFill"></image>
+				</view>
+				<view class="service-text">
+          <view class="service-title">
+					  <view class="service-name">{{item.name}}</view>
+            <view class="service-position">{{item.position}}</view>
+          </view>
+          <view>
+            <text class="service-city">{{item.hospital}}    {{item.tag}}</text>
+          </view>
+          <view>
+					  <text class="service-city">咨询状态：{{item.state}}</text>
+          </view>
+				</view>
+			</navigator>
+		</view>
+		<view class="gototop {{scrolltop>200?'active':''}}" bindtap="goToTop"></view>
+	</scroll-view>
+</view>
+
+<!-- 
+
+<view class="page">
+    <wux-cell-group title="医生列表">
+            <wux-cell thumb="http://cdn.skyvow.cn/logo.png"is-link url="/pages/consult_chatroom/index" title="张医生" ></wux-cell>
+            <wux-cell thumb="http://cdn.skyvow.cn/logo.png" is-link url="/pages/consult_chatroom/index"title="王医生"></wux-cell>
+     </wux-cell-group>
+
+</view>
+
+ -->

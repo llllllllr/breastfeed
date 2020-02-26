@@ -1,0 +1,10 @@
+/* pages/service/index.wxss */
+
+.page-titile {
+    margin-top: 100rpx;
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin: auto;
+    justify-content: space-between;
+}

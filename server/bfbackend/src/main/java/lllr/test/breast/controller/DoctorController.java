@@ -217,4 +217,10 @@ public class DoctorController {
 
     }
 
+    //查询所有医生
+    @GetMapping("/getAllDoctor")
+    public ServerResponse<List<Doctor>> getAllDoctor(){
+        return doctorService.getAllDoctor();
+    }
+
 }
