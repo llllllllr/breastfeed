@@ -3,6 +3,7 @@ Page({
   // 初始页面数据
   data: {
     doctorId:'', //医生的标识符
+    userId:'',
     scrollTop: 0,
     list: []
   },
@@ -10,7 +11,8 @@ Page({
   onLoad: function(options) {
     console.log('参数：',options)
     this.setData({
-      doctorId:options.doctorId
+      doctorId:options.doctorId,
+      userId: app.globalData.userInfor.userId
     })
     wx.showToast({
       title: '连接中',
@@ -26,14 +28,20 @@ Page({
     })
     
     wx.onSocketMessage(msg => {
-      var data = JSON.parse(msg.data)
-      data.id = this.id++
-      data.role = 'server'
-      var list = this.data.list
-      list.push(data)
-      this.setData({
-        list: list
-      })
+      console.log('收到消息为:',msg)
+      var data = JSON.parse(msg.data);
+      console.log('转化后的消息为:', data)
+      var newList = this.data.list;
+      //将消息加入表中
+      for(var i = 0 ; i < data.length ; i++)
+          newList.push(data[i]);
+
+        this.setData({
+          list:newList
+        });
+      
+      console.log('设置后的list：',this.data.list)
+
       this.rollingBottom()
     })
   },
@@ -73,12 +81,15 @@ Page({
   },
   // 页面卸载，关闭连接
   onUnload() {
-    wx.onSocketClose();
-    wx.showToast({
-      title: '连接已断开~',
-      icon: 'none',
-      duration: 2000
+    wx.clostSocket();
+    wx.onSocketClose(function(res){
+      wx.showToast({
+        title: '连接已断开~',
+        icon: 'none',
+        duration: 2000
+      })
     })
+  
   },
   // 聊天内容始终显示在最低端
   rollingBottom(e) {

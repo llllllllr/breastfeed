@@ -3,10 +3,10 @@
     <view class="list">
       <view class="chat-news" wx:for="{{list}}" wx:key="{{item.id}}">
         <!-- 根据角色判断 -->
-        <block wx:if="{{item.role === 'me'}}">
+        <block wx:if="{{item.fromUserId == userId }}">
           <!-- 自己的消息显示在右侧 -->
           <view class="news-lf">
-            <text class="new-txt">{{item.content}}</text>
+            <text class="new-txt">{{item.messageContent}}</text>
             <image class="new-img" src="/images/me.jpg"></image>
           </view>
         </block>
@@ -14,7 +14,7 @@
         <block wx:else>
           <view>
             <image class="new-img" src="/images/avatar.png"></image>
-            <text class="new-txt new-text">{{item.content}}</text>
+            <text class="new-txt new-text">{{item.messageContent}}</text>
           </view>
         </block>
       </view>

@@ -5,6 +5,7 @@ import org.junit.Test;
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.FutureTask;
+import java.util.concurrent.ThreadLocalRandom;
 
 public class ThreadTest {
 
@@ -97,6 +98,10 @@ public class ThreadTest {
         thread1.join();
         thread2.join();
         System.out.println(calNum.n);
+    }
+
+    @Test
+    public void test4(){
     }
 
 
