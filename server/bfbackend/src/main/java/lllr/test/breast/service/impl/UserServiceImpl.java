@@ -21,9 +21,15 @@ public class UserServiceImpl implements UserService {
     @Override
     public ServerResponse<User> userRegister(User user) {
         //查询注册的 用户名 是否已经存在
-        User temp = userMapper.selectByUserName(user.getUserName());
-        if(temp != null)
+        User userNameTemp = userMapper.selectByUserName(user.getUserName());
+        if(userNameTemp != null)
             return ServerResponse.createByErrorMsgAndData("用户名已被注册！",user);
+
+        //查询 身份证 是否 已经存在
+        User CreditIdTemp = userMapper.selectByCreditId(user.getCreditId());
+        if(CreditIdTemp != null)
+            return ServerResponse.createByErrorMsgAndData("身份证已被注册！",user);
+
 
         //向数据库中 插入 用户信息
         int insNum = userMapper.insert(user);

@@ -79,7 +79,7 @@ Page({
     console.log("停止人脸识别");
     clearInterval(this.takeInterval);
     wx.navigateTo({
-      url: '../signIn/signIn',
+      url: '../signIn/signIn?object=/user',
     })
   }
   ,

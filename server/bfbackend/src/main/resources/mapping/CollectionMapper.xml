@@ -50,7 +50,11 @@
     where id = #{id,jdbcType=INTEGER}
   </delete>
 
-
+<delete id="cancel" parameterType="integer">
+  delete  from collection
+  where user_id = #{userid}
+  and coll_id =#{collid}
+</delete>
   <insert id="insert" parameterType="lllr.test.breast.dataObject.popularization.Collection">
     insert into collection (id, user_id, coll_type, 
       coll_id)
@@ -89,6 +93,14 @@
     </trim>
   </insert>
 
+<select id="ifcoll" parameterType="integer" resultMap="BaseResultMap">
+  select
+  <include refid="Base_Column_List" />
+  from collection
+  where user_id = #{userid}
+  and coll_type = #{type}
+  and coll_id = #{collid}
+</select>
 
   <select id="getCollections" resultMap="BaseResultMap">
     select
@@ -100,5 +112,6 @@
     select coll_id
     from collection
     where coll_type = #{type}
+    and user_id = #{userid}
   </select>
 </mapper>

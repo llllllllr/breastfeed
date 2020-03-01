@@ -27,6 +27,12 @@ public class ConsultOrder {
 
     private Doctor doctor;
 
+    private Integer consultCost;
+
+    private Integer status;
+
+    private String oid;
+
     @Override
     public String toString() {
         return "ConsultOrder{" +
@@ -40,8 +46,36 @@ public class ConsultOrder {
                 ", symptomDescription='" + symptomDescription + '\'' +
                 ", user=" + user +
                 ", doctor=" + doctor +
+                ", consultCost=" + consultCost +
+                ", status=" + status +
+                ", oid='" + oid + '\'' +
                 '}';
     }
+
+    public String getOid() {
+        return oid;
+    }
+
+    public void setOid(String oid) {
+        this.oid = oid;
+    }
+
+    public Integer getConsultCost() {
+        return consultCost;
+    }
+
+    public void setConsultCost(Integer consultCost) {
+        this.consultCost = consultCost;
+    }
+
+    public Integer getStatus() {
+        return status;
+    }
+
+    public void setStatus(Integer status) {
+        this.status = status;
+    }
+
 
     public User getUser() {
         return user;
@@ -61,7 +95,7 @@ public class ConsultOrder {
 
     public ConsultOrder(){}
 
-    public ConsultOrder(Integer doctorId, Integer userId, Date createTime, Integer lastingTime, String contact, String contactPhone, String symptomDescription) {
+    public ConsultOrder(Integer doctorId, Integer userId, Date createTime, Integer lastingTime, String contact, String contactPhone, String symptomDescription,Integer consultCost) {
         this.doctorId = doctorId;
         this.userId = userId;
         this.createTime = createTime;
@@ -69,6 +103,7 @@ public class ConsultOrder {
         this.contact = contact;
         this.contactPhone = contactPhone;
         this.symptomDescription = symptomDescription;
+        this.consultCost = consultCost;
     }
 
     public Integer getId() {

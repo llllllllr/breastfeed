@@ -10,13 +10,18 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.validation.constraints.NotNull;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.UUID;
 
 @RequestMapping("/doctor")
 @ResponseBody
@@ -71,7 +76,8 @@ public class DoctorController {
 
         List<String> errorList = new ArrayList<>();
         Doctor doctor = new Doctor();
-
+        String token = UUID.randomUUID().toString().replace("-", "");
+        doctor.setToken(token);
         //验证数据
         if (!DataValidateUtil.isNull(licenseNumber)) {
            doctor.setLicenseNumber(licenseNumber);
@@ -101,7 +107,7 @@ public class DoctorController {
         if (errorList.size() > 0)
             return ServerResponse.createByErrorMsg(errorList.toString());
 
-        doctor.setToken(UUID.randomUUID().toString().replace("-", ""));
+
 
         LOGGER.info(" === DoctorRegister:" + doctor + " === errorMap: " + errorList + " ===");
 
@@ -110,9 +116,9 @@ public class DoctorController {
 
         //注册成功
 
-        if (reData.getStatus() == 1) {
-            AfterSign(request, response, doctor);                                                    //注册成功后的相关操作
-        }
+//        if (reData.getStatus() == 1) {
+//            AfterSign(request, response, doctor);                                                    //注册成功后的相关操作
+//        }
 
         return reData;
     }
@@ -122,10 +128,12 @@ public class DoctorController {
     //在session中加入用户信息
     private void AfterSign(@NotNull HttpServletRequest request,@NotNull  HttpServletResponse response,@NotNull Doctor doctor) {
         request.getSession().setAttribute("userName", doctor.getUserName());
-        Cookie doctor_token_cookie = new Cookie("doctor_token", doctor.getToken());
-        doctor_token_cookie.setMaxAge(10 * 60);
-        doctor_token_cookie.setPath("/doctor/tokenSign");
-        response.addCookie(doctor_token_cookie);
+        response.setHeader("doctor_token",doctor.getToken());
+        response.setHeader("doctor_token_date", String.valueOf(System.currentTimeMillis() + 60 * 60 * 24 * 1000));           //设置token 过期时间
+//        Cookie doctor_token_cookie = new Cookie("doctor_token", doctor.getToken());
+//        doctor_token_cookie.setMaxAge(10 * 60);
+//        doctor_token_cookie.setPath("/doctor/tokenSign");
+//        response.addCookie(doctor_token_cookie);
     }
 
     /*+
@@ -174,7 +182,7 @@ public class DoctorController {
 
     //持续化doctor_token免登录
     @RequestMapping("/tokenSign")
-    public ServerResponse<Doctor> doctorTokenSign(@CookieValue(name = "doctor_token") String doctor_token,
+    public ServerResponse<Doctor> doctorTokenSign(@RequestParam(value = "doctor_token") String doctor_token,
                                                 HttpServletRequest request,
                                                 HttpServletResponse response) {
         //判断用户是否登录
@@ -201,6 +209,18 @@ public class DoctorController {
         response.addCookie(cookie);
 
         return ServerResponse.createBysuccess();
+    }
+
+    //医生修改自己的咨询费用
+    @GetMapping("/updateConsultCost")
+    public ServerResponse updateConsultCost(@RequestParam(value = "doctorId") Integer doctorId,
+                                            @RequestParam(value="consultCost") Integer consultCost){
+        if(DataValidateUtil.isNull(doctorId) || DataValidateUtil.isNull(consultCost))
+            return ServerResponse.createByError();
+
+        return doctorService.updateConsultCost(doctorId,consultCost);
+
+
     }
 
 }

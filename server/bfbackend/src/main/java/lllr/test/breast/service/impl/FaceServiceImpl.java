@@ -2,12 +2,11 @@ package lllr.test.breast.service.impl;
 
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
+import lllr.test.breast.common.ServerResponse;
 import lllr.test.breast.service.inter.FaceService;
 import lllr.test.breast.util.exception.FaceException;
 import lllr.test.breast.util.exception.ImageException;
 import lllr.test.breast.util.face.FaceUtil;
-import lllr.test.breast.util.face.UserFaceRes;
-import lllr.test.breast.util.face.UserFaceResUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -88,7 +87,7 @@ public class FaceServiceImpl implements FaceService {
     返回值 表示 查询的状态 1.登录成功 2. 用户还未登录
      */
     @Override
-    public UserFaceRes FaceSign(File image) throws FaceException {
+    public ServerResponse FaceSign(File image) throws FaceException {
         Map<String,Object> searchResponseData = null;
 
         try {
@@ -101,11 +100,11 @@ public class FaceServiceImpl implements FaceService {
         if(isReadyRegister(searchResponseData))
         {
             LOGGER.debug("=== FaceSign: 人脸验证成功！");
-            return UserFaceResUtil.error("人脸验证成功！");
+            return ServerResponse.createBysuccessMsg("人脸验证成功！");
         }
         else{
             LOGGER.debug("=== FaceSign: 人脸验证失败：该用户未注册！");
-            return UserFaceResUtil.error("人脸验证失败");
+            return ServerResponse.createByErrorMsg("人脸验证失败：该用户未注册！");
         }
 
 
@@ -119,7 +118,7 @@ public class FaceServiceImpl implements FaceService {
     4.返回成功消息
    */
     @Override
-    public UserFaceRes FaceRegister(File image) throws FaceException{
+    public ServerResponse FaceRegister(File image) throws FaceException{
         //上传图片返回 人物的 face_token
         Map<String,Object> detectResponseData = null;
         try {
@@ -161,7 +160,7 @@ public class FaceServiceImpl implements FaceService {
             //脸集中已经有该人的数据  说明已经注册过
             if (isReadyRegister(searchResponseData)) {
                 LOGGER.debug("=== 已注册过，无效注册！" + "===");
-                return UserFaceResUtil.error("已注册过，无效注册！");
+                return ServerResponse.createByErrorMsg("已注册过，无效注册！");
             } else {
                 //该人没有注册过账号，将人脸的数据放入脸集
                 Map<String, Object> addFaceResponseData = null;
@@ -183,12 +182,12 @@ public class FaceServiceImpl implements FaceService {
             //添加成功
             if (face_added > 0) {
                 LOGGER.debug("=== 人脸识别注册成功！ face_token： " + face_token + "===");
-                return UserFaceResUtil.error("人脸识别注册成功！");
+                return ServerResponse.createBysuccessMsg("人脸识别注册成功！");
             }
 
             LOGGER.debug("=== 人脸识别注册失败！ face_token： " + face_token + "===");
         }
         //添加失败
-        return UserFaceResUtil.error("人脸识别注册失败！");
+        return ServerResponse.createByErrorMsg("人脸识别注册失败！");
     }
 }

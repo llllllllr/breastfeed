@@ -45,4 +45,12 @@ public class DoctorServiceImpl implements DoctorService {
 
         return ServerResponse.createBysuccessData(temp);
     }
+
+    @Override
+    public ServerResponse updateConsultCost(Integer doctorId, Integer consultCost) {
+        Doctor doctor = new Doctor();
+        doctor.setId(doctorId);
+        doctor.setConsultCost(consultCost);
+        return doctorMapper.updateByPrimaryKeySelective(doctor) == 1 ? ServerResponse.createBysuccess() : ServerResponse.createByError();
+    }
 }

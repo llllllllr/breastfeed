@@ -12,7 +12,6 @@
 					<view class="text-content">{{item.description}}</view>
 					<view>
 						<view class="cu-tag bg-red light sm round">{{item.category}}</view>
-						<!-- <view class="cu-tag bg-green light sm round">史诗</view> -->
 					</view>
 				</view>
 			</view>
@@ -20,4 +19,4 @@
 	</view>
 </block>
 
-<view hidden="{{showNone==0?true:false}}" class="noewRes">没有搜索到相关内容</view>
+<view hidden="{{showNone==0?true:false}}" class="noewRes">没有相关内容</view>

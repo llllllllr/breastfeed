@@ -5,62 +5,94 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    userName:'',
+    userPassword:'',
+    name:'',
+    licenseNumber:'',
+    object:''
+  },
+//职业证号改变
+  LicenseNumberChange(e) {
+    console.log(e);
+    this.setData({
+      licenseNumber: e.detail.value
+    })
   },
 
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-
+//真实姓名改变
+  NameChange(e) {
+    console.log(e);
+    this.setData({
+      name: e.detail.value
+    })
   },
 
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
+  //密码值变化
+  UserPasswordChange(e) {
+    console.log(e);
+    this.setData({
+      userPassword: e.detail.value
+    })
   },
 
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
+//用户名改变
+  UserNameChange(e) {
+    console.log(e);
+    this.setData({
+      userName: e.detail.value
+    })
+  },
+  //显示模态框，errmsg-表单错误信息
+  showModal(errmsg) {
+    this.setData({
+      modalContent: errmsg,
+      modalName: "Modal"
+    })
   },
 
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
 
+  //隐藏模态框
+  hideModal(e) {
+    this.setData({
+      modalName: null
+    })
   },
 
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
+  formSubmit: function (e) {
+    var dataList = e.detail.value;
+    var name = dataList.name;
+    var licenseNumber = dataList.licenseNumber;
+    var userName = dataList.userName;
+    var userPassword = dataList.userPassword;
 
-  },
+    //密码校验
+    if (userPassword == undefined || userPassword.length < 6 ) {
+      this.showModal("请检查密码输入是否大于6位");
+      return;
+    }
+    console.log('表单数据：' , dataList);
 
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
+    wx.request({
+      url: getApp().globalData.serverUrl + '/doctor/register',
+      method:'GET',
+      data:{
+        name:name,
+        userName:userName,
+        userPassword:userPassword,
+        licenseNumber: licenseNumber
+      },
+      success:function(res){
+        console.log('请求成功:',res)
+      },
 
-  },
+      fail:function(res){
+        console.log('请求失败:', res)
+      }
 
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
+    })
 
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
 
   }
+
 })
+

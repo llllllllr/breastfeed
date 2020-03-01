@@ -1,3 +1,5 @@
+import  md5  from '../../assert/js/md5.js';
+var app = getApp();
 Page({
 
   /**
@@ -72,7 +74,10 @@ Page({
 
   //表单验证并上传到数据库
   formSubmit: function (e) {
-    console.log('form发生了submit事件，携带数据为：', e.detail.value)
+    wx.showLoading({
+      title: '加载中...',
+    })
+    console.log('form发生了submit事件，携带数据为：', e.detail.value);
     var that = this;
     var dataList = e.detail.value;
     var password = dataList.password;
@@ -80,7 +85,7 @@ Page({
     var age = dataList.age;
     var idNumber = dataList.idNumber;
     //密码校验
-    if(password.length < 6 || password != checkpwd)
+    if(password != undefined &&( password.length < 6 || password != checkpwd))
     {
          this.showModal("请检查密码输入是否大于6位且两次输入密码一致");
          return;
@@ -99,25 +104,33 @@ Page({
     //孕周校验
     if(this.data == 0 && !posReg.test(dataList.pregnantWeek))
    {this.showModal("请输入合理的孕周");return;} 
-          wx.request({
+   //密码加密传输
+   var inputPass = dataList.password;
+   var salt = app.globalData.salt;
+   var str = ""+salt.charAt(0)+salt.charAt(4) + inputPass +salt.charAt(7) + salt.charAt(4) + salt.charAt(6);
+   var psd = md5(str);
+   //如果用户选择 孕产期类型 为 孕期
+   if(this.data.index == 0){
+      wx.request({
         url: getApp().globalData.serverUrl + '/user/register',
         data: {
-          userPassword:dataList.password,//密码
+          userPassword:psd,//密码
           creditId: idNumber,//身份证号
           userName: dataList.nickName,//昵称
           age: age,//年龄
           job: dataList.job,//职业
           pregnantType: this.data.index+1,//怀孕类型
           pregnantWeek: dataList.pregnantWeek,//孕周
-          confinementDate: this.data.date,//产期
-          confinementWeek: dataList.pregnantWeek,//产周
-          confinementType: this.data.indext+1,//生产类型
         },
         header: {
           "content-type": "application/x-www-form-urlencoded"
         },
         success: function (res) {
-          var status = res.data.data.status;
+          wx.hideLoading({
+            complete: (res) => {},
+          })
+          var status = res.data.status;
+          console.log('返回的状态 为 ' + status);
           //status==1表示状态正常
           if(status == 1)
           {
@@ -136,15 +149,62 @@ Page({
           //status不为1,显示错误信息
           console.log(res)
           {
-            var str = res.data.data.msg
-            that.showModal(msg)
+            var str = res.data.msg;
+            that.showModal(str);
+          
           }
         },
         fail:function(res){
           console.log(res),
           console.log("fail")
         }
-      })
+      })}
+      else{
+     wx.request({
+       url: getApp().globalData.serverUrl + '/user/register',
+       data: {
+         userPassword: psd,//密码
+         creditId: idNumber,//身份证号
+         userName: dataList.nickName,//昵称
+         age: age,//年龄
+         job: dataList.job,//职业
+         pregnantType: this.data.index + 1,//怀孕类型
+         confinementDate: this.data.date,//产期
+         confinementWeek: dataList.confinementWeek,//产周
+         confinementType: this.data.indext + 1,//生产类型
+       },
+       header: {
+         "content-type": "application/x-www-form-urlencoded"
+       },
+       success: function (res) {
+         var status = res.data.data.status;
+         //status==1表示状态正常
+         if (status == 1) {
+           wx.showToast({
+             title: '提交成功,进入人脸验证~',
+             icon: 'loading',
+             duration: 2000
+           })
+           that.setData({
+             success: true
+           })
+           wx.navigateTo({
+             url: 'index',
+           })
+         }
+         //status不为1,显示错误信息
+         console.log(res)
+         {
+           var str = res.data.data.msg
+           that.showModal(str)
+         }
+       },
+       fail: function (res) {
+         console.log(res),
+           console.log("fail")
+       }
+     })
+      }
   },
 
   takePhoto() {

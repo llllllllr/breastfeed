@@ -1,7 +1,0 @@
-2020-02-09 11:40:39,128 [INFO] (StartupInfoLogger.java:50)- Starting BreastApplication on LAPTOP-SKN1FD88 with PID 22192 (started by 12284 in F:\Ajava\A母乳喂养项目\breastfeed\server\bfbackend)
-2020-02-09 11:40:39,164 [DEBUG] (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
-2020-02-09 11:40:39,165 [INFO] (SpringApplication.java:648)- No active profile set, falling back to default profiles: default
-2020-02-09 11:40:46,652 [INFO] (StartupInfoLogger.java:59)- Started BreastApplication in 8.816 seconds (JVM running for 13.012)
-2020-02-09 11:57:29,065 [INFO] (StartupInfoLogger.java:50)- Starting BreastApplication on LAPTOP-SKN1FD88 with PID 2364 (started by 12284 in F:\Ajava\A母乳喂养项目\breastfeed\server\bfbackend)
-2020-02-09 11:57:29,070 [DEBUG] (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
-2020-02-09 11:57:29,070 [INFO] (SpringApplication.java:648)- No active profile set, falling back to default profiles: default

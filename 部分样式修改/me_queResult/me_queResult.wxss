@@ -1,0 +1,65 @@
+.container{
+  width: 100%;
+  height: 100%;
+  background-color: #f5f5f5;
+  font-size: 28rpx;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.navigator{
+  width: 92%;
+  height: 45rpx;
+  box-sizing: border-box;
+  color: white;
+  margin-top: 1rpx;
+}
+.n1,.n2,.n3{
+  float: left;
+  height: 100%;
+  width: 32.9%;
+  text-align: center;
+  box-sizing: border-box;
+  color: white;
+}
+.n1,.n3{
+  border: 2rpx solid black;
+}
+.n2{
+  border-bottom: 2rpx solid black;
+  border-top: 2rpx solid black;
+}
+.n1{
+  border-radius: 10rpx 0rpx 0rpx 10rpx;
+}
+.n3{
+  border-radius: 0rpx 10rpx 10rpx 0rpx;
+}
+.jieguo{
+  box-sizing: border-box;
+  width:90%;
+  height:220rpx;
+  background-color: white;
+  margin-top:10rpx;
+  border-radius: 20rpx;
+  border: 2rpx solid white;
+}
+.type,.score,.advice,.time{
+ 
+  width: 60%;
+  margin-left: 30rpx;
+  margin-top:13rpx;
+}
+.type{
+  font-size: 32rpx;
+}
+.score{
+  font-size: 29rpx;
+}
+.advice{
+  font-size: 26rpx
+}
+.time{
+  font-size: 20rpx;
+}

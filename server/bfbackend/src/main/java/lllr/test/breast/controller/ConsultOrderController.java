@@ -17,6 +17,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import java.text.ParseException;
 import java.util.Date;
 import java.util.List;
+import java.util.UUID;
 
 @ResponseBody
 @Controller
@@ -42,12 +43,13 @@ public class ConsultOrderController {
 
     @RequestMapping("/addConsultOrder")
     public ServerResponse AddConsultOrder(@RequestParam(value="doctorId")Integer doctorId,
-                                                    @RequestParam(value="userId")Integer userId,
-                                                    @RequestParam(value="createTime") String createTime,
-                                                    @RequestParam(value="lastingTime")Integer lastingTime,
-                                                    @RequestParam(value="contact",required = false)String contact,
-                                                    @RequestParam(value="contactPhone")String contactPhone,
-                                                    @RequestParam(value="symptomDescription")String symptomDescription){
+                                          @RequestParam(value="userId")Integer userId,
+                                          @RequestParam(value="createTime") String createTime,
+                                          @RequestParam(value="lastingTime")Integer lastingTime,
+                                          @RequestParam(value="contact",required = false)String contact,
+                                          @RequestParam(value="contactPhone")String contactPhone,
+                                          @RequestParam(value="symptomDescription")String symptomDescription,
+                                          @RequestParam(value="consultCost")Integer consultCost){
         //转换日期的类型
         Date create_time = null;
         try {
@@ -61,7 +63,8 @@ public class ConsultOrderController {
                 DataValidateUtil.isNull(userId) || DataValidateUtil.isNull(lastingTime))
             return ServerResponse.createByErrorMsg("数据格式错误！");
 
-        ConsultOrder consultOrder = new ConsultOrder(doctorId,userId,create_time,lastingTime,contact,contactPhone,symptomDescription);
+        ConsultOrder consultOrder = new ConsultOrder(doctorId,userId,create_time,lastingTime,contact,contactPhone,symptomDescription,consultCost);
+        consultOrder.setOid(UUID.randomUUID().toString().replace("-", ""));
 
         LOGGER.info("=== AddConsultOrder:" + consultOrder + " ===");
 

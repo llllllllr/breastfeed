@@ -1,5 +1,0 @@
-2020-02-06 22:41:33,420 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, description, img_url, category from article 
-2020-02-06 22:41:33,486 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
-2020-02-06 22:41:33,655 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 3
-2020-02-06 22:44:30,971 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: insert into article (id, title, description, img_url, category, content ) values (?, ?, ?, ?, ?, ? ) 
-2020-02-06 22:44:30,973 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: null, 宝宝为什么老是咳嗽(String), 什么是宝宝咳嗽的诱因呢(String), (String), 母乳喂养资料(String), <p>&nbsp; <span style="font-weight: bold;">宝宝咳嗽怎么回事？</span></p><p><span style="background-color: rgb(255, 255, 255); color: rgb(77, 128, 191);">按照中医理论，咳嗽分风寒咳嗽和风热咳嗽，可以通过观察宝宝舌苔来确定。舌苔白是风寒咳嗽，舌苔红黄则是风热咳嗽。按照西医理论，宝宝咳嗽可能是由于支气管炎、呼吸道感染、过敏等引起的。宝宝咳嗽原因1、中医理论：咳嗽有外感咳嗽和内伤咳嗽之分，而外感咳嗽又分风寒咳嗽和风热咳嗽。可以通过观察宝宝舌苔来判断。宝宝舌苔白则风寒咳嗽，说明孩子寒重咳嗽，痰也比较稀、白黏并兼有鼻塞流涕时，应吃些温热、化痰止咳食品。宝宝舌苔黄、红则是风热咳嗽，说明宝宝内热较大，咳嗽痰黄、稠，易咳出，并有咽痛。应吃些清肺、化痰止咳食物内伤咳嗽多久咳、反复发作咳嗽时家长应注意给孩子吃些调理脾胃、补肾、补肺气食物。&nbsp;&nbsp;</span><br></p>(String)

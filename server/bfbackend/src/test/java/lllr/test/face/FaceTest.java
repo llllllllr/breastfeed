@@ -25,7 +25,7 @@ public class FaceTest {
     private final String OUTER_ID = "123456";
     private final String DISPLAY_NAME = "breast_test";
     private final String pangzi = "dd0c567313b8f706aeab27ae2b648502";
-    private  final String wo = "e6c60682ed30f04e8b546035c6002f20";
+    private  final String wo = "d79204cf1c3bf65e74ab567311fba9b0";
 
     @Test
     public void test() throws IOException {
@@ -72,7 +72,7 @@ public class FaceTest {
     //detect
     @Test
     public void test2() throws IOException {
-        File file = new File("D:\\软件应用\\java IDE\\IntelliJ IDEA 2019.1\\项目\\breastfeed\\breastfeed\\server\\bfbackend\\src\\main\\resources\\UserFaceImage\\bbb.jpg");
+        File file = new File("D:\\软件应用\\java IDE\\IntelliJ IDEA 2019.1\\项目\\breastfeed\\新建文件夹\\server\\bfbackend\\src\\main\\resources\\UserFaceImage\\bbb.jpg");
 
         //1.创建对应的MediaType
         final MediaType MEDIA_TYPE_JPG = MediaType.parse("image/jpg");
@@ -121,7 +121,7 @@ public class FaceTest {
                 .add("api_key",FACE_API_KEY)
                 .add("api_secret",FACE_API_SECRET)
                 .add("outer_id","123456")
-                .add("face_tokens",pangzi)
+                .add("face_tokens",wo)
                 .build();
 
         Request request = new Request.Builder()

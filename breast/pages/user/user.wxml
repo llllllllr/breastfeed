@@ -1,0 +1,35 @@
+<image class="userbg" src="/images/userbg.png" bindtap="chagetoLogin"></image>
+<view>
+	<view class="borout">
+		<view class="bor">
+		<open-data class="avatar lg round margin-left" type="userAvatarUrl"></open-data>
+  <open-data class="user-name text" type="userNickName" lang="zh_CN"></open-data>
+		</view>
+	</view>
+</view>
+  
+
+	<view class="cu-list menu {{menuBorder?'sm-border':''}} {{menuCard?'card-menu margin-top':''}}">
+  
+	 <view style="margin-top:80rpx" class="cu-item {{menuArrow?'arrow':''}}">
+      <navigator class="content" hover-class="none" url="../list/list" open-type="redirect">
+        <text class="cuIcon-discoverfill text-pink"></text>
+        <text class="text-grey">咨询记录</text>
+      </navigator>
+    </view>
+
+    	 <view class="cu-item {{menuArrow?'arrow':''}}" bindtap="changeTocoll">
+      <navigator class="content" hover-class="none" url="../list/list" open-type="redirect">
+        <text class="cuIcon-discoverfill text-pink"></text>
+        <text class="text-grey">收藏</text>
+      </navigator>
+    </view>
+
+     <view class="cu-item {{menuArrow?'arrow':''}}">
+      <navigator class="content" hover-class="none" url="../list/list" open-type="redirect">
+        <text class="cuIcon-discoverfill text-pink"></text>
+        <text class="text-grey">宝宝生长曲线</text>
+      </navigator>
+    </view>
+		</view>
+

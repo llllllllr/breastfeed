@@ -10,6 +10,9 @@
     <result column="contact" jdbcType="VARCHAR" property="contact" />
     <result column="contact_phone" jdbcType="VARCHAR" property="contactPhone" />
     <result column="symptom_description" jdbcType="VARCHAR" property="symptomDescription" />
+    <result column="consult_cost" jdbcType="INTEGER" property="consultCost" />
+    <result column="status" jdbcType="INTEGER" property="status" />
+    <result column="oid" jdbcType="CHAR" property="oid" />
   </resultMap>
 
   <resultMap type="lllr.test.breast.dataObject.consult.ConsultOrder" id="ConsultOrdersDoctorResultMap">
@@ -27,6 +30,9 @@
     <result column="contact" jdbcType="VARCHAR" property="contact" />
     <result column="contact_phone" jdbcType="VARCHAR" property="contactPhone" />
     <result column="symptom_description" jdbcType="VARCHAR" property="symptomDescription" />
+    <result column="consult_cost" jdbcType="INTEGER" property="consultCost" />
+    <result column="status" jdbcType="INTEGER" property="status" />
+    <result column="oid" jdbcType="CHAR" property="oid" />
 
     <!-- (2)配置关联用户信息 -->
     <!--   数据库表user对应 pojo中的User.java -->
@@ -62,6 +68,9 @@
     <result column="contact" jdbcType="VARCHAR" property="contact" />
     <result column="contact_phone" jdbcType="VARCHAR" property="contactPhone" />
     <result column="symptom_description" jdbcType="VARCHAR" property="symptomDescription" />
+    <result column="consult_cost" jdbcType="INTEGER" property="consultCost" />
+    <result column="status" jdbcType="INTEGER" property="status" />
+    <result column="oid" jdbcType="CHAR" property="oid" />
 
     <!-- (2)配置关联用户信息 -->
     <!--   数据库表user对应 pojo中的User.java -->
@@ -86,10 +95,10 @@
   </resultMap>
 
   <sql id="Base_Column_List">
-    id, doctor_id, user_id, create_time, lasting_time, contact, contact_phone, symptom_description
+    id, doctor_id, user_id, create_time, lasting_time, contact, contact_phone, symptom_description,consult_cost,status,oid
   </sql>
   <select id="selectConsultOrderAndDoctorByDoctorId" parameterType="java.lang.Integer" resultMap="ConsultOrdersDoctorResultMap">
-    SELECT consult_order.* ,doctor.name, doctor.license_number, doctor.consult_cost
+    SELECT consult_order.* ,doctor.name, doctor.license_number
     FROM consult_order inner join
     doctor on doctor.id = consult_order.doctor_id and
     consult_order.doctor_id = #{doctorId,jdbcType=INTEGER};
@@ -113,10 +122,11 @@
   <insert id="insert" parameterType="lllr.test.breast.dataObject.consult.ConsultOrder">
     insert into consult_order (id, doctor_id, user_id,
       create_time, lasting_time, contact,
-      contact_phone, symptom_description)
+      contact_phone, symptom_description,consult_cost,status,oid)
     values (#{id,jdbcType=INTEGER}, #{doctorId,jdbcType=INTEGER}, #{userId,jdbcType=INTEGER},
       #{createTime,jdbcType=TIMESTAMP}, #{lastingTime,jdbcType=INTEGER}, #{contact,jdbcType=VARCHAR},
-      #{contactPhone,jdbcType=VARCHAR}, #{symptomDescription,jdbcType=VARCHAR})
+      #{contactPhone,jdbcType=VARCHAR}, #{symptomDescription,jdbcType=VARCHAR},
+       #{consultCost,jdbcType=INTEGER},#{status,jdbcType=INTEGER},#{oid,jdbcType=CHAR})
   </insert>
   <insert id="insertSelective" parameterType="lllr.test.breast.dataObject.consult.ConsultOrder">
     insert into consult_order
@@ -145,6 +155,15 @@
       <if test="symptomDescription != null">
         symptom_description,
       </if>
+      <if test="consultCost != null">
+        consult_cost,
+      </if>
+      <if test="status != null">
+        status,
+      </if>
+      <if test="oid != null">
+        oid,
+      </if>
     </trim>
     <trim prefix="values (" suffix=")" suffixOverrides=",">
       <if test="id != null">
@@ -170,6 +189,15 @@
       </if>
       <if test="symptomDescription != null">
         #{symptomDescription,jdbcType=VARCHAR},
+      </if>
+      <if test="consultCost != null">
+        #{consultCost,jdbcType=INTEGER},
+      </if>
+      <if test="status != null">
+        #{status,jdbcType=INTEGER},
+      </if>
+      <if test="oid != null">
+        #{oid,jdbcType=CHAR},
       </if>
     </trim>
   </insert>
@@ -197,6 +225,15 @@
       <if test="symptomDescription != null">
         symptom_description = #{symptomDescription,jdbcType=VARCHAR},
       </if>
+      <if test="consultCost != null">
+        #{consultCost,jdbcType=INTEGER},
+      </if>
+      <if test="status != null">
+        #{status,jdbcType=INTEGER},
+      </if>
+      <if test="oid != null">
+        #{oid,jdbcType=CHAR},
+      </if>
     </set>
     where id = #{id,jdbcType=INTEGER}
   </update>
@@ -208,7 +245,10 @@
       lasting_time = #{lastingTime,jdbcType=INTEGER},
       contact = #{contact,jdbcType=VARCHAR},
       contact_phone = #{contactPhone,jdbcType=VARCHAR},
-      symptom_description = #{symptomDescription,jdbcType=VARCHAR}
+      symptom_description = #{symptomDescription,jdbcType=VARCHAR},
+      consult_cost = #{consultCost,jdbcType=INTEGER},
+      status = #{status,jdbcType=INTEGER},
+      oid = #{oid,jdbcType=CHAR}
     where id = #{id,jdbcType=INTEGER}
   </update>
 </mapper>

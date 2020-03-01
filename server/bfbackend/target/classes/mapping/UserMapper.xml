@@ -31,11 +31,23 @@
     from user
     where user_name = #{userName,jdbcType=VARCHAR}
   </select>
+  <select id="selectByCreditId" parameterType="java.lang.String" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from user
+    where credit_id = #{creditId,jdbcType=VARCHAR}
+  </select>
   <select id="selectByToken" parameterType="java.lang.String" resultMap="BaseResultMap">
     select
     <include refid="Base_Column_List" />
     from user
     where user_token = #{userToken,jdbcType=VARCHAR}
+  </select>
+
+  <select id="selectLastUserId" resultType="integer">
+    select
+    max(user_id)
+    from user;
   </select>
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
     delete from user

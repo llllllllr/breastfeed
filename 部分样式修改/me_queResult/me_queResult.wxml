@@ -1,0 +1,23 @@
+<view class="container" style="height:{{con_height}}">
+  <view class="navigator">
+    <view class="n1" bindtap="tap_n1" style="background-color:{{bg_color1}};color:{{n1_color}}">全部</view>
+    <view class="n2" bindtap="tap_n2" style="background-color:{{bg_color2}};color:{{n2_color}}">自我效能量表</view>
+    <view class="n3" bindtap="tap_n3" style="background-color:{{bg_color3}};color:{{n3_color}}">情绪调查量表</view>
+  </view>
+
+  
+      
+        <block wx:for="{{jieguo}}" wx:key="key">
+          <view class="jieguo" data-id="{{item.id}}" bindtap="question" wx:if="{{n==1?1:((n==2)?(item.type==type1?1:0):(item.type==type2?1:0))}}">
+            <view class="type">问卷:{{item.type}}</view>
+            <view class="score">得分:{{item.score}}</view>
+            <view class="advice">建议:{{item.advice}}</view>
+            <view class="time">{{item.time}}</view>
+          </view>
+        </block>
+ </view>
+
+
+
+
+ 
