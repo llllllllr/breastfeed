@@ -1,0 +1,21 @@
+<view class="container">
+	<view class="container-body">
+		<view class="service-item service-detail">
+			<view class="service-img">
+				<image src="{{doctordetail.imgurl}}" mode="aspectFill"></image>
+			</view>
+			<view class="service-text">
+				<view class="service-tite">{{doctordetail.name}}</view>
+				<view class="service-tags">
+					<text>{{doctordetail.tag}}</text>
+				</view>
+				<text class="service-city">服务城市：{{doctordetail.city}}</text>
+			</view>
+		</view>
+	</view>
+
+          
+</view>
+<wux-wing-blank size="large">
+     <wux-button block type="energized" bindtap="onchange">立即咨询</wux-button>
+ </wux-wing-blank>

@@ -60,14 +60,14 @@ Page({
         if(this.data.position == 1)
         {
           wx.navigateTo({
-            url: '../signIn/signIn?object=/user',
+            url: '../signIn/signIn?object=user',
           })
         }
         else 
         {
           //跳转到医生登录界面
           wx.navigateTo({
-            url: '../signIn/signIn?object=/doctor',
+            url: '../signIn/signIn?object=doctor',
           })
         }
       }

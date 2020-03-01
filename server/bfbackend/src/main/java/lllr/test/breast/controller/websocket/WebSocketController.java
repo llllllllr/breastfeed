@@ -91,10 +91,18 @@ public class WebSocketController {
         webSocketSet.put(from_user_id,this);
         LOGGER.info("[WebSocket] 连接成功，当前连接人数:" + webSocketSet.size());
 
+        //查询之前消息并返回之前的消息记录
+        ReturnBeforeWeChatMessages(from_user_id,to_user_id);
+
+    }
+
+    //查询之前的聊天数据并返回
+    private void ReturnBeforeWeChatMessages(String from_user_id,String to_user_id){
         //查询返回聊天记录
         List<WeChatMessageItem> items = weChatService.selectWeChatMsgByFromUserIdAndToUserId(Integer.valueOf(from_user_id),Integer.valueOf(to_user_id));
         LOGGER.info(" === 用户 " + from_user_id + "和用户 " + to_user_id + "的聊天记录：" + items);
 
+        AppointSending(from_user_id,JSONObject.toJSONString(items));
     }
 
 

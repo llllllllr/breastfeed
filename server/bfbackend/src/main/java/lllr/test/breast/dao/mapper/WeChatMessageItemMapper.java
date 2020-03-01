@@ -1,6 +1,7 @@
 package lllr.test.breast.dao.mapper;
 
 import lllr.test.breast.dataObject.consult.WeChatMessageItem;
+import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
@@ -22,5 +23,5 @@ public interface WeChatMessageItemMapper {
 
 //    List<WeChatMessageItem> selectByFromUserIdAndToUserId(@Param("from") String fromUserId, @Param("to") String toUserId);
 
-    List<WeChatMessageItem> selectByFromUserIdAndToUserId(Integer fromUserId, Integer toUserId);
+    List<WeChatMessageItem> selectByFromUserIdAndToUserId(@Param("fromUserId") Integer fromUserId, @Param("toUserId")Integer toUserId);
 }

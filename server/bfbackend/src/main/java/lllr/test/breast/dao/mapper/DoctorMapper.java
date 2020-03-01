@@ -2,6 +2,8 @@ package lllr.test.breast.dao.mapper;
 
 import lllr.test.breast.dataObject.user.Doctor;
 
+import java.util.List;
+
 public interface DoctorMapper {
     int deleteByPrimaryKey(Integer id);
 
@@ -19,4 +21,6 @@ public interface DoctorMapper {
 
     //查询返回结果可能是 List  用单个对象接收多个对象会发生错误吗？
     Doctor selectByToken(String doctorToken);
+
+    List<Doctor> selectAllDoctor();
 }

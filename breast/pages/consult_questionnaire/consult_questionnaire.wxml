@@ -1,0 +1,33 @@
+<!--pages/service/index.wxml-->
+<view >
+
+  <wux-cell-group title="问题描述">
+    <wux-cell hover-class="none">
+        <wux-textarea bindblur="handlerQuestion" hasCount rows="6" cursorSpacing="180" placeholder="请输入对问题的描述" />
+    </wux-cell>
+   </wux-cell-group>
+
+<wux-cell-group title="上传照片">
+   <wux-cell hover-class="none">
+     <wux-upload listType="picture-card" showUploadList="{{ false }}" url="https://www.skyvow.cn/api/common/file" bind:change="onChange" bind:success="onSuccess" bind:fail="onFail" bind:complete="onComplete" bind:preview="onPreview">
+         <image src="{{ imageUrl }}" wx:if="{{ imageUrl }}" />
+         <text wx:else>Upload</text>
+     </wux-upload>
+   </wux-cell>
+ </wux-cell-group>
+
+</view>
+
+ <wux-cell-group title="联系信息">
+    <wux-cell hover-class="none">
+      <wux-input bindblur="handlerName" label="联系人" placeholder="请输入您的姓名"/>
+    </wux-cell>
+    <wux-cell hover-class="none">
+        <wux-input bindblur="handlerPhone" label="手机号码" placeholder="请输入您的手机号码"/>
+    </wux-cell>
+  </wux-cell-group>       
+        
+ <wux-wing-blank size="large">
+            <wux-button block type="energized" bindtap="onchange">确认提交</wux-button>
+ </wux-wing-blank>
+     

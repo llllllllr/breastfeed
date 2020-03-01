@@ -1,0 +1,598 @@
+2020-02-27 20:37:11,439 [INFO] (StartupInfoLogger.java:50)- Starting BreastApplication on LAPTOP-562395R3 with PID 12232 (started by 爱哭的周小姐 in D:\软件应用\java IDE\IntelliJ IDEA 2019.1\项目\breastfeed\新建文件夹\server\bfbackend)
+2020-02-27 20:37:11,473 [DEBUG] (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2020-02-27 20:37:11,487 [INFO] (SpringApplication.java:648)- No active profile set, falling back to default profiles: default
+2020-02-27 20:37:17,279 [INFO] (StartupInfoLogger.java:59)- Started BreastApplication in 6.515 seconds (JVM running for 10.018)
+2020-02-27 20:38:16,291 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select user_id, age, credit_id, pregnant_type, pregnant_week, job, confinement_date, confinement_week, confinement_type, user_name, user_password, user_token from user where user_token = ? 
+2020-02-27 20:38:16,331 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 91a10017309a4fda9c12d412a9788574(String)
+2020-02-27 20:38:16,437 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-02-27 20:38:16,441 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, description, img_url, category from article 
+2020-02-27 20:38:16,442 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-02-27 20:38:16,543 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 20
+2020-02-27 20:38:16,545 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, audioURL, category, cover_url from audio 
+2020-02-27 20:38:16,545 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-02-27 20:38:16,618 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 6
+2020-02-27 20:38:16,618 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, vedioURL, cover_url, category, description from vedio 
+2020-02-27 20:38:16,619 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-02-27 20:38:16,688 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 9
+2020-02-27 20:54:46,722 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, user_name, name, consult_cost, license_number from doctor 
+2020-02-27 20:54:46,723 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-02-27 20:54:46,804 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 3
+2020-02-27 20:54:52,955 [INFO] (WebSocketController.java:92)- [WebSocket] 连接成功，当前连接人数:1
+2020-02-27 20:54:52,956 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, from_user_id, to_user_id, message_type, message_content, time from wechat_message_item where from_user_id = ? and to_user_id = ? 
+2020-02-27 20:54:52,957 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 111(Integer), 1(Integer)
+2020-02-27 20:54:53,043 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 2
+2020-02-27 20:54:53,044 [INFO] (WebSocketController.java:103)-  === 用户 111和用户 1的聊天记录：[WeChatMessageItem{id=3, fromUserId=111, toUserId=1, messageType=0, messageContent='团结互助才是力量', time=Sun Feb 09 22:16:47 CST 2020}, WeChatMessageItem{id=6, fromUserId=111, toUserId=1, messageType=0, messageContent='中国是个大家庭', time=null}]
+2020-02-27 20:54:53,171 [DEBUG] (WebSocketController.java:209)- ===  用户消息成功 消息数据：[{"fromUserId":111,"id":3,"messageContent":"团结互助才是力量","messageType":0,"time":1581257807000,"toUserId":1},{"fromUserId":111,"id":6,"messageContent":"中国是个大家庭","messageType":0,"toUserId":1}] ===
+2020-02-27 20:58:54,339 [INFO] (WebSocketController.java:112)- [WebSocket] 退出成功，当前连接人数为：=0 当前在线人： {}
+2020-02-27 20:58:56,328 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select user_id, age, credit_id, pregnant_type, pregnant_week, job, confinement_date, confinement_week, confinement_type, user_name, user_password, user_token from user where user_token = ? 
+2020-02-27 20:58:56,328 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 91a10017309a4fda9c12d412a9788574(String)
+2020-02-27 20:58:56,405 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-02-27 20:58:57,128 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, description, img_url, category from article 
+2020-02-27 20:58:57,128 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-02-27 20:58:57,298 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 20
+2020-02-27 20:58:57,301 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, audioURL, category, cover_url from audio 
+2020-02-27 20:58:57,302 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, vedioURL, cover_url, category, description from vedio 
+2020-02-27 20:58:57,302 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-02-27 20:58:57,302 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-02-27 20:58:57,389 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 6
+2020-02-27 20:58:57,392 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 9
+2020-02-27 20:59:01,790 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, user_name, name, consult_cost, license_number from doctor 
+2020-02-27 20:59:01,790 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-02-27 20:59:01,950 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 3
+2020-02-27 20:59:48,617 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select user_id, age, credit_id, pregnant_type, pregnant_week, job, confinement_date, confinement_week, confinement_type, user_name, user_password, user_token from user where user_token = ? 
+2020-02-27 20:59:48,618 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 91a10017309a4fda9c12d412a9788574(String)
+2020-02-27 20:59:48,729 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-02-27 20:59:51,015 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select user_id, age, credit_id, pregnant_type, pregnant_week, job, confinement_date, confinement_week, confinement_type, user_name, user_password, user_token from user where user_token = ? 
+2020-02-27 20:59:51,016 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 91a10017309a4fda9c12d412a9788574(String)
+2020-02-27 20:59:51,170 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-02-27 21:00:31,487 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, user_name, name, consult_cost, license_number from doctor 
+2020-02-27 21:00:31,488 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-02-27 21:00:31,572 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 3
+2020-02-27 21:01:07,386 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select user_id, age, credit_id, pregnant_type, pregnant_week, job, confinement_date, confinement_week, confinement_type, user_name, user_password, user_token from user where user_token = ? 
+2020-02-27 21:01:07,386 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 91a10017309a4fda9c12d412a9788574(String)
+2020-02-27 21:01:07,518 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-02-27 21:01:07,674 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, description, img_url, category from article 
+2020-02-27 21:01:07,675 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-02-27 21:01:07,760 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 20
+2020-02-27 21:01:07,768 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, audioURL, category, cover_url from audio 
+2020-02-27 21:01:07,769 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-02-27 21:01:07,771 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, vedioURL, cover_url, category, description from vedio 
+2020-02-27 21:01:07,771 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-02-27 21:01:07,854 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 6
+2020-02-27 21:01:07,868 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 9
+2020-02-27 21:01:22,904 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, user_name, name, consult_cost, license_number from doctor 
+2020-02-27 21:01:22,905 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-02-27 21:01:23,067 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 3
+2020-02-27 21:01:27,862 [INFO] (WebSocketController.java:92)- [WebSocket] 连接成功，当前连接人数:1
+2020-02-27 21:01:27,977 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, from_user_id, to_user_id, message_type, message_content, time from wechat_message_item where from_user_id = ? and to_user_id = ? 
+2020-02-27 21:01:27,978 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 111(Integer), 1(Integer)
+2020-02-27 21:01:28,131 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 2
+2020-02-27 21:01:28,132 [INFO] (WebSocketController.java:103)-  === 用户 111和用户 1的聊天记录：[WeChatMessageItem{id=3, fromUserId=111, toUserId=1, messageType=0, messageContent='团结互助才是力量', time=Sun Feb 09 22:16:47 CST 2020}, WeChatMessageItem{id=6, fromUserId=111, toUserId=1, messageType=0, messageContent='中国是个大家庭', time=null}]
+2020-02-27 21:01:28,133 [DEBUG] (WebSocketController.java:209)- ===  用户消息成功 消息数据：[{"fromUserId":111,"id":3,"messageContent":"团结互助才是力量","messageType":0,"time":1581257807000,"toUserId":1},{"fromUserId":111,"id":6,"messageContent":"中国是个大家庭","messageType":0,"toUserId":1}] ===
+2020-02-27 21:03:46,214 [INFO] (WebSocketController.java:112)- [WebSocket] 退出成功，当前连接人数为：=0 当前在线人： {}
+2020-02-27 21:03:48,469 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select user_id, age, credit_id, pregnant_type, pregnant_week, job, confinement_date, confinement_week, confinement_type, user_name, user_password, user_token from user where user_token = ? 
+2020-02-27 21:03:48,470 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 91a10017309a4fda9c12d412a9788574(String)
+2020-02-27 21:03:48,546 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-02-27 21:03:48,769 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, description, img_url, category from article 
+2020-02-27 21:03:48,770 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-02-27 21:03:48,909 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 20
+2020-02-27 21:03:48,911 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, audioURL, category, cover_url from audio 
+2020-02-27 21:03:48,912 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-02-27 21:03:48,913 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, vedioURL, cover_url, category, description from vedio 
+2020-02-27 21:03:48,914 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-02-27 21:03:48,987 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 6
+2020-02-27 21:03:48,991 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 9
+2020-02-27 21:05:32,354 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, user_name, name, consult_cost, license_number from doctor 
+2020-02-27 21:05:32,355 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-02-27 21:05:32,417 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 3
+2020-02-27 21:05:39,168 [INFO] (WebSocketController.java:92)- [WebSocket] 连接成功，当前连接人数:1
+2020-02-27 21:05:39,171 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, from_user_id, to_user_id, message_type, message_content, time from wechat_message_item where from_user_id = ? and to_user_id = ? 
+2020-02-27 21:05:39,172 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 111(Integer), 1(Integer)
+2020-02-27 21:05:39,259 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 2
+2020-02-27 21:05:39,260 [INFO] (WebSocketController.java:103)-  === 用户 111和用户 1的聊天记录：[WeChatMessageItem{id=3, fromUserId=111, toUserId=1, messageType=0, messageContent='团结互助才是力量', time=Sun Feb 09 22:16:47 CST 2020}, WeChatMessageItem{id=6, fromUserId=111, toUserId=1, messageType=0, messageContent='中国是个大家庭', time=null}]
+2020-02-27 21:05:39,260 [DEBUG] (WebSocketController.java:209)- ===  用户消息成功 消息数据：[{"fromUserId":111,"id":3,"messageContent":"团结互助才是力量","messageType":0,"time":1581257807000,"toUserId":1},{"fromUserId":111,"id":6,"messageContent":"中国是个大家庭","messageType":0,"toUserId":1}] ===
+2020-02-27 21:06:13,512 [INFO] (WebSocketController.java:112)- [WebSocket] 退出成功，当前连接人数为：=0 当前在线人： {}
+2020-02-27 21:06:15,331 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select user_id, age, credit_id, pregnant_type, pregnant_week, job, confinement_date, confinement_week, confinement_type, user_name, user_password, user_token from user where user_token = ? 
+2020-02-27 21:06:15,332 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 91a10017309a4fda9c12d412a9788574(String)
+2020-02-27 21:06:15,450 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-02-27 21:06:15,591 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, description, img_url, category from article 
+2020-02-27 21:06:15,592 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-02-27 21:06:15,673 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 20
+2020-02-27 21:06:15,682 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, audioURL, category, cover_url from audio 
+2020-02-27 21:06:15,683 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-02-27 21:06:15,686 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, vedioURL, cover_url, category, description from vedio 
+2020-02-27 21:06:15,686 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-02-27 21:06:15,767 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 6
+2020-02-27 21:06:15,774 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 9
+2020-02-27 21:06:21,014 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, user_name, name, consult_cost, license_number from doctor 
+2020-02-27 21:06:21,015 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-02-27 21:06:21,159 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 3
+2020-02-27 21:06:25,465 [INFO] (WebSocketController.java:92)- [WebSocket] 连接成功，当前连接人数:1
+2020-02-27 21:06:25,466 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, from_user_id, to_user_id, message_type, message_content, time from wechat_message_item where from_user_id = ? and to_user_id = ? 
+2020-02-27 21:06:25,467 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 111(Integer), 1(Integer)
+2020-02-27 21:06:25,642 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 2
+2020-02-27 21:06:25,643 [INFO] (WebSocketController.java:103)-  === 用户 111和用户 1的聊天记录：[WeChatMessageItem{id=3, fromUserId=111, toUserId=1, messageType=0, messageContent='团结互助才是力量', time=Sun Feb 09 22:16:47 CST 2020}, WeChatMessageItem{id=6, fromUserId=111, toUserId=1, messageType=0, messageContent='中国是个大家庭', time=null}]
+2020-02-27 21:06:25,643 [DEBUG] (WebSocketController.java:209)- ===  用户消息成功 消息数据：[{"fromUserId":111,"id":3,"messageContent":"团结互助才是力量","messageType":0,"time":1581257807000,"toUserId":1},{"fromUserId":111,"id":6,"messageContent":"中国是个大家庭","messageType":0,"toUserId":1}] ===
+2020-02-27 21:07:27,245 [INFO] (WebSocketController.java:112)- [WebSocket] 退出成功，当前连接人数为：=0 当前在线人： {}
+2020-02-27 21:07:29,173 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select user_id, age, credit_id, pregnant_type, pregnant_week, job, confinement_date, confinement_week, confinement_type, user_name, user_password, user_token from user where user_token = ? 
+2020-02-27 21:07:29,174 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 91a10017309a4fda9c12d412a9788574(String)
+2020-02-27 21:07:29,258 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-02-27 21:07:47,284 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select user_id, age, credit_id, pregnant_type, pregnant_week, job, confinement_date, confinement_week, confinement_type, user_name, user_password, user_token from user where user_token = ? 
+2020-02-27 21:07:47,285 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 91a10017309a4fda9c12d412a9788574(String)
+2020-02-27 21:07:47,412 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-02-27 21:07:47,527 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, description, img_url, category from article 
+2020-02-27 21:07:47,528 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-02-27 21:07:47,611 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 20
+2020-02-27 21:07:47,618 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, audioURL, category, cover_url from audio 
+2020-02-27 21:07:47,618 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-02-27 21:07:47,633 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, vedioURL, cover_url, category, description from vedio 
+2020-02-27 21:07:47,633 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-02-27 21:07:47,689 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 6
+2020-02-27 21:07:47,730 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 9
+2020-02-27 21:07:51,382 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, user_name, name, consult_cost, license_number from doctor 
+2020-02-27 21:07:51,383 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-02-27 21:07:51,458 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 3
+2020-02-27 21:07:56,527 [INFO] (WebSocketController.java:92)- [WebSocket] 连接成功，当前连接人数:1
+2020-02-27 21:07:56,528 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, from_user_id, to_user_id, message_type, message_content, time from wechat_message_item where from_user_id = ? and to_user_id = ? 
+2020-02-27 21:07:56,528 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 111(Integer), 1(Integer)
+2020-02-27 21:07:56,687 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 2
+2020-02-27 21:07:56,687 [INFO] (WebSocketController.java:103)-  === 用户 111和用户 1的聊天记录：[WeChatMessageItem{id=3, fromUserId=111, toUserId=1, messageType=0, messageContent='团结互助才是力量', time=Sun Feb 09 22:16:47 CST 2020}, WeChatMessageItem{id=6, fromUserId=111, toUserId=1, messageType=0, messageContent='中国是个大家庭', time=null}]
+2020-02-27 21:07:56,688 [DEBUG] (WebSocketController.java:209)- ===  用户消息成功 消息数据：[{"fromUserId":111,"id":3,"messageContent":"团结互助才是力量","messageType":0,"time":1581257807000,"toUserId":1},{"fromUserId":111,"id":6,"messageContent":"中国是个大家庭","messageType":0,"toUserId":1}] ===
+2020-02-27 21:21:33,862 [INFO] (WebSocketController.java:112)- [WebSocket] 退出成功，当前连接人数为：=0 当前在线人： {}
+2020-02-27 21:21:38,368 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select user_id, age, credit_id, pregnant_type, pregnant_week, job, confinement_date, confinement_week, confinement_type, user_name, user_password, user_token from user where user_token = ? 
+2020-02-27 21:21:38,368 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 91a10017309a4fda9c12d412a9788574(String)
+2020-02-27 21:21:38,509 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-02-27 21:21:38,519 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, description, img_url, category from article 
+2020-02-27 21:21:38,520 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-02-27 21:21:38,610 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, audioURL, category, cover_url from audio 
+2020-02-27 21:21:38,610 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-02-27 21:21:38,614 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, vedioURL, cover_url, category, description from vedio 
+2020-02-27 21:21:38,614 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-02-27 21:21:38,629 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 20
+2020-02-27 21:21:38,696 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 6
+2020-02-27 21:21:38,708 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 9
+2020-02-27 21:21:48,490 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, user_name, name, consult_cost, license_number from doctor 
+2020-02-27 21:21:48,490 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-02-27 21:21:48,681 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 3
+2020-02-27 21:21:55,216 [INFO] (WebSocketController.java:92)- [WebSocket] 连接成功，当前连接人数:1
+2020-02-27 21:21:55,217 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, from_user_id, to_user_id, message_type, message_content, time from wechat_message_item where from_user_id = ? and to_user_id = ? 
+2020-02-27 21:21:55,217 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 111(Integer), 1(Integer)
+2020-02-27 21:21:55,308 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 2
+2020-02-27 21:21:55,308 [INFO] (WebSocketController.java:103)-  === 用户 111和用户 1的聊天记录：[WeChatMessageItem{id=3, fromUserId=111, toUserId=1, messageType=0, messageContent='团结互助才是力量', time=Sun Feb 09 22:16:47 CST 2020}, WeChatMessageItem{id=6, fromUserId=111, toUserId=1, messageType=0, messageContent='中国是个大家庭', time=null}]
+2020-02-27 21:21:55,309 [DEBUG] (WebSocketController.java:209)- ===  用户消息成功 消息数据：[{"fromUserId":111,"id":3,"messageContent":"团结互助才是力量","messageType":0,"time":1581257807000,"toUserId":1},{"fromUserId":111,"id":6,"messageContent":"中国是个大家庭","messageType":0,"toUserId":1}] ===
+2020-02-27 21:23:15,916 [INFO] (WebSocketController.java:112)- [WebSocket] 退出成功，当前连接人数为：=0 当前在线人： {}
+2020-02-27 21:23:18,029 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select user_id, age, credit_id, pregnant_type, pregnant_week, job, confinement_date, confinement_week, confinement_type, user_name, user_password, user_token from user where user_token = ? 
+2020-02-27 21:23:18,030 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 91a10017309a4fda9c12d412a9788574(String)
+2020-02-27 21:23:18,121 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-02-27 21:23:18,304 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, description, img_url, category from article 
+2020-02-27 21:23:18,305 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-02-27 21:23:18,397 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 20
+2020-02-27 21:23:18,401 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, audioURL, category, cover_url from audio 
+2020-02-27 21:23:18,401 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-02-27 21:23:18,404 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, vedioURL, cover_url, category, description from vedio 
+2020-02-27 21:23:18,404 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-02-27 21:23:18,476 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 6
+2020-02-27 21:23:18,491 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 9
+2020-02-27 21:23:29,027 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, user_name, name, consult_cost, license_number from doctor 
+2020-02-27 21:23:29,027 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-02-27 21:23:29,205 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 3
+2020-02-27 21:23:34,117 [INFO] (WebSocketController.java:92)- [WebSocket] 连接成功，当前连接人数:1
+2020-02-27 21:23:34,118 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, from_user_id, to_user_id, message_type, message_content, time from wechat_message_item where from_user_id = ? and to_user_id = ? 
+2020-02-27 21:23:34,118 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 111(Integer), 1(Integer)
+2020-02-27 21:23:34,308 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 2
+2020-02-27 21:23:34,308 [INFO] (WebSocketController.java:103)-  === 用户 111和用户 1的聊天记录：[WeChatMessageItem{id=3, fromUserId=111, toUserId=1, messageType=0, messageContent='团结互助才是力量', time=Sun Feb 09 22:16:47 CST 2020}, WeChatMessageItem{id=6, fromUserId=111, toUserId=1, messageType=0, messageContent='中国是个大家庭', time=null}]
+2020-02-27 21:23:34,309 [DEBUG] (WebSocketController.java:209)- ===  用户消息成功 消息数据：[{"fromUserId":111,"id":3,"messageContent":"团结互助才是力量","messageType":0,"time":1581257807000,"toUserId":1},{"fromUserId":111,"id":6,"messageContent":"中国是个大家庭","messageType":0,"toUserId":1}] ===
+2020-02-27 21:31:13,522 [INFO] (WebSocketController.java:112)- [WebSocket] 退出成功，当前连接人数为：=0 当前在线人： {}
+2020-02-27 21:31:20,589 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select user_id, age, credit_id, pregnant_type, pregnant_week, job, confinement_date, confinement_week, confinement_type, user_name, user_password, user_token from user where user_token = ? 
+2020-02-27 21:31:20,589 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 91a10017309a4fda9c12d412a9788574(String)
+2020-02-27 21:31:20,654 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-02-27 21:31:20,682 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, description, img_url, category from article 
+2020-02-27 21:31:20,683 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-02-27 21:31:20,795 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 20
+2020-02-27 21:31:20,801 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, audioURL, category, cover_url from audio 
+2020-02-27 21:31:20,802 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-02-27 21:31:20,803 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, vedioURL, cover_url, category, description from vedio 
+2020-02-27 21:31:20,804 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-02-27 21:31:20,891 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 6
+2020-02-27 21:31:20,892 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 9
+2020-02-27 21:31:23,418 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, user_name, name, consult_cost, license_number from doctor 
+2020-02-27 21:31:23,419 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-02-27 21:31:23,586 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 3
+2020-02-27 21:31:28,067 [INFO] (WebSocketController.java:92)- [WebSocket] 连接成功，当前连接人数:1
+2020-02-27 21:31:28,068 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, from_user_id, to_user_id, message_type, message_content, time from wechat_message_item where from_user_id = ? and to_user_id = ? 
+2020-02-27 21:31:28,069 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 111(Integer), 1(Integer)
+2020-02-27 21:31:28,187 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 2
+2020-02-27 21:31:28,188 [INFO] (WebSocketController.java:103)-  === 用户 111和用户 1的聊天记录：[WeChatMessageItem{id=3, fromUserId=111, toUserId=1, messageType=0, messageContent='团结互助才是力量', time=Sun Feb 09 22:16:47 CST 2020}, WeChatMessageItem{id=6, fromUserId=111, toUserId=1, messageType=0, messageContent='中国是个大家庭', time=null}]
+2020-02-27 21:31:28,188 [DEBUG] (WebSocketController.java:209)- ===  用户消息成功 消息数据：[{"fromUserId":111,"id":3,"messageContent":"团结互助才是力量","messageType":0,"time":1581257807000,"toUserId":1},{"fromUserId":111,"id":6,"messageContent":"中国是个大家庭","messageType":0,"toUserId":1}] ===
+2020-02-27 21:34:54,147 [INFO] (WebSocketController.java:112)- [WebSocket] 退出成功，当前连接人数为：=0 当前在线人： {}
+2020-02-27 21:34:56,511 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select user_id, age, credit_id, pregnant_type, pregnant_week, job, confinement_date, confinement_week, confinement_type, user_name, user_password, user_token from user where user_token = ? 
+2020-02-27 21:34:56,511 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 91a10017309a4fda9c12d412a9788574(String)
+2020-02-27 21:34:56,597 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-02-27 21:34:56,614 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, description, img_url, category from article 
+2020-02-27 21:34:56,614 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-02-27 21:34:56,710 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 20
+2020-02-27 21:34:56,712 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, audioURL, category, cover_url from audio 
+2020-02-27 21:34:56,713 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-02-27 21:34:56,719 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, vedioURL, cover_url, category, description from vedio 
+2020-02-27 21:34:56,720 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-02-27 21:34:56,805 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 6
+2020-02-27 21:34:56,810 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 9
+2020-02-27 21:35:01,297 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, user_name, name, consult_cost, license_number from doctor 
+2020-02-27 21:35:01,298 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-02-27 21:35:01,425 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 3
+2020-02-27 21:35:05,298 [INFO] (WebSocketController.java:92)- [WebSocket] 连接成功，当前连接人数:1
+2020-02-27 21:35:05,298 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, from_user_id, to_user_id, message_type, message_content, time from wechat_message_item where from_user_id = ? and to_user_id = ? 
+2020-02-27 21:35:05,299 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 111(Integer), 1(Integer)
+2020-02-27 21:35:05,426 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 2
+2020-02-27 21:35:05,427 [INFO] (WebSocketController.java:103)-  === 用户 111和用户 1的聊天记录：[WeChatMessageItem{id=3, fromUserId=111, toUserId=1, messageType=0, messageContent='团结互助才是力量', time=Sun Feb 09 22:16:47 CST 2020}, WeChatMessageItem{id=6, fromUserId=111, toUserId=1, messageType=0, messageContent='中国是个大家庭', time=null}]
+2020-02-27 21:35:05,427 [DEBUG] (WebSocketController.java:209)- ===  用户消息成功 消息数据：[{"fromUserId":111,"id":3,"messageContent":"团结互助才是力量","messageType":0,"time":1581257807000,"toUserId":1},{"fromUserId":111,"id":6,"messageContent":"中国是个大家庭","messageType":0,"toUserId":1}] ===
+2020-02-27 21:35:56,552 [INFO] (WebSocketController.java:112)- [WebSocket] 退出成功，当前连接人数为：=0 当前在线人： {}
+2020-02-27 21:35:58,661 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select user_id, age, credit_id, pregnant_type, pregnant_week, job, confinement_date, confinement_week, confinement_type, user_name, user_password, user_token from user where user_token = ? 
+2020-02-27 21:35:58,662 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 91a10017309a4fda9c12d412a9788574(String)
+2020-02-27 21:35:58,814 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-02-27 21:35:59,743 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, description, img_url, category from article 
+2020-02-27 21:35:59,744 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-02-27 21:35:59,867 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 20
+2020-02-27 21:35:59,875 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, audioURL, category, cover_url from audio 
+2020-02-27 21:35:59,875 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-02-27 21:35:59,877 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, vedioURL, cover_url, category, description from vedio 
+2020-02-27 21:35:59,877 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-02-27 21:35:59,963 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 6
+2020-02-27 21:35:59,969 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 9
+2020-02-27 21:36:09,315 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, user_name, name, consult_cost, license_number from doctor 
+2020-02-27 21:36:09,315 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-02-27 21:36:09,483 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 3
+2020-02-27 21:36:13,057 [INFO] (WebSocketController.java:92)- [WebSocket] 连接成功，当前连接人数:1
+2020-02-27 21:36:13,058 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, from_user_id, to_user_id, message_type, message_content, time from wechat_message_item where from_user_id = ? and to_user_id = ? 
+2020-02-27 21:36:13,058 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 111(Integer), 1(Integer)
+2020-02-27 21:36:13,225 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 2
+2020-02-27 21:36:13,225 [INFO] (WebSocketController.java:103)-  === 用户 111和用户 1的聊天记录：[WeChatMessageItem{id=3, fromUserId=111, toUserId=1, messageType=0, messageContent='团结互助才是力量', time=Sun Feb 09 22:16:47 CST 2020}, WeChatMessageItem{id=6, fromUserId=111, toUserId=1, messageType=0, messageContent='中国是个大家庭', time=null}]
+2020-02-27 21:36:13,226 [DEBUG] (WebSocketController.java:209)- ===  用户消息成功 消息数据：[{"fromUserId":111,"id":3,"messageContent":"团结互助才是力量","messageType":0,"time":1581257807000,"toUserId":1},{"fromUserId":111,"id":6,"messageContent":"中国是个大家庭","messageType":0,"toUserId":1}] ===
+2020-02-27 21:37:39,160 [INFO] (WebSocketController.java:112)- [WebSocket] 退出成功，当前连接人数为：=0 当前在线人： {}
+2020-02-27 21:37:41,695 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select user_id, age, credit_id, pregnant_type, pregnant_week, job, confinement_date, confinement_week, confinement_type, user_name, user_password, user_token from user where user_token = ? 
+2020-02-27 21:37:41,696 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 91a10017309a4fda9c12d412a9788574(String)
+2020-02-27 21:37:41,708 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, description, img_url, category from article 
+2020-02-27 21:37:41,709 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-02-27 21:37:41,716 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, audioURL, category, cover_url from audio 
+2020-02-27 21:37:41,716 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-02-27 21:37:41,788 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 20
+2020-02-27 21:37:41,790 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-02-27 21:37:41,792 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 6
+2020-02-27 21:37:41,788 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, vedioURL, cover_url, category, description from vedio 
+2020-02-27 21:37:41,795 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-02-27 21:37:41,880 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 9
+2020-02-27 21:37:46,026 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, user_name, name, consult_cost, license_number from doctor 
+2020-02-27 21:37:46,026 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-02-27 21:37:46,198 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 3
+2020-02-27 21:37:50,027 [INFO] (WebSocketController.java:92)- [WebSocket] 连接成功，当前连接人数:1
+2020-02-27 21:37:50,027 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, from_user_id, to_user_id, message_type, message_content, time from wechat_message_item where from_user_id = ? and to_user_id = ? 
+2020-02-27 21:37:50,027 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 111(Integer), 1(Integer)
+2020-02-27 21:37:50,144 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 2
+2020-02-27 21:37:50,145 [INFO] (WebSocketController.java:103)-  === 用户 111和用户 1的聊天记录：[WeChatMessageItem{id=3, fromUserId=111, toUserId=1, messageType=0, messageContent='团结互助才是力量', time=Sun Feb 09 22:16:47 CST 2020}, WeChatMessageItem{id=6, fromUserId=111, toUserId=1, messageType=0, messageContent='中国是个大家庭', time=null}]
+2020-02-27 21:37:50,145 [DEBUG] (WebSocketController.java:209)- ===  用户消息成功 消息数据：[{"fromUserId":111,"id":3,"messageContent":"团结互助才是力量","messageType":0,"time":1581257807000,"toUserId":1},{"fromUserId":111,"id":6,"messageContent":"中国是个大家庭","messageType":0,"toUserId":1}] ===
+2020-02-27 21:39:38,305 [INFO] (WebSocketController.java:112)- [WebSocket] 退出成功，当前连接人数为：=0 当前在线人： {}
+2020-02-27 21:41:21,698 [INFO] (StartupInfoLogger.java:50)- Starting BreastApplication on LAPTOP-562395R3 with PID 17304 (started by 爱哭的周小姐 in D:\软件应用\java IDE\IntelliJ IDEA 2019.1\项目\breastfeed\新建文件夹\server\bfbackend)
+2020-02-27 21:41:21,720 [DEBUG] (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2020-02-27 21:41:21,721 [INFO] (SpringApplication.java:648)- No active profile set, falling back to default profiles: default
+2020-02-27 21:41:25,052 [INFO] (StartupInfoLogger.java:59)- Started BreastApplication in 5.939 seconds (JVM running for 7.962)
+2020-02-27 21:41:39,062 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select user_id, age, credit_id, pregnant_type, pregnant_week, job, confinement_date, confinement_week, confinement_type, user_name, user_password, user_token from user where user_token = ? 
+2020-02-27 21:41:39,087 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 91a10017309a4fda9c12d412a9788574(String)
+2020-02-27 21:41:39,188 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-02-27 21:41:39,217 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, vedioURL, cover_url, category, description from vedio 
+2020-02-27 21:41:39,219 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-02-27 21:41:39,308 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 9
+2020-02-27 21:41:39,310 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, audioURL, category, cover_url from audio 
+2020-02-27 21:41:39,311 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-02-27 21:41:39,383 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 6
+2020-02-27 21:41:39,385 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, description, img_url, category from article 
+2020-02-27 21:41:39,385 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-02-27 21:41:39,466 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 20
+2020-02-27 21:41:42,566 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, user_name, name, consult_cost, license_number from doctor 
+2020-02-27 21:41:42,567 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-02-27 21:41:42,658 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 3
+2020-02-27 21:41:46,845 [INFO] (WebSocketController.java:92)- [WebSocket] 连接成功，当前连接人数:1
+2020-02-27 21:41:46,847 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, from_user_id, to_user_id, message_type, message_content, time from wechat_message_item where from_user_id = ? and to_user_id = ? or from_user_id = ? and to_user_id = ? 
+2020-02-27 21:41:46,848 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 111(Integer), 1(Integer), 1(Integer), 111(Integer)
+2020-02-27 21:41:47,011 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 6
+2020-02-27 21:41:47,011 [INFO] (WebSocketController.java:103)-  === 用户 111和用户 1的聊天记录：[WeChatMessageItem{id=1, fromUserId=1, toUserId=111, messageType=0, messageContent='小明很有力量', time=Sun Feb 09 22:16:46 CST 2020}, WeChatMessageItem{id=2, fromUserId=1, toUserId=111, messageType=0, messageContent='一起奋斗出一片新天地', time=Sun Feb 09 22:16:47 CST 2020}, WeChatMessageItem{id=3, fromUserId=111, toUserId=1, messageType=0, messageContent='团结互助才是力量', time=Sun Feb 09 22:16:47 CST 2020}, WeChatMessageItem{id=5, fromUserId=1, toUserId=111, messageType=0, messageContent='五十六个民族五十六朵花', time=Sun Feb 09 22:15:46 CST 2020}, WeChatMessageItem{id=6, fromUserId=111, toUserId=1, messageType=0, messageContent='中国是个大家庭', time=null}, WeChatMessageItem{id=37, fromUserId=1, toUserId=111, messageType=3, messageContent='[{"answerTemplate":"12465","consultId":1,"questionKey":"母乳喂养的好处"},{"answerTemplate":"fghgfd","consultId":5,"questionKey":"母乳喂养的正确姿势姿势"},{"answerTemplate":"534534","consultId":27,"questionKey":"乳头凹陷怎么办"}]', time=Wed Feb 12 11:16:32 CST 2020}]
+2020-02-27 21:41:47,106 [DEBUG] (WebSocketController.java:209)- ===  用户消息成功 消息数据：[{"fromUserId":1,"id":1,"messageContent":"小明很有力量","messageType":0,"time":1581257806000,"toUserId":111},{"fromUserId":1,"id":2,"messageContent":"一起奋斗出一片新天地","messageType":0,"time":1581257807000,"toUserId":111},{"fromUserId":111,"id":3,"messageContent":"团结互助才是力量","messageType":0,"time":1581257807000,"toUserId":1},{"fromUserId":1,"id":5,"messageContent":"五十六个民族五十六朵花","messageType":0,"time":1581257746000,"toUserId":111},{"fromUserId":111,"id":6,"messageContent":"中国是个大家庭","messageType":0,"toUserId":1},{"fromUserId":1,"id":37,"messageContent":"[{\"answerTemplate\":\"12465\",\"consultId\":1,\"questionKey\":\"母乳喂养的好处\"},{\"answerTemplate\":\"fghgfd\",\"consultId\":5,\"questionKey\":\"母乳喂养的正确姿势姿势\"},{\"answerTemplate\":\"534534\",\"consultId\":27,\"questionKey\":\"乳头凹陷怎么办\"}]","messageType":3,"time":1581477392000,"toUserId":111}] ===
+2020-02-27 21:43:35,920 [INFO] (WebSocketController.java:112)- [WebSocket] 退出成功，当前连接人数为：=0 当前在线人： {}
+2020-02-27 21:43:38,034 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select user_id, age, credit_id, pregnant_type, pregnant_week, job, confinement_date, confinement_week, confinement_type, user_name, user_password, user_token from user where user_token = ? 
+2020-02-27 21:43:38,063 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 91a10017309a4fda9c12d412a9788574(String)
+2020-02-27 21:43:38,145 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-02-27 21:43:38,209 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, description, img_url, category from article 
+2020-02-27 21:43:38,209 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-02-27 21:43:38,294 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, audioURL, category, cover_url from audio 
+2020-02-27 21:43:38,295 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-02-27 21:43:38,296 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 20
+2020-02-27 21:43:38,304 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, vedioURL, cover_url, category, description from vedio 
+2020-02-27 21:43:38,305 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-02-27 21:43:38,373 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 6
+2020-02-27 21:43:38,394 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 9
+2020-02-27 21:43:42,520 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, user_name, name, consult_cost, license_number from doctor 
+2020-02-27 21:43:42,521 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-02-27 21:43:42,655 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 3
+2020-02-27 21:43:46,585 [INFO] (WebSocketController.java:92)- [WebSocket] 连接成功，当前连接人数:1
+2020-02-27 21:43:46,586 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, from_user_id, to_user_id, message_type, message_content, time from wechat_message_item where from_user_id = ? and to_user_id = ? or from_user_id = ? and to_user_id = ? 
+2020-02-27 21:43:46,586 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 111(Integer), 1(Integer), 1(Integer), 111(Integer)
+2020-02-27 21:43:46,741 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 6
+2020-02-27 21:43:46,741 [INFO] (WebSocketController.java:103)-  === 用户 111和用户 1的聊天记录：[WeChatMessageItem{id=1, fromUserId=1, toUserId=111, messageType=0, messageContent='小明很有力量', time=Sun Feb 09 22:16:46 CST 2020}, WeChatMessageItem{id=2, fromUserId=1, toUserId=111, messageType=0, messageContent='一起奋斗出一片新天地', time=Sun Feb 09 22:16:47 CST 2020}, WeChatMessageItem{id=3, fromUserId=111, toUserId=1, messageType=0, messageContent='团结互助才是力量', time=Sun Feb 09 22:16:47 CST 2020}, WeChatMessageItem{id=5, fromUserId=1, toUserId=111, messageType=0, messageContent='五十六个民族五十六朵花', time=Sun Feb 09 22:15:46 CST 2020}, WeChatMessageItem{id=6, fromUserId=111, toUserId=1, messageType=0, messageContent='中国是个大家庭', time=null}, WeChatMessageItem{id=37, fromUserId=1, toUserId=111, messageType=3, messageContent='[{"answerTemplate":"12465","consultId":1,"questionKey":"母乳喂养的好处"},{"answerTemplate":"fghgfd","consultId":5,"questionKey":"母乳喂养的正确姿势姿势"},{"answerTemplate":"534534","consultId":27,"questionKey":"乳头凹陷怎么办"}]', time=Wed Feb 12 11:16:32 CST 2020}]
+2020-02-27 21:43:46,742 [DEBUG] (WebSocketController.java:209)- ===  用户消息成功 消息数据：[{"fromUserId":1,"id":1,"messageContent":"小明很有力量","messageType":0,"time":1581257806000,"toUserId":111},{"fromUserId":1,"id":2,"messageContent":"一起奋斗出一片新天地","messageType":0,"time":1581257807000,"toUserId":111},{"fromUserId":111,"id":3,"messageContent":"团结互助才是力量","messageType":0,"time":1581257807000,"toUserId":1},{"fromUserId":1,"id":5,"messageContent":"五十六个民族五十六朵花","messageType":0,"time":1581257746000,"toUserId":111},{"fromUserId":111,"id":6,"messageContent":"中国是个大家庭","messageType":0,"toUserId":1},{"fromUserId":1,"id":37,"messageContent":"[{\"answerTemplate\":\"12465\",\"consultId\":1,\"questionKey\":\"母乳喂养的好处\"},{\"answerTemplate\":\"fghgfd\",\"consultId\":5,\"questionKey\":\"母乳喂养的正确姿势姿势\"},{\"answerTemplate\":\"534534\",\"consultId\":27,\"questionKey\":\"乳头凹陷怎么办\"}]","messageType":3,"time":1581477392000,"toUserId":111}] ===
+2020-02-27 21:52:31,692 [INFO] (WebSocketController.java:112)- [WebSocket] 退出成功，当前连接人数为：=0 当前在线人： {}
+2020-02-27 21:52:33,603 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select user_id, age, credit_id, pregnant_type, pregnant_week, job, confinement_date, confinement_week, confinement_type, user_name, user_password, user_token from user where user_token = ? 
+2020-02-27 21:52:33,604 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 91a10017309a4fda9c12d412a9788574(String)
+2020-02-27 21:52:33,681 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-02-27 21:52:41,899 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select user_id, age, credit_id, pregnant_type, pregnant_week, job, confinement_date, confinement_week, confinement_type, user_name, user_password, user_token from user where user_token = ? 
+2020-02-27 21:52:41,900 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 91a10017309a4fda9c12d412a9788574(String)
+2020-02-27 21:52:42,057 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-02-27 21:52:42,216 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, description, img_url, category from article 
+2020-02-27 21:52:42,216 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-02-27 21:52:42,302 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 20
+2020-02-27 21:52:42,304 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, vedioURL, cover_url, category, description from vedio 
+2020-02-27 21:52:42,305 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-02-27 21:52:42,306 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, audioURL, category, cover_url from audio 
+2020-02-27 21:52:42,307 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-02-27 21:52:42,386 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 9
+2020-02-27 21:52:42,390 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 6
+2020-02-27 21:52:47,406 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, user_name, name, consult_cost, license_number from doctor 
+2020-02-27 21:52:47,406 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-02-27 21:52:47,486 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 3
+2020-02-27 21:52:53,346 [INFO] (WebSocketController.java:92)- [WebSocket] 连接成功，当前连接人数:1
+2020-02-27 21:52:53,347 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, from_user_id, to_user_id, message_type, message_content, time from wechat_message_item where from_user_id = ? and to_user_id = ? or from_user_id = ? and to_user_id = ? 
+2020-02-27 21:52:53,347 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 111(Integer), 1(Integer), 1(Integer), 111(Integer)
+2020-02-27 21:52:53,428 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 6
+2020-02-27 21:52:53,429 [INFO] (WebSocketController.java:103)-  === 用户 111和用户 1的聊天记录：[WeChatMessageItem{id=1, fromUserId=1, toUserId=111, messageType=0, messageContent='小明很有力量', time=Sun Feb 09 22:16:46 CST 2020}, WeChatMessageItem{id=2, fromUserId=1, toUserId=111, messageType=0, messageContent='一起奋斗出一片新天地', time=Sun Feb 09 22:16:47 CST 2020}, WeChatMessageItem{id=3, fromUserId=111, toUserId=1, messageType=0, messageContent='团结互助才是力量', time=Sun Feb 09 22:16:47 CST 2020}, WeChatMessageItem{id=5, fromUserId=1, toUserId=111, messageType=0, messageContent='五十六个民族五十六朵花', time=Sun Feb 09 22:15:46 CST 2020}, WeChatMessageItem{id=6, fromUserId=111, toUserId=1, messageType=0, messageContent='中国是个大家庭', time=null}, WeChatMessageItem{id=37, fromUserId=1, toUserId=111, messageType=3, messageContent='[{"answerTemplate":"12465","consultId":1,"questionKey":"母乳喂养的好处"},{"answerTemplate":"fghgfd","consultId":5,"questionKey":"母乳喂养的正确姿势姿势"},{"answerTemplate":"534534","consultId":27,"questionKey":"乳头凹陷怎么办"}]', time=Wed Feb 12 11:16:32 CST 2020}]
+2020-02-27 21:52:53,430 [DEBUG] (WebSocketController.java:209)- ===  用户消息成功 消息数据：[{"fromUserId":1,"id":1,"messageContent":"小明很有力量","messageType":0,"time":1581257806000,"toUserId":111},{"fromUserId":1,"id":2,"messageContent":"一起奋斗出一片新天地","messageType":0,"time":1581257807000,"toUserId":111},{"fromUserId":111,"id":3,"messageContent":"团结互助才是力量","messageType":0,"time":1581257807000,"toUserId":1},{"fromUserId":1,"id":5,"messageContent":"五十六个民族五十六朵花","messageType":0,"time":1581257746000,"toUserId":111},{"fromUserId":111,"id":6,"messageContent":"中国是个大家庭","messageType":0,"toUserId":1},{"fromUserId":1,"id":37,"messageContent":"[{\"answerTemplate\":\"12465\",\"consultId\":1,\"questionKey\":\"母乳喂养的好处\"},{\"answerTemplate\":\"fghgfd\",\"consultId\":5,\"questionKey\":\"母乳喂养的正确姿势姿势\"},{\"answerTemplate\":\"534534\",\"consultId\":27,\"questionKey\":\"乳头凹陷怎么办\"}]","messageType":3,"time":1581477392000,"toUserId":111}] ===
+2020-02-27 21:55:56,146 [INFO] (WebSocketController.java:112)- [WebSocket] 退出成功，当前连接人数为：=0 当前在线人： {}
+2020-02-27 21:55:58,208 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select user_id, age, credit_id, pregnant_type, pregnant_week, job, confinement_date, confinement_week, confinement_type, user_name, user_password, user_token from user where user_token = ? 
+2020-02-27 21:55:58,209 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 91a10017309a4fda9c12d412a9788574(String)
+2020-02-27 21:55:58,283 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-02-27 21:55:58,308 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, description, img_url, category from article 
+2020-02-27 21:55:58,309 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-02-27 21:55:58,390 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, audioURL, category, cover_url from audio 
+2020-02-27 21:55:58,391 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-02-27 21:55:58,391 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 20
+2020-02-27 21:55:58,395 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, vedioURL, cover_url, category, description from vedio 
+2020-02-27 21:55:58,396 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-02-27 21:55:58,470 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 6
+2020-02-27 21:55:58,486 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 9
+2020-02-27 21:56:05,792 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, user_name, name, consult_cost, license_number from doctor 
+2020-02-27 21:56:05,792 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-02-27 21:56:05,945 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 3
+2020-02-27 21:56:10,332 [INFO] (WebSocketController.java:92)- [WebSocket] 连接成功，当前连接人数:1
+2020-02-27 21:56:10,332 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, from_user_id, to_user_id, message_type, message_content, time from wechat_message_item where from_user_id = ? and to_user_id = ? or from_user_id = ? and to_user_id = ? 
+2020-02-27 21:56:10,333 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 111(Integer), 1(Integer), 1(Integer), 111(Integer)
+2020-02-27 21:56:10,453 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 6
+2020-02-27 21:56:10,453 [INFO] (WebSocketController.java:103)-  === 用户 111和用户 1的聊天记录：[WeChatMessageItem{id=1, fromUserId=1, toUserId=111, messageType=0, messageContent='小明很有力量', time=Sun Feb 09 22:16:46 CST 2020}, WeChatMessageItem{id=2, fromUserId=1, toUserId=111, messageType=0, messageContent='一起奋斗出一片新天地', time=Sun Feb 09 22:16:47 CST 2020}, WeChatMessageItem{id=3, fromUserId=111, toUserId=1, messageType=0, messageContent='团结互助才是力量', time=Sun Feb 09 22:16:47 CST 2020}, WeChatMessageItem{id=5, fromUserId=1, toUserId=111, messageType=0, messageContent='五十六个民族五十六朵花', time=Sun Feb 09 22:15:46 CST 2020}, WeChatMessageItem{id=6, fromUserId=111, toUserId=1, messageType=0, messageContent='中国是个大家庭', time=null}, WeChatMessageItem{id=37, fromUserId=1, toUserId=111, messageType=3, messageContent='[{"answerTemplate":"12465","consultId":1,"questionKey":"母乳喂养的好处"},{"answerTemplate":"fghgfd","consultId":5,"questionKey":"母乳喂养的正确姿势姿势"},{"answerTemplate":"534534","consultId":27,"questionKey":"乳头凹陷怎么办"}]', time=Wed Feb 12 11:16:32 CST 2020}]
+2020-02-27 21:56:10,454 [DEBUG] (WebSocketController.java:209)- ===  用户消息成功 消息数据：[{"fromUserId":1,"id":1,"messageContent":"小明很有力量","messageType":0,"time":1581257806000,"toUserId":111},{"fromUserId":1,"id":2,"messageContent":"一起奋斗出一片新天地","messageType":0,"time":1581257807000,"toUserId":111},{"fromUserId":111,"id":3,"messageContent":"团结互助才是力量","messageType":0,"time":1581257807000,"toUserId":1},{"fromUserId":1,"id":5,"messageContent":"五十六个民族五十六朵花","messageType":0,"time":1581257746000,"toUserId":111},{"fromUserId":111,"id":6,"messageContent":"中国是个大家庭","messageType":0,"toUserId":1},{"fromUserId":1,"id":37,"messageContent":"[{\"answerTemplate\":\"12465\",\"consultId\":1,\"questionKey\":\"母乳喂养的好处\"},{\"answerTemplate\":\"fghgfd\",\"consultId\":5,\"questionKey\":\"母乳喂养的正确姿势姿势\"},{\"answerTemplate\":\"534534\",\"consultId\":27,\"questionKey\":\"乳头凹陷怎么办\"}]","messageType":3,"time":1581477392000,"toUserId":111}] ===
+2020-02-27 21:56:17,618 [INFO] (WebSocketController.java:112)- [WebSocket] 退出成功，当前连接人数为：=0 当前在线人： {}
+2020-02-27 21:56:19,765 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select user_id, age, credit_id, pregnant_type, pregnant_week, job, confinement_date, confinement_week, confinement_type, user_name, user_password, user_token from user where user_token = ? 
+2020-02-27 21:56:19,766 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 91a10017309a4fda9c12d412a9788574(String)
+2020-02-27 21:56:19,891 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-02-27 21:56:20,067 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, description, img_url, category from article 
+2020-02-27 21:56:20,068 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-02-27 21:56:20,068 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, audioURL, category, cover_url from audio 
+2020-02-27 21:56:20,069 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-02-27 21:56:20,069 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, vedioURL, cover_url, category, description from vedio 
+2020-02-27 21:56:20,069 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-02-27 21:56:20,166 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 6
+2020-02-27 21:56:20,177 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 20
+2020-02-27 21:56:20,181 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 9
+2020-02-27 21:56:27,510 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, user_name, name, consult_cost, license_number from doctor 
+2020-02-27 21:56:27,512 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-02-27 21:56:27,621 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 3
+2020-02-27 21:56:31,837 [INFO] (WebSocketController.java:92)- [WebSocket] 连接成功，当前连接人数:1
+2020-02-27 21:56:31,837 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, from_user_id, to_user_id, message_type, message_content, time from wechat_message_item where from_user_id = ? and to_user_id = ? or from_user_id = ? and to_user_id = ? 
+2020-02-27 21:56:31,838 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 111(Integer), 1(Integer), 1(Integer), 111(Integer)
+2020-02-27 21:56:31,949 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 6
+2020-02-27 21:56:31,949 [INFO] (WebSocketController.java:103)-  === 用户 111和用户 1的聊天记录：[WeChatMessageItem{id=1, fromUserId=1, toUserId=111, messageType=0, messageContent='小明很有力量', time=Sun Feb 09 22:16:46 CST 2020}, WeChatMessageItem{id=2, fromUserId=1, toUserId=111, messageType=0, messageContent='一起奋斗出一片新天地', time=Sun Feb 09 22:16:47 CST 2020}, WeChatMessageItem{id=3, fromUserId=111, toUserId=1, messageType=0, messageContent='团结互助才是力量', time=Sun Feb 09 22:16:47 CST 2020}, WeChatMessageItem{id=5, fromUserId=1, toUserId=111, messageType=0, messageContent='五十六个民族五十六朵花', time=Sun Feb 09 22:15:46 CST 2020}, WeChatMessageItem{id=6, fromUserId=111, toUserId=1, messageType=0, messageContent='中国是个大家庭', time=null}, WeChatMessageItem{id=37, fromUserId=1, toUserId=111, messageType=3, messageContent='[{"answerTemplate":"12465","consultId":1,"questionKey":"母乳喂养的好处"},{"answerTemplate":"fghgfd","consultId":5,"questionKey":"母乳喂养的正确姿势姿势"},{"answerTemplate":"534534","consultId":27,"questionKey":"乳头凹陷怎么办"}]', time=Wed Feb 12 11:16:32 CST 2020}]
+2020-02-27 21:56:31,950 [DEBUG] (WebSocketController.java:209)- ===  用户消息成功 消息数据：[{"fromUserId":1,"id":1,"messageContent":"小明很有力量","messageType":0,"time":1581257806000,"toUserId":111},{"fromUserId":1,"id":2,"messageContent":"一起奋斗出一片新天地","messageType":0,"time":1581257807000,"toUserId":111},{"fromUserId":111,"id":3,"messageContent":"团结互助才是力量","messageType":0,"time":1581257807000,"toUserId":1},{"fromUserId":1,"id":5,"messageContent":"五十六个民族五十六朵花","messageType":0,"time":1581257746000,"toUserId":111},{"fromUserId":111,"id":6,"messageContent":"中国是个大家庭","messageType":0,"toUserId":1},{"fromUserId":1,"id":37,"messageContent":"[{\"answerTemplate\":\"12465\",\"consultId\":1,\"questionKey\":\"母乳喂养的好处\"},{\"answerTemplate\":\"fghgfd\",\"consultId\":5,\"questionKey\":\"母乳喂养的正确姿势姿势\"},{\"answerTemplate\":\"534534\",\"consultId\":27,\"questionKey\":\"乳头凹陷怎么办\"}]","messageType":3,"time":1581477392000,"toUserId":111}] ===
+2020-02-27 22:00:20,787 [INFO] (WebSocketController.java:112)- [WebSocket] 退出成功，当前连接人数为：=0 当前在线人： {}
+2020-02-27 22:00:22,567 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select user_id, age, credit_id, pregnant_type, pregnant_week, job, confinement_date, confinement_week, confinement_type, user_name, user_password, user_token from user where user_token = ? 
+2020-02-27 22:00:22,568 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 91a10017309a4fda9c12d412a9788574(String)
+2020-02-27 22:00:22,643 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-02-27 22:00:23,378 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, description, img_url, category from article 
+2020-02-27 22:00:23,379 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-02-27 22:00:23,612 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 20
+2020-02-27 22:00:23,617 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, audioURL, category, cover_url from audio 
+2020-02-27 22:00:23,617 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-02-27 22:00:23,619 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, vedioURL, cover_url, category, description from vedio 
+2020-02-27 22:00:23,619 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-02-27 22:00:23,693 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 6
+2020-02-27 22:00:23,704 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 9
+2020-02-27 22:00:28,111 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, user_name, name, consult_cost, license_number from doctor 
+2020-02-27 22:00:28,112 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-02-27 22:00:28,184 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 3
+2020-02-27 22:00:32,111 [INFO] (WebSocketController.java:92)- [WebSocket] 连接成功，当前连接人数:1
+2020-02-27 22:00:32,111 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, from_user_id, to_user_id, message_type, message_content, time from wechat_message_item where from_user_id = ? and to_user_id = ? or from_user_id = ? and to_user_id = ? 
+2020-02-27 22:00:32,112 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 111(Integer), 1(Integer), 1(Integer), 111(Integer)
+2020-02-27 22:00:32,204 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 6
+2020-02-27 22:00:32,205 [INFO] (WebSocketController.java:103)-  === 用户 111和用户 1的聊天记录：[WeChatMessageItem{id=1, fromUserId=1, toUserId=111, messageType=0, messageContent='小明很有力量', time=Sun Feb 09 22:16:46 CST 2020}, WeChatMessageItem{id=2, fromUserId=1, toUserId=111, messageType=0, messageContent='一起奋斗出一片新天地', time=Sun Feb 09 22:16:47 CST 2020}, WeChatMessageItem{id=3, fromUserId=111, toUserId=1, messageType=0, messageContent='团结互助才是力量', time=Sun Feb 09 22:16:47 CST 2020}, WeChatMessageItem{id=5, fromUserId=1, toUserId=111, messageType=0, messageContent='五十六个民族五十六朵花', time=Sun Feb 09 22:15:46 CST 2020}, WeChatMessageItem{id=6, fromUserId=111, toUserId=1, messageType=0, messageContent='中国是个大家庭', time=null}, WeChatMessageItem{id=37, fromUserId=1, toUserId=111, messageType=3, messageContent='[{"answerTemplate":"12465","consultId":1,"questionKey":"母乳喂养的好处"},{"answerTemplate":"fghgfd","consultId":5,"questionKey":"母乳喂养的正确姿势姿势"},{"answerTemplate":"534534","consultId":27,"questionKey":"乳头凹陷怎么办"}]', time=Wed Feb 12 11:16:32 CST 2020}]
+2020-02-27 22:00:32,206 [DEBUG] (WebSocketController.java:209)- ===  用户消息成功 消息数据：[{"fromUserId":1,"id":1,"messageContent":"小明很有力量","messageType":0,"time":1581257806000,"toUserId":111},{"fromUserId":1,"id":2,"messageContent":"一起奋斗出一片新天地","messageType":0,"time":1581257807000,"toUserId":111},{"fromUserId":111,"id":3,"messageContent":"团结互助才是力量","messageType":0,"time":1581257807000,"toUserId":1},{"fromUserId":1,"id":5,"messageContent":"五十六个民族五十六朵花","messageType":0,"time":1581257746000,"toUserId":111},{"fromUserId":111,"id":6,"messageContent":"中国是个大家庭","messageType":0,"toUserId":1},{"fromUserId":1,"id":37,"messageContent":"[{\"answerTemplate\":\"12465\",\"consultId\":1,\"questionKey\":\"母乳喂养的好处\"},{\"answerTemplate\":\"fghgfd\",\"consultId\":5,\"questionKey\":\"母乳喂养的正确姿势姿势\"},{\"answerTemplate\":\"534534\",\"consultId\":27,\"questionKey\":\"乳头凹陷怎么办\"}]","messageType":3,"time":1581477392000,"toUserId":111}] ===
+2020-02-27 22:07:59,802 [INFO] (WebSocketController.java:112)- [WebSocket] 退出成功，当前连接人数为：=0 当前在线人： {}
+2020-02-27 22:08:01,720 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select user_id, age, credit_id, pregnant_type, pregnant_week, job, confinement_date, confinement_week, confinement_type, user_name, user_password, user_token from user where user_token = ? 
+2020-02-27 22:08:01,720 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 91a10017309a4fda9c12d412a9788574(String)
+2020-02-27 22:08:01,796 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-02-27 22:08:03,600 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, description, img_url, category from article 
+2020-02-27 22:08:03,601 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-02-27 22:08:03,781 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 20
+2020-02-27 22:08:03,785 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, audioURL, category, cover_url from audio 
+2020-02-27 22:08:03,786 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-02-27 22:08:03,787 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, vedioURL, cover_url, category, description from vedio 
+2020-02-27 22:08:03,787 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-02-27 22:08:03,860 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 6
+2020-02-27 22:08:03,862 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 9
+2020-02-27 22:08:07,965 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, user_name, name, consult_cost, license_number from doctor 
+2020-02-27 22:08:07,966 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-02-27 22:08:08,121 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 3
+2020-02-27 22:08:12,048 [INFO] (WebSocketController.java:92)- [WebSocket] 连接成功，当前连接人数:1
+2020-02-27 22:08:12,048 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, from_user_id, to_user_id, message_type, message_content, time from wechat_message_item where from_user_id = ? and to_user_id = ? or from_user_id = ? and to_user_id = ? 
+2020-02-27 22:08:12,048 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 111(Integer), 1(Integer), 1(Integer), 111(Integer)
+2020-02-27 22:08:12,181 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 6
+2020-02-27 22:08:12,181 [INFO] (WebSocketController.java:103)-  === 用户 111和用户 1的聊天记录：[WeChatMessageItem{id=1, fromUserId=1, toUserId=111, messageType=0, messageContent='小明很有力量', time=Sun Feb 09 22:16:46 CST 2020}, WeChatMessageItem{id=2, fromUserId=1, toUserId=111, messageType=0, messageContent='一起奋斗出一片新天地', time=Sun Feb 09 22:16:47 CST 2020}, WeChatMessageItem{id=3, fromUserId=111, toUserId=1, messageType=0, messageContent='团结互助才是力量', time=Sun Feb 09 22:16:47 CST 2020}, WeChatMessageItem{id=5, fromUserId=1, toUserId=111, messageType=0, messageContent='五十六个民族五十六朵花', time=Sun Feb 09 22:15:46 CST 2020}, WeChatMessageItem{id=6, fromUserId=111, toUserId=1, messageType=0, messageContent='中国是个大家庭', time=null}, WeChatMessageItem{id=37, fromUserId=1, toUserId=111, messageType=3, messageContent='[{"answerTemplate":"12465","consultId":1,"questionKey":"母乳喂养的好处"},{"answerTemplate":"fghgfd","consultId":5,"questionKey":"母乳喂养的正确姿势姿势"},{"answerTemplate":"534534","consultId":27,"questionKey":"乳头凹陷怎么办"}]', time=Wed Feb 12 11:16:32 CST 2020}]
+2020-02-27 22:08:12,182 [DEBUG] (WebSocketController.java:209)- ===  用户消息成功 消息数据：[{"fromUserId":1,"id":1,"messageContent":"小明很有力量","messageType":0,"time":1581257806000,"toUserId":111},{"fromUserId":1,"id":2,"messageContent":"一起奋斗出一片新天地","messageType":0,"time":1581257807000,"toUserId":111},{"fromUserId":111,"id":3,"messageContent":"团结互助才是力量","messageType":0,"time":1581257807000,"toUserId":1},{"fromUserId":1,"id":5,"messageContent":"五十六个民族五十六朵花","messageType":0,"time":1581257746000,"toUserId":111},{"fromUserId":111,"id":6,"messageContent":"中国是个大家庭","messageType":0,"toUserId":1},{"fromUserId":1,"id":37,"messageContent":"[{\"answerTemplate\":\"12465\",\"consultId\":1,\"questionKey\":\"母乳喂养的好处\"},{\"answerTemplate\":\"fghgfd\",\"consultId\":5,\"questionKey\":\"母乳喂养的正确姿势姿势\"},{\"answerTemplate\":\"534534\",\"consultId\":27,\"questionKey\":\"乳头凹陷怎么办\"}]","messageType":3,"time":1581477392000,"toUserId":111}] ===
+2020-02-27 22:10:27,833 [INFO] (WebSocketController.java:112)- [WebSocket] 退出成功，当前连接人数为：=0 当前在线人： {}
+2020-02-27 22:10:29,932 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select user_id, age, credit_id, pregnant_type, pregnant_week, job, confinement_date, confinement_week, confinement_type, user_name, user_password, user_token from user where user_token = ? 
+2020-02-27 22:10:29,932 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 91a10017309a4fda9c12d412a9788574(String)
+2020-02-27 22:10:30,000 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-02-27 22:10:30,623 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, description, img_url, category from article 
+2020-02-27 22:10:30,624 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-02-27 22:10:31,085 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, audioURL, category, cover_url from audio 
+2020-02-27 22:10:31,085 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-02-27 22:10:31,086 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, vedioURL, cover_url, category, description from vedio 
+2020-02-27 22:10:31,087 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-02-27 22:10:31,091 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 20
+2020-02-27 22:10:31,246 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 6
+2020-02-27 22:10:31,246 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 9
+2020-02-27 22:10:35,801 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, user_name, name, consult_cost, license_number from doctor 
+2020-02-27 22:10:35,801 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-02-27 22:10:35,907 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 3
+2020-02-27 22:10:39,859 [INFO] (WebSocketController.java:92)- [WebSocket] 连接成功，当前连接人数:1
+2020-02-27 22:10:39,860 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, from_user_id, to_user_id, message_type, message_content, time from wechat_message_item where from_user_id = ? and to_user_id = ? or from_user_id = ? and to_user_id = ? 
+2020-02-27 22:10:39,860 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 111(Integer), 1(Integer), 1(Integer), 111(Integer)
+2020-02-27 22:10:40,017 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 6
+2020-02-27 22:10:40,017 [INFO] (WebSocketController.java:103)-  === 用户 111和用户 1的聊天记录：[WeChatMessageItem{id=1, fromUserId=1, toUserId=111, messageType=0, messageContent='小明很有力量', time=Sun Feb 09 22:16:46 CST 2020}, WeChatMessageItem{id=2, fromUserId=1, toUserId=111, messageType=0, messageContent='一起奋斗出一片新天地', time=Sun Feb 09 22:16:47 CST 2020}, WeChatMessageItem{id=3, fromUserId=111, toUserId=1, messageType=0, messageContent='团结互助才是力量', time=Sun Feb 09 22:16:47 CST 2020}, WeChatMessageItem{id=5, fromUserId=1, toUserId=111, messageType=0, messageContent='五十六个民族五十六朵花', time=Sun Feb 09 22:15:46 CST 2020}, WeChatMessageItem{id=6, fromUserId=111, toUserId=1, messageType=0, messageContent='中国是个大家庭', time=null}, WeChatMessageItem{id=37, fromUserId=1, toUserId=111, messageType=3, messageContent='[{"answerTemplate":"12465","consultId":1,"questionKey":"母乳喂养的好处"},{"answerTemplate":"fghgfd","consultId":5,"questionKey":"母乳喂养的正确姿势姿势"},{"answerTemplate":"534534","consultId":27,"questionKey":"乳头凹陷怎么办"}]', time=Wed Feb 12 11:16:32 CST 2020}]
+2020-02-27 22:10:40,019 [DEBUG] (WebSocketController.java:209)- ===  用户消息成功 消息数据：[{"fromUserId":1,"id":1,"messageContent":"小明很有力量","messageType":0,"time":1581257806000,"toUserId":111},{"fromUserId":1,"id":2,"messageContent":"一起奋斗出一片新天地","messageType":0,"time":1581257807000,"toUserId":111},{"fromUserId":111,"id":3,"messageContent":"团结互助才是力量","messageType":0,"time":1581257807000,"toUserId":1},{"fromUserId":1,"id":5,"messageContent":"五十六个民族五十六朵花","messageType":0,"time":1581257746000,"toUserId":111},{"fromUserId":111,"id":6,"messageContent":"中国是个大家庭","messageType":0,"toUserId":1},{"fromUserId":1,"id":37,"messageContent":"[{\"answerTemplate\":\"12465\",\"consultId\":1,\"questionKey\":\"母乳喂养的好处\"},{\"answerTemplate\":\"fghgfd\",\"consultId\":5,\"questionKey\":\"母乳喂养的正确姿势姿势\"},{\"answerTemplate\":\"534534\",\"consultId\":27,\"questionKey\":\"乳头凹陷怎么办\"}]","messageType":3,"time":1581477392000,"toUserId":111}] ===
+2020-02-27 22:10:48,368 [INFO] (WebSocketController.java:112)- [WebSocket] 退出成功，当前连接人数为：=0 当前在线人： {}
+2020-02-27 22:10:50,399 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select user_id, age, credit_id, pregnant_type, pregnant_week, job, confinement_date, confinement_week, confinement_type, user_name, user_password, user_token from user where user_token = ? 
+2020-02-27 22:10:50,400 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 91a10017309a4fda9c12d412a9788574(String)
+2020-02-27 22:10:50,506 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-02-27 22:10:50,787 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, description, img_url, category from article 
+2020-02-27 22:10:50,788 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-02-27 22:10:50,796 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, audioURL, category, cover_url from audio 
+2020-02-27 22:10:50,797 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-02-27 22:10:50,797 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, vedioURL, cover_url, category, description from vedio 
+2020-02-27 22:10:50,798 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-02-27 22:10:50,909 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 20
+2020-02-27 22:10:50,921 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 6
+2020-02-27 22:10:50,923 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 9
+2020-02-27 22:10:53,645 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select user_id, age, credit_id, pregnant_type, pregnant_week, job, confinement_date, confinement_week, confinement_type, user_name, user_password, user_token from user where user_token = ? 
+2020-02-27 22:10:53,646 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 91a10017309a4fda9c12d412a9788574(String)
+2020-02-27 22:10:53,761 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-02-27 22:10:53,906 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, description, img_url, category from article 
+2020-02-27 22:10:53,907 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-02-27 22:10:53,907 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, audioURL, category, cover_url from audio 
+2020-02-27 22:10:53,908 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-02-27 22:10:53,909 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, vedioURL, cover_url, category, description from vedio 
+2020-02-27 22:10:53,910 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-02-27 22:10:53,974 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 20
+2020-02-27 22:10:53,976 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 9
+2020-02-27 22:10:53,977 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 6
+2020-02-27 22:11:00,121 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, user_name, name, consult_cost, license_number from doctor 
+2020-02-27 22:11:00,122 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-02-27 22:11:00,280 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 3
+2020-02-27 22:11:06,133 [INFO] (WebSocketController.java:92)- [WebSocket] 连接成功，当前连接人数:1
+2020-02-27 22:11:06,134 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, from_user_id, to_user_id, message_type, message_content, time from wechat_message_item where from_user_id = ? and to_user_id = ? or from_user_id = ? and to_user_id = ? 
+2020-02-27 22:11:06,134 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 111(Integer), 1(Integer), 1(Integer), 111(Integer)
+2020-02-27 22:11:06,241 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 6
+2020-02-27 22:11:06,241 [INFO] (WebSocketController.java:103)-  === 用户 111和用户 1的聊天记录：[WeChatMessageItem{id=1, fromUserId=1, toUserId=111, messageType=0, messageContent='小明很有力量', time=Sun Feb 09 22:16:46 CST 2020}, WeChatMessageItem{id=2, fromUserId=1, toUserId=111, messageType=0, messageContent='一起奋斗出一片新天地', time=Sun Feb 09 22:16:47 CST 2020}, WeChatMessageItem{id=3, fromUserId=111, toUserId=1, messageType=0, messageContent='团结互助才是力量', time=Sun Feb 09 22:16:47 CST 2020}, WeChatMessageItem{id=5, fromUserId=1, toUserId=111, messageType=0, messageContent='五十六个民族五十六朵花', time=Sun Feb 09 22:15:46 CST 2020}, WeChatMessageItem{id=6, fromUserId=111, toUserId=1, messageType=0, messageContent='中国是个大家庭', time=null}, WeChatMessageItem{id=37, fromUserId=1, toUserId=111, messageType=3, messageContent='[{"answerTemplate":"12465","consultId":1,"questionKey":"母乳喂养的好处"},{"answerTemplate":"fghgfd","consultId":5,"questionKey":"母乳喂养的正确姿势姿势"},{"answerTemplate":"534534","consultId":27,"questionKey":"乳头凹陷怎么办"}]', time=Wed Feb 12 11:16:32 CST 2020}]
+2020-02-27 22:11:06,242 [DEBUG] (WebSocketController.java:209)- ===  用户消息成功 消息数据：[{"fromUserId":1,"id":1,"messageContent":"小明很有力量","messageType":0,"time":1581257806000,"toUserId":111},{"fromUserId":1,"id":2,"messageContent":"一起奋斗出一片新天地","messageType":0,"time":1581257807000,"toUserId":111},{"fromUserId":111,"id":3,"messageContent":"团结互助才是力量","messageType":0,"time":1581257807000,"toUserId":1},{"fromUserId":1,"id":5,"messageContent":"五十六个民族五十六朵花","messageType":0,"time":1581257746000,"toUserId":111},{"fromUserId":111,"id":6,"messageContent":"中国是个大家庭","messageType":0,"toUserId":1},{"fromUserId":1,"id":37,"messageContent":"[{\"answerTemplate\":\"12465\",\"consultId\":1,\"questionKey\":\"母乳喂养的好处\"},{\"answerTemplate\":\"fghgfd\",\"consultId\":5,\"questionKey\":\"母乳喂养的正确姿势姿势\"},{\"answerTemplate\":\"534534\",\"consultId\":27,\"questionKey\":\"乳头凹陷怎么办\"}]","messageType":3,"time":1581477392000,"toUserId":111}] ===
+2020-02-27 22:11:13,879 [INFO] (WebSocketController.java:112)- [WebSocket] 退出成功，当前连接人数为：=0 当前在线人： {}
+2020-02-27 22:11:15,452 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select user_id, age, credit_id, pregnant_type, pregnant_week, job, confinement_date, confinement_week, confinement_type, user_name, user_password, user_token from user where user_token = ? 
+2020-02-27 22:11:15,452 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 91a10017309a4fda9c12d412a9788574(String)
+2020-02-27 22:11:15,573 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-02-27 22:11:16,740 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, description, img_url, category from article 
+2020-02-27 22:11:16,741 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-02-27 22:11:16,741 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, audioURL, category, cover_url from audio 
+2020-02-27 22:11:16,742 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-02-27 22:11:16,742 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, vedioURL, cover_url, category, description from vedio 
+2020-02-27 22:11:16,743 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-02-27 22:11:16,906 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 6
+2020-02-27 22:11:16,908 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 20
+2020-02-27 22:11:16,909 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 9
+2020-02-27 22:11:31,271 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, user_name, name, consult_cost, license_number from doctor 
+2020-02-27 22:11:31,272 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-02-27 22:11:31,347 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 3
+2020-02-27 22:11:34,845 [INFO] (WebSocketController.java:92)- [WebSocket] 连接成功，当前连接人数:1
+2020-02-27 22:11:34,846 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, from_user_id, to_user_id, message_type, message_content, time from wechat_message_item where from_user_id = ? and to_user_id = ? or from_user_id = ? and to_user_id = ? 
+2020-02-27 22:11:34,846 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 111(Integer), 1(Integer), 1(Integer), 111(Integer)
+2020-02-27 22:11:35,017 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 6
+2020-02-27 22:11:35,017 [INFO] (WebSocketController.java:103)-  === 用户 111和用户 1的聊天记录：[WeChatMessageItem{id=1, fromUserId=1, toUserId=111, messageType=0, messageContent='小明很有力量', time=Sun Feb 09 22:16:46 CST 2020}, WeChatMessageItem{id=2, fromUserId=1, toUserId=111, messageType=0, messageContent='一起奋斗出一片新天地', time=Sun Feb 09 22:16:47 CST 2020}, WeChatMessageItem{id=3, fromUserId=111, toUserId=1, messageType=0, messageContent='团结互助才是力量', time=Sun Feb 09 22:16:47 CST 2020}, WeChatMessageItem{id=5, fromUserId=1, toUserId=111, messageType=0, messageContent='五十六个民族五十六朵花', time=Sun Feb 09 22:15:46 CST 2020}, WeChatMessageItem{id=6, fromUserId=111, toUserId=1, messageType=0, messageContent='中国是个大家庭', time=null}, WeChatMessageItem{id=37, fromUserId=1, toUserId=111, messageType=3, messageContent='[{"answerTemplate":"12465","consultId":1,"questionKey":"母乳喂养的好处"},{"answerTemplate":"fghgfd","consultId":5,"questionKey":"母乳喂养的正确姿势姿势"},{"answerTemplate":"534534","consultId":27,"questionKey":"乳头凹陷怎么办"}]', time=Wed Feb 12 11:16:32 CST 2020}]
+2020-02-27 22:11:35,018 [DEBUG] (WebSocketController.java:209)- ===  用户消息成功 消息数据：[{"fromUserId":1,"id":1,"messageContent":"小明很有力量","messageType":0,"time":1581257806000,"toUserId":111},{"fromUserId":1,"id":2,"messageContent":"一起奋斗出一片新天地","messageType":0,"time":1581257807000,"toUserId":111},{"fromUserId":111,"id":3,"messageContent":"团结互助才是力量","messageType":0,"time":1581257807000,"toUserId":1},{"fromUserId":1,"id":5,"messageContent":"五十六个民族五十六朵花","messageType":0,"time":1581257746000,"toUserId":111},{"fromUserId":111,"id":6,"messageContent":"中国是个大家庭","messageType":0,"toUserId":1},{"fromUserId":1,"id":37,"messageContent":"[{\"answerTemplate\":\"12465\",\"consultId\":1,\"questionKey\":\"母乳喂养的好处\"},{\"answerTemplate\":\"fghgfd\",\"consultId\":5,\"questionKey\":\"母乳喂养的正确姿势姿势\"},{\"answerTemplate\":\"534534\",\"consultId\":27,\"questionKey\":\"乳头凹陷怎么办\"}]","messageType":3,"time":1581477392000,"toUserId":111}] ===
+2020-02-27 22:11:40,601 [INFO] (WebSocketController.java:112)- [WebSocket] 退出成功，当前连接人数为：=0 当前在线人： {}
+2020-02-27 22:11:42,588 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select user_id, age, credit_id, pregnant_type, pregnant_week, job, confinement_date, confinement_week, confinement_type, user_name, user_password, user_token from user where user_token = ? 
+2020-02-27 22:11:42,588 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 91a10017309a4fda9c12d412a9788574(String)
+2020-02-27 22:11:42,747 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-02-27 22:11:42,879 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, description, img_url, category from article 
+2020-02-27 22:11:42,880 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-02-27 22:11:42,889 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, audioURL, category, cover_url from audio 
+2020-02-27 22:11:42,889 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, vedioURL, cover_url, category, description from vedio 
+2020-02-27 22:11:42,890 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-02-27 22:11:42,890 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-02-27 22:11:42,963 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 9
+2020-02-27 22:11:42,963 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 6
+2020-02-27 22:11:42,965 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 20
+2020-02-27 22:11:50,347 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, user_name, name, consult_cost, license_number from doctor 
+2020-02-27 22:11:50,348 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-02-27 22:11:50,520 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 3
+2020-02-27 22:11:54,943 [INFO] (WebSocketController.java:92)- [WebSocket] 连接成功，当前连接人数:1
+2020-02-27 22:11:54,944 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, from_user_id, to_user_id, message_type, message_content, time from wechat_message_item where from_user_id = ? and to_user_id = ? or from_user_id = ? and to_user_id = ? 
+2020-02-27 22:11:54,945 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 111(Integer), 1(Integer), 1(Integer), 111(Integer)
+2020-02-27 22:11:55,097 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 6
+2020-02-27 22:11:55,098 [INFO] (WebSocketController.java:103)-  === 用户 111和用户 1的聊天记录：[WeChatMessageItem{id=1, fromUserId=1, toUserId=111, messageType=0, messageContent='小明很有力量', time=Sun Feb 09 22:16:46 CST 2020}, WeChatMessageItem{id=2, fromUserId=1, toUserId=111, messageType=0, messageContent='一起奋斗出一片新天地', time=Sun Feb 09 22:16:47 CST 2020}, WeChatMessageItem{id=3, fromUserId=111, toUserId=1, messageType=0, messageContent='团结互助才是力量', time=Sun Feb 09 22:16:47 CST 2020}, WeChatMessageItem{id=5, fromUserId=1, toUserId=111, messageType=0, messageContent='五十六个民族五十六朵花', time=Sun Feb 09 22:15:46 CST 2020}, WeChatMessageItem{id=6, fromUserId=111, toUserId=1, messageType=0, messageContent='中国是个大家庭', time=null}, WeChatMessageItem{id=37, fromUserId=1, toUserId=111, messageType=3, messageContent='[{"answerTemplate":"12465","consultId":1,"questionKey":"母乳喂养的好处"},{"answerTemplate":"fghgfd","consultId":5,"questionKey":"母乳喂养的正确姿势姿势"},{"answerTemplate":"534534","consultId":27,"questionKey":"乳头凹陷怎么办"}]', time=Wed Feb 12 11:16:32 CST 2020}]
+2020-02-27 22:11:55,098 [DEBUG] (WebSocketController.java:209)- ===  用户消息成功 消息数据：[{"fromUserId":1,"id":1,"messageContent":"小明很有力量","messageType":0,"time":1581257806000,"toUserId":111},{"fromUserId":1,"id":2,"messageContent":"一起奋斗出一片新天地","messageType":0,"time":1581257807000,"toUserId":111},{"fromUserId":111,"id":3,"messageContent":"团结互助才是力量","messageType":0,"time":1581257807000,"toUserId":1},{"fromUserId":1,"id":5,"messageContent":"五十六个民族五十六朵花","messageType":0,"time":1581257746000,"toUserId":111},{"fromUserId":111,"id":6,"messageContent":"中国是个大家庭","messageType":0,"toUserId":1},{"fromUserId":1,"id":37,"messageContent":"[{\"answerTemplate\":\"12465\",\"consultId\":1,\"questionKey\":\"母乳喂养的好处\"},{\"answerTemplate\":\"fghgfd\",\"consultId\":5,\"questionKey\":\"母乳喂养的正确姿势姿势\"},{\"answerTemplate\":\"534534\",\"consultId\":27,\"questionKey\":\"乳头凹陷怎么办\"}]","messageType":3,"time":1581477392000,"toUserId":111}] ===
+2020-02-27 22:12:29,025 [INFO] (WebSocketController.java:112)- [WebSocket] 退出成功，当前连接人数为：=0 当前在线人： {}
+2020-02-27 22:12:30,949 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select user_id, age, credit_id, pregnant_type, pregnant_week, job, confinement_date, confinement_week, confinement_type, user_name, user_password, user_token from user where user_token = ? 
+2020-02-27 22:12:30,949 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 91a10017309a4fda9c12d412a9788574(String)
+2020-02-27 22:12:31,026 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-02-27 22:12:31,695 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, description, img_url, category from article 
+2020-02-27 22:12:31,696 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-02-27 22:12:31,696 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, audioURL, category, cover_url from audio 
+2020-02-27 22:12:31,696 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-02-27 22:12:31,697 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, vedioURL, cover_url, category, description from vedio 
+2020-02-27 22:12:31,697 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-02-27 22:12:31,866 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 9
+2020-02-27 22:12:31,868 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 6
+2020-02-27 22:12:31,868 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 20
+2020-02-27 22:12:36,472 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, user_name, name, consult_cost, license_number from doctor 
+2020-02-27 22:12:36,473 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-02-27 22:12:36,627 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 3
+2020-02-27 22:12:40,673 [INFO] (WebSocketController.java:92)- [WebSocket] 连接成功，当前连接人数:1
+2020-02-27 22:12:40,674 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, from_user_id, to_user_id, message_type, message_content, time from wechat_message_item where from_user_id = ? and to_user_id = ? or from_user_id = ? and to_user_id = ? 
+2020-02-27 22:12:40,675 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 111(Integer), 1(Integer), 1(Integer), 111(Integer)
+2020-02-27 22:12:40,788 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 6
+2020-02-27 22:12:40,788 [INFO] (WebSocketController.java:103)-  === 用户 111和用户 1的聊天记录：[WeChatMessageItem{id=1, fromUserId=1, toUserId=111, messageType=0, messageContent='小明很有力量', time=Sun Feb 09 22:16:46 CST 2020}, WeChatMessageItem{id=2, fromUserId=1, toUserId=111, messageType=0, messageContent='一起奋斗出一片新天地', time=Sun Feb 09 22:16:47 CST 2020}, WeChatMessageItem{id=3, fromUserId=111, toUserId=1, messageType=0, messageContent='团结互助才是力量', time=Sun Feb 09 22:16:47 CST 2020}, WeChatMessageItem{id=5, fromUserId=1, toUserId=111, messageType=0, messageContent='五十六个民族五十六朵花', time=Sun Feb 09 22:15:46 CST 2020}, WeChatMessageItem{id=6, fromUserId=111, toUserId=1, messageType=0, messageContent='中国是个大家庭', time=null}, WeChatMessageItem{id=37, fromUserId=1, toUserId=111, messageType=3, messageContent='[{"answerTemplate":"12465","consultId":1,"questionKey":"母乳喂养的好处"},{"answerTemplate":"fghgfd","consultId":5,"questionKey":"母乳喂养的正确姿势姿势"},{"answerTemplate":"534534","consultId":27,"questionKey":"乳头凹陷怎么办"}]', time=Wed Feb 12 11:16:32 CST 2020}]
+2020-02-27 22:12:40,789 [DEBUG] (WebSocketController.java:209)- ===  用户消息成功 消息数据：[{"fromUserId":1,"id":1,"messageContent":"小明很有力量","messageType":0,"time":1581257806000,"toUserId":111},{"fromUserId":1,"id":2,"messageContent":"一起奋斗出一片新天地","messageType":0,"time":1581257807000,"toUserId":111},{"fromUserId":111,"id":3,"messageContent":"团结互助才是力量","messageType":0,"time":1581257807000,"toUserId":1},{"fromUserId":1,"id":5,"messageContent":"五十六个民族五十六朵花","messageType":0,"time":1581257746000,"toUserId":111},{"fromUserId":111,"id":6,"messageContent":"中国是个大家庭","messageType":0,"toUserId":1},{"fromUserId":1,"id":37,"messageContent":"[{\"answerTemplate\":\"12465\",\"consultId\":1,\"questionKey\":\"母乳喂养的好处\"},{\"answerTemplate\":\"fghgfd\",\"consultId\":5,\"questionKey\":\"母乳喂养的正确姿势姿势\"},{\"answerTemplate\":\"534534\",\"consultId\":27,\"questionKey\":\"乳头凹陷怎么办\"}]","messageType":3,"time":1581477392000,"toUserId":111}] ===
+2020-02-27 22:15:29,574 [INFO] (WebSocketController.java:112)- [WebSocket] 退出成功，当前连接人数为：=0 当前在线人： {}
+2020-02-27 22:15:31,842 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select user_id, age, credit_id, pregnant_type, pregnant_week, job, confinement_date, confinement_week, confinement_type, user_name, user_password, user_token from user where user_token = ? 
+2020-02-27 22:15:31,843 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 91a10017309a4fda9c12d412a9788574(String)
+2020-02-27 22:15:31,919 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-02-27 22:15:32,880 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, description, img_url, category from article 
+2020-02-27 22:15:32,881 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-02-27 22:15:33,030 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, audioURL, category, cover_url from audio 
+2020-02-27 22:15:33,031 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-02-27 22:15:33,052 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, vedioURL, cover_url, category, description from vedio 
+2020-02-27 22:15:33,053 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-02-27 22:15:33,054 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 20
+2020-02-27 22:15:33,097 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 6
+2020-02-27 22:15:33,138 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 9
+2020-02-27 22:15:38,169 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, user_name, name, consult_cost, license_number from doctor 
+2020-02-27 22:15:38,170 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-02-27 22:15:38,254 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 3
+2020-02-27 22:15:49,409 [INFO] (WebSocketController.java:92)- [WebSocket] 连接成功，当前连接人数:1
+2020-02-27 22:15:49,410 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, from_user_id, to_user_id, message_type, message_content, time from wechat_message_item where from_user_id = ? and to_user_id = ? or from_user_id = ? and to_user_id = ? 
+2020-02-27 22:15:49,411 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 111(Integer), 1(Integer), 1(Integer), 111(Integer)
+2020-02-27 22:15:49,573 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 6
+2020-02-27 22:15:49,574 [INFO] (WebSocketController.java:103)-  === 用户 111和用户 1的聊天记录：[WeChatMessageItem{id=1, fromUserId=1, toUserId=111, messageType=0, messageContent='小明很有力量', time=Sun Feb 09 22:16:46 CST 2020}, WeChatMessageItem{id=2, fromUserId=1, toUserId=111, messageType=0, messageContent='一起奋斗出一片新天地', time=Sun Feb 09 22:16:47 CST 2020}, WeChatMessageItem{id=3, fromUserId=111, toUserId=1, messageType=0, messageContent='团结互助才是力量', time=Sun Feb 09 22:16:47 CST 2020}, WeChatMessageItem{id=5, fromUserId=1, toUserId=111, messageType=0, messageContent='五十六个民族五十六朵花', time=Sun Feb 09 22:15:46 CST 2020}, WeChatMessageItem{id=6, fromUserId=111, toUserId=1, messageType=0, messageContent='中国是个大家庭', time=null}, WeChatMessageItem{id=37, fromUserId=1, toUserId=111, messageType=3, messageContent='[{"answerTemplate":"12465","consultId":1,"questionKey":"母乳喂养的好处"},{"answerTemplate":"fghgfd","consultId":5,"questionKey":"母乳喂养的正确姿势姿势"},{"answerTemplate":"534534","consultId":27,"questionKey":"乳头凹陷怎么办"}]', time=Wed Feb 12 11:16:32 CST 2020}]
+2020-02-27 22:15:49,574 [DEBUG] (WebSocketController.java:209)- ===  用户消息成功 消息数据：[{"fromUserId":1,"id":1,"messageContent":"小明很有力量","messageType":0,"time":1581257806000,"toUserId":111},{"fromUserId":1,"id":2,"messageContent":"一起奋斗出一片新天地","messageType":0,"time":1581257807000,"toUserId":111},{"fromUserId":111,"id":3,"messageContent":"团结互助才是力量","messageType":0,"time":1581257807000,"toUserId":1},{"fromUserId":1,"id":5,"messageContent":"五十六个民族五十六朵花","messageType":0,"time":1581257746000,"toUserId":111},{"fromUserId":111,"id":6,"messageContent":"中国是个大家庭","messageType":0,"toUserId":1},{"fromUserId":1,"id":37,"messageContent":"[{\"answerTemplate\":\"12465\",\"consultId\":1,\"questionKey\":\"母乳喂养的好处\"},{\"answerTemplate\":\"fghgfd\",\"consultId\":5,\"questionKey\":\"母乳喂养的正确姿势姿势\"},{\"answerTemplate\":\"534534\",\"consultId\":27,\"questionKey\":\"乳头凹陷怎么办\"}]","messageType":3,"time":1581477392000,"toUserId":111}] ===
+2020-02-27 22:18:21,487 [INFO] (WebSocketController.java:112)- [WebSocket] 退出成功，当前连接人数为：=0 当前在线人： {}
+2020-02-27 22:18:23,450 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select user_id, age, credit_id, pregnant_type, pregnant_week, job, confinement_date, confinement_week, confinement_type, user_name, user_password, user_token from user where user_token = ? 
+2020-02-27 22:18:23,450 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 91a10017309a4fda9c12d412a9788574(String)
+2020-02-27 22:18:23,533 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-02-27 22:18:24,225 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, description, img_url, category from article 
+2020-02-27 22:18:24,227 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-02-27 22:18:24,302 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 20
+2020-02-27 22:18:24,304 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, audioURL, category, cover_url from audio 
+2020-02-27 22:18:24,305 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-02-27 22:18:24,307 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, vedioURL, cover_url, category, description from vedio 
+2020-02-27 22:18:24,307 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-02-27 22:18:24,374 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 6
+2020-02-27 22:18:24,377 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 9
+2020-02-27 22:18:30,062 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, user_name, name, consult_cost, license_number from doctor 
+2020-02-27 22:18:30,064 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-02-27 22:18:30,241 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 3
+2020-02-27 22:18:37,653 [INFO] (WebSocketController.java:92)- [WebSocket] 连接成功，当前连接人数:1
+2020-02-27 22:18:37,654 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, from_user_id, to_user_id, message_type, message_content, time from wechat_message_item where from_user_id = ? and to_user_id = ? or from_user_id = ? and to_user_id = ? 
+2020-02-27 22:18:37,654 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 111(Integer), 1(Integer), 1(Integer), 111(Integer)
+2020-02-27 22:18:37,833 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 6
+2020-02-27 22:18:37,834 [INFO] (WebSocketController.java:103)-  === 用户 111和用户 1的聊天记录：[WeChatMessageItem{id=1, fromUserId=1, toUserId=111, messageType=0, messageContent='小明很有力量', time=Sun Feb 09 22:16:46 CST 2020}, WeChatMessageItem{id=2, fromUserId=1, toUserId=111, messageType=0, messageContent='一起奋斗出一片新天地', time=Sun Feb 09 22:16:47 CST 2020}, WeChatMessageItem{id=3, fromUserId=111, toUserId=1, messageType=0, messageContent='团结互助才是力量', time=Sun Feb 09 22:16:47 CST 2020}, WeChatMessageItem{id=5, fromUserId=1, toUserId=111, messageType=0, messageContent='五十六个民族五十六朵花', time=Sun Feb 09 22:15:46 CST 2020}, WeChatMessageItem{id=6, fromUserId=111, toUserId=1, messageType=0, messageContent='中国是个大家庭', time=null}, WeChatMessageItem{id=37, fromUserId=1, toUserId=111, messageType=3, messageContent='[{"answerTemplate":"12465","consultId":1,"questionKey":"母乳喂养的好处"},{"answerTemplate":"fghgfd","consultId":5,"questionKey":"母乳喂养的正确姿势姿势"},{"answerTemplate":"534534","consultId":27,"questionKey":"乳头凹陷怎么办"}]', time=Wed Feb 12 11:16:32 CST 2020}]

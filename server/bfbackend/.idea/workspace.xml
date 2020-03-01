@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="c0d8a958-c9e9-4753-8056-5c3006198d9b" name="Default" comment="">
       <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson_1_2_38.xml" afterDir="false" />
@@ -64,6 +65,9 @@
       <change beforePath="$PROJECT_DIR$/../../breast/pages/testIndex/testIndex.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/../../breast/pages/testIndex/testIndex.wxss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../breast/wxParse/htmlparser.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../breast/wxParse/htmlparser.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson_1_2_62.xml" beforeDir="false" />
+=======
+    <list default="true" id="4be82cec-dda4-48c6-bb2f-4c997c26fcd8" name="Default" comment="Merge branch 'master' of https://github.com/llllllllr/breastfeed&#10;&#10;# Conflicts:&#10;#&#9;server/bfbackend/.idea/workspace.xml&#10;#&#9;server/bfbackend/log/sys.log">
+>>>>>>> 8e05728cd73786e687b941c5f532c0ed6025ed43
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/breast.iml" beforeDir="false" afterPath="$PROJECT_DIR$/breast.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log/sys.2020-01-30.0.log" beforeDir="false" />
@@ -348,6 +352,7 @@
       <change beforePath="$PROJECT_DIR$/log/sys.2020-02-19.1.log" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/log/sys.2020-02-20.0.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/sys.2020-02-20.0.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log/sys.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/sys.log" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/lllr/test/breast/BreastApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lllr/test/breast/BreastApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/lllr/test/breast/controller/CollectionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lllr/test/breast/controller/CollectionController.java" afterDir="false" />
@@ -409,6 +414,10 @@
       <change beforePath="$PROJECT_DIR$/target/test-classes/lllr/test/user/C.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/lllr/test/user/C.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/lllr/test/user/F.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/lllr/test/user/F.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/lllr/test/user/UserTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/lllr/test/user/UserTest.class" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapping/WeChatMessageItemMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapping/WeChatMessageItemMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/lllr/test/thread/ThreadTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/lllr/test/thread/ThreadTest.java" afterDir="false" />
+>>>>>>> 8e05728cd73786e687b941c5f532c0ed6025ed43
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -718,6 +727,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="restartRequiresConfirmation" value="false" />
   </component>
+<<<<<<< HEAD
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -727,28 +737,109 @@
         <RuleState>
           <option name="name" value="StatusDashboardGroupingRule" />
         </RuleState>
+=======
+  <component name="RestClientSettings">
+    <option name="REQUEST_HISTORY">
+      <list>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8887" />
+          <option name="urlPath" value="/doctor/getAllDoctor" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8887" />
+          <option name="urlPath" value="/doctor/getAll" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+>>>>>>> 8e05728cd73786e687b941c5f532c0ed6025ed43
       </list>
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.BreastApplication">
+    <configuration name="ThreadTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lllr.test.thread.ThreadTest" />
+      <module name="breast" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lllr.test.thread.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method>
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserTest.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ThreadTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="breast" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="lllr.test.user.*" />
+          <option name="PATTERN" value="lllr.test.thread.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="lllr.test.thread" />
+      <option name="MAIN_CLASS_NAME" value="lllr.test.thread.ThreadTest" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ThreadTest.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="breast" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lllr.test.thread.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+<<<<<<< HEAD
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="lllr.test.user" />
       <option name="MAIN_CLASS_NAME" value="lllr.test.user.UserTest" />
+=======
+      <option name="PACKAGE_NAME" value="lllr.test.thread" />
+      <option name="MAIN_CLASS_NAME" value="lllr.test.thread.ThreadTest" />
+>>>>>>> 8e05728cd73786e687b941c5f532c0ed6025ed43
       <option name="METHOD_NAME" value="test1" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" />
@@ -759,6 +850,40 @@
         <value defaultName="singleModule" />
       </option>
       <patterns />
+    </configuration>
+    <configuration name="ThreadTest.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="breast" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lllr.test.thread.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="lllr.test.thread" />
+      <option name="MAIN_CLASS_NAME" value="lllr.test.thread.ThreadTest" />
+      <option name="METHOD_NAME" value="test2" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ThreadTest.test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="breast" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lllr.test.thread.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="lllr.test.thread" />
+      <option name="MAIN_CLASS_NAME" value="lllr.test.thread.ThreadTest" />
+      <option name="METHOD_NAME" value="test3" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -833,13 +958,25 @@
       </method>
     </configuration>
     <list>
+<<<<<<< HEAD
+=======
+      <item itemvalue="Application.ThreadTest" />
+      <item itemvalue="JUnit.ThreadTest.test" />
+      <item itemvalue="JUnit.ThreadTest.test1" />
+      <item itemvalue="JUnit.ThreadTest.test2" />
+      <item itemvalue="JUnit.ThreadTest.test3" />
+>>>>>>> 8e05728cd73786e687b941c5f532c0ed6025ed43
       <item itemvalue="Maven.mybatis-generator" />
       <item itemvalue="Spring Boot.BreastApplication" />
       <item itemvalue="JUnit.UserTest.test1" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.UserTest.test1" />
+        <item itemvalue="JUnit.ThreadTest.test3" />
+        <item itemvalue="JUnit.ThreadTest.test2" />
+        <item itemvalue="Application.ThreadTest" />
+        <item itemvalue="JUnit.ThreadTest.test1" />
+        <item itemvalue="JUnit.ThreadTest.test" />
       </list>
     </recent_temporary>
   </component>
@@ -867,12 +1004,35 @@
       <workItem from="1581773296890" duration="4074000" />
       <workItem from="1582015343117" duration="763000" />
       <workItem from="1582086042942" duration="8798000" />
+<<<<<<< HEAD
       <workItem from="1582182380632" duration="5945000" />
       <workItem from="1582695509451" duration="1837000" />
       <workItem from="1582791981427" duration="6970000" />
       <workItem from="1582855617810" duration="12256000" />
       <workItem from="1582961104363" duration="3782000" />
       <workItem from="1583029055886" duration="7552000" />
+=======
+      <workItem from="1582182380632" duration="5868000" />
+      <workItem from="1582265899173" duration="4648000" />
+      <workItem from="1582287248570" duration="3180000" />
+      <workItem from="1582293134081" duration="4555000" />
+      <workItem from="1582339079413" duration="5164000" />
+      <workItem from="1582361351311" duration="2468000" />
+      <workItem from="1582374349937" duration="3106000" />
+      <workItem from="1582432363371" duration="3687000" />
+      <workItem from="1582457836067" duration="3289000" />
+      <workItem from="1582511323722" duration="2966000" />
+      <workItem from="1582534766890" duration="1624000" />
+      <workItem from="1582547384274" duration="3886000" />
+      <workItem from="1582595957447" duration="4114000" />
+      <workItem from="1582607743546" duration="1933000" />
+      <workItem from="1582619496811" duration="594000" />
+      <workItem from="1582635966592" duration="602000" />
+      <workItem from="1582636639064" duration="709000" />
+      <workItem from="1582696926175" duration="2839000" />
+      <workItem from="1582720646548" duration="7595000" />
+      <workItem from="1582780285683" duration="7500000" />
+>>>>>>> 8e05728cd73786e687b941c5f532c0ed6025ed43
     </task>
     <servers />
   </component>
@@ -924,70 +1084,89 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1493" height="276" key="GridCell.Tab.0.bottom" timestamp="1582381740593">
+    <state x="574" y="122" key="#com.intellij.ide.util.MemberChooser" timestamp="1582552826187">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="276" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1582381740593" />
-    <state width="1493" height="276" key="GridCell.Tab.0.center" timestamp="1582381740593">
+    <state x="574" y="122" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1582552826187" />
+    <state width="1493" height="51" key="GridCell.Tab.0.bottom" timestamp="1582810877234">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="276" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1582381740593" />
-    <state width="1493" height="276" key="GridCell.Tab.0.left" timestamp="1582381740593">
+    <state width="1493" height="51" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1582810877234" />
+    <state width="1493" height="51" key="GridCell.Tab.0.center" timestamp="1582810877234">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="276" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1582381740593" />
-    <state width="1493" height="276" key="GridCell.Tab.0.right" timestamp="1582381740593">
+    <state width="1493" height="51" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1582810877234" />
+    <state width="1493" height="51" key="GridCell.Tab.0.left" timestamp="1582810877234">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="276" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1582381740593" />
-    <state width="1493" height="339" key="GridCell.Tab.1.bottom" timestamp="1582381706654">
+    <state width="1493" height="51" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1582810877234" />
+    <state width="1493" height="51" key="GridCell.Tab.0.right" timestamp="1582810877234">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="339" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1582381706654" />
-    <state width="1493" height="339" key="GridCell.Tab.1.center" timestamp="1582381706654">
+    <state width="1493" height="51" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1582810877234" />
+    <state width="1493" height="51" key="GridCell.Tab.1.bottom" timestamp="1582810877072">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="339" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1582381706654" />
-    <state width="1493" height="339" key="GridCell.Tab.1.left" timestamp="1582381706654">
+    <state width="1493" height="51" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1582810877072" />
+    <state width="1493" height="51" key="GridCell.Tab.1.center" timestamp="1582810877072">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="339" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1582381706654" />
-    <state width="1493" height="339" key="GridCell.Tab.1.right" timestamp="1582381706654">
+    <state width="1493" height="51" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1582810877072" />
+    <state width="1493" height="51" key="GridCell.Tab.1.left" timestamp="1582810877072">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="339" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1582381706654" />
-    <state width="1493" height="32" key="GridCell.Tab.2.bottom" timestamp="1582381204696">
+    <state width="1493" height="51" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1582810877072" />
+    <state width="1493" height="51" key="GridCell.Tab.1.right" timestamp="1582810877072">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="32" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1582381204696" />
-    <state width="1493" height="32" key="GridCell.Tab.2.center" timestamp="1582381204696">
+    <state width="1493" height="51" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1582810877072" />
+    <state width="1493" height="51" key="GridCell.Tab.2.bottom" timestamp="1582810877073">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="32" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1582381204696" />
-    <state width="1493" height="32" key="GridCell.Tab.2.left" timestamp="1582381204696">
+    <state width="1493" height="51" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1582810877073" />
+    <state width="1493" height="51" key="GridCell.Tab.2.center" timestamp="1582810877072">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="32" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1582381204696" />
-    <state width="1493" height="32" key="GridCell.Tab.2.right" timestamp="1582381204696">
+    <state width="1493" height="51" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1582810877072" />
+    <state width="1493" height="51" key="GridCell.Tab.2.left" timestamp="1582810877072">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="32" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1582381204696" />
+    <state width="1493" height="51" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1582810877072" />
+    <state width="1493" height="51" key="GridCell.Tab.2.right" timestamp="1582810877073">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="51" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1582810877073" />
     <state x="361" y="146" key="Vcs.Push.Dialog.v2" timestamp="1582207745085">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="361" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1582207745085" />
-    <state x="449" y="237" key="com.intellij.ide.util.TipDialog" timestamp="1582374615873">
+    <state x="449" y="237" key="com.intellij.ide.util.TipDialog" timestamp="1582780413112">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="449" y="237" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1582374615873" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1582347676172">
+    <state x="449" y="237" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1582780413112" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1582552870627">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1582347676172" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1582552870627" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
+<<<<<<< HEAD
       <option name="time" value="5" />
+=======
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/lllr/test/breast/controller/DoctorController.java</url>
+          <line>75</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/lllr/test/breast/controller/UserController.java</url>
+          <line>81</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+>>>>>>> 8e05728cd73786e687b941c5f532c0ed6025ed43
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">

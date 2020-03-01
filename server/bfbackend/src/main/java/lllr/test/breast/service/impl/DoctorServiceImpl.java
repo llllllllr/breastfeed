@@ -4,10 +4,10 @@ import lllr.test.breast.common.ServerResponse;
 import lllr.test.breast.dao.mapper.DoctorMapper;
 import lllr.test.breast.dataObject.user.Doctor;
 import lllr.test.breast.service.inter.DoctorService;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import java.util.List;
 
 @Service
 public class DoctorServiceImpl implements DoctorService {
@@ -52,5 +52,11 @@ public class DoctorServiceImpl implements DoctorService {
         doctor.setId(doctorId);
         doctor.setConsultCost(consultCost);
         return doctorMapper.updateByPrimaryKeySelective(doctor) == 1 ? ServerResponse.createBysuccess() : ServerResponse.createByError();
+    }
+
+    @Override
+    public ServerResponse<List<Doctor>> getAllDoctor() {
+        List<Doctor> doctors =  doctorMapper.selectAllDoctor();
+        return doctors != null ? ServerResponse.createBysuccessData(doctors) : ServerResponse.createByError();
     }
 }
