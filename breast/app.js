@@ -17,14 +17,11 @@ App({
   },
   globalData: {
     serverUrl:'http://localhost:8887',
-<<<<<<< HEAD
     salt : "fdsfvxnmcvnew68sa5d54ds",
-    userid:-3
-=======
+    userid:-3,
     object:'',  //登录的用户群体：1.医生 2.普通用户
     userInfor:null,   //记录用户的信息
     doctorList:[]
->>>>>>> 8e05728cd73786e687b941c5f532c0ed6025ed43
   },
 
   //根据 医生的id 查询 doctorList 返回医生具体信息

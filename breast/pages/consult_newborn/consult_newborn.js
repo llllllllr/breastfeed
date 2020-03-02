@@ -1,4 +1,4 @@
-// pages/newborn/index.js
+// pages/consult_newborn/consult_newborn.js
 Page({
 
   /**
@@ -12,7 +12,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-      console.log('加载参数',options)
+
   },
 
   /**

@@ -1,4 +1,4 @@
-<view class="container">
+<!-- <view class="container">
 
 	<scroll-view class="container-body" scroll-y="true" scroll-top="{{scrolltop}}" bindscroll="scrollHandle" lower-threshold="50" bindscrolltolower="scrollLoading">
 		<view class="service-list">
@@ -22,16 +22,63 @@
 		</view>
 		<view class="gototop {{scrolltop>200?'active':''}}" bindtap="goToTop"></view>
 	</scroll-view>
-</view>
+</view> -->
 
-<!-- 
+ <view class="cu-list menu-avatar">
+    <view class="cu-item bor" style="margin-top:30rpx" bindtap="to_consultque">
+      <view class="cu-avatar round lg" style="background-image:url(https://ossweb-img.qq.com/images/lol/web201310/skin/big10001.jpg);"></view>
+      <view class="content">
+        <view class="text-black">张某某 主治医师</view>
+        <view class="text-gray text-sm flex">  
+							<text class=" margin-right-xs"></text> 擅长：呼吸系统疾病、气道炎症、肺部感染、肺炎、哮喘、结核
+        </view>				
+				<view class="staus-bor">
+								<image class="status" src="/images/icon/kzx.png"></image>
+				<view style="margin-left:15rpx" class="text-pink">可咨询</view>
+				</view>
+      </view>
+    </view>  
 
-<view class="page">
-    <wux-cell-group title="医生列表">
-            <wux-cell thumb="http://cdn.skyvow.cn/logo.png"is-link url="/pages/consult_chatroom/index" title="张医生" ></wux-cell>
-            <wux-cell thumb="http://cdn.skyvow.cn/logo.png" is-link url="/pages/consult_chatroom/index"title="王医生"></wux-cell>
-     </wux-cell-group>
+		    <view class="cu-item bor" style="margin-top:30rpx">
+      <view class="cu-avatar round lg" style="background-image:url(https://ossweb-img.qq.com/images/lol/web201310/skin/big10001.jpg);"></view>
+      <view class="content">
+        <view class="text-black">张某某 主治医师</view>
+        <view class="text-gray text-sm flex">  
+							<text class=" margin-right-xs"></text> 擅长：呼吸系统疾病、气道炎症、肺部感染、肺炎、哮喘、结核
+        </view>				
+				<view class="staus-bor">
+								<image class="status" src="/images/icon/kzx.png"></image>
+				<view style="margin-left:15rpx" class="text-pink">可咨询</view>
+				</view>
+      </view>
+    </view>  
 
-</view>
+		    <view class="cu-item bor" style="margin-top:30rpx">
+      <view class="cu-avatar round lg" style="background-image:url(https://ossweb-img.qq.com/images/lol/web201310/skin/big10001.jpg);"></view>
+      <view class="content">
+        <view class="text-black">张某某 主治医师</view>
+        <view class="text-gray text-sm flex">  
+							<text class=" margin-right-xs"></text> 擅长：呼吸系统疾病、气道炎症、肺部感染、肺炎、哮喘、结核	
+        </view>				
+				<view class="staus-bor">
+								<image class="status" src="/images/icon/kzx.png"></image>
+				<view style="margin-left:15rpx" class="text-pink">可咨询</view>
+				</view>
+      </view>
+    </view>  
 
- -->
+		    <view class="cu-item bor" style="margin-top:30rpx">
+      <view class="cu-avatar round lg" style="background-image:url(https://ossweb-img.qq.com/images/lol/web201310/skin/big10001.jpg);"></view>
+      <view class="content">
+        <view class="text-black">张某某 主治医师</view>
+        <view class="text-gray text-sm flex">  
+							<text class=" margin-right-xs"></text> 擅长：呼吸系统疾病、气道炎症、肺部感染、肺炎、哮喘、结核
+        </view>				
+				<view class="staus-bor">
+								<image class="status" src="/images/icon/kzx.png"></image>
+				<view style="margin-left:15rpx" class="text-pink">可咨询</view>
+				</view>
+      </view>
+    </view>  
+  </view>
+	

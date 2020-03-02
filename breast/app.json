@@ -1,14 +1,16 @@
 {
   "pages": [
     "pages/index/index",
+    "pages/consult_questionnaire/consult_questionnaire",
+    "pages/consult_doctors_choose/consult_doctors_choose",
+    
     "pages/consult_chatroom/consult_chatroom",
     "pages/consult_gynecology/consult_gynecology",
     "pages/consult_help/consult_help",
     "pages/consult_index/consult_index",
     "pages/consult_newborn/consult_newborn",
     "pages/consult_obstetrics/consult_obstetrics",
-    "pages/consult_questionnaire/consult_questionnaire",
-    "pages/consult_doctors_choose/consult_doctors_choose",
+    
     "pages/question/question",
     "pages/article_detail/article_detail",
     "pages/search/search",
@@ -19,11 +21,8 @@
     "pages/user/user",
     "pages/doctorRegister/doctorRegister",
     "pages/signUp/signUp",
-<<<<<<< HEAD
-    "pages/mycoll/mycoll"
-=======
+    "pages/mycoll/mycoll",
     "pages/testIndex/testIndex"
->>>>>>> 8e05728cd73786e687b941c5f532c0ed6025ed43
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -48,7 +47,7 @@
         "selectedIconPath": "/images/icon/wj2.png"
       },
       {
-        "pagePath": "pages/consult_index/consult_index",
+        "pagePath": "pages/consult_doctors_choose/consult_doctors_choose",
         "text": "咨询",
         "iconPath": "/images/icon/zx1.png",
         "selectedIconPath": "/images/icon/zx2.png"

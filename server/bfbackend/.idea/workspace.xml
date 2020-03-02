@@ -1,423 +1,473 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-<<<<<<< HEAD
     <list default="true" id="c0d8a958-c9e9-4753-8056-5c3006198d9b" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson_1_2_38.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_11.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_pool2_2_6_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_validation_2_1_9_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__redis_clients_jedis_2_9_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/log/sys.2020-02-17.0.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/log/sys.2020-02-18.0.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/log/sys.2020-02-21.0.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lllr/test/breast/exception/GlobalException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lllr/test/breast/redis/BasePrefix.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lllr/test/breast/redis/KeyPrefix.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lllr/test/breast/redis/RedisConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lllr/test/breast/redis/RedisPoolFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lllr/test/breast/redis/RedisService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lllr/test/breast/redis/UserKey.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lllr/test/breast/util/MD5Util.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../部分样式修改/me/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../部分样式修改/me/index.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../部分样式修改/me/index.wxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../部分样式修改/me/index.wxss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../部分样式修改/me_collect/me_collect.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../部分样式修改/me_collect/me_collect.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../部分样式修改/me_collect/me_collect.wxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../部分样式修改/me_collect/me_collect.wxss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../部分样式修改/me_consult/me_consult.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../部分样式修改/me_consult/me_consult.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../部分样式修改/me_consult/me_consult.wxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../部分样式修改/me_consult/me_consult.wxss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../部分样式修改/me_information/me_information.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../部分样式修改/me_information/me_information.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../部分样式修改/me_information/me_information.wxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../部分样式修改/me_information/me_information.wxss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../部分样式修改/me_queResult/me_queResult.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../部分样式修改/me_queResult/me_queResult.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../部分样式修改/me_queResult/me_queResult.wxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../部分样式修改/me_queResult/me_queResult.wxss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../breast/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../breast/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../breast/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../breast/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../breast/app.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/assert/js/md5.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/pages/article_detail/article_detail.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../breast/pages/article_detail/article_detail.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/pages/article_detail/article_detail.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/../../breast/pages/article_detail/article_detail.wxss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/pages/doctorRegister/doctorRegister.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../breast/pages/doctorRegister/doctorRegister.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/pages/doctorRegister/doctorRegister.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/../../breast/pages/doctorRegister/doctorRegister.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/pages/index/article.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/../../breast/pages/index/article.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/pages/index/audio.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/../../breast/pages/index/audio.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/pages/index/musicIndex.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/../../breast/pages/index/musicIndex.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/pages/index/play.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/../../breast/pages/index/play.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/pages/search/search.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/../../breast/pages/search/search.wxss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/pages/searchResult/searchResult.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/../../breast/pages/searchResult/searchResult.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/pages/signIn/signIn.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../breast/pages/signIn/signIn.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/pages/signIn/signIn.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/../../breast/pages/signIn/signIn.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/pages/signIndex/signIndex.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../breast/pages/signIndex/signIndex.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/pages/signIndex/signIndex.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/../../breast/pages/signIndex/signIndex.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/pages/signUp/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../breast/pages/signUp/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/pages/signUp/signUp.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../breast/pages/signUp/signUp.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/pages/signUp/signUp.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/../../breast/pages/signUp/signUp.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/accordion-group/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/accordion-group/index.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/accordion-group/index.wxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/accordion-group/index.wxss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/accordion/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/accordion/index.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/accordion/index.wxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/accordion/index.wxss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/actionsheet/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/actionsheet/index.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/actionsheet/index.wxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/actionsheet/index.wxss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/alert/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/alert/index.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/alert/index.wxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/alert/index.wxss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/animation-group/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/animation-group/index.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/animation-group/index.wxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/animation-group/index.wxss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/avatar/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/avatar/index.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/avatar/index.wxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/avatar/index.wxss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/backdrop/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/backdrop/index.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/backdrop/index.wxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/backdrop/index.wxss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/badge/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/badge/index.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/badge/index.wxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/badge/index.wxss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/barcode/barcode.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/barcode/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/barcode/index.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/barcode/index.wxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/barcode/index.wxss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/button/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/button/index.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/button/index.wxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/button/index.wxss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/calendar/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/calendar/index.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/calendar/index.wxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/calendar/index.wxss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/card/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/card/index.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/card/index.wxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/card/index.wxss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/cascader-picker-view/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/cascader-picker-view/index.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/cascader-picker-view/index.wxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/cascader-picker-view/index.wxss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/cascader/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/cascader/index.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/cascader/index.wxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/cascader/index.wxss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/cell-group/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/cell-group/index.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/cell-group/index.wxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/cell-group/index.wxss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/cell/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/cell/index.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/cell/index.wxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/cell/index.wxss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/checkbox-group/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/checkbox-group/index.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/checkbox-group/index.wxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/checkbox-group/index.wxss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/checkbox/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/checkbox/index.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/checkbox/index.wxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/checkbox/index.wxss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/circle/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/circle/index.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/circle/index.wxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/circle/index.wxss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/col/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/col/index.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/col/index.wxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/col/index.wxss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/countdown/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/countup/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/date-picker-view/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/date-picker-view/index.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/date-picker-view/index.wxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/date-picker-view/index.wxss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/date-picker-view/locales/en.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/date-picker-view/locales/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/date-picker-view/locales/zh_CN.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/date-picker-view/locales/zh_TW.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/date-picker-view/props.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/date-picker/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/date-picker/index.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/date-picker/index.wxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/date-picker/index.wxss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/date-picker/utils.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/dialog/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/dialog/index.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/dialog/index.wxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/dialog/index.wxss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/divider/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/divider/index.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/divider/index.wxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/divider/index.wxss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/fab-button/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/fab-button/index.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/fab-button/index.wxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/fab-button/index.wxss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/field/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/field/index.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/field/index.wxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/field/index.wxss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/filterbar/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/filterbar/index.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/filterbar/index.wxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/filterbar/index.wxss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/form/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/form/index.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/form/index.wxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/form/index.wxss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/gallery/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/gallery/index.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/gallery/index.wxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/gallery/index.wxss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/grid/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/grid/index.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/grid/index.wxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/grid/index.wxss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/grids/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/grids/index.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/grids/index.wxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/grids/index.wxss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/helpers/arrayTreeFilter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/helpers/baseComponent.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/helpers/checkIPhoneX.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/helpers/classNames.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/helpers/colors.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/helpers/compareVersion.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/helpers/computedBehavior.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/helpers/createFieldsStore.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/helpers/debounce.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/helpers/eventsMixin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/helpers/funcBehavior.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/helpers/gestures.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/helpers/isEmpty.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/helpers/mergeOptionsToData.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/helpers/popupMixin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/helpers/relationsBehavior.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/helpers/safeAreaBehavior.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/helpers/safeSetDataBehavior.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/helpers/shallowEqual.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/helpers/styleToCssString.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/icon/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/icon/index.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/icon/index.wxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/icon/index.wxss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/image/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/image/index.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/image/index.wxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/image/index.wxss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/index-item/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/index-item/index.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/index-item/index.wxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/index-item/index.wxss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/index/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/index/index.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/index/index.wxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/index/index.wxss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/input-number/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/input-number/index.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/input-number/index.wxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/input-number/index.wxss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/input-number/utils.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/input/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/input/index.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/input/index.wxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/input/index.wxss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/keyboard/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/keyboard/index.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/keyboard/index.wxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/keyboard/index.wxss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/landscape/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/landscape/index.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/landscape/index.wxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/landscape/index.wxss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/loading/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/loading/index.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/loading/index.wxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/loading/index.wxss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/media/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/media/index.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/media/index.wxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/media/index.wxss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/multi-picker-view/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/multi-picker-view/index.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/multi-picker-view/index.wxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/multi-picker-view/index.wxss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/multi-picker-view/props.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/multi-picker-view/utils.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/navbar/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/navbar/index.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/navbar/index.wxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/navbar/index.wxss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/notice-bar/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/notice-bar/index.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/notice-bar/index.wxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/notice-bar/index.wxss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/notification/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/notification/index.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/notification/index.wxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/notification/index.wxss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/pagination/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/pagination/index.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/pagination/index.wxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/pagination/index.wxss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/picker-view/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/picker-view/index.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/picker-view/index.wxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/picker-view/index.wxss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/picker-view/props.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/picker-view/utils.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/picker/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/picker/index.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/picker/index.wxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/picker/index.wxss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/popover/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/popover/index.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/popover/index.wxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/popover/index.wxss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/popup-select/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/popup-select/index.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/popup-select/index.wxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/popup-select/index.wxss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/popup-select/utils.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/popup/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/popup/index.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/popup/index.wxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/popup/index.wxss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/progress/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/progress/index.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/progress/index.wxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/progress/index.wxss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/prompt/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/prompt/index.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/prompt/index.wxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/prompt/index.wxss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/qrcode/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/qrcode/index.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/qrcode/index.wxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/qrcode/index.wxss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/qrcode/qr.js/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/qrcode/qr.js/lib/8BitByte.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/qrcode/qr.js/lib/BitBuffer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/qrcode/qr.js/lib/ErrorCorrectLevel.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/qrcode/qr.js/lib/LICENSE-qrcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/qrcode/qr.js/lib/Polynomial.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/qrcode/qr.js/lib/QRCode.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/qrcode/qr.js/lib/RSBlock.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/qrcode/qr.js/lib/math.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/qrcode/qr.js/lib/mode.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/qrcode/qr.js/lib/util.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/radio-group/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/radio-group/index.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/radio-group/index.wxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/radio-group/index.wxss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/radio/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/radio/index.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/radio/index.wxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/radio/index.wxss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/rater/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/rater/index.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/rater/index.wxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/rater/index.wxss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/refresher/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/refresher/index.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/refresher/index.wxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/refresher/index.wxss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/result/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/result/index.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/result/index.wxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/result/index.wxss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/row/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/row/index.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/row/index.wxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/row/index.wxss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/search-bar/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/search-bar/index.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/search-bar/index.wxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/search-bar/index.wxss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/segmented-control/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/segmented-control/index.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/segmented-control/index.wxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/segmented-control/index.wxss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/select/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/select/index.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/select/index.wxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/select/index.wxss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/selectable/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/selectable/index.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/selectable/index.wxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/selectable/index.wxss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/skeleton-avatar/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/skeleton-avatar/index.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/skeleton-avatar/index.wxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/skeleton-avatar/index.wxss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/skeleton-paragraph/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/skeleton-paragraph/index.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/skeleton-paragraph/index.wxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/skeleton-paragraph/index.wxss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/skeleton/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/skeleton/index.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/skeleton/index.wxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/skeleton/index.wxss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/slider/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/slider/index.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/slider/index.wxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/slider/index.wxss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/spin/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/spin/index.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/spin/index.wxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/spin/index.wxss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/step/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/step/index.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/step/index.wxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/step/index.wxss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/steps/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/steps/index.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/steps/index.wxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/steps/index.wxss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/sticky-item/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/sticky-item/index.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/sticky-item/index.wxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/sticky-item/index.wxss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/sticky/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/sticky/index.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/sticky/index.wxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/sticky/index.wxss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/styles/base/fn.wxss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/styles/base/mixin/button.wxss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/styles/base/mixin/common.wxss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/styles/base/mixin/hairline.wxss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/styles/base/mixin/setArrow.wxss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/styles/base/mixin/setOnepx.wxss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/styles/base/mixin/text.wxss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/styles/base/mixin/toolbar.wxss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/styles/base/reset.wxss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/styles/base/variable/color.wxss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/styles/base/variable/global.wxss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/styles/base/variable/safeArea.wxss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/styles/index.wxss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/swipe-action-group/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/swipe-action-group/index.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/swipe-action-group/index.wxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/swipe-action-group/index.wxss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/swipe-action/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/swipe-action/index.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/swipe-action/index.wxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/swipe-action/index.wxss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/switch/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/switch/index.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/switch/index.wxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/switch/index.wxss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/tab/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/tab/index.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/tab/index.wxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/tab/index.wxss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/tabbar-item/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/tabbar-item/index.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/tabbar-item/index.wxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/tabbar-item/index.wxss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/tabbar/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/tabbar/index.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/tabbar/index.wxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/tabbar/index.wxss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/tabs/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/tabs/index.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/tabs/index.wxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/tabs/index.wxss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/tag/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/tag/index.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/tag/index.wxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/tag/index.wxss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/textarea/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/textarea/index.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/textarea/index.wxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/textarea/index.wxss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/timeago/core/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/timeago/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/timeago/index.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/timeago/index.wxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/timeago/index.wxss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/timeago/locales/en.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/timeago/locales/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/timeago/locales/zh_CN.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/timeago/locales/zh_TW.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/timeline-item/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/timeline-item/index.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/timeline-item/index.wxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/timeline-item/index.wxss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/timeline/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/timeline/index.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/timeline/index.wxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/timeline/index.wxss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/toast/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/toast/index.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/toast/index.wxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/toast/index.wxss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/toptips/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/toptips/index.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/toptips/index.wxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/toptips/index.wxss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/upload/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/upload/index.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/upload/index.wxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/upload/index.wxss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/vcode/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/vcode/index.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/vcode/index.wxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/vcode/index.wxss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/virtual-item/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/virtual-item/index.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/virtual-item/index.wxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/virtual-item/index.wxss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/virtual-list/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/virtual-list/index.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/virtual-list/index.wxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/virtual-list/index.wxss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/virtual-list/utils.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/white-space/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/white-space/index.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/white-space/index.wxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/white-space/index.wxss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/wing-blank/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/wing-blank/index.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/wing-blank/index.wxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/miniprogram_npm/wux-weapp/wing-blank/index.wxss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/pages/consult_doctors_choose/consult_doctors_choose.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../breast/pages/consult_doctors_choose/consult_doctors_choose.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/pages/consult_doctors_choose/consult_doctors_choose.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../breast/pages/consult_doctors_choose/consult_doctors_choose.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/pages/consult_doctors_choose/consult_doctors_choose.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/../../breast/pages/consult_doctors_choose/consult_doctors_choose.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/pages/consult_doctors_choose/consult_doctors_choose.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/../../breast/pages/consult_doctors_choose/consult_doctors_choose.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/pages/consult_help/consult_help.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../breast/pages/consult_help/consult_help.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/pages/consult_help/consult_help.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/../../breast/pages/consult_help/consult_help.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/pages/consult_index/consult_index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../breast/pages/consult_index/consult_index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/pages/consult_index/consult_index.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../breast/pages/consult_index/consult_index.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/pages/consult_index/consult_index.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/../../breast/pages/consult_index/consult_index.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/pages/consult_index/consult_index.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/../../breast/pages/consult_index/consult_index.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/pages/consult_newborn/consult_newborn.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../breast/pages/consult_newborn/consult_newborn.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/pages/consult_newborn/consult_newborn.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../breast/pages/consult_newborn/consult_newborn.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/pages/consult_newborn/consult_newborn.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/../../breast/pages/consult_newborn/consult_newborn.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/pages/consult_newborn/consult_newborn.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/../../breast/pages/consult_newborn/consult_newborn.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/pages/consult_obstetrics/consult_obstetrics.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../breast/pages/consult_obstetrics/consult_obstetrics.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/pages/consult_questionnaire/consult_questionnaire.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../breast/pages/consult_questionnaire/consult_questionnaire.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/pages/consult_questionnaire/consult_questionnaire.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../breast/pages/consult_questionnaire/consult_questionnaire.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/pages/consult_questionnaire/consult_questionnaire.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/../../breast/pages/consult_questionnaire/consult_questionnaire.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/pages/consult_questionnaire/consult_questionnaire.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/../../breast/pages/consult_questionnaire/consult_questionnaire.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/pages/doctors_choosedetail/doctors_choosedetail.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../breast/pages/doctors_choosedetail/doctors_choosedetail.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/pages/testIndex/testIndex.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../breast/pages/testIndex/testIndex.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/pages/testIndex/testIndex.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../breast/pages/testIndex/testIndex.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/pages/testIndex/testIndex.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/../../breast/pages/testIndex/testIndex.wxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../breast/pages/testIndex/testIndex.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/../../breast/pages/testIndex/testIndex.wxss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/wxParse/htmlparser.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../breast/wxParse/htmlparser.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson_1_2_62.xml" beforeDir="false" />
-=======
-    <list default="true" id="4be82cec-dda4-48c6-bb2f-4c997c26fcd8" name="Default" comment="Merge branch 'master' of https://github.com/llllllllr/breastfeed&#10;&#10;# Conflicts:&#10;#&#9;server/bfbackend/.idea/workspace.xml&#10;#&#9;server/bfbackend/log/sys.log">
->>>>>>> 8e05728cd73786e687b941c5f532c0ed6025ed43
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/breast.iml" beforeDir="false" afterPath="$PROJECT_DIR$/breast.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-30.0.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-30.1.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-30.2.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-30.3.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-30.4.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-01-30.5.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-01.0.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-01.1.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-01.2.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-01.3.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-01.4.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-06.0.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-06.1.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-06.2.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-06.3.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-06.4.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-06.5.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-06.6.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-07.0.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-07.1.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-07.10.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-07.11.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-07.12.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-07.13.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-07.14.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-07.15.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-07.16.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-07.17.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-07.18.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-07.19.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-07.2.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-07.20.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-07.21.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-07.22.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-07.23.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-07.24.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-07.25.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-07.26.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-07.27.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-07.28.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-07.29.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-07.3.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-07.30.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-07.31.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-07.32.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-07.33.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-07.34.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-07.35.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-07.36.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-07.37.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-07.38.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-07.39.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-07.4.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-07.40.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-07.41.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-07.5.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-07.6.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-07.7.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-07.8.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-07.9.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.0.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.1.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.10.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.100.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.101.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.102.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.103.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.104.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.105.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.106.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.107.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.108.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.109.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.11.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.110.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.111.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.112.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.113.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.114.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.115.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.116.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.117.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.118.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.119.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.12.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.120.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.121.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.122.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.123.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.124.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.125.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.126.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.13.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.14.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.15.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.16.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.17.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.18.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.19.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.2.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.20.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.21.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.22.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.23.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.24.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.25.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.26.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.27.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.28.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.29.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.3.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.30.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.31.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.32.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.33.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.34.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.35.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.36.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.37.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.38.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.39.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.4.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.40.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.41.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.42.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.43.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.44.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.45.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.46.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.47.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.48.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.49.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.5.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.50.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.51.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.52.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.53.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.54.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.55.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.56.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.57.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.58.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.59.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.6.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.60.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.61.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.62.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.63.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.64.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.65.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.66.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.67.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.68.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.69.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.7.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.70.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.71.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.72.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.73.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.74.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.75.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.76.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.77.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.78.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.79.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.8.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.80.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.81.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.82.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.83.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.84.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.85.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.86.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.87.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.88.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.89.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.9.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.90.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.91.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.92.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.93.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.94.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.95.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.96.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.97.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.98.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-08.99.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-09.0.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-09.1.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-09.2.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-09.3.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-09.4.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-09.5.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-09.6.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-09.7.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-09.8.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-10.0.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-10.1.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-10.10.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-10.11.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-10.12.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-10.13.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-10.14.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-10.15.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-10.16.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-10.17.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-10.18.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-10.19.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-10.2.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-10.3.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-10.4.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-10.5.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-10.6.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-10.7.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-10.8.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-10.9.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-11.0.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-11.1.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-11.10.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-11.11.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-11.12.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-11.13.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-11.14.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-11.15.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-11.16.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-11.17.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-11.18.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-11.19.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-11.2.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-11.20.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-11.21.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-11.22.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-11.23.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-11.24.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-11.25.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-11.26.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-11.27.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-11.28.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-11.29.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-11.3.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-11.30.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-11.31.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-11.32.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-11.33.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-11.34.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-11.35.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-11.36.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-11.37.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-11.38.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-11.39.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-11.4.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-11.40.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-11.41.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-11.42.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-11.43.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-11.44.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-11.45.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-11.46.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-11.5.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-11.6.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-11.7.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-11.8.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-11.9.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-12.0.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-12.1.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-12.10.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-12.11.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-12.12.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-12.13.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-12.2.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-12.3.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-12.4.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-12.5.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-12.6.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-12.7.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-12.8.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-12.9.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-15.0.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-19.0.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/sys.2020-02-19.0.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-19.1.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.2020-02-20.0.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/sys.2020-02-20.0.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/sys.log" afterDir="false" />
-<<<<<<< HEAD
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lllr/test/breast/BreastApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lllr/test/breast/BreastApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lllr/test/breast/controller/CollectionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lllr/test/breast/controller/CollectionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lllr/test/breast/controller/ConsultOrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lllr/test/breast/controller/ConsultOrderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lllr/test/breast/controller/DoctorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lllr/test/breast/controller/DoctorController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lllr/test/breast/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lllr/test/breast/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lllr/test/breast/controller/UserFaceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lllr/test/breast/controller/UserFaceController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lllr/test/breast/dao/mapper/CollectionMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lllr/test/breast/dao/mapper/CollectionMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lllr/test/breast/dao/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lllr/test/breast/dao/mapper/UserMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lllr/test/breast/dataObject/consult/ConsultOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lllr/test/breast/dataObject/consult/ConsultOrder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lllr/test/breast/dataObject/popularization/Collection.java.1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lllr/test/breast/dataObject/popularization/Search.java.1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lllr/test/breast/service/impl/CollServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lllr/test/breast/service/impl/CollServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lllr/test/breast/service/impl/DoctorServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lllr/test/breast/service/impl/DoctorServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lllr/test/breast/service/impl/FaceServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lllr/test/breast/service/impl/FaceServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lllr/test/breast/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lllr/test/breast/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lllr/test/breast/service/inter/CollService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lllr/test/breast/service/inter/CollService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lllr/test/breast/service/inter/DoctorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lllr/test/breast/service/inter/DoctorService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lllr/test/breast/service/inter/FaceService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lllr/test/breast/service/inter/FaceService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lllr/test/breast/util/DataValidateUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lllr/test/breast/util/DataValidateUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lllr/test/breast/util/face/UserFaceRes.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lllr/test/breast/util/face/UserFaceResUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/UserFaceImage/0.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapping/CollectionMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapping/CollectionMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapping/ConsultOrderMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapping/ConsultOrderMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapping/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapping/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapping/doctorMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapping/DoctorMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/lllr/test/face/FaceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/lllr/test/face/FaceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/lllr/test/user/UserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/lllr/test/user/UserTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/UserFaceImage/0.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/BreastApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/BreastApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/controller/CollectionController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/controller/CollectionController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/controller/ConsultOrderController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/controller/ConsultOrderController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/controller/DoctorController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/controller/DoctorController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/controller/UserFaceController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/controller/UserFaceController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/dao/mapper/CollectionMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/dao/mapper/CollectionMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/dao/mapper/UserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/dao/mapper/UserMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/dataObject/consult/ConsultOrder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/dataObject/consult/ConsultOrder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/service/impl/CollServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/service/impl/CollServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/service/impl/DoctorServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/service/impl/DoctorServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/service/impl/FaceServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/service/impl/FaceServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/service/impl/UserServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/service/inter/CollService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/service/inter/CollService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/service/inter/DoctorService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/service/inter/DoctorService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/service/inter/FaceService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/service/inter/FaceService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/util/DataValidateUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/util/DataValidateUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/util/face/UserFaceRes.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/util/face/UserFaceResUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapping/CollectionMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapping/CollectionMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapping/ConsultOrderMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapping/ConsultOrderMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapping/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapping/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapping/doctorMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapping/doctorMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/lllr/test/face/FaceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/lllr/test/face/FaceTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/lllr/test/user/A.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/lllr/test/user/A.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/lllr/test/user/B.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/lllr/test/user/B.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/lllr/test/user/C.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/lllr/test/user/C.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/lllr/test/user/F.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/lllr/test/user/F.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/lllr/test/user/UserTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/lllr/test/user/UserTest.class" afterDir="false" />
-=======
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapping/WeChatMessageItemMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapping/WeChatMessageItemMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/lllr/test/thread/ThreadTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/lllr/test/thread/ThreadTest.java" afterDir="false" />
->>>>>>> 8e05728cd73786e687b941c5f532c0ed6025ed43
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -432,86 +482,92 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="AdministratorController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/controller/AdministratorController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WebSocketConfig.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/controller/websocket/WebSocketConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="100">
+              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WebSocketController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/controller/websocket/WebSocketController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="200">
+              <caret line="30" column="22" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WeChatServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/service/impl/WeChatServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="19" column="33" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserConsultController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/controller/UserConsultController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="440">
+              <caret line="32" column="27" selection-start-line="32" selection-start-column="27" selection-end-line="32" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="UserController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/controller/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-640">
-              <caret line="130" column="61" selection-start-line="130" selection-start-column="61" selection-end-line="130" selection-end-column="61" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="160">
+              <caret line="39" column="13" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CollectionController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/controller/CollectionController.java">
+      <file leaf-file-name="ArticleController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/controller/ArticleController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="159">
-              <caret line="61" lean-forward="true" selection-start-line="61" selection-end-line="61" />
+            <state relative-caret-position="300">
+              <caret line="32" column="44" selection-start-line="32" selection-start-column="27" selection-end-line="32" selection-end-column="44" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CollServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/service/impl/CollServiceImpl.java">
+      <file leaf-file-name="QiniuUtil.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/util/qiniu/QiniuUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="760">
-              <caret line="60" column="17" lean-forward="true" selection-start-line="60" selection-start-column="17" selection-end-line="60" selection-end-column="17" />
+            <state relative-caret-position="108">
+              <caret line="35" column="41" lean-forward="true" selection-start-line="35" selection-start-column="41" selection-end-line="35" selection-end-column="41" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AutoAnswerTemplateMapper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/dao/mapper/AutoAnswerTemplateMapper.java">
+      <file leaf-file-name="ConsultOrderController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/controller/ConsultOrderController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="80">
-              <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+            <state relative-caret-position="120">
+              <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CollectionMapper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/dao/mapper/CollectionMapper.java">
+      <file leaf-file-name="AdministratorConsultController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/controller/AdministratorConsultController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="431">
-              <caret line="31" column="78" selection-start-line="31" selection-start-column="78" selection-end-line="31" selection-end-column="78" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Integer.java" pinned="false" current-in-tab="false">
-        <entry file="jar://F:/acm/src.zip!/java/lang/Integer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="177">
-              <caret line="51" column="19" selection-start-line="51" selection-start-column="19" selection-end-line="51" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CollectionMapper.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/mapping/CollectionMapper.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="110" column="2" selection-start-line="110" selection-start-column="2" selection-end-line="110" selection-end-column="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CollService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/service/inter/CollService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="17" column="18" lean-forward="true" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Collection.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/dataObject/popularization/Collection.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="40">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            <state relative-caret-position="140">
+              <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -529,8 +585,9 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</find>
-      <find>=======</find>
-      <find>set</find>
+      <find>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAd</find>
+      <find>&gt;&gt;&gt;&gt;&gt;</find>
+      <find>===</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -572,22 +629,18 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="641" />
-    <option name="y" value="121" />
+    <option name="x" value="640" />
+    <option name="y" value="120" />
     <option name="width" value="815" />
     <option name="height" value="595" />
   </component>
   <component name="ProjectId" id="1Y6bCKV37BX32usem9oXSguMAGn" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -637,36 +690,8 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="breast" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="breast" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bfbackend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="breast" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-              <item name="mapper" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="breast" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bfbackend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="breast" type="462c0819:PsiDirectoryNode" />
-              <item name="dataObject" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="breast" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bfbackend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="breast" type="462c0819:PsiDirectoryNode" />
-              <item name="dataObject" type="462c0819:PsiDirectoryNode" />
-              <item name="popularization" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+              <item name="websocket" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="breast" type="b2602c69:ProjectViewProjectNode" />
@@ -684,8 +709,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="breast" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="breast" type="b2602c69:ProjectViewProjectNode" />
@@ -694,8 +718,8 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="breast" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="inter" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+              <item name="qiniu" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="breast" type="b2602c69:ProjectViewProjectNode" />
@@ -709,6 +733,8 @@
         </subPane>
       </pane>
       <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="ProjectViewState">
@@ -716,18 +742,13 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="restartRequiresConfirmation" value="false" />
   </component>
-<<<<<<< HEAD
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -737,153 +758,12 @@
         <RuleState>
           <option name="name" value="StatusDashboardGroupingRule" />
         </RuleState>
-=======
-  <component name="RestClientSettings">
-    <option name="REQUEST_HISTORY">
-      <list>
-        <RestClientRequest>
-          <option name="httpMethod" value="GET" />
-          <option name="urlBase" value="http://localhost:8887" />
-          <option name="urlPath" value="/doctor/getAllDoctor" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="*/*" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Cache-Control" />
-                <option name="value" value="no-cache" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="textToSend" value="" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="GET" />
-          <option name="urlBase" value="http://localhost:8887" />
-          <option name="urlPath" value="/doctor/getAll" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="*/*" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Cache-Control" />
-                <option name="value" value="no-cache" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="textToSend" value="" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
->>>>>>> 8e05728cd73786e687b941c5f532c0ed6025ed43
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.BreastApplication">
-    <configuration name="ThreadTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lllr.test.thread.ThreadTest" />
-      <module name="breast" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="lllr.test.thread.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <method>
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ThreadTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="breast" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="lllr.test.thread.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="lllr.test.thread" />
-      <option name="MAIN_CLASS_NAME" value="lllr.test.thread.ThreadTest" />
-      <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ThreadTest.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="breast" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="lllr.test.thread.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-<<<<<<< HEAD
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="lllr.test.user" />
-      <option name="MAIN_CLASS_NAME" value="lllr.test.user.UserTest" />
-=======
-      <option name="PACKAGE_NAME" value="lllr.test.thread" />
-      <option name="MAIN_CLASS_NAME" value="lllr.test.thread.ThreadTest" />
->>>>>>> 8e05728cd73786e687b941c5f532c0ed6025ed43
-      <option name="METHOD_NAME" value="test1" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
-    <configuration name="ThreadTest.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="breast" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="lllr.test.thread.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="lllr.test.thread" />
-      <option name="MAIN_CLASS_NAME" value="lllr.test.thread.ThreadTest" />
-      <option name="METHOD_NAME" value="test2" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ThreadTest.test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="breast" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="lllr.test.thread.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="lllr.test.thread" />
-      <option name="MAIN_CLASS_NAME" value="lllr.test.thread.ThreadTest" />
-      <option name="METHOD_NAME" value="test3" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -892,7 +772,7 @@
       <option name="MAIN_CLASS_NAME" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" />
+      <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <option name="PASS_PARENT_ENVS" value="true" />
@@ -900,36 +780,15 @@
         <value defaultName="singleModule" />
       </option>
       <patterns />
-      <method>
-        <option name="Make" enabled="true" />
-      </method>
     </configuration>
-    <configuration name="mybatis-generator" type="MavenRunConfiguration" factoryName="Maven">
-      <MavenSettings>
-        <option name="myGeneralSettings" />
-        <option name="myRunnerSettings" />
-        <option name="myRunnerParameters">
-          <MavenRunnerParameters>
-            <option name="profiles">
-              <set />
-            </option>
-            <option name="goals">
-              <list>
-                <option value="mybatis-generator:generate" />
-              </list>
-            </option>
-            <option name="pomFileName" />
-            <option name="profilesMap">
-              <map />
-            </option>
-            <option name="resolveToWorkspace" value="false" />
-            <option name="workingDirPath" value="$PROJECT_DIR$" />
-          </MavenRunnerParameters>
-        </option>
-      </MavenSettings>
-    </configuration>
-    <configuration name="BreastApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+    <configuration name="BreastApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="breast" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lllr.test.breast.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="lllr.test.breast.BreastApplication" />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
@@ -941,7 +800,7 @@
       <option name="METHOD_NAME" />
       <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" />
+      <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <option name="OUTPUT_DIRECTORY" />
@@ -953,30 +812,10 @@
       <option name="PROPERTIES_FILE" />
       <properties />
       <listeners />
-      <method>
-        <option name="Make" enabled="true" />
-      </method>
     </configuration>
-    <list>
-<<<<<<< HEAD
-=======
-      <item itemvalue="Application.ThreadTest" />
-      <item itemvalue="JUnit.ThreadTest.test" />
-      <item itemvalue="JUnit.ThreadTest.test1" />
-      <item itemvalue="JUnit.ThreadTest.test2" />
-      <item itemvalue="JUnit.ThreadTest.test3" />
->>>>>>> 8e05728cd73786e687b941c5f532c0ed6025ed43
-      <item itemvalue="Maven.mybatis-generator" />
-      <item itemvalue="Spring Boot.BreastApplication" />
-      <item itemvalue="JUnit.UserTest.test1" />
-    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ThreadTest.test3" />
-        <item itemvalue="JUnit.ThreadTest.test2" />
-        <item itemvalue="Application.ThreadTest" />
-        <item itemvalue="JUnit.ThreadTest.test1" />
-        <item itemvalue="JUnit.ThreadTest.test" />
+        <item itemvalue="Spring Boot.BreastApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -986,65 +825,27 @@
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="c0d8a958-c9e9-4753-8056-5c3006198d9b" name="Default" comment="" />
-      <created>1580974287532</created>
+      <created>1583050027708</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1580974287532</updated>
-      <workItem from="1580974289098" duration="2396000" />
-      <workItem from="1580979018257" duration="2883000" />
-      <workItem from="1581045676117" duration="11427000" />
-      <workItem from="1581131005953" duration="5206000" />
-      <workItem from="1581217254794" duration="6139000" />
-      <workItem from="1581305097105" duration="3843000" />
-      <workItem from="1581313779111" duration="7127000" />
-      <workItem from="1581330993098" duration="239000" />
-      <workItem from="1581331273202" duration="1946000" />
-      <workItem from="1581391471465" duration="2862000" />
-      <workItem from="1581470560331" duration="1827000" />
-      <workItem from="1581773296890" duration="4074000" />
-      <workItem from="1582015343117" duration="763000" />
-      <workItem from="1582086042942" duration="8798000" />
-<<<<<<< HEAD
-      <workItem from="1582182380632" duration="5945000" />
-      <workItem from="1582695509451" duration="1837000" />
-      <workItem from="1582791981427" duration="6970000" />
-      <workItem from="1582855617810" duration="12256000" />
-      <workItem from="1582961104363" duration="3782000" />
-      <workItem from="1583029055886" duration="7552000" />
-=======
-      <workItem from="1582182380632" duration="5868000" />
-      <workItem from="1582265899173" duration="4648000" />
-      <workItem from="1582287248570" duration="3180000" />
-      <workItem from="1582293134081" duration="4555000" />
-      <workItem from="1582339079413" duration="5164000" />
-      <workItem from="1582361351311" duration="2468000" />
-      <workItem from="1582374349937" duration="3106000" />
-      <workItem from="1582432363371" duration="3687000" />
-      <workItem from="1582457836067" duration="3289000" />
-      <workItem from="1582511323722" duration="2966000" />
-      <workItem from="1582534766890" duration="1624000" />
-      <workItem from="1582547384274" duration="3886000" />
-      <workItem from="1582595957447" duration="4114000" />
-      <workItem from="1582607743546" duration="1933000" />
-      <workItem from="1582619496811" duration="594000" />
-      <workItem from="1582635966592" duration="602000" />
-      <workItem from="1582636639064" duration="709000" />
-      <workItem from="1582696926175" duration="2839000" />
-      <workItem from="1582720646548" duration="7595000" />
-      <workItem from="1582780285683" duration="7500000" />
->>>>>>> 8e05728cd73786e687b941c5f532c0ed6025ed43
+      <updated>1583050027708</updated>
+      <workItem from="1583050035423" duration="2240000" />
+      <workItem from="1583077060796" duration="174000" />
+      <workItem from="1583107498597" duration="1555000" />
+      <workItem from="1583131333802" duration="1471000" />
+      <workItem from="1583144886120" duration="1880000" />
+      <workItem from="1583160936808" duration="1651000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64081000" />
+    <option name="totallyTimeSpent" value="8971000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.24283855" side_tool="true" visible="true" weight="0.55448276" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.26171875" side_tool="true" visible="true" weight="0.68551725" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info id="Capture Tool" order="2" />
@@ -1055,16 +856,16 @@
       <window_info id="UI Designer" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="7" sideWeight="0.4921875" weight="0.30206898" />
+      <window_info anchor="bottom" id="Messages" order="7" sideWeight="0.49609375" weight="0.18206896" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="bottom" id="Java Enterprise" order="7" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.75716144" weight="0.55448276" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.73828125" weight="0.68551725" />
       <window_info anchor="bottom" id="Spring" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.104166664" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28385416" />
       <window_info anchor="right" id="Bean Validation" order="3" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="3" />
@@ -1083,453 +884,298 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
-  <component name="WindowStateProjectService">
-    <state x="574" y="122" key="#com.intellij.ide.util.MemberChooser" timestamp="1582552826187">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="574" y="122" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1582552826187" />
-    <state width="1493" height="51" key="GridCell.Tab.0.bottom" timestamp="1582810877234">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="51" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1582810877234" />
-    <state width="1493" height="51" key="GridCell.Tab.0.center" timestamp="1582810877234">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="51" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1582810877234" />
-    <state width="1493" height="51" key="GridCell.Tab.0.left" timestamp="1582810877234">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="51" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1582810877234" />
-    <state width="1493" height="51" key="GridCell.Tab.0.right" timestamp="1582810877234">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="51" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1582810877234" />
-    <state width="1493" height="51" key="GridCell.Tab.1.bottom" timestamp="1582810877072">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="51" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1582810877072" />
-    <state width="1493" height="51" key="GridCell.Tab.1.center" timestamp="1582810877072">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="51" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1582810877072" />
-    <state width="1493" height="51" key="GridCell.Tab.1.left" timestamp="1582810877072">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="51" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1582810877072" />
-    <state width="1493" height="51" key="GridCell.Tab.1.right" timestamp="1582810877072">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="51" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1582810877072" />
-    <state width="1493" height="51" key="GridCell.Tab.2.bottom" timestamp="1582810877073">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="51" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1582810877073" />
-    <state width="1493" height="51" key="GridCell.Tab.2.center" timestamp="1582810877072">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="51" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1582810877072" />
-    <state width="1493" height="51" key="GridCell.Tab.2.left" timestamp="1582810877072">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="51" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1582810877072" />
-    <state width="1493" height="51" key="GridCell.Tab.2.right" timestamp="1582810877073">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="51" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1582810877073" />
-    <state x="361" y="146" key="Vcs.Push.Dialog.v2" timestamp="1582207745085">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="361" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1582207745085" />
-    <state x="449" y="237" key="com.intellij.ide.util.TipDialog" timestamp="1582780413112">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="449" y="237" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1582780413112" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1582552870627">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1582552870627" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-<<<<<<< HEAD
-      <option name="time" value="5" />
-=======
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/lllr/test/breast/controller/DoctorController.java</url>
-          <line>75</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/lllr/test/breast/controller/UserController.java</url>
-          <line>81</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-      </breakpoints>
->>>>>>> 8e05728cd73786e687b941c5f532c0ed6025ed43
-    </breakpoint-manager>
-  </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/controller/AdministratorController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/controller/websocket/WebSocketConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        <state relative-caret-position="160">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/util/ikanalyzer/IKAnalyzerUtil.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/controller/websocket/WebSocketController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-160">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        <state relative-caret-position="600">
+          <caret line="30" column="22" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/dao/mapper/QuestionMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/service/inter/TestService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapping/TestMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="117" column="2" selection-start-line="117" selection-start-column="2" selection-end-line="117" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/dao/mapper/TestMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="21" column="15" selection-start-line="21" selection-start-column="15" selection-end-line="21" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/controller/TestController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapping/QuestionMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2600">
-          <caret line="130" column="9" selection-start-line="130" selection-start-column="9" selection-end-line="130" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/service/impl/TestServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="23" column="60" selection-start-line="23" selection-start-column="60" selection-end-line="23" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/dataObject/question/Question.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="11" column="29" selection-start-line="3" selection-start-column="4" selection-end-line="11" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/service/inter/UserAnswerService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="10" column="10" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/controller/QuestionController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="560">
-          <caret line="39" column="28" selection-start-line="39" selection-start-column="28" selection-end-line="39" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/service/impl/UserAnwserServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="22" column="60" selection-start-line="22" selection-start-column="60" selection-end-line="22" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/generatorConfig.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2120">
-          <caret line="106" column="54" selection-start-line="106" selection-start-column="54" selection-end-line="106" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/dao/mapper/VedioMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="19" column="9" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/controller/ArticleController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="700">
-          <caret line="51" column="31" selection-start-line="51" selection-start-column="17" selection-end-line="51" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/service/impl/VedioServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="21" column="19" lean-forward="true" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/service/inter/VedioService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="73">
-          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapping/VedioMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="413">
-          <caret line="111" column="9" selection-start-line="111" selection-start-column="9" selection-end-line="111" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/controller/VedioController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="35" column="28" selection-start-line="35" selection-start-column="28" selection-end-line="35" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/util/MD5Util.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-80">
-          <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/service/inter/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="6" column="32" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/controller/DoctorController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1640">
-          <caret line="103" column="9" selection-start-line="103" selection-start-column="9" selection-end-line="103" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/dataObject/user/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/validator/hibernate-validator/6.0.17.Final/hibernate-validator-6.0.17.Final.jar!/org/hibernate/validator/constraints/Length.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="23" column="18" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/common/ResponseCode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/service/impl/UserServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/util/DataValidateUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="17" column="28" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/common/ServerResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/exception/GlobalException.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/service/impl/WeChatServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="380">
-          <caret line="31" column="58" selection-start-line="31" selection-start-column="58" selection-end-line="31" selection-end-column="58" />
+          <caret line="19" column="33" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/BreastApplication.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/controller/UserConsultController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="9" column="30" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/redis/RedisConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="50" column="20" selection-start-line="50" selection-start-column="20" selection-end-line="50" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="191" selection-start-line="191" selection-end-line="191" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapping/UserMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="49" column="14" selection-start-line="49" selection-start-column="14" selection-end-line="49" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/dao/mapper/UserMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/redis/KeyPrefix.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="5" column="10" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/redis/RedisPoolFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="25" column="25" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/controller/UserFaceController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/redis/UserKey.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/redis/BasePrefix.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-221">
-          <caret line="6" column="16" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/redis/RedisService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="42" column="44" lean-forward="true" selection-start-line="42" selection-start-column="44" selection-end-line="42" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/dataObject/popularization/Collection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        <state relative-caret-position="640">
+          <caret line="32" column="27" selection-start-line="32" selection-start-column="27" selection-end-line="32" selection-end-column="27" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/controller/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-640">
-          <caret line="130" column="61" selection-start-line="130" selection-start-column="61" selection-end-line="130" selection-end-column="61" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="780">
+          <caret line="39" column="13" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/service/inter/CollService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/util/qiniu/QiniuUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="17" column="18" lean-forward="true" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="19" />
+        <state relative-caret-position="140">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://F:/acm/src.zip!/java/lang/Integer.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/controller/ConsultOrderController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="51" column="19" selection-start-line="51" selection-start-column="19" selection-end-line="51" selection-end-column="19" />
+        <state relative-caret-position="120">
+          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/dao/mapper/AutoAnswerTemplateMapper.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/controller/AdministratorConsultController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        <state relative-caret-position="140">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/dao/mapper/CollectionMapper.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/controller/ArticleController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="431">
-          <caret line="31" column="78" selection-start-line="31" selection-start-column="78" selection-end-line="31" selection-end-column="78" />
+        <state relative-caret-position="360">
+          <caret line="32" column="44" selection-start-line="32" selection-start-column="27" selection-end-line="32" selection-end-column="44" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapping/CollectionMapper.xml">
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="110" column="2" selection-start-line="110" selection-start-column="2" selection-end-line="110" selection-end-column="2" />
+        <state relative-caret-position="20360">
+          <caret line="1018" column="10" selection-start-line="1018" selection-start-column="10" selection-end-line="1018" selection-end-column="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/service/impl/CollServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/service/impl/DoctorServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="760">
-          <caret line="60" column="17" lean-forward="true" selection-start-line="60" selection-start-column="17" selection-end-line="60" selection-end-column="17" />
+        <state relative-caret-position="240">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/controller/CollectionController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/controller/AdministratorController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="61" lean-forward="true" selection-start-line="61" selection-end-line="61" />
+        <state relative-caret-position="320">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/controller/websocket/WebSocketConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/controller/websocket/WebSocketController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="30" column="22" lean-forward="true" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/controller/UserConsultController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="32" column="27" lean-forward="true" selection-start-line="32" selection-start-column="27" selection-end-line="32" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="39" column="13" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/controller/ConsultOrderController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/controller/AdministratorConsultController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/service/impl/WeChatServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="19" column="33" lean-forward="true" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/BreastApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8200">
+          <caret line="410" column="10" selection-start-line="410" selection-start-column="10" selection-end-line="410" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/controller/DoctorController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="560">
+          <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/service/impl/DoctorServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/BreastApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7940">
+          <caret line="397" column="10" selection-start-line="397" selection-start-column="10" selection-end-line="397" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/BreastApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8300">
+          <caret line="415" column="10" lean-forward="true" selection-start-line="415" selection-start-column="10" selection-end-line="415" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/BreastApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20360">
+          <caret line="1089" column="10" selection-start-line="1089" selection-start-column="10" selection-end-line="1089" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/service/impl/DoctorServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/controller/websocket/WebSocketConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/controller/AdministratorConsultController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/controller/AdministratorController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/controller/ConsultOrderController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/controller/DoctorController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/controller/websocket/WebSocketController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="30" column="22" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/service/impl/WeChatServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="19" column="33" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/controller/UserConsultController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="32" column="27" selection-start-line="32" selection-start-column="27" selection-end-line="32" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="39" column="13" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/controller/ArticleController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="32" column="44" selection-start-line="32" selection-start-column="27" selection-end-line="32" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/util/qiniu/QiniuUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="35" column="41" lean-forward="true" selection-start-line="35" selection-start-column="41" selection-end-line="35" selection-end-column="41" />
         </state>
       </provider>
     </entry>

@@ -37,28 +37,33 @@ Page({
 
   },
 
-
-  scrollHandle: function (e) { //滚动事件
-    this.setData({
-      scrolltop: e.detail.scrollTop
+  to_consultque:function(e)
+  {
+    wx.navigateTo({
+      url: '../consult_questionnaire/consult_questionnaire',
     })
   },
-  goToTop: function () { //回到顶部
-    this.setData({
-      scrolltop: 0
-    })
-  },
-  scrollLoading: function () { //滚动加载
-    this.fetchDoctorData();
-  },
-  onPullDownRefresh: function () { //下拉刷新
-    this.setData({
-      page: 0,
-      doctorlist: []
-    })
-    this.fetchDoctorData();
-    setTimeout(() => {
-      wx.stopPullDownRefresh()
-    }, 1000)
-  }
+  // scrollHandle: function (e) { //滚动事件
+  //   this.setData({
+  //     scrolltop: e.detail.scrollTop
+  //   })
+  // },
+  // goToTop: function () { //回到顶部
+  //   this.setData({
+  //     scrolltop: 0
+  //   })
+  // },
+  // scrollLoading: function () { //滚动加载
+  //   this.fetchDoctorData();
+  // },
+  // onPullDownRefresh: function () { //下拉刷新
+  //   this.setData({
+  //     page: 0,
+  //     doctorlist: []
+  //   })
+  //   this.fetchDoctorData();
+  //   setTimeout(() => {
+  //     wx.stopPullDownRefresh()
+  //   }, 1000)
+  // }
 })

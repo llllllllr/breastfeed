@@ -77,3 +77,30 @@
   overflow: hidden;
 	text-overflow: ellipsis;
 }
+
+
+page{
+	background-color: white;
+}
+.cu-list.menu-avatar>.cu-item {
+
+	position: relative;
+	display: flex;
+	padding-right: 10rpx;
+	height: 210rpx;
+	background-color: var(--white);
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.status{
+	height: 32rpx;
+  width: 32rpx;
+
+}
+
+.staus-bor{
+	display: flex;
+	flex-direction: row;
+}
+
