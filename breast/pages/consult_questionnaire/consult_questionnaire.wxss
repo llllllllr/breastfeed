@@ -1,10 +1,54 @@
 /* pages/service/index.wxss */
 
+
+page{
+    background-color: white;
+}
+
+.link-top {
+    width: 95%;
+    height: 0.5px;
+    border-top: solid rgb(215, 218, 221) 1px;
+    margin: auto;
+}
+
 .page-titile {
     margin-top: 100rpx;
     display: flex;
     flex-direction: row;
-    width: 80%;
+    width: 95%;
     margin: auto;
     justify-content: space-between;
 }
+
+.cu-list.menu-avatar>.cu-item {
+
+	position: relative;
+	display: flex;
+	padding-right: 10rpx;
+	height: 210rpx;
+	background-color: var(--white);
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.status{
+	height: 32rpx;
+  width: 32rpx;
+
+}
+
+.staus-bor{
+	display: flex;
+	flex-direction: row;
+}
+
+.cu-btn{
+    box-shadow:   10rpx  10rpx 10rpx rgb(209, 204, 204)
+  }
+
+  .btn_center{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+  }

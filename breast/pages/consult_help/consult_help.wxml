@@ -17,6 +17,6 @@
         </wux-wing-blank>
 
            <wux-wing-blank size="large">
-            <wux-button block type="energized"bindtap="onservice">人工服务</wux-button>
+            <wux-button block type="energized" bindtap="onservice">人工服务</wux-button>
         </wux-wing-blank>
    

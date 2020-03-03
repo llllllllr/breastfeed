@@ -17,6 +17,8 @@ App({
   },
   globalData: {
     serverUrl:'http://localhost:8887',
+    salt : "fdsfvxnmcvnew68sa5d54ds",
+    userid:-3,
     object:'',  //登录的用户群体：1.医生 2.普通用户
     userInfor:null,   //记录用户的信息
     doctorList:[]

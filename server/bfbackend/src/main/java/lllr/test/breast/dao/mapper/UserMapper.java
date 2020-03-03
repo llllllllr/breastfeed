@@ -20,4 +20,6 @@ public interface UserMapper {
     User selectByToken(String user_token);
 
     User selectByCreditId(String creditId);
+
+    Integer selectLastUserId();
 }

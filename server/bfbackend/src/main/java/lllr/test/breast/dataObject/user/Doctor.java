@@ -11,21 +11,24 @@ public class Doctor {
 
     private String name;
 
-    private Integer consultCost;
-
     private String licenseNumber;
 
-    @Override
-    public String toString() {
-        return "Doctor{" +
-                "id=" + id +
-                ", userName='" + userName + '\'' +
-                ", userPassword='" + userPassword + '\'' +
-                ", token='" + token + '\'' +
-                ", name='" + name + '\'' +
-                ", consultCost=" + consultCost +
-                ", licenseNumber='" + licenseNumber + '\'' +
-                '}';
+    private String expertIn;
+
+    private Integer imagetextCost;
+
+    private Integer voiceCost;
+
+    private Integer videoCost;
+
+    private String imgUrl;
+
+    public String getImgUrl() {
+        return imgUrl;
+    }
+
+    public void setImgUrl(String imgUrl) {
+        this.imgUrl = imgUrl;
     }
 
     public Integer getId() {
@@ -68,19 +71,60 @@ public class Doctor {
         this.name = name == null ? null : name.trim();
     }
 
-    public Integer getConsultCost() {
-        return consultCost;
-    }
-
-    public void setConsultCost(Integer consultCost) {
-        this.consultCost = consultCost;
-    }
-
     public String getLicenseNumber() {
         return licenseNumber;
     }
 
     public void setLicenseNumber(String licenseNumber) {
         this.licenseNumber = licenseNumber == null ? null : licenseNumber.trim();
+    }
+
+    public String getExpertIn() {
+        return expertIn;
+    }
+
+    public void setExpertIn(String expertIn) {
+        this.expertIn = expertIn == null ? null : expertIn.trim();
+    }
+
+    public Integer getImagetextCost() {
+        return imagetextCost;
+    }
+
+    public void setImagetextCost(Integer imagetextCost) {
+        this.imagetextCost = imagetextCost;
+    }
+
+    public Integer getVoiceCost() {
+        return voiceCost;
+    }
+
+    public void setVoiceCost(Integer voiceCost) {
+        this.voiceCost = voiceCost;
+    }
+
+    public Integer getVideoCost() {
+        return videoCost;
+    }
+
+    public void setVideoCost(Integer videoCost) {
+        this.videoCost = videoCost;
+    }
+
+    @Override
+    public String toString() {
+        return "Doctor{" +
+                "id=" + id +
+                ", userName='" + userName + '\'' +
+                ", userPassword='" + userPassword + '\'' +
+                ", token='" + token + '\'' +
+                ", name='" + name + '\'' +
+                ", licenseNumber='" + licenseNumber + '\'' +
+                ", expertIn='" + expertIn + '\'' +
+                ", imagetextCost=" + imagetextCost +
+                ", voiceCost=" + voiceCost +
+                ", videoCost=" + videoCost +
+                ", imgUrl='" + imgUrl + '\'' +
+                '}';
     }
 }

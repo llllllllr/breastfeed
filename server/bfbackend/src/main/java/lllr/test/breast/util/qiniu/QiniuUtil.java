@@ -3,13 +3,12 @@ package lllr.test.breast.util.qiniu;
 
 import com.google.gson.Gson;
 import com.qiniu.common.Zone;
+import com.qiniu.http.Response;
 import com.qiniu.storage.Configuration;
 import com.qiniu.storage.UploadManager;
 import com.qiniu.storage.model.DefaultPutRet;
 import com.qiniu.util.Auth;
 import com.qiniu.util.StringMap;
-import org.springframework.beans.factory.annotation.Value;
-import com.qiniu.http.Response;
 import org.springframework.stereotype.Service;
 
 import java.io.FileInputStream;
@@ -27,7 +26,7 @@ public class QiniuUtil {
     private String bucket = "wdtc";
     private String path = "http://llllllllr.top/";
 
-    public String upLoeadToken(FileInputStream file, String key) {
+    public String upLoeadToken(FileInputStream file, String key,String bucket) {
 
         //上传地域配置
         Configuration cfg = new Configuration(Zone.zone2());
@@ -51,7 +50,7 @@ public class QiniuUtil {
     }
 
 
-    public String getToken(){
+    public String getToken(String bucket){
 
         //上传凭证
         Auth auth = Auth.create(accessKey, secretKey);

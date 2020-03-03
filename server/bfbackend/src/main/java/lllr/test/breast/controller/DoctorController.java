@@ -10,13 +10,18 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.validation.constraints.NotNull;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.UUID;
 
 @RequestMapping("/doctor")
 @ResponseBody
@@ -63,16 +68,32 @@ public class DoctorController {
 
     @GetMapping("/register")
     public ServerResponse<Doctor> DoctorRegister(@RequestParam(value = "licenseNumber") String licenseNumber,
-                                             @RequestParam(value = "name") String name,
-                                             @RequestParam(value = "userName") String userName,
-                                             @RequestParam(value = "userPassword") String userPassword,
-                                       HttpServletRequest request,
-                                       HttpServletResponse response) throws StringException {
+                                                @RequestParam(value = "name") String name,
+                                                @RequestParam(value = "userName") String userName,
+                                                @RequestParam(value = "userPassword") String userPassword,
+                                                 @RequestParam(value = "imgUrl") String imgUrl,
+                                                 @RequestParam(value = "expertIn",required = false) String expertIn,
+                                                 @RequestParam(value = "imagetextCost",required = false) Integer imagetextCost,
+                                                 @RequestParam(value = "voiceCost",required = false) Integer voiceCost,
+                                                 @RequestParam(value = "videoCost",required = false) Integer videoCost,
+                                                 HttpServletRequest request, HttpServletResponse response) throws StringException {
 
         List<String> errorList = new ArrayList<>();
         Doctor doctor = new Doctor();
+        String token = UUID.randomUUID().toString().replace("-", "");
+        doctor.setToken(token);
+        doctor.setExpertIn(expertIn);
+        doctor.setImagetextCost(imagetextCost);
+        doctor.setVideoCost(videoCost);
+        doctor.setVoiceCost(voiceCost);
 
         //验证数据
+        if (!DataValidateUtil.isNull(imgUrl)) {
+            doctor.setImgUrl(imgUrl);
+        } else {
+            errorList.add("请上传人照图不能为空！");
+        }
+
         if (!DataValidateUtil.isNull(licenseNumber)) {
            doctor.setLicenseNumber(licenseNumber);
         } else {
@@ -101,7 +122,7 @@ public class DoctorController {
         if (errorList.size() > 0)
             return ServerResponse.createByErrorMsg(errorList.toString());
 
-        doctor.setToken(UUID.randomUUID().toString().replace("-", ""));
+
 
         LOGGER.info(" === DoctorRegister:" + doctor + " === errorMap: " + errorList + " ===");
 
@@ -205,6 +226,10 @@ public class DoctorController {
         return ServerResponse.createBysuccess();
     }
 
+    /*
+    #################### 修改医生的字段后没有测试
+
+     */
     //医生修改自己的咨询费用
     @GetMapping("/updateConsultCost")
     public ServerResponse updateConsultCost(@RequestParam(value = "doctorId") Integer doctorId,

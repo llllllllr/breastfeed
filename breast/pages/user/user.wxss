@@ -1,0 +1,74 @@
+page {
+  background-color: white;
+}
+
+.userbg {
+  width: 100%;
+  display: inline-block;
+  position: relative;
+  z-index: 0;
+  height: 300rpx;
+
+}
+
+.bor {
+  background-color: white;
+  box-shadow: 0rpx 0rpx 10rpx rgb(164, 160, 160);
+  height: 200rpx;
+  border-radius: 60rpx;
+  width: 620rpx;
+  margin-top: -100rpx;
+  z-index: 99;
+  padding: 60rpx;
+  display: flex;
+  flex-direction: row;
+}
+
+.text {
+  padding: 30rpx;
+  font-size: 30rpx;
+}
+
+.borout {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.avatar{
+  font-variant: small-caps;
+margin: 0;
+padding: 0;
+
+text-align: center;
+justify-content: center;
+align-items: center;
+
+color: var(--white);
+white-space: nowrap;
+position: relative;
+width: 64rpx;
+height: 64rpx;
+background-size: cover;
+background-position: center;
+vertical-align: middle;
+font-size: 1.5em;
+overflow: hidden;
+height: 78rpx;
+width: 78rpx;
+
+}
+
+.userinfo-avatar::after{
+
+  border-radius: 140rpx;
+
+}
+
+.open-data-class{
+  display: block;
+  width: 150rpx;
+  height: 150rpx;
+  overflow: hidden;
+  border-radius: 50%;
+}

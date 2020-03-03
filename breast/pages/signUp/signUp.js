@@ -1,3 +1,5 @@
+import  md5  from '../../assert/js/md5.js';
+var app = getApp();
 Page({
 
   /**
@@ -72,6 +74,9 @@ Page({
 
   //表单验证并上传到数据库
   formSubmit: function (e) {
+    wx.showLoading({
+      title: '加载中...',
+    })
     console.log('form发生了submit事件，携带数据为：', e.detail.value);
     var that = this;
     var dataList = e.detail.value;
@@ -99,12 +104,17 @@ Page({
     //孕周校验
     if(this.data == 0 && !posReg.test(dataList.pregnantWeek))
    {this.showModal("请输入合理的孕周");return;} 
+   //密码加密传输
+   var inputPass = dataList.password;
+   var salt = app.globalData.salt;
+   var str = ""+salt.charAt(0)+salt.charAt(4) + inputPass +salt.charAt(7) + salt.charAt(4) + salt.charAt(6);
+   var psd = md5(str);
    //如果用户选择 孕产期类型 为 孕期
    if(this.data.index == 0){
       wx.request({
         url: getApp().globalData.serverUrl + '/user/register',
         data: {
-          userPassword:dataList.password,//密码
+          userPassword:psd,//密码
           creditId: idNumber,//身份证号
           userName: dataList.nickName,//昵称
           age: age,//年龄
@@ -116,6 +126,9 @@ Page({
           "content-type": "application/x-www-form-urlencoded"
         },
         success: function (res) {
+          wx.hideLoading({
+            complete: (res) => {},
+          })
           var status = res.data.status;
           console.log('返回的状态 为 ' + status);
           //status==1表示状态正常
@@ -136,7 +149,7 @@ Page({
           //status不为1,显示错误信息
           console.log(res)
           {
-            var str = res.data.data.msg;
+            var str = res.data.msg;
             that.showModal(str);
           
           }
@@ -150,7 +163,7 @@ Page({
      wx.request({
        url: getApp().globalData.serverUrl + '/user/register',
        data: {
-         userPassword: dataList.password,//密码
+         userPassword: psd,//密码
          creditId: idNumber,//身份证号
          userName: dataList.nickName,//昵称
          age: age,//年龄

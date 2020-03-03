@@ -1,5 +1,5 @@
 <!--pages/service/index.wxml-->
-<view >
+<!-- <view >
 
   <wux-cell-group title="问题描述">
     <wux-cell hover-class="none">
@@ -30,4 +30,61 @@
  <wux-wing-blank size="large">
             <wux-button block type="energized" bindtap="onchange">确认提交</wux-button>
  </wux-wing-blank>
-     
+      -->
+ <view class="cu-list menu-avatar">
+    <view class="cu-item bor" style="margin-top:30rpx" bindtap="to_consultque">
+      <view class="cu-avatar radius lg" style="background-image:url({{doctorImg}});"></view>
+      <view class="content">
+        <view class="text-black">{{doctorName}} 主治医师</view>
+        <view class="text-gray text-sm flex">  
+							<text class=" margin-right-xs"></text> 请详细描述你的病情，有助于我更准确的分析，并保证你的隐私安全 
+        </view>				
+      </view>
+    </view> 
+    </view>
+    	<view class="cu-form-group">
+		<view class="title">姓名</view>
+		<input bindblur="handlerName" placeholder="请输入您的联系名"></input>
+	</view>
+  <view class="cu-form-group">
+		<view class="title">电话号码</view>
+		<input bindblur="handlerPhone" placeholder="请输入您的电话号码"></input>
+	</view>
+  <view class="link-top"></view>
+<view class="section" style="margin-top:30rpx">
+  <textarea bindblur="handlerQuestion" placeholder="请详细描述你的咨询情况..." style="padding:10px;height:130px" placeholder-style="color:grey;font-size:12px;padding:8px" auto-focus />
+</view>
+<view class="link-top"></view>
+	<view  style="margin-top:30rpx" class="cu-form-group">
+		<view class="grid col-4 grid-square flex-sub">
+			<view class="bg-img" wx:for="{{imgList}}" wx:key="{{index}}" bindtap="ViewImage" data-url="{{imgList[index]}}">
+				<image src='{{imgList[index]}}' mode='aspectFill'></image>
+				<view class="cu-tag bg-red" catchtap="DelImg" data-index="{{index}}">
+					<text class="cuIcon-close"></text>
+				</view>
+			</view>
+			<view class="solids" bindtap="ChooseImage" wx:if="{{imgList.length<1}}">
+				<text class="cuIcon-cameraadd"></text>
+			</view>
+		</view>
+	</view>
+<view class="btn_center">
+  <button class="cu-btn round bg-white shd" style="height:100rpx" 
+    bindtap="onchange" >提交</button>
+</view>
+
+ <view class="cu-modal {{modalName=='Modal'?'show':''}}">
+  <view class="cu-dialog">
+    <view class="cu-bar bg-white justify-end">
+      <view class="content">提示</view>
+      <view class="action" bindtap="hideModal">
+        <text class="cuIcon-close text-red"></text>
+      </view>
+    </view>
+    <view class="padding-xl">
+      {{modalContent}}
+    </view>
+  </view>
+</view>
+
+

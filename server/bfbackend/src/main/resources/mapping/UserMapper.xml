@@ -43,6 +43,12 @@
     from user
     where user_token = #{userToken,jdbcType=VARCHAR}
   </select>
+
+  <select id="selectLastUserId" resultType="integer">
+    select
+    max(user_id)
+    from user;
+  </select>
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
     delete from user
     where user_id = #{userId,jdbcType=INTEGER}

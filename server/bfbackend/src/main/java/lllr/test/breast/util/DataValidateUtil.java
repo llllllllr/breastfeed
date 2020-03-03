@@ -1,6 +1,7 @@
 package lllr.test.breast.util;
 
 import lllr.test.breast.util.exception.StringException;
+import org.springframework.stereotype.Service;
 
 import java.security.MessageDigest;
 import java.text.ParseException;
@@ -8,6 +9,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 //string工具类
+@Service
 public class DataValidateUtil {
 
     //将 一定格式的 日期字符串 转化为 Date 类型

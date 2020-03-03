@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 2020-03-03 12:57:06,467 [INFO] (StartupInfoLogger.java:50)- Starting BreastApplication on LAPTOP-562395R3 with PID 16136 (started by 爱哭的周小姐 in D:\软件应用\java IDE\IntelliJ IDEA 2019.1\项目\breastfeed\新建文件夹\server\bfbackend)
 2020-03-03 12:57:06,557 [DEBUG] (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
 2020-03-03 12:57:06,558 [INFO] (SpringApplication.java:648)- No active profile set, falling back to default profiles: default
@@ -17,3 +18,340 @@
 2020-03-03 12:57:56,368 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, user_name, name, consult_cost, license_number from doctor 
 2020-03-03 12:57:56,369 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
 2020-03-03 12:57:56,570 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 3
+=======
+2020-03-02 08:05:25,461 [INFO] (StartupInfoLogger.java:50)- Starting BreastApplication on LAPTOP-SKN1FD88 with PID 1904 (started by 12284 in F:\Ajava\A母乳喂养项目\breastfeed\server\bfbackend)
+2020-03-02 08:05:25,468 [DEBUG] (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2020-03-02 08:05:25,468 [INFO] (SpringApplication.java:648)- No active profile set, falling back to default profiles: default
+2020-03-02 08:05:31,191 [INFO] (StartupInfoLogger.java:59)- Started BreastApplication in 6.832 seconds (JVM running for 11.293)
+2020-03-02 08:06:27,393 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, user_name, name, consult_cost, license_number from doctor 
+2020-03-02 08:06:27,417 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-03-02 08:06:27,488 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 3
+2020-03-02 08:33:57,897 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, user_name, name, consult_cost, license_number from doctor 
+2020-03-02 08:33:57,927 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-03-02 08:33:57,984 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 3
+2020-03-02 08:36:25,682 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, user_name, name, consult_cost, license_number from doctor 
+2020-03-02 08:36:25,683 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-03-02 08:36:25,722 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 3
+2020-03-02 18:57:15,561 [INFO] (StartupInfoLogger.java:50)- Starting BreastApplication on LAPTOP-SKN1FD88 with PID 17688 (started by 12284 in F:\Ajava\A母乳喂养项目\breastfeed\server\bfbackend)
+2020-03-02 18:57:15,580 [DEBUG] (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2020-03-02 18:57:15,581 [INFO] (SpringApplication.java:648)- No active profile set, falling back to default profiles: default
+2020-03-02 18:57:22,802 [INFO] (StartupInfoLogger.java:59)- Started BreastApplication in 8.128 seconds (JVM running for 14.169)
+2020-03-02 18:58:02,961 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, audioURL, category, cover_url from audio 
+2020-03-02 18:58:03,073 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-03-02 18:58:03,144 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 6
+2020-03-02 18:58:03,148 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, vedioURL, cover_url, category, description from vedio 
+2020-03-02 18:58:03,155 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-03-02 18:58:03,215 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 9
+2020-03-02 18:58:03,216 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, description, img_url, category from article 
+2020-03-02 18:58:03,219 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-03-02 18:58:03,263 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 20
+2020-03-02 18:58:40,485 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, description, img_url, category from article 
+2020-03-02 18:58:40,486 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-03-02 18:58:40,500 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, audioURL, category, cover_url from audio 
+2020-03-02 18:58:40,502 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-03-02 18:58:40,540 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 20
+2020-03-02 18:58:40,548 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, vedioURL, cover_url, category, description from vedio 
+2020-03-02 18:58:40,549 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-03-02 18:58:40,554 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 6
+2020-03-02 18:58:40,595 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 9
+2020-03-02 18:58:49,024 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, user_name, name, consult_cost, license_number from doctor 
+2020-03-02 18:58:49,025 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-03-02 18:58:49,077 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 3
+2020-03-02 22:57:36,752 [INFO] (StartupInfoLogger.java:50)- Starting BreastApplication on LAPTOP-SKN1FD88 with PID 2824 (started by 12284 in F:\Ajava\A母乳喂养项目\breastfeed\server\bfbackend)
+2020-03-02 22:57:36,756 [DEBUG] (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2020-03-02 22:57:36,758 [INFO] (SpringApplication.java:648)- No active profile set, falling back to default profiles: default
+2020-03-02 22:57:42,981 [INFO] (StartupInfoLogger.java:59)- Started BreastApplication in 7.564 seconds (JVM running for 11.457)
+2020-03-02 22:58:34,514 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, description, img_url, category from article 
+2020-03-02 22:58:34,552 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-03-02 22:58:34,743 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 20
+2020-03-02 22:58:34,747 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, vedioURL, cover_url, category, description from vedio 
+2020-03-02 22:58:34,747 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-03-02 22:58:34,829 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 9
+2020-03-02 22:58:34,831 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, audioURL, category, cover_url from audio 
+2020-03-02 22:58:34,832 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-03-02 22:58:34,877 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 6
+2020-03-02 22:58:48,646 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, user_name, name, consult_cost, license_number from doctor 
+2020-03-02 22:58:48,647 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-03-02 22:58:48,689 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 3
+2020-03-02 22:59:57,252 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, audioURL, category, cover_url from audio 
+2020-03-02 22:59:57,253 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-03-02 22:59:57,259 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, vedioURL, cover_url, category, description from vedio 
+2020-03-02 22:59:57,259 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-03-02 22:59:57,302 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 6
+2020-03-02 22:59:57,309 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 9
+2020-03-02 22:59:57,310 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, description, img_url, category from article 
+2020-03-02 22:59:57,311 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-03-02 22:59:57,362 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 20
+2020-03-02 23:00:25,185 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, user_name, name, consult_cost, license_number from doctor 
+2020-03-02 23:00:25,186 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-03-02 23:00:25,229 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 3
+2020-03-02 23:01:05,274 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, description, img_url, category from article 
+2020-03-02 23:01:05,275 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-03-02 23:01:05,318 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 20
+2020-03-02 23:01:05,322 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, vedioURL, cover_url, category, description from vedio 
+2020-03-02 23:01:05,322 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-03-02 23:01:05,323 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, audioURL, category, cover_url from audio 
+2020-03-02 23:01:05,324 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-03-02 23:01:05,366 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 9
+2020-03-02 23:01:05,394 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 6
+2020-03-02 23:01:24,305 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, user_name, name, consult_cost, license_number from doctor 
+2020-03-02 23:01:24,306 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-03-02 23:01:24,348 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 3
+2020-03-02 23:14:24,344 [INFO] (StartupInfoLogger.java:50)- Starting BreastApplication on LAPTOP-SKN1FD88 with PID 26468 (started by 12284 in F:\Ajava\A母乳喂养项目\breastfeed\server\bfbackend)
+2020-03-02 23:14:24,345 [DEBUG] (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2020-03-02 23:14:24,347 [INFO] (SpringApplication.java:648)- No active profile set, falling back to default profiles: default
+2020-03-02 23:14:32,760 [INFO] (StartupInfoLogger.java:59)- Started BreastApplication in 10.512 seconds (JVM running for 16.831)
+2020-03-02 23:15:00,364 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, description, img_url, category from article 
+2020-03-02 23:15:00,438 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-03-02 23:15:00,609 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 20
+2020-03-02 23:15:00,628 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, vedioURL, cover_url, category, description from vedio 
+2020-03-02 23:15:00,629 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-03-02 23:15:00,685 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 9
+2020-03-02 23:15:00,687 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, audioURL, category, cover_url from audio 
+2020-03-02 23:15:00,688 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-03-02 23:15:00,730 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 6
+2020-03-02 23:15:07,804 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, user_name, name, consult_cost, license_number from doctor 
+2020-03-02 23:15:07,806 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-03-02 23:15:07,869 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 3
+2020-03-02 23:16:14,796 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, audioURL, category, cover_url from audio 
+2020-03-02 23:16:14,798 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-03-02 23:16:14,798 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, description, img_url, category from article 
+2020-03-02 23:16:14,798 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-03-02 23:16:14,843 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 6
+2020-03-02 23:16:14,845 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 20
+2020-03-02 23:16:14,851 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, vedioURL, cover_url, category, description from vedio 
+2020-03-02 23:16:14,852 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-03-02 23:16:14,902 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 9
+2020-03-02 23:16:44,643 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, user_name, name, consult_cost, license_number from doctor 
+2020-03-02 23:16:44,645 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-03-02 23:16:44,687 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 3
+2020-03-02 23:17:26,080 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, description, img_url, category from article 
+2020-03-02 23:17:26,083 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-03-02 23:17:26,124 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 20
+2020-03-02 23:17:26,132 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, audioURL, category, cover_url from audio 
+2020-03-02 23:17:26,132 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-03-02 23:17:26,135 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, vedioURL, cover_url, category, description from vedio 
+2020-03-02 23:17:26,135 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-03-02 23:17:26,174 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 6
+2020-03-02 23:17:26,178 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 9
+2020-03-02 23:17:29,790 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, user_name, name, consult_cost, license_number from doctor 
+2020-03-02 23:17:29,791 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-03-02 23:17:29,830 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 3
+2020-03-02 23:18:14,775 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, description, img_url, category from article 
+2020-03-02 23:18:14,775 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, audioURL, category, cover_url from audio 
+2020-03-02 23:18:14,775 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, vedioURL, cover_url, category, description from vedio 
+2020-03-02 23:18:14,776 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-03-02 23:18:14,776 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-03-02 23:18:14,776 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-03-02 23:18:14,823 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 6
+2020-03-02 23:18:14,823 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 9
+2020-03-02 23:18:14,825 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 20
+2020-03-02 23:18:18,614 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, user_name, name, consult_cost, license_number from doctor 
+2020-03-02 23:18:18,615 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-03-02 23:18:18,657 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 3
+2020-03-02 23:20:45,735 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, description, img_url, category from article 
+2020-03-02 23:20:45,738 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, vedioURL, cover_url, category, description from vedio 
+2020-03-02 23:20:45,740 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, audioURL, category, cover_url from audio 
+2020-03-02 23:20:45,743 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-03-02 23:20:45,743 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-03-02 23:20:45,765 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-03-02 23:20:45,920 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 6
+2020-03-02 23:20:45,921 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 20
+2020-03-02 23:20:45,924 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 9
+2020-03-02 23:20:49,559 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, user_name, name, consult_cost, license_number from doctor 
+2020-03-02 23:20:49,560 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-03-02 23:20:49,605 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 3
+2020-03-02 23:21:38,508 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, description, img_url, category from article 
+2020-03-02 23:21:38,509 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-03-02 23:21:38,513 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, audioURL, category, cover_url from audio 
+2020-03-02 23:21:38,515 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-03-02 23:21:38,520 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, vedioURL, cover_url, category, description from vedio 
+2020-03-02 23:21:38,521 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-03-02 23:21:38,555 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 20
+2020-03-02 23:21:38,556 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 6
+2020-03-02 23:21:38,562 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 9
+2020-03-02 23:22:05,812 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, user_name, name, consult_cost, license_number from doctor 
+2020-03-02 23:22:05,814 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-03-02 23:22:05,858 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 3
+2020-03-02 23:23:19,100 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, audioURL, category, cover_url from audio 
+2020-03-02 23:23:19,101 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-03-02 23:23:19,102 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, description, img_url, category from article 
+2020-03-02 23:23:19,103 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-03-02 23:23:19,105 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, vedioURL, cover_url, category, description from vedio 
+2020-03-02 23:23:19,105 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-03-02 23:23:19,142 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 6
+2020-03-02 23:23:19,143 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 20
+2020-03-02 23:23:19,146 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 9
+2020-03-02 23:25:02,410 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, user_name, name, consult_cost, license_number from doctor 
+2020-03-02 23:25:02,411 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-03-02 23:25:02,454 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 3
+2020-03-02 23:27:25,613 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, description, img_url, category from article 
+2020-03-02 23:27:25,616 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-03-02 23:27:25,664 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 20
+2020-03-02 23:27:26,670 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, audioURL, category, cover_url from audio 
+2020-03-02 23:27:26,672 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-03-02 23:27:26,726 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 6
+2020-03-02 23:27:26,727 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, vedioURL, cover_url, category, description from vedio 
+2020-03-02 23:27:26,728 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-03-02 23:27:26,772 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 9
+2020-03-02 23:27:29,815 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, user_name, name, consult_cost, license_number from doctor 
+2020-03-02 23:27:29,816 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-03-02 23:27:29,858 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 3
+2020-03-02 23:28:13,182 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, description, img_url, category from article 
+2020-03-02 23:28:13,184 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-03-02 23:28:13,195 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, audioURL, category, cover_url from audio 
+2020-03-02 23:28:13,196 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-03-02 23:28:13,233 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 20
+2020-03-02 23:28:13,239 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, vedioURL, cover_url, category, description from vedio 
+2020-03-02 23:28:13,240 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-03-02 23:28:13,245 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 6
+2020-03-02 23:28:13,284 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 9
+2020-03-02 23:28:17,331 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, user_name, name, consult_cost, license_number from doctor 
+2020-03-02 23:28:17,331 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-03-02 23:28:17,380 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 3
+2020-03-02 23:36:52,496 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, description, img_url, category from article 
+2020-03-02 23:36:52,533 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-03-02 23:36:52,665 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 20
+2020-03-02 23:36:52,673 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, audioURL, category, cover_url from audio 
+2020-03-02 23:36:52,676 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-03-02 23:36:52,807 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 6
+2020-03-02 23:36:52,808 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, vedioURL, cover_url, category, description from vedio 
+2020-03-02 23:36:52,811 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-03-02 23:36:52,900 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 9
+2020-03-02 23:36:57,331 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, user_name, name, consult_cost, license_number from doctor 
+2020-03-02 23:36:57,334 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-03-02 23:36:57,539 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 3
+2020-03-02 23:42:50,826 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, description, img_url, category from article 
+2020-03-02 23:42:50,824 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, vedioURL, cover_url, category, description from vedio 
+2020-03-02 23:42:50,828 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-03-02 23:42:50,828 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-03-02 23:42:50,923 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 20
+2020-03-02 23:42:50,925 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, audioURL, category, cover_url from audio 
+2020-03-02 23:42:50,925 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-03-02 23:42:50,930 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 9
+2020-03-02 23:42:51,049 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 6
+>>>>>>> 5465cf688102bcbe2da8e266441b988a33c079db
+2020-03-03 13:42:08,672 [INFO] (StartupInfoLogger.java:50)- Starting BreastApplication on LAPTOP-562395R3 with PID 7344 (started by 爱哭的周小姐 in D:\软件应用\java IDE\IntelliJ IDEA 2019.1\项目\breastfeed\新建文件夹\server\bfbackend)
+2020-03-03 13:42:08,687 [DEBUG] (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2020-03-03 13:42:08,689 [INFO] (SpringApplication.java:648)- No active profile set, falling back to default profiles: default
+2020-03-03 13:44:43,616 [INFO] (StartupInfoLogger.java:50)- Starting BreastApplication on LAPTOP-562395R3 with PID 17112 (started by 爱哭的周小姐 in D:\软件应用\java IDE\IntelliJ IDEA 2019.1\项目\breastfeed\新建文件夹\server\bfbackend)
+2020-03-03 13:44:43,621 [DEBUG] (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2020-03-03 13:44:43,621 [INFO] (SpringApplication.java:648)- No active profile set, falling back to default profiles: default
+2020-03-03 13:44:46,342 [INFO] (StartupInfoLogger.java:59)- Started BreastApplication in 3.991 seconds (JVM running for 5.839)
+2020-03-03 13:45:41,729 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, t_title, img_url, content from test 
+2020-03-03 13:45:41,754 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-03-03 13:45:41,863 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 2
+2020-03-03 13:45:50,476 [INFO] (UserController.java:198)- 91a10017309a4fda9c12d412a9788574
+2020-03-03 13:46:10,182 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select user_id, age, credit_id, pregnant_type, pregnant_week, job, confinement_date, confinement_week, confinement_type, user_name, user_password, user_token from user where user_token = ? 
+2020-03-03 13:46:10,183 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 91a10017309a4fda9c12d412a9788574(String)
+2020-03-03 13:46:10,361 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-03-03 13:46:10,363 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, description, img_url, category from article 
+2020-03-03 13:46:10,366 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-03-03 13:46:10,445 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 20
+2020-03-03 13:46:10,447 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, audioURL, category, cover_url from audio 
+2020-03-03 13:46:10,447 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-03-03 13:46:10,520 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 6
+2020-03-03 13:46:10,524 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, vedioURL, cover_url, category, description from vedio 
+2020-03-03 13:46:10,525 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-03-03 13:46:10,622 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 9
+2020-03-03 13:48:10,652 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select user_id, age, credit_id, pregnant_type, pregnant_week, job, confinement_date, confinement_week, confinement_type, user_name, user_password, user_token from user where user_token = ? 
+2020-03-03 13:48:10,652 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 91a10017309a4fda9c12d412a9788574(String)
+2020-03-03 13:48:10,739 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-03-03 14:09:26,029 [INFO] (StartupInfoLogger.java:50)- Starting BreastApplication on LAPTOP-562395R3 with PID 16472 (started by 爱哭的周小姐 in D:\软件应用\java IDE\IntelliJ IDEA 2019.1\项目\breastfeed\新建文件夹\server\bfbackend)
+2020-03-03 14:09:26,033 [DEBUG] (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2020-03-03 14:09:26,034 [INFO] (SpringApplication.java:648)- No active profile set, falling back to default profiles: default
+2020-03-03 14:09:28,913 [INFO] (StartupInfoLogger.java:59)- Started BreastApplication in 3.5 seconds (JVM running for 5.278)
+2020-03-03 14:10:07,873 [INFO] (DoctorController.java:127)-  === DoctorRegister:lllr.test.breast.dataObject.user.Doctor@50da1447 === errorMap: [] ===
+2020-03-03 14:14:21,776 [INFO] (StartupInfoLogger.java:50)- Starting BreastApplication on LAPTOP-562395R3 with PID 15144 (started by 爱哭的周小姐 in D:\软件应用\java IDE\IntelliJ IDEA 2019.1\项目\breastfeed\新建文件夹\server\bfbackend)
+2020-03-03 14:14:21,786 [DEBUG] (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2020-03-03 14:14:21,787 [INFO] (SpringApplication.java:648)- No active profile set, falling back to default profiles: default
+2020-03-03 14:14:24,382 [INFO] (StartupInfoLogger.java:59)- Started BreastApplication in 3.824 seconds (JVM running for 5.504)
+2020-03-03 14:14:41,683 [INFO] (DoctorController.java:127)-  === DoctorRegister:Doctor{id=null, userName='13', userPassword='43323432432', token='9905a68a5b014d0e998bc6ed95422c77', name='fgd', licenseNumber='32423423', expertIn='23423324', imagetextCost=null, voiceCost=null, videoCost=null, imgUrl='hhh'} === errorMap: [] ===
+2020-03-03 14:19:51,663 [INFO] (StartupInfoLogger.java:50)- Starting BreastApplication on LAPTOP-562395R3 with PID 5984 (started by 爱哭的周小姐 in D:\软件应用\java IDE\IntelliJ IDEA 2019.1\项目\breastfeed\新建文件夹\server\bfbackend)
+2020-03-03 14:19:51,672 [DEBUG] (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2020-03-03 14:19:51,672 [INFO] (SpringApplication.java:648)- No active profile set, falling back to default profiles: default
+2020-03-03 14:19:54,321 [INFO] (StartupInfoLogger.java:59)- Started BreastApplication in 3.964 seconds (JVM running for 6.02)
+2020-03-03 14:20:01,727 [INFO] (DoctorController.java:127)-  === DoctorRegister:Doctor{id=null, userName='13', userPassword='43323432432', token='2ee2d0ca62c84a02a4460903909bd9c8', name='fgd', licenseNumber='32423423', expertIn='23423324', imagetextCost=null, voiceCost=null, videoCost=null, imgUrl='hhh'} === errorMap: [] ===
+2020-03-03 14:20:03,800 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, user_name, img_url, user_password, token, name, license_number, expert_in, imageText_cost, voice_cost, video_cost from doctor where user_name = ? 
+2020-03-03 14:20:03,824 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 13(String)
+2020-03-03 14:20:03,932 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 0
+2020-03-03 14:20:03,936 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: insert into doctor (id, user_name, user_password, token, name, license_number, expert_in, imageText_cost, voice_cost, video_cost,img_url) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?),? 
+2020-03-03 14:20:03,937 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: null, 13(String), 43323432432(String), 2ee2d0ca62c84a02a4460903909bd9c8(String), fgd(String), 32423423(String), 23423324(String), null, null, null, hhh(String)
+2020-03-03 14:22:03,543 [INFO] (StartupInfoLogger.java:50)- Starting BreastApplication on LAPTOP-562395R3 with PID 17280 (started by 爱哭的周小姐 in D:\软件应用\java IDE\IntelliJ IDEA 2019.1\项目\breastfeed\新建文件夹\server\bfbackend)
+2020-03-03 14:22:03,547 [DEBUG] (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2020-03-03 14:22:03,548 [INFO] (SpringApplication.java:648)- No active profile set, falling back to default profiles: default
+2020-03-03 14:22:06,317 [INFO] (StartupInfoLogger.java:59)- Started BreastApplication in 4.76 seconds (JVM running for 6.607)
+2020-03-03 14:22:12,402 [INFO] (DoctorController.java:127)-  === DoctorRegister:Doctor{id=null, userName='13', userPassword='43323432432', token='248e90aef2cb41309dbcc336480eadfa', name='fgd', licenseNumber='32423423', expertIn='23423324', imagetextCost=null, voiceCost=null, videoCost=null, imgUrl='hhh'} === errorMap: [] ===
+2020-03-03 14:22:14,482 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, user_name, img_url, user_password, token, name, license_number, expert_in, imageText_cost, voice_cost, video_cost from doctor where user_name = ? 
+2020-03-03 14:22:14,521 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 13(String)
+2020-03-03 14:22:14,627 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 0
+2020-03-03 14:22:14,631 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: insert into doctor (id, user_name, user_password, token, name, license_number, expert_in, imageText_cost, voice_cost, video_cost,img_url) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?,?) 
+2020-03-03 14:22:14,632 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: null, 13(String), 43323432432(String), 248e90aef2cb41309dbcc336480eadfa(String), fgd(String), 32423423(String), 23423324(String), null, null, null, hhh(String)
+2020-03-03 14:22:14,807 [DEBUG] (BaseJdbcLogger.java:143)- <==    Updates: 1
+2020-03-03 14:24:27,391 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, user_name, name, img_url, expert_in, imageText_cost, voice_cost, video_cost from doctor 
+2020-03-03 14:24:27,392 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-03-03 14:24:27,479 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 4
+2020-03-03 14:25:37,524 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, user_name, name, img_url, expert_in, imageText_cost, voice_cost, video_cost from doctor 
+2020-03-03 14:25:37,524 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-03-03 14:25:37,612 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 4
+2020-03-03 14:27:55,280 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, user_name, name, img_url, expert_in, imageText_cost, voice_cost, video_cost from doctor 
+2020-03-03 14:27:55,280 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-03-03 14:27:55,371 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 4
+2020-03-03 14:28:00,306 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, user_name, name, img_url, expert_in, imageText_cost, voice_cost, video_cost from doctor 
+2020-03-03 14:28:00,306 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-03-03 14:28:00,391 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 4
+2020-03-03 14:29:54,520 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, user_name, name, img_url, expert_in, imageText_cost, voice_cost, video_cost from doctor 
+2020-03-03 14:29:54,521 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-03-03 14:29:54,610 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 4
+2020-03-03 14:30:11,985 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, user_name, name, img_url, expert_in, imageText_cost, voice_cost, video_cost from doctor 
+2020-03-03 14:30:11,985 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-03-03 14:30:12,091 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 4
+2020-03-03 14:33:31,830 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, user_name, name, img_url, expert_in, imageText_cost, voice_cost, video_cost from doctor 
+2020-03-03 14:33:31,831 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-03-03 14:33:31,908 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 4
+2020-03-03 14:34:49,664 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, user_name, name, img_url, expert_in, imageText_cost, voice_cost, video_cost from doctor 
+2020-03-03 14:34:49,664 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-03-03 14:34:49,742 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 4
+2020-03-03 14:36:52,710 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, user_name, name, img_url, expert_in, imageText_cost, voice_cost, video_cost from doctor 
+2020-03-03 14:36:52,711 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-03-03 14:36:52,787 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 4
+2020-03-03 14:46:33,688 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, user_name, name, img_url, expert_in, imageText_cost, voice_cost, video_cost from doctor 
+2020-03-03 14:46:33,689 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-03-03 14:46:33,776 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 4
+2020-03-03 14:48:51,233 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, user_name, name, img_url, expert_in, imageText_cost, voice_cost, video_cost from doctor 
+2020-03-03 14:48:51,234 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-03-03 14:48:51,309 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 4
+2020-03-03 14:49:00,179 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, user_name, name, img_url, expert_in, imageText_cost, voice_cost, video_cost from doctor 
+2020-03-03 14:49:00,179 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-03-03 14:49:00,336 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 4
+2020-03-03 14:50:28,716 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, user_name, name, img_url, expert_in, imageText_cost, voice_cost, video_cost from doctor 
+2020-03-03 14:50:28,717 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-03-03 14:50:28,800 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 4
+2020-03-03 15:01:05,859 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, user_name, name, img_url, expert_in, imageText_cost, voice_cost, video_cost from doctor 
+2020-03-03 15:01:05,860 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-03-03 15:01:05,936 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 4
+2020-03-03 15:06:14,802 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, user_name, name, img_url, expert_in, imageText_cost, voice_cost, video_cost from doctor 
+2020-03-03 15:06:14,803 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-03-03 15:06:14,911 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 4
+2020-03-03 15:10:16,040 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, user_name, name, img_url, expert_in, imageText_cost, voice_cost, video_cost from doctor 
+2020-03-03 15:10:16,041 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-03-03 15:10:16,135 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 4
+2020-03-03 15:11:43,240 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, user_name, name, img_url, expert_in, imageText_cost, voice_cost, video_cost from doctor 
+2020-03-03 15:11:43,241 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-03-03 15:11:43,330 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 4
+2020-03-03 15:15:26,520 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, user_name, name, img_url, expert_in, imageText_cost, voice_cost, video_cost from doctor 
+2020-03-03 15:15:26,521 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-03-03 15:15:26,610 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 4
+2020-03-03 15:21:31,084 [INFO] (StartupInfoLogger.java:50)- Starting BreastApplication on LAPTOP-562395R3 with PID 10756 (started by 爱哭的周小姐 in D:\软件应用\java IDE\IntelliJ IDEA 2019.1\项目\breastfeed\新建文件夹\server\bfbackend)
+2020-03-03 15:21:31,094 [DEBUG] (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2020-03-03 15:21:31,095 [INFO] (SpringApplication.java:648)- No active profile set, falling back to default profiles: default
+2020-03-03 15:21:35,000 [INFO] (StartupInfoLogger.java:59)- Started BreastApplication in 6.445 seconds (JVM running for 8.363)
+2020-03-03 15:22:17,008 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, user_name, name, img_url, expert_in, imageText_cost, voice_cost, video_cost from doctor 
+2020-03-03 15:22:17,068 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-03-03 15:22:17,206 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 4
+2020-03-03 15:25:30,565 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select user_id, age, credit_id, pregnant_type, pregnant_week, job, confinement_date, confinement_week, confinement_type, user_name, user_password, user_token from user where user_name = ? 
+2020-03-03 15:25:30,569 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 111(String)
+2020-03-03 15:25:30,653 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-03-03 15:25:38,309 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select user_id, age, credit_id, pregnant_type, pregnant_week, job, confinement_date, confinement_week, confinement_type, user_name, user_password, user_token from user where user_name = ? 
+2020-03-03 15:25:38,310 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 111(String)
+2020-03-03 15:25:38,615 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 1

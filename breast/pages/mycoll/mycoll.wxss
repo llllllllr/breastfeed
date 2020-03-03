@@ -1,0 +1,12 @@
+page{
+  background-color: #FAFFF0;
+}
+.sha{
+  box-shadow: 5rpx 5rpx 15rpx rgb(196, 192, 192);
+}
+  
+.noewRes{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
