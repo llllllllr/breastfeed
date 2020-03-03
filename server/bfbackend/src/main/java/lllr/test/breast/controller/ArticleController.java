@@ -30,7 +30,7 @@ public class ArticleController {
 
 
     //获取七牛云上传凭证
-    @RequestMapping(value="/article/getToken",method=RequestMethod.POST)
+    @RequestMapping(value="/article/getToken")
     @CrossOrigin
     public String returnToken(@RequestParam("bucket") String bucket){
 
@@ -121,7 +121,7 @@ public class ArticleController {
             try{
                 FileInputStream inputStream =(FileInputStream)multiple.getInputStream();
                 String fileName = multiple.getOriginalFilename();
-                String path = qiniu.upLoeadToken(inputStream,fileName);
+                String path = qiniu.upLoeadToken(inputStream,fileName,"wdtc");
                 System.out.println(path);
                 String[] data ={path};
                 QiniuResultUtil qiniuResultUtil = new QiniuResultUtil();

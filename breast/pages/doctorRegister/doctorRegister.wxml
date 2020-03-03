@@ -6,7 +6,7 @@
 	</view>
 	<view class="cu-form-group">
 		<view class="title">执业证号</view>
-		<input name="licenseNumber" bindinput="LicenseNumberChange" placeholder="请输入执业证号"></input>
+		<input name="licenseNumber" bindinput="LicenseNumberChange" placeholder="请输入执业证号,以顿号分开"></input>
 		<text  class="cuIcon-card lg text-gray"></text>
 	</view>
 	<view class="cu-form-group">
