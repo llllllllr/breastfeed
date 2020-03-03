@@ -2,3 +2,18 @@
 2020-03-03 12:57:06,557 [DEBUG] (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
 2020-03-03 12:57:06,558 [INFO] (SpringApplication.java:648)- No active profile set, falling back to default profiles: default
 2020-03-03 12:57:11,459 [INFO] (StartupInfoLogger.java:59)- Started BreastApplication in 5.8 seconds (JVM running for 9.445)
+2020-03-03 12:57:33,345 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, audioURL, category, cover_url from audio 
+2020-03-03 12:57:33,385 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-03-03 12:57:33,513 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 6
+2020-03-03 12:57:33,532 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, description, img_url, category from article 
+2020-03-03 12:57:33,533 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-03-03 12:57:33,619 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 20
+2020-03-03 12:57:33,620 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, vedioURL, cover_url, category, description from vedio 
+2020-03-03 12:57:33,621 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-03-03 12:57:33,700 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 9
+2020-03-03 12:57:48,709 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select user_id, age, credit_id, pregnant_type, pregnant_week, job, confinement_date, confinement_week, confinement_type, user_name, user_password, user_token from user where user_name = ? 
+2020-03-03 12:57:48,710 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 111(String)
+2020-03-03 12:57:48,835 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-03-03 12:57:56,368 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, user_name, name, consult_cost, license_number from doctor 
+2020-03-03 12:57:56,369 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-03-03 12:57:56,570 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 3
