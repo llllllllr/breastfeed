@@ -37,10 +37,16 @@ Page({
 
   },
 
-  to_consultque:function(e)
+  to_consultque(e)
   {
+    console.log("参数",e)
+    //获取参数
+    var doctorId = e.currentTarget.dataset.id;
+    var doctorName = e.currentTarget.dataset.name;
+    var doctorImg = e.currentTarget.dataset.imgurl;
     wx.navigateTo({
-      url: '../consult_questionnaire/consult_questionnaire',
+      url: '../consult_questionnaire/consult_questionnaire?doctorId=' + doctorId + '&doctorName=' + doctorName + 
+      '&doctorImg=' + doctorImg,
     })
   },
   // scrollHandle: function (e) { //滚动事件

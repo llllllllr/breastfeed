@@ -1,8 +1,9 @@
 {
   "pages": [
+    "pages/consult_doctors_choose/consult_doctors_choose",
+    "pages/signIndex/signIndex",
     "pages/index/index",
     "pages/consult_questionnaire/consult_questionnaire",
-    "pages/consult_doctors_choose/consult_doctors_choose",
     
     "pages/consult_chatroom/consult_chatroom",
     "pages/consult_gynecology/consult_gynecology",
@@ -17,7 +18,7 @@
     "pages/searchResult/searchResult",
     "pages/signUp/index",
     "pages/signIn/signIn",
-    "pages/signIndex/signIndex",
+    
     "pages/user/user",
     "pages/doctorRegister/doctorRegister",
     "pages/signUp/signUp",

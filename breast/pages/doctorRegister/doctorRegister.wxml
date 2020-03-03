@@ -39,7 +39,7 @@
 	</view>
 	<view class="cu-form-group align-start">
 		<view class="title">擅长</view>
-		<textarea maxlength="-1" disabled="{{modalName!=null}}" bindinput="textareaBInput" placeholder="请输入擅长的领域"></textarea>
+		<textarea maxlength="-1" name="expertIn" disabled="{{modalName!=null}}" bindinput="textareaBInput" placeholder="请输入擅长的领域"></textarea>
 	</view>
 
 	<view class="btn">

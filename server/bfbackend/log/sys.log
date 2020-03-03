@@ -491,6 +491,7 @@
 2020-03-03 21:18:15,471 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, user_name, name, img_url, expert_in, imageText_cost, voice_cost, video_cost from doctor 
 2020-03-03 21:18:15,472 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
 2020-03-03 21:18:15,661 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 7
+<<<<<<< HEAD
 2020-03-03 23:00:48,275 [INFO] (StartupInfoLogger.java:50)- Starting BreastApplication on LAPTOP-SKN1FD88 with PID 12128 (started by 12284 in F:\Ajava\A母乳喂养项目\breastfeed\server\bfbackend)
 2020-03-03 23:00:48,278 [DEBUG] (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
 2020-03-03 23:00:48,278 [INFO] (SpringApplication.java:648)- No active profile set, falling back to default profiles: default
@@ -528,3 +529,5 @@
 2020-03-03 23:11:49,620 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
 2020-03-03 23:11:49,648 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 6
 2020-03-03 23:11:49,668 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 9
+=======
+>>>>>>> 764246e7abb53949b576e2ce1a7d201ccb5ab8f7

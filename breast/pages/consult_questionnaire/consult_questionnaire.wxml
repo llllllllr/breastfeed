@@ -33,9 +33,9 @@
       -->
  <view class="cu-list menu-avatar">
     <view class="cu-item bor" style="margin-top:30rpx" bindtap="to_consultque">
-      <view class="cu-avatar radius lg" style="background-image:url(https://ossweb-img.qq.com/images/lol/web201310/skin/big10001.jpg);"></view>
+      <view class="cu-avatar radius lg" style="background-image:url({{doctorImg}});"></view>
       <view class="content">
-        <view class="text-black">张某某 主治医师</view>
+        <view class="text-black">{{doctorName}} 主治医师</view>
         <view class="text-gray text-sm flex">  
 							<text class=" margin-right-xs"></text> 请详细描述你的病情，有助于我更准确的分析，并保证你的隐私安全 
         </view>				
@@ -70,7 +70,7 @@
 	</view>
 <view class="btn_center">
   <button class="cu-btn round bg-white shd" style="height:100rpx" 
-    bindtap="UP" >提交</button>
+    bindtap="onchange" >提交</button>
 </view>
 
  <view class="cu-modal {{modalName=='Modal'?'show':''}}">

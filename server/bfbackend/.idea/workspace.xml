@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="c0d8a958-c9e9-4753-8056-5c3006198d9b" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/../../breast/pages/consult_questionnaire/consult_questionnaire.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../breast/pages/consult_questionnaire/consult_questionnaire.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
@@ -136,11 +137,35 @@
       <change beforePath="$PROJECT_DIR$/target/test-classes/lllr/test/user/C.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/lllr/test/user/C.class" afterDir="false" />
     </list>
     <option name="TRACKING_ENABLED" value="true" />
+=======
+    <list default="true" id="4be82cec-dda4-48c6-bb2f-4c997c26fcd8" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/pages/doctorRegister/doctorRegister.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../breast/pages/doctorRegister/doctorRegister.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bfbackend/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bfbackend/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bfbackend/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bfbackend/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bfbackend/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bfbackend/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bfbackend/src/main/java/lllr/test/breast/common/Const.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bfbackend/src/test/java/lllr/test/breast/BreastApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bfserverfront/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/bfserverfront/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bfserverfront/src/components/AddArticle.vue" beforeDir="false" afterPath="$PROJECT_DIR$/bfserverfront/src/components/AddArticle.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bfserverfront/src/components/ArticleList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/bfserverfront/src/components/ArticleList.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bfserverfront/src/components/HelloWorld.vue" beforeDir="false" afterPath="$PROJECT_DIR$/bfserverfront/src/components/HelloWorld.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bfserverfront/src/components/Index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/bfserverfront/src/components/Index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bfserverfront/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/bfserverfront/src/router/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/sys.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/controller/ArticleController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/controller/ArticleController.class" afterDir="false" />
+    </list>
+>>>>>>> 764246e7abb53949b576e2ce1a7d201ccb5ab8f7
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+<<<<<<< HEAD
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="WebSocketController.java" pinned="false" current-in-tab="false">
@@ -365,6 +390,13 @@
         </subPane>
       </pane>
     </panes>
+=======
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+>>>>>>> 764246e7abb53949b576e2ce1a7d201ccb5ab8f7
   </component>
   <component name="PropertiesComponent">
     <property name="RequestMappingsPanelOrder0" value="0" />
@@ -385,6 +417,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+<<<<<<< HEAD
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -397,21 +430,23 @@
         </RuleState>
       </list>
     </option>
+=======
+>>>>>>> 764246e7abb53949b576e2ce1a7d201ccb5ab8f7
   </component>
   <component name="RunManager">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+<<<<<<< HEAD
       <method>
+=======
+      <method v="2">
+>>>>>>> 764246e7abb53949b576e2ce1a7d201ccb5ab8f7
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
+<<<<<<< HEAD
       <option name="VM_PARAMETERS" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -421,6 +456,10 @@
       </option>
       <patterns />
       <method>
+=======
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+>>>>>>> 764246e7abb53949b576e2ce1a7d201ccb5ab8f7
         <option name="Make" enabled="true" />
       </method>
     </configuration>
@@ -433,29 +472,25 @@
         </pattern>
       </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="lllr.test.breast.BreastApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration default="true" type="TestNG" factoryName="TestNG">
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
+    <configuration default="true" type="TestNG">
       <option name="TEST_OBJECT" value="CLASS" />
+<<<<<<< HEAD
       <option name="VM_PARAMETERS" />
       <option name="PARAMETERS" />
+=======
+>>>>>>> 764246e7abb53949b576e2ce1a7d201ccb5ab8f7
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
       <properties />
       <listeners />
+<<<<<<< HEAD
       <method>
+=======
+      <method v="2">
+>>>>>>> 764246e7abb53949b576e2ce1a7d201ccb5ab8f7
         <option name="Make" enabled="true" />
       </method>
     </configuration>
@@ -480,6 +515,7 @@
     </task>
     <servers />
   </component>
+<<<<<<< HEAD
   <component name="TimeTrackingManager">
     <option name="totallyTimeSpent" value="803000" />
   </component>
@@ -521,6 +557,8 @@
       <window_info anchor="bottom" id="Find" order="1" />
     </layout>
   </component>
+=======
+>>>>>>> 764246e7abb53949b576e2ce1a7d201ccb5ab8f7
   <component name="WindowStateProjectService">
     <state x="223" y="68" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1583239222787">
       <screen x="0" y="0" width="1536" height="824" />
@@ -575,6 +613,7 @@
     </state>
     <state width="1493" height="439" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1583240100167" />
   </component>
+<<<<<<< HEAD
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/controller/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -936,6 +975,45 @@
         </state>
       </provider>
     </entry>
+=======
+  <component name="masterDetails">
+    <states>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+>>>>>>> 764246e7abb53949b576e2ce1a7d201ccb5ab8f7
   </component>
   <component name="masterDetails">
     <states>

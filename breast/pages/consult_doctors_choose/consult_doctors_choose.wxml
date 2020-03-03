@@ -24,13 +24,14 @@
 	</scroll-view>
 </view> -->
 
- <view class="cu-list menu-avatar">
-    <view class="cu-item bor" style="margin-top:30rpx" bindtap="to_consultque">
-      <view class="cu-avatar round lg" style="background-image:url(https://ossweb-img.qq.com/images/lol/web201310/skin/big10001.jpg);"></view>
+ <view class="cu-list menu-avatar"  wx:for="{{doctorList}}" wx:key="{{item.id}}">
+
+    <view class="cu-item bor" style="margin-top:30rpx" data-id="{{item.id}}" data-imgUrl="{{item.imgUrl}}" data-name="{{item.name}}" bindtap="to_consultque">
+      <view class="cu-avatar round lg" style="background-image:url({{item.imgUrl}});"></view>
       <view class="content">
-        <view class="text-black">张某某 主治医师</view>
+        <view class="text-black">{{item.name}} 主治医师</view>
         <view class="text-gray text-sm flex">  
-							<text class=" margin-right-xs"></text> 擅长：呼吸系统疾病、气道炎症、肺部感染、肺炎、哮喘、结核
+							<text class=" margin-right-xs"></text> {{item.expertIn}}
         </view>				
 				<view class="staus-bor">
 								<image class="status" src="/images/icon/kzx.png"></image>
@@ -39,46 +40,7 @@
       </view>
     </view>  
 
-		    <view class="cu-item bor" style="margin-top:30rpx">
-      <view class="cu-avatar round lg" style="background-image:url(https://ossweb-img.qq.com/images/lol/web201310/skin/big10001.jpg);"></view>
-      <view class="content">
-        <view class="text-black">张某某 主治医师</view>
-        <view class="text-gray text-sm flex">  
-							<text class=" margin-right-xs"></text> 擅长：呼吸系统疾病、气道炎症、肺部感染、肺炎、哮喘、结核
-        </view>				
-				<view class="staus-bor">
-								<image class="status" src="/images/icon/kzx.png"></image>
-				<view style="margin-left:15rpx" class="text-pink">可咨询</view>
-				</view>
-      </view>
-    </view>  
-
-		    <view class="cu-item bor" style="margin-top:30rpx">
-      <view class="cu-avatar round lg" style="background-image:url(https://ossweb-img.qq.com/images/lol/web201310/skin/big10001.jpg);"></view>
-      <view class="content">
-        <view class="text-black">张某某 主治医师</view>
-        <view class="text-gray text-sm flex">  
-							<text class=" margin-right-xs"></text> 擅长：呼吸系统疾病、气道炎症、肺部感染、肺炎、哮喘、结核	
-        </view>				
-				<view class="staus-bor">
-								<image class="status" src="/images/icon/kzx.png"></image>
-				<view style="margin-left:15rpx" class="text-pink">可咨询</view>
-				</view>
-      </view>
-    </view>  
-
-		    <view class="cu-item bor" style="margin-top:30rpx">
-      <view class="cu-avatar round lg" style="background-image:url(https://ossweb-img.qq.com/images/lol/web201310/skin/big10001.jpg);"></view>
-      <view class="content">
-        <view class="text-black">张某某 主治医师</view>
-        <view class="text-gray text-sm flex">  
-							<text class=" margin-right-xs"></text> 擅长：呼吸系统疾病、气道炎症、肺部感染、肺炎、哮喘、结核
-        </view>				
-				<view class="staus-bor">
-								<image class="status" src="/images/icon/kzx.png"></image>
-				<view style="margin-left:15rpx" class="text-pink">可咨询</view>
-				</view>
-      </view>
-    </view>  
   </view>
+
+  
 	

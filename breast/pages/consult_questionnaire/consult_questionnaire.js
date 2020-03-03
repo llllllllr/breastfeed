@@ -5,6 +5,8 @@ const app = getApp();
 Page({
   data: {
     doctorId: '',//医生的标识符
+    doctorName:'',//医生姓名
+    doctorImg:'',//医生图片
     question: '',//所有问题
     imagePaths: '/aaa', //上传图片列表    //图片的上传处理没有完成
     name: '', //联系姓名
@@ -19,13 +21,16 @@ Page({
     userid:-1
   },
   onLoad: function (options) {
+    console.log('问卷接收参数：', options)
     this.getToken()
     wx.showLoading({
       title: '加载中',
     })
     console.log('医生id参数：', options)
     this.setData({
-      doctorId: options.id
+      doctorId: options.doctorId,
+      doctorName:options.doctorName,
+      doctorImg:options.img
     })
   },
   onReady: function () {
@@ -123,7 +128,8 @@ Page({
         contact: this.data.name,
         contactPhone: this.data.phone,
         symptomDescription: this.data.question,
-        consultCost: this.data.consultCost
+        consultCost: this.data.consultCost,
+        imgList:''
       },
       success(res) {
         console.log('返回参数:', res)
