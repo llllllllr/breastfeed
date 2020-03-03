@@ -50,7 +50,6 @@ public class DoctorServiceImpl implements DoctorService {
     public ServerResponse updateConsultCost(Integer doctorId, Integer consultCost) {
         Doctor doctor = new Doctor();
         doctor.setId(doctorId);
-        doctor.setConsultCost(consultCost);
         return doctorMapper.updateByPrimaryKeySelective(doctor) == 1 ? ServerResponse.createBysuccess() : ServerResponse.createByError();
     }
 

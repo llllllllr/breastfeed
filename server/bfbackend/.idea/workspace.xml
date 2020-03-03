@@ -2,42 +2,147 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c0d8a958-c9e9-4753-8056-5c3006198d9b" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/../../breast/pages/question/question.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../breast/pages/question/question.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/pages/testIndex/testIndex.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../breast/pages/testIndex/testIndex.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/pages/consult_questionnaire/consult_questionnaire.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../breast/pages/consult_questionnaire/consult_questionnaire.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson_1_2_38.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson_1_2_38.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_11.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_11.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_6.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_pool2_2_6_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_pool2_2_6_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_validation_2_1_9_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_validation_2_1_9_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__redis_clients_jedis_2_9_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__redis_clients_jedis_2_9_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/breast.iml" beforeDir="false" afterPath="$PROJECT_DIR$/breast.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log/sys.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/sys.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lllr/test/breast/controller/ArticleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lllr/test/breast/controller/ArticleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lllr/test/breast/controller/DoctorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lllr/test/breast/controller/DoctorController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lllr/test/breast/dataObject/user/Doctor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lllr/test/breast/dataObject/user/Doctor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lllr/test/breast/service/impl/DoctorServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lllr/test/breast/service/impl/DoctorServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/generatorConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/generatorConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapping/ConsultOrderMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapping/ConsultOrderMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapping/DoctorMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapping/DoctorMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/generatorConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/generatorConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/BreastApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/BreastApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/common/ResponseCode.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/common/ResponseCode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/common/ServerResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/common/ServerResponse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/controller/AdministratorConsultController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/controller/AdministratorConsultController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/controller/AdministratorController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/controller/AdministratorController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/controller/ArticleController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/controller/ArticleController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/controller/AudioController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/controller/AudioController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/controller/CollectionController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/controller/CollectionController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/controller/ConsultOrderController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/controller/ConsultOrderController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/controller/DoctorController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/controller/DoctorController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/controller/QuestionController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/controller/QuestionController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/controller/UserConsultController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/controller/UserConsultController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/controller/UserFaceController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/controller/UserFaceController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/controller/VedioController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/controller/VedioController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/controller/websocket/WebSocketController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/controller/websocket/WebSocketController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/dao/mapper/AdministratorMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/dao/mapper/AdministratorMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/dao/mapper/AnswerMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/dao/mapper/AnswerMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/dao/mapper/ArticleMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/dao/mapper/ArticleMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/dao/mapper/AudioMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/dao/mapper/AudioMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/dao/mapper/AutoAnswerTemplateMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/dao/mapper/AutoAnswerTemplateMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/dao/mapper/CollectionMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/dao/mapper/CollectionMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/dao/mapper/ConsultOrderMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/dao/mapper/ConsultOrderMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/dao/mapper/DoctorMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/dao/mapper/DoctorMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/dao/mapper/QuestionMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/dao/mapper/QuestionMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/dao/mapper/SearchMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/dao/mapper/SearchMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/dao/mapper/TestMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/dao/mapper/TestMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/dao/mapper/UserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/dao/mapper/UserMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/dao/mapper/VedioMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/dao/mapper/VedioMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/dao/mapper/WeChatMessageItemMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/dao/mapper/WeChatMessageItemMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/dao/mapperUtil/AutoAnswerTemplateExample$Criteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/dao/mapperUtil/AutoAnswerTemplateExample$Criteria.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/dao/mapperUtil/AutoAnswerTemplateExample$Criterion.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/dao/mapperUtil/AutoAnswerTemplateExample$Criterion.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/dao/mapperUtil/AutoAnswerTemplateExample$GeneratedCriteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/dao/mapperUtil/AutoAnswerTemplateExample$GeneratedCriteria.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/dao/mapperUtil/AutoAnswerTemplateExample.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/dao/mapperUtil/AutoAnswerTemplateExample.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/dao/mapperUtil/UserExample.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/dao/mapperUtil/UserExample.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/dao/mapperUtil/UserGeneratedCriteria$Criterion.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/dao/mapperUtil/UserGeneratedCriteria$Criterion.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/dao/mapperUtil/UserGeneratedCriteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/dao/mapperUtil/UserGeneratedCriteria.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/dataObject/consult/AutoAnswerTemplate.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/dataObject/consult/AutoAnswerTemplate.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/dataObject/consult/ConsultOrder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/dataObject/consult/ConsultOrder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/dataObject/consult/WeChatMessageItem.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/dataObject/consult/WeChatMessageItem.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/dataObject/popularization/Article.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/dataObject/popularization/Article.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/dataObject/popularization/Audio.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/dataObject/popularization/Audio.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/dataObject/popularization/Collection.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/dataObject/popularization/Collection.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/dataObject/popularization/CollectionExample$Criteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/dataObject/popularization/CollectionExample$Criteria.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/dataObject/popularization/CollectionExample$Criterion.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/dataObject/popularization/CollectionExample$Criterion.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/dataObject/popularization/CollectionExample$GeneratedCriteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/dataObject/popularization/CollectionExample$GeneratedCriteria.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/dataObject/popularization/CollectionExample.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/dataObject/popularization/CollectionExample.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/dataObject/popularization/PagedResult.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/dataObject/popularization/PagedResult.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/dataObject/popularization/Search.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/dataObject/popularization/Search.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/dataObject/popularization/SearchExample$Criteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/dataObject/popularization/SearchExample$Criteria.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/dataObject/popularization/SearchExample$Criterion.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/dataObject/popularization/SearchExample$Criterion.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/dataObject/popularization/SearchExample$GeneratedCriteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/dataObject/popularization/SearchExample$GeneratedCriteria.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/dataObject/popularization/SearchExample.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/dataObject/popularization/SearchExample.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/dataObject/popularization/Vedio.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/dataObject/popularization/Vedio.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/dataObject/question/Answer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/dataObject/question/Answer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/dataObject/question/Question.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/dataObject/question/Question.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/dataObject/question/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/dataObject/question/Test.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/dataObject/user/Administrator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/dataObject/user/Administrator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/dataObject/user/Doctor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/dataObject/user/Doctor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/dataObject/user/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/dataObject/user/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/exception/GlobalException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/exception/GlobalException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/redis/BasePrefix.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/redis/BasePrefix.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/redis/RedisConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/redis/RedisConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/redis/RedisService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/redis/RedisService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/redis/UserKey.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/redis/UserKey.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/service/impl/AdministratorConsultServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/service/impl/AdministratorConsultServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/service/impl/AdministratorServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/service/impl/AdministratorServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/service/impl/ArticleServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/service/impl/ArticleServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/service/impl/AudioServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/service/impl/AudioServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/service/impl/CollServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/service/impl/CollServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/service/impl/ConsultOrderServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/service/impl/ConsultOrderServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/service/impl/DoctorServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/service/impl/DoctorServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/service/impl/FaceServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/service/impl/FaceServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/service/impl/QuestionImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/service/impl/QuestionImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/service/impl/UserAnwserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/service/impl/UserAnwserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/service/impl/UserConsultAutoReplyImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/service/impl/UserConsultAutoReplyImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/service/impl/UserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/service/impl/VedioServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/service/impl/VedioServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/service/impl/WeChatServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/service/impl/WeChatServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/service/inter/AdministratorConsult.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/service/inter/AdministratorConsult.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/service/inter/AdministratorService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/service/inter/AdministratorService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/service/inter/ArticleService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/service/inter/ArticleService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/service/inter/AudioService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/service/inter/AudioService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/service/inter/CollService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/service/inter/CollService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/service/inter/ConsultOrderService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/service/inter/ConsultOrderService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/service/inter/DoctorService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/service/inter/DoctorService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/service/inter/FaceService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/service/inter/FaceService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/service/inter/QuestionService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/service/inter/QuestionService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/service/inter/UserAnswerService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/service/inter/UserAnswerService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/service/inter/UserConsult.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/service/inter/UserConsult.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/service/inter/UserConsultAutoReply.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/service/inter/UserConsultAutoReply.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/service/inter/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/service/inter/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/service/inter/VedioService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/service/inter/VedioService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/service/inter/WeChatService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/service/inter/WeChatService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/util/DataValidateUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/util/DataValidateUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/util/MD5Util.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/util/MD5Util.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/util/exception/FaceException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/util/exception/FaceException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/util/exception/ImageException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/util/exception/ImageException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/util/exception/StringException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/util/exception/StringException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/util/face/FaceUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/util/face/FaceUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/util/ikanalyzer/IKAnalyzerUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/util/ikanalyzer/IKAnalyzerUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/util/qiniu/QiniuRes.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/util/qiniu/QiniuRes.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/util/qiniu/QiniuResultUtil$UserFaceRes.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/util/qiniu/QiniuResultUtil$UserFaceRes.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/util/qiniu/QiniuResultUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/util/qiniu/QiniuResultUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/util/qiniu/QiniuUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/util/qiniu/QiniuUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/util/wx/WXUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/util/wx/WXUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapping/ConsultOrderMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapping/ConsultOrderMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapping/doctorMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapping/doctorMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/lllr/test/thread/ThreadTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/lllr/test/thread/ThreadTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/lllr/test/user/A.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/lllr/test/user/A.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/lllr/test/user/B.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/lllr/test/user/B.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/lllr/test/user/C.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/lllr/test/user/C.class" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/target/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="CodeInsightWorkspaceSettings">
-    <option name="optimizeImportsOnTheFly" value="true" />
-  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="AdministratorController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/controller/AdministratorController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WebSocketConfig.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/controller/websocket/WebSocketConfig.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="WebSocketController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/controller/websocket/WebSocketController.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -77,8 +182,38 @@
       <file leaf-file-name="ArticleController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/controller/ArticleController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="32" column="46" selection-start-line="32" selection-start-column="46" selection-end-line="32" selection-end-column="46" />
+            <state relative-caret-position="-340">
+              <caret line="50" column="33" lean-forward="true" selection-start-line="50" selection-start-column="33" selection-end-line="50" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="149">
+              <caret line="197" selection-start-line="197" selection-end-line="197" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BreastApplication.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/BreastApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="101">
+              <caret line="16" selection-start-line="16" selection-end-line="16" />
+              <folding>
+                <element signature="e#642#643#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AdministratorConsultServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/service/impl/AdministratorConsultServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-173">
+              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -101,66 +236,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AdministratorConsultController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/controller/AdministratorConsultController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Interface" />
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</find>
-      <find>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAd</find>
-      <find>&gt;&gt;&gt;&gt;&gt;</find>
-      <find>===</find>
-    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
-  </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/.idea/workspace.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/lllr/test/breast/util/MD5Util.java" />
-        <option value="$PROJECT_DIR$/src/main/java/lllr/test/breast/service/impl/UserServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/lllr/test/breast/controller/DoctorController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/lllr/test/breast/util/DataValidateUtil.java" />
-        <option value="$PROJECT_DIR$/src/main/java/lllr/test/breast/exception/GlobalException.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/lllr/test/breast/BreastApplication.java" />
-        <option value="$PROJECT_DIR$/src/main/java/lllr/test/breast/redis/RedisConfig.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/lllr/test/breast/redis/RedisPoolFactory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/lllr/test/breast/dao/mapper/UserMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/mapping/UserMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/lllr/test/breast/redis/KeyPrefix.java" />
-        <option value="$PROJECT_DIR$/src/main/java/lllr/test/breast/redis/UserKey.java" />
-        <option value="$PROJECT_DIR$/src/main/java/lllr/test/breast/redis/BasePrefix.java" />
-        <option value="$PROJECT_DIR$/src/main/java/lllr/test/breast/redis/RedisService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/lllr/test/breast/controller/UserController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/lllr/test/breast/service/inter/CollService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/lllr/test/breast/service/impl/CollServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/mapping/CollectionMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/lllr/test/breast/dao/mapper/CollectionMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/lllr/test/breast/controller/CollectionController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/lllr/test/breast/util/qiniu/QiniuUtil.java" />
-        <option value="$PROJECT_DIR$/src/main/java/lllr/test/breast/controller/ArticleController.java" />
-      </list>
-    </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
@@ -174,7 +253,6 @@
     <option name="width" value="815" />
     <option name="height" value="595" />
   </component>
-  <component name="ProjectId" id="1Y6bCKV37BX32usem9oXSguMAGn" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -261,15 +339,32 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="breast" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bfbackend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="mapping" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="breast" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bfbackend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="breast" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bfbackend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
     </panes>
-  </component>
-  <component name="ProjectViewState">
-    <option name="showExcludedFiles" value="true" />
-    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="RequestMappingsPanelOrder0" value="0" />
@@ -278,6 +373,18 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -294,6 +401,9 @@
   <component name="RunManager">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method>
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -302,7 +412,7 @@
       <option name="MAIN_CLASS_NAME" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="VM_PARAMETERS" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <option name="PASS_PARENT_ENVS" value="true" />
@@ -310,6 +420,9 @@
         <value defaultName="singleModule" />
       </option>
       <patterns />
+      <method>
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="BreastApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="breast" />
@@ -330,7 +443,7 @@
       <option name="METHOD_NAME" />
       <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="VM_PARAMETERS" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <option name="OUTPUT_DIRECTORY" />
@@ -342,6 +455,9 @@
       <option name="PROPERTIES_FILE" />
       <properties />
       <listeners />
+      <method>
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <recent_temporary>
       <list>
@@ -354,30 +470,25 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="c0d8a958-c9e9-4753-8056-5c3006198d9b" name="Default" comment="" />
-      <created>1583050027708</created>
+      <changelist id="4be82cec-dda4-48c6-bb2f-4c997c26fcd8" name="Default" comment="" />
+      <created>1580972583027</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1583050027708</updated>
-      <workItem from="1583050035423" duration="2240000" />
-      <workItem from="1583077060796" duration="174000" />
-      <workItem from="1583107498597" duration="1555000" />
-      <workItem from="1583131333802" duration="1471000" />
-      <workItem from="1583144886120" duration="1880000" />
-      <workItem from="1583160936808" duration="1651000" />
-      <workItem from="1583196610746" duration="1316000" />
-      <workItem from="1583230445806" duration="782000" />
+      <updated>1580972583027</updated>
+      <workItem from="1580972584388" duration="505000" />
+      <workItem from="1580973230870" duration="789000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11069000" />
+    <option name="totallyTimeSpent" value="803000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.26236978" side_tool="true" visible="true" weight="0.46068966" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.1907552" side_tool="true" visible="true" weight="0.29793105" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info id="Capture Tool" order="2" />
@@ -388,16 +499,16 @@
       <window_info id="UI Designer" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="7" sideWeight="0.49479166" weight="0.20689656" />
+      <window_info anchor="bottom" id="Messages" order="7" sideWeight="0.4934896" weight="0.20689656" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="bottom" id="Java Enterprise" order="7" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.7376302" visible="true" weight="0.46068966" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.8092448" weight="0.29793105" />
       <window_info anchor="bottom" id="Spring" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19921875" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.3033854" />
       <window_info anchor="right" id="Bean Validation" order="3" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="3" />
@@ -410,41 +521,61 @@
       <window_info anchor="bottom" id="Find" order="1" />
     </layout>
   </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
-  </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
+  <component name="WindowStateProjectService">
+    <state x="223" y="68" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1583239222787">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="223" y="68" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1583239222787" />
+    <state width="1493" height="439" key="GridCell.Tab.0.bottom" timestamp="1583240100431">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="439" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1583240100431" />
+    <state width="1493" height="439" key="GridCell.Tab.0.center" timestamp="1583240100431">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="439" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1583240100431" />
+    <state width="1493" height="439" key="GridCell.Tab.0.left" timestamp="1583240100431">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="439" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1583240100431" />
+    <state width="1493" height="439" key="GridCell.Tab.0.right" timestamp="1583240100431">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="439" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1583240100431" />
+    <state width="1493" height="439" key="GridCell.Tab.1.bottom" timestamp="1583240100167">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="439" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1583240100167" />
+    <state width="1493" height="439" key="GridCell.Tab.1.center" timestamp="1583240100167">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="439" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1583240100167" />
+    <state width="1493" height="439" key="GridCell.Tab.1.left" timestamp="1583240100167">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="439" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1583240100167" />
+    <state width="1493" height="439" key="GridCell.Tab.1.right" timestamp="1583240100167">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="439" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1583240100167" />
+    <state width="1493" height="439" key="GridCell.Tab.2.bottom" timestamp="1583240100167">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="439" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1583240100167" />
+    <state width="1493" height="439" key="GridCell.Tab.2.center" timestamp="1583240100167">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="439" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1583240100167" />
+    <state width="1493" height="439" key="GridCell.Tab.2.left" timestamp="1583240100167">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="439" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1583240100167" />
+    <state width="1493" height="439" key="GridCell.Tab.2.right" timestamp="1583240100167">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="439" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1583240100167" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/controller/websocket/WebSocketConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/controller/websocket/WebSocketController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="30" column="22" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/service/impl/WeChatServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="19" column="33" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/controller/UserConsultController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="640">
-          <caret line="32" column="27" selection-start-line="32" selection-start-column="27" selection-end-line="32" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/controller/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
@@ -676,13 +807,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/BreastApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="20360">
@@ -767,12 +891,88 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/controller/ArticleController.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/lllr/test/consult/ConsultTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="32" column="46" selection-start-line="32" selection-start-column="46" selection-end-line="32" selection-end-column="46" />
+        <state relative-caret-position="-580">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/lllr/test/face/FaceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-340">
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="197" selection-start-line="197" selection-end-line="197" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/BreastApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="101">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+          <folding>
+            <element signature="e#642#643#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/service/impl/AdministratorConsultServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-173">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/controller/ArticleController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-340">
+          <caret line="50" column="33" lean-forward="true" selection-start-line="50" selection-start-column="33" selection-end-line="50" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>
