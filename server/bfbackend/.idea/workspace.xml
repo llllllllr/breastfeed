@@ -1,49 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c0d8a958-c9e9-4753-8056-5c3006198d9b" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/exception/GlobalException.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/redis/BasePrefix.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/redis/KeyPrefix.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/redis/RedisConfig.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/redis/RedisPoolFactory.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/redis/RedisService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/redis/UserKey.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/util/MD5Util.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../breast/app.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/pages/consult_doctors_choose/consult_doctors_choose.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../breast/pages/consult_doctors_choose/consult_doctors_choose.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/pages/consult_doctors_choose/consult_doctors_choose.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/../../breast/pages/consult_doctors_choose/consult_doctors_choose.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/pages/consult_questionnaire/consult_questionnaire.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../breast/pages/consult_questionnaire/consult_questionnaire.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/pages/consult_questionnaire/consult_questionnaire.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/../../breast/pages/consult_questionnaire/consult_questionnaire.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/pages/doctorRegister/doctorRegister.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../breast/pages/doctorRegister/doctorRegister.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/pages/doctorRegister/doctorRegister.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/../../breast/pages/doctorRegister/doctorRegister.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/pages/doctorRegister/doctorRegister.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/../../breast/pages/doctorRegister/doctorRegister.wxss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/sys.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lllr/test/breast/controller/ArticleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lllr/test/breast/controller/ArticleController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lllr/test/breast/controller/DoctorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lllr/test/breast/controller/DoctorController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lllr/test/breast/dataObject/user/Doctor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lllr/test/breast/util/qiniu/QiniuUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lllr/test/breast/util/qiniu/QiniuUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/generatorConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/generatorConfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapping/ConsultOrderMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapping/ConsultOrderMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapping/DoctorMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapping/DoctorMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/generatorConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/generatorConfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/BreastApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/BreastApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/controller/CollectionController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/controller/CollectionController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/controller/ConsultOrderController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/controller/ConsultOrderController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/controller/DoctorController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/controller/DoctorController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/dao/mapper/CollectionMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/dao/mapper/CollectionMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/dao/mapper/UserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/dao/mapper/UserMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/service/impl/AdministratorConsultServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/service/impl/AdministratorConsultServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/service/impl/CollServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/service/impl/CollServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/service/impl/DoctorServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/service/impl/DoctorServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/service/inter/CollService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/service/inter/CollService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/util/DataValidateUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/util/DataValidateUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapping/CollectionMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapping/CollectionMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapping/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapping/UserMapper.xml" afterDir="false" />
-    </list>
+    <list default="true" id="c0d8a958-c9e9-4753-8056-5c3006198d9b" name="Default" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -268,6 +226,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="2" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1583220086606" />
+    <state x="449" y="237" key="com.intellij.ide.util.TipDialog" timestamp="1583238739437">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="449" y="237" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1583238739437" />
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1583212346662">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
