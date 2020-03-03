@@ -1,51 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c0d8a958-c9e9-4753-8056-5c3006198d9b" name="Default" comment="" />
+    <list default="true" id="4be82cec-dda4-48c6-bb2f-4c997c26fcd8" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/pages/doctorRegister/doctorRegister.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../breast/pages/doctorRegister/doctorRegister.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bfbackend/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bfbackend/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bfbackend/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bfbackend/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bfbackend/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bfbackend/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bfbackend/src/main/java/lllr/test/breast/common/Const.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bfbackend/src/test/java/lllr/test/breast/BreastApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bfserverfront/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/bfserverfront/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bfserverfront/src/components/AddArticle.vue" beforeDir="false" afterPath="$PROJECT_DIR$/bfserverfront/src/components/AddArticle.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bfserverfront/src/components/ArticleList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/bfserverfront/src/components/ArticleList.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bfserverfront/src/components/HelloWorld.vue" beforeDir="false" afterPath="$PROJECT_DIR$/bfserverfront/src/components/HelloWorld.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bfserverfront/src/components/Index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/bfserverfront/src/components/Index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bfserverfront/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/bfserverfront/src/router/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/sys.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/sys.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/controller/ArticleController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/controller/ArticleController.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="CodeInsightWorkspaceSettings">
-    <option name="optimizeImportsOnTheFly" value="true" />
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Interface" />
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</find>
-      <find>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAd</find>
-      <find>&gt;&gt;&gt;&gt;&gt;</find>
-      <find>===</find>
-    </findStrings>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="dummy://restClient/response5.json" root0="SKIP_INSPECTION" />
-  </component>
-  <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
-      </MavenImportingSettings>
-    </option>
-  </component>
-  <component name="ProjectId" id="1Y6bCKV37BX32usem9oXSguMAGn" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
-  </component>
-  <component name="ProjectViewState">
-    <option name="showExcludedFiles" value="true" />
-    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="RequestMappingsPanelOrder0" value="0" />
@@ -54,55 +40,18 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="restartRequiresConfirmation" value="false" />
-  </component>
-  <component name="RestClientSettings">
-    <option name="REQUEST_HISTORY">
-      <list>
-        <RestClientRequest>
-          <option name="httpMethod" value="GET" />
-          <option name="urlBase" value="http://localhost:8887" />
-          <option name="urlPath" value="/doctor/getAllDoctor" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="*/*" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Cache-Control" />
-                <option name="value" value="no-cache" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="textToSend" value="" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="GET" />
-          <option name="urlBase" value="http://localhost:8887" />
-          <option name="urlPath" value="/getAllDoctor" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="*/*" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Cache-Control" />
-                <option name="value" value="no-cache" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="textToSend" value="" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-      </list>
-    </option>
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="Application" factoryName="Application">
@@ -151,88 +100,106 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="c0d8a958-c9e9-4753-8056-5c3006198d9b" name="Default" comment="" />
-      <created>1583050027708</created>
+      <changelist id="4be82cec-dda4-48c6-bb2f-4c997c26fcd8" name="Default" comment="" />
+      <created>1580972583027</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1583050027708</updated>
-      <workItem from="1583050035423" duration="2240000" />
-      <workItem from="1583077060796" duration="174000" />
-      <workItem from="1583107498597" duration="1555000" />
-      <workItem from="1583131333802" duration="1471000" />
-      <workItem from="1583144886120" duration="1880000" />
-      <workItem from="1583160936808" duration="1651000" />
-      <workItem from="1583196610746" duration="1316000" />
+      <updated>1580972583027</updated>
+      <workItem from="1580972584388" duration="505000" />
+      <workItem from="1580973230870" duration="789000" />
     </task>
     <servers />
   </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
-  </component>
   <component name="WindowStateProjectService">
-    <state x="223" y="68" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1583213727654">
+    <state x="223" y="68" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1583239222787">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="223" y="68" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1583213727654" />
-    <state x="574" y="97" key="#com.intellij.ide.util.MemberChooser" timestamp="1583216050115">
+    <state x="223" y="68" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1583239222787" />
+    <state width="1493" height="439" key="GridCell.Tab.0.bottom" timestamp="1583240100431">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="574" y="97" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1583216050115" />
-    <state width="1493" height="2" key="GridCell.Tab.0.bottom" timestamp="1583220086672">
+    <state width="1493" height="439" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1583240100431" />
+    <state width="1493" height="439" key="GridCell.Tab.0.center" timestamp="1583240100431">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="2" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1583220086672" />
-    <state width="1493" height="2" key="GridCell.Tab.0.center" timestamp="1583220086672">
+    <state width="1493" height="439" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1583240100431" />
+    <state width="1493" height="439" key="GridCell.Tab.0.left" timestamp="1583240100431">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="2" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1583220086672" />
-    <state width="1493" height="2" key="GridCell.Tab.0.left" timestamp="1583220086672">
+    <state width="1493" height="439" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1583240100431" />
+    <state width="1493" height="439" key="GridCell.Tab.0.right" timestamp="1583240100431">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="2" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1583220086672" />
-    <state width="1493" height="2" key="GridCell.Tab.0.right" timestamp="1583220086672">
+    <state width="1493" height="439" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1583240100431" />
+    <state width="1493" height="439" key="GridCell.Tab.1.bottom" timestamp="1583240100167">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="2" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1583220086672" />
-    <state width="1493" height="2" key="GridCell.Tab.1.bottom" timestamp="1583220086606">
+    <state width="1493" height="439" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1583240100167" />
+    <state width="1493" height="439" key="GridCell.Tab.1.center" timestamp="1583240100167">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="2" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1583220086606" />
-    <state width="1493" height="2" key="GridCell.Tab.1.center" timestamp="1583220086606">
+    <state width="1493" height="439" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1583240100167" />
+    <state width="1493" height="439" key="GridCell.Tab.1.left" timestamp="1583240100167">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="2" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1583220086606" />
-    <state width="1493" height="2" key="GridCell.Tab.1.left" timestamp="1583220086606">
+    <state width="1493" height="439" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1583240100167" />
+    <state width="1493" height="439" key="GridCell.Tab.1.right" timestamp="1583240100167">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="2" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1583220086606" />
-    <state width="1493" height="2" key="GridCell.Tab.1.right" timestamp="1583220086606">
+    <state width="1493" height="439" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1583240100167" />
+    <state width="1493" height="439" key="GridCell.Tab.2.bottom" timestamp="1583240100167">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="2" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1583220086606" />
-    <state width="1493" height="2" key="GridCell.Tab.2.bottom" timestamp="1583220086606">
+    <state width="1493" height="439" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1583240100167" />
+    <state width="1493" height="439" key="GridCell.Tab.2.center" timestamp="1583240100167">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="2" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1583220086606" />
-    <state width="1493" height="2" key="GridCell.Tab.2.center" timestamp="1583220086606">
+    <state width="1493" height="439" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1583240100167" />
+    <state width="1493" height="439" key="GridCell.Tab.2.left" timestamp="1583240100167">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="2" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1583220086606" />
-    <state width="1493" height="2" key="GridCell.Tab.2.left" timestamp="1583220086606">
+    <state width="1493" height="439" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1583240100167" />
+    <state width="1493" height="439" key="GridCell.Tab.2.right" timestamp="1583240100167">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="2" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1583220086606" />
-    <state width="1493" height="2" key="GridCell.Tab.2.right" timestamp="1583220086606">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="2" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1583220086606" />
-    <state x="449" y="237" key="com.intellij.ide.util.TipDialog" timestamp="1583238739437">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="449" y="237" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1583238739437" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1583212346662">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1583212346662" />
+    <state width="1493" height="439" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1583240100167" />
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>

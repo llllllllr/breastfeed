@@ -1,5 +1,6 @@
-
-var QiniuUploader = require('../../assert/js/qiniuUploader.js')
+import md5 from '../../assert/js/md5.js';
+var QiniuUploader = require('../../assert/js/qiniuUploader.js');
+const app = getApp();
 Page({
 
   /**
@@ -14,6 +15,9 @@ Page({
     imgList: [],
     imgToken:''
   },
+  onLoad:function(){
+    this.getToken()
+  },
 //职业证号改变
   LicenseNumberChange(e) {
     console.log(e);
@@ -21,7 +25,7 @@ Page({
       licenseNumber: e.detail.value
     })
   },
-
+  
 //真实姓名改变
   NameChange(e) {
     console.log(e);
@@ -62,19 +66,29 @@ Page({
   },
 
   formSubmit: function (e) {
+    var that = this;
     var dataList = e.detail.value;
     var name = dataList.name;
     var licenseNumber = dataList.licenseNumber;
     var userName = dataList.userName;
-    var userPassword = dataList.userPassword;
     var expertIn = dataList.expertIn;
-
+    var salt = app.globalData.salt;
+    var userPassword = dataList.userPassword;
 
     //密码校验
-    if (userPassword == undefined || userPassword.length < 6 ) {
+    if (userPassword == undefined || userPassword.length < 6) {
       this.showModal("请检查密码输入是否大于6位");
       return;
     }
+
+//密码用 md5 加密
+    var str = "" + salt.charAt(0) + salt.charAt(4) + userPassword + 
+    salt.charAt(7) + salt.charAt(4) + salt.charAt(6);
+    var psd = md5(str);
+
+    console.log("图片列表",this.data.imgList)
+    console.log('加密后密码:',psd)
+    
     console.log('表单数据：' , dataList);
 
     wx.request({
@@ -83,10 +97,10 @@ Page({
       data:{
         name:name,
         userName:userName,
-        userPassword:userPassword,
+        userPassword:psd,
         licenseNumber: licenseNumber,
         expertIn: expertIn,
-        imgUrl:"hhh"
+        imgUrl:that.data.imgList[0]
       },
       success:function(res){
         console.log('请求成功:',res)
@@ -104,7 +118,7 @@ Page({
     var that = this;
     wx.request({
       url: getApp().globalData.serverUrl + '/article/getToken',
-      method: 'POST',
+      method: 'GET',
       data: {
         bucket: 'doctoravatarr'
       },
@@ -139,7 +153,7 @@ Page({
           console.log('error: ' + error);
         }, {
           region: 'SCN',
-          domain: 'http://llllllllr.top/', // // bucket 域名，下载资源时用到。如果设置，会在 success callback 的 res 参数加上可以直接使用的 ImageURL 字段。否则需要自己拼接
+          domain: 'http://q6le9us69.bkt.clouddn.com/', // // bucket 域名，下载资源时用到。如果设置，会在 success callback 的 res 参数加上可以直接使用的 ImageURL 字段。否则需要自己拼接
           key: qiniu_key, // [非必须]自定义文件 key。如果不设置，默认为使用微信小程序 API 的临时文件名
           uptoken: that.data.imgToken, // 由其他程序生成七牛 uptoken
           uploadURL: 'https://up-z2.qiniup.com'

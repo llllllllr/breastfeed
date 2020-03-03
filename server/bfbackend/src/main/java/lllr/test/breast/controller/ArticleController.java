@@ -5,11 +5,15 @@ import lllr.test.breast.common.ServerResponse;
 import lllr.test.breast.dataObject.popularization.Article;
 import lllr.test.breast.dataObject.popularization.PagedResult;
 import lllr.test.breast.service.inter.ArticleService;
+import lllr.test.breast.util.qiniu.QiniuRes;
+import lllr.test.breast.util.qiniu.QiniuResultUtil;
 import lllr.test.breast.util.qiniu.QiniuUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
 
 import javax.annotation.Resource;
+import java.io.FileInputStream;
 import java.util.List;
 
 
@@ -26,7 +30,7 @@ public class ArticleController {
 
 
     //获取七牛云上传凭证
-    @RequestMapping(value="/article/getToken",method=RequestMethod.POST)
+    @RequestMapping(value="/article/getToken")
     @CrossOrigin
     public String returnToken(@RequestParam("bucket") String bucket){
 
@@ -108,25 +112,25 @@ public class ArticleController {
 
     }
 
-//    //上传图片
-//    @RequestMapping(value = "/article/upload",method = RequestMethod.POST)
-//    @CrossOrigin
-//    public QiniuRes uploadImg(MultipartFile multiple){
-//
-//        if(multiple != null) {
-//            try{
-//                FileInputStream inputStream =(FileInputStream)multiple.getInputStream();
-//                String fileName = multiple.getOriginalFilename();
-//                String path = qiniu.upLoeadToken(inputStream,fileName);
-//                System.out.println(path);
-//                String[] data ={path};
-//                QiniuResultUtil qiniuResultUtil = new QiniuResultUtil();
-//                return qiniuResultUtil.success(data);
-//
-//            }catch (Exception e){
-//                System.out.println(e.toString());
-//            }
-//        }
-//        return null;
-//    }
+    //上传图片
+    @RequestMapping(value = "/article/upload",method = RequestMethod.POST)
+    @CrossOrigin
+    public QiniuRes uploadImg(MultipartFile multiple){
+
+        if(multiple != null) {
+            try{
+                FileInputStream inputStream =(FileInputStream)multiple.getInputStream();
+                String fileName = multiple.getOriginalFilename();
+                String path = qiniu.upLoeadToken(inputStream,fileName,"wdtc");
+                System.out.println(path);
+                String[] data ={path};
+                QiniuResultUtil qiniuResultUtil = new QiniuResultUtil();
+                return qiniuResultUtil.success(data);
+
+            }catch (Exception e){
+                System.out.println(e.toString());
+            }
+        }
+        return null;
+    }
 }

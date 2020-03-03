@@ -1,7 +1,7 @@
 {
   "pages": [
-    "pages/signIndex/signIndex",
     "pages/consult_doctors_choose/consult_doctors_choose",
+    "pages/signIndex/signIndex",
     "pages/index/index",
     "pages/consult_questionnaire/consult_questionnaire",
     

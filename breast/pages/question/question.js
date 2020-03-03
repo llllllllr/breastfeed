@@ -9,13 +9,15 @@ Page({
     title: "",
     type: 0,
     options: [],
-    resData: []
+    resData: [],
+    userid:-1
   },
   onLoad: function (options) {
     var id = options.id;
     this.getQuestion(id)
     this.setData({
-      tid:id
+      tid:id,
+      userid:options.userid
     })
   },
 
@@ -100,7 +102,7 @@ Page({
         url: serverUrl+ '/user/insertAnswers',
         method:"GET",
         data:{
-          userid:2,
+          userid:that.data.userid,
           tid:this.data.tid,
           answers:str
         },
