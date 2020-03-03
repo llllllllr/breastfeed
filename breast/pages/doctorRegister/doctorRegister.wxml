@@ -1,42 +1,64 @@
 <form class="padding mar" bindsubmit="formSubmit">
- 			<view class="cu-form-group">
- 				<view class="title">姓名</view>
- 				<input name="name" bindinput="NameChange" placeholder="请输入姓名"></input>
- 				<text class="cuIcon-profile lg text-gray"></text>
- 			</view>
- 			<view class="cu-form-group">
- 				<view class="title">执业证号</view>
- 				<input name="licenseNumber" bindinput="LicenseNumberChange" placeholder="请输入执业证号"></input>
-                        <text  class="cuIcon-card lg text-gray"></text>
- 			</view>
-       	<view class="cu-form-group">
- 				<view class="title">用户名</view>
- 				<input name="userName" bindinput="UserNameChange" placeholder="请输入用户名"></input>
-                        <text  class="cuIcon-profile lg text-gray"></text>
- 			</view>
-       	<view class="cu-form-group">
- 				<view class="title">密码</view>
- 				<input name="userPassword" type="password" bindinput="UserPasswordChange" placeholder="请输入密码"></input>
-                        <text  class="cuIcon-lock lg text-gray"></text>
- 			</view>
-			 <view class="btn">
-  	<button formType="submit" class="cu-btn round bg-white shd" style="height:100rpx" 
-   >注册</button>
-    </view>
-       </form>
-   
+	<view class="cu-form-group">
+		<view class="title">姓名</view>
+		<input name="name" bindinput="NameChange" placeholder="请输入姓名"></input>
+		<text class="cuIcon-profile lg text-gray"></text>
+	</view>
+	<view class="cu-form-group">
+		<view class="title">执业证号</view>
+		<input name="licenseNumber" bindinput="LicenseNumberChange" placeholder="请输入执业证号"></input>
+		<text  class="cuIcon-card lg text-gray"></text>
+	</view>
+	<view class="cu-form-group">
+		<view class="title">用户名</view>
+		<input name="userName" bindinput="UserNameChange" placeholder="请输入用户名"></input>
+		<text  class="cuIcon-profile lg text-gray"></text>
+	</view>
+	<view class="cu-form-group">
+		<view class="title">密码</view>
+		<input name="userPassword" type="password" bindinput="UserPasswordChange" placeholder="请输入密码"></input>
+		<text  class="cuIcon-lock lg text-gray"></text>
+	</view>
+	<view class="cu-bar bg-white">
+		<view class="action">
+			上传头像
+		</view>
+	</view>
+	<view class="cu-form-group">
+		<view class="grid col-4 grid-square flex-sub">
+			<view class="bg-img" wx:for="{{imgList}}" wx:key="{{index}}" bindtap="ViewImage" data-url="{{imgList[index]}}">
+				<image src='{{imgList[index]}}' mode='aspectFill'></image>
+				<view class="cu-tag bg-red" catchtap="DelImg" data-index="{{index}}">
+					<text class="cuIcon-close"></text>
+				</view>
+			</view>
+			<view class="solids" bindtap="ChooseImage" wx:if="{{imgList.length<1}}">
+				<text class="cuIcon-cameraadd"></text>
+			</view>
+		</view>
+	</view>
+	<view class="cu-form-group align-start">
+		<view class="title">擅长</view>
+		<textarea maxlength="-1" disabled="{{modalName!=null}}" bindinput="textareaBInput" placeholder="请输入擅长的领域"></textarea>
+	</view>
+
+	<view class="btn">
+		<button formType="submit" class="cu-btn round bg-white shd" style="height:100rpx">注册</button>
+	</view>
+</form>
 
 
- <view class="cu-modal {{modalName=='Modal'?'show':''}}">
-  <view class="cu-dialog">
-    <view class="cu-bar bg-white justify-end">
-      <view class="content">提示</view>
-      <view class="action" bindtap="hideModal">
-        <text class="cuIcon-close text-red"></text>
-      </view>
-    </view>
-    <view class="padding-xl">
-      {{modalContent}}
-    </view>
-  </view>
+
+<view class="cu-modal {{modalName=='Modal'?'show':''}}">
+	<view class="cu-dialog">
+		<view class="cu-bar bg-white justify-end">
+			<view class="content">提示</view>
+			<view class="action" bindtap="hideModal">
+				<text class="cuIcon-close text-red"></text>
+			</view>
+		</view>
+		<view class="padding-xl">
+			{{modalContent}}
+		</view>
+	</view>
 </view>

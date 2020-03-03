@@ -32,10 +32,9 @@ public class ArticleController {
     //获取七牛云上传凭证
     @RequestMapping(value="/article/getToken",method=RequestMethod.POST)
     @CrossOrigin
-    public String returnToken(){
+    public String returnToken(@RequestParam("bucket") String bucket){
 
-        qiniu.getToken();
-        String token = qiniu.getToken();
+        String token = qiniu.getToken(bucket);
         return  token;
     }
 
