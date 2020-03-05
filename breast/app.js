@@ -16,7 +16,8 @@ App({
     this.tokenSign()
   },
   globalData: {
-    serverUrl:'http://localhost:8887',
+    // serverUrl:'https://www.llllllllr.top/breast-0.0.1-SNAPSHOT',
+     serverUrl:'http://localhost:8887',
     salt : "fdsfvxnmcvnew68sa5d54ds",
     userid:-3,
     object:'',  //登录的用户群体：1.医生 2.普通用户

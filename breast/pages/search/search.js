@@ -15,6 +15,9 @@ Page({
     wx.request({
       url: serverurl+'/article/getHotWords',
       method:'GET',
+      header:{  
+        'content-type':'application/json'
+     },
       success:function(res){
         console.log(res.data.data)
          var hotwords = res.data.data;

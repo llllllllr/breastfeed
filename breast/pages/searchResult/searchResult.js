@@ -26,6 +26,9 @@ Page({
     wx.request({
       url: serverUrl +  '/article/search',
       method:'GET',
+      header:{  
+        'content-type':'application/json'
+     },
       data:{
         content:this.data.word
       },

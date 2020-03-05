@@ -81,6 +81,7 @@ Page({
     var serverUrl = app.globalData.serverUrl;
     //如果已经是最后一题
     if (this.data.currentIndex == this.data.resData.length - 1) {
+        
         wx.showToast({
         title: '积分+10!',
       })
