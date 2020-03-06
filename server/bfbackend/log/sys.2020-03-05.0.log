@@ -1,0 +1,13 @@
+2020-03-05 23:04:00,783 [INFO] (StartupInfoLogger.java:50)- Starting BreastApplication on LAPTOP-SKN1FD88 with PID 18464 (started by 12284 in F:\Ajava\A母乳喂养项目\breastfeed\server\bfbackend)
+2020-03-05 23:04:00,861 [DEBUG] (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2020-03-05 23:04:00,861 [INFO] (SpringApplication.java:648)- No active profile set, falling back to default profiles: default
+2020-03-05 23:04:05,918 [INFO] (StartupInfoLogger.java:59)- Started BreastApplication in 5.947 seconds (JVM running for 10.013)
+2020-03-05 23:04:33,784 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, user_name, name, img_url, expert_in, imageText_cost, voice_cost, video_cost from doctor 
+2020-03-05 23:04:33,854 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-03-05 23:04:34,018 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 7
+2020-03-05 23:05:03,263 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, user_name, name, img_url, expert_in, imageText_cost, voice_cost, video_cost from doctor 
+2020-03-05 23:05:03,264 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-03-05 23:05:03,410 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 7
+2020-03-05 23:05:07,171 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, t_title, img_url, content from test 
+2020-03-05 23:05:07,172 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-03-05 23:05:07,266 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 2

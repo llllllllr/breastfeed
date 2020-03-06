@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="lllr.test.breast.dao.mapper.UserMapper">
+  <resultMap id="BaseResultMap" type="lllr.test.breast.dataObject.user.User">
+    <id column="user_id" jdbcType="INTEGER" property="userId" />
+    <result column="age" jdbcType="INTEGER" property="age" />
+    <result column="credit_id" jdbcType="VARCHAR" property="creditId" />
+    <result column="pregnant_type" jdbcType="INTEGER" property="pregnantType" />
+    <result column="pregnant_week" jdbcType="VARCHAR" property="pregnantWeek" />
+    <result column="job" jdbcType="VARCHAR" property="job" />
+    <result column="confinement_date" jdbcType="DATE" property="confinementDate" />
+    <result column="confinement_week" jdbcType="INTEGER" property="confinementWeek" />
+    <result column="confinement_type" jdbcType="INTEGER" property="confinementType" />
+    <result column="user_name" jdbcType="VARCHAR" property="userName" />
+    <result column="user_password" jdbcType="VARCHAR" property="userPassword" />
+    <result column="user_token" jdbcType="CHAR" property="userToken" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    user_id, age, credit_id, pregnant_type, pregnant_week, job, confinement_date, confinement_week, 
+    confinement_type, user_name, user_password, user_token
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from user
+    where user_id = #{userId,jdbcType=INTEGER}
+  </select>
+  <select id="selectByUserName" parameterType="java.lang.String" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from user
+    where user_name = #{userName,jdbcType=VARCHAR}
+  </select>
+  <select id="selectByCreditId" parameterType="java.lang.String" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from user
+    where credit_id = #{creditId,jdbcType=VARCHAR}
+  </select>
+  <select id="selectByToken" parameterType="java.lang.String" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from user
+    where user_token = #{userToken,jdbcType=VARCHAR}
+  </select>
+
+  <select id="selectLastUserId" resultType="integer">
+    select
+    max(user_id)
+    from user;
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from user
+    where user_id = #{userId,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="lllr.test.breast.dataObject.user.User">
+    insert into user (user_id, age, credit_id, 
+      pregnant_type, pregnant_week, job, 
+      confinement_date, confinement_week, confinement_type, 
+      user_name, user_password, user_token
+      )
+    values (#{userId,jdbcType=INTEGER}, #{age,jdbcType=INTEGER}, #{creditId,jdbcType=VARCHAR}, 
+      #{pregnantType,jdbcType=INTEGER}, #{pregnantWeek,jdbcType=VARCHAR}, #{job,jdbcType=VARCHAR}, 
+      #{confinementDate,jdbcType=DATE}, #{confinementWeek,jdbcType=INTEGER}, #{confinementType,jdbcType=INTEGER}, 
+      #{userName,jdbcType=VARCHAR}, #{userPassword,jdbcType=VARCHAR}, #{userToken,jdbcType=CHAR}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="lllr.test.breast.dataObject.user.User">
+    insert into user
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="userId != null">
+        user_id,
+      </if>
+      <if test="age != null">
+        age,
+      </if>
+      <if test="creditId != null">
+        credit_id,
+      </if>
+      <if test="pregnantType != null">
+        pregnant_type,
+      </if>
+      <if test="pregnantWeek != null">
+        pregnant_week,
+      </if>
+      <if test="job != null">
+        job,
+      </if>
+      <if test="confinementDate != null">
+        confinement_date,
+      </if>
+      <if test="confinementWeek != null">
+        confinement_week,
+      </if>
+      <if test="confinementType != null">
+        confinement_type,
+      </if>
+      <if test="userName != null">
+        user_name,
+      </if>
+      <if test="userPassword != null">
+        user_password,
+      </if>
+      <if test="userToken != null">
+        user_token,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="userId != null">
+        #{userId,jdbcType=INTEGER},
+      </if>
+      <if test="age != null">
+        #{age,jdbcType=INTEGER},
+      </if>
+      <if test="creditId != null">
+        #{creditId,jdbcType=VARCHAR},
+      </if>
+      <if test="pregnantType != null">
+        #{pregnantType,jdbcType=INTEGER},
+      </if>
+      <if test="pregnantWeek != null">
+        #{pregnantWeek,jdbcType=VARCHAR},
+      </if>
+      <if test="job != null">
+        #{job,jdbcType=VARCHAR},
+      </if>
+      <if test="confinementDate != null">
+        #{confinementDate,jdbcType=DATE},
+      </if>
+      <if test="confinementWeek != null">
+        #{confinementWeek,jdbcType=INTEGER},
+      </if>
+      <if test="confinementType != null">
+        #{confinementType,jdbcType=INTEGER},
+      </if>
+      <if test="userName != null">
+        #{userName,jdbcType=VARCHAR},
+      </if>
+      <if test="userPassword != null">
+        #{userPassword,jdbcType=VARCHAR},
+      </if>
+      <if test="userToken != null">
+        #{userToken,jdbcType=CHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="lllr.test.breast.dataObject.user.User">
+    update user
+    <set>
+      <if test="age != null">
+        age = #{age,jdbcType=INTEGER},
+      </if>
+      <if test="creditId != null">
+        credit_id = #{creditId,jdbcType=VARCHAR},
+      </if>
+      <if test="pregnantType != null">
+        pregnant_type = #{pregnantType,jdbcType=INTEGER},
+      </if>
+      <if test="pregnantWeek != null">
+        pregnant_week = #{pregnantWeek,jdbcType=VARCHAR},
+      </if>
+      <if test="job != null">
+        job = #{job,jdbcType=VARCHAR},
+      </if>
+      <if test="confinementDate != null">
+        confinement_date = #{confinementDate,jdbcType=DATE},
+      </if>
+      <if test="confinementWeek != null">
+        confinement_week = #{confinementWeek,jdbcType=INTEGER},
+      </if>
+      <if test="confinementType != null">
+        confinement_type = #{confinementType,jdbcType=INTEGER},
+      </if>
+      <if test="userName != null">
+        user_name = #{userName,jdbcType=VARCHAR},
+      </if>
+      <if test="userPassword != null">
+        user_password = #{userPassword,jdbcType=VARCHAR},
+      </if>
+      <if test="userToken != null">
+        user_token = #{userToken,jdbcType=CHAR},
+      </if>
+    </set>
+    where user_id = #{userId,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="lllr.test.breast.dataObject.user.User">
+    update user
+    set age = #{age,jdbcType=INTEGER},
+      credit_id = #{creditId,jdbcType=VARCHAR},
+      pregnant_type = #{pregnantType,jdbcType=INTEGER},
+      pregnant_week = #{pregnantWeek,jdbcType=VARCHAR},
+      job = #{job,jdbcType=VARCHAR},
+      confinement_date = #{confinementDate,jdbcType=DATE},
+      confinement_week = #{confinementWeek,jdbcType=INTEGER},
+      confinement_type = #{confinementType,jdbcType=INTEGER},
+      user_name = #{userName,jdbcType=VARCHAR},
+      user_password = #{userPassword,jdbcType=VARCHAR},
+      user_token = #{userToken,jdbcType=CHAR}
+    where user_id = #{userId,jdbcType=INTEGER}
+  </update>
+</mapper>

@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="lllr.test.breast.dao.mapper.DoctorMapper">
+  <resultMap id="BaseResultMap" type="lllr.test.breast.dataObject.user.Doctor">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="user_name" jdbcType="VARCHAR" property="userName" />
+    <result column="user_password" jdbcType="VARCHAR" property="userPassword" />
+    <result column="token" jdbcType="CHAR" property="token" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="img_url" jdbcType="VARCHAR" property="imgUrl" />
+    <result column="license_number" jdbcType="VARCHAR" property="licenseNumber" />
+    <result column="expert_in" jdbcType="VARCHAR" property="expertIn" />
+    <result column="imageText_cost" jdbcType="INTEGER" property="imagetextCost" />
+    <result column="voice_cost" jdbcType="INTEGER" property="voiceCost" />
+    <result column="video_cost" jdbcType="INTEGER" property="videoCost" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, user_name, img_url, user_password, token, name, license_number, expert_in, imageText_cost,
+    voice_cost, video_cost
+  </sql>
+  <sql id="Base_Column_List_No_PrivateInformation">
+    id, user_name, name, img_url, expert_in, imageText_cost,
+    voice_cost, video_cost
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from doctor
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <select id="selectAllDoctor" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List_No_PrivateInformation" />
+    from doctor
+  </select>
+  <select id="selectByUserName" parameterType="java.lang.String" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from doctor
+    where user_name = #{userName,jdbcType=VARCHAR}
+  </select>
+  <select id="selectByToken" parameterType="java.lang.String" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from doctor
+    where token = #{doctorToken,jdbcType=CHAR}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from doctor
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="lllr.test.breast.dataObject.user.Doctor">
+    insert into doctor (id, user_name, user_password, 
+      token, name, license_number, 
+      expert_in, imageText_cost, voice_cost, 
+      video_cost,img_url)
+    values (#{id,jdbcType=INTEGER}, #{userName,jdbcType=VARCHAR}, #{userPassword,jdbcType=VARCHAR}, 
+      #{token,jdbcType=CHAR}, #{name,jdbcType=VARCHAR}, #{licenseNumber,jdbcType=VARCHAR}, 
+      #{expertIn,jdbcType=VARCHAR}, #{imagetextCost,jdbcType=INTEGER}, #{voiceCost,jdbcType=INTEGER}, 
+      #{videoCost,jdbcType=INTEGER},#{imgUrl,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="lllr.test.breast.dataObject.user.Doctor">
+    insert into doctor
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="userName != null">
+        user_name,
+      </if>
+      <if test="userPassword != null">
+        user_password,
+      </if>
+      <if test="token != null">
+        token,
+      </if>
+      <if test="name != null">
+        name,
+      </if>
+      <if test="licenseNumber != null">
+        license_number,
+      </if>
+      <if test="expertIn != null">
+        expert_in,
+      </if>
+      <if test="imagetextCost != null">
+        imageText_cost,
+      </if>
+      <if test="voiceCost != null">
+        voice_cost,
+      </if>
+      <if test="videoCost != null">
+        video_cost,
+      </if>
+      <if test="imgUrl != null">
+        img_url,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="userName != null">
+        #{userName,jdbcType=VARCHAR},
+      </if>
+      <if test="userPassword != null">
+        #{userPassword,jdbcType=VARCHAR},
+      </if>
+      <if test="token != null">
+        #{token,jdbcType=CHAR},
+      </if>
+      <if test="name != null">
+        #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="licenseNumber != null">
+        #{licenseNumber,jdbcType=VARCHAR},
+      </if>
+      <if test="expertIn != null">
+        #{expertIn,jdbcType=VARCHAR},
+      </if>
+      <if test="imagetextCost != null">
+        #{imagetextCost,jdbcType=INTEGER},
+      </if>
+      <if test="voiceCost != null">
+        #{voiceCost,jdbcType=INTEGER},
+      </if>
+      <if test="videoCost != null">
+        #{videoCost,jdbcType=INTEGER},
+      </if>
+      <if test="imgUrl != null">
+        #{imgUrl,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="lllr.test.breast.dataObject.user.Doctor">
+    update doctor
+    <set>
+      <if test="userName != null">
+        user_name = #{userName,jdbcType=VARCHAR},
+      </if>
+      <if test="userPassword != null">
+        user_password = #{userPassword,jdbcType=VARCHAR},
+      </if>
+      <if test="token != null">
+        token = #{token,jdbcType=CHAR},
+      </if>
+      <if test="name != null">
+        name = #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="licenseNumber != null">
+        license_number = #{licenseNumber,jdbcType=VARCHAR},
+      </if>
+      <if test="expertIn != null">
+        expert_in = #{expertIn,jdbcType=VARCHAR},
+      </if>
+      <if test="imagetextCost != null">
+        imageText_cost = #{imagetextCost,jdbcType=INTEGER},
+      </if>
+      <if test="voiceCost != null">
+        voice_cost = #{voiceCost,jdbcType=INTEGER},
+      </if>
+      <if test="videoCost != null">
+        video_cost = #{videoCost,jdbcType=INTEGER},
+      </if>
+      <if test="imgUrl != null">
+        img_url = #{imgUrl,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="lllr.test.breast.dataObject.user.Doctor">
+    update doctor
+    set user_name = #{userName,jdbcType=VARCHAR},
+      user_password = #{userPassword,jdbcType=VARCHAR},
+      token = #{token,jdbcType=CHAR},
+      name = #{name,jdbcType=VARCHAR},
+      license_number = #{licenseNumber,jdbcType=VARCHAR},
+      expert_in = #{expertIn,jdbcType=VARCHAR},
+      imageText_cost = #{imagetextCost,jdbcType=INTEGER},
+      voice_cost = #{voiceCost,jdbcType=INTEGER},
+      video_cost = #{videoCost,jdbcType=INTEGER},
+      img_url = #{imgUrl,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+</mapper>

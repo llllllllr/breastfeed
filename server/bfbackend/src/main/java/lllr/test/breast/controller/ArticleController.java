@@ -52,6 +52,7 @@ public class ArticleController {
     @GetMapping("/article/getlist")
     @CrossOrigin
     public ServerResponse<List<Article>> queryArticleList()  {
+
         List<Article> rs = new ArrayList<Article>();
         List<Article> articles = redisService.get(ArticleKey.articleList,"",List.class);
         //取缓存

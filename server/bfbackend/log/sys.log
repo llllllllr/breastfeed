@@ -1,13 +1,275 @@
-2020-03-05 23:04:00,783 [INFO] (StartupInfoLogger.java:50)- Starting BreastApplication on LAPTOP-SKN1FD88 with PID 18464 (started by 12284 in F:\Ajava\A母乳喂养项目\breastfeed\server\bfbackend)
-2020-03-05 23:04:00,861 [DEBUG] (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
-2020-03-05 23:04:00,861 [INFO] (SpringApplication.java:648)- No active profile set, falling back to default profiles: default
-2020-03-05 23:04:05,918 [INFO] (StartupInfoLogger.java:59)- Started BreastApplication in 5.947 seconds (JVM running for 10.013)
-2020-03-05 23:04:33,784 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, user_name, name, img_url, expert_in, imageText_cost, voice_cost, video_cost from doctor 
-2020-03-05 23:04:33,854 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
-2020-03-05 23:04:34,018 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 7
-2020-03-05 23:05:03,263 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, user_name, name, img_url, expert_in, imageText_cost, voice_cost, video_cost from doctor 
-2020-03-05 23:05:03,264 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
-2020-03-05 23:05:03,410 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 7
-2020-03-05 23:05:07,171 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, t_title, img_url, content from test 
-2020-03-05 23:05:07,172 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
-2020-03-05 23:05:07,266 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 2
+2020-03-06 09:36:24,123 [INFO] (StartupInfoLogger.java:50)- Starting BreastApplication on LAPTOP-SKN1FD88 with PID 3208 (started by 12284 in F:\Ajava\A母乳喂养项目\breastfeed\server\bfbackend)
+2020-03-06 09:36:24,154 [DEBUG] (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2020-03-06 09:36:24,161 [INFO] (SpringApplication.java:648)- No active profile set, falling back to default profiles: default
+2020-03-06 09:36:29,006 [INFO] (StartupInfoLogger.java:59)- Started BreastApplication in 5.916 seconds (JVM running for 11.073)
+2020-03-06 09:37:01,758 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, user_name, name, img_url, expert_in, imageText_cost, voice_cost, video_cost from doctor 
+2020-03-06 09:37:01,880 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-03-06 09:37:02,013 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 7
+2020-03-06 09:37:02,016 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, audioURL, category, cover_url from audio 
+2020-03-06 09:37:02,017 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-03-06 09:37:02,064 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 6
+2020-03-06 09:37:02,065 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, vedioURL, cover_url, category, description from vedio 
+2020-03-06 09:37:02,065 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-03-06 09:37:02,113 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 9
+2020-03-06 09:37:02,115 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, description, img_url, category from article 
+2020-03-06 09:37:02,117 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-03-06 09:37:02,169 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 20
+2020-03-06 09:37:04,717 [INFO] (ArticleController.java:64)- 母乳喂养的好处
+2020-03-06 09:38:16,612 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, user_name, name, img_url, expert_in, imageText_cost, voice_cost, video_cost from doctor 
+2020-03-06 09:38:16,613 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-03-06 09:38:16,658 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 7
+2020-03-06 09:38:20,911 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, t_title, img_url, content from test 
+2020-03-06 09:38:20,911 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-03-06 09:38:20,958 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 2
+2020-03-06 09:38:46,900 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, user_name, name, img_url, expert_in, imageText_cost, voice_cost, video_cost from doctor 
+2020-03-06 09:38:46,902 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-03-06 09:38:46,951 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 7
+2020-03-06 09:38:51,304 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, t_title, img_url, content from test 
+2020-03-06 09:38:51,305 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-03-06 09:38:51,350 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 2
+2020-03-06 09:40:57,045 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, user_name, name, img_url, expert_in, imageText_cost, voice_cost, video_cost from doctor 
+2020-03-06 09:40:57,046 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-03-06 09:40:57,099 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 7
+2020-03-06 09:40:57,467 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, t_title, img_url, content from test 
+2020-03-06 09:40:57,468 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-03-06 09:40:57,509 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 2
+2020-03-06 09:41:14,571 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, user_name, name, img_url, expert_in, imageText_cost, voice_cost, video_cost from doctor 
+2020-03-06 09:41:14,575 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-03-06 09:41:14,616 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 7
+2020-03-06 09:41:15,862 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, t_title, img_url, content from test 
+2020-03-06 09:41:15,863 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-03-06 09:41:15,904 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 2
+2020-03-06 09:41:48,899 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select user_id, age, credit_id, pregnant_type, pregnant_week, job, confinement_date, confinement_week, confinement_type, user_name, user_password, user_token from user where user_name = ? 
+2020-03-06 09:41:48,899 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: abc(String)
+2020-03-06 09:41:49,010 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-03-06 09:42:06,619 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, audioURL, category, cover_url from audio 
+2020-03-06 09:42:06,620 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-03-06 09:42:06,663 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 6
+2020-03-06 09:42:07,671 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, vedioURL, cover_url, category, description from vedio 
+2020-03-06 09:42:07,672 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-03-06 09:42:07,718 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 9
+2020-03-06 09:45:32,205 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select user_id, age, credit_id, pregnant_type, pregnant_week, job, confinement_date, confinement_week, confinement_type, user_name, user_password, user_token from user where user_token = ? 
+2020-03-06 09:45:32,208 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: c2155b289a134e59b825e8afc391b417(String)
+2020-03-06 09:45:32,308 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-03-06 09:45:32,943 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, user_name, name, img_url, expert_in, imageText_cost, voice_cost, video_cost from doctor 
+2020-03-06 09:45:32,944 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-03-06 09:45:33,078 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 7
+2020-03-06 09:45:40,049 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, t_title, img_url, content from test 
+2020-03-06 09:45:40,050 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-03-06 09:45:40,055 [INFO] (UserController.java:198)- c2155b289a134e59b825e8afc391b417
+2020-03-06 09:45:40,088 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 2
+2020-03-06 09:46:24,244 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select user_id, age, credit_id, pregnant_type, pregnant_week, job, confinement_date, confinement_week, confinement_type, user_name, user_password, user_token from user where user_token = ? 
+2020-03-06 09:46:24,245 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: c2155b289a134e59b825e8afc391b417(String)
+2020-03-06 09:46:24,286 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-03-06 09:46:24,390 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, user_name, name, img_url, expert_in, imageText_cost, voice_cost, video_cost from doctor 
+2020-03-06 09:46:24,391 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-03-06 09:46:24,438 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 7
+2020-03-06 09:46:30,464 [INFO] (UserController.java:198)- c2155b289a134e59b825e8afc391b417
+2020-03-06 09:46:30,467 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, t_title, img_url, content from test 
+2020-03-06 09:46:30,468 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-03-06 09:46:30,512 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 2
+2020-03-06 09:47:02,685 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select user_id, age, credit_id, pregnant_type, pregnant_week, job, confinement_date, confinement_week, confinement_type, user_name, user_password, user_token from user where user_token = ? 
+2020-03-06 09:47:02,685 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: c2155b289a134e59b825e8afc391b417(String)
+2020-03-06 09:47:02,724 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-03-06 09:47:04,105 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, user_name, name, img_url, expert_in, imageText_cost, voice_cost, video_cost from doctor 
+2020-03-06 09:47:04,106 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-03-06 09:47:04,146 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 7
+2020-03-06 09:47:07,747 [INFO] (UserController.java:198)- c2155b289a134e59b825e8afc391b417
+2020-03-06 09:47:07,776 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, t_title, img_url, content from test 
+2020-03-06 09:47:07,777 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-03-06 09:47:07,815 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 2
+2020-03-06 09:47:07,957 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select user_id, score from score where user_id = ? 
+2020-03-06 09:47:07,958 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 456(Integer)
+2020-03-06 09:47:07,996 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 0
+2020-03-06 09:47:07,997 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: insert into score (user_id, score) values (?, ?) 
+2020-03-06 09:47:07,998 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 456(Integer), 0(Integer)
+2020-03-06 09:47:08,129 [DEBUG] (BaseJdbcLogger.java:143)- <==    Updates: 1
+2020-03-06 09:48:09,146 [INFO] (StartupInfoLogger.java:50)- Starting BreastApplication on LAPTOP-SKN1FD88 with PID 2316 (started by 12284 in F:\Ajava\A母乳喂养项目\breastfeed\server\bfbackend)
+2020-03-06 09:48:09,149 [DEBUG] (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2020-03-06 09:48:09,149 [INFO] (SpringApplication.java:648)- No active profile set, falling back to default profiles: default
+2020-03-06 09:48:11,799 [INFO] (StartupInfoLogger.java:59)- Started BreastApplication in 3.181 seconds (JVM running for 4.891)
+2020-03-06 09:48:24,236 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select user_id, age, credit_id, pregnant_type, pregnant_week, job, confinement_date, confinement_week, confinement_type, user_name, user_password, user_token from user where user_token = ? 
+2020-03-06 09:48:24,275 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: c2155b289a134e59b825e8afc391b417(String)
+2020-03-06 09:48:24,341 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-03-06 09:48:24,344 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, user_name, name, img_url, expert_in, imageText_cost, voice_cost, video_cost from doctor 
+2020-03-06 09:48:24,345 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-03-06 09:48:24,385 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 7
+2020-03-06 09:48:27,973 [INFO] (UserController.java:198)- c2155b289a134e59b825e8afc391b417
+2020-03-06 09:48:27,982 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, t_title, img_url, content from test 
+2020-03-06 09:48:27,983 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-03-06 09:48:28,040 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 2
+2020-03-06 09:48:28,178 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select user_id, score from score where user_id = ? 
+2020-03-06 09:48:28,179 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 456(Integer)
+2020-03-06 09:48:28,226 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-03-06 09:50:59,527 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select user_id, age, credit_id, pregnant_type, pregnant_week, job, confinement_date, confinement_week, confinement_type, user_name, user_password, user_token from user where user_token = ? 
+2020-03-06 09:50:59,528 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: c2155b289a134e59b825e8afc391b417(String)
+2020-03-06 09:50:59,573 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-03-06 09:51:19,373 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select user_id, age, credit_id, pregnant_type, pregnant_week, job, confinement_date, confinement_week, confinement_type, user_name, user_password, user_token from user where user_token = ? 
+2020-03-06 09:51:19,374 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: c2155b289a134e59b825e8afc391b417(String)
+2020-03-06 09:51:19,414 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-03-06 09:51:20,782 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, user_name, name, img_url, expert_in, imageText_cost, voice_cost, video_cost from doctor 
+2020-03-06 09:51:20,783 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-03-06 09:51:20,825 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 7
+2020-03-06 09:51:35,939 [INFO] (UserController.java:198)- c2155b289a134e59b825e8afc391b417
+2020-03-06 09:51:35,945 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, t_title, img_url, content from test 
+2020-03-06 09:51:35,947 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-03-06 09:51:36,028 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 2
+2020-03-06 09:51:36,116 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select user_id, score from score where user_id = ? 
+2020-03-06 09:51:36,116 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 456(Integer)
+2020-03-06 09:51:36,161 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-03-06 09:52:47,970 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select user_id, age, credit_id, pregnant_type, pregnant_week, job, confinement_date, confinement_week, confinement_type, user_name, user_password, user_token from user where user_token = ? 
+2020-03-06 09:52:47,971 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: c2155b289a134e59b825e8afc391b417(String)
+2020-03-06 09:52:48,037 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-03-06 09:52:49,901 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, user_name, name, img_url, expert_in, imageText_cost, voice_cost, video_cost from doctor 
+2020-03-06 09:52:49,902 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-03-06 09:52:49,955 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 7
+2020-03-06 09:52:52,347 [INFO] (UserController.java:198)- c2155b289a134e59b825e8afc391b417
+2020-03-06 09:52:52,390 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, t_title, img_url, content from test 
+2020-03-06 09:52:52,391 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-03-06 09:52:52,442 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 2
+2020-03-06 09:52:52,580 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select user_id, score from score where user_id = ? 
+2020-03-06 09:52:52,582 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 456(Integer)
+2020-03-06 09:52:52,622 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-03-06 09:55:06,790 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select user_id, age, credit_id, pregnant_type, pregnant_week, job, confinement_date, confinement_week, confinement_type, user_name, user_password, user_token from user where user_token = ? 
+2020-03-06 09:55:06,791 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: c2155b289a134e59b825e8afc391b417(String)
+2020-03-06 09:55:06,831 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-03-06 09:55:07,876 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, user_name, name, img_url, expert_in, imageText_cost, voice_cost, video_cost from doctor 
+2020-03-06 09:55:07,877 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-03-06 09:55:07,918 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 7
+2020-03-06 09:55:11,432 [INFO] (UserController.java:198)- c2155b289a134e59b825e8afc391b417
+2020-03-06 09:55:11,439 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, t_title, img_url, content from test 
+2020-03-06 09:55:11,440 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-03-06 09:55:11,485 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 2
+2020-03-06 09:55:11,527 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select user_id, score from score where user_id = ? 
+2020-03-06 09:55:11,528 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 456(Integer)
+2020-03-06 09:55:11,566 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-03-06 09:55:12,899 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select q_id, t_id, q_type, q_content, q_opstions from question q,test t where q.t_id = t.id 
+2020-03-06 09:55:12,900 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-03-06 09:55:12,948 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 20
+2020-03-06 09:55:17,029 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: insert into uanswer (id, user_id, t_id, answers) values (?, ?, ?, ?) 
+2020-03-06 09:55:17,030 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: null, 456(Integer), 1(Integer), 母亲放松，觉得舒适|婴儿身体贴近母亲，面向乳房|(String)
+2020-03-06 09:55:17,117 [DEBUG] (BaseJdbcLogger.java:143)- <==    Updates: 1
+2020-03-06 09:55:19,622 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: insert into uanswer (id, user_id, t_id, answers) values (?, ?, ?, ?) 
+2020-03-06 09:55:19,623 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: null, 456(Integer), 1(Integer), 婴儿在乳房部位很安静，很机敏|婴儿含接乳房|(String)
+2020-03-06 09:55:19,715 [DEBUG] (BaseJdbcLogger.java:143)- <==    Updates: 1
+2020-03-06 09:55:21,873 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: insert into uanswer (id, user_id, t_id, answers) values (?, ?, ?, ?) 
+2020-03-06 09:55:21,874 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: null, 456(Integer), 1(Integer), 母亲常抚摸婴儿|紧张或无力地抱着婴儿|无母婴目光的接触|(String)
+2020-03-06 09:55:21,958 [DEBUG] (BaseJdbcLogger.java:143)- <==    Updates: 1
+2020-03-06 09:55:24,939 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: insert into uanswer (id, user_id, t_id, answers) values (?, ?, ?, ?) 
+2020-03-06 09:55:24,942 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: null, 456(Integer), 1(Integer), 乳头扁平或凹陷|乳头皲裂或皮肤发红|婴儿烦躁哭闹|(String)
+2020-03-06 09:55:25,040 [DEBUG] (BaseJdbcLogger.java:143)- <==    Updates: 1
+2020-03-06 09:55:27,551 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: insert into uanswer (id, user_id, t_id, answers) values (?, ?, ?, ?) 
+2020-03-06 09:55:27,554 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: null, 456(Integer), 1(Integer), 婴儿嘴上方有更多的乳晕|下唇向内卷|(String)
+2020-03-06 09:55:27,641 [DEBUG] (BaseJdbcLogger.java:143)- <==    Updates: 1
+2020-03-06 09:55:35,010 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: insert into uanswer (id, user_id, t_id, answers) values (?, ?, ?, ?) 
+2020-03-06 09:55:35,014 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: null, 456(Integer), 1(Integer), 非常有信心|下唇向内卷|(String)
+2020-03-06 09:55:35,242 [DEBUG] (BaseJdbcLogger.java:143)- <==    Updates: 1
+2020-03-06 09:55:38,649 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: insert into uanswer (id, user_id, t_id, answers) values (?, ?, ?, ?) 
+2020-03-06 09:55:38,650 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: null, 456(Integer), 1(Integer), 下唇向内卷|(String)
+2020-03-06 09:55:38,735 [DEBUG] (BaseJdbcLogger.java:143)- <==    Updates: 1
+2020-03-06 09:55:46,240 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: insert into uanswer (id, user_id, t_id, answers) values (?, ?, ?, ?) 
+2020-03-06 09:55:46,243 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: null, 456(Integer), 1(Integer), 下唇向内卷|(String)
+2020-03-06 09:55:46,583 [DEBUG] (BaseJdbcLogger.java:143)- <==    Updates: 1
+2020-03-06 09:55:47,101 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: insert into uanswer (id, user_id, t_id, answers) values (?, ?, ?, ?) 
+2020-03-06 09:55:47,103 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: null, 456(Integer), 1(Integer), 下唇向内卷|(String)
+2020-03-06 09:55:47,314 [DEBUG] (BaseJdbcLogger.java:143)- <==    Updates: 1
+2020-03-06 09:55:48,663 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: insert into uanswer (id, user_id, t_id, answers) values (?, ?, ?, ?) 
+2020-03-06 09:55:48,666 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: null, 456(Integer), 1(Integer), 下唇向内卷|(String)
+2020-03-06 09:55:48,868 [DEBUG] (BaseJdbcLogger.java:143)- <==    Updates: 1
+2020-03-06 09:55:52,594 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: insert into uanswer (id, user_id, t_id, answers) values (?, ?, ?, ?) 
+2020-03-06 09:55:52,597 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: null, 456(Integer), 1(Integer), 非常有信心|下唇向内卷|(String)
+2020-03-06 09:55:52,680 [DEBUG] (BaseJdbcLogger.java:143)- <==    Updates: 1
+2020-03-06 09:55:55,999 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: insert into uanswer (id, user_id, t_id, answers) values (?, ?, ?, ?) 
+2020-03-06 09:55:56,001 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: null, 456(Integer), 1(Integer), 比较有信心|下唇向内卷|(String)
+2020-03-06 09:55:56,108 [DEBUG] (BaseJdbcLogger.java:143)- <==    Updates: 1
+2020-03-06 09:55:59,296 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: insert into uanswer (id, user_id, t_id, answers) values (?, ?, ?, ?) 
+2020-03-06 09:55:59,298 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: null, 456(Integer), 1(Integer), 不确定|比较有信心|下唇向内卷|(String)
+2020-03-06 09:55:59,828 [DEBUG] (BaseJdbcLogger.java:143)- <==    Updates: 1
+2020-03-06 09:56:01,627 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: insert into uanswer (id, user_id, t_id, answers) values (?, ?, ?, ?) 
+2020-03-06 09:56:01,629 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: null, 456(Integer), 1(Integer), 不确定|比较有信心|下唇向内卷|(String)
+2020-03-06 09:56:01,720 [DEBUG] (BaseJdbcLogger.java:143)- <==    Updates: 1
+2020-03-06 09:56:02,053 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: insert into uanswer (id, user_id, t_id, answers) values (?, ?, ?, ?) 
+2020-03-06 09:56:02,056 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: null, 456(Integer), 1(Integer), 下唇向内卷|(String)
+2020-03-06 09:56:02,141 [DEBUG] (BaseJdbcLogger.java:143)- <==    Updates: 1
+2020-03-06 09:56:03,957 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: insert into uanswer (id, user_id, t_id, answers) values (?, ?, ?, ?) 
+2020-03-06 09:56:03,963 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: null, 456(Integer), 1(Integer), 不确定|比较有信心|下唇向内卷|(String)
+2020-03-06 09:56:04,047 [DEBUG] (BaseJdbcLogger.java:143)- <==    Updates: 1
+2020-03-06 09:56:05,811 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: insert into uanswer (id, user_id, t_id, answers) values (?, ?, ?, ?) 
+2020-03-06 09:56:05,812 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: null, 456(Integer), 1(Integer), 不确定|比较有信心|下唇向内卷|(String)
+2020-03-06 09:56:05,893 [DEBUG] (BaseJdbcLogger.java:143)- <==    Updates: 1
+2020-03-06 09:56:08,364 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: insert into uanswer (id, user_id, t_id, answers) values (?, ?, ?, ?) 
+2020-03-06 09:56:08,366 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: null, 456(Integer), 1(Integer), 不确定|下唇向内卷|(String)
+2020-03-06 09:56:08,469 [DEBUG] (BaseJdbcLogger.java:143)- <==    Updates: 1
+2020-03-06 09:56:10,050 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: insert into uanswer (id, user_id, t_id, answers) values (?, ?, ?, ?) 
+2020-03-06 09:56:10,052 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: null, 456(Integer), 1(Integer), 下唇向内卷|(String)
+2020-03-06 09:56:10,147 [DEBUG] (BaseJdbcLogger.java:143)- <==    Updates: 1
+2020-03-06 09:56:12,975 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select user_id, score from score where user_id = ? 
+2020-03-06 09:56:12,976 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 456(Integer)
+2020-03-06 09:56:13,015 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-03-06 09:57:41,203 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select user_id, age, credit_id, pregnant_type, pregnant_week, job, confinement_date, confinement_week, confinement_type, user_name, user_password, user_token from user where user_token = ? 
+2020-03-06 09:57:41,204 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: c2155b289a134e59b825e8afc391b417(String)
+2020-03-06 09:57:41,244 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-03-06 09:57:42,171 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, user_name, name, img_url, expert_in, imageText_cost, voice_cost, video_cost from doctor 
+2020-03-06 09:57:42,174 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-03-06 09:57:42,232 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 7
+2020-03-06 09:57:47,643 [INFO] (UserController.java:198)- c2155b289a134e59b825e8afc391b417
+2020-03-06 09:57:47,699 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, t_title, img_url, content from test 
+2020-03-06 09:57:47,701 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-03-06 09:57:47,743 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 2
+2020-03-06 09:57:47,794 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select user_id, score from score where user_id = ? 
+2020-03-06 09:57:47,794 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 456(Integer)
+2020-03-06 09:57:47,832 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-03-06 09:59:48,624 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select q_id, t_id, q_type, q_content, q_opstions from question q,test t where q.t_id = t.id 
+2020-03-06 09:59:48,625 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-03-06 09:59:48,675 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 20
+2020-03-06 10:01:33,459 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select user_id, age, credit_id, pregnant_type, pregnant_week, job, confinement_date, confinement_week, confinement_type, user_name, user_password, user_token from user where user_token = ? 
+2020-03-06 10:01:33,460 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: c2155b289a134e59b825e8afc391b417(String)
+2020-03-06 10:01:33,507 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-03-06 10:01:33,694 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, user_name, name, img_url, expert_in, imageText_cost, voice_cost, video_cost from doctor 
+2020-03-06 10:01:33,696 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-03-06 10:01:33,746 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 7
+2020-03-06 10:01:37,836 [INFO] (UserController.java:198)- c2155b289a134e59b825e8afc391b417
+2020-03-06 10:01:37,841 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, t_title, img_url, content from test 
+2020-03-06 10:01:37,842 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-03-06 10:01:37,884 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 2
+2020-03-06 10:01:37,954 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select user_id, score from score where user_id = ? 
+2020-03-06 10:01:37,956 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 456(Integer)
+2020-03-06 10:01:37,996 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-03-06 10:01:40,341 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select q_id, t_id, q_type, q_content, q_opstions from question q,test t where q.t_id = t.id 
+2020-03-06 10:01:40,341 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-03-06 10:01:40,397 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 20
+2020-03-06 10:06:50,432 [INFO] (StartupInfoLogger.java:50)- Starting BreastApplication on LAPTOP-SKN1FD88 with PID 19696 (started by 12284 in F:\Ajava\A母乳喂养项目\breastfeed\server\bfbackend)
+2020-03-06 10:06:50,440 [DEBUG] (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2020-03-06 10:06:50,442 [INFO] (SpringApplication.java:648)- No active profile set, falling back to default profiles: default
+2020-03-06 10:06:57,804 [INFO] (StartupInfoLogger.java:59)- Started BreastApplication in 8.654 seconds (JVM running for 11.33)
+2020-03-06 10:07:07,352 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select user_id, age, credit_id, pregnant_type, pregnant_week, job, confinement_date, confinement_week, confinement_type, user_name, user_password, user_token from user where user_token = ? 
+2020-03-06 10:07:07,433 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: c2155b289a134e59b825e8afc391b417(String)
+2020-03-06 10:07:07,541 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-03-06 10:07:07,548 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, user_name, name, img_url, expert_in, imageText_cost, voice_cost, video_cost from doctor 
+2020-03-06 10:07:07,550 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-03-06 10:07:07,597 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 7
+2020-03-06 10:07:10,757 [INFO] (UserController.java:198)- c2155b289a134e59b825e8afc391b417
+2020-03-06 10:07:10,762 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, t_title, img_url, content from test 
+2020-03-06 10:07:10,763 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-03-06 10:07:10,803 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 2
+2020-03-06 10:07:10,942 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select user_id, score from score where user_id = ? 
+2020-03-06 10:07:10,943 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 456(Integer)
+2020-03-06 10:07:10,984 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-03-06 10:07:14,145 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select q_id, t_id, q_type, q_content, q_opstions from question where t_id = ? 
+2020-03-06 10:07:14,147 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 1(Integer)
+2020-03-06 10:07:14,199 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 5
+2020-03-06 10:07:24,593 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: insert into uanswer (id, user_id, t_id, answers) values (?, ?, ?, ?) 
+2020-03-06 10:07:24,597 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: null, 456(Integer), 1(Integer), 母亲放松，觉得舒适|婴儿身体贴近母亲，面向乳房|婴儿的头及身体在一条直线上|(String)
+2020-03-06 10:07:24,683 [DEBUG] (BaseJdbcLogger.java:143)- <==    Updates: 1
+2020-03-06 10:07:28,218 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: insert into uanswer (id, user_id, t_id, answers) values (?, ?, ?, ?) 
+2020-03-06 10:07:28,220 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: null, 456(Integer), 1(Integer), 婴儿在乳房部位很安静，很机敏|婴儿含接乳房|有喷乳反射(乳汁流出，母亲感觉到)|(String)
+2020-03-06 10:07:28,306 [DEBUG] (BaseJdbcLogger.java:143)- <==    Updates: 1
+2020-03-06 10:07:30,385 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: insert into uanswer (id, user_id, t_id, answers) values (?, ?, ?, ?) 
+2020-03-06 10:07:30,387 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: null, 456(Integer), 1(Integer), 紧张或无力地抱着婴儿|无母婴目光的接触|(String)
+2020-03-06 10:07:30,489 [DEBUG] (BaseJdbcLogger.java:143)- <==    Updates: 1
+2020-03-06 10:07:32,123 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: insert into uanswer (id, user_id, t_id, answers) values (?, ?, ?, ?) 
+2020-03-06 10:07:32,126 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: null, 456(Integer), 1(Integer), 乳头突出伸长|皮肤表现健康|(String)
+2020-03-06 10:07:32,215 [DEBUG] (BaseJdbcLogger.java:143)- <==    Updates: 1
+2020-03-06 10:07:35,346 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select user_id, score from score where user_id = ? 
+2020-03-06 10:07:35,348 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 456(Integer)
+2020-03-06 10:07:35,391 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 1

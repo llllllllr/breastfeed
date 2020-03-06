@@ -14,6 +14,7 @@ Page({
   },
   onLoad: function (options) {
     var id = options.id;
+    console.log(id)
     this.getQuestion(id)
     this.setData({
       tid:id,
@@ -32,6 +33,7 @@ Page({
         tid: id
       },
       success: function (res) {
+        console.log(res)
         that.setData({
           resData: res.data.data,
           currentIndex: 0
@@ -79,24 +81,66 @@ Page({
   nextOp: function () {
     var that = this;
     var serverUrl = app.globalData.serverUrl;
+    console.log(this.data.currentIndex+"----"+this.data.resData.length)
+   // console.log(this.data.resData.length)
     //如果已经是最后一题
     if (this.data.currentIndex == this.data.resData.length - 1) {
-        
-        wx.showToast({
-        title: '积分+10!',
-      })
-
-     wx.navigateTo({
-       url: '../testIndex/testIndex',
-     })
+        wx.request({
+          url: serverUrl+'/score/update',
+          data:{
+            userid:that.data.userid,
+            score:10
+          },
+          success:function(res){
+            wx.showToast({
+              title: '积分+10!',
+            })
+      
+           wx.switchTab({
+             url: '../testIndex/testIndex',
+           })
+           return;
+          }
+        })
+       
     } 
     else{    
       var options = this.data.options;
       var str="";
+      var count =0;
       for(var i=0;i<options.length;i++)
       {
          if(options[i].selected == 1)
-              str  += options[i].option + "|";
+         {
+           str  += options[i].option + "|";
+           count ++;
+         }
+            
+      }
+      //没选
+      if(count == 0)
+      {
+        wx.showToast({
+          title: '请做出选择',
+          icon:"none"
+        })
+        return;
+      }
+      else if(count > 1 && this.data.type== 1)
+      {
+        wx.showToast({
+          title: '单选题只能做一个选择',
+          icon:'none'
+        })
+        return;
+      }
+      else if(count ==1 && this.data.type == 2)
+      {
+        wx.showToast({
+          title: '多选题至少做出两个选择',
+          icon:'none'
+        })
+        return;
       }
       //存到数据库
       wx.request({
@@ -117,8 +161,9 @@ Page({
        this.setData({
          currentIndex:oldIdx+1
        })
+       this.initData();
     }
-    this.initData();
+   
   },
 })
 

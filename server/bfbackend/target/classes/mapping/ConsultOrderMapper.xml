@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="lllr.test.breast.dao.mapper.ConsultOrderMapper">
+  <resultMap id="BaseResultMap" type="lllr.test.breast.dataObject.consult.ConsultOrder">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="doctor_id" jdbcType="INTEGER" property="doctorId" />
+    <result column="user_id" jdbcType="INTEGER" property="userId" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="lasting_time" jdbcType="INTEGER" property="lastingTime" />
+    <result column="contact" jdbcType="VARCHAR" property="contact" />
+    <result column="contact_phone" jdbcType="VARCHAR" property="contactPhone" />
+    <result column="symptom_description" jdbcType="VARCHAR" property="symptomDescription" />
+    <result column="consult_cost" jdbcType="INTEGER" property="consultCost" />
+    <result column="status" jdbcType="INTEGER" property="status" />
+    <result column="oid" jdbcType="CHAR" property="oid" />
+  </resultMap>
+
+  <resultMap type="lllr.test.breast.dataObject.consult.ConsultOrder" id="ConsultOrdersDoctorResultMap">
+
+    <!--  id:唯一标识
+             column：订单信息的唯 一标识 列
+             property：订单信息的唯 一标识 列所映射到Orders中哪个属性
+          result:普通标识   -->
+
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="doctor_id" jdbcType="INTEGER" property="doctorId" />
+    <result column="user_id" jdbcType="INTEGER" property="userId" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="lasting_time" jdbcType="INTEGER" property="lastingTime" />
+    <result column="contact" jdbcType="VARCHAR" property="contact" />
+    <result column="contact_phone" jdbcType="VARCHAR" property="contactPhone" />
+    <result column="symptom_description" jdbcType="VARCHAR" property="symptomDescription" />
+    <result column="consult_cost" jdbcType="INTEGER" property="consultCost" />
+    <result column="status" jdbcType="INTEGER" property="status" />
+    <result column="oid" jdbcType="CHAR" property="oid" />
+
+    <!-- (2)配置关联用户信息 -->
+    <!--   数据库表user对应 pojo中的User.java -->
+    <!-- association：用于映射关联查询单个对象的信息
+                property：要将关联查询的用户信息映射到Orders中哪个属性
+                javaType：映射到user的哪个属性-->
+
+    <association property="doctor"  javaType="lllr.test.breast.dataObject.user.Doctor">
+      <!-- id：关联查询用户的唯 一标识
+             column：指定唯 一标识用户信息的列
+           result:普通标识
+       -->
+      <id column="id" jdbcType="INTEGER" property="id" />
+      <result column="user_name" jdbcType="VARCHAR" property="userName" />
+      <result column="name" jdbcType="VARCHAR" property="name" />
+      <result column="img_url" jdbcType="VARCHAR" property="imgUrl" />
+      <result column="expert_in" jdbcType="VARCHAR" property="expertIn" />
+      <result column="imageText_cost" jdbcType="INTEGER" property="imagetextCost" />
+      <result column="voice_cost" jdbcType="INTEGER" property="voiceCost" />
+      <result column="video_cost" jdbcType="INTEGER" property="videoCost" />
+    </association>
+  </resultMap>
+
+  <resultMap type="lllr.test.breast.dataObject.consult.ConsultOrder" id="ConsultOrdersUserResultMap">
+
+    <!--  id:唯一标识
+             column：订单信息的唯 一标识 列
+             property：订单信息的唯 一标识 列所映射到Orders中哪个属性
+          result:普通标识   -->
+
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="doctor_id" jdbcType="INTEGER" property="doctorId" />
+    <result column="user_id" jdbcType="INTEGER" property="userId" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="lasting_time" jdbcType="INTEGER" property="lastingTime" />
+    <result column="contact" jdbcType="VARCHAR" property="contact" />
+    <result column="contact_phone" jdbcType="VARCHAR" property="contactPhone" />
+    <result column="symptom_description" jdbcType="VARCHAR" property="symptomDescription" />
+    <result column="consult_cost" jdbcType="INTEGER" property="consultCost" />
+    <result column="status" jdbcType="INTEGER" property="status" />
+    <result column="oid" jdbcType="CHAR" property="oid" />
+
+    <!-- (2)配置关联用户信息 -->
+    <!--   数据库表user对应 pojo中的User.java -->
+    <!-- association：用于映射关联查询单个对象的信息
+                property：要将关联查询的用户信息映射到Orders中哪个属性
+                javaType：映射到user的哪个属性-->
+
+    <association property="user"  javaType="lllr.test.breast.dataObject.user.User">
+      <!-- id：关联查询用户的唯 一标识
+             column：指定唯 一标识用户信息的列
+           result:普通标识
+       -->
+    <id column="user_id" jdbcType="INTEGER" property="userId" />
+    <result column="pregnant_type" jdbcType="INTEGER" property="pregnantType" />
+    <result column="pregnant_week" jdbcType="VARCHAR" property="pregnantWeek" />
+    <result column="confinement_date" jdbcType="DATE" property="confinementDate" />
+    <result column="confinement_week" jdbcType="INTEGER" property="confinementWeek" />
+    <result column="confinement_type" jdbcType="INTEGER" property="confinementType" />
+    <result column="user_name" jdbcType="VARCHAR" property="userName" />
+
+    </association>
+  </resultMap>
+
+  <sql id="Base_Column_List">
+    id, doctor_id, user_id, create_time, lasting_time, contact, contact_phone, symptom_description,consult_cost,status,oid
+  </sql>
+  <select id="selectConsultOrderAndDoctorByDoctorId" parameterType="java.lang.Integer" resultMap="ConsultOrdersDoctorResultMap">
+    SELECT consult_order.* ,doctor.name, doctor.license_number
+    FROM consult_order inner join
+    doctor on doctor.id = consult_order.doctor_id and
+    consult_order.doctor_id = #{doctorId,jdbcType=INTEGER};
+  </select>
+  <select id="selectConsultOrderAndUserByUserId" parameterType="java.lang.Integer" resultMap="ConsultOrdersUserResultMap">
+    SELECT consult_order.* ,user.user_name
+    FROM consult_order inner join
+    user on user.user_id = consult_order.user_id and
+    consult_order.user_id = #{userId,jdbcType=INTEGER};
+  </select>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from consult_order
+    where user_id = #{userId,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from consult_order
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="lllr.test.breast.dataObject.consult.ConsultOrder">
+    insert into consult_order (id, doctor_id, user_id,
+      create_time, lasting_time, contact,
+      contact_phone, symptom_description,consult_cost,status,oid)
+    values (#{id,jdbcType=INTEGER}, #{doctorId,jdbcType=INTEGER}, #{userId,jdbcType=INTEGER},
+      #{createTime,jdbcType=TIMESTAMP}, #{lastingTime,jdbcType=INTEGER}, #{contact,jdbcType=VARCHAR},
+      #{contactPhone,jdbcType=VARCHAR}, #{symptomDescription,jdbcType=VARCHAR},
+       #{consultCost,jdbcType=INTEGER},#{status,jdbcType=INTEGER},#{oid,jdbcType=CHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="lllr.test.breast.dataObject.consult.ConsultOrder">
+    insert into consult_order
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="doctorId != null">
+        doctor_id,
+      </if>
+      <if test="userId != null">
+        user_id,
+      </if>
+      <if test="createTime != null">
+        create_time,
+      </if>
+      <if test="lastingTime != null">
+        lasting_time,
+      </if>
+      <if test="contact != null">
+        contact,
+      </if>
+      <if test="contactPhone != null">
+        contact_phone,
+      </if>
+      <if test="symptomDescription != null">
+        symptom_description,
+      </if>
+      <if test="consultCost != null">
+        consult_cost,
+      </if>
+      <if test="status != null">
+        status,
+      </if>
+      <if test="oid != null">
+        oid,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="doctorId != null">
+        #{doctorId,jdbcType=INTEGER},
+      </if>
+      <if test="userId != null">
+        #{userId,jdbcType=INTEGER},
+      </if>
+      <if test="createTime != null">
+        #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="lastingTime != null">
+        #{lastingTime,jdbcType=INTEGER},
+      </if>
+      <if test="contact != null">
+        #{contact,jdbcType=VARCHAR},
+      </if>
+      <if test="contactPhone != null">
+        #{contactPhone,jdbcType=VARCHAR},
+      </if>
+      <if test="symptomDescription != null">
+        #{symptomDescription,jdbcType=VARCHAR},
+      </if>
+      <if test="consultCost != null">
+        #{consultCost,jdbcType=INTEGER},
+      </if>
+      <if test="status != null">
+        #{status,jdbcType=INTEGER},
+      </if>
+      <if test="oid != null">
+        #{oid,jdbcType=CHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="lllr.test.breast.dataObject.consult.ConsultOrder">
+    update consult_order
+    <set>
+      <if test="doctorId != null">
+        doctor_id = #{doctorId,jdbcType=INTEGER},
+      </if>
+      <if test="userId != null">
+        user_id = #{userId,jdbcType=INTEGER},
+      </if>
+      <if test="createTime != null">
+        create_time = #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="lastingTime != null">
+        lasting_time = #{lastingTime,jdbcType=INTEGER},
+      </if>
+      <if test="contact != null">
+        contact = #{contact,jdbcType=VARCHAR},
+      </if>
+      <if test="contactPhone != null">
+        contact_phone = #{contactPhone,jdbcType=VARCHAR},
+      </if>
+      <if test="symptomDescription != null">
+        symptom_description = #{symptomDescription,jdbcType=VARCHAR},
+      </if>
+      <if test="consultCost != null">
+        #{consultCost,jdbcType=INTEGER},
+      </if>
+      <if test="status != null">
+        #{status,jdbcType=INTEGER},
+      </if>
+      <if test="oid != null">
+        #{oid,jdbcType=CHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="lllr.test.breast.dataObject.consult.ConsultOrder">
+    update consult_order
+    set doctor_id = #{doctorId,jdbcType=INTEGER},
+      user_id = #{userId,jdbcType=INTEGER},
+      create_time = #{createTime,jdbcType=TIMESTAMP},
+      lasting_time = #{lastingTime,jdbcType=INTEGER},
+      contact = #{contact,jdbcType=VARCHAR},
+      contact_phone = #{contactPhone,jdbcType=VARCHAR},
+      symptom_description = #{symptomDescription,jdbcType=VARCHAR},
+      consult_cost = #{consultCost,jdbcType=INTEGER},
+      status = #{status,jdbcType=INTEGER},
+      oid = #{oid,jdbcType=CHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+</mapper>

@@ -22,7 +22,11 @@ public class ScoreServiceImpl implements ScoreService {
 
     @Override
     public ServerResponse<String> updateScore(Score score) {
-        scoreMapper.updateByPrimaryKey( score);
+        Score oldScore = scoreMapper.selectByPrimaryKey(score.getUserId());
+        Integer oldNum = oldScore.getScore();
+        Integer incr = score.getScore();
+        score.setScore(oldNum+incr);
+        scoreMapper.updateByPrimaryKey(score);
         return null;
     }
 

@@ -17,8 +17,8 @@ Page({
     
     //获取用户的userid
     this.getUserId();
+    
     this.getTests();
-    this.login();
 
 
   },
@@ -44,30 +44,8 @@ Page({
     var id = this.data.testList[index].id;
     console.log("id--"+id);
     wx.navigateTo({
-      url: '../question/question',
-      data:{
-        id:id,
-        userid:this.data.userid
-      }
+      url: '../question/question?id=' + id +'&userid=' + this.data.userid,
     })
-  },
-  login:function(){
-        var that =this;
-        wx.getSetting({
-          success(res) {
-            if (!res.authSetting['scope.record']) {
-              wx.authorize({
-                scope: 'scope.record',
-                success () {
-                   that.getUserInfo();
-                }
-              })
-            }else{
-              that.getUserInfo();
-            }
-          }
-        })
-     
   },
   //检验token,获取用户id
   getUserId: function () {
@@ -90,7 +68,7 @@ Page({
             that.setData({
               userid: res.data.data
             })
-            that.ifColl();
+            that.getScore();
           }
           else {
             wx.showToast({
@@ -99,7 +77,30 @@ Page({
           }
         }
       })
+      return;
     }
+    wx.showToast({
+      title: '要登录才能获取积分',
+      icon:'none'
+    })
+  },
+  //获取积分
+  getScore(){
+    var that =this;
+    var serverUrl = app.globalData.serverUrl;
+    wx.request({
+      url:serverUrl + '/score/get',
+      data:{
+        userid:that.data.userid
+      },
+      success:function(res){
+          console.log("积分----");
+          console.log(res)   
+          that.setData({
+            score:res.data.data
+          })
+          }   
+          
+    })
   }
-
 })
