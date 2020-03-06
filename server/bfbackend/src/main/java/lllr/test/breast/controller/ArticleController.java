@@ -6,6 +6,7 @@ import lllr.test.breast.common.ServerResponse;
 import lllr.test.breast.dataObject.popularization.Article;
 import lllr.test.breast.dataObject.popularization.PagedResult;
 import lllr.test.breast.redis.ArticleKey;
+import lllr.test.breast.redis.KeyPrefix;
 import lllr.test.breast.redis.RedisService;
 import lllr.test.breast.service.inter.ArticleService;
 import lllr.test.breast.util.qiniu.QiniuRes;
@@ -54,7 +55,7 @@ public class ArticleController {
     public ServerResponse<List<Article>> queryArticleList()  {
 
         List<Article> rs = new ArrayList<Article>();
-        List<Article> articles = redisService.get(ArticleKey.articleList,"",List.class);
+        List<Article> articles = redisService.getlist(ArticleKey.articleList,"",Article.class);
         //取缓存
         if(articles!=null)
            return ServerResponse.createBysuccessData(articles);

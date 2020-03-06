@@ -9,7 +9,12 @@ public class Article {
 
     private String imgUrl;
 
+
     private String category;
+
+
+
+
 
     private String content;
 
