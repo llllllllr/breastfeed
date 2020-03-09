@@ -10,12 +10,15 @@ Page({
       testList:[],
       userInfo:[],
       userid:-1,
+      score:0,
   },
 
   onLoad: function (options) {
     
+    //获取用户的userid
+    this.getUserId();
+    
     this.getTests();
-    this.login();
 
 
   },
@@ -41,52 +44,8 @@ Page({
     var id = this.data.testList[index].id;
     console.log("id--"+id);
     wx.navigateTo({
-      url: '../question/question',
-      data:{
-        id:id,
-        userid:this.data.userid
-      }
+      url: '../question/question?id=' + id +'&userid=' + this.data.userid,
     })
-  },
-  login:function(){
-        var that =this;
-        wx.getSetting({
-          success(res) {
-            if (!res.authSetting['scope.record']) {
-              wx.authorize({
-                scope: 'scope.record',
-                success () {
-                   that.getUserInfo();
-                }
-              })
-            }else{
-              that.getUserInfo();
-            }
-          }
-        })
-     
-  },
-  getUserInfo:function(){
-       // 获取用户信息
-       wx.getSetting({
-        success: res => {
-          if (res.authSetting['scope.userInfo']) {
-            // 已经授权，可以直接调用 getUserInfo 获取头像昵称，不会弹框
-            wx.getUserInfo({
-              success: res => {
-                // 可以将 res 发送给后台解码出 unionId
-                that.data.userInfo = res.userInfo    
-                
-                // 由于 getUserInfo 是网络请求，可能会在 Page.onLoad 之后才返回
-                // 所以此处加入 callback 以防止这种情况
-                if (this.userInfoReadyCallback) {
-                  this.userInfoReadyCallback(res)
-                }
-              }
-            })
-          }
-        }
-      })
   },
   //检验token,获取用户id
   getUserId: function () {
@@ -109,7 +68,7 @@ Page({
             that.setData({
               userid: res.data.data
             })
-            that.ifColl();
+            that.getScore();
           }
           else {
             wx.showToast({
@@ -118,7 +77,30 @@ Page({
           }
         }
       })
+      return;
     }
+    wx.showToast({
+      title: '要登录才能获取积分',
+      icon:'none'
+    })
+  },
+  //获取积分
+  getScore(){
+    var that =this;
+    var serverUrl = app.globalData.serverUrl;
+    wx.request({
+      url:serverUrl + '/score/get',
+      data:{
+        userid:that.data.userid
+      },
+      success:function(res){
+          console.log("积分----");
+          console.log(res)   
+          that.setData({
+            score:res.data.data
+          })
+          }   
+          
+    })
   }
-
 })

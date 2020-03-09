@@ -1,11 +1,11 @@
 <view class="UCenter-bg">
-	<view class="cu-avatar xl round margin-left ava" style="background-image:url(https://ossweb-img.qq.com/images/lol/web201310/skin/big99008.jpg);"></view>
-	<view class="margin-top margin-left" style="color:black;">{{lllllllr}}
-	</view>
+	<!-- <view class="cu-avatar xl round margin-left ava" style="background-image:url(https://ossweb-img.qq.com/images/lol/web201310/skin/big99008.jpg);"></view>
+	<view class="margin-top margin-left" style="color:black;">{{lllllllr}} -->
+	<!-- </view> -->
 </view>
 <view class="padding-xl radius shadow-warp bg-white ">
 	<image class="img" src="/images/icon/jf.png" mode="widthFix"></image>
-	积分:
+	积分:    {{score}}分
 </view>
 
 

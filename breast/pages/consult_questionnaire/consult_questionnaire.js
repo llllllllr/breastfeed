@@ -171,7 +171,7 @@ Page({
     var that = this;
     wx.request({
       url: getApp().globalData.serverUrl + '/article/getToken',
-      method: 'POST',
+      method: 'GET',
       data: {
         bucket: 'useravatarr'
       },
@@ -208,7 +208,7 @@ Page({
           console.log('error: ' + error);
         }, {
           region: 'SCN',
-          domain: 'http://llllllllr.top/', // // bucket 域名，下载资源时用到。如果设置，会在 success callback 的 res 参数加上可以直接使用的 ImageURL 字段。否则需要自己拼接
+          domain: 'http://q6le31s3c.bkt.clouddn.com/', // // bucket 域名，下载资源时用到。如果设置，会在 success callback 的 res 参数加上可以直接使用的 ImageURL 字段。否则需要自己拼接
           key: qiniu_key, // [非必须]自定义文件 key。如果不设置，默认为使用微信小程序 API 的临时文件名
           uptoken: that.data.imgToken, // 由其他程序生成七牛 uptoken
           uploadURL: 'https://up-z2.qiniup.com'

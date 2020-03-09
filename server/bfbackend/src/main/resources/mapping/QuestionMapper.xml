@@ -122,10 +122,10 @@
   </update>
   
   
-  <select id="getQuestions"  resultMap="BaseResultMap">
+  <select id="getQuestions"  parameterType="integer" resultMap="BaseResultMap">
       select
        <include refid="Base_Column_List" />
-      from question q,test t 
-      where q.t_id = t.id
+      from question
+      where t_id = #{tid}
   </select>
 </mapper>

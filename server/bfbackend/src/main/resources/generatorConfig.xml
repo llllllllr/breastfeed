@@ -41,21 +41,27 @@
             <property name="trimStrings" value="true"/>
         </javaModelGenerator>
         <!--映射文件-->
-        <sqlMapGenerator targetPackage="lllr.test.breast.dao.mapper" targetProject="src/main/resources">
+        <sqlMapGenerator targetPackage="mapping" targetProject="src/main/resources">
             <property name="enableSubPackages" value="true"/>
         </sqlMapGenerator>
 
 
-<!--        <javaClientGenerator type="XMLMAPPER" targetPackage="lllr.test.breast.dao.mapper" targetProject="src/main/java">-->
-<!--            <property name="enableSubPackages" value="true"/>-->
-<!--        </javaClientGenerator>-->
+        <javaClientGenerator type="XMLMAPPER" targetPackage="lllr.test.breast.dao.mapper" targetProject="src/main/java">
+            <property name="enableSubPackages" value="true"/>
+        </javaClientGenerator>
 
 
-        <table tableName="doctor" domainObjectName="Doctor"
+        <!--<table tableName="doctor" domainObjectName="Doctor"-->
+               <!--enableCountByExample="false" enableUpdateByExample="false"-->
+               <!--enableSelectByExample="false" selectByExampleQueryId="false"-->
+    <!--enableDeleteByExample="false" />-->
+
+
+        <table tableName="score" domainObjectName="Score"
                enableCountByExample="false" enableUpdateByExample="false"
                enableSelectByExample="false" selectByExampleQueryId="false"
                enableDeleteByExample="false" />
-        </context>
+</context>
 
         </generatorConfiguration>
 

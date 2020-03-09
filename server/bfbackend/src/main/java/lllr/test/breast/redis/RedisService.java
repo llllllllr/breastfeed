@@ -1,10 +1,14 @@
 package lllr.test.breast.redis;
 
 import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.TypeReference;
+import lllr.test.breast.dataObject.popularization.Article;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.JedisPool;
+
+import java.util.List;
 
 
 @Service
@@ -28,7 +32,20 @@ public class RedisService {
               returnToPool(jedis);
           }
     }
-
+    //getlist
+    public  <T> List<T> getlist(KeyPrefix keyPrefix,String key,Class<T> clazz)
+    {
+        Jedis jedis = null;
+        try{
+            jedis = jedisPool.getResource();
+            String realKey = keyPrefix.getPrefix() + key;
+            String res = jedis.get(realKey);
+            List<T> t = ListStringToBean(res,clazz);
+            return t;
+        }finally {
+            returnToPool(jedis);
+        }
+    }
     //set
     public <T> boolean set(KeyPrefix keyPrefix,String key,T value)
     {
@@ -52,7 +69,7 @@ public class RedisService {
 
 
     //bean 转换成 value
-    public <T> String BeanToString(T value)
+    public <T>  String BeanToString(T value)
     {
         if(value == null )
             return null;
@@ -63,12 +80,13 @@ public class RedisService {
             return (String)value;
         else if(clazz == long.class || clazz == Long.class)
             return ""+value;
+
         else
             return JSON.toJSONString(value);
     }
 
     //value 转换成 bean
-    public <T> T StringToBean(String res,Class<T> clazz)
+    public <T> T StringToBean(String res, Class<T> clazz)
     {
         if(res == null || res.length()==0 || clazz == null)
             return  null;
@@ -80,6 +98,11 @@ public class RedisService {
             return (T)Long.valueOf(res);
         else
             return (T)JSON.toJavaObject(JSON.parseObject(res), clazz);
+    }
+
+    //value 转换成 bean
+    public <T> List<T> ListStringToBean(String res,Class<T> clazz) {
+            return JSON.parseObject(res,new TypeReference<List<T>>(){});
     }
 
     //回收资源

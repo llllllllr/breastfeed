@@ -1,19 +1,27 @@
 package lllr.test.breast.controller;
 
+import jdk.internal.org.objectweb.asm.TypeReference;
 import lllr.test.breast.common.Const;
 import lllr.test.breast.common.ServerResponse;
 import lllr.test.breast.dataObject.popularization.Article;
 import lllr.test.breast.dataObject.popularization.PagedResult;
+import lllr.test.breast.redis.ArticleKey;
+import lllr.test.breast.redis.KeyPrefix;
+import lllr.test.breast.redis.RedisService;
 import lllr.test.breast.service.inter.ArticleService;
 import lllr.test.breast.util.qiniu.QiniuRes;
 import lllr.test.breast.util.qiniu.QiniuResultUtil;
 import lllr.test.breast.util.qiniu.QiniuUtil;
+import org.apache.commons.lang3.StringUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
 import javax.annotation.Resource;
 import java.io.FileInputStream;
+import java.util.ArrayList;
 import java.util.List;
 
 
@@ -28,7 +36,9 @@ public class ArticleController {
     @Resource
     QiniuUtil qiniu;
 
-
+    @Autowired
+    RedisService redisService;
+    private static final Logger LOGGER = LoggerFactory.getLogger(ArticleController.class);
     //获取七牛云上传凭证
     @RequestMapping(value="/article/getToken")
     @CrossOrigin
@@ -39,11 +49,23 @@ public class ArticleController {
     }
 
 
-    //分页查询文章
+    //分页查询文章java.util.List<Article.class>
     @GetMapping("/article/getlist")
     @CrossOrigin
-    public ServerResponse<List<Article>> queryArticleList(){
-        return articleService.getArticleList();
+    public ServerResponse<List<Article>> queryArticleList()  {
+
+        List<Article> rs = new ArrayList<Article>();
+        List<Article> articles = redisService.getlist(ArticleKey.articleList,"",Article.class);
+        //取缓存
+        if(articles!=null)
+           return ServerResponse.createBysuccessData(articles);
+        //如果没有缓存，就放入缓存
+        else {
+            ServerResponse<List<Article>> res = articleService.getArticleList();
+            redisService.set(ArticleKey.articleList, "", res.getData());
+            LOGGER.info(res.getData().get(0).getTitle());
+            return res;
+        }
     }
 
 
