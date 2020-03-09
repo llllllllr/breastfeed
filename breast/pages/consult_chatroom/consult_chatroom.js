@@ -49,10 +49,21 @@ Page({
   count: 0,
   massage: '',
   send: function() {
+    
     // 判断发送内容是否为空
     if (this.message) {
+      var msg = {
+        fromUserId:this.data.userId,
+        toUserId:this.data.doctorId,
+        messageType:0,
+        messageContent:this.message,
+        time: app.jsDateFormatter(new Date()),
+        oid:'6742d3461985435b85fa18482d534224'
+      }
+      var msgStr = JSON.stringify(msg);
+      console.log(msgStr)
       wx.sendSocketMessage({
-        data: this.message,
+        data: msgStr,
       })
       // 我自己的消息
       console.log(this.data.list)

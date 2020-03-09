@@ -15,6 +15,16 @@ public class WeChatMessageItem {
 
     private Date time;
 
+    private String oid;
+
+    public String getOid() {
+        return oid;
+    }
+
+    public void setOid(String oid) {
+        this.oid = oid;
+    }
+
     public WeChatMessageItem(){}
 
     @Override
@@ -26,6 +36,7 @@ public class WeChatMessageItem {
                 ", messageType=" + messageType +
                 ", messageContent='" + messageContent + '\'' +
                 ", time=" + time +
+                ", oid='" + oid + '\'' +
                 '}';
     }
 

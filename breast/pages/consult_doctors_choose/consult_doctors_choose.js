@@ -44,9 +44,10 @@ Page({
     var doctorId = e.currentTarget.dataset.id;
     var doctorName = e.currentTarget.dataset.name;
     var doctorImg = e.currentTarget.dataset.imgurl;
+    var openId = e.currentTarget.dataset.openId;
     wx.navigateTo({
       url: '../consult_questionnaire/consult_questionnaire?doctorId=' + doctorId + '&doctorName=' + doctorName + 
-      '&doctorImg=' + doctorImg,
+      '&doctorImg=' + doctorImg + '&openId=' + openId,
     })
   },
   // scrollHandle: function (e) { //滚动事件

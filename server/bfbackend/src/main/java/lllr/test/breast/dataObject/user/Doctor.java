@@ -23,6 +23,16 @@ public class Doctor {
 
     private String imgUrl;
 
+    private String openId;
+
+    public String getOpenId() {
+        return openId;
+    }
+
+    public void setOpenId(String openId) {
+        this.openId = openId;
+    }
+
     public String getImgUrl() {
         return imgUrl;
     }
@@ -125,6 +135,7 @@ public class Doctor {
                 ", voiceCost=" + voiceCost +
                 ", videoCost=" + videoCost +
                 ", imgUrl='" + imgUrl + '\'' +
+                ", openId='" + openId + '\'' +
                 '}';
     }
 }

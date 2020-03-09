@@ -21,7 +21,10 @@ App({
     userid:-3,
     object:'',  //登录的用户群体：1.医生 2.普通用户
     userInfor:null,   //记录用户的信息
-    doctorList:[]
+    doctorList:[],
+    APP_ID: 'wx3d0c29a20a305f28',
+    APP_SECRET: '685ef10637631ae8e3db77e000f22f9e',
+    openId:'',//微信小程序用户标识符
   },
 
   //根据 医生的id 查询 doctorList 返回医生具体信息
@@ -138,6 +141,37 @@ App({
           wx.removeStorageSync('userTokenDate');
         }
       }
-  }
+  },
+    getOpenId(){
+      var code = '';
+      var that = this;
+      wx.login({
+        success(res) {
+          console.log('参数：', res)
+          code = res.code,
+            wx.request({
+              url: 'https://api.weixin.qq.com/sns/jscode2session',
+              method: 'GET',
+              data: {
+                appid: that.globalData.APP_ID,
+                secret: that.globalData.APP_SECRET,
+                grant_type: 'authorization_code',
+                js_code: code
+              },
+              success(res) {
+                console.log('success:', res)
+                that.globalData.openId=res.data.openid
+                console.log('app global openid:',that.globalData.openId)
+              },
+              fail(res) {
+                console.log('fail:', res)
+
+              }
+            })
+
+        }
+      })
+      
+    }
 
 })

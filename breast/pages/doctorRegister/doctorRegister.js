@@ -2,7 +2,6 @@ import md5 from '../../assert/js/md5.js';
 var QiniuUploader = require('../../assert/js/qiniuUploader.js');
 const app = getApp();
 Page({
-
   /**
    * 页面的初始数据
    */
@@ -16,6 +15,9 @@ Page({
     imgToken:''
   },
   onLoad:function(){
+    //初始化 用户 openId
+    console.log('初始化用户openId')
+    app.getOpenId()
     this.getToken()
   },
 //职业证号改变
@@ -74,7 +76,8 @@ Page({
     var expertIn = dataList.expertIn;
     var salt = app.globalData.salt;
     var userPassword = dataList.userPassword;
-
+    var openId = app.globalData.openId;
+    console.log('openId:',openId)
     //密码校验
     if (userPassword == undefined || userPassword.length < 6) {
       this.showModal("请检查密码输入是否大于6位");
@@ -100,7 +103,8 @@ Page({
         userPassword:psd,
         licenseNumber: licenseNumber,
         expertIn: expertIn,
-        imgUrl:that.data.imgList[0]
+        imgUrl:that.data.imgList[0],
+        openId:openId
       },
       success:function(res){
         console.log('请求成功:',res)

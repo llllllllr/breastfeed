@@ -1,6 +1,11 @@
 import  md5  from '../../assert/js/md5.js';
 var app = getApp();
 Page({
+//进入页面
+  onLoad(){
+    console.log('初始化用户openId')
+    app.getOpenId()
+  },
 
   /**
    * 页面的初始数据
@@ -84,6 +89,8 @@ Page({
     var checkpwd = dataList.checkpassword;
     var age = dataList.age;
     var idNumber = dataList.idNumber;
+    var openId = app.globalData.openId;
+    console.log('openid:',openId)
     //密码校验
     if(password != undefined &&( password.length < 6 || password != checkpwd))
     {
@@ -121,6 +128,7 @@ Page({
           job: dataList.job,//职业
           pregnantType: this.data.index+1,//怀孕类型
           pregnantWeek: dataList.pregnantWeek,//孕周
+          openId: openId
         },
         header: {
           "content-type": "application/x-www-form-urlencoded"
@@ -172,12 +180,14 @@ Page({
          confinementDate: this.data.date,//产期
          confinementWeek: dataList.confinementWeek,//产周
          confinementType: this.data.indext + 1,//生产类型
+         openId:openId
        },
        header: {
          "content-type": "application/x-www-form-urlencoded"
        },
        success: function (res) {
-         var status = res.data.data.status;
+         console.log('res：',res)
+         var status = res.data.status;
          //status==1表示状态正常
          if (status == 1) {
            wx.showToast({

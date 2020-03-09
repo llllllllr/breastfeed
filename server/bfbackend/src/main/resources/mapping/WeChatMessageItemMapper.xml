@@ -8,9 +8,10 @@
     <result column="message_type" jdbcType="INTEGER" property="messageType" />
     <result column="message_content" jdbcType="VARCHAR" property="messageContent" />
     <result column="time" jdbcType="TIMESTAMP" property="time" />
+    <result column="oid" jdbcType="CHAR" property="oid" />
   </resultMap>
   <sql id="Base_Column_List">
-    id, from_user_id, to_user_id, message_type, message_content, time
+    id, from_user_id, to_user_id, message_type, message_content, time,oid
   </sql>
   <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
     select 
@@ -37,10 +38,10 @@
   </delete>
   <insert id="insert" parameterType="lllr.test.breast.dataObject.consult.WeChatMessageItem">
     insert into wechat_message_item (id, from_user_id, to_user_id, 
-      message_type, message_content, time
+      message_type, message_content, time,oid
       )
     values (#{id,jdbcType=INTEGER}, #{fromUserId,jdbcType=INTEGER}, #{toUserId,jdbcType=INTEGER}, 
-      #{messageType,jdbcType=INTEGER}, #{messageContent,jdbcType=VARCHAR}, #{time,jdbcType=TIMESTAMP}
+      #{messageType,jdbcType=INTEGER}, #{messageContent,jdbcType=VARCHAR}, #{time,jdbcType=TIMESTAMP}, #{oid,jdbcType=CHAR}
       )
   </insert>
   <insert id="insertSelective" parameterType="lllr.test.breast.dataObject.consult.WeChatMessageItem">
@@ -64,6 +65,9 @@
       <if test="time != null">
         time,
       </if>
+      <if test="oid != null">
+        oid,
+      </if>
     </trim>
     <trim prefix="values (" suffix=")" suffixOverrides=",">
       <if test="id != null">
@@ -83,6 +87,9 @@
       </if>
       <if test="time != null">
         #{time,jdbcType=TIMESTAMP},
+      </if>
+      <if test="oid != null">
+        #{oid,jdbcType=CHAR},
       </if>
     </trim>
   </insert>
@@ -104,6 +111,9 @@
       <if test="time != null">
         time = #{time,jdbcType=TIMESTAMP},
       </if>
+      <if test="oid != null">
+        time = #{oid,jdbcType=CHAR},
+      </if>
     </set>
     where id = #{id,jdbcType=INTEGER}
   </update>
@@ -113,7 +123,8 @@
       to_user_id = #{toUserId,jdbcType=INTEGER},
       message_type = #{messageType,jdbcType=INTEGER},
       message_content = #{messageContent,jdbcType=VARCHAR},
-      time = #{time,jdbcType=TIMESTAMP}
+      time = #{time,jdbcType=TIMESTAMP},
+      oid = #{oid,jdbcType=VARCHAR}
     where id = #{id,jdbcType=INTEGER}
   </update>
 

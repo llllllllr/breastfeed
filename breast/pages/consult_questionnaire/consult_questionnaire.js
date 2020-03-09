@@ -18,7 +18,8 @@ Page({
     modalName: null,
     imgToken: '',
     imageURL: '',
-    userid:-1
+    userid:-1,
+    doctorOpenId:''   //医生微信小程序标识符
   },
   onLoad: function (options) {
     console.log('问卷接收参数：', options)
@@ -30,7 +31,8 @@ Page({
     this.setData({
       doctorId: options.doctorId,
       doctorName:options.doctorName,
-      doctorImg:options.img
+      doctorImg:options.img,
+      doctorOpenId:options.openId
     })
   },
   onReady: function () {
@@ -129,7 +131,9 @@ Page({
         contactPhone: this.data.phone,
         symptomDescription: this.data.question,
         consultCost: this.data.consultCost,
-        imgList:''
+        imgUrls: this.data.imgList.toString(),
+        userOpenId: app.globalData.userInfor.openId,
+        doctorOpenId:this.data.openId,
       },
       success(res) {
         console.log('返回参数:', res)

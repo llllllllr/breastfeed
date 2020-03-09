@@ -49,7 +49,10 @@ public class ConsultOrderController {
                                           @RequestParam(value="contact",required = false)String contact,
                                           @RequestParam(value="contactPhone")String contactPhone,
                                           @RequestParam(value="symptomDescription")String symptomDescription,
-                                          @RequestParam(value="consultCost")Integer consultCost){
+                                          @RequestParam(value="consultCost")Integer consultCost,
+                                          @RequestParam(value = "userOpenId",required = false)String userOpenId,
+                                          @RequestParam(value = "doctorOpenId",required = false)String doctorOpenId,
+                                          @RequestParam(value = "imgUrls",required = false)String imgUrls){
         //转换日期的类型
         Date create_time = null;
         try {
@@ -65,6 +68,9 @@ public class ConsultOrderController {
 
         ConsultOrder consultOrder = new ConsultOrder(doctorId,userId,create_time,lastingTime,contact,contactPhone,symptomDescription,consultCost);
         consultOrder.setOid(UUID.randomUUID().toString().replace("-", ""));
+        consultOrder.setUserOpenId(userOpenId);
+        consultOrder.setDoctorOpenId(doctorOpenId);
+        consultOrder.setImgUrls(imgUrls);
 
         LOGGER.info("=== AddConsultOrder:" + consultOrder + " ===");
 
