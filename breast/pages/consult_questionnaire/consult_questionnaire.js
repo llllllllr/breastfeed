@@ -21,6 +21,7 @@ Page({
     userid:-1
   },
   onLoad: function (options) {
+    
     console.log('问卷接收参数：', options)
     this.getToken()
     wx.showLoading({
@@ -34,6 +35,7 @@ Page({
     })
   },
   onReady: function () {
+    this.getUserId()
     wx.hideLoading({
       complete: (res) => { },
     })
@@ -82,6 +84,22 @@ Page({
         }
       }
     })
+  }else{
+    wx.showModal({
+      title: '提示',
+      content: '请先登录',
+      confirmColor:"#d4237a",
+      confirmText	:'去登录',
+      success (res) {
+        if (res.confirm) {
+          wx.navigateTo({
+            url: '../signIndex/signIndex',
+          })
+        } else if (res.cancel) {
+          console.log('用户点击取消')
+        }
+      }
+    })
   }
 },
   //设置值
@@ -111,6 +129,7 @@ Page({
   onchange: function () {
     console.log('用户点击确定')
     var now = new Date();
+    var that =this;
     var createTime = app.jsDateFormatter(now);
     console.log('咨询订单参数：' + createTime + ' ' + this.data.doctorId + ' ' + 456)
     //创建 咨询订单
@@ -133,6 +152,14 @@ Page({
       },
       success(res) {
         console.log('返回参数:', res)
+        wx.requestSubscribeMessage({
+          tmplIds: ['88nsGfDmdMA314-IC3nC2ILmfSX_TgW2GarmChOIOFc'],
+          success (res) {
+             console.log(res)
+             var res2 = that.sendMsg();
+             console.log(res2)
+            }
+        })
       },
       fail(res) {
         console.log('返回参数:', res)
@@ -145,6 +172,74 @@ Page({
 
     })
   },
+
+   sendMsg(){
+    const cloud = require('wx-server-sdk')
+    cloud.init({
+      env: cloud.DYNAMIC_CURRENT_ENV
+    })
+    exports.main = async (event, context) => {
+      try {
+        const result = await cloud.openapi.templateMessage.send({
+          touser: cloud.getWXContext().OPENID, // 通过 getWXContext 获取 OPENID
+          page: 'index',
+          data: {
+            name01: {
+              value: '张三'
+            },
+            thing: {
+              value: 'ssdfdsfdsf'
+            },
+          },
+          templateId: '88nsGfDmdMA314-IC3nC2ILmfSX_TgW2GarmChOIOFc',
+        })
+        // result 结构
+        // { errCode: 0, errMsg: 'openapi.templateMessage.send:ok' }
+        return result
+      } catch (err) {
+        // 错误处理
+        // err.errCode !== 0
+        throw err
+      }
+    }
+   },
+   sendToDoctor: function () {
+    var that = this;
+    wx.request({
+      url: 'https://api.weixin.qq.com/cgi-bin/message/subscribe/send?access_token='+'31_DtES8M8ijQsx3Ned5MJMlz4aNqO0OjfvoQQbQ3ECbo_-Y0phGTrApxvZqDs7SA4TH65G8bJJn521rlfjFp9ZDbanxj3H7AOvBQS3kEzcZhVeUOkMRA_14BiW-7eOt3LQyt3g2aThahYJ4ys7WPKfAEAHAV',
+      method: 'POST',
+      data: {
+        "touser": 'ornNL5BEStOvVApFPROGzx76jfas',
+        "template_id": '88nsGfDmdMA314-IC3nC2ILmfSX_TgW2GarmChOIOFc',
+        "lang": "zh_CN",
+        "data": {
+          "name1": {
+            "value": "我是题目"
+          },
+          "thing3": {
+            "value": "我是咨询内容"
+          }
+        }
+      },
+      success:function(res){
+        console.log(res)
+      }
+    })
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+//889c82d0d898a3d83f176a5e9b44d697
 
   //显示模态框，errmsg-表单错误信息
   showModal(errmsg) {

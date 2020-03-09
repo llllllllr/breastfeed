@@ -5,7 +5,8 @@ Page({
     doctorId:'', //医生的标识符
     userId:'',
     scrollTop: 0,
-    list: []
+    list: [],
+    InputBottom: 0
   },
   // 监听页面加载
   onLoad: function(options) {
@@ -100,5 +101,15 @@ Page({
         })
       })
     }).exec()
+  },
+  InputFocus(e) {
+    this.setData({
+      InputBottom: e.detail.height
+    })
+  },
+  InputBlur(e) {
+    this.setData({
+      InputBottom: 0
+    })
   }
 })

@@ -1,5 +1,6 @@
 {
   "pages": [
+    
     "pages/consult_doctors_choose/consult_doctors_choose",
     "pages/signIndex/signIndex",
     "pages/index/index",
@@ -59,6 +60,11 @@
         "iconPath": "/images/icon/wd1.png",
         "selectedIconPath": "/images/icon/wd2.png"
       }
+    ]
+  },
+  "permissions": {
+    "openapi": [
+      "templateMessage.send"
     ]
   },
   "style": "v2",
