@@ -13,8 +13,12 @@ App({
 		}
       }
     }),
+    //查询是否存有 token => 登录
     this.tokenSign()
+    //加载 微信小程序 唯一标识符
+    this.getOpenId()
   },
+
   globalData: {
     // serverUrl:'https://www.llllllllr.top/breast-0.0.1-SNAPSHOT',
      serverUrl:'http://localhost:8887',
@@ -76,15 +80,19 @@ App({
   //判断是否存在 token  若有则自动登录
   tokenSign(){
     var that = this;
+    //分别获取 用户的token  和 医生的token
     var doctorToken = wx.getStorageSync('doctorToken');
     var doctorTokenDate = wx.getStorageSync('doctorTokenDate');
     var userToken = wx.getStorageSync('userToken');
     var userTokenDate = wx.getStorageSync('userTokenDate');
+
+    //当前时间
     var now = (new Date()).getTime();
     console.log(doctorToken + ' ' + doctorTokenDate + ' ' + userToken + ' ' + userTokenDate + ' ' + now);
+
     if(doctorToken != '' && doctorToken != null){
       console.log('doctorToken 不为空！');
-      //token没有过期
+      //判断token 是否 过期
       if(doctorTokenDate - now < 0){
         wx.request({
           url: this.globalData.serverUrl + '/doctor/tokenSign',
@@ -143,6 +151,7 @@ App({
         }
       }
   },
+  //获取  微信小程序 中 用户的唯一标识符
     getOpenId(){
       var code = '';
       var that = this;

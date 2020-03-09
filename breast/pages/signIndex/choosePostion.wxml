@@ -1,9 +1,0 @@
-<view class="btn1">
-  	<button class="cu-btn round bg-white shd" style="height:100rpx" 
-    bindtap="User" data-index="{{idx}}">我是用户</button>
-  </view>
-
-  <view class="btn2">
-  	<button class="cu-btn round bg-white shd" style="height:100rpx" 
-    bindtap="Doctor" data-index="{{idx}}">我是医生</button>
-  </view>

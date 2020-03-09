@@ -1,22 +1,22 @@
 <form class="padding mar" bindsubmit="formSubmit">
 	<view class="cu-form-group">
 		<view class="title">姓名</view>
-		<input name="name" bindinput="NameChange" placeholder="请输入姓名"></input>
+		<input name="name" placeholder="请输入姓名"></input>
 		<text class="cuIcon-profile lg text-gray"></text>
 	</view>
 	<view class="cu-form-group">
 		<view class="title">执业证号</view>
-		<input name="licenseNumber" bindinput="LicenseNumberChange" placeholder="请输入执业证号,以顿号分开"></input>
+		<input name="licenseNumber" placeholder="请输入执业证号,以顿号分开"></input>
 		<text  class="cuIcon-card lg text-gray"></text>
 	</view>
 	<view class="cu-form-group">
 		<view class="title">用户名</view>
-		<input name="userName" bindinput="UserNameChange" placeholder="请输入用户名"></input>
+		<input name="userName" placeholder="请输入用户名"></input>
 		<text  class="cuIcon-profile lg text-gray"></text>
 	</view>
 	<view class="cu-form-group">
 		<view class="title">密码</view>
-		<input name="userPassword" type="password" bindinput="UserPasswordChange" placeholder="请输入密码"></input>
+		<input name="userPassword" type="password" placeholder="请输入密码"></input>
 		<text  class="cuIcon-lock lg text-gray"></text>
 	</view>
 	<view class="cu-bar bg-white">
@@ -39,7 +39,7 @@
 	</view>
 	<view class="cu-form-group align-start">
 		<view class="title">擅长</view>
-		<textarea maxlength="-1" name="expertIn" disabled="{{modalName!=null}}" bindinput="textareaBInput" placeholder="请输入擅长的领域"></textarea>
+		<textarea maxlength="-1" name="expertIn" disabled="{{modalName!=null}}" placeholder="请输入擅长的领域"></textarea>
 	</view>
 
 	<view class="btn">

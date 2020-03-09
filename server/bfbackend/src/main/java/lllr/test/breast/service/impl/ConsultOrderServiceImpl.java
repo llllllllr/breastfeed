@@ -22,7 +22,7 @@ public class ConsultOrderServiceImpl implements ConsultOrderService {
     @Override
     public ServerResponse<ConsultOrder> AddConsultOrder(ConsultOrder consultOrder) {
         int inNum = consultOrderMapper.insert(consultOrder);
-        return inNum == 1 ? ServerResponse.createBysuccess() : ServerResponse.createByError();
+        return inNum == 1 ? ServerResponse.createBysuccessData(consultOrder) : ServerResponse.createByError();
     }
 
     @Override

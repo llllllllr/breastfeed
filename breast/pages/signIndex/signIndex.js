@@ -1,33 +1,12 @@
 const app = getApp();
 Page({
-
-  
   data: {
     up:"我是医生",
     down:"我是用户",
     position:0,//1-用户 2-医生
     isVisible:false,
   },
-
   
-  onLoad: function (options) {
-
-  },
-  showModal(e) {
-    this.setData({
-      modalName: e.currentTarget.dataset.target
-    })
-  },
-  hideModal(e) {
-    this.setData({
-      modalName: null
-    })
-  },
-  
-  onReady: function () {
-
-  },
-
   showLogin:function(){
     this.setData({
       isVisible:true,
@@ -43,6 +22,7 @@ Page({
       })
   },
 
+//点击医生按钮 或者 登录
   UP:function(){
     if(this.data.up == "我是医生")
     {
@@ -73,6 +53,7 @@ Page({
       }
     },
 
+//点击 用户 按钮 或者 注册
     DOWN:function(){
       if(this.data.down == '我是用户')
       {

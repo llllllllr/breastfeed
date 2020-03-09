@@ -6,64 +6,17 @@ Page({
    * 页面的初始数据
    */
   data: {
-    userName:'',
-    userPassword:'',
-    name:'',
-    licenseNumber:'',
     object:'',
     imgList: [],
     imgToken:''
   },
-  onLoad:function(){
-    //初始化 用户 openId
-    console.log('初始化用户openId')
-    app.getOpenId()
-    this.getToken()
-  },
-//职业证号改变
-  LicenseNumberChange(e) {
-    console.log(e);
-    this.setData({
-      licenseNumber: e.detail.value
-    })
-  },
-  
-//真实姓名改变
-  NameChange(e) {
-    console.log(e);
-    this.setData({
-      name: e.detail.value
-    })
-  },
 
-  //密码值变化
-  UserPasswordChange(e) {
-    console.log(e);
-    this.setData({
-      userPassword: e.detail.value
-    })
-  },
-
-//用户名改变
-  UserNameChange(e) {
-    console.log(e);
-    this.setData({
-      userName: e.detail.value
-    })
-  },
   //显示模态框，errmsg-表单错误信息
   showModal(errmsg) {
-    this.setData({
-      modalContent: errmsg,
-      modalName: "Modal"
-    })
-  },
-
-
-  //隐藏模态框
-  hideModal(e) {
-    this.setData({
-      modalName: null
+    wx.showModal({
+      title: '温馨提示',
+      content: errmsg,
+      showCancel: false
     })
   },
 
@@ -108,10 +61,14 @@ Page({
       },
       success:function(res){
         console.log('请求成功:',res)
+        if(res.data.status == 0){
+          that.showModal(res.data.msg)
+        }
       },
 
       fail:function(res){
         console.log('请求失败:', res)
+        that.showModal("系统错误，请稍后再试！")
       }
 
     })
@@ -201,10 +158,6 @@ Page({
       }
     })
   },
-  textareaBInput(e) {
-    this.setData({
-      textareaBValue: e.detail.value
-    })
-  }
+ 
 })
 

@@ -4,6 +4,7 @@ Page({
   data: {
     doctorId:'', //医生的标识符
     userId:'',
+    oid:'', //咨询订单的标识符
     scrollTop: 0,
     list: []
   },
@@ -12,7 +13,8 @@ Page({
     console.log('参数：',options)
     this.setData({
       doctorId:options.doctorId,
-      userId: app.globalData.userInfor.userId
+      userId: app.globalData.userInfor.userId,
+      oid:options.oid
     })
     wx.showToast({
       title: '连接中',
@@ -92,7 +94,7 @@ Page({
   },
   // 页面卸载，关闭连接
   onUnload() {
-    wx.clostSocket();
+    wx.closeSocket();
     wx.onSocketClose(function(res){
       wx.showToast({
         title: '连接已断开~',

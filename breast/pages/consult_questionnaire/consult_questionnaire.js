@@ -114,6 +114,7 @@ Page({
     console.log('用户点击确定')
     var now = new Date();
     var createTime = app.jsDateFormatter(now);
+    var that = this;
     console.log('咨询订单参数：' + createTime + ' ' + this.data.doctorId + ' ' + 456)
     //创建 咨询订单
     wx.request({
@@ -133,21 +134,21 @@ Page({
         consultCost: this.data.consultCost,
         imgUrls: this.data.imgList.toString(),
         userOpenId: app.globalData.userInfor.openId,
-        doctorOpenId:this.data.openId,
+        doctorOpenId:this.data.doctorOpenId,
       },
       success(res) {
         console.log('返回参数:', res)
+        if(res.data.status == 1)
+        wx.navigateTo({
+          url: '../consult_chatroom/consult_chatroom?doctorId=' + that.data.doctorId + '&oid=' + res.data.data.oid,
+
+        })
       },
       fail(res) {
         console.log('返回参数:', res)
       }
     })
-    wx.navigateTo({
-      // url: '../consult_chatroom/consult_chatroom?question=' + this.data.question + '&name=' + this.data.name +
-      // '&imagePaths=' + this.data.imagePaths + '&phone=' + this.data.phone,//跳转的路径
-      url: '../consult_chatroom/consult_chatroom?doctorId=' + this.data.doctorId
-
-    })
+   
   },
 
   //显示模态框，errmsg-表单错误信息
