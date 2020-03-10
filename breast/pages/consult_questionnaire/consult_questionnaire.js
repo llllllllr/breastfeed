@@ -8,7 +8,6 @@ Page({
     doctorName:'',//医生姓名
     doctorImg:'',//医生图片
     question: '',//所有问题
-    imagePaths: '/aaa', //上传图片列表    //图片的上传处理没有完成
     name: '', //联系姓名
     phone: '',//联系人电话
     consultCost: 5, //咨询费用
@@ -31,7 +30,7 @@ Page({
     this.setData({
       doctorId: options.doctorId,
       doctorName:options.doctorName,
-      doctorImg:options.img,
+      doctorImg:options.doctorImg,
       doctorOpenId:options.openId
     })
   },
@@ -53,7 +52,7 @@ Page({
     console.log(e.detail.value.textarea)
   },
 
-
+//*************************************** */
  //检验token,获取用户id
  getUserId: function () {
   var that = this;
@@ -110,8 +109,16 @@ Page({
     })
   },
 
-  onchange: function () {
+  onchange: function (e) {
+    console.log('参数：',e)
     console.log('用户点击确定')
+
+    //判断用户输入是否正确
+    if(this.data.phone.length == 0 || this.data.question.length == 0){
+      this.showModal("请输入正确的电话号码和详细的病症！")
+      return ;
+    }
+
     var now = new Date();
     var createTime = app.jsDateFormatter(now);
     var that = this;
@@ -137,15 +144,20 @@ Page({
         doctorOpenId:this.data.doctorOpenId,
       },
       success(res) {
-        console.log('返回参数:', res)
-        if(res.data.status == 1)
+        console.log('生成订单成功:', res)
+        if(res.data.status == 1){
         wx.navigateTo({
-          url: '../consult_chatroom/consult_chatroom?doctorId=' + that.data.doctorId + '&oid=' + res.data.data.oid,
+          url: '../consult_chatroom/consult_chatroom?doctorId=' + that.data.doctorId + '&oid=' + res.data.data.oid + '&doctorImg=' + that.data.doctorImg,
 
         })
+        }
+        else
+        //弹出 错误消息 提示框
+            that.showModal(res.data.msg)
+        
       },
       fail(res) {
-        console.log('返回参数:', res)
+        console.log('生成订单失败:', res)
       }
     })
    

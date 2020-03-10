@@ -18,7 +18,7 @@ Page({
       icon: 'loading'
     })
    
-    const newlist = app.globalData.doctorList;
+    var newList = app.globalData.doctorList;
     //查询是否已经加载过医生的信息
     if(newList == null || newList.length == 0){
       wx.request({

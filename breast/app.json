@@ -1,13 +1,11 @@
 {
   "pages": [
+    "pages/index/index",
+    "pages/consult_doctors_choose/consult_doctors_choose",
     "pages/signIndex/signIndex",
     "pages/signUp/signUp",
-    "pages/consult_doctors_choose/consult_doctors_choose",
     "pages/consult_questionnaire/consult_questionnaire",
-    
     "pages/doctorRegister/doctorRegister",
-    
-    "pages/index/index",
     "pages/consult_chatroom/consult_chatroom",
     "pages/consult_gynecology/consult_gynecology",
     "pages/consult_help/consult_help",

@@ -6,7 +6,8 @@ Page({
     userId:'',
     oid:'', //咨询订单的标识符
     scrollTop: 0,
-    list: []
+    list: [],
+    doctorImg:'', //医生的头像
   },
   // 监听页面加载
   onLoad: function(options) {
@@ -14,7 +15,8 @@ Page({
     this.setData({
       doctorId:options.doctorId,
       userId: app.globalData.userInfor.userId,
-      oid:options.oid
+      oid:options.oid,
+      doctorImg:options.doctorImg
     })
     wx.showToast({
       title: '连接中',
@@ -31,8 +33,25 @@ Page({
     
     wx.onSocketMessage(msg => {
       console.log('收到消息为:',msg)
+      //将 从 服务器 得到 的 消息数据 进行 解析 为 JSON 数组
       var data = JSON.parse(msg.data);
       console.log('转化后的消息为:', data)
+
+//判断是否是 发送完消息后 服务器的 反馈 消息
+  if(data.status != undefined)
+      if(data.status == 1)
+          return;
+        else
+        {
+          console.log(data.msg)
+        wx.showModal({
+          title: '温馨提示',
+          content: "系统错误！请稍后再发送！",
+          showCancel: false
+        })
+          return;
+        }
+
       var newList = this.data.list;
       //将消息加入表中
       for(var i = 0 ; i < data.length ; i++)
@@ -50,6 +69,7 @@ Page({
   // 发送内容
   count: 0,
   massage: '',
+  //点击发送 消息 按钮
   send: function() {
     
     // 判断发送内容是否为空
@@ -57,27 +77,26 @@ Page({
       var msg = {
         fromUserId:this.data.userId,
         toUserId:this.data.doctorId,
-        messageType:0,
+        messageType:0,                 // 消息类型  文字 图片
         messageContent:this.message,
-        time: app.jsDateFormatter(new Date()),
-        oid:'6742d3461985435b85fa18482d534224'
+        time: app.jsDateFormatter(new Date()),   //时间
+        oid:this.data.oid  //咨询 所属 的 咨询订单
       }
+      //将 msg 对象 转化为 JSON 字符串
       var msgStr = JSON.stringify(msg);
       console.log(msgStr)
       wx.sendSocketMessage({
         data: msgStr,
       })
-      // 我自己的消息
+      // 将自己的 消息 放入 聊天列表
       console.log(this.data.list)
-      var list = this.data.list
-      list.push({
-        id: this.count++,
-        content: this.message,
-        role: 'me'
-      })
+      var newList = this.data.list;
+      newList.push(msg)
+
       this.setData({
-        list: list
-      })
+        list: newList
+      });
+      console.log(this.data.list)
       this.rollingBottom()
     } else {
       // 弹出提示框
