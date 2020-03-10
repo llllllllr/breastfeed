@@ -5,6 +5,7 @@ import lllr.test.breast.dataObject.user.Doctor;
 import lllr.test.breast.service.inter.DoctorService;
 import lllr.test.breast.util.DataValidateUtil;
 import lllr.test.breast.util.exception.StringException;
+import org.hibernate.validator.constraints.Length;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -33,8 +34,6 @@ public class DoctorController {
     @Autowired
     private DoctorService doctorService;
 
-    @Value("${user.password.length}")
-    private int USER_PASSWORD_LENGTH;
     /*
   注册
   1. 接收
@@ -70,21 +69,24 @@ public class DoctorController {
     public ServerResponse<Doctor> DoctorRegister(@RequestParam(value = "licenseNumber") String licenseNumber,
                                                 @RequestParam(value = "name") String name,
                                                 @RequestParam(value = "userName") String userName,
-                                                @RequestParam(value = "userPassword") String userPassword,
+                                                @RequestParam(value = "userPassword")@Length(min=6,message = "密码长度错误") String userPassword,
                                                  @RequestParam(value = "imgUrl") String imgUrl,
                                                  @RequestParam(value = "expertIn",required = false) String expertIn,
                                                  @RequestParam(value = "imagetextCost",required = false) Integer imagetextCost,
                                                  @RequestParam(value = "voiceCost",required = false) Integer voiceCost,
                                                  @RequestParam(value = "videoCost",required = false) Integer videoCost,
+                                                 @RequestParam(value = "openId",required = false)String openId,
                                                  HttpServletRequest request, HttpServletResponse response) throws StringException {
 
         List<String> errorList = new ArrayList<>();
         Doctor doctor = new Doctor();
         String token = UUID.randomUUID().toString().replace("-", "");
         doctor.setToken(token);
+        doctor.setOpenId(openId);
         doctor.setExpertIn(expertIn);
         doctor.setImagetextCost(imagetextCost);
         doctor.setVideoCost(videoCost);
+        doctor.setUserPassword(userPassword);
         doctor.setVoiceCost(voiceCost);
 
         //验证数据
@@ -112,12 +114,6 @@ public class DoctorController {
             doctor.setUserName(userName);
         }
 
-        if (DataValidateUtil.length(userPassword, USER_PASSWORD_LENGTH, 1)) {
-            doctor.setUserPassword(userPassword);
-        } else {
-            errorList.add("密码长度不能小于" + USER_PASSWORD_LENGTH);
-        }
-
         //判断数据是否合理
         if (errorList.size() > 0)
             return ServerResponse.createByErrorMsg(errorList.toString());
@@ -127,15 +123,12 @@ public class DoctorController {
         LOGGER.info(" === DoctorRegister:" + doctor + " === errorMap: " + errorList + " ===");
 
         //将用户的信息插入数据库
-        ServerResponse<Doctor> reData =  doctorService.doctorRegister(doctor);
-
-        //注册成功
 
 //        if (reData.getStatus() == 1) {
 //            AfterSign(request, response, doctor);                                                    //注册成功后的相关操作
 //        }
 
-        return reData;
+        return doctorService.doctorRegister(doctor);
     }
 
     //在登录成功或者注册成功

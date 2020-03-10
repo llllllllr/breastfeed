@@ -13,14 +13,15 @@
     <result column="imageText_cost" jdbcType="INTEGER" property="imagetextCost" />
     <result column="voice_cost" jdbcType="INTEGER" property="voiceCost" />
     <result column="video_cost" jdbcType="INTEGER" property="videoCost" />
+    <result column="open_id" jdbcType="INTEGER" property="openId" />
   </resultMap>
   <sql id="Base_Column_List">
     id, user_name, img_url, user_password, token, name, license_number, expert_in, imageText_cost,
-    voice_cost, video_cost
+    voice_cost, video_cost,open_id
   </sql>
   <sql id="Base_Column_List_No_PrivateInformation">
     id, user_name, name, img_url, expert_in, imageText_cost,
-    voice_cost, video_cost
+    voice_cost, video_cost,open_id
   </sql>
   <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
     select 
@@ -53,11 +54,13 @@
     insert into doctor (id, user_name, user_password, 
       token, name, license_number, 
       expert_in, imageText_cost, voice_cost, 
-      video_cost,img_url)
+      video_cost,img_url,open_id
+      )
     values (#{id,jdbcType=INTEGER}, #{userName,jdbcType=VARCHAR}, #{userPassword,jdbcType=VARCHAR}, 
       #{token,jdbcType=CHAR}, #{name,jdbcType=VARCHAR}, #{licenseNumber,jdbcType=VARCHAR}, 
       #{expertIn,jdbcType=VARCHAR}, #{imagetextCost,jdbcType=INTEGER}, #{voiceCost,jdbcType=INTEGER}, 
-      #{videoCost,jdbcType=INTEGER},#{imgUrl,jdbcType=VARCHAR})
+      #{videoCost,jdbcType=INTEGER},#{imgUrl,jdbcType=VARCHAR},#{openId,jdbcType=VARCHAR}
+      )
   </insert>
   <insert id="insertSelective" parameterType="lllr.test.breast.dataObject.user.Doctor">
     insert into doctor
@@ -95,6 +98,9 @@
       <if test="imgUrl != null">
         img_url,
       </if>
+      <if test="openId != null">
+        open_id,
+      </if>
     </trim>
     <trim prefix="values (" suffix=")" suffixOverrides=",">
       <if test="id != null">
@@ -129,6 +135,9 @@
       </if>
       <if test="imgUrl != null">
         #{imgUrl,jdbcType=VARCHAR},
+      </if>
+      <if test="openId != null">
+        #{openId,jdbcType=VARCHAR},
       </if>
     </trim>
   </insert>
@@ -165,6 +174,9 @@
       <if test="imgUrl != null">
         img_url = #{imgUrl,jdbcType=VARCHAR},
       </if>
+      <if test="openId != null">
+        img_url = #{openId,jdbcType=VARCHAR},
+      </if>
     </set>
     where id = #{id,jdbcType=INTEGER}
   </update>
@@ -179,7 +191,8 @@
       imageText_cost = #{imagetextCost,jdbcType=INTEGER},
       voice_cost = #{voiceCost,jdbcType=INTEGER},
       video_cost = #{videoCost,jdbcType=INTEGER},
-      img_url = #{imgUrl,jdbcType=VARCHAR}
+      img_url = #{imgUrl,jdbcType=VARCHAR},
+      open_id = #{openId,jdbcType=VARCHAR}
     where id = #{id,jdbcType=INTEGER}
   </update>
 </mapper>

@@ -22,4 +22,6 @@ public interface ConsultOrderMapper {
 
     //医生查询订单（订单包括用户基本信息）
     List<ConsultOrder> selectConsultOrderAndDoctorByDoctorId(Integer userId);
+
+    ConsultOrder getByOid(String oid);
 }

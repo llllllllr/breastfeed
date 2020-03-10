@@ -69,7 +69,7 @@ hideModal(e) {
         app.globalData.object = that.data.object;
         app.globalData.userInfor = responseData;
          console.log('用户登录成功，检查信息是否放入 app.js',app.globalData.userInfor)
-
+ 
         //保存 Cookie
         if (res && res.header && res.header['doctor_token'] && res.header['doctor_token_date']) {
           wx.setStorageSync('doctorToken', res.header['doctor_token']);   //保存Cookie到Storage
@@ -81,7 +81,12 @@ hideModal(e) {
           wx.setStorageSync('userTokenDate', res.header['user_token_date']);
           console.log('保存userToken  ' + res.header['user_token']);
         }
+
+        wx.switchTab({
+          url: '../index/index',
+        })
       }
+      
       
 
     })

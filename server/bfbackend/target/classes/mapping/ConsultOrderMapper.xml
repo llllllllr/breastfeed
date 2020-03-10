@@ -13,6 +13,9 @@
     <result column="consult_cost" jdbcType="INTEGER" property="consultCost" />
     <result column="status" jdbcType="INTEGER" property="status" />
     <result column="oid" jdbcType="CHAR" property="oid" />
+    <result column="user_open_id" jdbcType="VARCHAR" property="userOpenId" />
+    <result column="doctor_open_id" jdbcType="VARCHAR" property="doctorOpenId" />
+    <result column="img_urls" jdbcType="VARCHAR" property="imgUrls" />
   </resultMap>
 
   <resultMap type="lllr.test.breast.dataObject.consult.ConsultOrder" id="ConsultOrdersDoctorResultMap">
@@ -33,6 +36,9 @@
     <result column="consult_cost" jdbcType="INTEGER" property="consultCost" />
     <result column="status" jdbcType="INTEGER" property="status" />
     <result column="oid" jdbcType="CHAR" property="oid" />
+    <result column="user_open_id" jdbcType="VARCHAR" property="userOpenId" />
+    <result column="doctor_open_id" jdbcType="VARCHAR" property="doctorOpenId" />
+    <result column="img_urls" jdbcType="VARCHAR" property="imgUrls" />
 
     <!-- (2)配置关联用户信息 -->
     <!--   数据库表user对应 pojo中的User.java -->
@@ -74,7 +80,9 @@
     <result column="consult_cost" jdbcType="INTEGER" property="consultCost" />
     <result column="status" jdbcType="INTEGER" property="status" />
     <result column="oid" jdbcType="CHAR" property="oid" />
-
+    <result column="user_open_id" jdbcType="VARCHAR" property="userOpenId" />
+    <result column="doctor_open_id" jdbcType="VARCHAR" property="doctorOpenId" />
+    <result column="img_urls" jdbcType="VARCHAR" property="imgUrls" />
     <!-- (2)配置关联用户信息 -->
     <!--   数据库表user对应 pojo中的User.java -->
     <!-- association：用于映射关联查询单个对象的信息
@@ -98,7 +106,7 @@
   </resultMap>
 
   <sql id="Base_Column_List">
-    id, doctor_id, user_id, create_time, lasting_time, contact, contact_phone, symptom_description,consult_cost,status,oid
+    id, doctor_id, user_id, create_time, lasting_time, contact, contact_phone, symptom_description,consult_cost,status,oid,user_open_id,doctor_open_id,img_urls
   </sql>
   <select id="selectConsultOrderAndDoctorByDoctorId" parameterType="java.lang.Integer" resultMap="ConsultOrdersDoctorResultMap">
     SELECT consult_order.* ,doctor.name, doctor.license_number
@@ -111,6 +119,12 @@
     FROM consult_order inner join
     user on user.user_id = consult_order.user_id and
     consult_order.user_id = #{userId,jdbcType=INTEGER};
+  </select>
+
+  <select id="getByOid" parameterType="string" resultMap="BaseResultMap">
+    select *
+    from consult_order
+    where oid = #{oid}
   </select>
   <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
     select
@@ -125,11 +139,14 @@
   <insert id="insert" parameterType="lllr.test.breast.dataObject.consult.ConsultOrder">
     insert into consult_order (id, doctor_id, user_id,
       create_time, lasting_time, contact,
-      contact_phone, symptom_description,consult_cost,status,oid)
+      contact_phone, symptom_description,consult_cost,status,oid,user_open_id,doctor_open_id,img_urls
+      )
     values (#{id,jdbcType=INTEGER}, #{doctorId,jdbcType=INTEGER}, #{userId,jdbcType=INTEGER},
       #{createTime,jdbcType=TIMESTAMP}, #{lastingTime,jdbcType=INTEGER}, #{contact,jdbcType=VARCHAR},
       #{contactPhone,jdbcType=VARCHAR}, #{symptomDescription,jdbcType=VARCHAR},
-       #{consultCost,jdbcType=INTEGER},#{status,jdbcType=INTEGER},#{oid,jdbcType=CHAR})
+       #{consultCost,jdbcType=INTEGER},#{status,jdbcType=INTEGER},#{oid,jdbcType=CHAR},
+       #{userOpenId,jdbcType=VARCHAR},#{doctorOpenId,jdbcType=VARCHAR},#{imgUrls,jdbcType=VARCHAR}
+       )
   </insert>
   <insert id="insertSelective" parameterType="lllr.test.breast.dataObject.consult.ConsultOrder">
     insert into consult_order
@@ -167,6 +184,15 @@
       <if test="oid != null">
         oid,
       </if>
+      <if test="userOpenId != null">
+        user_open_id,
+      </if>
+      <if test="doctorOpenId != null">
+        doctor_open_id,
+      </if>
+      <if test="imgUrls != null">
+        img_urls,
+      </if>
     </trim>
     <trim prefix="values (" suffix=")" suffixOverrides=",">
       <if test="id != null">
@@ -201,6 +227,15 @@
       </if>
       <if test="oid != null">
         #{oid,jdbcType=CHAR},
+      </if>
+      <if test="userOpenId != null">
+        #{userOpenId,jdbcType=VARCHAR},
+      </if>
+      <if test="doctorOpenId != null">
+        #{doctorOpenId,jdbcType=VARCHAR},
+      </if>
+      <if test="imgUrls != null">
+        #{imgUrls,jdbcType=VARCHAR},
       </if>
     </trim>
   </insert>
@@ -237,6 +272,15 @@
       <if test="oid != null">
         #{oid,jdbcType=CHAR},
       </if>
+      <if test="userOpenId != null">
+        #{userOpenId,jdbcType=VARCHAR},
+      </if>
+      <if test="doctorOpenId != null">
+        #{doctorOpenId,jdbcType=VARCHAR},
+      </if>
+      <if test="imgUrls != null">
+        #{imgUrls,jdbcType=VARCHAR},
+      </if>
     </set>
     where id = #{id,jdbcType=INTEGER}
   </update>
@@ -251,7 +295,10 @@
       symptom_description = #{symptomDescription,jdbcType=VARCHAR},
       consult_cost = #{consultCost,jdbcType=INTEGER},
       status = #{status,jdbcType=INTEGER},
-      oid = #{oid,jdbcType=CHAR}
+      oid = #{oid,jdbcType=CHAR},
+      user_open_id = #{userOpenId,jdbcType=VARCHAR},
+      doctor_open_id = #{doctorOpenId,jdbcType=VARCHAR},
+      img_urls = #{imgUrls,jdbcType=VARCHAR}
     where id = #{id,jdbcType=INTEGER}
   </update>
 </mapper>

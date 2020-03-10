@@ -6,9 +6,11 @@ import lllr.test.breast.dataObject.consult.ConsultOrder;
 import java.util.List;
 
 public interface ConsultOrderService {
-    ServerResponse<ConsultOrder> AddConsultOrder(ConsultOrder consultOrder);
+    ServerResponse<String> AddConsultOrder(ConsultOrder consultOrder);
 
     ServerResponse<List<ConsultOrder>> selectConsultOrderByUserId(Integer userId);
 
     ServerResponse<List<ConsultOrder>> selectConsultOrderByDoctorId(Integer doctorId);
+
+    ServerResponse<ConsultOrder> selectByOid(String oid);
 }

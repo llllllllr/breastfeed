@@ -33,6 +33,36 @@ public class ConsultOrder {
 
     private String oid;
 
+    private String userOpenId;
+
+    private String doctorOpenId;
+
+    private String imgUrls;
+
+    public String getUserOpenId() {
+        return userOpenId;
+    }
+
+    public void setUserOpenId(String userOpenId) {
+        this.userOpenId = userOpenId;
+    }
+
+    public String getDoctorOpenId() {
+        return doctorOpenId;
+    }
+
+    public void setDoctorOpenId(String doctorOpenId) {
+        this.doctorOpenId = doctorOpenId;
+    }
+
+    public String getImgUrls() {
+        return imgUrls;
+    }
+
+    public void setImgUrls(String imgUrls) {
+        this.imgUrls = imgUrls;
+    }
+
     @Override
     public String toString() {
         return "ConsultOrder{" +
@@ -49,6 +79,9 @@ public class ConsultOrder {
                 ", consultCost=" + consultCost +
                 ", status=" + status +
                 ", oid='" + oid + '\'' +
+                ", userOpenId='" + userOpenId + '\'' +
+                ", doctorOpenId='" + doctorOpenId + '\'' +
+                ", imgUrls='" + imgUrls + '\'' +
                 '}';
     }
 

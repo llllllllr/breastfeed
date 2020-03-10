@@ -9,7 +9,8 @@ Page({
     openId: '',
   },
   onLoad: function () { //加载数据渲染页面
-    this.openid()
+    //this.openid()
+
     this.fetchDoctorData();
   },
 
@@ -40,17 +41,21 @@ Page({
   },
 
   to_consultque(e) {
-    console.log("参数", e)
+    var index = e.currentTarget.dataset.index;
+    var item = this.data.doctorList[index];
     //获取参数
-    var doctorId = e.currentTarget.dataset.id;
-    var doctorName = e.currentTarget.dataset.name;
-    var doctorImg = e.currentTarget.dataset.imgurl;
+    var doctorId = item.id;
+    var doctorName = item.name;
+    var doctorImg = item.imgurl;
+    var openId = item.openId;
     wx.navigateTo({
-      url: '../consult_questionnaire/consult_questionnaire?doctorId=' + doctorId + '&doctorName=' + doctorName +
-        '&doctorImg=' + doctorImg,
+      url: '../consult_questionnaire/consult_questionnaire?doctorId=' + doctorId + '&doctorName=' + doctorName + 
+      '&doctorImg=' + doctorImg + '&openId=' + openId,
     })
   },
 
+
+//ornNL5BEStOvVApFPROGzx76jfas
   openid: function () {
     var that = this;
     wx.login({
@@ -106,27 +111,3 @@ Page({
  
 
 })
-  // scrollHandle: function (e) { //滚动事件
-  //   this.setData({
-  //     scrolltop: e.detail.scrollTop
-  //   })
-  // },
-  // goToTop: function () { //回到顶部
-  //   this.setData({
-  //     scrolltop: 0
-  //   })
-  // },
-  // scrollLoading: function () { //滚动加载
-  //   this.fetchDoctorData();
-  // },
-  // onPullDownRefresh: function () { //下拉刷新
-  //   this.setData({
-  //     page: 0,
-  //     doctorlist: []
-  //   })
-  //   this.fetchDoctorData();
-  //   setTimeout(() => {
-  //     wx.stopPullDownRefresh()
-  //   }, 1000)
-  // }
-// })

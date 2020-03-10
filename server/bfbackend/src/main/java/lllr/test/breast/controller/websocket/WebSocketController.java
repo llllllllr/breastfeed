@@ -116,7 +116,6 @@ public class WebSocketController {
     前台发送
     消息格式 json
     {
-        "id":"",
         "fromUserId":"",
         "toUserId":""'
         "messageType":"",

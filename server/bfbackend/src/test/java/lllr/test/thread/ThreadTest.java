@@ -6,6 +6,7 @@ import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.FutureTask;
 import java.util.concurrent.ThreadLocalRandom;
+import java.util.concurrent.atomic.AtomicInteger;
 
 public class ThreadTest {
 
@@ -102,6 +103,22 @@ public class ThreadTest {
 
     @Test
     public void test4(){
+        int a = 0;
+        AtomicInteger atomicInteger = new AtomicInteger(0);
+
+        long now = System.currentTimeMillis();
+        for(int i = 0; i < 1000000000; i++){
+            a++;
+        }
+        long then = System.currentTimeMillis();
+        System.out.println((then - now) + "   " + a);
+
+        for(int i = 0; i < 1000000000; i++){
+            atomicInteger.set(atomicInteger.get() + 1);
+        }
+        long end = System.currentTimeMillis();
+        System.out.println((end - then) + "   " + atomicInteger.get() );
+
     }
 
 

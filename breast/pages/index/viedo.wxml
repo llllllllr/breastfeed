@@ -1,0 +1,27 @@
+ <scroll-view class="content-info" scroll-y>
+ 	<view class='box'>
+ 		<view class='video'>
+ 			<block wx:for="{{videoList}}">
+ 				<view class='video-item'>
+ 					<view class='wrapper'>
+ 						<video class='video-video' wx:if='{{index==videoIndex}}' id='video{{index}}' autoplay='{{true}}' show-center-play-btn="{{false}}" src='{{item.vediourl}}'></video>
+ 						<image class='video-video2' wx:if='{{index!=videoIndex}}' mode='aspectFill' src='{{item.coverUrl}}'></image>
+ 						<image class='videoPlay' wx:if='{{index!=videoIndex}}' data-index='{{index}}' bindtap='videoPlay' src='/images/icon/videoPlay.png'></image>
+ 					</view>
+ 					<view class='video-name'>{{item.title}}</view>
+ 					<view class='video-desc' style="{{item.upStatus?'':'display:-webkit-box'}}">{{!item.upStatus?item.slice_description:item.description}}</view>
+ 					<view class='video-bottom'>
+ 						<view class='video-btn' data-index="{{index}}" bindtap='upDown'>
+ 							<image hidden='{{item.upStatus}}' src='/images/icon/slide.png' ></image>
+ 							<image hidden='{{!item.upStatus}}' src='/images/icon/up.png'></image>
+ 							<text>{{!item.upStatus?'展开':'收起'}}</text>
+ 						</view>
+ 					</view>
+ 				</view>
+ 				<view class='video-bottom'>
+ 				</view>
+                 </block>
+ 		</view>
+ 		
+ 	</view>
+ </scroll-view>

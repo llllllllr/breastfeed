@@ -22,4 +22,6 @@ public interface UserMapper {
     User selectByCreditId(String creditId);
 
     Integer selectLastUserId();
+
+    String getOpenId(Integer userId);
 }

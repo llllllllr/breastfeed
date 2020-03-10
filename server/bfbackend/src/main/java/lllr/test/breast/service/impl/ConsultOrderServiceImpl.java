@@ -20,9 +20,14 @@ public class ConsultOrderServiceImpl implements ConsultOrderService {
 
 
     @Override
-    public ServerResponse<ConsultOrder> AddConsultOrder(ConsultOrder consultOrder) {
+    public ServerResponse<String> AddConsultOrder(ConsultOrder consultOrder) {
         int inNum = consultOrderMapper.insert(consultOrder);
-        return inNum == 1 ? ServerResponse.createBysuccess() : ServerResponse.createByError();
+        if( inNum == 1 )
+        {
+            String oid = consultOrder.getOid();
+            return ServerResponse.createBysuccessData(oid);
+        }
+        return  ServerResponse.createByError();
     }
 
     @Override
@@ -36,4 +41,13 @@ public class ConsultOrderServiceImpl implements ConsultOrderService {
         List<ConsultOrder> orderLists = consultOrderMapper.selectConsultOrderAndDoctorByDoctorId(doctorId);
         return ServerResponse.createBysuccessData(orderLists);
     }
+
+    @Override
+    public ServerResponse<ConsultOrder> selectByOid(String oid) {
+        if(oid == null)
+            return ServerResponse.createByErrorMsg("订单参数错误");
+        return ServerResponse.createBysuccessData(consultOrderMapper.getByOid(oid));
+    }
+
+
 }

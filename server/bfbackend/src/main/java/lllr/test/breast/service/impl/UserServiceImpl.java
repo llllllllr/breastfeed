@@ -55,5 +55,13 @@ public class UserServiceImpl implements UserService {
         return ServerResponse.createBysuccessData(temp);
     }
 
+    @Override
+    public ServerResponse<String> getOpenId(Integer userId) {
+        if(userId == null)
+            return ServerResponse.createByErrorMsg("userId为空");
+        String openId = userMapper.getOpenId(userId);
+        return ServerResponse.createBysuccessData(openId);
+    }
+
 
 }

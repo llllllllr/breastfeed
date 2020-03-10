@@ -1,12 +1,12 @@
 // pages/service/index.js
-
+var util = require('../../assert/util.js')
 var QiniuUploader = require('../../assert/js/qiniuUploader.js')
 const app = getApp();
 Page({
   data: {
     doctorId: '',//医生的标识符
-    doctorName:'',//医生姓名
-    doctorImg:'',//医生图片
+    doctorName: '',//医生姓名
+    doctorImg: '',//医生图片
     question: '',//所有问题
     imagePaths: '/aaa', //上传图片列表    //图片的上传处理没有完成
     name: '', //联系姓名
@@ -18,99 +18,67 @@ Page({
     modalName: null,
     imgToken: '',
     imageURL: '',
-    userid:-1
+    userid: -1,
+    doctorOpenId: '',  //医生微信小程序标识符
+    userOpenId: '',
+    oid:''
   },
   onLoad: function (options) {
-    
-    console.log('问卷接收参数：', options)
+
+    // console.log('问卷接收参数：', options)
     this.getToken()
     wx.showLoading({
       title: '加载中',
     })
-    console.log('医生id参数：', options)
+    //console.log('医生id参数：', options)
     this.setData({
       doctorId: options.doctorId,
-      doctorName:options.doctorName,
-      doctorImg:options.img
+      doctorName: options.doctorName,
+      doctorImg: options.img,
+      doctorOpenId: options.openId
     })
   },
   onReady: function () {
-    this.getUserId()
+    util.getUserId('userToken', this.callBack)
     wx.hideLoading({
       complete: (res) => { },
     })
   },
-
+  //util里面getUserid的结果
+  callBack: function (data) {
+    //认证成功，得到userId
+    if (data.status == 1) {
+      this.setData({
+        userid: data.data
+      })
+      util.GetUserOpenID(this.data.userid, (res) => {
+        this.setData({
+          userOpenId: res.data
+        })
+      })
+    }
+    else {
+      showToLogion();
+    }
+  },
   bindButtonTap: function () {
     this.setData({
       focus: true
     })
   },
   bindTextAreaBlur: function (e) {
-    console.log(e.detail.value)
   },
   bindFormSubmit: function (e) {
-    console.log(e.detail.value.textarea)
   },
 
-
- //检验token,获取用户id
- getUserId: function () {
-  var that = this;
-  var serverUrl = getApp().globalData.serverUrl;
-  console.log(serverUrl)
-  var cookie = wx.getStorageSync('userToken');
-  console.log(cookie)
-  if (cookie) {
-    wx.request({
-      header: {
-        cookie: cookie
-      },
-      url: serverUrl + '/user/check',
-      method: 'GET',
-      success: function (res) {
-        console.log(res)
-        //认证成功，得到userId
-        if (res.data.status == 1) {
-          that.setData({
-            userid: res.data.data
-          })
-          that.ifColl();
-        }
-        else {
-          wx.showToast({
-            title: '请先登录',
-          })
-        }
-      }
-    })
-  }else{
-    wx.showModal({
-      title: '提示',
-      content: '请先登录',
-      confirmColor:"#d4237a",
-      confirmText	:'去登录',
-      success (res) {
-        if (res.confirm) {
-          wx.navigateTo({
-            url: '../signIndex/signIndex',
-          })
-        } else if (res.cancel) {
-          console.log('用户点击取消')
-        }
-      }
-    })
-  }
-},
   //设置值
   handlerQuestion(e) {
-    console.log(e);
     this.setData({
       question: e.detail.value
     })
   },
   handlerName(e) {
-    console.log(e);
+
     this.setData({
       name: e.detail.value
     })
@@ -120,16 +88,90 @@ Page({
     if (!(/^1[3456789]\d{9}$/.test(e.detail.value))) {
       this.showModal("请输入合理的手机号，以便接收消息");
     }
-    console.log(e);
     this.setData({
       phone: e.detail.value
     })
   },
 
   onchange: function () {
-    console.log('用户点击确定')
+    //让用户点击订阅
+    this.checkIfSub();
+  },
+
+  //点击订阅
+  checkIfSub: function () {
+    var that = this;
+    var tmplID = getApp().globalData.sendToDoctortmpId;
+    //this.showModal("请允许订阅消息，以便发送和接受咨询信息");
+   
+    //订阅后发送消息
+    wx.requestSubscribeMessage({
+      
+      tmplIds: [tmplID],
+      success(res) {
+        console.log(res[tmplID])
+        if(res[tmplID]== "reject")
+        {
+          wx.showModal({
+            title: '提示',
+            content: '不订阅消息的话无法向医生发送消息',
+            confirmColor: "#d4237a",
+            confirmText: '重新提交',
+            cancelText:'返回首页',
+            success(res) {
+              if (res.confirm) {
+                
+              } else if (res.cancel) {
+                wx.switchTab({
+                  url: '../index/index',
+                })
+              }
+            }
+          })
+        }
+        else{
+          that.storeData();
+         
+        }
+      
+      }
+    })
+  },
+  //发送消息
+  sendToDoctor: function (ACtoken) {
+    var that = this;
+    console.log("aaaa"+this.data.question)
+    wx.request({
+      url: 'https://api.weixin.qq.com/cgi-bin/message/subscribe/send?access_token=' + ACtoken,
+      method: 'POST',
+      data: {
+        "touser": that.data.userOpenId,
+        "template_id": getApp().globalData.sendToDoctortmpId,
+        "lang": "zh_CN",
+        "data": {
+          "name1": {
+            "value": that.data.name
+          },
+          "thing3": {
+            "value": that.data.question
+          }
+        },
+        page:"../consult_chatroom?oid="+that.data.oid
+      },
+      success: function (res) {
+        wx.navigateTo({
+          url: '../consult_chatroom?oid='+that.data.oid,
+        })
+        console.log(res)
+      }
+    })
+
+
+  },
+  //交付后台
+  storeData:function(){
     var now = new Date();
-    var that =this;
+    var that = this;
     var createTime = app.jsDateFormatter(now);
     console.log('咨询订单参数：' + createTime + ' ' + this.data.doctorId + ' ' + 456)
     //创建 咨询订单
@@ -148,81 +190,15 @@ Page({
         contactPhone: this.data.phone,
         symptomDescription: this.data.question,
         consultCost: this.data.consultCost,
-        imgList:''
+        imgUrls: this.data.imgList.toString(),
+        userOpenId: app.globalData.userInfor.openId,
+        doctorOpenId: this.data.openId,
       },
-      success(res) {
-        console.log('返回参数:', res)
-        wx.requestSubscribeMessage({
-          tmplIds: ['88nsGfDmdMA314-IC3nC2ILmfSX_TgW2GarmChOIOFc'],
-          success (res) {
-             console.log(res)
-             var res2 = that.sendMsg();
-             console.log(res2)
-            }
-        })
-      },
-      fail(res) {
-        console.log('返回参数:', res)
-      }
-    })
-    wx.navigateTo({
-      // url: '../consult_chatroom/consult_chatroom?question=' + this.data.question + '&name=' + this.data.name +
-      // '&imagePaths=' + this.data.imagePaths + '&phone=' + this.data.phone,//跳转的路径
-      url: '../consult_chatroom/consult_chatroom?doctorId=' + this.data.doctorId
-
-    })
-  },
-
-   sendMsg(){
-    const cloud = require('wx-server-sdk')
-    cloud.init({
-      env: cloud.DYNAMIC_CURRENT_ENV
-    })
-    exports.main = async (event, context) => {
-      try {
-        const result = await cloud.openapi.templateMessage.send({
-          touser: cloud.getWXContext().OPENID, // 通过 getWXContext 获取 OPENID
-          page: 'index',
-          data: {
-            name01: {
-              value: '张三'
-            },
-            thing: {
-              value: 'ssdfdsfdsf'
-            },
-          },
-          templateId: '88nsGfDmdMA314-IC3nC2ILmfSX_TgW2GarmChOIOFc',
-        })
-        // result 结构
-        // { errCode: 0, errMsg: 'openapi.templateMessage.send:ok' }
-        return result
-      } catch (err) {
-        // 错误处理
-        // err.errCode !== 0
-        throw err
-      }
-    }
-   },
-   sendToDoctor: function () {
-    var that = this;
-    wx.request({
-      url: 'https://api.weixin.qq.com/cgi-bin/message/subscribe/send?access_token='+'31_DtES8M8ijQsx3Ned5MJMlz4aNqO0OjfvoQQbQ3ECbo_-Y0phGTrApxvZqDs7SA4TH65G8bJJn521rlfjFp9ZDbanxj3H7AOvBQS3kEzcZhVeUOkMRA_14BiW-7eOt3LQyt3g2aThahYJ4ys7WPKfAEAHAV',
-      method: 'POST',
-      data: {
-        "touser": 'ornNL5BEStOvVApFPROGzx76jfas',
-        "template_id": '88nsGfDmdMA314-IC3nC2ILmfSX_TgW2GarmChOIOFc',
-        "lang": "zh_CN",
-        "data": {
-          "name1": {
-            "value": "我是题目"
-          },
-          "thing3": {
-            "value": "我是咨询内容"
-          }
-        }
-      },
-      success:function(res){
-        console.log(res)
+      success(res) {    
+        that.setData({
+          oid:res.data.data
+        }) 
+        util.getACtoken(that.sendToDoctor)   
       }
     })
   },
@@ -237,9 +213,7 @@ Page({
 
 
 
-
-
-//889c82d0d898a3d83f176a5e9b44d697
+  //889c82d0d898a3d83f176a5e9b44d697
 
   //显示模态框，errmsg-表单错误信息
   showModal(errmsg) {

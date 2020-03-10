@@ -21,6 +21,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
+import scala.Int;
 
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
@@ -42,9 +43,6 @@ public class UserController {
     private static final String  COOLIE_NAME_TOKEN = "token";
     @Autowired
     private UserService userService;
-
-    @Value("${user.password.length}")
-    private int USER_PASSWORD_LENGTH;
 
     @Autowired
     MD5Util md5Util;
@@ -89,7 +87,7 @@ public class UserController {
 
     @GetMapping("/register")
     public ServerResponse<User> UserRegister(@RequestParam(value = "age", required = false)@Range(min=18,max=110,message = "请输入合理的年龄") Integer age,
-                                             @RequestParam(value = "creditId")@CreditCardNumber(message = "身份证号码不正确") String creditId,
+                                             @RequestParam(value = "creditId")String creditId,
                                              @RequestParam(value = "pregnantType",required = false) Integer pregnantType,
                                              @RequestParam(value = "pregnantWeek",required = false) String pregnantWeek,
                                              @RequestParam(value = "job", required = false) String job,
@@ -98,12 +96,13 @@ public class UserController {
                                              @RequestParam(value = "confinementType",required = false) Integer confinementType,
                                              @RequestParam(value = "userName")@NotNull(message = "用户名不能为空") @NotBlank(message = "用户名不能为空") String userName,
                                              @RequestParam(value = "userPassword")@Length(min=6,message = "密码长度错误") String userPassword,
+                                             @RequestParam(value = "openId",required = false)String openId,
                                              HttpServletRequest request,
                                              HttpServletResponse response) throws StringException, ParseException {
 
-        List<String> errorList = new ArrayList<>();
         User user = new User();
         user.setAge(age);
+        user.setOpenId(openId);
         user.setCreditId(creditId);
         user.setPregnantType(pregnantType);
         user.setPregnantWeek(pregnantWeek);
@@ -117,11 +116,8 @@ public class UserController {
         }
         user.setUserName(userName);
         user.setUserPassword(userPassword);
-        if (errorList.size() > 0)
-            return ServerResponse.createByErrorMsgAndData(errorList.toString(), user);
         user.setUserToken(UUID.randomUUID().toString().replace("-", ""));
-        ServerResponse<User> userResponse = userService.userRegister(user);
-        return userResponse;
+        return userService.userRegister(user);
     }
 
     //在登录成功或者注册成功
@@ -202,6 +198,11 @@ public class UserController {
     }
 
 
+    @RequestMapping("/openId")
+    public  ServerResponse<String> getOpenId(@RequestParam("userId") Integer userId)
+    {
+        return userService.getOpenId(userId);
+    }
 
 
 
