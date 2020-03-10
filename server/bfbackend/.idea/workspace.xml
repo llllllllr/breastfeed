@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="4be82cec-dda4-48c6-bb2f-4c997c26fcd8" name="Default" comment="">
       <change afterPath="$PROJECT_DIR$/../../breast/pages/index/viedo.wxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../breast/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../breast/app.js" afterDir="false" />
@@ -13,9 +14,14 @@
       <change beforePath="$PROJECT_DIR$/../../breast/pages/signIn/signIn.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../breast/pages/signIn/signIn.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../breast/pages/signUp/signUp.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../breast/pages/signUp/signUp.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../breast/utils/util.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../breast/utils/util.js" afterDir="false" />
+=======
+    <list default="true" id="f335623b-74db-4dd1-b561-7e8f60985600" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../breast/pages/consult_chatroom/consult_chatroom.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../breast/pages/consult_chatroom/consult_chatroom.js" afterDir="false" />
+>>>>>>> 2905f30c92edaf9b6f16ff9b349d67ad2c4cb70c
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log/sys.2020-03-03.0.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/sys.2020-03-03.0.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log/sys.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/sys.log" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/src/main/java/lllr/test/breast/controller/ConsultOrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lllr/test/breast/controller/ConsultOrderController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/lllr/test/breast/controller/DoctorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lllr/test/breast/controller/DoctorController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/lllr/test/breast/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lllr/test/breast/controller/UserController.java" afterDir="false" />
@@ -57,11 +63,15 @@
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
+=======
+    </list>
+>>>>>>> 2905f30c92edaf9b6f16ff9b349d67ad2c4cb70c
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+<<<<<<< HEAD
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="UserMapper.java" pinned="false" current-in-tab="false">
@@ -279,6 +289,15 @@
       </pane>
       <pane id="Scope" />
     </panes>
+=======
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="1YvKqqLznIFpx0TxKNckC4Qoqzg" />
+  <component name="ProjectViewState">
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+>>>>>>> 2905f30c92edaf9b6f16ff9b349d67ad2c4cb70c
   </component>
   <component name="PropertiesComponent">
     <property name="RequestMappingsPanelOrder0" value="0" />
@@ -287,6 +306,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+<<<<<<< HEAD
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -326,6 +346,17 @@
       </option>
       <patterns />
     </configuration>
+=======
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="restartRequiresConfirmation" value="false" />
+  </component>
+  <component name="RunManager">
+>>>>>>> 2905f30c92edaf9b6f16ff9b349d67ad2c4cb70c
     <configuration name="BreastApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="breast" />
       <extension name="coverage">
@@ -335,6 +366,7 @@
         </pattern>
       </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="lllr.test.breast.BreastApplication" />
+<<<<<<< HEAD
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -357,6 +389,11 @@
       <option name="PROPERTIES_FILE" />
       <properties />
       <listeners />
+=======
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+>>>>>>> 2905f30c92edaf9b6f16ff9b349d67ad2c4cb70c
     </configuration>
     <recent_temporary>
       <list>
@@ -369,6 +406,7 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
+<<<<<<< HEAD
       <changelist id="4be82cec-dda4-48c6-bb2f-4c997c26fcd8" name="Default" comment="" />
       <created>1580972583027</created>
       <option name="number" value="Default" />
@@ -648,5 +686,77 @@
         </settings>
       </state>
     </states>
+=======
+      <changelist id="f335623b-74db-4dd1-b561-7e8f60985600" name="Default Changelist" comment="" />
+      <created>1583757676703</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1583757676703</updated>
+      <workItem from="1583757698380" duration="2016000" />
+      <workItem from="1583817857176" duration="2727000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1493" height="252" key="GridCell.Tab.0.bottom" timestamp="1583818902086">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="252" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1583818902086" />
+    <state width="1493" height="252" key="GridCell.Tab.0.center" timestamp="1583818902086">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="252" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1583818902086" />
+    <state width="1493" height="252" key="GridCell.Tab.0.left" timestamp="1583818902086">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="252" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1583818902086" />
+    <state width="1493" height="252" key="GridCell.Tab.0.right" timestamp="1583818902086">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="252" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1583818902086" />
+    <state width="1493" height="307" key="GridCell.Tab.1.bottom" timestamp="1583762188191">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="307" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1583762188191" />
+    <state width="1493" height="307" key="GridCell.Tab.1.center" timestamp="1583762188191">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="307" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1583762188191" />
+    <state width="1493" height="307" key="GridCell.Tab.1.left" timestamp="1583762188191">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="307" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1583762188191" />
+    <state width="1493" height="307" key="GridCell.Tab.1.right" timestamp="1583762188191">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="307" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1583762188191" />
+    <state width="1493" height="70" key="GridCell.Tab.2.bottom" timestamp="1583762111970">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="70" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1583762111970" />
+    <state width="1493" height="70" key="GridCell.Tab.2.center" timestamp="1583762111970">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="70" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1583762111970" />
+    <state width="1493" height="70" key="GridCell.Tab.2.left" timestamp="1583762111970">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="70" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1583762111970" />
+    <state width="1493" height="70" key="GridCell.Tab.2.right" timestamp="1583762111970">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="70" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1583762111970" />
+    <state x="449" y="237" key="com.intellij.ide.util.TipDialog" timestamp="1583818480628">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="449" y="237" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1583818480628" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1583822774238">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1583822774238" />
+>>>>>>> 2905f30c92edaf9b6f16ff9b349d67ad2c4cb70c
   </component>
 </project>

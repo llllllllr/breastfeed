@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 2020-03-10 12:20:51,993 [INFO] (WebSocketController.java:112)- [WebSocket] 退出成功，当前连接人数为：=0 当前在线人： {}
 2020-03-10 12:20:52,011 [INFO] (WebSocketController.java:112)- [WebSocket] 退出成功，当前连接人数为：=0 当前在线人： {}
 2020-03-10 12:20:56,622 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select user_id, age, credit_id, pregnant_type, pregnant_week, job, confinement_date, confinement_week, confinement_type, user_name, user_password, user_token,open_id from user where user_token = ? 
@@ -385,3 +386,5 @@
 2020-03-10 20:39:11,382 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
 2020-03-10 20:39:11,426 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 20
 2020-03-10 20:39:11,532 [INFO] (ArticleController.java:66)- 母乳喂养的好处
+=======
+>>>>>>> 2905f30c92edaf9b6f16ff9b349d67ad2c4cb70c

@@ -22,12 +22,16 @@ public class ConsultOrderServiceImpl implements ConsultOrderService {
     @Override
     public ServerResponse<String> AddConsultOrder(ConsultOrder consultOrder) {
         int inNum = consultOrderMapper.insert(consultOrder);
+<<<<<<< HEAD
         if( inNum == 1 )
         {
             String oid = consultOrder.getOid();
             return ServerResponse.createBysuccessData(oid);
         }
         return  ServerResponse.createByError();
+=======
+        return inNum == 1 ? ServerResponse.createBysuccessData(consultOrder) : ServerResponse.createByError();
+>>>>>>> 2905f30c92edaf9b6f16ff9b349d67ad2c4cb70c
     }
 
     @Override

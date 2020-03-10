@@ -1,4 +1,4 @@
-// pages/signUp/signUp.wxml.js
+// pages/consult_newborn/consult_newborn.js
 Page({
 
   /**

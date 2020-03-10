@@ -45,7 +45,7 @@ Page({
         })
         wx.uploadFile({
           //url: 'http://127.0.0.1:8887/face/register',
-          url: 'http://127.0.0.1:8887/face/register',
+          url: app.globalData.serverUrl + '/face/register',
           filePath: res.tempImagePath,
           name: 'file',
           success: (res) => {

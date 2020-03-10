@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 2020-03-08 13:36:06,794 [INFO] (StartupInfoLogger.java:50)- Starting BreastApplication on LAPTOP-SKN1FD88 with PID 22296 (started by 12284 in F:\Ajava\A母乳喂养项目\breastfeed\server\bfbackend)
 2020-03-08 13:36:07,486 [DEBUG] (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
 2020-03-08 13:36:07,487 [INFO] (SpringApplication.java:648)- No active profile set, falling back to default profiles: default
@@ -49,6 +50,8 @@
 2020-03-08 14:12:06,444 [DEBUG] (WebSocketController.java:209)- ===  用户消息成功 消息数据：[] ===
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> 2905f30c92edaf9b6f16ff9b349d67ad2c4cb70c
 2020-03-09 13:04:57,123 [INFO] (StartupInfoLogger.java:50)- Starting BreastApplication on LAPTOP-562395R3 with PID 10024 (started by 爱哭的周小姐 in D:\软件应用\java IDE\IntelliJ IDEA 2019.1\项目\breastfeed\新建文件夹\server\bfbackend)
 2020-03-09 13:04:57,140 [DEBUG] (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
 2020-03-09 13:04:57,141 [INFO] (SpringApplication.java:648)- No active profile set, falling back to default profiles: default
@@ -1095,7 +1098,13 @@
 2020-03-06 12:34:38,159 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 6
 2020-03-06 12:34:38,179 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 9
 >>>>>>> 558ef7fa089331fdc4aafa9c4f44fd826a8250e7
+<<<<<<< HEAD
 >>>>>>> b0508650d47ee80def785e5372e9c57909884035
 2020-03-09 17:25:49,599 [INFO] (StartupInfoLogger.java:50)- Starting BreastApplication on LAPTOP-SKN1FD88 with PID 27332 (started by 12284 in F:\Ajava\A母乳喂养项目\breastfeed\server\bfbackend)
 2020-03-09 17:25:49,691 [DEBUG] (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
 2020-03-09 17:25:49,692 [INFO] (SpringApplication.java:648)- No active profile set, falling back to default profiles: default
+=======
+2020-03-09 21:05:59,047 [INFO] (StartupInfoLogger.java:50)- Starting BreastApplication on LAPTOP-562395R3 with PID 13296 (started by 爱哭的周小姐 in D:\软件应用\java IDE\IntelliJ IDEA 2019.1\项目\breastfeed\新建文件夹\server\bfbackend)
+2020-03-09 21:05:59,070 [DEBUG] (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2020-03-09 21:05:59,071 [INFO] (SpringApplication.java:648)- No active profile set, falling back to default profiles: default
+>>>>>>> 2905f30c92edaf9b6f16ff9b349d67ad2c4cb70c
