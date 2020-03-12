@@ -28,7 +28,6 @@ public class ConsultOrderServiceImpl implements ConsultOrderService {
             return ServerResponse.createBysuccessData(oid);
         }
         return  ServerResponse.createByError();
-
     }
 
     @Override

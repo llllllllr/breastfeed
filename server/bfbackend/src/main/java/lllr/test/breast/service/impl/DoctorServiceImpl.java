@@ -22,6 +22,11 @@ public class DoctorServiceImpl implements DoctorService {
         if(temp != null)
             return ServerResponse.createByErrorMsg("用户名已被注册！");
 
+        //查询  职业证号  是否被注册过
+        temp = doctorMapper.selectByLicenseNumber(doctor.getLicenseNumber());
+        if(temp != null)
+            return ServerResponse.createByErrorMsg("职业证号已被注册！");
+
         //向数据库中 插入 用户信息
         int insNum = doctorMapper.insert(doctor);
         return  insNum == 1 ? ServerResponse.createBysuccess() : ServerResponse.createByErrorMsg("系统错误，请稍后后再试");

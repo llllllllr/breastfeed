@@ -107,6 +107,7 @@ Page({
         icon: 'none',
         duration: 2000
       })
+      return;
     }
     //发送 消息通知
     this.sendMessageNotice()
@@ -277,5 +278,3 @@ Page({
 
 
 })
-
-  

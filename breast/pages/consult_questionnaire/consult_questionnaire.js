@@ -20,7 +20,6 @@ Page({
   },
   onLoad: function (options) {
     console.log('问卷接收参数：', options)
-    this.getToken()
     wx.showLoading({
       title: '加载中',
     })
@@ -50,39 +49,6 @@ Page({
     console.log(e.detail.value.textarea)
   },
 
-  //*************************************** */
-  //检验token,获取用户id
-  getUserId: function () {
-    var that = this;
-    var serverUrl = getApp().globalData.serverUrl;
-    console.log(serverUrl)
-    var cookie = wx.getStorageSync('userToken');
-    console.log(cookie)
-    if (cookie) {
-      wx.request({
-        header: {
-          cookie: cookie
-        },
-        url: serverUrl + '/user/check',
-        method: 'GET',
-        success: function (res) {
-          console.log(res)
-          //认证成功，得到userId
-          if (res.data.status == 1) {
-            that.setData({
-              userid: res.data.data
-            })
-            that.ifColl();
-          }
-          else {
-            wx.showToast({
-              title: '请先登录',
-            })
-          }
-        }
-      })
-    }
-  },
   //设置值
   handlerQuestion(e) {
     console.log(e);
@@ -120,7 +86,7 @@ Page({
     var now = new Date();
     var createTime = app.jsDateFormatter(now);
     var that = this;
-    console.log('咨询订单参数：' + createTime + ' ' + this.data.doctorId + ' ' + 456)
+    console.log('咨询订单参数：' + createTime + ' ' + this.data.doctorId )
     //创建 咨询订单
     wx.request({
       url: app.globalData.serverUrl + '/addConsultOrder',
@@ -280,9 +246,3 @@ Page({
 
   }
 })
-
-
-
-
-
-
