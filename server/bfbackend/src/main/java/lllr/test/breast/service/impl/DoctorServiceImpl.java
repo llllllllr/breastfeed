@@ -20,11 +20,11 @@ public class DoctorServiceImpl implements DoctorService {
         //查询注册的 用户名 是否已经存在
         Doctor temp = doctorMapper.selectByUserName(doctor.getUserName());
         if(temp != null)
-            return ServerResponse.createByErrorMsgAndData("用户名已被注册！",doctor);
+            return ServerResponse.createByErrorMsg("用户名已被注册！");
 
         //向数据库中 插入 用户信息
         int insNum = doctorMapper.insert(doctor);
-        return  insNum == 1 ? ServerResponse.createBysuccessData(doctor) : ServerResponse.createByErrorMsg("系统错误，请稍后后再试");
+        return  insNum == 1 ? ServerResponse.createBysuccess() : ServerResponse.createByErrorMsg("系统错误，请稍后后再试");
     }
 
     @Override

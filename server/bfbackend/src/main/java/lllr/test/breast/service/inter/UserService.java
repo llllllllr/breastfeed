@@ -9,4 +9,6 @@ public interface UserService {
     ServerResponse<User> userSign(String userName, String userPassword);    //登录
 
     ServerResponse<User> userTokenSign(String user_token);           //token 持续化登录
+
+    ServerResponse<String> getOpenId(Integer userId);
 }

@@ -8,13 +8,11 @@ import lllr.test.breast.service.inter.UserService;
 import lllr.test.breast.util.DataValidateUtil;
 import lllr.test.breast.util.MD5Util;
 import lllr.test.breast.util.exception.StringException;
-import org.hibernate.validator.constraints.CreditCardNumber;
 import org.hibernate.validator.constraints.Length;
 import org.hibernate.validator.constraints.Range;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -22,15 +20,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.NotNull;
+import javax.validation.constraints.NotEmpty;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.UUID;
 
 @Validated
@@ -86,14 +80,14 @@ public class UserController {
 
     @GetMapping("/register")
     public ServerResponse<User> UserRegister(@RequestParam(value = "age", required = false)@Range(min=18,max=110,message = "请输入合理的年龄") Integer age,
-                                             @RequestParam(value = "creditId")String creditId,
+                                             @RequestParam(value = "creditId")@Length(min=18,max=18,message = "请输入合理的身份证")String creditId,
                                              @RequestParam(value = "pregnantType",required = false) Integer pregnantType,
                                              @RequestParam(value = "pregnantWeek",required = false) String pregnantWeek,
                                              @RequestParam(value = "job", required = false) String job,
                                              @RequestParam(value = "confinementDate",required = false) String confinementDate,
                                              @RequestParam(value = "confinementWeek",required = false) Integer confinementWeek,
                                              @RequestParam(value = "confinementType",required = false) Integer confinementType,
-                                             @RequestParam(value = "userName")@NotNull(message = "用户名不能为空") @NotBlank(message = "用户名不能为空") String userName,
+                                             @RequestParam(value = "userName")@NotEmpty(message = "用户名不能为空") String userName,
                                              @RequestParam(value = "userPassword")@Length(min=6,message = "密码长度错误") String userPassword,
                                              @RequestParam(value = "openId",required = false)String openId,
                                              HttpServletRequest request,
@@ -120,12 +114,12 @@ public class UserController {
     }
 
     //在登录成功或者注册成功
-    //在cookie中添加user_token
+    //在Header中添加user_token
     //在session中加入用户信息
     private void AfterSign(HttpServletRequest request, HttpServletResponse response, User user) {
         redisService.set(UserKey.token,user.getUserToken(),user.getUserId());
-        request.getSession().setAttribute("userName", user.getUserName());
 
+        //将 token 放入 header
         response.setHeader("user_token",user.getUserToken());
         response.setHeader("user_token_date", String.valueOf(System.currentTimeMillis() + 60 * 60 * 24 * 1000)); //设置token 过期时间
 
@@ -138,12 +132,10 @@ public class UserController {
 
 
     @GetMapping("/sign")
-    public ServerResponse<User> UserSign(@RequestParam(value = "userName", required = true) String userName,
-                                     @RequestParam(value = "userPassword", required = true) String userPassword,
+    public ServerResponse<User> UserSign(@RequestParam(value = "userName")@NotEmpty(message = "用户名不能为空") String userName,
+                                     @RequestParam(value = "userPassword")@Length(min=6,message = "密码错误") String userPassword,
                                      HttpServletResponse response,
                                      HttpServletRequest request) {
-        if (DataValidateUtil.isBlank(userName) || DataValidateUtil.isBlank(userPassword))
-            return ServerResponse.createBysuccessMsg("用户名和密码不能为空");
 
         System.out.println(userPassword);
         //根据用户名查询用户信息并返回
@@ -157,33 +149,26 @@ public class UserController {
 
     //持续化user_token免登录
     @RequestMapping("/tokenSign")
-    public ServerResponse<User> UserTokenSign(@RequestParam(value = "user_token") String user_token,
+    public ServerResponse<User> UserTokenSign(@RequestParam(value = "user_token")@NotEmpty String user_token,
                                 HttpServletRequest request,
                                 HttpServletResponse response) {
-        //判断用户是否登录
-        String userName = (String) request.getSession().getAttribute("userName");
-
-        if(userName != null)
-            return ServerResponse.createBysuccess();
-        if (!DataValidateUtil.isBlank(user_token)) {
-            ServerResponse<User> reData = userService.userTokenSign(user_token);
+        ServerResponse<User> reData = userService.userTokenSign(user_token);
+        if(reData.getData() != null)
             AfterSign(request, response, reData.getData());
-            return reData;
-        }
-        return ServerResponse.createByError();
+        return reData;
     }
 
     //用户退出
-    @GetMapping("/exit")
-    public ServerResponse exit(HttpServletRequest request, HttpServletResponse response) {
-        request.getSession().removeAttribute("userName");
-        //将浏览器的user_token 置空
-        Cookie cookie = new Cookie("user_token", null);
-        cookie.setPath("/user/tokenSign");
-        response.addCookie(cookie);
-
-        return ServerResponse.createBysuccess();
-    }
+//    @GetMapping("/exit")
+//    public ServerResponse exit(HttpServletRequest request, HttpServletResponse response) {
+//        request.getSession().removeAttribute("userName");
+//        //将浏览器的user_token 置空
+//        Cookie cookie = new Cookie("user_token", null);
+//        cookie.setPath("/user/tokenSign");
+//        response.addCookie(cookie);
+//
+//        return ServerResponse.createBysuccess();
+//    }
 
 
     @GetMapping("/check")
@@ -197,6 +182,11 @@ public class UserController {
     }
 
 
+    @RequestMapping("/openId")
+    public  ServerResponse<String> getOpenId(@RequestParam("userId") Integer userId)
+    {
+        return userService.getOpenId(userId);
+    }
 
 
 

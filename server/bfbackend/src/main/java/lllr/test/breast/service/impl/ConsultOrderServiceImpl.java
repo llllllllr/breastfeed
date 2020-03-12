@@ -36,4 +36,13 @@ public class ConsultOrderServiceImpl implements ConsultOrderService {
         List<ConsultOrder> orderLists = consultOrderMapper.selectConsultOrderAndDoctorByDoctorId(doctorId);
         return ServerResponse.createBysuccessData(orderLists);
     }
+
+    @Override
+    public ServerResponse<ConsultOrder> selectByOid(String oid) {
+        if(oid == null)
+            return ServerResponse.createByErrorMsg("订单参数错误");
+        return ServerResponse.createBysuccessData(consultOrderMapper.getByOid(oid));
+    }
+
+
 }

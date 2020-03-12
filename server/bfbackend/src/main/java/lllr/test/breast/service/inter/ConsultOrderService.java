@@ -11,4 +11,6 @@ public interface ConsultOrderService {
     ServerResponse<List<ConsultOrder>> selectConsultOrderByUserId(Integer userId);
 
     ServerResponse<List<ConsultOrder>> selectConsultOrderByDoctorId(Integer doctorId);
+
+    ServerResponse<ConsultOrder> selectByOid(String oid);
 }

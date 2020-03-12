@@ -1,5 +1,4 @@
-// pages/gynecology/index.js
-//
+// pages/consult_gynecology/consult_gynecology.js
 Page({
 
   /**

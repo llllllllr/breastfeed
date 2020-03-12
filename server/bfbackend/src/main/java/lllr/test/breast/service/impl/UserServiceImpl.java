@@ -23,17 +23,17 @@ public class UserServiceImpl implements UserService {
         //查询注册的 用户名 是否已经存在
         User userNameTemp = userMapper.selectByUserName(user.getUserName());
         if(userNameTemp != null)
-            return ServerResponse.createByErrorMsgAndData("用户名已被注册！",user);
+            return ServerResponse.createByErrorMsg("用户名已被注册！");
 
         //查询 身份证 是否 已经存在
         User CreditIdTemp = userMapper.selectByCreditId(user.getCreditId());
         if(CreditIdTemp != null)
-            return ServerResponse.createByErrorMsgAndData("身份证已被注册！",user);
+            return ServerResponse.createByErrorMsg("身份证已被注册！");
 
 
         //向数据库中 插入 用户信息
         int insNum = userMapper.insert(user);
-        return  insNum == 1 ? ServerResponse.createBysuccessData(user) : ServerResponse.createByErrorMsg("系统错误，请稍后后再试");
+        return  insNum == 1 ? ServerResponse.createBysuccess() : ServerResponse.createByErrorMsg("系统错误，请稍后后再试");
     }
 
     @Override
@@ -53,6 +53,14 @@ public class UserServiceImpl implements UserService {
             return ServerResponse.createByError();
 
         return ServerResponse.createBysuccessData(temp);
+    }
+
+    @Override
+    public ServerResponse<String> getOpenId(Integer userId) {
+        if(userId == null)
+            return ServerResponse.createByErrorMsg("userId为空");
+        String openId = userMapper.getOpenId(userId);
+        return ServerResponse.createBysuccessData(openId);
     }
 
 

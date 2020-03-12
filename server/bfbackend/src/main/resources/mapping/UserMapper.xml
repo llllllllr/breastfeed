@@ -209,4 +209,10 @@
       open_id = #{openId,jdbcType=VARCHAR}
     where user_id = #{userId,jdbcType=INTEGER}
   </update>
+
+  <select id="getOpenId" parameterType="integer" resultType="string">
+    select open_id
+    from user
+    where user_id = #{userId}
+  </select>
 </mapper>

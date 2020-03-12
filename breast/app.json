@@ -1,10 +1,17 @@
 {
   "pages": [
     "pages/index/index",
+ 
     "pages/consult_doctors_choose/consult_doctors_choose",
     "pages/signIndex/signIndex",
+
     "pages/signUp/signUp",
+
     "pages/consult_questionnaire/consult_questionnaire",
+
+
+ 
+
     "pages/doctorRegister/doctorRegister",
     "pages/consult_chatroom/consult_chatroom",
     "pages/consult_gynecology/consult_gynecology",
@@ -17,8 +24,10 @@
     "pages/search/search",
     "pages/searchResult/searchResult",
     "pages/signUp/index",
-    "pages/signIn/signIn",
-    "pages/user/user",
+    "pages/signIn/signIn",    
+    "pages/user/user",  
+
+
     "pages/mycoll/mycoll",
     "pages/testIndex/testIndex"
   ],
@@ -56,6 +65,11 @@
         "iconPath": "/images/icon/wd1.png",
         "selectedIconPath": "/images/icon/wd2.png"
       }
+    ]
+  },
+  "permissions": {
+    "openapi": [
+      "templateMessage.send"
     ]
   },
   "style": "v2",

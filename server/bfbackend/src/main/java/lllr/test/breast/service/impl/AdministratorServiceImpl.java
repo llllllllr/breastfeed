@@ -1,5 +1,6 @@
 package lllr.test.breast.service.impl;
 
+import lllr.test.breast.common.ServerResponse;
 import lllr.test.breast.dao.mapper.AdministratorMapper;
 import lllr.test.breast.dataObject.user.Administrator;
 import lllr.test.breast.service.inter.AdministratorService;
@@ -14,25 +15,24 @@ public class AdministratorServiceImpl implements AdministratorService {
     private AdministratorMapper administratorMapper;
 
     @Override
-    public Administrator administratorSign(String administratorName, String administratorPassword) {
+    public ServerResponse<Administrator> administratorSign(String administratorName, String administratorPassword) {
         List<Administrator> list = administratorMapper.selectByAdministratorName(administratorName);
 
         //判断密码是否正确
         if (list != null && list.size() == 1)
             if (list.get(0).getAdministratorPassword().equals(administratorPassword))
-                return list.get(0);
+                return ServerResponse.createBysuccessData(list.get(0));
 
-        return null;
+        return ServerResponse.createByError();
     }
 
     @Override
-    public Administrator administratorTokenSign(String administrator_token) {
+    public ServerResponse<Administrator> administratorTokenSign(String administrator_token) {
         List<Administrator> list = administratorMapper.selectByAdministratorToken(administrator_token);
 
         if (list != null && list.size() == 1)
-            if (list.get(0).getAdministratorToken().equals(administrator_token))
-                return list.get(0);
+            return ServerResponse.createBysuccessData(list.get(0));
 
-        return null;
+        return ServerResponse.createByError();
     }
 }

@@ -42,7 +42,7 @@ public class ConsultOrderController {
     }
 
     @RequestMapping("/addConsultOrder")
-    public ServerResponse AddConsultOrder(@RequestParam(value="doctorId")Integer doctorId,
+    public ServerResponse<ConsultOrder> AddConsultOrder(@RequestParam(value="doctorId")Integer doctorId,
                                           @RequestParam(value="userId")Integer userId,
                                           @RequestParam(value="createTime") String createTime,
                                           @RequestParam(value="lastingTime")Integer lastingTime,
@@ -78,4 +78,9 @@ public class ConsultOrderController {
 
     }
 
+    @GetMapping("/getByOid")
+    ServerResponse<ConsultOrder> getByOid(@RequestParam("oid") String oid)
+    {
+        return consultOrderService.selectByOid(oid);
+    }
 }

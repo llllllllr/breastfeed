@@ -1,12 +1,10 @@
-// pages/service/index.js
-
 var QiniuUploader = require('../../assert/js/qiniuUploader.js')
 const app = getApp();
 Page({
   data: {
     doctorId: '',//医生的标识符
-    doctorName:'',//医生姓名
-    doctorImg:'',//医生图片
+    doctorName: '',//医生姓名
+    doctorImg: '',//医生图片
     question: '',//所有问题
     name: '', //联系姓名
     phone: '',//联系人电话
@@ -17,8 +15,8 @@ Page({
     modalName: null,
     imgToken: '',
     imageURL: '',
-    userid:-1,
-    doctorOpenId:''   //医生微信小程序标识符
+    userid: -1,
+    doctorOpenId: ''   //医生微信小程序标识符
   },
   onLoad: function (options) {
     console.log('问卷接收参数：', options)
@@ -29,9 +27,9 @@ Page({
     console.log('医生id参数：', options)
     this.setData({
       doctorId: options.doctorId,
-      doctorName:options.doctorName,
-      doctorImg:options.doctorImg,
-      doctorOpenId:options.openId
+      doctorName: options.doctorName,
+      doctorImg: options.doctorImg,
+      doctorOpenId: options.openId
     })
   },
   onReady: function () {
@@ -52,39 +50,39 @@ Page({
     console.log(e.detail.value.textarea)
   },
 
-//*************************************** */
- //检验token,获取用户id
- getUserId: function () {
-  var that = this;
-  var serverUrl = getApp().globalData.serverUrl;
-  console.log(serverUrl)
-  var cookie = wx.getStorageSync('userToken');
-  console.log(cookie)
-  if (cookie) {
-    wx.request({
-      header: {
-        cookie: cookie
-      },
-      url: serverUrl + '/user/check',
-      method: 'GET',
-      success: function (res) {
-        console.log(res)
-        //认证成功，得到userId
-        if (res.data.status == 1) {
-          that.setData({
-            userid: res.data.data
-          })
-          that.ifColl();
+  //*************************************** */
+  //检验token,获取用户id
+  getUserId: function () {
+    var that = this;
+    var serverUrl = getApp().globalData.serverUrl;
+    console.log(serverUrl)
+    var cookie = wx.getStorageSync('userToken');
+    console.log(cookie)
+    if (cookie) {
+      wx.request({
+        header: {
+          cookie: cookie
+        },
+        url: serverUrl + '/user/check',
+        method: 'GET',
+        success: function (res) {
+          console.log(res)
+          //认证成功，得到userId
+          if (res.data.status == 1) {
+            that.setData({
+              userid: res.data.data
+            })
+            that.ifColl();
+          }
+          else {
+            wx.showToast({
+              title: '请先登录',
+            })
+          }
         }
-        else {
-          wx.showToast({
-            title: '请先登录',
-          })
-        }
-      }
-    })
-  }
-},
+      })
+    }
+  },
   //设置值
   handlerQuestion(e) {
     console.log(e);
@@ -110,19 +108,19 @@ Page({
   },
 
   onchange: function (e) {
-    console.log('参数：',e)
+    console.log('参数：', e)
     console.log('用户点击确定')
 
     //判断用户输入是否正确
-    if(this.data.phone.length == 0 || this.data.question.length == 0){
+    if (this.data.phone.length == 0 || this.data.question.length == 0) {
       this.showModal("请输入正确的电话号码和详细的病症！")
-      return ;
+      return;
     }
 
     var now = new Date();
     var createTime = app.jsDateFormatter(now);
     var that = this;
-    console.log('咨询订单参数：' + createTime + ' ' + this.data.doctorId + ' ' + 456)
+    console.log('咨询订单参数：' + createTime + ' ' + this.data.doctorId )
     //创建 咨询订单
     wx.request({
       url: app.globalData.serverUrl + '/addConsultOrder',
@@ -141,26 +139,47 @@ Page({
         consultCost: this.data.consultCost,
         imgUrls: this.data.imgList.toString(),
         userOpenId: app.globalData.userInfor.openId,
-        doctorOpenId:this.data.doctorOpenId,
+        doctorOpenId: this.data.doctorOpenId,
       },
       success(res) {
         console.log('生成订单成功:', res)
-        if(res.data.status == 1){
-        wx.navigateTo({
-          url: '../consult_chatroom/consult_chatroom?doctorId=' + that.data.doctorId + '&oid=' + res.data.data.oid + '&doctorImg=' + that.data.doctorImg,
+        that.sendSubMessage();
+        if (res.data.status == 1) {
+          wx.navigateTo({
+            url: '../consult_chatroom/consult_chatroom?doctorId=' + that.data.doctorId + '&oid=' + res.data.data.oid + '&doctorImg=' + that.data.doctorImg,
 
-        })
+          })
         }
         else
-        //弹出 错误消息 提示框
-            that.showModal(res.data.msg)
-        
+          //弹出 错误消息 提示框
+          that.showModal(res.data.msg)
+
       },
       fail(res) {
         console.log('生成订单失败:', res)
       }
     })
-   
+
+  },
+
+  sendSubMessage(){
+    var tempId = app.globalData.sendToDoctortmpId;
+      wx.requestSubscribeMessage({
+        tmplIds: [tempId],
+        success: function (res) {
+          if (res[tempId] === 'accept') {
+            wx.showToast({
+              title: '订阅OK！',
+            })
+          }
+          console.log('订阅消息成功',res)
+          //成功
+        },
+        fail(err) {
+          //失败
+          console.error('订阅消息失败：',err);
+        }
+      })
   },
 
   //显示模态框，errmsg-表单错误信息
@@ -220,24 +239,24 @@ Page({
         }, (error) => {
           console.log('error: ' + error);
         }, {
-          region: 'SCN',
-          domain: 'http://q6le31s3c.bkt.clouddn.com/', // // bucket 域名，下载资源时用到。如果设置，会在 success callback 的 res 参数加上可以直接使用的 ImageURL 字段。否则需要自己拼接
-          key: qiniu_key, // [非必须]自定义文件 key。如果不设置，默认为使用微信小程序 API 的临时文件名
-          uptoken: that.data.imgToken, // 由其他程序生成七牛 uptoken
-          uploadURL: 'https://up-z2.qiniup.com'
-        }, (res) => {
-          console.log('上传进度', res.progress)
-          console.log('已经上传的数据长度', res.totalBytesSent)
-          console.log('预期需要上传的数据总长度', res.totalBytesExpectedToSend)
-          console.log("URLLL" + res.imageURL)
-        }, () => {
-          // 取消上传
-        }, () => {
-          // `before` 上传前执行的操作
-        }, (err) => {
-          // `complete` 上传接受后执行的操作(无论成功还是失败都执行)
-          console.log("error")
-        });
+            region: 'SCN',
+            domain: 'http://q6le31s3c.bkt.clouddn.com/', // // bucket 域名，下载资源时用到。如果设置，会在 success callback 的 res 参数加上可以直接使用的 ImageURL 字段。否则需要自己拼接
+            key: qiniu_key, // [非必须]自定义文件 key。如果不设置，默认为使用微信小程序 API 的临时文件名
+            uptoken: that.data.imgToken, // 由其他程序生成七牛 uptoken
+            uploadURL: 'https://up-z2.qiniup.com'
+          }, (res) => {
+            console.log('上传进度', res.progress)
+            console.log('已经上传的数据长度', res.totalBytesSent)
+            console.log('预期需要上传的数据总长度', res.totalBytesExpectedToSend)
+            console.log("URLLL" + res.imageURL)
+          }, () => {
+            // 取消上传
+          }, () => {
+            // `before` 上传前执行的操作
+          }, (err) => {
+            // `complete` 上传接受后执行的操作(无论成功还是失败都执行)
+            console.log("error")
+          });
 
       }
     });

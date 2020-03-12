@@ -1,0 +1,17 @@
+2020-03-12 09:38:16,167 [INFO] (StartupInfoLogger.java:50)- Starting BreastApplication on LAPTOP-562395R3 with PID 17444 (started by 爱哭的周小姐 in D:\软件应用\java IDE\IntelliJ IDEA 2019.1\项目\breastfeed\新建文件夹\server\bfbackend)
+2020-03-12 09:38:16,176 [DEBUG] (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2020-03-12 09:38:16,177 [INFO] (SpringApplication.java:648)- No active profile set, falling back to default profiles: default
+2020-03-12 09:38:21,027 [INFO] (StartupInfoLogger.java:59)- Started BreastApplication in 5.634 seconds (JVM running for 9.341)
+2020-03-12 09:38:38,971 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select user_id, age, credit_id, pregnant_type, pregnant_week, job, confinement_date, confinement_week, confinement_type, user_name, user_password, user_token,open_id from user where user_token = ? 
+2020-03-12 09:38:39,006 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 885b3afcf63444fb8437eced031bb9a2(String)
+2020-03-12 09:38:39,116 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-03-12 09:38:39,120 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, audioURL, category, cover_url from audio 
+2020-03-12 09:38:39,120 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-03-12 09:38:39,247 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 6
+2020-03-12 09:38:39,249 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, vedioURL, cover_url, category, description from vedio 
+2020-03-12 09:38:39,250 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-03-12 09:38:39,353 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 9
+2020-03-12 09:38:39,354 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, title, description, img_url, category from article 
+2020-03-12 09:38:39,355 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-03-12 09:38:39,437 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 20
+2020-03-12 09:38:39,597 [INFO] (ArticleController.java:66)- 母乳喂养的好处
