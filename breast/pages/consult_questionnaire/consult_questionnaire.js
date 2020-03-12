@@ -120,7 +120,7 @@ Page({
     var now = new Date();
     var createTime = app.jsDateFormatter(now);
     var that = this;
-    console.log('咨询订单参数：' + createTime + ' ' + this.data.doctorId )
+    console.log('咨询订单参数：' + createTime + ' ' + this.data.doctorId + ' ' + 456)
     //创建 咨询订单
     wx.request({
       url: app.globalData.serverUrl + '/addConsultOrder',
@@ -143,7 +143,7 @@ Page({
       },
       success(res) {
         console.log('生成订单成功:', res)
-        that.sendSubMessage();
+        that.sendSubMessage()
         if (res.data.status == 1) {
           wx.navigateTo({
             url: '../consult_chatroom/consult_chatroom?doctorId=' + that.data.doctorId + '&oid=' + res.data.data.oid + '&doctorImg=' + that.data.doctorImg,
@@ -160,26 +160,6 @@ Page({
       }
     })
 
-  },
-
-  sendSubMessage(){
-    var tempId = app.globalData.sendToDoctortmpId;
-      wx.requestSubscribeMessage({
-        tmplIds: [tempId],
-        success: function (res) {
-          if (res[tempId] === 'accept') {
-            wx.showToast({
-              title: '订阅OK！',
-            })
-          }
-          console.log('订阅消息成功',res)
-          //成功
-        },
-        fail(err) {
-          //失败
-          console.error('订阅消息失败：',err);
-        }
-      })
   },
 
   //显示模态框，errmsg-表单错误信息
@@ -278,4 +258,31 @@ Page({
       }
     })
   },
+
+  sendSubMessage() {
+    var tempId = app.globalData.sendToDoctortmpId;
+    wx.requestSubscribeMessage({
+      tmplIds: [tempId],
+      success: function (res) {
+        if (res[tempId] === 'accept') {
+          wx.showToast({
+            title: '订阅OK！',
+          })
+        }
+        console.log('订阅消息成功', res)
+        //成功
+      },
+      fail(err) {
+        //失败
+        console.error('订阅消息失败：', err);
+      }
+    })
+
+  }
 })
+
+
+
+
+
+

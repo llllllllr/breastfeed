@@ -32,7 +32,6 @@ App({
     APP_SECRET: '685ef10637631ae8e3db77e000f22f9e',
     openId:'',//微信小程序用户标识符
     sendToDoctortmpId:'zCX36fb1ceNmJY__fb6g_8F-Bu0ApylFvz4aMLILfjE',
-
   },
 
   //根据 医生的id 查询 doctorList 返回医生具体信息
@@ -96,7 +95,7 @@ App({
     if(doctorToken != '' && doctorToken != null){
       console.log('doctorToken 不为空！');
       //判断token 是否 过期
-      if(doctorTokenDate - now < 0){
+      if(doctorTokenDate - now > 0){
         wx.request({
           url: this.globalData.serverUrl + '/doctor/tokenSign',
           method:"POST",

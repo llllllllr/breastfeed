@@ -6,6 +6,8 @@ Page({
     userId: '',
     oid: '', //咨询订单的标识符
     scrollTop: 0,
+    consultOrder:{},
+    InputBottom: 0,
     list: [],
     doctorImg: '', //医生的头像
   },
@@ -64,6 +66,7 @@ Page({
 
       this.rollingBottom()
     })
+     
   },
   // 发送内容
   count: 0,
@@ -105,6 +108,8 @@ Page({
         duration: 2000
       })
     }
+    //发送 消息通知
+    this.sendMessageNotice()
   },
   // 监听input值的改变
   bindChange(res) {
@@ -113,7 +118,7 @@ Page({
   // 页面卸载，关闭连接
   onUnload() {
     console.log('关闭连接，发送消息通知')
-    this.sendMessageNotice()
+    
     wx.closeSocket();
     wx.onSocketClose(function (res) {
       wx.showToast({
@@ -185,7 +190,92 @@ Page({
         })
       }
     })
-  }
+
+  },
+  
+  /*图片模块 */
+  //上传图片的token
+  getToken: function () {
+    var that = this;
+    wx.request({
+      url: getApp().globalData.serverUrl + '/article/getToken',
+      method: 'GET',
+      data: {
+        bucket: 'useravatarr'
+      },
+      success: function (res) {
+        console.log(res)
+        that.setData({
+          imgToken: res.data
+        })
+      }
+    })
+  },
+  //这里待修改，等提交再传云端
+  ChooseImage() {
+    var that = this;
+    var qiniu_key = this.data.userid + "consult_" + Date.parse(new Date()) / 1000 + ".jpg";
+    wx.chooseImage({
+      count: 1, //默认9
+      sizeType: ['original', 'compressed'], //可以指定是原图还是压缩图，默认二者都有
+      sourceType: ['album'], //从相册选择
+
+      success: function (res) {
+        var filePath = res.tempFilePaths[0];
+        console.log(that.data.imgToken)
+        // 交给七牛上传
+        var img0 = 'imgList[0]'
+        QiniuUploader.upload(filePath, (res) => {
+          that.setData({
+            'imageURL': res.imageURL,
+            [img0]: res.imageURL
+          });
+
+          console.log('file url is: ' + res.imageURL);
+        }, (error) => {
+          console.log('error: ' + error);
+        }, {
+            region: 'SCN',
+            domain: 'http://q6le31s3c.bkt.clouddn.com/', // // bucket 域名，下载资源时用到。如果设置，会在 success callback 的 res 参数加上可以直接使用的 ImageURL 字段。否则需要自己拼接
+            key: qiniu_key, // [非必须]自定义文件 key。如果不设置，默认为使用微信小程序 API 的临时文件名
+            uptoken: that.data.imgToken, // 由其他程序生成七牛 uptoken
+            uploadURL: 'https://up-z2.qiniup.com'
+          }, (res) => {
+            console.log('上传进度', res.progress)
+            console.log('已经上传的数据长度', res.totalBytesSent)
+            console.log('预期需要上传的数据总长度', res.totalBytesExpectedToSend)
+            console.log("URLLL" + res.imageURL)
+          }, () => {
+            // 取消上传
+          }, () => {
+            // `before` 上传前执行的操作
+          }, (err) => {
+            // `complete` 上传接受后执行的操作(无论成功还是失败都执行)
+            console.log("error")
+          });
+
+      }
+    });
+  },
+  DelImg(e) {
+    wx.showModal({
+      title: '提示',
+      content: '确定要删除吗？',
+      cancelText: '取消',
+      confirmText: '确定',
+      confirmColor: "#d4237a",
+      success: res => {
+        if (res.confirm) {
+          this.data.imgList.splice(e.currentTarget.dataset.index, 1);
+          this.setData({
+            imgList: this.data.imgList
+          })
+        }
+      }
+    })
+  },
+
+
 })
 
   

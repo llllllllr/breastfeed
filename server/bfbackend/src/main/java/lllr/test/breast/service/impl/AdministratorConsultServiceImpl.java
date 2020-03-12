@@ -1,5 +1,6 @@
 package lllr.test.breast.service.impl;
 
+import lllr.test.breast.common.ServerResponse;
 import lllr.test.breast.dao.mapper.AutoAnswerTemplateMapper;
 import lllr.test.breast.dao.mapperUtil.AutoAnswerTemplateExample;
 import lllr.test.breast.dataObject.consult.AutoAnswerTemplate;
@@ -15,23 +16,23 @@ public class AdministratorConsultServiceImpl implements AdministratorConsult {
     private AutoAnswerTemplateMapper autoAnswerTemplateMapper;
 
     @Override
-    public boolean createTemplate(AutoAnswerTemplate answerTemplate) {
-        return autoAnswerTemplateMapper.insertSelective(answerTemplate) > 0;
+    public ServerResponse createTemplate(AutoAnswerTemplate answerTemplate) {
+        return autoAnswerTemplateMapper.insertSelective(answerTemplate) == 1 ? ServerResponse.createBysuccess() : ServerResponse.createByError();
     }
 
     @Override
-    public List<AutoAnswerTemplate> selectAllTemplate() {
-        return autoAnswerTemplateMapper.selectByExample(new AutoAnswerTemplateExample());
+    public ServerResponse<List<AutoAnswerTemplate>> selectAllTemplate() {
+        return ServerResponse.createBysuccessData(autoAnswerTemplateMapper.selectByExample(new AutoAnswerTemplateExample()));
     }
 
     @Override
-    public boolean updateTemplate(AutoAnswerTemplate autoAnswerTemplate) {
-        return autoAnswerTemplateMapper.updateByPrimaryKeySelective(autoAnswerTemplate) > 0;
+    public ServerResponse updateTemplate(AutoAnswerTemplate autoAnswerTemplate) {
+        return autoAnswerTemplateMapper.updateByPrimaryKeySelective(autoAnswerTemplate) == 1 ? ServerResponse.createBysuccess() : ServerResponse.createByError();
     }
 
     @Override
-    public boolean deleteTemplate(Integer consultId) {
-        return autoAnswerTemplateMapper.deleteByPrimaryKey(consultId) > 0;
+    public ServerResponse deleteTemplate(Integer consultId) {
+        return autoAnswerTemplateMapper.deleteByPrimaryKey(consultId) == 1 ? ServerResponse.createBysuccess() : ServerResponse.createByError();
     }
 
 

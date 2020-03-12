@@ -11,6 +11,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.NotNull;
 import java.util.List;
 
 @Controller
@@ -24,54 +26,30 @@ public class AdministratorConsultController {
 
     //后台管理人员添加关键词的回答模板
     @RequestMapping("/create")
-    public ServerResponse CreateTemplate(@RequestParam(value="questionKey")String questionKey, @RequestParam(value="answerTemplate")String answerTemplate){
-        //数据校验
-        if(questionKey.trim().length() < 1 || answerTemplate.trim().length() < 1) {
-            LOGER.error("=== CreateTemplate：关键词和答案模板不能为空 ===");
-            return ServerResponse.createByErrorMsg("关键词和答案模板不能为空！");
-        }
+    public ServerResponse CreateTemplate(@RequestParam(value="questionKey")@NotEmpty(message = "关键词不能为空！") String questionKey,
+                                         @RequestParam(value="answerTemplate")@NotEmpty(message = "答案模板不能为空！") String answerTemplate){
 
         AutoAnswerTemplate autoAnswerTemplate = new AutoAnswerTemplate(questionKey,answerTemplate);
         LOGER.debug("=== administratorCreate :" + autoAnswerTemplate + "===");
 
-        if(administratorConsult.createTemplate(autoAnswerTemplate))
-        {
-            LOGER.debug("=== administratorCreate :" + autoAnswerTemplate + "添加成功 ===");
-            return ServerResponse.createBysuccessMsg("添加成功!");
-        }
+        return administratorConsult.createTemplate(autoAnswerTemplate);
 
-        LOGER.debug("=== administratorCreate :" + autoAnswerTemplate + "添加失败 ===");
-        return ServerResponse.createByErrorMsg("添加失败！");
     }
 
     //收索所有后台管理人员关键词的回答模板
     @RequestMapping("/selectAll")
-    public ServerResponse SelectAll(){
-        List<AutoAnswerTemplate> templates = administratorConsult.selectAllTemplate();
-        LOGER.debug("=== administratorSelectAll :" + templates.toString() + "===");
-        return ServerResponse.createBysuccessData(templates);
+    public ServerResponse<List<AutoAnswerTemplate>> SelectAll(){
+        return administratorConsult.selectAllTemplate();
     }
 
     //更改部分信息
     @RequestMapping("/update")
-    public ServerResponse update(@RequestParam(value="consultId")Integer consultId,@RequestParam(value="questionKey")String questionKey,
-                                 @RequestParam(value="answerTemplate")String answerTemplate){
+    public ServerResponse update(@RequestParam(value="consultId")@NotNull Integer consultId,
+                                 @RequestParam(value="questionKey")@NotEmpty(message = "问题不能为空！")String questionKey,
+                                 @RequestParam(value="answerTemplate")@NotEmpty(message = "答案模板不能为空！")String answerTemplate){
         AutoAnswerTemplate autoAnswerTemplate = new AutoAnswerTemplate(consultId,questionKey,answerTemplate);
-        if(consultId == null || questionKey.trim().length() == 0 || answerTemplate.trim().length() == 0)
-        {
-            LOGER.debug("=== administrator update:" + answerTemplate + " 失败 ===");
-            return ServerResponse.createByErrorMsg("添加失败");
-        }
 
-        if(administratorConsult.updateTemplate(autoAnswerTemplate))
-        {
-            LOGER.debug("=== administrator update:" + autoAnswerTemplate + " 失败 ===");
-            return ServerResponse.createBysuccessMsg("修改成功!");
-        }
-
-        LOGER.debug("=== administrator update:" + autoAnswerTemplate + " 成功 ===");
-        return ServerResponse.createBysuccessMsg("修改失败!");
-
+        return administratorConsult.updateTemplate(autoAnswerTemplate);
 
     }
 
@@ -82,12 +60,7 @@ public class AdministratorConsultController {
             return ServerResponse.createByErrorMsg("删除失败！");
         }
 
-        if(administratorConsult.deleteTemplate(consultId)){
-            LOGER.debug(" === administrator delete consultId:" + consultId + " 成功 === ");
-            return ServerResponse.createBysuccessMsg("删除成功!");
-        }
+        return administratorConsult.deleteTemplate(consultId);
 
-        LOGER.debug(" === administrator delete consultId:" + consultId + " 失败 === ");
-        return ServerResponse.createByErrorMsg("删除失败");
     }
 }

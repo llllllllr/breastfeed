@@ -2,6 +2,7 @@ package lllr.test.breast.controller;
 
 import lllr.test.breast.common.ServerResponse;
 import lllr.test.breast.dataObject.user.Administrator;
+import lllr.test.breast.dataObject.user.User;
 import lllr.test.breast.service.inter.AdministratorService;
 import lllr.test.breast.util.DataValidateUtil;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -49,10 +50,9 @@ public class AdministratorController {
 
     //管理员token 免密码登录
     @RequestMapping("/administrator")
-    public ServerResponse<Administrator> administratorTokenSign(@CookieValue(name = "administrator_token")@NotEmpty String administrator_token,
-                                         HttpServletRequest request,
-                                         HttpServletResponse response) {
-        //判断用户是否登录
+    public ServerResponse<Administrator> administratorTokenSign(@RequestParam(value = "administrator_token")@NotEmpty String administrator_token,
+                                              HttpServletRequest request,
+                                              HttpServletResponse response) {
         ServerResponse<Administrator> reData = administratorService.administratorTokenSign(administrator_token);
         if(reData.getData() != null)
             AfterSign(request, response, reData.getData());

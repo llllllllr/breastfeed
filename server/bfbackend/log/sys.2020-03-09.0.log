@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 2020-03-08 13:36:06,794 [INFO] (StartupInfoLogger.java:50)- Starting BreastApplication on LAPTOP-SKN1FD88 with PID 22296 (started by 12284 in F:\Ajava\A母乳喂养项目\breastfeed\server\bfbackend)
 2020-03-08 13:36:07,486 [DEBUG] (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
 2020-03-08 13:36:07,487 [INFO] (SpringApplication.java:648)- No active profile set, falling back to default profiles: default
@@ -48,6 +49,56 @@
 2020-03-08 14:12:06,443 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 0
 2020-03-08 14:12:06,444 [INFO] (WebSocketController.java:103)-  === 用户 456和用户 1的聊天记录：[]
 2020-03-08 14:12:06,444 [DEBUG] (WebSocketController.java:209)- ===  用户消息成功 消息数据：[] ===
+=======
+2020-03-08 13:36:06,794 [INFO] (StartupInfoLogger.java:50)- Starting BreastApplication on LAPTOP-SKN1FD88 with PID 22296 (started by 12284 in F:\Ajava\A母乳喂养项目\breastfeed\server\bfbackend)
+2020-03-08 13:36:07,486 [DEBUG] (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2020-03-08 13:36:07,487 [INFO] (SpringApplication.java:648)- No active profile set, falling back to default profiles: default
+2020-03-08 13:36:19,500 [INFO] (StartupInfoLogger.java:59)- Started BreastApplication in 14.29 seconds (JVM running for 18.378)
+2020-03-08 13:36:28,064 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, user_name, name, img_url, expert_in, imageText_cost, voice_cost, video_cost from doctor 
+2020-03-08 13:36:28,132 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-03-08 13:36:28,194 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 7
+2020-03-08 14:06:07,042 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, user_name, name, img_url, expert_in, imageText_cost, voice_cost, video_cost from doctor 
+2020-03-08 14:06:07,092 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-03-08 14:06:07,157 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 7
+2020-03-08 14:06:57,549 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, user_name, name, img_url, expert_in, imageText_cost, voice_cost, video_cost from doctor 
+2020-03-08 14:06:57,554 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-03-08 14:06:57,660 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 7
+2020-03-08 14:07:31,085 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, user_name, name, img_url, expert_in, imageText_cost, voice_cost, video_cost from doctor 
+2020-03-08 14:07:31,088 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-03-08 14:07:31,135 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 7
+2020-03-08 14:08:16,877 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, user_name, name, img_url, expert_in, imageText_cost, voice_cost, video_cost from doctor 
+2020-03-08 14:08:16,879 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-03-08 14:08:16,929 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 7
+2020-03-08 14:08:45,233 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, user_name, name, img_url, expert_in, imageText_cost, voice_cost, video_cost from doctor 
+2020-03-08 14:08:45,234 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-03-08 14:08:45,282 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 7
+2020-03-08 14:10:04,493 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, user_name, name, img_url, expert_in, imageText_cost, voice_cost, video_cost from doctor 
+2020-03-08 14:10:04,494 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-03-08 14:10:04,546 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 7
+2020-03-08 14:10:29,853 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select user_id, age, credit_id, pregnant_type, pregnant_week, job, confinement_date, confinement_week, confinement_type, user_name, user_password, user_token from user where user_name = ? 
+2020-03-08 14:10:29,859 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: abc(String)
+2020-03-08 14:10:29,921 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-03-08 14:10:35,520 [INFO] (WebSocketController.java:92)- [WebSocket] 连接成功，当前连接人数:1
+2020-03-08 14:10:35,550 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, from_user_id, to_user_id, message_type, message_content, time from wechat_message_item where from_user_id = ? and to_user_id = ? or from_user_id = ? and to_user_id = ? 
+2020-03-08 14:10:35,553 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 456(Integer), 1(Integer), 1(Integer), 456(Integer)
+2020-03-08 14:10:35,593 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 0
+2020-03-08 14:10:35,594 [INFO] (WebSocketController.java:103)-  === 用户 456和用户 1的聊天记录：[]
+2020-03-08 14:10:36,365 [DEBUG] (WebSocketController.java:209)- ===  用户消息成功 消息数据：[] ===
+2020-03-08 14:11:58,575 [INFO] (WebSocketController.java:112)- [WebSocket] 退出成功，当前连接人数为：=0 当前在线人： {}
+2020-03-08 14:12:00,011 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select user_id, age, credit_id, pregnant_type, pregnant_week, job, confinement_date, confinement_week, confinement_type, user_name, user_password, user_token from user where user_token = ? 
+2020-03-08 14:12:00,012 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: c2155b289a134e59b825e8afc391b417(String)
+2020-03-08 14:12:00,054 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 1
+2020-03-08 14:12:00,205 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, user_name, name, img_url, expert_in, imageText_cost, voice_cost, video_cost from doctor 
+2020-03-08 14:12:00,206 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 
+2020-03-08 14:12:00,251 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 7
+2020-03-08 14:12:04,837 [INFO] (UserController.java:198)- c2155b289a134e59b825e8afc391b417
+2020-03-08 14:12:06,398 [INFO] (WebSocketController.java:92)- [WebSocket] 连接成功，当前连接人数:1
+2020-03-08 14:12:06,399 [DEBUG] (BaseJdbcLogger.java:143)- ==>  Preparing: select id, from_user_id, to_user_id, message_type, message_content, time from wechat_message_item where from_user_id = ? and to_user_id = ? or from_user_id = ? and to_user_id = ? 
+2020-03-08 14:12:06,400 [DEBUG] (BaseJdbcLogger.java:143)- ==> Parameters: 456(Integer), 1(Integer), 1(Integer), 456(Integer)
+2020-03-08 14:12:06,443 [DEBUG] (BaseJdbcLogger.java:143)- <==      Total: 0
+2020-03-08 14:12:06,444 [INFO] (WebSocketController.java:103)-  === 用户 456和用户 1的聊天记录：[]
+2020-03-08 14:12:06,444 [DEBUG] (WebSocketController.java:209)- ===  用户消息成功 消息数据：[] ===
+>>>>>>> 5fea1af460d7b96725d7fab3b4dd3a4cb5400ac4
 =======
 <<<<<<< HEAD
 =======
@@ -1100,9 +1151,15 @@
 >>>>>>> 558ef7fa089331fdc4aafa9c4f44fd826a8250e7
 <<<<<<< HEAD
 >>>>>>> b0508650d47ee80def785e5372e9c57909884035
+<<<<<<< HEAD
 2020-03-09 17:25:49,599 [INFO] (StartupInfoLogger.java:50)- Starting BreastApplication on LAPTOP-SKN1FD88 with PID 27332 (started by 12284 in F:\Ajava\A母乳喂养项目\breastfeed\server\bfbackend)
 2020-03-09 17:25:49,691 [DEBUG] (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
 2020-03-09 17:25:49,692 [INFO] (SpringApplication.java:648)- No active profile set, falling back to default profiles: default
+=======
+2020-03-09 17:25:49,599 [INFO] (StartupInfoLogger.java:50)- Starting BreastApplication on LAPTOP-SKN1FD88 with PID 27332 (started by 12284 in F:\Ajava\A母乳喂养项目\breastfeed\server\bfbackend)
+2020-03-09 17:25:49,691 [DEBUG] (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2020-03-09 17:25:49,692 [INFO] (SpringApplication.java:648)- No active profile set, falling back to default profiles: default
+>>>>>>> 5fea1af460d7b96725d7fab3b4dd3a4cb5400ac4
 =======
 2020-03-09 21:05:59,047 [INFO] (StartupInfoLogger.java:50)- Starting BreastApplication on LAPTOP-562395R3 with PID 13296 (started by 爱哭的周小姐 in D:\软件应用\java IDE\IntelliJ IDEA 2019.1\项目\breastfeed\新建文件夹\server\bfbackend)
 2020-03-09 21:05:59,070 [DEBUG] (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE

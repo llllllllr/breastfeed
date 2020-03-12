@@ -20,9 +20,15 @@ public class ConsultOrderServiceImpl implements ConsultOrderService {
 
 
     @Override
-    public ServerResponse<ConsultOrder> AddConsultOrder(ConsultOrder consultOrder) {
+    public ServerResponse<String> AddConsultOrder(ConsultOrder consultOrder) {
         int inNum = consultOrderMapper.insert(consultOrder);
-        return inNum == 1 ? ServerResponse.createBysuccessData(consultOrder) : ServerResponse.createByError();
+        if( inNum == 1 )
+        {
+            String oid = consultOrder.getOid();
+            return ServerResponse.createBysuccessData(oid);
+        }
+        return  ServerResponse.createByError();
+
     }
 
     @Override

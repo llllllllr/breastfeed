@@ -57,7 +57,7 @@
     <!--enableDeleteByExample="false" />-->
 
 
-        <table tableName="score" domainObjectName="Score"
+        <table tableName="user" domainObjectName="User"
                enableCountByExample="false" enableUpdateByExample="false"
                enableSelectByExample="false" selectByExampleQueryId="false"
                enableDeleteByExample="false" />

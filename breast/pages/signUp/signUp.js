@@ -175,7 +175,7 @@ Page({
          //status不为1,显示错误信息
          console.log(res)
          {
-           var str = res.data.data.msg
+           var str = res.data.msg
            that.showModal(str)
          }
        },
