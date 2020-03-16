@@ -1,4 +1,5 @@
 //app.js
+const url_pre = 'http://api.tszh.wiwcc.com';
 App({
   onLaunch: function () {
     wx.getSystemInfo({
@@ -31,7 +32,6 @@ App({
     APP_SECRET: '889c82d0d898a3d83f176a5e9b44d697',
     openId:'',//微信小程序用户标识符
     sendToDoctortmpId:'88nsGfDmdMA314-IC3nC2ILmfSX_TgW2GarmChOIOFc',
-
   },
 
   //根据 医生的id 查询 doctorList 返回医生具体信息
@@ -184,6 +184,6 @@ App({
         }
       })
       
-    }
+    },
 
 })

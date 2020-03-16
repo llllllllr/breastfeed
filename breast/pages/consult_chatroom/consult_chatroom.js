@@ -16,7 +16,7 @@ Page({
   onLoad: function(options) {
     // console.log(options)
     this.setData({
-      oid:'0457878947894500acf3dbfc35d6fd04',
+      oid:'776b6eecf5084923bd134709fe931387',
       doctorId:options.doctorId,
       userId: app.globalData.userInfor.userId,
       oid:options.oid,

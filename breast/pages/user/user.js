@@ -13,6 +13,11 @@ Page({
       url: '../signIndex/signIndex',
     })
   },
+  changeToBabyLine:function(){
+       wx.navigateTo({
+         url: '../lineIndex/lineIndex',
+       })
+  },
   changeTocoll:function()
   {
     console.log(2222222222222)

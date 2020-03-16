@@ -25,9 +25,9 @@
       </navigator>
     </view>
 
-     <view class="cu-item {{menuArrow?'arrow':''}}">
+     <view class="cu-item {{menuArrow?'arrow':''}}" bindtap="changeToBabyLine">
       <navigator class="content" hover-class="none" url="../list/list" open-type="redirect">
-        <text class="cuIcon-discoverfill text-pink"></text>
+        <text class="cuIcon-discoverfill text-pink" ></text>
         <text class="text-grey">宝宝生长曲线</text>
       </navigator>
     </view>

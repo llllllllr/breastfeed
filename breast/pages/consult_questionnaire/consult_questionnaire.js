@@ -36,12 +36,14 @@ Page({
       doctorImg: options.doctorImg,
       doctorOpenId: options.openId
     })
+    
   },
   onReady: function () {
     util.getUserId('userToken', this.callBack)
     wx.hideLoading({
       complete: (res) => { },
     })
+
   },
   //util里面getUserid的结果
   callBack: function (data) {
@@ -191,7 +193,8 @@ Page({
         consultCost: this.data.consultCost,
         imgUrls: this.data.imgList.toString(),
         userOpenId: app.globalData.userInfor.openId,
-        doctorOpenId: this.data.openId,
+        doctorOpenId: this.data.doctorOpenId,
+        status:1
       },
       success(res) {
         that.setData({

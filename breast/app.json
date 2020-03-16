@@ -1,24 +1,15 @@
 {
   "pages": [
-    "pages/index/index",
- 
+    "pages/index/index", 
+    "pages/lineIndex/lineIndex",
+    
+    "pages/lineDetail/lineDetail",
+     "pages/consult_chatroom/consult_chatroom",
     "pages/consult_doctors_choose/consult_doctors_choose",
     "pages/signIndex/signIndex",
-
     "pages/signUp/signUp",
-
     "pages/consult_questionnaire/consult_questionnaire",
-
-
- 
-
     "pages/doctorRegister/doctorRegister",
-    "pages/consult_chatroom/consult_chatroom",
-    "pages/consult_gynecology/consult_gynecology",
-    "pages/consult_help/consult_help",
-    "pages/consult_index/consult_index",
-    "pages/consult_newborn/consult_newborn",
-    "pages/consult_obstetrics/consult_obstetrics",
     "pages/question/question",
     "pages/article_detail/article_detail",
     "pages/search/search",
@@ -26,10 +17,9 @@
     "pages/signUp/index",
     "pages/signIn/signIn",    
     "pages/user/user",  
-
-
     "pages/mycoll/mycoll",
     "pages/testIndex/testIndex"
+   
   ],
   "window": {
     "backgroundTextStyle": "light",
