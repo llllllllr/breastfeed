@@ -28,10 +28,13 @@ App({
     object:'',  //登录的用户群体：1.医生 2.普通用户
     userInfor:null,   //记录用户的信息
     doctorList:[],
-    APP_ID: 'wxcb08e1f414685d6c',
-    APP_SECRET: '889c82d0d898a3d83f176a5e9b44d697',
+    //不同账号需要更改 密匙 否则 获取 openid将出错
+    APP_ID: 'wx3d0c29a20a305f28',
+    APP_SECRET: '685ef10637631ae8e3db77e000f22f9e',
     openId:'',//微信小程序用户标识符
     sendToDoctortmpId:'88nsGfDmdMA314-IC3nC2ILmfSX_TgW2GarmChOIOFc',
+    sendToDoctortmpId:'zCX36fb1ceNmJY__fb6g_8F-Bu0ApylFvz4aMLILfjE',
+
   },
 
   //根据 医生的id 查询 doctorList 返回医生具体信息
@@ -95,7 +98,7 @@ App({
     if(doctorToken != '' && doctorToken != null){
       console.log('doctorToken 不为空！');
       //判断token 是否 过期
-      if(doctorTokenDate - now < 0){
+      if(doctorTokenDate - now > 0){
         wx.request({
           url: this.globalData.serverUrl + '/doctor/tokenSign',
           method:"POST",

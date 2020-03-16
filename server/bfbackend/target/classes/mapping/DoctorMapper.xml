@@ -29,6 +29,12 @@
     from doctor
     where id = #{id,jdbcType=INTEGER}
   </select>
+  <select id="selectByLicenseNumber" parameterType="java.lang.String" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from doctor
+    where id = #{licenseNumberjdbcType=VARCHAR}
+  </select>
   <select id="selectAllDoctor" resultMap="BaseResultMap">
     select
     <include refid="Base_Column_List_No_PrivateInformation" />

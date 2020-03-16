@@ -18,7 +18,7 @@
   </resultMap>
   <sql id="Base_Column_List">
     user_id, age, credit_id, pregnant_type, pregnant_week, job, confinement_date, confinement_week, 
-    confinement_type, user_name, user_password, user_token,open_id
+    confinement_type, user_name, user_password, user_token, open_id
   </sql>
   <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
     select 
@@ -31,6 +31,11 @@
     <include refid="Base_Column_List" />
     from user
     where user_name = #{userName,jdbcType=VARCHAR}
+  </select>
+  <select id="getOpenId" parameterType="integer" resultType="string">
+    select open_id
+    from user
+    where user_id = #{userId}
   </select>
   <select id="selectByCreditId" parameterType="java.lang.String" resultMap="BaseResultMap">
     select
@@ -58,13 +63,13 @@
     insert into user (user_id, age, credit_id, 
       pregnant_type, pregnant_week, job, 
       confinement_date, confinement_week, confinement_type, 
-      user_name, user_password, user_token,open_id
-      )
+      user_name, user_password, user_token, 
+      open_id)
     values (#{userId,jdbcType=INTEGER}, #{age,jdbcType=INTEGER}, #{creditId,jdbcType=VARCHAR}, 
       #{pregnantType,jdbcType=INTEGER}, #{pregnantWeek,jdbcType=VARCHAR}, #{job,jdbcType=VARCHAR}, 
       #{confinementDate,jdbcType=DATE}, #{confinementWeek,jdbcType=INTEGER}, #{confinementType,jdbcType=INTEGER}, 
-      #{userName,jdbcType=VARCHAR}, #{userPassword,jdbcType=VARCHAR}, #{userToken,jdbcType=CHAR}, #{openId,jdbcType=VARCHAR}
-      )
+      #{userName,jdbcType=VARCHAR}, #{userPassword,jdbcType=VARCHAR}, #{userToken,jdbcType=CHAR}, 
+      #{openId,jdbcType=VARCHAR})
   </insert>
   <insert id="insertSelective" parameterType="lllr.test.breast.dataObject.user.User">
     insert into user
@@ -188,7 +193,7 @@
         user_token = #{userToken,jdbcType=CHAR},
       </if>
       <if test="openId != null">
-        user_token = #{openId,jdbcType=VARCHAR},
+        open_id = #{openId,jdbcType=VARCHAR},
       </if>
     </set>
     where user_id = #{userId,jdbcType=INTEGER}
@@ -210,9 +215,4 @@
     where user_id = #{userId,jdbcType=INTEGER}
   </update>
 
-  <select id="getOpenId" parameterType="integer" resultType="string">
-    select open_id
-    from user
-    where user_id = #{userId}
-  </select>
 </mapper>

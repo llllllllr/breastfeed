@@ -23,4 +23,6 @@ public interface DoctorMapper {
     Doctor selectByToken(String doctorToken);
 
     List<Doctor> selectAllDoctor();
+
+    Doctor selectByLicenseNumber(String licenseNumber);
 }

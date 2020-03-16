@@ -1,3 +1,4 @@
+
 //异步无法自动返回消息
 function getUserId(tokenName, callBack) {
   var that = this;

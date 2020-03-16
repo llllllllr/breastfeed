@@ -169,6 +169,7 @@ public class WebSocketController {
             AppointSending(fromUserId,JSONObject.toJSONString(autoReply));              //发送消息给指定的用户
             //将聊天记录 存入 数据库
             weChatService.insertWeChatMsg(autoReply);
+            return;
         }
 
         //发送消息给指定的用户

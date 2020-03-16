@@ -1,111 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c4c0fc52-41ae-47c5-9525-a9427b6db693" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/../../breast/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../breast/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../breast/app.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/images/Audio.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/images/Camera.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/images/Emoji.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/images/Image.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/images/Location.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/images/add.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/images/audioPause.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/images/audioPlay.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/images/avatar.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/images/biaoxing.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/images/biaoxingfill.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/images/camora.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/images/cell_groups.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/images/chat-list.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/images/chat.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/images/chats.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/images/comtacts@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/images/comtactshighlight@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/images/contacts.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/images/contactsActive.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/images/default.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/images/delete.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/images/error.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/images/filled@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/images/group@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/images/groupTheme.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/images/haoyou@x2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/images/huanxindemo.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/images/iconAudio@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/images/iconAudioActive@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/images/iconCamera@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/images/iconFile@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/images/iconImage@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/images/iconLocation@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/images/iconPlay@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/images/invite_theme@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/images/jiaqun@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/images/line.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/images/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/images/me.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/images/mic@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/images/msgerr.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/images/next.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/images/notice.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/images/noticeActive.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/images/notification.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/images/number.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/images/pic.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/images/popleftarrow@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/images/poprightarrow@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/images/qunzu@x2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/images/radioalt.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/images/radiofill.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/images/searchicon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/images/send.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/images/session@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/images/sessionhighlight@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/images/setting@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/images/settinghighlight@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/images/shizhong.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/images/success@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/images/theme@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/images/userbg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/images/voice.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/images/voicemsg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/images/voicemsgmy.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/images/xinxi.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/images/yonghu.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/images/yonghufill.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/images/zuobiao.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/images/背景.js.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/pages/consult_chatroom/consult_chatroom.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../breast/pages/consult_chatroom/consult_chatroom.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/pages/consult_chatroom/consult_chatroom.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/../../breast/pages/consult_chatroom/consult_chatroom.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/pages/consult_gynecology/consult_gynecology.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/pages/consult_gynecology/consult_gynecology.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/pages/consult_gynecology/consult_gynecology.wxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/pages/consult_gynecology/consult_gynecology.wxss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/pages/consult_help/consult_help.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/pages/consult_help/consult_help.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/pages/consult_help/consult_help.wxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/pages/consult_help/consult_help.wxss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/pages/consult_index/consult_index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/pages/consult_index/consult_index.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/pages/consult_index/consult_index.wxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/pages/consult_index/consult_index.wxss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/pages/consult_newborn/consult_newborn.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/pages/consult_newborn/consult_newborn.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/pages/consult_newborn/consult_newborn.wxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/pages/consult_newborn/consult_newborn.wxss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/pages/consult_obstetrics/consult_obstetrics.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/pages/consult_obstetrics/consult_obstetrics.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/pages/consult_obstetrics/consult_obstetrics.wxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/pages/consult_obstetrics/consult_obstetrics.wxss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/pages/consult_questionnaire/consult_questionnaire.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../breast/pages/consult_questionnaire/consult_questionnaire.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/utils/doctors.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/utils/util.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../breast/utils/util.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/sys.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/sys.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lllr/test/breast/service/impl/ConsultOrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lllr/test/breast/service/impl/ConsultOrderServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/service/impl/ConsultOrderServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/service/impl/ConsultOrderServiceImpl.class" afterDir="false" />
+    <list default="true" id="4be82cec-dda4-48c6-bb2f-4c997c26fcd8" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bfbackend/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bfbackend/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bfbackend/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bfbackend/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bfbackend/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bfbackend/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bfbackend/src/main/java/lllr/test/breast/common/Const.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bfbackend/src/test/java/lllr/test/breast/BreastApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bfserverfront/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/bfserverfront/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bfserverfront/src/components/AddArticle.vue" beforeDir="false" afterPath="$PROJECT_DIR$/bfserverfront/src/components/AddArticle.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bfserverfront/src/components/ArticleList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/bfserverfront/src/components/ArticleList.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bfserverfront/src/components/HelloWorld.vue" beforeDir="false" afterPath="$PROJECT_DIR$/bfserverfront/src/components/HelloWorld.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bfserverfront/src/components/Index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/bfserverfront/src/components/Index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bfserverfront/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/bfserverfront/src/router/index.js" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -113,38 +25,8 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="BreastApplication.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/BreastApplication.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="21" selection-start-line="21" selection-end-line="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ConsultOrderServiceImpl.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/service/impl/ConsultOrderServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="44" selection-start-line="44" selection-end-line="44" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
-  </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/.idea/workspace.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/lllr/test/breast/service/impl/ConsultOrderServiceImpl.java" />
-      </list>
-    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
@@ -153,79 +35,27 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="270" />
-    <option name="y" value="300" />
-    <option name="width" value="1330" />
+    <option name="x" value="560" />
+    <option name="y" value="125" />
+    <option name="width" value="815" />
     <option name="height" value="595" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="AndroidView" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="breast" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bfbackend" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="breast" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bfbackend" type="462c0819:PsiDirectoryNode" />
-              <item name=".idea" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="breast" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bfbackend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="breast" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bfbackend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="breast" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bfbackend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="breast" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bfbackend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="breast" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="breast" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bfbackend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="breast" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="PackagesPane" />
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
-    <property name="RequestMappingsPanelOrder0" value="0" />
-    <property name="RequestMappingsPanelOrder1" value="1" />
-    <property name="RequestMappingsPanelWidth0" value="75" />
-    <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -259,16 +89,6 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="BreastApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="breast" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="lllr.test.breast.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="lllr.test.breast.BreastApplication" />
-    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
@@ -291,109 +111,93 @@
       <properties />
       <listeners />
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Spring Boot.BreastApplication" />
-      </list>
-    </recent_temporary>
-  </component>
-  <component name="SvnConfiguration">
-    <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="c4c0fc52-41ae-47c5-9525-a9427b6db693" name="Default" comment="" />
-      <created>1583895457427</created>
+      <changelist id="4be82cec-dda4-48c6-bb2f-4c997c26fcd8" name="Default" comment="" />
+      <created>1580972583027</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1583895457427</updated>
-      <workItem from="1583895480833" duration="1720000" />
-      <workItem from="1584342149246" duration="89000" />
+      <updated>1580972583027</updated>
+      <workItem from="1580972584388" duration="505000" />
+      <workItem from="1580973230870" duration="789000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1809000" />
+    <option name="totallyTimeSpent" value="1294000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info id="Image Layers" order="2" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info active="true" anchor="bottom" id="Event Log" order="7" side_tool="true" visible="true" weight="0.32965517" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.25" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="3" />
-      <window_info id="Image Layers" order="2" />
-      <window_info anchor="bottom" id="Java Enterprise" order="7" />
-      <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.23448277" />
-      <window_info anchor="bottom" id="Spring" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
-      <window_info anchor="right" id="Bean Validation" order="3" />
-      <window_info id="Web" order="2" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.32965517" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" />
     </layout>
-  </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/BreastApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/service/impl/ConsultOrderServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="880">
-          <caret line="44" selection-start-line="44" selection-end-line="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="64" selection-start-line="64" selection-end-line="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/BreastApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lllr/test/breast/service/impl/ConsultOrderServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="44" selection-start-line="44" selection-end-line="44" />
-        </state>
-      </provider>
-    </entry>
+  <component name="masterDetails">
+    <states>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>

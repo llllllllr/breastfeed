@@ -9,7 +9,6 @@ import org.hibernate.validator.constraints.Length;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -19,6 +18,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
 import java.util.ArrayList;
 import java.util.List;
@@ -66,11 +66,11 @@ public class DoctorController {
      */
 
     @GetMapping("/register")
-    public ServerResponse<Doctor> DoctorRegister(@RequestParam(value = "licenseNumber") String licenseNumber,
-                                                @RequestParam(value = "name") String name,
-                                                @RequestParam(value = "userName") String userName,
+    public ServerResponse<Doctor> DoctorRegister(@RequestParam(value = "licenseNumber")@NotEmpty(message = "职业执照不能为空") String licenseNumber,
+                                                @RequestParam(value = "name")@NotEmpty(message = "姓名不能为空") String name,
+                                                @RequestParam(value = "userName")@NotEmpty(message = "昵称不能为空") String userName,
                                                 @RequestParam(value = "userPassword")@Length(min=6,message = "密码长度错误") String userPassword,
-                                                 @RequestParam(value = "imgUrl") String imgUrl,
+                                                 @RequestParam(value = "imgUrl",required = false) String imgUrl,
                                                  @RequestParam(value = "expertIn",required = false) String expertIn,
                                                  @RequestParam(value = "imagetextCost",required = false) Integer imagetextCost,
                                                  @RequestParam(value = "voiceCost",required = false) Integer voiceCost,
@@ -78,7 +78,6 @@ public class DoctorController {
                                                  @RequestParam(value = "openId",required = false)String openId,
                                                  HttpServletRequest request, HttpServletResponse response) throws StringException {
 
-        List<String> errorList = new ArrayList<>();
         Doctor doctor = new Doctor();
         String token = UUID.randomUUID().toString().replace("-", "");
         doctor.setToken(token);
@@ -88,39 +87,10 @@ public class DoctorController {
         doctor.setVideoCost(videoCost);
         doctor.setUserPassword(userPassword);
         doctor.setVoiceCost(voiceCost);
-
-        //验证数据
-        if (!DataValidateUtil.isNull(imgUrl)) {
-            doctor.setImgUrl(imgUrl);
-        } else {
-            errorList.add("请上传人照图不能为空！");
-        }
-
-        if (!DataValidateUtil.isNull(licenseNumber)) {
-           doctor.setLicenseNumber(licenseNumber);
-        } else {
-            errorList.add("执业证号不能为空！");
-        }
-
-        if (DataValidateUtil.isNull(name)) {
-            errorList.add("真实姓名不能为空！");
-        } else {
-            doctor.setName(name);
-        }
-
-        if (DataValidateUtil.isBlank(userName)) {
-            errorList.add("用户名不能为空！");
-        } else {
-            doctor.setUserName(userName);
-        }
-
-        //判断数据是否合理
-        if (errorList.size() > 0)
-            return ServerResponse.createByErrorMsg(errorList.toString());
-
-
-
-        LOGGER.info(" === DoctorRegister:" + doctor + " === errorMap: " + errorList + " ===");
+        doctor.setImgUrl(imgUrl);
+        doctor.setLicenseNumber(licenseNumber);
+        doctor.setName(name);
+        doctor.setUserName(userName);
 
         //将用户的信息插入数据库
 
@@ -132,12 +102,13 @@ public class DoctorController {
     }
 
     //在登录成功或者注册成功
-    //在cookie中添加doctor_token_cookie
+    //在Header中添加doctor_token_cookie
     //在session中加入用户信息
-    private void AfterSign(@NotNull HttpServletRequest request,@NotNull  HttpServletResponse response,@NotNull Doctor doctor) {
-        request.getSession().setAttribute("userName", doctor.getUserName());
+    private void AfterSign(HttpServletRequest request, HttpServletResponse response,@NotNull Doctor doctor) {
         response.setHeader("doctor_token",doctor.getToken());
         response.setHeader("doctor_token_date", String.valueOf(System.currentTimeMillis() + 60 * 60 * 24 * 1000));           //设置token 过期时间
+
+
 //        Cookie doctor_token_cookie = new Cookie("doctor_token", doctor.getToken());
 //        doctor_token_cookie.setMaxAge(10 * 60);
 //        doctor_token_cookie.setPath("/doctor/tokenSign");
@@ -169,13 +140,10 @@ public class DoctorController {
      */
 
     @GetMapping("/sign")
-    public ServerResponse<Doctor> DoctorSign(@RequestParam(value = "userName") String userName,
-                                     @RequestParam(value = "userPassword") String userPassword,
-                                     @NotNull HttpServletResponse response,
-                                     @NotNull HttpServletRequest request) {
-        if (DataValidateUtil.isBlank(userName) || DataValidateUtil.isBlank(userPassword))
-            return ServerResponse.createByErrorMsg("用户名和密码不能为空!");
-
+    public ServerResponse<Doctor> DoctorSign(@RequestParam(value = "userName")@NotEmpty(message = "用户名不能为空") String userName,
+                                     @RequestParam(value = "userPassword")@Length(min=6,message = "密码错误") String userPassword,
+                                     HttpServletResponse response,
+                                     HttpServletRequest request) {
         //根据用户名查询用户信息并返回
         ServerResponse<Doctor> reData = doctorService.doctorSign(userName, userPassword);
 
@@ -190,34 +158,26 @@ public class DoctorController {
 
     //持续化doctor_token免登录
     @RequestMapping("/tokenSign")
-    public ServerResponse<Doctor> doctorTokenSign(@RequestParam(value = "doctor_token") String doctor_token,
+    public ServerResponse<Doctor> doctorTokenSign(@RequestParam(value = "doctor_token")@NotEmpty String doctor_token,
                                                 HttpServletRequest request,
                                                 HttpServletResponse response) {
-        //判断用户是否登录
-        String userName = (String) request.getSession().getAttribute("userName");
-
-        if(userName != null)
-            return ServerResponse.createBysuccess();
-        if (!DataValidateUtil.isBlank(doctor_token)) {
-            ServerResponse<Doctor> reData = doctorService.doctorTokenSign(doctor_token);
-            if(reData.getData() != null)
-                AfterSign(request, response, reData.getData());
-            return reData;
-        }
-        return ServerResponse.createByError();
+        ServerResponse<Doctor> reData = doctorService.doctorTokenSign(doctor_token);
+        if(reData.getData() != null)
+            AfterSign(request, response, reData.getData());
+        return reData;
     }
 
-    //用户退出
-    @GetMapping("/exit")
-    public ServerResponse exit(HttpServletRequest request, HttpServletResponse response) {
-        request.getSession().removeAttribute("userName");
-        //将浏览器的user_token 置空
-        Cookie cookie = new Cookie("doctor_token", null);
-        cookie.setPath("/doctor/tokenSign");
-        response.addCookie(cookie);
-
-        return ServerResponse.createBysuccess();
-    }
+//    //用户退出
+//    @GetMapping("/exit")
+//    public ServerResponse exit(HttpServletRequest request, HttpServletResponse response) {
+//        request.getSession().removeAttribute("userName");
+//        //将浏览器的user_token 置空
+//        Cookie cookie = new Cookie("doctor_token", null);
+//        cookie.setPath("/doctor/tokenSign");
+//        response.addCookie(cookie);
+//
+//        return ServerResponse.createBysuccess();
+//    }
 
     /*
     #################### 修改医生的字段后没有测试

@@ -2,25 +2,23 @@ const app = getApp();
 Page({
   // 初始页面数据
   data: {
-    doctorId:'', //医生的标识符
-    oid:'',
-    userId:'',
-    oid:'', //咨询订单的标识符
+    doctorId: '', //医生的标识符
+    userId: '',
+    oid: '', //咨询订单的标识符
     scrollTop: 0,
     consultOrder:{},
     InputBottom: 0,
     list: [],
-    doctorImg:'', //医生的头像
+    doctorImg: '', //医生的头像
   },
   // 监听页面加载
-  onLoad: function(options) {
-    // console.log(options)
+  onLoad: function (options) {
+    console.log('参数：', options)
     this.setData({
-      oid:'776b6eecf5084923bd134709fe931387',
-      doctorId:options.doctorId,
+      doctorId: options.doctorId,
       userId: app.globalData.userInfor.userId,
-      oid:options.oid,
-      doctorImg:options.doctorImg
+      oid: options.oid,
+      doctorImg: options.doctorImg
     })
     wx.showToast({
       title: '连接中',
@@ -31,41 +29,40 @@ Page({
       url: 'ws://localhost:8887/websocket/' + app.globalData.userInfor.userId + '/' + this.data.doctorId,
     })
     // 连接成功
-    wx.onSocketOpen(function() {
+    wx.onSocketOpen(function () {
       console.log('连接成功');
     })
-    
+
     wx.onSocketMessage(msg => {
-      console.log('收到消息为:',msg)
+      console.log('收到消息为:', msg)
       //将 从 服务器 得到 的 消息数据 进行 解析 为 JSON 数组
       var data = JSON.parse(msg.data);
       console.log('转化后的消息为:', data)
 
-//判断是否是 发送完消息后 服务器的 反馈 消息
-  if(data.status != undefined)
-      if(data.status == 1)
+      //判断是否是 发送完消息后 服务器的 反馈 消息
+      if (data.status != undefined)
+        if (data.status == 1)
           return;
-        else
-        {
+        else {
           console.log(data.msg)
-        wx.showModal({
-          title: '温馨提示',
-          content: "系统错误！请稍后再发送！",
-          showCancel: false
-        })
+          wx.showModal({
+            title: '温馨提示',
+            content: "系统错误！请稍后再发送！",
+            showCancel: false
+          })
           return;
         }
 
       var newList = this.data.list;
       //将消息加入表中
-      for(var i = 0 ; i < data.length ; i++)
-          newList.push(data[i]);
+      for (var i = 0; i < data.length; i++)
+        newList.push(data[i]);
 
-        this.setData({
-          list:newList
-        });
-      
-      console.log('设置后的list：',this.data.list)
+      this.setData({
+        list: newList
+      });
+
+      console.log('设置后的list：', this.data.list)
 
       this.rollingBottom()
     })
@@ -75,17 +72,17 @@ Page({
   count: 0,
   massage: '',
   //点击发送 消息 按钮
-  send: function() {
-    
+  send: function () {
+
     // 判断发送内容是否为空
     if (this.message) {
       var msg = {
-        fromUserId:this.data.userId,
-        toUserId:this.data.doctorId,
-        messageType:0,                 // 消息类型  文字 图片
-        messageContent:this.message,
+        fromUserId: this.data.userId,
+        toUserId: this.data.doctorId,
+        messageType: 0,                 // 消息类型  文字 图片
+        messageContent: this.message,
         time: app.jsDateFormatter(new Date()),   //时间
-        oid:this.data.oid  //咨询 所属 的 咨询订单
+        oid: this.data.oid  //咨询 所属 的 咨询订单
       }
       //将 msg 对象 转化为 JSON 字符串
       var msgStr = JSON.stringify(msg);
@@ -110,7 +107,10 @@ Page({
         icon: 'none',
         duration: 2000
       })
+      return;
     }
+    //发送 消息通知
+    this.sendMessageNotice()
   },
   // 监听input值的改变
   bindChange(res) {
@@ -118,31 +118,163 @@ Page({
   },
   // 页面卸载，关闭连接
   onUnload() {
+    console.log('关闭连接，发送消息通知')
+    
     wx.closeSocket();
-    wx.onSocketClose(function(res){
+    wx.onSocketClose(function (res) {
       wx.showToast({
         title: '连接已断开~',
         icon: 'none',
         duration: 2000
       })
     })
+
   },
-  onReady:function(){
-     this.getConsultOrder()
+  // 聊天内容始终显示在最低端
+  rollingBottom(e) {
+    wx.createSelectorQuery().selectAll('.list').boundingClientRect(rects => {
+      rects.forEach(rect => {
+        this.setData({
+          scrollTop: rect.bottom
+        })
+      })
+    }).exec()
   },
-  getConsultOrder:function(){
+
+  //发送 消息 通知 医生有用户消息
+  sendMessageNotice() {
+    var accessToken = '';
     var that = this;
-     wx.request({
-       url: getApp().globalData.serverUrl +'/getByOid',
-       data:{
-         oid:this.data.oid
-       },
-       success:function(res){
-         console.log(res)
-         that.setData({
-          consultOrder:res.data.data
-         })
-       }
-     })
-  }
+  
+    //先获取 access_token
+    wx.request({
+      url: 'https://api.weixin.qq.com/cgi-bin/token',
+      method: 'GET',
+      data: {
+        grant_type: 'client_credential',
+        appid: app.globalData.APP_ID,
+        secret: app.globalData.APP_SECRET
+      },
+      success(res) {
+        console.log('获取access_token成功：', res)
+        accessToken = res.data.access_token
+
+        //发送通知
+        wx.request({
+          url: 'https://api.weixin.qq.com/cgi-bin/message/subscribe/send?access_token=' + accessToken,
+          method: 'POST',
+          data: {
+            touser: app.globalData.openId,
+            template_id: app.globalData.sendToDoctortmpId,
+            data: {
+              date2: {
+                "value": "2019年10月1日"
+              },
+              number6: {
+                value: 666
+              },
+              thing4: {
+                value: 444
+              },
+              thing9: {
+                value: 999
+              }
+            },
+
+          },
+          success(res) {
+            console.log('消息推送发送成功:', res)
+          },
+          fail(res) {
+            console.log('消息推送发送失败:', res)
+          }
+        })
+      }
+    })
+
+  },
+  
+  /*图片模块 */
+  //上传图片的token
+  getToken: function () {
+    var that = this;
+    wx.request({
+      url: getApp().globalData.serverUrl + '/article/getToken',
+      method: 'GET',
+      data: {
+        bucket: 'useravatarr'
+      },
+      success: function (res) {
+        console.log(res)
+        that.setData({
+          imgToken: res.data
+        })
+      }
+    })
+  },
+  //这里待修改，等提交再传云端
+  ChooseImage() {
+    var that = this;
+    var qiniu_key = this.data.userid + "consult_" + Date.parse(new Date()) / 1000 + ".jpg";
+    wx.chooseImage({
+      count: 1, //默认9
+      sizeType: ['original', 'compressed'], //可以指定是原图还是压缩图，默认二者都有
+      sourceType: ['album'], //从相册选择
+
+      success: function (res) {
+        var filePath = res.tempFilePaths[0];
+        console.log(that.data.imgToken)
+        // 交给七牛上传
+        var img0 = 'imgList[0]'
+        QiniuUploader.upload(filePath, (res) => {
+          that.setData({
+            'imageURL': res.imageURL,
+            [img0]: res.imageURL
+          });
+
+          console.log('file url is: ' + res.imageURL);
+        }, (error) => {
+          console.log('error: ' + error);
+        }, {
+            region: 'SCN',
+            domain: 'http://q6le31s3c.bkt.clouddn.com/', // // bucket 域名，下载资源时用到。如果设置，会在 success callback 的 res 参数加上可以直接使用的 ImageURL 字段。否则需要自己拼接
+            key: qiniu_key, // [非必须]自定义文件 key。如果不设置，默认为使用微信小程序 API 的临时文件名
+            uptoken: that.data.imgToken, // 由其他程序生成七牛 uptoken
+            uploadURL: 'https://up-z2.qiniup.com'
+          }, (res) => {
+            console.log('上传进度', res.progress)
+            console.log('已经上传的数据长度', res.totalBytesSent)
+            console.log('预期需要上传的数据总长度', res.totalBytesExpectedToSend)
+            console.log("URLLL" + res.imageURL)
+          }, () => {
+            // 取消上传
+          }, () => {
+            // `before` 上传前执行的操作
+          }, (err) => {
+            // `complete` 上传接受后执行的操作(无论成功还是失败都执行)
+            console.log("error")
+          });
+
+      }
+    });
+  },
+  DelImg(e) {
+    wx.showModal({
+      title: '提示',
+      content: '确定要删除吗？',
+      cancelText: '取消',
+      confirmText: '确定',
+      confirmColor: "#d4237a",
+      success: res => {
+        if (res.confirm) {
+          this.data.imgList.splice(e.currentTarget.dataset.index, 1);
+          this.setData({
+            imgList: this.data.imgList
+          })
+        }
+      }
+    })
+  },
+
+
 })
