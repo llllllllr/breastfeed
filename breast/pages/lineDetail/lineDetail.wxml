@@ -1,0 +1,10 @@
+<view class="img_bor" >
+   <view>
+  <image class="img"  bindtap="resetType" src="{{type== 'weight' ?'/images/babyline/tz.png':'/images/babyline/tz0.png'}}"   ></image>
+  <image class="img-r"  bindtap="resetType"  src="{{type== 'height' ?'/images/babyline/sg.png':'/images/babyline/sg0.png'}}" ></image>
+  </view>
+</view>
+
+<view class="container">
+  <ec-canvas id="mychart-dom-line" canvas-id="mychart-line" ec="{{ ec }}" force-use-old-canvas="flase"></ec-canvas>
+</view>

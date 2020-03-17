@@ -1,4 +1,5 @@
 //app.js
+const url_pre = 'http://api.tszh.wiwcc.com';
 App({
   onLaunch: function () {
     wx.getSystemInfo({
@@ -31,6 +32,7 @@ App({
     APP_ID: 'wx3d0c29a20a305f28',
     APP_SECRET: '685ef10637631ae8e3db77e000f22f9e',
     openId:'',//微信小程序用户标识符
+    sendToDoctortmpId:'88nsGfDmdMA314-IC3nC2ILmfSX_TgW2GarmChOIOFc',
     sendToDoctortmpId:'zCX36fb1ceNmJY__fb6g_8F-Bu0ApylFvz4aMLILfjE',
 
   },
@@ -185,6 +187,6 @@ App({
         }
       })
       
-    }
+    },
 
 })

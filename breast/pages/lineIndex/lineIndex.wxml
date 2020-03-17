@@ -1,0 +1,45 @@
+<view class="img">
+	<image class="babyImg" src="/images/babyline/baby.png"></image>
+</view>
+<view class="bor">
+	<form bindsubmit="formSubmit" bindreset="formReset">
+		<view class="form">
+			<view class="cu-form-group">
+				<view class="title">宝宝昵称</view>
+				<input  name="babyName" placeholder="请输入宝宝昵称"></input>
+			</view>
+
+			<view class="cu-form-group">
+				<view class="title">出生体重</view>
+				<input name="weight" placeholder="出生体重(单位：kg)"></input>
+			</view>
+
+			<view class="cu-form-group">
+				<view class="title">出生身高</view>
+				<input name="height" placeholder="出生身高(单位：cm)"></input>
+			</view>
+
+			<view class="cu-form-group">
+				<view class="title">日期选择</view>
+				<picker mode="date" value="{{date}}" start="{{startDate}}" end="{{endDate}}" bindchange="DateChange">
+					<view class="picker">
+						{{date}}
+					</view>
+				</picker>
+			</view>
+		</view>
+		<view class="gender_bor">
+			<radio-group class="block" name="radioG">
+				<image class="chooseImg" src="/images/babyline/boy.png"></image>
+				<radio class="pink radio" value="1"></radio>
+				<text style="margin:5rpx">男宝宝</text>
+				<image class="chooseImg" src="/images/babyline/girl.png"></image>
+				<radio class="pink radio"  value="0"></radio>
+				<text  style="margin:5rpx">女宝宝</text>
+			</radio-group>
+		</view>
+		<view class="padding flex flex-direction">
+			<button formType="submit" class="cu-btn bg-pink margin-tb-sm lg">查看此年龄阶段生长曲线</button>
+		</view>
+	</form>
+</view>

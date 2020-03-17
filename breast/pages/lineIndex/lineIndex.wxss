@@ -1,0 +1,58 @@
+page {
+  background-color: white;
+}
+
+.bor {
+  height: 850rpx;
+  width: 650rpx;
+  border-radius: 30rpx;
+  box-shadow: 0 0 10rpx rgba(189, 186, 186, 0.538);
+  color: black;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  margin-top: -30rpx;
+  margin-bottom: 30rpx;
+}
+
+.img {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.babyImg {
+  height: 128rpx;
+  width: 128rpx;
+  margin-top: 20rpx;
+}
+.form{
+  padding:0 30rpx;
+}
+.cu-form-group {
+  background-color: var(--white);
+  padding: 1rpx 60rpx;
+  display: flex;
+  align-items: center;
+  min-height: 100rpx;
+  justify-content: space-between;
+  border-radius: 10rpx;
+  border-style: solid;
+  border-color: rgb(226, 223, 223);
+  border-width: 0.5rpx;
+  margin: 20rpx;
+}
+
+.gender_bor{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.chooseImg{
+  width: 100rpx;
+  height: 100rpx;
+  margin-top: 15rpx;
+}

@@ -30,11 +30,13 @@ Page({
       doctorImg: options.doctorImg,
       doctorOpenId: options.openId
     })
+    
   },
   onReady: function () {
     wx.hideLoading({
       complete: (res) => { },
     })
+
   },
 
   bindButtonTap: function () {
