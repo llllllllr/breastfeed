@@ -199,38 +199,5 @@ Page({
     })
   },
 
-  // getCode: function () {
-  //     wx.request({
-  //       data: {
-        
-  //       },
-  //       /**********************************************/
-  //       url: '',
-  //       /*********************************************/
-  //       success(res) {
-  //         console.log(res.data.data)
-  //         _this.setData({
-  //           VerificationCode: res.data.data
-  //         })
-  //         var num = 61;
-  //         var timer = setInterval(function () {
-  //           num--;
-  //           if (num <= 0) {
-  //             clearInterval(timer);
-  //             _this.setData({
-  //               codename: '重新发送',
-  //               disabled: false
-  //             })
-
-  //           } else {
-  //             _this.setData({
-  //               codename: num + "s"
-  //             })
-  //           }
-  //         }, 1000)
-  //       }
-  //     })
-
-  // },
 })
 

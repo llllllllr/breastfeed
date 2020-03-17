@@ -81,6 +81,19 @@ Page({
            console.log('保存userToken  ' + res.header['user_token']);
          }
        }
+
+        //登录成功后跳转
+        if (that.data.object === "doctor")
+          //医生跳转到我的订单页面
+          wx.navigateTo({
+            url: '../signIn/signIn?object=user',
+          })
+        else {
+          //用户跳转到首页
+          wx.navigateTo({
+            url: '../index/index',
+          })
+        }
       },
       fail(res){
         console.log('登录失败:',res)
