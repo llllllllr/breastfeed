@@ -82,15 +82,19 @@ Page({
          }
        }
 
+        console.log(that.data.object)
         //登录成功后跳转
-        if (that.data.object === "doctor")
+        if (that.data.object == "doctor"){
+          console.log("医生跳转到")
           //医生跳转到我的订单页面
-          wx.navigateTo({
-            url: '../signIn/signIn?object=user',
+          wx.switchTab({
+            url: '../index/index',
           })
+        }
         else {
+          console.log("用户跳转到")
           //用户跳转到首页
-          wx.navigateTo({
+          wx.switchTab({
             url: '../index/index',
           })
         }

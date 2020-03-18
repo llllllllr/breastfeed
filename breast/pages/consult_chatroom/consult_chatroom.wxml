@@ -1,26 +1,71 @@
-<view class="cu-chat" wx:for="{{list}}" wx:key="{{item.id}}">
-  <view class="cu-item self">
-    <view class="main">
-      <view class="content bg-green shadow">
-        <text>{{consultOrder.messageContent}}</text>
-      </view>
-    </view>
-    <view class="cu-avatar radius" style="background-image:url(https://ossweb-img.qq.com/images/lol/web201310/skin/big107000.jpg);"></view>
-  </view>
+<view class="cu-chat">
 
-    <view class="cu-item self">
-    <view class="main">
-      <image src="{{consultOrder.imgUrls}}" class="radius" mode="widthFix"></image>
-    </view>
-    <view class="cu-avatar radius" style="background-image:url(https://ossweb-img.qq.com/images/lol/web201310/skin/big107000.jpg);"></view>
-  </view>
-  </view>
+<!-- 对医生列表循环渲染 -->
+<view wx:for="{{list}}" wx:key="{{item.id}}">
 
+<!-- 对聊天内容的喧嚷需要考虑两点  1. 显示在左侧还是右侧 2. 显示在 左右侧是用户还是医生需要判断后显示头像 -->
 
-  <view class="cu-bar foot input {{InputBottom!=0?'cur':''}}" style="bottom:{{InputBottom}}px">
-  <input class="solid-bottom" bindfocus="InputFocus" bindblur="InputBlur" adjust-position="{{false}}" focus="{{false}}" maxlength="300" cursor-spacing="10"></input>
-  <view class="action">
-    <text class="cuIcon-emojifill text-grey"></text>
-  </view>
-  <button bindtap="send" style="width:64px" class="cu-btn bg-green shadow">发送</button>
+<!-- 第一种情况 登录的用户为医生-》头像显示 并且  聊天记录中的发送方和登录的用户相同-》聊天内容显示在右侧  -->
+	<view class="cu-item self" wx:if="{{item.fromUserId == userId && object == 'doctor'}}">
+		<view  class="main">
+			<view class="content bg-green shadow">
+				<text>{{item.messageContent}}</text>
+			</view>
+		</view>
+    <view class="cu-avatar radius" style="background-image:url({{doctorImg}});"></view>
+    <view class="date">{{item.time}}</view>
+	</view>
+
+<!-- 第二种情况 登录的用户为普通用户-》头像显示 并且  聊天记录中的发送方和登录的用户相同-》聊天内容显示在右侧  -->
+	<view wx:elif="{{item.fromUserId == userId && object == 'user'}}" class="cu-item self">
+    
+		<view class="main">
+			<view class="content  shadow">
+				<text>{{item.messageContent}}</text>
+			</view>
+		</view>
+    <view class="cu-avatar radius"><open-data class="avatar lg round" type="userAvatarUrl"></open-data></view>
+		<view class="date">{{item.time}}</view>
+	</view>
+
+<!-- 第三种情况 登录的用户为普通用户-》左侧头像显示医生图片 -->
+  	<view wx:elif="{{object == 'user'}}" class="cu-item">
+        <view class="cu-avatar radius" style="background-image:url({{docotrImg}});"></view>
+		<view class="main">
+			<view class="content  shadow">
+				<text>{{item.messageContent}}</text>
+			</view>
+		</view>
+		<view class="date">{{item.time}}</view>
+	</view>
+
+<!-- 第四种情况 登录的用户为医生-》左侧头像显示用户头像   -->
+  <view wx:elif="{{object == 'doctor'}}" class="cu-item">
+  <view class="cu-avatar radius"><open-data class="avatar lg round" type="userAvatarUrl"></open-data></view>
+		<view class="main">
+			<view class="content  shadow">
+				<text>{{item.messageContent}}</text>
+			</view>
+		</view>
+		<view class="date">{{item.time}}</view>
+	</view>
+
 </view>
+</view>
+
+
+<view class="cu-bar foot input {{InputBottom!=0?'cur':''}}" style="bottom:{{InputBottom}}px">
+	<input class="solid-bottom" bindfocus="InputFocus" bindblur="InputBlur" adjust-position="{{false}}" focus="{{false}}" maxlength="300" cursor-spacing="10"></input>
+	<view class="action">
+		<text class="cuIcon-emojifill text-grey"></text>
+	</view>
+	<button bindtap="send" style="width:64px" class="cu-btn bg-green shadow">发送</button>
+</view>
+
+<!-- 图片的显示(lyf) -->
+	<!-- <view class="cu-item self">
+		<view class="main">
+			<image src="http://llllllllr.top/1242397_082650005_2.jpg20201513220" class="radius" mode="widthFix"></image>
+		</view>
+		<view class="cu-avatar radius" style="background-image:url(https://ossweb-img.qq.com/images/lol/web201310/skin/big107000.jpg);"></view>
+	</view> -->

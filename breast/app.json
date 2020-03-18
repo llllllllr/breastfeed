@@ -1,12 +1,14 @@
 {
   "pages": [
+    "pages/consult_doctors_choose/consult_doctors_choose",
+    "pages/signIndex/signIndex",
+    
+    
     "pages/consult_chatroom/consult_chatroom",
+    "pages/user/user",
     "pages/index/index", 
     "pages/lineIndex/lineIndex",
     "pages/lineDetail/lineDetail",
-     
-    "pages/consult_doctors_choose/consult_doctors_choose",
-    "pages/signIndex/signIndex",
     "pages/signUp/signUp",
     "pages/consult_questionnaire/consult_questionnaire",
     "pages/doctorRegister/doctorRegister",
@@ -17,8 +19,7 @@
     "pages/signUp/index",
     "pages/signIn/signIn",    
     "pages/mycoll/mycoll",
-    "pages/testIndex/testIndex",
-    "pages/user/user"
+    "pages/testIndex/testIndex"
   ],
   "window": {
     "backgroundTextStyle": "light",

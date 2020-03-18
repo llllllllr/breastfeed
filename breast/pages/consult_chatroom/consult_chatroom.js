@@ -10,11 +10,13 @@ Page({
     InputBottom: 0,
     list: [],
     doctorImg: '', //医生的头像
+    object:''
   },
   // 监听页面加载
   onLoad: function (options) {
     console.log('参数：', options)
     this.setData({
+      object:app.globalData.object,
       doctorId: options.doctorId,
       userId: app.globalData.userInfor.userId,
       oid: options.oid,

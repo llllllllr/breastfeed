@@ -1,0 +1,22 @@
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+2020-03-16 18:25:30,490 [INFO] (StartupInfoLogger.java:59)- Started BreastApplication in 9.47 seconds (JVM running for 14.069)
+=======
+=======
+>>>>>>> Stashed changes
+2020-03-16 18:01:12,849 [INFO] (StartupInfoLogger.java:50)- Starting BreastApplication on LAPTOP-SKN1FD88 with PID 20016 (started by 12284 in F:\Ajava\A母乳喂养项目\breastfeed\server\bfbackend)
+2020-03-16 18:01:12,861 [DEBUG] (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2020-03-16 18:01:12,861 [INFO] (SpringApplication.java:648)- No active profile set, falling back to default profiles: default
+2020-03-16 18:01:21,252 [INFO] (StartupInfoLogger.java:59)- Started BreastApplication in 9.655 seconds (JVM running for 17.649)
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+2020-03-16 18:40:33,341 [INFO] (StartupInfoLogger.java:50)- Starting BreastApplication on LAPTOP-SKN1FD88 with PID 11652 (started by 12284 in F:\Ajava\A母乳喂养项目\breastfeed\server\bfbackend)
+2020-03-16 18:40:33,388 [DEBUG] (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2020-03-16 18:40:33,388 [INFO] (SpringApplication.java:648)- No active profile set, falling back to default profiles: default
+2020-03-16 18:40:39,223 [INFO] (StartupInfoLogger.java:59)- Started BreastApplication in 6.976 seconds (JVM running for 10.474)
+=======
+>>>>>>> Stashed changes
+2020-03-16 18:49:48,592 [INFO] (StartupInfoLogger.java:50)- Starting BreastApplication on LAPTOP-SKN1FD88 with PID 5776 (started by 12284 in F:\Ajava\A母乳喂养项目\breastfeed\server\bfbackend)
+2020-03-16 18:49:48,595 [DEBUG] (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2020-03-16 18:49:48,596 [INFO] (SpringApplication.java:648)- No active profile set, falling back to default profiles: default
+2020-03-16 18:49:53,349 [INFO] (StartupInfoLogger.java:59)- Started BreastApplication in 5.408 seconds (JVM running for 8.179)

@@ -1,141 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="845d1015-7eb4-493c-b27d-3dbae67dba8e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../breast/ec-canvas/ec-canvas.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../breast/ec-canvas/ec-canvas.wxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../breast/ec-canvas/ec-canvas.wxss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../breast/ec-canvas/echarts.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../breast/ec-canvas/wx-canvas.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../breast/images/babyline/baby.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../breast/images/babyline/boy.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../breast/images/babyline/girl.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../breast/images/babyline/sg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../breast/images/babyline/sg0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../breast/images/babyline/tz.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../breast/images/babyline/tz0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../breast/pages/lineDetail/lineDetail.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../breast/pages/lineDetail/lineDetail.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../breast/pages/lineDetail/lineDetail.wxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../breast/pages/lineDetail/lineDetail.wxss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../breast/pages/lineIndex/lineIndex.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../breast/pages/lineIndex/lineIndex.wxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../breast/pages/lineIndex/lineIndex.wxss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../breast/utils/data.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../breast/utils/who.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/log/sys.2020-03-10.1.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/log/sys.2020-03-11.0.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/log/sys.2020-03-16.0.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../breast/app.js" afterDir="false" />
+    <list default="true" id="eacf360e-d0be-40aa-b8a9-9f7b5f8f6392" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../breast/images/avatar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../breast/images/me.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/log/sys.2020-03-16.1.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../breast/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../breast/app.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/images/Audio.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/images/Camera.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/images/Emoji.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/images/Image.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/images/Location.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/images/add.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/images/audioPause.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/images/audioPlay.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/images/avatar.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/images/biaoxing.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/images/biaoxingfill.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/images/camora.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/images/cell_groups.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/images/chat-list.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/images/chat.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/images/chats.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/images/comtacts@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/images/comtactshighlight@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/images/contacts.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/images/contactsActive.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/images/default.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/images/delete.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/images/error.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/images/filled@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/images/group@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/images/groupTheme.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/images/haoyou@x2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/images/huanxindemo.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/images/iconAudio@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/images/iconAudioActive@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/images/iconCamera@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/images/iconFile@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/images/iconImage@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/images/iconLocation@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/images/iconPlay@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/images/invite_theme@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/images/jiaqun@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/images/line.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/images/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/images/me.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/images/mic@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/images/msgerr.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/images/next.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/images/notice.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/images/noticeActive.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/images/notification.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/images/number.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/images/pic.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/images/popleftarrow@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/images/poprightarrow@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/images/qunzu@x2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/images/radioalt.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/images/radiofill.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/images/searchicon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/images/send.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/images/session@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/images/sessionhighlight@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/images/setting@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/images/settinghighlight@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/images/shizhong.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/images/success@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/images/theme@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/images/userbg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/images/voice.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/images/voicemsg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/images/voicemsgmy.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/images/xinxi.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/images/yonghu.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/images/yonghufill.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/images/zuobiao.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/images/背景.js.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/pages/consult_gynecology/consult_gynecology.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/pages/consult_gynecology/consult_gynecology.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../breast/pages/lineIndex/lineIndex.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/pages/consult_gynecology/consult_gynecology.wxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/pages/consult_gynecology/consult_gynecology.wxss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/pages/consult_help/consult_help.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/pages/consult_help/consult_help.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../breast/ec-canvas/ec-canvas.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/pages/consult_help/consult_help.wxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/pages/consult_help/consult_help.wxss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/pages/consult_index/consult_index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/pages/consult_index/consult_index.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/pages/consult_index/consult_index.wxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/pages/consult_index/consult_index.wxss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/pages/consult_newborn/consult_newborn.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/pages/consult_newborn/consult_newborn.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/pages/consult_newborn/consult_newborn.wxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/pages/consult_newborn/consult_newborn.wxss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/pages/consult_obstetrics/consult_obstetrics.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/pages/consult_obstetrics/consult_obstetrics.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/pages/consult_obstetrics/consult_obstetrics.wxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/pages/consult_obstetrics/consult_obstetrics.wxss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/pages/consult_questionnaire/consult_questionnaire.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../breast/pages/consult_questionnaire/consult_questionnaire.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/pages/user/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../breast/pages/user/user.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/pages/user/user.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/../../breast/pages/user/user.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/utils/doctors.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/utils/util.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../breast/utils/util.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/pages/consult_chatroom/consult_chatroom.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../breast/pages/consult_chatroom/consult_chatroom.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/pages/consult_chatroom/consult_chatroom.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/../../breast/pages/consult_chatroom/consult_chatroom.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/pages/signIn/signIn.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../breast/pages/signIn/signIn.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log/sys.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/sys.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lllr/test/breast/service/impl/ConsultOrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lllr/test/breast/service/impl/ConsultOrderServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/service/impl/ConsultOrderServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/service/impl/ConsultOrderServiceImpl.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ProjectViewState">
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
   <component name="RunManager">
@@ -162,24 +56,39 @@
     <configuration />
   </component>
   <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="eacf360e-d0be-40aa-b8a9-9f7b5f8f6392" name="Default Changelist" comment="" />
+      <created>1584544736864</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1584544736864</updated>
+      <workItem from="1584544739124" duration="1121000" />
+    </task>
     <servers />
   </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
   <component name="WindowStateProjectService">
-    <state width="1493" height="252" key="GridCell.Tab.0.bottom" timestamp="1584432208179">
+    <state width="1493" height="252" key="GridCell.Tab.0.bottom" timestamp="1584545063460">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="252" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1584432208179" />
-    <state width="1493" height="252" key="GridCell.Tab.0.center" timestamp="1584432208179">
+    <state width="1493" height="252" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1584545063460" />
+    <state width="1493" height="252" key="GridCell.Tab.0.center" timestamp="1584545063459">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="252" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1584432208179" />
-    <state width="1493" height="252" key="GridCell.Tab.0.left" timestamp="1584432208179">
+    <state width="1493" height="252" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1584545063459" />
+    <state width="1493" height="252" key="GridCell.Tab.0.left" timestamp="1584545063459">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="252" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1584432208179" />
-    <state width="1493" height="252" key="GridCell.Tab.0.right" timestamp="1584432208179">
+    <state width="1493" height="252" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1584545063459" />
+    <state width="1493" height="252" key="GridCell.Tab.0.right" timestamp="1584545063459">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="252" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1584432208179" />
+    <state width="1493" height="252" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1584545063459" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1584546904710">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1584546904710" />
   </component>
 </project>
