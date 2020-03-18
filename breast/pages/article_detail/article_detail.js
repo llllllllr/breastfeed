@@ -18,7 +18,7 @@ Page({
     })
     //获取单篇文章数据
     wx.request({
-      url: 'http://localhost:8887/article/getone',
+      url: getApp().globalData.serverUrl+'/article/getone',
       method: 'get',
       data: {
         id: articleId

@@ -1,11 +1,12 @@
 {
   "pages": [
-    "pages/consult_chatroom/consult_chatroom",
     "pages/index/index", 
-    "pages/lineIndex/lineIndex",
-    
-    "pages/lineDetail/lineDetail",
-     
+    "pages/myconsult/myconsult", 
+   
+    "pages/consult_chatroom/consult_chatroom", 
+   
+    "pages/lineIndex/lineIndex",  
+    "pages/lineDetail/lineDetail",    
     "pages/consult_doctors_choose/consult_doctors_choose",
     "pages/signIndex/signIndex",
     "pages/signUp/signUp",

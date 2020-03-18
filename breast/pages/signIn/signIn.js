@@ -81,6 +81,9 @@ Page({
            console.log('保存userToken  ' + res.header['user_token']);
          }
        }
+       wx.switchTab({
+         url: '../index/index',
+       })
       },
       fail(res){
         console.log('登录失败:',res)
