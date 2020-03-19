@@ -96,6 +96,7 @@ Page({
 
     // 判断发送内容是否为空
     if (this.data.message.length != 0) {
+      console.log('订单oid:',this.data.oid)
       var msg = {
         fromUserId: this.data.userId,
         toUserId: this.data.doctorId,
