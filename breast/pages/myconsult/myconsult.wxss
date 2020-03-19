@@ -1,0 +1,59 @@
+page {
+  background-color: white;
+}
+
+.outer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.card {
+  width: 90%;
+  box-shadow: 0 0 5rpx rgb(191, 188, 188);
+  margin: 20rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.topdes {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+
+}
+
+.date {
+  padding: 20rpx;
+}
+
+.description {
+  font-size: 28rpx;
+  font-weight: lighter;
+  height: 200rpx;
+}
+
+.no_outer {
+  height: 920rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.noresult {
+  width: 300rpx;
+  float: initial;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.none_text {
+  /* text-align: center; */
+  font-size: 35rpx;
+  font-weight: lighter;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

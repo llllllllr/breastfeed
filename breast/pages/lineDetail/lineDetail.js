@@ -36,12 +36,12 @@ Page({
     wx.showLoading({
       title: "正在加载中。。",
       icon: 'loading',
-      duration: 1000,
+      duration: 6000,
       })
     this.createCurve(this.data.type);
     setTimeout(() => {
       chart.setOption(that.data.option)
-    }, 500)
+    }, 1000)
   },
 
  

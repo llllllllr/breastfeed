@@ -18,6 +18,11 @@ Page({
          url: '../lineIndex/lineIndex',
        })
   },
+  changeToques:function(){
+     wx.navigateTo({
+       url: '../myconsult/myconsult',
+     })
+  },
   changeTocoll:function()
   {
     console.log(2222222222222)
