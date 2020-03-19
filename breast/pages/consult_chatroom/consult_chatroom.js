@@ -10,7 +10,8 @@ Page({
     InputBottom: 0,
     list: [],
     doctorImg: '', //医生的头像
-    object:''
+    object:'',
+    message:"" //消息内容
   },
   // 监听页面加载
   onLoad: function (options) {
@@ -57,9 +58,12 @@ Page({
 
       var newList = this.data.list;
       //将消息加入表中
-      for (var i = 0; i < data.length; i++)
-        newList.push(data[i]);
-
+      for (var i = 0; i < data.length; i++){
+        //格式化 日期 的格式
+      var time = data[i].time;
+      data[i].time = app.jsDateFormatter(new Date(time))
+      newList.push(data[i]);
+    }
       this.setData({
         list: newList
       });
@@ -70,19 +74,33 @@ Page({
     })
      
   },
+
+//设置 消息内容
+  handleMessage(e){
+    console.log('消息内容:',e.detail.value)
+    this.setData({
+      message: e.detail.value
+    })
+  },
+
+//设置 消息内容
+  clearMessage(){
+    this.setData({
+      message:""
+    })
+  },
+
   // 发送内容
-  count: 0,
-  massage: '',
   //点击发送 消息 按钮
   send: function () {
 
     // 判断发送内容是否为空
-    if (this.message) {
+    if (this.data.message.length != 0) {
       var msg = {
         fromUserId: this.data.userId,
         toUserId: this.data.doctorId,
         messageType: 0,                 // 消息类型  文字 图片
-        messageContent: this.message,
+        messageContent: this.data.message,
         time: app.jsDateFormatter(new Date()),   //时间
         oid: this.data.oid  //咨询 所属 的 咨询订单
       }
@@ -100,6 +118,7 @@ Page({
       this.setData({
         list: newList
       });
+      this.clearMessage();
       console.log(this.data.list)
       this.rollingBottom()
     } else {
@@ -114,10 +133,7 @@ Page({
     //发送 消息通知
     this.sendMessageNotice()
   },
-  // 监听input值的改变
-  bindChange(res) {
-    this.message = res.detail.value
-  },
+
   // 页面卸载，关闭连接
   onUnload() {
     console.log('关闭连接，发送消息通知')

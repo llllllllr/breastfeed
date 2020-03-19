@@ -29,7 +29,7 @@
 	</view>
 
 <!-- 第三种情况 登录的用户为普通用户-》左侧头像显示医生图片 -->
-  	<view wx:elif="{{object == 'user'}}" class="cu-item">
+  	<view wx:elif="{{item.fromUserId != userId && object == 'user'}}" class="cu-item">
         <view class="cu-avatar radius" style="background-image:url({{doctorImg}});"></view>
 		<view class="main">
 			<view class="content  shadow">
@@ -40,7 +40,7 @@
 	</view>
 
 <!-- 第四种情况 登录的用户为医生-》左侧头像显示用户头像   -->
-  <view wx:elif="{{object == 'doctor'}}" class="cu-item">
+  <view wx:elif="{{item.fromUserId != userId && object == 'doctor'}}" class="cu-item">
   <view class="cu-avatar radius"><open-data class="avatar lg round" type="userAvatarUrl"></open-data></view>
 		<view class="main">
 			<view class="content  shadow">
@@ -55,7 +55,7 @@
 
 
 <view class="cu-bar foot input {{InputBottom!=0?'cur':''}}" style="bottom:{{InputBottom}}px">
-	<input class="solid-bottom" bindfocus="InputFocus" bindblur="InputBlur" adjust-position="{{false}}" focus="{{false}}" maxlength="300" cursor-spacing="10"></input>
+	<input class="solid-bottom" bindinput="handleMessage" value="{{message}}" adjust-position="{{false}}" focus="{{false}}" maxlength="300" cursor-spacing="10"></input>
 	<view class="action">
 		<text class="cuIcon-emojifill text-grey"></text>
 	</view>
