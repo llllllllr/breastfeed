@@ -2,124 +2,40 @@ package lllr.test.thread;
 
 import org.junit.Test;
 
-import java.util.concurrent.Callable;
-import java.util.concurrent.ExecutionException;
-import java.util.concurrent.FutureTask;
-import java.util.concurrent.ThreadLocalRandom;
-import java.util.concurrent.atomic.AtomicInteger;
+import java.util.concurrent.locks.LockSupport;
 
 public class ThreadTest {
-
-
-    public volatile int num = 0;
-    public void increase(){
-        num++;
-    }
-
     @Test
-    public void test(){
-        ThreadTest threadTest = new ThreadTest();
+    public void test() throws InterruptedException {
+        System.out.println("test start");
 
-        for(int i = 0 ; i < 10 ; i++){
-            new Thread(() -> {
-                for(int j = 0 ; j < 10000 ; j++)
-                    threadTest.increase();
-            }).start();
-        }
-
-        while(Thread.activeCount() > 1)
-            Thread.yield();
-
-        System.out.println(threadTest.num);
-
-    }
-
-    public static class CallerTask implements Callable<String>{
-
-        @Override
-        public String call() throws Exception {
-            return "null";
-        }
-    }
-
-    @Test
-    public void test1() throws ExecutionException, InterruptedException {
-        FutureTask<String> futureTask = new FutureTask<>(new CallerTask());
-        new Thread(futureTask).start();
-
-        String result = futureTask.get();
-        System.out.println(result);
-
-    }
-
-    public static ThreadLocal<String> threadLocal = new InheritableThreadLocal<>();
-
-    @Test
-    public void test2() throws InterruptedException {
-        threadLocal.set("test local");
-        System.out.println("test  " + threadLocal.get());
-        Thread.sleep(2000);
-        Thread thread1 = new Thread(() -> {
-            System.out.println("test2 test " + threadLocal.get());
-            threadLocal.set("thread1 local");
-            System.out.println("test2  " + threadLocal.get());
-        });
-
-        thread1.start();
-        thread1.join();
-    }
-
-    public static class CalNum {
-        public int n = 0;
-
-    }
-    public static final CalNum calNum ;
-
-    static{
-        calNum = new CalNum();
-    }
-
-    @Test
-    public void test3() throws InterruptedException {
-
-        Thread thread1 = new Thread(()->{
-            for(int i = 0 ;i < 1000000 ; i++)
-                synchronized (calNum) {
-                    calNum.n++;
+        Thread thread = new Thread() {
+            @Override
+            public void run() {
+                System.out.println("thread start");
+                try {
+                    Thread.sleep(2000);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
                 }
-        });
-        Thread thread2 = new Thread(()->{
-            for(int i = 0 ;i < 1000000 ; i++)
-                synchronized (calNum) {
-                    calNum.n++;
-                }
-        });
-        thread1.start();
-        thread2.start();
-        thread1.join();
-        thread2.join();
-        System.out.println(calNum.n);
+                LockSupport.park();
+                System.out.println("thread end");
+            }
+        };
+
+        thread.start();
+        System.out.println("test unlock thread");
+        LockSupport.unpark(thread);
+
+        System.out.println("test end");
+        thread.join();
     }
 
     @Test
-    public void test4(){
-        int a = 0;
-        AtomicInteger atomicInteger = new AtomicInteger(0);
-
-        long now = System.currentTimeMillis();
-        for(int i = 0; i < 1000000000; i++){
-            a++;
-        }
-        long then = System.currentTimeMillis();
-        System.out.println((then - now) + "   " + a);
-
-        for(int i = 0; i < 1000000000; i++){
-            atomicInteger.set(atomicInteger.get() + 1);
-        }
-        long end = System.currentTimeMillis();
-        System.out.println((end - then) + "   " + atomicInteger.get() );
-
+    public void test1(){
+        System.out.println("test1 start");
+        LockSupport.park();
+        System.out.println("test1 end");
     }
-
 
 }

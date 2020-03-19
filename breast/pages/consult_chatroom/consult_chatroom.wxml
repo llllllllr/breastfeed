@@ -13,12 +13,12 @@
 			</view>
 		</view>
     <view class="cu-avatar radius" style="background-image:url({{doctorImg}});"></view>
+    
     <view class="date">{{item.time}}</view>
 	</view>
 
 <!-- 第二种情况 登录的用户为普通用户-》头像显示 并且  聊天记录中的发送方和登录的用户相同-》聊天内容显示在右侧  -->
 	<view wx:elif="{{item.fromUserId == userId && object == 'user'}}" class="cu-item self">
-    
 		<view class="main">
 			<view class="content  shadow">
 				<text>{{item.messageContent}}</text>
@@ -30,7 +30,7 @@
 
 <!-- 第三种情况 登录的用户为普通用户-》左侧头像显示医生图片 -->
   	<view wx:elif="{{object == 'user'}}" class="cu-item">
-        <view class="cu-avatar radius" style="background-image:url({{docotrImg}});"></view>
+        <view class="cu-avatar radius" style="background-image:url({{doctorImg}});"></view>
 		<view class="main">
 			<view class="content  shadow">
 				<text>{{item.messageContent}}</text>

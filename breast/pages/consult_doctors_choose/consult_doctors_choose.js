@@ -71,7 +71,7 @@ Page({
     //获取参数
     var doctorId = item.id;
     var doctorName = item.name;
-    var doctorImg = item.imgurl;
+    var doctorImg = item.imgUrl;
     var openId = item.openId;
     wx.navigateTo({
       url: '../consult_questionnaire/consult_questionnaire?doctorId=' + doctorId + '&doctorName=' + doctorName + 
