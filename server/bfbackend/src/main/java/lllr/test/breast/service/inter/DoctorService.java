@@ -16,4 +16,6 @@ public interface DoctorService {
     ServerResponse updateConsultCost(Integer doctorId, Integer consultCost);
 
     ServerResponse<List<Doctor>> getAllDoctor();
+
+    ServerResponse UserFindPasswordByLicenseNumber(String licenseNumber, String password);
 }

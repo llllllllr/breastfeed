@@ -1,6 +1,7 @@
 package lllr.test.breast.dao.mapper;
 
 import lllr.test.breast.dataObject.user.Doctor;
+import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
@@ -25,4 +26,6 @@ public interface DoctorMapper {
     List<Doctor> selectAllDoctor();
 
     Doctor selectByLicenseNumber(String licenseNumber);
+
+    int updatePasswordByLicenseNumber(@Param(value = "licenseNumber") String licenseNumber,@Param(value = "password") String password);
 }

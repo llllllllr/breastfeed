@@ -63,4 +63,11 @@ public class DoctorServiceImpl implements DoctorService {
         List<Doctor> doctors =  doctorMapper.selectAllDoctor();
         return doctors != null ? ServerResponse.createBysuccessData(doctors) : ServerResponse.createByError();
     }
+
+    @Override
+    public ServerResponse UserFindPasswordByLicenseNumber(String licenseNumber, String password) {
+        if(doctorMapper.selectByLicenseNumber(licenseNumber) != null && doctorMapper.updatePasswordByLicenseNumber(licenseNumber,password) == 1 )
+            return ServerResponse.createBysuccess();
+        return ServerResponse.createByError();
+    }
 }

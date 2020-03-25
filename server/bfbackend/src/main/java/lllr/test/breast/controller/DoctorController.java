@@ -10,6 +10,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -24,6 +25,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
+@Validated
 @RequestMapping("/doctor")
 @ResponseBody
 @Controller
@@ -33,6 +35,12 @@ public class DoctorController {
 
     @Autowired
     private DoctorService doctorService;
+
+    @GetMapping("/findPasswordByLicenseNumber")
+    public ServerResponse UserFindPasswordByLicenseNumber(@RequestParam(value = "licenseNumber")@NotEmpty(message = "职业执照不能为空") String licenseNumber,
+                                                     @RequestParam(value = "password")@Length(min=6,message = "密码长度错误") String password){
+        return doctorService.UserFindPasswordByLicenseNumber(licenseNumber,password);
+    }
 
     /*
   注册

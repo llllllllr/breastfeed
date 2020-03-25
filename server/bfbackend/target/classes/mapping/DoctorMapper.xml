@@ -33,7 +33,7 @@
     select
     <include refid="Base_Column_List" />
     from doctor
-    where id = #{licenseNumberjdbcType=VARCHAR}
+    where license_number = #{licenseNumber,jdbcType=VARCHAR}
   </select>
   <select id="selectAllDoctor" resultMap="BaseResultMap">
     select
@@ -147,6 +147,11 @@
       </if>
     </trim>
   </insert>
+
+  <update id="updatePasswordByLicenseNumber">
+    update doctor set user_password = #{password,jdbcType=VARCHAR} where license_number = #{licenseNumber, jdbcType=VARCHAR}
+  </update>
+
   <update id="updateByPrimaryKeySelective" parameterType="lllr.test.breast.dataObject.user.Doctor">
     update doctor
     <set>
