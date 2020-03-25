@@ -156,6 +156,11 @@
       </if>
     </trim>
   </insert>
+
+  <update id="updatePasswordByCreditId">
+    update user set user_password = #{password,jdbcType=VARCHAR} where credit_id = #{creditId, jdbcType=VARCHAR}
+  </update>
+
   <update id="updateByPrimaryKeySelective" parameterType="lllr.test.breast.dataObject.user.User">
     update user
     <set>

@@ -63,5 +63,12 @@ public class UserServiceImpl implements UserService {
         return ServerResponse.createBysuccessData(openId);
     }
 
+    @Override
+    public ServerResponse UserFindPasswordByCreditId(String creditId, String password) {
+        if(userMapper.selectByCreditId(creditId) != null && userMapper.updatePasswordByCreditId(creditId,password) == 1 )
+            return ServerResponse.createBysuccess();
+        return ServerResponse.createByError();
+    }
+
 
 }

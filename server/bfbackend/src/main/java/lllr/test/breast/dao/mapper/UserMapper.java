@@ -1,6 +1,7 @@
 package lllr.test.breast.dao.mapper;
 
 import lllr.test.breast.dataObject.user.User;
+import org.apache.ibatis.annotations.Param;
 
 public interface UserMapper {
     int deleteByPrimaryKey(Integer userId);
@@ -24,4 +25,6 @@ public interface UserMapper {
     Integer selectLastUserId();
 
     String getOpenId(Integer userId);
+
+    int updatePasswordByCreditId(@Param(value = "creditId") String creditId,@Param(value = "password") String password);
 }
