@@ -33,13 +33,13 @@ public class ConsultOrderServiceImpl implements ConsultOrderService {
 
     @Override
     public ServerResponse<List<ConsultOrder>> selectConsultOrderByUserId(Integer userId) {
-        List<ConsultOrder> orderLists = consultOrderMapper.selectConsultOrderAndUserByUserId(userId);
+        List<ConsultOrder> orderLists = consultOrderMapper.selectConsultOrderAndDoctorByUserId(userId);
         return ServerResponse.createBysuccessData(orderLists);
     }
 
     @Override
     public ServerResponse<List<ConsultOrder>> selectConsultOrderByDoctorId(Integer doctorId) {
-        List<ConsultOrder> orderLists = consultOrderMapper.selectConsultOrderAndDoctorByDoctorId(doctorId);
+        List<ConsultOrder> orderLists = consultOrderMapper.selectConsultOrderAndUserByDoctorId(doctorId);
         return ServerResponse.createBysuccessData(orderLists);
     }
 

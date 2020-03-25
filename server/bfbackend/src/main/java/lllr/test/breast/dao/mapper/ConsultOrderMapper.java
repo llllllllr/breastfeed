@@ -18,10 +18,10 @@ public interface ConsultOrderMapper {
     int updateByPrimaryKey(ConsultOrder record);
 
     //普通用户查询订单（订单包括医生基本信息）
-    List<ConsultOrder> selectConsultOrderAndUserByUserId(Integer userId);
+    List<ConsultOrder> selectConsultOrderAndDoctorByUserId(Integer userId);
 
     //医生查询订单（订单包括用户基本信息）
-    List<ConsultOrder> selectConsultOrderAndDoctorByDoctorId(Integer userId);
+    List<ConsultOrder> selectConsultOrderAndUserByDoctorId(Integer userId);
 
     ConsultOrder getByOid(String oid);
 }

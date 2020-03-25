@@ -1,41 +1,25 @@
-<view wx:if="{{myconsult}}">
+<view wx:if="{{consultOrderList.length > 0}}">
 	<scroll-view class="content-info" scroll-y>
-		<view class="outer">
+		<view class="outer" wx:for="{{consultOrderList}}" wx:key="{{item.id}}">
 			<view class="card">
 				<view class="topdes solids-bottom ">
-					<view class="cu-avatar round margin-left " style="margin:20rpx;background-image:url(https://ossweb-img.qq.com/images/lol/web201310/skin/big25002.jpg);"></view>
+					<view class="cu-avatar round margin-left " style="margin:20rpx;background-image:url({{item.doctor.imgUrl}});"></view>
 					<view class="padding-xs flex align-center">
-						<text class="padding text-grey">副主任医师</text>
-						<text class="padding text-grey margin-right">已完成</text>
+						<text class="padding text-grey">{{item.doctor.name}}</text>
+						<text class="padding text-grey margin-right">{{status == 0 ? '未完成' : '已完成' }}</text>
 					</view>
 				</view>
 				<view class="solids-bottom">
-					<view class="padding description">咳嗽很厉害，没有发烧怎么办</view>
+					<view class="padding description">{{item.symptomDescription}}</view>
 				</view>
-				<text class="text-grey padding">2020-02-10 17:45</text>
-			</view>
-		</view>
-
-		<view class="outer">
-			<view class="card">
-				<view class="topdes solids-bottom ">
-					<view class="cu-avatar round margin-left " style="margin:20rpx;background-image:url(https://ossweb-img.qq.com/images/lol/web201310/skin/big25002.jpg);"></view>
-					<view class="padding-xs flex align-center">
-						<text class="padding text-grey">副主任医师</text>
-						<text class="padding text-grey margin-right">已完成</text>
-					</view>
-				</view>
-				<view class="solids-bottom">
-					<view class="padding description">咳嗽很厉害，没有发烧怎么办</view>
-				</view>
-				<text class="text-grey padding">2020-02-10 17:45</text>
+				<text class="text-grey padding">{{item.createTime}}</text>
 			</view>
 		</view>
 	</scroll-view>
 
 </view>
 <!-- 没有咨询 -->
-<view wx:if="{{myconsult == false}}" class="no_outer">
+<view wx:if="{{consultOrderList.length == 0}}" class="no_outer">
 	<view class="noresult">
 		<image src="/images/icon/none.png" style="height: 228rpx"></image>
 		<view class="none_text">暂无咨询</view>
