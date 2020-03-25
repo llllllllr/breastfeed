@@ -1,3 +1,5 @@
+
+<view class="bor">
 <form class="padding mar" bindsubmit="formSubmit">
  			<view class="cu-form-group">
  				<view class="title">昵称</view>
@@ -10,11 +12,11 @@
                         <text  class="cuIcon-lock lg text-gray"></text>
  			</view>
 			 <view class="btn">
-  	<button formType="submit" class="cu-btn round bg-white shd" style="height:100rpx" 
+  	<button formType="submit" class="cu-btn round bg-pink shd" style="height:100rpx" 
    >登录</button>
     </view>
        </form>
-  
+  </view>
 
 
  <view class="cu-modal {{modalName=='Modal'?'show':''}}">

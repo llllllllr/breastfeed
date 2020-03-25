@@ -26,7 +26,8 @@ function setOption(custumOpt, baseLine, data, type,monthDiff) {
     nameLocation: 'middle',
     nameGap: 25,
     nameTextStyle: {
-      fontSize: 14
+      fontSize: 14,
+      color:'black'
     }
   };
   if (type == 'weight') {
@@ -36,8 +37,8 @@ function setOption(custumOpt, baseLine, data, type,monthDiff) {
     nameOpt.yName = '身长/身高(厘米)';
     title='身高生长曲线'
   }
-  var curveBgColor = '#404A59';
-  // var curveBgColor ="white"
+  // var curveBgColor = '#404A59';
+  var curveBgColor ="white"
 
   var seriesData = new Array();
   var legendData = new Array();
@@ -85,7 +86,8 @@ function setOption(custumOpt, baseLine, data, type,monthDiff) {
   }
   return {
     textStyle: {
-      color: '#fff'
+      // color: '#fff'
+      color:'black'
     },
     backgroundColor: curveBgColor,
     animation:true,
@@ -95,7 +97,8 @@ function setOption(custumOpt, baseLine, data, type,monthDiff) {
       left: 'center',
       top: '6%',
       textStyle: {
-        color: '#fff',
+        // color: '#fff',
+        color:'black',
         fontSize: '12px'
       },
     },
@@ -103,7 +106,8 @@ function setOption(custumOpt, baseLine, data, type,monthDiff) {
       X: 300,
       bottom: '7%',
       textStyle: {
-        color: '#ffd285',
+        // color: '#ffd285',
+        color:'black'
       },
       data: legendData
     },
@@ -134,7 +138,8 @@ function setOption(custumOpt, baseLine, data, type,monthDiff) {
         },
         axisLabel: {
           textStyle: {
-            color: '#fff'
+            // color: '#fff'
+            color:'black'
           },
           z: 1
         },
@@ -151,13 +156,15 @@ function setOption(custumOpt, baseLine, data, type,monthDiff) {
         nameTextStyle: nameOpt.nameTextStyle,
         "axisLine": {
           lineStyle: {
-            color: '#fff'
+            // color: '#fff'
+            color:'black'
           }
         },
         splitLine: {
           show: true,
           lineStyle: {
-            color: '#fff'
+            // color: '#fff'
+            color:'black'
           }
         },
         "axisTick": {
@@ -165,7 +172,8 @@ function setOption(custumOpt, baseLine, data, type,monthDiff) {
         },
         axisLabel: {
           textStyle: {
-            color: '#fff'
+            // color: '#fff'
+            color:'black'
           },
         },
 
