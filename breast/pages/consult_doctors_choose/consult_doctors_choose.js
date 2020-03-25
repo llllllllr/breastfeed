@@ -1,4 +1,5 @@
 // pages/doctors_choose/index.js
+var showUtil = require('../../assert/util.js')
 const app = getApp();
 Page({
   data: {
@@ -10,7 +11,8 @@ Page({
   },
   onLoad: function () { //加载数据渲染页面
     //this.openid()
-
+    if(app.globalData.userInfor.userId == null)
+         showUtil.showToLogion();
     this.fetchDoctorData();
   },
 

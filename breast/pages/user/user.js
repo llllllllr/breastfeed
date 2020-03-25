@@ -25,7 +25,6 @@ Page({
   },
   changeTocoll:function()
   {
-    console.log(2222222222222)
     var that = this;
     var serverUrl = app.globalData.serverUrl;
     console.log(serverUrl)

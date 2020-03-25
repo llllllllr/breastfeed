@@ -1,4 +1,5 @@
 var QiniuUploader = require('../../assert/js/qiniuUploader.js')
+var showUtil = require('../../assert/util.js')
 const app = getApp();
 Page({
   data: {
@@ -19,6 +20,11 @@ Page({
     doctorOpenId: ''   //医生微信小程序标识符
   },
   onLoad: function (options) {
+
+    //
+    if(app.globalData.userInfor.userId == null){
+         showUtil.showToLogion();
+    }
     console.log('问卷接收参数：', options)
     wx.showLoading({
       title: '加载中',
@@ -33,6 +39,7 @@ Page({
     
   },
   onReady: function () {
+
     wx.hideLoading({
       complete: (res) => { },
     })
@@ -84,7 +91,7 @@ Page({
       this.showModal("请输入正确的电话号码和详细的病症！")
       return;
     }
-
+    
     var now = new Date();
     var createTime = app.jsDateFormatter(now);
     var that = this;

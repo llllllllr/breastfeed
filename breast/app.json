@@ -1,6 +1,8 @@
 {
   "pages": [
+    
     "pages/index/index",
+    "pages/consult_detail/consult_detail",
     "pages/consult_doctors_choose/consult_doctors_choose",
     "pages/signIndex/signIndex",
     "pages/consult_chatroom/consult_chatroom",

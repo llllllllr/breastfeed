@@ -1,0 +1,11 @@
+<view class="bor">
+	<view class="flex-sub text-center">
+		<view class="solid-bottom text-xl padding">
+			<text class="text-black text-bold">订单已完成</text>
+		</view>
+
+		<view  class="padding" style="margin-top:60rpx">如果对病情仍有疑问，请联系医生</view>
+		<view class="check">联系医生</view>
+	</view>
+
+</view>

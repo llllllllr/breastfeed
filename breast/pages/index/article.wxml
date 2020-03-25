@@ -23,8 +23,11 @@
 			</swiper-item>
 		</swiper>
 
-    	<view> 
-		   <image class= "article-search" bindtap="changeToSearch" src="http://llllllllr.top/search.jpg"> </image>
+    	<view class="search_out"> 
+		   <!-- <image class= "article-search"  src="http://llllllllr.top/search.jpg"> </image> -->
+			 <view class="search_bor" bindtap="changeToSearch">
+			     <image class="search_icon" src="/images/icon/search.png"></image>
+			 </view>
 		</view>
 	
 		<!--文章部分-->
