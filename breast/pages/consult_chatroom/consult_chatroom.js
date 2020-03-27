@@ -21,7 +21,7 @@ Page({
       doctorId: options.doctorId,
       userId: app.globalData.userInfor.userId,
       oid: options.oid,
-      doctorImg: options.doctorImg
+      doctorImg: app.findDoctorById(options.doctorId).doctorImg,
     })
     wx.showToast({
       title: '连接中',

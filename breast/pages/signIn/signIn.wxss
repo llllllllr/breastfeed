@@ -1,5 +1,5 @@
 page{
-  background-color:  #FAFFF0;
+  background-color: white;
 }
 
 .cu-btn{
@@ -11,7 +11,20 @@ page{
   margin: 30rpx;
 }
 
-
+.bor {
+  height: 550rpx;
+  width: 650rpx;
+  border-radius: 30rpx;
+  box-shadow: 0 0 10rpx rgba(189, 186, 186, 0.538);
+  color: black;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  margin-top: 260rpx;
+  margin-bottom: 30rpx;
+}
 .cu-form-group
 {
   background-color: var(--white);
@@ -22,5 +35,6 @@ min-height: 120rpx;
 justify-content: space-between;
 border-radius: 50rpx;
 margin: 40rpx;
+box-shadow: 0 0 10rpx rgb(225, 223, 223);
 
 }

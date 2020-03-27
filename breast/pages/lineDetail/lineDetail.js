@@ -77,18 +77,9 @@ Page({
     this.createCurve(newType);
       chart.setOption(that.data.option, true)
     wx.showLoading({
-      title: "正在加载中。。",
+      title: "正在加载中...",
       icon: 'loading',
       duration: 1000,
       })
     }
-      
-    
-    
-  
-
-    
- 
-  
-
 })

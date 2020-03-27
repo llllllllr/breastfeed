@@ -1,5 +1,5 @@
 page{
-  background-color: #FAFFF0;
+  background-color: white;
 }
 .sha{
   box-shadow: 5rpx 5rpx 15rpx rgb(196, 192, 192);

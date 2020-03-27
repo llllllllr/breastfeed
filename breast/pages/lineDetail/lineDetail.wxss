@@ -1,5 +1,8 @@
 page{
-  background-color: #404A59;
+  /* background-color: #404A59;
+   */
+
+   background-color: white;
 }
 .img_bor{
   display: flex;
@@ -8,8 +11,8 @@ page{
 }
 
 .img{
-  height: 128rpx;
-  width:128rpx;
+  height: 108rpx;
+  width:108rpx;
   margin-top: 60rpx;
   z-index: 100;
 }

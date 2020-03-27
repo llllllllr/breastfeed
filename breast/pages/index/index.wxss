@@ -47,6 +47,31 @@ page {
   flex: 1;
 }
 
+.search_out{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.search_bor {
+  text-align: center;
+    height: 100rpx;
+    width: 80%;
+    border-radius: 30px;
+    border-color: cadetblue;
+    box-shadow: 0 0 10rpx rgb(225, 223, 223);
+    margin-top: 30rpx;
+}
+.search_icon{
+    width: 64rpx;
+    height: 64rpx;
+    float: right;
+    margin: 20rpx;
+}
+
+.search_text{
+  
+  padding: 30rpx;
+}
 .content>swiper {
   height: 150%;
   width: 100%;

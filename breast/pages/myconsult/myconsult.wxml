@@ -1,7 +1,7 @@
 <view wx:if="{{consultOrderList.length > 0}}">
 	<scroll-view class="content-info" scroll-y>
 		<view class="outer" wx:for="{{consultOrderList}}" wx:key="{{item.id}}">
-			<view class="card">
+			<view class="card" data-doctorId="{{item.doctorId}}" data-oid="{{item.oid}}" bindtap="to_consult_detail">
 				<view class="topdes solids-bottom ">
 					<view class="cu-avatar round margin-left " style="margin:20rpx;background-image:url({{item.doctor.imgUrl}});"></view>
 					<view class="padding-xs flex align-center">

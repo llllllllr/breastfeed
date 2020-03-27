@@ -10,32 +10,26 @@
   
 
 	<view class="cu-list menu {{menuBorder?'sm-border':''}} {{menuCard?'card-menu margin-top':''}}">
-  
-	 <view style="margin-top:80rpx" class="cu-item {{menuArrow?'arrow':''}}">
-      <navigator class="content" hover-class="none" url="../list/list" open-type="redirect">
-        <text class="cuIcon-discoverfill text-pink"></text>
-        <text class="text-grey">咨询记录</text>
-      </navigator>
-    </view>
+ 
 
-    	 <view class="cu-item {{menuArrow?'arrow':''}}" bindtap="changeTocoll">
+    	 <view  style="margin-top:80rpx" class="cu-item {{menuArrow?'arrow':''}}" bindtap="changeTocoll">
       <navigator class="content" hover-class="none" url="../list/list" open-type="redirect">
-        <text class="cuIcon-discoverfill text-pink"></text>
+        <text class="cuIcon-favorfill text-pink"></text>
         <text class="text-grey">收藏</text>
       </navigator>
     </view>
 
      <view class="cu-item {{menuArrow?'arrow':''}}" bindtap="changeToBabyLine">
       <navigator class="content" hover-class="none" url="../list/list" open-type="redirect">
-        <text class="cuIcon-discoverfill text-pink" ></text>
+        <text class="cuIcon-camerafill text-pink" ></text>
         <text class="text-grey">宝宝生长曲线</text>
       </navigator>
     </view>
 
        <view class="cu-item {{menuArrow?'arrow':''}}" bindtap="changeToques">
       <navigator class="content" hover-class="none" url="../list/list" open-type="redirect">
-        <text class="cuIcon-discoverfill text-pink" ></text>
-        <text class="text-grey">我的咨询</text>
+        <text class="cuIcon-commentfill text-pink" ></text>
+        <text class="text-grey">咨询记录</text>
       </navigator>
     </view>
 		</view>

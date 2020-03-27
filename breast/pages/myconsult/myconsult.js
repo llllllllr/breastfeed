@@ -10,6 +10,15 @@ Page({
     consultOrderList:[],  //咨询订单
   },
 
+//点击订单跳转到订单详情
+  to_consult_detail() {
+    var doctorId = e.currentTarget.dataset.doctorId;
+    var oid = e.currentTarget.dataset.doctorId;
+    wx.navigateTo({
+      url: '../consult_detail/consult_detail?doctorId=' + doctorId + '&oid=' + oid,
+    })
+  },
+
   /**
    * 生命周期函数--监听页面加载
    */
@@ -18,7 +27,7 @@ Page({
     wx.showLoading({
       title: '加载中',
       duration:1000
-    })
+    }),
 
   //获取咨询订单数据
   wx.request({
@@ -29,9 +38,14 @@ Page({
     },
     success(res){
       console.log("获取咨询订单成功:",res)
+      var newList = res.data.data;
+      for(var i = 0; i < newList.length; i++)
+        newList[i].createTime = app.jsDateFormatter(new Date(newList[i].createTime));
+
       that.setData({
-        consultOrderList:res.data.data,
+        consultOrderList:newList
       })
+
       console.log("咨询订单", that.data.consultOrderList)
     },
     fail(res){
