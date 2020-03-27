@@ -1,6 +1,8 @@
 {
   "pages": [
-    
+    "pages/signIn/signIn",   
+    "pages/forget_pass/forget_pass",
+
     "pages/index/index",
     "pages/consult_detail/consult_detail",
     "pages/consult_doctors_choose/consult_doctors_choose",
@@ -17,7 +19,7 @@
     "pages/search/search",
     "pages/searchResult/searchResult",
     "pages/signUp/index",
-    "pages/signIn/signIn",    
+     
     "pages/mycoll/mycoll",
     "pages/testIndex/testIndex"
   ],

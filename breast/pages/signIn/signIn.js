@@ -103,9 +103,11 @@ Page({
         console.log('登录失败:',res)
         that.showModal("系统错误，请稍后再试！")
       }
-      
-      
-
     })
+  },
+  forgetPass:function() {
+      wx.navigateTo({
+        url: '../forget_pass/forget_pass',
+      })
   }
 })
