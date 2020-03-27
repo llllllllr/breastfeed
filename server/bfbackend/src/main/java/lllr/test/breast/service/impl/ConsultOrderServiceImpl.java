@@ -34,6 +34,7 @@ public class ConsultOrderServiceImpl implements ConsultOrderService {
     @Override
     public ServerResponse<List<ConsultOrder>> selectConsultOrderByUserId(Integer userId) {
         List<ConsultOrder> orderLists = consultOrderMapper.selectConsultOrderAndDoctorByUserId(userId);
+        LOGGER.info("selectConsultOrderByUserId： " + orderLists);
         return ServerResponse.createBysuccessData(orderLists);
     }
 

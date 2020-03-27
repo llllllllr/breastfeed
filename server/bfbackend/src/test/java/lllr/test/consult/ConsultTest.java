@@ -12,6 +12,7 @@ import org.slf4j.LoggerFactory;
 
 import java.io.File;
 import java.io.IOException;
+import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.*;
@@ -144,4 +145,11 @@ public class ConsultTest {
         System.out.println(sdf.parse(string1));
     }
 
+    //Thu Mar 12 10:06:21 CST 2020
+    @Test
+    public void test7(){
+        Date date = new Date();
+        DateFormat df2 = DateFormat.getDateTimeInstance();
+        System.out.println(df2.format(date));
+    }
 }
