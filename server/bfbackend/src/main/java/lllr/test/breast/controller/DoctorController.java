@@ -36,7 +36,7 @@ public class DoctorController {
     @Autowired
     private DoctorService doctorService;
 
-    @GetMapping("/findPasswordByLicenseNumber")
+    @GetMapping("/findPassword")
     public ServerResponse UserFindPasswordByLicenseNumber(@RequestParam(value = "licenseNumber")@NotEmpty(message = "职业执照不能为空") String licenseNumber,
                                                      @RequestParam(value = "password")@Length(min=6,message = "密码长度错误") String password){
         return doctorService.UserFindPasswordByLicenseNumber(licenseNumber,password);

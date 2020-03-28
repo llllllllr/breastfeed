@@ -47,10 +47,10 @@ public class UserController {
     @Autowired
     RedisService redisService;
 
-    @GetMapping("/findPasswordByCreditId")
-    public ServerResponse UserFindPasswordByCreditId(@RequestParam(value = "creditId")@Length(min=18,max=18,message = "请输入合理的身份证")String creditId,
+    @GetMapping("/findPassword")
+    public ServerResponse UserFindPasswordByCreditId(@RequestParam(value = "licenseNumber")@Length(min=18,max=18,message = "请输入合理的身份证")String licenseNumber,
                                                      @RequestParam(value = "password")@Length(min=6,message = "密码长度错误") String password){
-        return userService.UserFindPasswordByCreditId(creditId,password);
+        return userService.UserFindPasswordByCreditId(licenseNumber,password);
     }
 
     /*

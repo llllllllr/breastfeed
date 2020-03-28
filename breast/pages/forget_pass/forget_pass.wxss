@@ -12,7 +12,7 @@ page {
 }
 
 .bor {
-  height: 550rpx;
+  height: 850rpx;
   width: 650rpx;
   border-radius: 30rpx;
   box-shadow: 0 0 10rpx rgba(189, 186, 186, 0.538);
@@ -22,7 +22,7 @@ page {
   flex-direction: column;
   justify-content: center;
   margin: auto;
-  margin-top: 260rpx;
+  margin-top: 160rpx;
   margin-bottom: 30rpx;
 }
 
@@ -36,11 +36,5 @@ page {
   border-radius: 50rpx;
   margin: 40rpx;
   box-shadow: 0 0 10rpx rgb(225, 223, 223);
-
-}
-
-.forgetpass {
-  float: right;
-  text-decoration: underline;
 
 }
