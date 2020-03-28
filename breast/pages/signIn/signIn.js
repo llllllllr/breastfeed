@@ -63,6 +63,7 @@ Page({
        if(res.data.status == 0){
         console.log('登录错误消息:',res.data.msg)
          that.showModal(res.data.msg)
+         return ;
        }else{
          //将 用户 或者 医生 的信息保存 再 app.js 的 globalData 中
          app.globalData.object = that.data.object;

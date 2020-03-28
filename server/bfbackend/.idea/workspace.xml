@@ -2,19 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="197e8831-6f69-4b71-bcb9-2c52b6022415" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../breast/pages/forget_pass/forget_pass.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../breast/pages/forget_pass/forget_pass.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../breast/pages/forget_pass/forget_pass.wxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../breast/pages/forget_pass/forget_pass.wxss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../breast/app.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../breast/pages/signIn/signIn.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../breast/pages/signIn/signIn.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/pages/signIn/signIn.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/../../breast/pages/signIn/signIn.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../breast/pages/signIn/signIn.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/../../breast/pages/signIn/signIn.wxss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log/sys.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/sys.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lllr/test/breast/controller/DoctorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lllr/test/breast/controller/DoctorController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lllr/test/breast/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lllr/test/breast/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lllr/test/breast/controller/DoctorController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lllr/test/breast/controller/DoctorController.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +69,8 @@
       <option name="presentableId" value="Default" />
       <updated>1585321704706</updated>
       <workItem from="1585321730169" duration="632000" />
-      <workItem from="1585382920244" duration="3241000" />
+      <workItem from="1585382920244" duration="3856000" />
+      <workItem from="1585399437084" duration="356000" />
     </task>
     <servers />
   </component>
@@ -139,9 +130,9 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="175" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1585386834868" />
-    <state x="449" y="237" key="com.intellij.ide.util.TipDialog" timestamp="1585383231278">
+    <state x="449" y="237" key="com.intellij.ide.util.TipDialog" timestamp="1585399787087">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="449" y="237" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1585383231278" />
+    <state x="449" y="237" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1585399787087" />
   </component>
 </project>
