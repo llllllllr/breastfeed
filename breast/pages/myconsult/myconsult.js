@@ -11,11 +11,14 @@ Page({
   },
 
 //点击订单跳转到订单详情
-  to_consult_detail() {
-    var doctorId = e.currentTarget.dataset.doctorId;
-    var oid = e.currentTarget.dataset.doctorId;
+  to_consult_detail(e) {
+    console.log('myconsult 参数:',e)
+    var doctorId = e.currentTarget.dataset.doctorid;     //用 data-###  后面参数名无论大小写系统全部转化为小写
+    var oid = e.currentTarget.dataset.oid;
+    var status = e.currentTarget.dataset.status;
+    console.log('myconsult: doctorId ' + doctorId)
     wx.navigateTo({
-      url: '../consult_detail/consult_detail?doctorId=' + doctorId + '&oid=' + oid,
+      url: '../consult_detail/consult_detail?doctorId=' + doctorId + '&oid=' + oid + '&status=' + status,
     })
   },
 

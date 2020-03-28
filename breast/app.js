@@ -17,7 +17,9 @@ App({
     //查询是否存有 token => 登录
     this.tokenSign()
     //加载 微信小程序 唯一标识符
-    this.getOpenId()
+    this.getOpenId(),
+    //请求医生列表
+    this.getDoctorList()
   },
 
   globalData: {
@@ -37,12 +39,29 @@ App({
 
   },
 
+//从服务端获取医生信息
+  getDoctorList(){
+    var that = this;
+
+    wx.request({
+      url: this.globalData.serverUrl + '/doctor/getAllDoctor',
+      method: 'GET',
+      success(res) {
+        that.globalData.doctorList = res.data.data
+        console.log('成功获取医生信息：', that.globalData.doctorList);
+      },
+      fail(res) {
+        console.log('获取医生信息失败！')
+      }
+    })
+  },
+
   //根据 医生的id 查询 doctorList 返回医生具体信息
   findDoctorById(n){
     console.log('app doctorList:',this.globalData.doctorList)
+
     for (var i = 0; i < this.globalData.doctorList.length; i++)
-      if (this.globalData.doctorList[i].id == n)
-      {
+      if (this.globalData.doctorList[i].id == n) {
         console.log('app.js :', this.globalData.doctorList[i])
         return this.globalData.doctorList[i];
       }

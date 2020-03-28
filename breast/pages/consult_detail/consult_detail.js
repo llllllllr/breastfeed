@@ -5,23 +5,28 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    oid:'',
+    doctorId:'',
+    status:''
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    console.log('订单详情参数:',options)
+    this.setData({
+      oid:options.oid,
+      doctorId:options.doctorId,
+      status:options.status
+    })
   },
 
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
+  to_consult_chatroom(){
+    wx.navigateTo({
+      url: '../consult_chatroom/consult_chatroom?doctorId=' + this.data.doctorId + '&oid=' + this.data.oid,
+    })
   },
-
   /**
    * 生命周期函数--监听页面显示
    */

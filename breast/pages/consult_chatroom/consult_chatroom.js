@@ -16,12 +16,13 @@ Page({
   // 监听页面加载
   onLoad: function (options) {
     console.log('参数：', options)
+    var doctor = app.findDoctorById(options.doctorId);
     this.setData({
       object:app.globalData.object,
       doctorId: options.doctorId,
       userId: app.globalData.userInfor.userId,
       oid: options.oid,
-      doctorImg: app.findDoctorById(options.doctorId).doctorImg,
+      doctorImg: doctor.imgUrl,      // ******  无法获取医生的头像地址 ， 可能是 请求需要时间 有延迟
     })
     wx.showToast({
       title: '连接中',

@@ -23,23 +23,6 @@ Page({
       icon: 'loading'
     })
 
-    const newlist = [];
-    wx.request({
-      url: app.globalData.serverUrl + '/doctor/getAllDoctor',
-      method: 'GET',
-      success(res) {
-        _this.setData({
-          doctorList: res.data.data
-        })
-        console.log('成功获取医生信息：', _this.data.doctorList);
-        app.globalData.doctorList = _this.data.doctorList;
-        console.log('设置全局医生信息:', app.globalData.doctorList);
-      },
-      fail(res) {
-        console.log('获取医生信息失败！')
-      }
-    })
-   
     var newList = app.globalData.doctorList;
     //查询是否已经加载过医生的信息
     if(newList == null || newList.length == 0){

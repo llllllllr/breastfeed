@@ -1,12 +1,12 @@
 <view wx:if="{{consultOrderList.length > 0}}">
 	<scroll-view class="content-info" scroll-y>
 		<view class="outer" wx:for="{{consultOrderList}}" wx:key="{{item.id}}">
-			<view class="card" data-doctorId="{{item.doctorId}}" data-oid="{{item.oid}}" bindtap="to_consult_detail">
+			<view class="card" data-doctorid="{{item.doctorId}}" data-oid="{{item.oid}}" data-status="{{item.status}}" bindtap="to_consult_detail">
 				<view class="topdes solids-bottom ">
 					<view class="cu-avatar round margin-left " style="margin:20rpx;background-image:url({{item.doctor.imgUrl}});"></view>
 					<view class="padding-xs flex align-center">
 						<text class="padding text-grey">{{item.doctor.name}}</text>
-						<text class="padding text-grey margin-right">{{status == 0 ? '未完成' : '已完成' }}</text>
+						<text class="padding text-grey margin-right">{{item.status == 0 ? '未完成' : '已完成' }}</text>
 					</view>
 				</view>
 				<view class="solids-bottom">
