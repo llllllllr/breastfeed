@@ -1,4 +1,5 @@
 // pages/consult_detail/consult_detail.js
+const app = getApp();
 Page({
 
   /**
@@ -22,7 +23,30 @@ Page({
     })
   },
 
+  //弹出订阅消息提示
+  sendSubMessage() {
+    var tempId = app.globalData.sendToDoctortmpId;
+    wx.requestSubscribeMessage({
+      tmplIds: [tempId],
+      success: function (res) {
+        if (res[tempId] === 'accept') {
+          wx.showToast({
+            title: '订阅OK！',
+          })
+        }
+        console.log('订阅消息成功', res)
+        //成功
+      },
+      fail(err) {
+        //失败
+        console.error('订阅消息失败：', err);
+      }
+    })
+
+  },
+
   to_consult_chatroom(){
+    this.sendSubMessage()
     wx.navigateTo({
       url: '../consult_chatroom/consult_chatroom?doctorId=' + this.data.doctorId + '&oid=' + this.data.oid,
     })
