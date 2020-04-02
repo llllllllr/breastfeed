@@ -11,6 +11,10 @@ Page({
     imgToken:''
   },
 
+
+  onLoad(){
+      this.getToken()
+  },
   //显示模态框，errmsg-表单错误信息
   showModal(errmsg) {
     wx.showModal({
@@ -42,10 +46,10 @@ Page({
     salt.charAt(7) + salt.charAt(4) + salt.charAt(6);
     var psd = md5(str);
 
-    console.log("图片列表",this.data.imgList)
-    console.log('加密后密码:',psd)
+    // console.log("图片列表",this.data.imgList)
+    // console.log('加密后密码:',psd)
     
-    console.log('表单数据：' , dataList);
+    // console.log('表单数据：' , dataList);
 
     wx.request({
       url: getApp().globalData.serverUrl + '/doctor/register',
@@ -63,6 +67,10 @@ Page({
         console.log('请求成功:',res)
         if(res.data.status == 0){
           that.showModal(res.data.msg)
+        } else {
+            wx.navigateTo({
+              url: '../signIn/signIn',
+            })
         }
       },
 
@@ -81,7 +89,7 @@ Page({
       url: getApp().globalData.serverUrl + '/article/getToken',
       method: 'GET',
       data: {
-        bucket: 'doctoravatarr'
+        bucket: 'wdtc'
       },
       success: function (res) {
         console.log(res)
@@ -100,7 +108,7 @@ Page({
       sourceType: ['album'], //从相册选择
       success: function (res) {
         var filePath = res.tempFilePaths[0];
-        console.log(that.data.imgToken)
+        console.log("aaaa" + that.data.imgToken)
         // 交给七牛上传
         var img0 = 'imgList[0]'
         QiniuUploader.upload(filePath, (res) => {
@@ -114,7 +122,7 @@ Page({
           console.log('error: ' + error);
         }, {
           region: 'SCN',
-          domain: 'http://q6le9us69.bkt.clouddn.com/', // // bucket 域名，下载资源时用到。如果设置，会在 success callback 的 res 参数加上可以直接使用的 ImageURL 字段。否则需要自己拼接
+          domain: 'http://llllllllr.top/', // // bucket 域名，下载资源时用到。如果设置，会在 success callback 的 res 参数加上可以直接使用的 ImageURL 字段。否则需要自己拼接
           key: qiniu_key, // [非必须]自定义文件 key。如果不设置，默认为使用微信小程序 API 的临时文件名
           uptoken: that.data.imgToken, // 由其他程序生成七牛 uptoken
           uploadURL: 'https://up-z2.qiniup.com'

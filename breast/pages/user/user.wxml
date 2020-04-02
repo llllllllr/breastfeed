@@ -32,5 +32,11 @@
         <text class="text-grey">咨询记录</text>
       </navigator>
     </view>
+
+  
 		</view>
+
+<view class="logout_bor">
+      <view class="logout">退出登录</view>
+      </view>
 

@@ -1,13 +1,14 @@
 {
   "pages": [
     "pages/signIndex/signIndex",
+    "pages/user/user",
+ 
     "pages/signIn/signIn",   
     "pages/forget_pass/forget_pass",
     "pages/index/index",
     "pages/consult_detail/consult_detail",
     "pages/consult_doctors_choose/consult_doctors_choose",
     "pages/consult_chatroom/consult_chatroom",
-    "pages/user/user",
     "pages/lineIndex/lineIndex",
     "pages/lineDetail/lineDetail",
     "pages/signUp/signUp",
