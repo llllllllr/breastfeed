@@ -121,7 +121,7 @@ Page({
         that.sendSubMessage()
         if (res.data.status == 1) {
           wx.navigateTo({
-            url: '../consult_chatroom/consult_chatroom?doctorId=' + that.data.doctorId + '&oid=' + res.data.data + '&doctorImg=' + that.data.doctorImg,
+            url: '../consult_chatroom/consult_chatroom?doctorId=' + that.data.doctorId + '&oid=' + res.data.data + '&doctorImg=' + that.data.doctorImg + '&userId=' + app.globalData.userInfor.userId,
 
           })
         }

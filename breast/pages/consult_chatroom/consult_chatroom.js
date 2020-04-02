@@ -20,7 +20,7 @@ Page({
     this.setData({
       object:app.globalData.object,
       doctorId: options.doctorId,
-      userId: app.globalData.userInfor.userId,
+      userId: options.userId,
       oid: options.oid,
       doctorImg: doctor.imgUrl,      // ******  无法获取医生的头像地址 ， 可能是 请求需要时间 有延迟
     })
@@ -28,10 +28,20 @@ Page({
       title: '连接中',
       icon: 'loading'
     })
-    wx.connectSocket({
-      // 本地服务器地址
-      url: 'ws://localhost:8887/websocket/' + app.globalData.userInfor.userId + '/' + this.data.doctorId,
-    })
+
+    //判断是 普通用户 还是 医生 在线
+    if(this.data.object == 'user')
+      wx.connectSocket({
+        // 本地服务器地址
+        url: 'ws://localhost:8887/websocket/' + this.data.userId + '/' + this.data.doctorId,
+      })
+      else
+      wx.connectSocket({
+        // 本地服务器地址
+        url: 'ws://localhost:8887/websocket/' + this.data.doctorId + '/' + this.data.userId,
+      })
+
+
     // 连接成功
     wx.onSocketOpen(function () {
       console.log('连接成功');

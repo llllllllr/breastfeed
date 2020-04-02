@@ -131,7 +131,7 @@ App({
             //设置 返回 的用户数据
             that.globalData.object = 'doctor';
             that.globalData.userInfor = res.data.data;
-            console.log('doctorToken 登录成功', that.globalData.doctor);
+            console.log('doctorToken 登录成功', that.globalData.userInfor);
           },
           fail:function(res){
             console.log('token 登录失败')

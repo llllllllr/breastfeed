@@ -1,9 +1,9 @@
 {
   "pages": [
+    "pages/index/index",
     "pages/signIndex/signIndex",
     "pages/signIn/signIn",   
     "pages/forget_pass/forget_pass",
-    "pages/index/index",
     "pages/consult_detail/consult_detail",
     "pages/consult_doctors_choose/consult_doctors_choose",
     "pages/consult_chatroom/consult_chatroom",
@@ -18,7 +18,6 @@
     "pages/search/search",
     "pages/searchResult/searchResult",
     "pages/signUp/index",
-     
     "pages/mycoll/mycoll",
     "pages/testIndex/testIndex"
   ],

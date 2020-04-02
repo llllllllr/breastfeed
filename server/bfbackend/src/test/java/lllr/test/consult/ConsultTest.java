@@ -148,8 +148,6 @@ public class ConsultTest {
     //Thu Mar 12 10:06:21 CST 2020
     @Test
     public void test7(){
-        Date date = new Date();
-        DateFormat df2 = DateFormat.getDateTimeInstance();
-        System.out.println(df2.format(date));
+        Optional<String> str = Optional.empty();
     }
 }

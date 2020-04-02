@@ -92,7 +92,7 @@ public class WebSocketController {
         LOGGER.info("[WebSocket] 连接成功，当前连接人数:" + webSocketSet.size());
 
         //查询之前消息并返回之前的消息记录
-        ReturnBeforeWeChatMessages(from_user_id,to_user_id);
+//        ReturnBeforeWeChatMessages(from_user_id,to_user_id);
 
     }
 

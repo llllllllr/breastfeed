@@ -8,7 +8,8 @@ Page({
   data: {
     oid:'',
     doctorId:'',
-    status:''
+    status:'',
+    userId:'',
   },
 
   /**
@@ -19,7 +20,8 @@ Page({
     this.setData({
       oid:options.oid,
       doctorId:options.doctorId,
-      status:options.status
+      status:options.status,
+      userId:options.userId,
     })
   },
 
@@ -48,7 +50,7 @@ Page({
   to_consult_chatroom(){
     this.sendSubMessage()
     wx.navigateTo({
-      url: '../consult_chatroom/consult_chatroom?doctorId=' + this.data.doctorId + '&oid=' + this.data.oid,
+      url: '../consult_chatroom/consult_chatroom?doctorId=' + this.data.doctorId + '&oid=' + this.data.oid + '&userId=' + this.data.userId,
     })
   },
   /**
