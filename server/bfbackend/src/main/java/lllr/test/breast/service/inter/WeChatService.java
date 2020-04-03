@@ -16,5 +16,5 @@ public interface WeChatService {
 //    List<WeChatMessageItem> selectWeChatMsgByUserId(String userId);
 
     //查询与特定用户的聊天记录
-    List<WeChatMessageItem> selectWeChatMsgByFromUserIdAndToUserId(Integer fromUserId,Integer toUserId);
+    List<WeChatMessageItem> selectWeChatMsgByFromUserIdAndToUserIdAndOid(Integer fromUserId,Integer toUserId,String oid);
 }

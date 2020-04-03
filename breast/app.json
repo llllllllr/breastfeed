@@ -1,7 +1,8 @@
 {
   "pages": [
-    "pages/index/index",
     "pages/signIndex/signIndex",
+    "pages/index/index",
+    
     "pages/signIn/signIn",   
     "pages/forget_pass/forget_pass",
     "pages/consult_detail/consult_detail",

@@ -25,12 +25,13 @@
 <!--    from wechat_message_item-->
 <!--    where from_user_id = #{fromUserId,jdbcType=INTEGER}-->
 <!--  </select>-->
-  <select id="selectByFromUserIdAndToUserId" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+  <select id="selectByFromUserIdAndToUserIdAndOid" resultMap="BaseResultMap">
     select
     <include refid="Base_Column_List" />
     from wechat_message_item
-    where from_user_id = #{fromUserId,jdbcType=INTEGER} and to_user_id = #{toUserId,jdbcType=INTEGER} or
+    where from_user_id = #{fromUserId,jdbcType=INTEGER} and to_user_id = #{toUserId,jdbcType=INTEGER} and oid = #{oid,jdbcType=CHAR} or
     from_user_id = #{toUserId,jdbcType=INTEGER} and to_user_id = #{fromUserId,jdbcType=INTEGER}
+    and oid = #{oid,jdbcType=CHAR}
   </select>
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
     delete from wechat_message_item

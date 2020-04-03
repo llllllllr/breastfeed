@@ -33,7 +33,7 @@ import java.util.concurrent.ConcurrentHashMap;
  */
 
 @Controller
-@ServerEndpoint(value = "/websocket/{from_user_id}/{to_user_id}")
+@ServerEndpoint(value = "/websocket/{from_user_id}/{to_user_id}/{oid}")
 public class WebSocketController {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(WebSocketController.class);
@@ -73,6 +73,11 @@ public class WebSocketController {
     private String user_id;
 
     /**
+     * 标识当前订单
+     */
+    private String oid;
+
+    /**
      *  用于存所有的连接服务的客户端，这个对象存储是安全的
      */
     private static ConcurrentHashMap<String, WebSocketController> webSocketSet = new ConcurrentHashMap<>();
@@ -83,23 +88,24 @@ public class WebSocketController {
     返回之前的聊天记录
      */
     @OnOpen
-    public void OnOpen(Session session, @PathParam("from_user_id") String from_user_id,@PathParam("to_user_id")String to_user_id){
+    public void OnOpen(Session session, @PathParam("from_user_id") String from_user_id,@PathParam("to_user_id")String to_user_id,@PathParam("oid")String oid){
         this.session = session;
         this.user_id = from_user_id;
+        this.oid = oid;
 
         //把当前用户会话缓存
-        webSocketSet.put(from_user_id,this);
+        webSocketSet.put(this.user_id,this);
         LOGGER.info("[WebSocket] 连接成功，当前连接人数:" + webSocketSet.size());
 
         //查询之前消息并返回之前的消息记录
-//        ReturnBeforeWeChatMessages(from_user_id,to_user_id);
+        ReturnBeforeWeChatMessages(from_user_id,to_user_id,oid);
 
     }
 
     //查询之前的聊天数据并返回
-    private void ReturnBeforeWeChatMessages(String from_user_id,String to_user_id){
+    private void ReturnBeforeWeChatMessages(String from_user_id,String to_user_id,String oid){
         //查询返回聊天记录
-        List<WeChatMessageItem> items = weChatService.selectWeChatMsgByFromUserIdAndToUserId(Integer.valueOf(from_user_id),Integer.valueOf(to_user_id));
+        List<WeChatMessageItem> items = weChatService.selectWeChatMsgByFromUserIdAndToUserIdAndOid(Integer.valueOf(from_user_id),Integer.valueOf(to_user_id),oid);
         LOGGER.info(" === 用户 " + from_user_id + "和用户 " + to_user_id + "的聊天记录：" + items);
 
         AppointSending(from_user_id,JSONObject.toJSONString(items));
@@ -108,7 +114,7 @@ public class WebSocketController {
 
     @OnClose
     public void OnClose(){
-        webSocketSet.remove(this.user_id);
+        webSocketSet.remove(this.oid);
         LOGGER.info("[WebSocket] 退出成功，当前连接人数为：={}",webSocketSet.size() + " 当前在线人： " + webSocketSet);
     }
 
@@ -183,6 +189,8 @@ public class WebSocketController {
             AppointSending(fromUserId,JSONObject.toJSONString(ServerResponse.createBysuccessMsg("成功发送!")));              //返回发送成功消息给发送消息用户
     }
 
+    public String getOid(){return oid;}
+
     /**
      * 群发
      * @param message
@@ -205,8 +213,11 @@ public class WebSocketController {
      */
     public void AppointSending(String name,String message){
         try {
-            webSocketSet.get(name).session.getBasicRemote().sendText(message);
-            LOGGER.debug("===  用户消息成功 消息数据：" + message + " ===");
+            String Toid = webSocketSet.get(name).getOid();
+            if(Toid != null && Toid.equals(this.oid)) {
+                webSocketSet.get(name).session.getBasicRemote().sendText(message);
+                LOGGER.debug("===  用户消息成功 消息数据：" + message + " ===");
+            }
         }catch (Exception e){
             e.printStackTrace();
         }

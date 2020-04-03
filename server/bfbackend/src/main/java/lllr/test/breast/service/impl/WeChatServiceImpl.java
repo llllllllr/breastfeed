@@ -28,9 +28,9 @@ public class WeChatServiceImpl implements WeChatService {
 //    }
 
     @Override
-    public List<WeChatMessageItem> selectWeChatMsgByFromUserIdAndToUserId(Integer fromUserId, Integer toUserId) {
+    public List<WeChatMessageItem> selectWeChatMsgByFromUserIdAndToUserIdAndOid(Integer fromUserId, Integer toUserId,String oid) {
         List<WeChatMessageItem> records = new ArrayList<>();
-        records = weChatMessageItemMapper.selectByFromUserIdAndToUserId(fromUserId,toUserId);
+        records = weChatMessageItemMapper.selectByFromUserIdAndToUserIdAndOid(fromUserId,toUserId,oid);
         return records;
     }
 

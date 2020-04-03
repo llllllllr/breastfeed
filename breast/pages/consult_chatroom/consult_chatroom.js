@@ -33,12 +33,12 @@ Page({
     if(this.data.object == 'user')
       wx.connectSocket({
         // 本地服务器地址
-        url: 'ws://localhost:8887/websocket/' + this.data.userId + '/' + this.data.doctorId,
+        url: 'ws://localhost:8887/websocket/' + this.data.userId + '/' + this.data.doctorId + '/' + this.data.oid,
       })
       else
       wx.connectSocket({
         // 本地服务器地址
-        url: 'ws://localhost:8887/websocket/' + this.data.doctorId + '/' + this.data.userId,
+        url: 'ws://localhost:8887/websocket/' + this.data.doctorId + '/' + this.data.userId + '/' + this.data.oid,
       })
 
 
@@ -108,14 +108,26 @@ Page({
     // 判断发送内容是否为空
     if (this.data.message.length != 0) {
       console.log('订单oid:',this.data.oid)
-      var msg = {
-        fromUserId: this.data.userId,
-        toUserId: this.data.doctorId,
-        messageType: 0,                 // 消息类型  文字 图片
-        messageContent: this.data.message,
-        time: app.jsDateFormatter(new Date()),   //时间
-        oid: this.data.oid  //咨询 所属 的 咨询订单
-      }
+      //判断是 登录 用户 是 医生 还是 普通用户
+      if(this.data.object == 'user')
+        var msg = {
+          fromUserId: this.data.userId,
+          toUserId: this.data.doctorId,
+          messageType: 0,                 // 消息类型  文字 图片
+          messageContent: this.data.message,
+          time: app.jsDateFormatter(new Date()),   //时间
+          oid: this.data.oid  //咨询 所属 的 咨询订单
+        }
+        else
+        var msg = {
+          fromUserId: this.data.doctorId,
+          toUserId: this.data.userId,
+          messageType: 0,                 // 消息类型  文字 图片
+          messageContent: this.data.message,
+          time: app.jsDateFormatter(new Date()),   //时间
+          oid: this.data.oid  //咨询 所属 的 咨询订单
+        }
+
       //将 msg 对象 转化为 JSON 字符串
       var msgStr = JSON.stringify(msg);
       console.log(msgStr)
