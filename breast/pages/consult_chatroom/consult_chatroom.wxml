@@ -6,7 +6,7 @@
 <!-- 对聊天内容的喧嚷需要考虑两点  1. 显示在左侧还是右侧 2. 显示在 左右侧是用户还是医生需要判断后显示头像 -->
 
 <!-- 第一种情况 登录的用户为医生-》头像显示 并且  聊天记录中的发送方和登录的用户相同-》聊天内容显示在右侧  -->
-	<view class="cu-item self" wx:if="{{item.fromUserId == userId && object == 'doctor'}}">
+	<view class="cu-item self" wx:if="{{item.fromUserId == doctorId && object == 'doctor'}}">
 		<view  class="main">
 			<view class="content bg-green shadow">
 				<text>{{item.messageContent}}</text>
@@ -29,7 +29,7 @@
 	</view>
 
 <!-- 第三种情况 登录的用户为普通用户-》左侧头像显示医生图片 -->
-  	<view wx:elif="{{item.fromUserId != userId && object == 'user'}}" class="cu-item">
+  	<view wx:elif="{{object == 'user'}}" class="cu-item">
         <view class="cu-avatar radius" style="background-image:url({{doctorImg}});"></view>
 		<view class="main">
 			<view class="content  shadow">
@@ -40,8 +40,8 @@
 	</view>
 
 <!-- 第四种情况 登录的用户为医生-》左侧头像显示用户头像   -->
-  <view wx:elif="{{item.fromUserId != userId && object == 'doctor'}}" class="cu-item">
-  <view class="cu-avatar radius"><open-data class="avatar lg round" type="userAvatarUrl"></open-data></view>
+  <view wx:elif="{{object == 'doctor'}}" class="cu-item">
+    <view class="cu-avatar radius" style="background-image:url({{userHeadPictureUrl}});"></view>
 		<view class="main">
 			<view class="content  shadow">
 				<text>{{item.messageContent}}</text>

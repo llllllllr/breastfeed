@@ -17,6 +17,7 @@ Page({
     wx.showModal({
       title: '温馨提示',
       content: errmsg,
+      confirmColor: "#d4237a",
       showCancel: false
     })
   },
@@ -40,6 +41,10 @@ Page({
        this.checkLogin(nickName,password)
   },
   checkLogin:function(username,inputPass){
+    wx.showLoading({
+      title: '登录中...',
+      duration:1000
+    })
     var that = this;
     //密码不能在浏览器里明文传输，md5加密
     var salt = app.globalData.salt;

@@ -11,7 +11,8 @@ Page({
     list: [],
     doctorImg: '', //医生的头像
     object:'',
-    message:"" //消息内容
+    message:"", //消息内容
+    userHeadPictureUrl: 'http://llllllllr.top/doctorRegister_1585797161.jpg',  //医生端 用户备用头像
   },
   // 监听页面加载
   onLoad: function (options) {

@@ -2,7 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="197e8831-6f69-4b71-bcb9-2c52b6022415" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/log/sys.2020-04-01.0.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../breast/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../breast/app.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/pages/consult_questionnaire/consult_questionnaire.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../breast/pages/consult_questionnaire/consult_questionnaire.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/pages/doctorRegister/doctorRegister.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../breast/pages/doctorRegister/doctorRegister.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/pages/signIn/signIn.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../breast/pages/signIn/signIn.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/pages/user/user.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/../../breast/pages/user/user.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../breast/pages/user/user.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/../../breast/pages/user/user.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log/sys.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/sys.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lllr/test/breast/BreastApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lllr/test/breast/BreastApplication.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,7 +22,6 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
-  <component name="ProjectId" id="1ZiV2gg6BksVvvTsdvTFe1igxDd" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
   </component>
@@ -25,34 +34,14 @@
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="aspect.path.notification.shown" value="true" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="restartRequiresConfirmation" value="false" />
   </component>
-  <component name="RunManager" selected="Spring Boot.BreastApplication">
-    <configuration name="ConsultTest.test7" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="breast" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="lllr.test.consult.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="lllr.test.consult" />
-      <option name="MAIN_CLASS_NAME" value="lllr.test.consult.ConsultTest" />
-      <option name="METHOD_NAME" value="test7" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager">
     <configuration name="BreastApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="breast" />
       <extension name="coverage">
@@ -69,7 +58,6 @@
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.BreastApplication" />
-        <item itemvalue="JUnit.ConsultTest.test7" />
       </list>
     </recent_temporary>
   </component>
@@ -77,96 +65,56 @@
     <configuration />
   </component>
   <component name="TaskManager">
-    <task active="true" id="Default" summary="Default task">
-      <changelist id="197e8831-6f69-4b71-bcb9-2c52b6022415" name="Default Changelist" comment="" />
-      <created>1585321704706</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1585321704706</updated>
-      <workItem from="1585321730169" duration="632000" />
-      <workItem from="1585382920244" duration="3856000" />
-      <workItem from="1585399437084" duration="1133000" />
-      <workItem from="1585485319388" duration="1914000" />
-      <workItem from="1585550469718" duration="1191000" />
-      <workItem from="1585630625505" duration="6051000" />
-      <workItem from="1585745801726" duration="1867000" />
-      <workItem from="1585807500779" duration="5392000" />
-      <workItem from="1585832388997" duration="2902000" />
-      <workItem from="1585896853170" duration="1122000" />
-    </task>
     <servers />
   </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
-  </component>
   <component name="WindowStateProjectService">
-    <state x="223" y="68" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585314564617">
+    <state width="1493" height="239" key="GridCell.Tab.0.bottom" timestamp="1585898613742">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="223" y="68" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1585314564617" />
-    <state x="549" y="111" key="FileChooserDialogImpl" timestamp="1585747081681">
+    <state width="1493" height="239" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1585898613742" />
+    <state width="1493" height="239" key="GridCell.Tab.0.center" timestamp="1585898613742">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="111" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1585747081681" />
-    <state width="1493" height="51" key="GridCell.Tab.0.bottom" timestamp="1585897015993">
+    <state width="1493" height="239" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1585898613742" />
+    <state width="1493" height="239" key="GridCell.Tab.0.left" timestamp="1585898613742">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="51" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1585897015993" />
-    <state width="1493" height="51" key="GridCell.Tab.0.center" timestamp="1585897015992">
+    <state width="1493" height="239" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1585898613742" />
+    <state width="1493" height="239" key="GridCell.Tab.0.right" timestamp="1585898613742">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="51" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1585897015992" />
-    <state width="1493" height="51" key="GridCell.Tab.0.left" timestamp="1585897015992">
+    <state width="1493" height="239" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1585898613742" />
+    <state width="1493" height="239" key="GridCell.Tab.1.bottom" timestamp="1585898613544">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="51" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1585897015992" />
-    <state width="1493" height="51" key="GridCell.Tab.0.right" timestamp="1585897015993">
+    <state width="1493" height="239" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1585898613544" />
+    <state width="1493" height="239" key="GridCell.Tab.1.center" timestamp="1585898613544">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="51" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1585897015993" />
-    <state width="1493" height="51" key="GridCell.Tab.1.bottom" timestamp="1585833948134">
+    <state width="1493" height="239" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1585898613544" />
+    <state width="1493" height="239" key="GridCell.Tab.1.left" timestamp="1585898613544">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="51" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1585833948134" />
-    <state width="1493" height="51" key="GridCell.Tab.1.center" timestamp="1585833948133">
+    <state width="1493" height="239" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1585898613544" />
+    <state width="1493" height="239" key="GridCell.Tab.1.right" timestamp="1585898613544">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="51" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1585833948133" />
-    <state width="1493" height="51" key="GridCell.Tab.1.left" timestamp="1585833948133">
+    <state width="1493" height="239" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1585898613544" />
+    <state width="1493" height="239" key="GridCell.Tab.2.bottom" timestamp="1585898613544">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="51" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1585833948133" />
-    <state width="1493" height="51" key="GridCell.Tab.1.right" timestamp="1585833948133">
+    <state width="1493" height="239" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1585898613544" />
+    <state width="1493" height="239" key="GridCell.Tab.2.center" timestamp="1585898613544">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="51" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1585833948133" />
-    <state width="1493" height="51" key="GridCell.Tab.2.bottom" timestamp="1585833948134">
+    <state width="1493" height="239" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1585898613544" />
+    <state width="1493" height="239" key="GridCell.Tab.2.left" timestamp="1585898613544">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="51" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1585833948134" />
-    <state width="1493" height="51" key="GridCell.Tab.2.center" timestamp="1585833948134">
+    <state width="1493" height="239" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1585898613544" />
+    <state width="1493" height="239" key="GridCell.Tab.2.right" timestamp="1585898613544">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="51" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1585833948134" />
-    <state width="1493" height="51" key="GridCell.Tab.2.left" timestamp="1585833948134">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="51" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1585833948134" />
-    <state width="1493" height="51" key="GridCell.Tab.2.right" timestamp="1585833948134">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="51" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1585833948134" />
-    <state x="408" y="110" key="NewModule_or_Project.wizard" timestamp="1585747064843">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="408" y="110" key="NewModule_or_Project.wizard/0.0.1536.824@0.0.1536.824" timestamp="1585747064843" />
-    <state x="404" y="228" key="com.intellij.ide.util.TipDialog" timestamp="1585832522791">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="404" y="228" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1585832522791" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1585816230373">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1585816230373" />
+    <state width="1493" height="239" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1585898613544" />
   </component>
 </project>
