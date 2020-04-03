@@ -39,6 +39,13 @@ App({
     
   },
 
+  //清除记录的隐私数据=》 用于 用户退出登录时调用
+  clearPrivacyData(){
+    this.globalData.userId = -1;
+    this.globalData.object = '',
+    this.globalData.userInfor = null
+  },
+
 //从服务端获取医生信息
   getDoctorList(){
     var that = this;

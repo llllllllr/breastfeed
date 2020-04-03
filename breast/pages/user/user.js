@@ -1,4 +1,4 @@
-var app = getApp();
+const app = getApp();
 Page({
 
   data: {
@@ -8,6 +8,16 @@ Page({
   onLoad: function (options) {
 
   },
+
+  //退出登录 清除存储在本地的信息
+  logOut(){
+    wx.removeStorageSync('userToken');
+    wx.removeStorageSync('userTokenDate');
+    wx.removeStorageSync('doctorToken');
+    wx.removeStorageSync('doctorTokenDate');
+    app.clearPrivacyData()
+  },
+
   chagetoLogin:function(){
     wx.navigateTo({
       url: '../signIndex/signIndex',

@@ -36,7 +36,7 @@
   
 		</view>
 
-<view class="logout_bor">
+<view class="logout_bor" bindtap="logOut">
       <view class="logout">退出登录</view>
       </view>
 
