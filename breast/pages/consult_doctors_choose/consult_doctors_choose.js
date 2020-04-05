@@ -10,7 +10,6 @@ Page({
     openId: '',
   },
   onLoad: function () { //加载数据渲染页面
-    //this.openid()
     if(app.globalData.userInfor.userId == null)
          showUtil.showToLogion();
     this.fetchDoctorData();

@@ -1,6 +1,7 @@
 package lllr.test.breast.dao.mapper;
 
 import lllr.test.breast.dataObject.consult.ConsultOrder;
+import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
@@ -24,4 +25,6 @@ public interface ConsultOrderMapper {
     List<ConsultOrder> selectConsultOrderAndUserByDoctorId(Integer userId);
 
     ConsultOrder getByOid(String oid);
+
+    int updateConsultOrderStatusById(@Param("id") Integer id,@Param("status") Integer status);
 }

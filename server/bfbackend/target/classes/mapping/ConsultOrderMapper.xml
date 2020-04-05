@@ -241,6 +241,10 @@
       </if>
     </trim>
   </insert>
+  <update id="updateConsultOrderStatusById">
+    update consult_order set status = #{status,jdbcType=INTEGER}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
   <update id="updateByPrimaryKeySelective" parameterType="lllr.test.breast.dataObject.consult.ConsultOrder">
     update consult_order
     <set>

@@ -51,5 +51,10 @@ public class ConsultOrderServiceImpl implements ConsultOrderService {
         return ServerResponse.createBysuccessData(consultOrderMapper.getByOid(oid));
     }
 
+    @Override
+    public ServerResponse updateConsultOrderStatusById(Integer id, Integer status) {
+        return consultOrderMapper.updateConsultOrderStatusById(id,status) == 1 ? ServerResponse.createBysuccess() : ServerResponse.createByError();
+    }
+
 
 }

@@ -1,0 +1,21 @@
+   <view class="cu-list menu-avatar"   wx:for="{{consultOrderList}}" wx:key="{{item.id}}" wx:for-index="idx">
+
+        <scroll-view class="content-info" scroll-y data-id="{{item.id}}" bindtap="to_doctorConsultDetail" >
+        <view class="outer">
+          <view class="card">
+            <view class="topdes solids-bottom ">
+             
+              <view class="padding-xs flex align-center">
+                <text class="padding text-grey">{{item.contact == '' ? item.user.userName : item.contact}}</text>
+                   <text class="padding text-grey right">{{item.status == 1 ? '订单完成' : '订单未完成'}}</text>
+              </view>
+            </view>
+            <view class="solids-bottom">
+              <view class="padding description">{{item.symptomDescription}}</view>
+            </view>
+            <text class="text-grey padding">下单时间：{{item.createTime}}</text>
+          </view>
+        </view>
+      </scroll-view>
+
+   </view>

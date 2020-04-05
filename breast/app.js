@@ -29,7 +29,8 @@ App({
     userId:-3,
     object:'',  //登录的用户群体：1.医生 2.普通用户
     userInfor:null,   //记录用户的信息
-    doctorList:[],
+    doctorList:[],       //医生列表
+    consultOrderList:[],  //医生端存放 咨询订单
     //不同账号需要更改 密匙 否则 获取 openid将出错
     APP_ID: 'wx3d0c29a20a305f28',
     APP_SECRET: '685ef10637631ae8e3db77e000f22f9e',
@@ -63,6 +64,27 @@ App({
     })
   },
 
+  //根据 咨询订单id 查询  返回订单具体信息
+  findConsultOrderById(n) {
+    console.log('app consultOrderList:', this.globalData.consultOrderList)
+
+    for (var i = 0; i < this.globalData.consultOrderList.length; i++)
+      if (this.globalData.consultOrderList[i].id == n) {
+        console.log('app.js :', this.globalData.consultOrderList[i])
+        return this.globalData.consultOrderList[i];
+      }
+  },
+
+  //医生结束订单时 修改订单的状态
+  updateConsultOrderStatusById(id,status){
+    console.log('id status:',id,status)
+    for (var i = 0; i < this.globalData.consultOrderList.length; i++)
+      if (this.globalData.consultOrderList[i].id == id) {
+        console.log('app.js :', this.globalData.consultOrderList[i])
+        this.globalData.consultOrderList[i].status = status;
+      }
+  },
+
   //根据 医生的id 查询 doctorList 返回医生具体信息
   findDoctorById(n){
     console.log('app doctorList:',this.globalData.doctorList)
@@ -73,6 +95,8 @@ App({
         return this.globalData.doctorList[i];
       }
   },
+  
+  
 
   // js 格式化 date 对象，输出格式为 yyyy-MM-dd HH:mm:ss 字符串
   jsDateFormatter(dateInput) {  // dateInput 是一个 js 的 Date 对象

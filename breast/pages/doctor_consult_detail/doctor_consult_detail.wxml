@@ -1,0 +1,34 @@
+<view class="cu-list menu-avatar">
+	<view class="group">
+    <view class="group-header">用户信息</view>
+        <view class="group-body">
+            <view class="cu-form-group">
+              <view class="title">姓名:  {{consultOrder.contact == '' ? consultOrder.user.userName : consultOrder.contact}}</view>
+            </view>
+            <view class="cu-form-group">
+              <view class="title">电话号码:  {{consultOrder.contactPhone}}</view>
+            </view>
+        </view>
+    </view>
+    <view class="group-header">咨询信息</view>
+    <view class="group-body">
+       <view class="cu-form-group">
+          <view class="title">病情简述:  {{consultOrder.symptomDescription}}</view>
+       </view>
+        <view style="margin-top:30rpx" class="cu-form-group">
+          <view class="title">图片详情：</view>
+          <view class="grid col-4 grid-square flex-sub" wx:for="{{consultOrder.imgUrls}}">
+							<image src="{{item}}" mode='aspectFill'></image>
+					</view>
+       </view>
+   </view> 
+   <view class="link-top"></view>
+ </view>
+    
+<view style="margin-top:30rpx" class="btn_center">
+     <button class="cu-btn round bg-white shd" style="height:100rpx" 
+    bindtap="toChat" >进入咨询</button>
+     <button class="cu-btn round bg-white shd" style="height:100rpx" 
+    bindtap="onOver" >结束订单</button>
+</view>
+

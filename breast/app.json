@@ -1,10 +1,11 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/signIndex/signIndex",
+    "pages/doctor_myconsult/doctor_myconsult",
     
+    "pages/signIndex/signIndex",
     "pages/user/user",
-    "pages/signIn/signIn",   
+    "pages/signIn/signIn",
     "pages/forget_pass/forget_pass",
     "pages/consult_detail/consult_detail",
     "pages/consult_doctors_choose/consult_doctors_choose",
@@ -20,7 +21,8 @@
     "pages/searchResult/searchResult",
     "pages/signUp/index",
     "pages/mycoll/mycoll",
-    "pages/testIndex/testIndex"
+    "pages/testIndex/testIndex",
+    "pages/doctor_consult_detail/doctor_consult_detail"
   ],
   "window": {
     "backgroundTextStyle": "light",

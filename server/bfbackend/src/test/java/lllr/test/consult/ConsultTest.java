@@ -10,8 +10,8 @@ import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.io.File;
-import java.io.IOException;
+import java.io.*;
+import java.nio.charset.StandardCharsets;
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -147,7 +147,29 @@ public class ConsultTest {
 
     //Thu Mar 12 10:06:21 CST 2020
     @Test
-    public void test7(){
-        Optional<String> str = Optional.empty();
+    public void test7() throws IOException {
+        System.out.println(false);
+    }
+
+
+    public static void main(String[] a){
+        Scanner in = new Scanner(System.in);
+        String[] seq1 = in.nextLine().split(",");
+        String[] seq2 = in.nextLine().split(",");
+
+        int seq1Index = 0;
+        int seq2Index = 0;
+        while(seq1Index < seq1.length && seq2Index < seq2.length){
+            if(Integer.parseInt(seq1[seq1Index]) > Integer.parseInt(seq2[seq2Index]))
+                System.out.print(seq2[seq2Index++] + ",");
+            else
+                System.out.print(seq1[seq1Index++] + ",");
+        }
+
+        while(seq1Index < seq1.length)
+            System.out.print(seq1Index == seq1.length - 1 ? seq1[seq1Index++] : seq1[seq1Index++] + ",");
+
+        while(seq2Index < seq2.length)
+            System.out.print(seq2Index == seq2.length - 1 ? seq2[seq2Index++] : seq2[seq2Index++] + ",");
     }
 }

@@ -38,6 +38,11 @@ public class ConsultOrderController {
         return consultOrderService.selectConsultOrderByDoctorId(doctorId);
     }
 
+    @GetMapping("/updateConsultOrderStatusById")
+    public ServerResponse updateConsultOrderStatusById(@RequestParam(value="status")@NotNull Integer status,@RequestParam(value="id")@NotNull Integer id){
+        return consultOrderService.updateConsultOrderStatusById(id,status);
+    }
+
     @GetMapping("/selectConsultOrderByUserId")
     public ServerResponse<List<ConsultOrder>> selectConsultOrderByUserId(@RequestParam(value="userId")@NotNull Integer userId){
         return consultOrderService.selectConsultOrderByUserId(userId);
