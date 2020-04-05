@@ -114,13 +114,13 @@
     SELECT consult_order.* ,doctor.name, doctor.license_number, doctor.img_url
     FROM consult_order inner join
     doctor on doctor.id = consult_order.doctor_id and
-    consult_order.user_id = #{userId,jdbcType=INTEGER};
+    consult_order.user_id = #{userId,jdbcType=INTEGER} order by create_time desc;
   </select>
   <select id="selectConsultOrderAndUserByDoctorId" parameterType="java.lang.Integer" resultMap="ConsultOrdersDoctorResultMap">
     SELECT consult_order.* ,user.user_name
     FROM consult_order inner join
     user on user.user_id = consult_order.user_id and
-    consult_order.doctor_id = #{doctorId,jdbcType=INTEGER};
+    consult_order.doctor_id = #{doctorId,jdbcType=INTEGER} order by create_time desc;
   </select>
 
   <select id="getByOid" parameterType="string" resultMap="BaseResultMap">
